@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link id="favicon" rel="icon" href="" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal website for Theerawat Kiatdarakun" />
+    <!--async css load hack-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway&family=Lato&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="stylesheet" href="/loading.css">
+    <!--<link rel='preload' href='https://fonts.googleapis.com/css2?family=Raleway&family=Lato&display=swap' as='style' onload="this.onload=null;this.rel='stylesheet'">-->
+    <title>Quack Quack...</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+      Contact: tkiat@tutanota.com
+    </noscript>
+
+    <div id="loading" class="loading">
+      <div>LOADING...</div>
+    </div>
+    <div class="root" id="root"></div>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

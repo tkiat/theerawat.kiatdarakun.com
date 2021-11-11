@@ -1,0 +1,24 @@
+@use 'src/App/share/style/functions' as f;
+@use 'src/App/share/style/mixins' as m;
+
+.letter {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  &-border {
+    height: 100%;
+    width: auto;
+    &__path {
+      stroke: var(--tube-stroke-color);
+    }
+  }
+  &-mask {
+    position: absolute;
+    left: 0;
+
+    height: 100%;
+    width: auto;
+
+    @include m.hsl(fill, 0, 0%, f.dayOrDark(97%, 5%));
+  }
+}

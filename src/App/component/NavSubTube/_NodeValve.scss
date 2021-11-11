@@ -1,0 +1,28 @@
+@use 'src/App/share/style/functions' as f;
+@use 'src/App/share/style/mixins' as m;
+
+.valve {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  width: auto;
+  &-border {
+    height: 100%;
+    width: 100%;
+    &__path {
+      stroke: var(--tube-stroke-color);
+    }
+    &__rect {
+      fill: var(--tube-stroke-color);
+    }
+  }
+  &-mask {
+    position: absolute;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    @include m.hsl(fill, 0, 0%, f.dayOrDark(97%, 5%));
+  }
+}

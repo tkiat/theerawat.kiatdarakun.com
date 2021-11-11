@@ -1,0 +1,11 @@
+export {baseThemes, mayApplyBaseTheme} from './theme/base'
+export {updateFavicon} from './theme/favicon'
+export {ThemeContext, ThemeProvider} from './theme/themeContext'
+export {getBaseTheme, mkGlobalStyle, mkThemeObject, storeThemeObject, themes} from './theme/themeObject'
+export {duckBeakKey, duckBodyKey, duckWingKey, duckKeys, tubeKeys, tubeStrokeKey, tubeWaterKey, wavesKey, wavesSubKeys} from './theme/custom'
+export {times} from './theme/time'
+
+export type {BaseTheme} from './theme/base'
+export type {DuckAndTubeKeys, WavesKey} from './theme/custom'
+export type {Theme, ThemeObject} from './theme/themeObject'
+export type {Time} from './theme/time'

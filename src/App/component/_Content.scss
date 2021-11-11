@@ -1,0 +1,64 @@
+@use 'src/App/share/style/functions' as f;
+@use 'src/App/share/style/mixins' as m;
+
+.content {
+  position: absolute;
+
+  font-size: 1rem;
+  padding: 0 10px;
+  width: calc(100% - var(--sidebar-width));
+
+/*   @include m.hsla(background-color, 0, 0%, f.dayOrDark(90%, 5%), 0.5); */
+  overflow-y: auto;
+  z-index: 1;
+  li::marker {
+    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+  }
+  h1 {
+    font-size: 1.563rem;
+    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+  }
+  &--inside-water {
+    top: 220px;
+    @include m.hsl(color, 90, 0%, 95%);
+    height: calc(100% - 230px);
+    background-color: unset;
+    padding-top: 0;
+    li::marker {
+      @include m.hsl(color, 90, 0%, 95%);
+    }
+    a {
+      font-weight: bold;
+      @include m.hsl(color, 90, 0%, 95%);
+      &:after {
+        @include m.hsl(color, 180, 0%, 70%);
+      }
+      &:hover {
+        @include m.hsl(color, 90, 0%, 95%);
+        &:after {
+          width: 25%;
+        }
+      }
+    }
+    h1 {
+      @include m.hsl(color, 180, 0%, 70%);
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    strong {
+      @include m.hsl(color, 180, 0%, 70%);
+    }
+  }
+  &--outside-water {
+    top: calc(var(--nav-tube-height) + 20px);
+    max-height: calc(100% - var(--nav-tube-height) - 130px);
+  }
+}

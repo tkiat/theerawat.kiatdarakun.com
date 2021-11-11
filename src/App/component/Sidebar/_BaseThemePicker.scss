@@ -1,0 +1,36 @@
+@use 'src/App/share/style/functions' as f;
+@use 'src/App/share/style/mixins' as m;
+
+.basetheme-picker {
+  $root: &;
+  width: 100%;
+  height: 8em;
+  font-size: 1.25rem;
+  &__header {
+    height: 20%;
+  }
+  &__content {
+    width: 100%;
+    height: 80%;
+    #{$root}__picker {
+      width: 50%;
+      height: 50%;
+      font-size: 0.9em;
+
+      @include m.hsl(background-color, 0, 0%, f.dayOrDark(97%, 5%));
+      @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
+      border: 1px dashed currentColor;
+      cursor: pointer;
+      filter: brightness(30%);
+      &:hover,
+      &--active {
+        filter: none;
+        text-decoration: underline;
+        @include m.hsl(text-decoration-color, 0, 0%, f.dayOrDark(25%, 75%));
+      }
+      &:focus {
+        position: relative;
+      }
+    }
+  }
+}

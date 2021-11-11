@@ -1,0 +1,104 @@
+@use 'src/App/share/style/functions' as f;
+@use 'src/App/share/style/mixins' as m;
+
+.theme-picker {
+  @include m.hsl(--bg-color, 0, 0%, f.dayOrDark(97%, 5%));
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+
+  border: none;
+  border-radius: 0.5em;
+  background-color: var(--bg-color);
+  cursor: pointer;
+  filter: brightness(30%);
+
+  &:focus,
+  &--active {
+    filter: none;
+    outline: 2px dashed var(--bg-color);
+    outline-offset: 2px;
+  }
+  &:hover {
+    filter: none;
+  }
+  &__nav-sub {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: inline-block;
+    transform: translateX(-50%);
+
+    font-size: 1.8em;
+
+    color: var(--tube-water-color);
+    $ts: var(--tube-stroke-color);
+    text-shadow: -1px 0 $ts, 0 1px $ts, 1px 0 $ts, 0 -1px $ts;
+    user-select: none;
+    &:before {
+      content: attr(overlay);
+
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      height: 40%;
+      color: var(--bg-color);
+      overflow: hidden;
+    }
+  }
+  &__header {
+    position: absolute;
+    left: 0;
+    top: 30%;
+
+    font-weight: bold;
+    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+  }
+  &__text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    white-space: wrap;
+
+    @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
+  }
+  &__nav-main {
+    position: absolute;
+    bottom: 9px;
+
+    width: 6%;
+    height: 10px;
+
+    border: 1px solid black;
+    border-radius: 25%;
+    background-color: var(--duck-body-color);
+    &--l {
+      left: 15%;
+    }
+    &--r {
+      left: 79%;
+    }
+  }
+  &__wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    &--0 {
+      bottom: 0;
+      height: 5px;
+    }
+    &--1 {
+      bottom: 5px;
+      height: 2px;
+    }
+    &--2 {
+      bottom: 7px;
+      height: 2px;
+    }
+  }
+}

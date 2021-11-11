@@ -1,0 +1,38 @@
+@use './functions' as f;
+
+@mixin fluid-type($properties, $min-vw-px, $max-vw-px, $min-val, $max-val) {
+  & {
+    @each $property in $properties {
+      #{$property}: $min-val;
+    }
+
+    @media screen and (min-width: $min-vw-px) and (max-width: $max-vw-px) {
+      @each $property in $properties {
+        #{$property}: calc(
+          #{$min-val} +
+            #{f.strip-unit($max-val - $min-val)} *
+              ((100vw - #{$min-vw-px})
+                / #{f.strip-unit($max-vw-px - $min-vw-px)})
+        );
+      }
+    }
+    @media screen and (min-width: $max-vw-px) {
+      @each $property in $properties {
+        #{$property}: $max-val;
+      }
+    }
+  }
+}
+
+@mixin hsl($p, $h-offset, $s-offset, $l) {
+  #{$p}: hsl(calc(#{var(--hue)} + #{$h-offset}),
+             calc(#{var(--saturation)} + #{$s-offset}),
+             $l);
+}
+
+@mixin hsla($p, $h-offset, $s-offset, $l, $a) {
+  #{$p}: hsla(calc(#{var(--hue)} + #{$h-offset}),
+              calc(#{var(--saturation)} + #{$s-offset}),
+              $l,
+              $a);
+}

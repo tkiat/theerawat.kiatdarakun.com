@@ -1,0 +1,51 @@
+[
+  {
+    "title": "This Website",
+    "description": "A very customizable personal website",
+    "keyword": ["HTML", "SCSS", "Typescript", "React.js", "Inkscape"],
+
+    "link": "https://github.com/tkiat/tkiat.github.io",
+    "type": "Project"
+  },
+  {
+    "title": "A Freedom Blog",
+    "description": "A blog that promotes personal freedom",
+    "keyword": ["Purescript", "React,js", "SCSS", "HTML"],
+
+    "link": "https://tkiat.github.io/a-freedom-blog",
+    "type": "Project"
+  },
+  {
+    "title": "Interactive Vim Theme Generator",
+    "description": "Oversimplified and interactive",
+    "keyword": ["HTML", "SCSS", "JS", "React.js"],
+
+    "link": "https://github.com/tkiat/vim-custom-theme",
+    "type": "Project"
+  },
+  {
+    "title": "Christmas Card",
+    "description": "I gave it to my Mother's new husband in Norway at Christmas 2019",
+    "keyword": ["HTML", "SCSS", "JS"],
+    "link": "https://github.com/tkiat/task/tree/main/christmas-mardon",
+    "type": "Task"
+  },
+  {
+    "title": "Freedom Oriented Blog",
+    "description": "My blog using Pelican",
+    "keyword": ["HTML", "SCSS", "JS", "Pelican", "Jinja"],
+
+    "inactive": true,
+    "link": "https://github.com/tkiat/archive/tree/main/freedom-oriented-blog",
+    "type": "Project (Inactive)"
+  },
+  {
+    "title": "Previous Personal Website",
+    "description": "I did everything from scratch including backend",
+    "keyword": ["HTML", "CSS", "JS", "AWS", "Terraform"],
+
+    "inactive": true,
+    "link": "https://github.com/tkiat/archive/tree/main/tkiatd.github.io",
+    "type": "Project (Inactive)"
+  }
+]
