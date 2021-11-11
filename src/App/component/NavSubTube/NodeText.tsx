@@ -1,26 +1,28 @@
 import {Link} from '@reach/router'
 import React from 'react'
 
-import {TextSvg} from './TextSvg'
+import {Highlighter} from './NodeHighlighter'
+import {mapping} from './TextMap'
 
 type P = {
-  i: number
   cur: number
+  i: number
+  onclick: React.MouseEventHandler<HTMLAnchorElement>
   to: string
   word: string
-  onclick: React.MouseEventHandler<HTMLAnchorElement>
 }
-export const NodeText = (props: P) =>
-  <Link className={'nav-sub__link'} to={props.to} onClick={props.onclick}
+export const NodeText = ({cur, i, onclick, to, word}: P) =>
+  <Link className={'nav-sub__link'} to={to} onClick={onclick}
         draggable="false">
-    <TextSvg word={props.word} />
-
-    <div className="nav-sub__highlighter-wrapper">
-      <div
-        id={'nav-sub__highlighter-item' + props.i * 2}
-        className={'nav-sub__highlighter-item' +
-          (props.i === props.cur ? ' nav-sub__highlighter-item--init' : '')}
-      >
-      </div>
-    </div>
+    <Text word={word} />
+    <Highlighter i={i * 2} visible={cur === i} />
   </Link>
+
+const Text = ({word}: {word: string}): React.ReactElement =>
+  <>
+    {Array.from(word).map((letter, i) =>
+      <div key={i} className="letter">
+        {mapping.border[letter]}{mapping.mask[letter]}
+      </div>
+    )}
+  </>
