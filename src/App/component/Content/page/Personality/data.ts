@@ -1,31 +1,3 @@
-export const overview = [
-  `
-### MBTI Test
-##### 31 Mar 2021 on [16personalities.com](https://www.16personalities.com/)
-  - **I**ntroverted (79%) - **E**xtraverted
-  - I**N**tuitive (52%) - Ob**S**ervant
-  - **T**hinking (51%) - **F**eeling
-  - **J**udging (58%) - **P**rospecting
-  - **A**ssertive (65%) - **T**erbulent
-`,
-  `
-### Big 5 Personalities Test
-##### 31 Mar 2021 on [openpsychometrics.org](https://openpsychometrics.org/)
-  - Extroversion: **11** (percentile)
-  - Emotional Stability: **57**
-  - Agreeableness: **7**
-  - Conscientiousness: **95**
-  - Intellect/Imagination: **46**
-`,
-  `
-### Others
-- Early Riser
-- Eat Simple Food
-- Quiet
-- Zodiac Sign - Cancer
-`,
-]
-
 export const goal_purpose = [
   `
 # Life Purpose
@@ -68,48 +40,6 @@ And I already use reusable containers.
 Still, there are room for improvements.
 
 I'd like to become a gardener, with knowledge and space.
-`,
-]
-
-export const preferences = [
-  `
-### Food & Drink
-- Simple > Tasty
-- Fruit & Veg > Meat
-- No packaging
-- From local > Overseas
-`,
-  `
-### Hardware
-- Old > New laptop
-- Laptop > Desktop
-- Thinkpoint > Mouse > Wacom > Touch bar
-- Any Libre OS > Linux > *BSD > Windows > macOS
-- Replicant > LinageOS > AOSP > Android > iOS
-`,
-  `
-### Software
-  - FOSS for critical software installed on my devices
-  - Open source for any software installed on my devices
-  - The rest can be closed source
-`,
-  `
-### Service
-- Bicycle > Public Transport
-- Public Transport > Car
-- 5 Min Walk > Motorbike
-`,
-  `
-### Accommodation
-- Small home with large area > Tiny home in city
-- Ducks & Pigs (edible) > Cats & Dogs
-- Grow edible plant > Decorative plant
-`,
-  `
-### Others
-- **Prospective Job**: Driven by compassion.
-- **Prospective Wife**: Values freedom more than convenience.
-- **Superpower**: I want none. With great power comes great responsibilities.
 `,
 ]
 
