@@ -58,8 +58,14 @@ h1, h2, h3, a, button, strong {
   width: 100%;
   z-index: 12345;
 
-  @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
-  @include m.hsl(background-color, 0, 0%, f.dayOrDark(97%, 3%));
+  @include m.hsl(--background-color, 0, 0%, f.dayOrDark(97%, 3%));
+  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
+  @include m.hsl(--link-color, 180, 0%, f.dayOrDark(25%, 75%));
+
+  color: var(--color);
+  background-color: var(--background-color);
+/*   @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%)); */
+/*   @include m.hsl(background-color, 0, 0%, f.dayOrDark(97%, 3%)); */
   &.waiting {
     cursor: not-allowed;
     &:active {

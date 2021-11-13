@@ -15,6 +15,28 @@
   li::marker {
     color: var(--highlight-color);
   }
+  .tooltip {
+    cursor: help;
+    background: var(--highlight-color);
+    color: var(--background-color) !important;
+    opacity: 1 !important;
+    li::marker {
+      color: var(--background-color);
+    }
+  }
+  .tooltip-front {
+    cursor: help;
+    text-decoration: underline;
+  }
+  abbr {
+    cursor: help;
+  }
+  .big {
+    font-size: 1.25rem;
+  }
+  .bold {
+    font-weight: bold;
+  }
   .highlight {
     color: var(--highlight-color);
   }

@@ -2,14 +2,16 @@ import React from 'react'
 
 import {CardsMarkdown, Markdown, TabsContent} from '../share'
 import * as data from './Personality/data'
+import {Personality} from './Aboutme/Personality'
 
 let index = 0
 
 const storage = 'tab-index-about-personality'
 const items = [
   {
-    title: 'Overview',
-    content: <CardsMarkdown mdArray={data.overview} />,
+    title: 'Personality',
+    content: <Personality />,
+//     content: <CardsMarkdown mdArray={data.overview} />,
     index: index++,
   },
   {
@@ -29,5 +31,5 @@ const items = [
   },
 ]
 
-export const Personality = (): React.ReactElement =>
+export const Aboutme = (): React.ReactElement =>
   <TabsContent items={items} storage={storage} />
