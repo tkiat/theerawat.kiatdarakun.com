@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {CardsMarkdown, Markdown, TabsContent} from '../utils'
-import {gadgets, hygiene, intro, software} from './itemData'
+import {CardsMarkdown, Markdown, TabsContent} from '../share'
+import {gadgets, hygiene, intro, software} from './Items/data'
 
 const storage = 'tab-index-about-items'
 const items = [

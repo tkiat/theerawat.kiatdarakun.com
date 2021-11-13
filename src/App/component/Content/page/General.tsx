@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {Markdown, TabsContent} from '../utils'
-import * as data from './generalData'
+import {Markdown, TabsContent} from '../share'
+import * as data from './General/data'
 
 let index = 0
 const storage = 'tab-index-activity-general'

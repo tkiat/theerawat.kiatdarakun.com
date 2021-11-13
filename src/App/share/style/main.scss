@@ -7,11 +7,6 @@
 @use 'src/App/component/Background';
 @use 'src/App/component/Contact';
 @use 'src/App/component/Canvas';
-@use 'src/App/component/Content';
-@use 'src/App/component/Content/NotFound';
-@use 'src/App/component/Content/utils/Cards';
-@use 'src/App/component/Content/utils/CardsProject';
-@use 'src/App/component/Content/utils/TabsContent';
 @use 'src/App/component/NavMain';
 @use 'src/App/component/NavSubMobile';
 @use 'src/App/component/NavSubTube';
@@ -22,3 +17,10 @@
 @use 'src/App/component/Sidebar/SidebarToggler';
 @use 'src/App/component/Sidebar/ThemePickers';
 @use 'src/App/component/Title';
+
+@use 'src/App/component/Content';
+@use 'src/App/component/Content/page/Intro';
+@use 'src/App/component/Content/page/NotFound';
+@use 'src/App/component/Content/share/Cards';
+@use 'src/App/component/Content/share/CardsProject';
+@use 'src/App/component/Content/share/TabsContent';

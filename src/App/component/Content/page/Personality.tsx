@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {CardsMarkdown, Markdown, TabsContent} from '../utils'
-import * as data from './personalityData'
+import {CardsMarkdown, Markdown, TabsContent} from '../share'
+import * as data from './Personality/data'
 
 let index = 0
 

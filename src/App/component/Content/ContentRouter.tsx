@@ -1,17 +1,7 @@
 import React from 'react'
 import {Router, RouteComponentProps} from '@reach/router'
 
-import {NotFound} from './NotFound'
-import {Resume} from './Resume'
-
-import {Credits} from './about/Credits'
-import {Intro} from './about/Intro'
-import {Items} from './about/Items'
-import {Personality} from './about/Personality'
-
-import {General} from './activity/General'
-import {LifeStory} from './activity/LifeStory'
-import {Software} from './activity/Software'
+import {Credits, General, Intro, Items, LifeStory, NotFound, Personality, Resume, Software} from './page'
 
 import {pathToTestId} from 'src/App/share/general'
 import {pathObject} from 'src/App/share/path'

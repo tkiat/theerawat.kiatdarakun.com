@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {Markdown, TabsContent} from '../utils'
-import * as data from './lifeStoryData'
+import {Markdown, TabsContent} from '../share'
+import * as data from './Lifestory/data'
 
 let index = 0
 

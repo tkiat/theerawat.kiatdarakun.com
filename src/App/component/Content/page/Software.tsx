@@ -1,13 +1,13 @@
 import React from 'react'
 
-import {CardsProject, Markdown, TabsContent} from '../utils'
+import {CardsProject, Markdown, TabsContent} from '../share'
 
-import webProject from './data-software/web-project.json'
-import webExperiment from './data-software/web-experiment.json'
-import pcProject from './data-software/pc-project.json'
-import pcUtility from './data-software/pc-utility.json'
-import {learning} from './data-software/learning'
-import {pullRequest} from './data-software/pullrequest'
+import webProject from './Software/web-project.json'
+import webExperiment from './Software/web-experiment.json'
+import pcProject from './Software/pc-project.json'
+import pcUtility from './Software/pc-utility.json'
+import {learning} from './Software/learning'
+import {pullRequest} from './Software/pullrequest'
 
 let index = 0
 

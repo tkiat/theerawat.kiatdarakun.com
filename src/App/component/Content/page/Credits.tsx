@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {CardsMarkdown} from '../utils'
-import {credits} from './creditsData'
+import {CardsMarkdown} from '../share'
+import {credits} from './Credits/data'
 
 export const Credits = (): React.ReactElement =>
   <CardsMarkdown mdArray={credits} />
