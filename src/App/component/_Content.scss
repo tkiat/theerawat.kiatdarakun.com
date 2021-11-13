@@ -2,6 +2,7 @@
 @use 'src/App/share/style/mixins' as m;
 
 .content {
+  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
   position: absolute;
 
   font-size: 1rem;
@@ -12,17 +13,20 @@
   overflow-y: auto;
   z-index: 1;
   li::marker {
-    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+    color: var(--highlight-color);
+  }
+  .highlight {
+    color: var(--highlight-color);
   }
   h1 {
     font-size: 1.563rem;
-    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+    color: var(--highlight-color);
   }
   h2 {
     font-size: 1.25rem;
   }
   h3 {
-    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+    color: var(--highlight-color);
   }
   &--inside-water {
     top: 220px;
