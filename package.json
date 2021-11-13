@@ -19,6 +19,7 @@
     "react": "^17.0.2",
     "react-colorful": "^5.2.0",
     "react-dom": "^17.0.2",
+    "react-tooltip": "^4.2.21",
     "use-immer": "^0.5.2"
   },
   "devDependencies": {
