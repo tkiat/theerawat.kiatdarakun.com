@@ -128,7 +128,7 @@ export const Items = (): React.ReactElement =>
         <MyReactTooltip id="tt-it-accessory" text="Accessory">
           <ul>
             <li>Two Eyeglasses (for myopic person around 300 and 500 degrees)</li>
-            <li>One LACOSTE watch that I don't like to watch</li>
+            <li>One LACOSTE watch that I don't like to wear</li>
           </ul>
         </MyReactTooltip>
 

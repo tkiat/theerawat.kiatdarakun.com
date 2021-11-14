@@ -1,58 +1,49 @@
-import React from 'react'
+import React from "react"
 
-import {CardsMarkdown, Markdown, TabsContent} from '../share'
-import {gadgets, hygiene, intro, software} from './Items/data'
-
-const storage = 'tab-index-about-items'
-const items = [
-  {
-    title: 'Intro',
-    content: <Markdown content={intro} />,
-    index: 0,
-  },
-  {
-    title: 'Physical',
-  },
-  {
-    title: 'Gadgets',
-    content: <CardsMarkdown mdArray={gadgets} />,
-    index: 1,
-  },
-  {
-    title: 'Hygiene',
-    content: <Markdown content={hygiene} />,
-    index: 2,
-  },
-  {
-    title: 'Tools',
-    content: <Markdown content={hygiene} />,
-    index: 3,
-  },
-  {
-    title: 'Cloths',
-    content: <Markdown content={hygiene} />,
-    index: 4,
-  },
-  {
-    title: 'Kitchenware',
-    content: <Markdown content={hygiene} />,
-    index: 5,
-  },
-  {
-    title: 'Nonphysical',
-    clickable: false,
-  },
-  {
-    title: 'Software',
-    content: <CardsMarkdown mdArray={software} />,
-    index: 6,
-  },
-  {
-    title: 'Media',
-    content: <CardsMarkdown mdArray={software} />,
-    index: 7,
-  },
-]
+import {CardsMarkdown, Markdown, TabsContent} from "../share"
+import {gadgets, hygiene, intro, software} from "./Items/data"
 
 export const Items = (): React.ReactElement =>
-  <TabsContent items={items} storage={storage} />
+  <TabsContent
+    items={[
+      {
+        title: "Intro",
+        content: <Markdown content={intro} />,
+      },
+      {
+        title: "Physical",
+      },
+      {
+        title: "Gadgets",
+        content: <CardsMarkdown mdArray={gadgets} />,
+      },
+      {
+        title: "Hygiene",
+        content: <Markdown content={hygiene} />,
+      },
+      {
+        title: "Tools",
+        content: <Markdown content={hygiene} />,
+      },
+      {
+        title: "Cloths",
+        content: <Markdown content={hygiene} />,
+      },
+      {
+        title: "Kitchenware",
+        content: <Markdown content={hygiene} />,
+      },
+      {
+        title: "Nonphysical",
+      },
+      {
+        title: "Software",
+        content: <CardsMarkdown mdArray={software} />,
+      },
+      {
+        title: "Media",
+        content: <CardsMarkdown mdArray={software} />,
+      },
+    ]}
+    localKey="tab-index-about-items"
+  />
