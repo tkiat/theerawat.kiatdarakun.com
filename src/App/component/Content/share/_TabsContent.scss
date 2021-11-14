@@ -1,45 +1,39 @@
 @use 'src/App/share/style/functions' as f;
 @use 'src/App/share/style/mixins' as m;
 
-.tabs {
-  $root: &;
-  &--content {
-    position: initial;
+.tab-content {
+  font-size: 1rem;
+  &__tablist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
-    display: block;
-    font-size: 1rem;
-    #{$root}__list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    .item {
+      font-size: 1em;
+      margin: 3px 2px 2px 2px;
+      padding: 10px;
 
-      margin: 0;
-      padding: 0;
-
-      list-style-type: none;
-      #{$root}__item {
-        font-size: 1em;
-        margin: 3px 2px 2px 2px;
-        padding: 10px;
-      }
-      #{$root}__button {
+      &--button {
         @include m.hsl(--border-color, 180, 0%, f.dayOrDark(15%, 70%));
         border: 2px solid var(--border-color);
         border-radius: 5px;
-        background-color: transparent;
+
         @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
+        background-color: transparent;
         cursor: pointer;
         &:hover {
           @include m.hsl(background-color, 180, 0%, f.dayOrDark(25%, 80%));
           @include m.hsl(color, 0, 0%, f.dayOrDark(95%, 5%));
         }
-        &--active {
-          @include m.hsl(background-color, 180, 0%, f.dayOrDark(15%, 70%));
-          @include m.hsl(color, 0, 0%, f.dayOrDark(95%, 5%));
-        }
       }
-      #{$root}__decorate {
+      &--decorate {
         @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
+      }
+      &--active {
+        @include m.hsl(background-color, 180, 0%, f.dayOrDark(15%, 70%));
+        @include m.hsl(color, 0, 0%, f.dayOrDark(95%, 5%));
       }
     }
   }

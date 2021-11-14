@@ -1,64 +1,63 @@
-import React from 'react'
-import {useImmer} from 'use-immer'
+import React from "react"
+import {useImmer} from "use-immer"
 
-const getInitTabIndex = (storage: string) =>
-  parseInt(localStorage.getItem(storage) ?? '0')
+const mkInitIndex = (k: string) => {
+  const temp = parseInt(localStorage.getItem(k) ?? "0")
+  return isNaN(temp) ? 0 : temp
+}
 
-type TabItem = {title: string, content?: React.ReactElement, index?: number}
-
-type P = {items: TabItem[], storage: string}
-export const TabsContent = ({ items, storage }: P): React.ReactElement => {
-  const [cur, setCur] = useImmer(getInitTabIndex(storage))
+type TabItem = {title: string, content?: React.ReactElement}
+type P = {items: TabItem[], localKey: string}
+export const TabsContent = ({items, localKey}: P): React.ReactElement => {
+  const [cur, setCur] = useImmer(mkInitIndex(localKey))
   const curRef = React.useRef<number>(cur)
   React.useEffect(() => {
-    const cleanup = () => {
-      localStorage.setItem(storage, curRef.current.toString())
-    }
-    window.addEventListener('beforeunload', cleanup)
+    const cleanup = () =>
+      localStorage.setItem(localKey, curRef.current.toString())
+    window.addEventListener("beforeunload", cleanup)
     return () => {
       cleanup()
-      window.removeEventListener('beforeunload', cleanup)
+      window.removeEventListener("beforeunload", cleanup)
     }
   }, [])
+
   return (
     <>
-      <div className="tabs tabs--content">
-        <div className="tabs__list" role="tablist" aria-label="content tabs">
-          {items.map(({ index, title }, i) => {
-            if (index === undefined)
-              return (
-                <div className="tabs__item tabs__decorate" key={i}>
-                  {title + ' >'}
-                </div>
-              )
-            return (
-              <button
-                className={'tabs__item tabs__button' + (cur === index ? ' tabs__button--active' : '')}
-                role="tab"
-                id={'tab' + index}
-                key={i}
-                onClick={() => {
-                  setCur(index)
-                  curRef.current = index
-                }}
-                aria-controls={'panel' + index}
-                aria-selected={cur === index ? 'true' : 'false'}>
-                {title}
-              </button>
-            )
-          })}
+      <div className="tab-content">
+        <div className="tab-content__tablist" role="tablist"
+             aria-label="content tab-content"
+        >
+        {items.map(({content, title}, i) => !content
+          ? <div className="item item--decorate" key={i}>{title + " >"}</div>
+          : <button
+              className={"item item--button" +
+                (cur === i ? " item--active" : "")}
+              role="tab"
+              id={"tab" + i}
+              key={i}
+              onClick={() => {
+                setCur(i)
+                curRef.current = i
+              }}
+              aria-controls={"panel" + i}
+              aria-selected={cur === i ? "true" : "false"}
+            >
+              {title}
+            </button>
+        )}
         </div>
       </div>
-      {items.map(({ content, index }, i) => (
-        <div
-          role="tabpanel"
-          aria-labelledby={'tab' + index}
-          id={'panel' + index}
-          key={i}
-          style={{ display: cur === index ? 'block' : 'none' }}>
-          {content}
-        </div>
-      ))}
+    {items.map(({content}, i) => (
+      <div
+        role="tabpanel"
+        aria-labelledby={"tab" + i}
+        id={"panel" + i}
+        key={i}
+        style={{display: cur === i ? "block" : "none"}}
+      >
+        {content}
+      </div>
+    ))}
     </>
   )
 }
