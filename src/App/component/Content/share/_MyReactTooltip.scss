@@ -1,0 +1,14 @@
+.tooltip {
+  font-size: 0.9em !important;
+  cursor: help;
+  background: var(--highlight-color) !important;
+  color: var(--background-color) !important;
+  opacity: 1 !important;
+  li::marker {
+    color: var(--background-color);
+  }
+}
+.tooltip-front {
+  cursor: help;
+  text-decoration: underline;
+}

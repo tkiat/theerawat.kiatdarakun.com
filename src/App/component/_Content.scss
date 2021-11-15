@@ -2,7 +2,6 @@
 @use 'src/App/share/style/mixins' as m;
 
 .content {
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
   position: absolute;
 
   font-size: 1rem;
@@ -14,19 +13,6 @@
   z-index: 1;
   li::marker {
     color: var(--highlight-color);
-  }
-  .tooltip {
-    cursor: help;
-    background: var(--highlight-color);
-    color: var(--background-color) !important;
-    opacity: 1 !important;
-    li::marker {
-      color: var(--background-color);
-    }
-  }
-  .tooltip-front {
-    cursor: help;
-    text-decoration: underline;
   }
   abbr {
     cursor: help;
