@@ -32,7 +32,7 @@ const Picker = ({themeDisplay, theme, setTheme}: P): React.ReactElement => {
     >
     {
       //@ts-ignore
-      <div className={'theme-picker__nav-sub'} overlay={title} style={{
+      <div className={'theme-picker__nav-tube'} overlay={title} style={{
         color: o.get(tubeWaterKey),
         textShadow: `-1px 0 ${ts}, 0 1px ${ts}, 1px 0 ${ts}, 0 -1px ${ts}`
       }}>{title}</div>

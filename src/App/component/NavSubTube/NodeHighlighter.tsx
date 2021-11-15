@@ -1,12 +1,12 @@
 import React from 'react'
 
 type P = {i: number, visible: boolean}
-export const Highlighter = ({i, visible}: P): React.ReactElement =>
-  <div className="nav-sub__highlighter-wrapper">
+export const NodeHighlighter = ({i, visible}: P): React.ReactElement =>
+  <div className="tube-highlighter">
     <div
-      id={'nav-sub__highlighter-item' + i}
-      className={'nav-sub__highlighter-item' +
-        (visible ? ' nav-sub__highlighter-item--init' : '')}
+      id={'tube-highlighter' + i}
+      className={'tube-highlighter__inner' +
+        (visible ? ' tube-highlighter__inner--init' : '')}
     >
     </div>
   </div>

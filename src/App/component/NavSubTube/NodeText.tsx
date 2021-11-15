@@ -1,8 +1,8 @@
-import {Link} from '@reach/router'
-import React from 'react'
+import {Link} from "@reach/router"
+import React from "react"
 
-import {Highlighter} from './NodeHighlighter'
-import {mapping} from './TextMap'
+import {NodeHighlighter} from "./NodeHighlighter"
+import {mapping} from "./TextMap"
 
 type P = {
   cur: number
@@ -12,10 +12,10 @@ type P = {
   word: string
 }
 export const NodeText = ({cur, i, onclick, to, word}: P) =>
-  <Link className={'nav-sub__link'} to={to} onClick={onclick}
+  <Link className={"nav-tube__link"} to={to} onClick={onclick}
         draggable="false">
     <Text word={word} />
-    <Highlighter i={i * 2} visible={cur === i} />
+    <NodeHighlighter i={i * 2} visible={cur === i} />
   </Link>
 
 const Text = ({word}: {word: string}): React.ReactElement =>

@@ -2,7 +2,7 @@ type FlowDirection = 'left' | 'right'
 type FlowMode = 'drain' | 'pass' | 'stuck'
 type Node = 'text' | 'valve'
 
-const id = 'nav-sub__highlighter-item'
+const id = 'tube-highlighter'
 
 export const moveWater = (from: number, to: number, stepMs: number):
   number => {

@@ -14,16 +14,15 @@ type P = {path: Path, setPath: Updater<Path>}
 export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
   const callback = (to: number) => () =>
     setPath(d => {d.mapping[d.current] = pathObject[d.current][to]})
-
   return (
-    <nav className="nav-sub nav-sub--tube" id="nav-sub-tube">
-      <ul className="nav-sub__list">
+    <nav className="nav-tube">
+      <ul className="nav-tube__list">
         {pathObject[path.current].map((x, i) => {
           const cur = pathObject[path.current].
             findIndex(x => x === path.mapping[path.current])
           return (
           <React.Fragment key={x}>
-            <li className="nav-sub__item">
+            <li className="nav-tube__item">
               <NodeText
                 i={i}
                 cur={cur}
@@ -35,7 +34,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
               />
             </li>
           {i < pathObject[path.current].length - 1 && (
-            <li className="nav-sub__item">
+            <li className="nav-tube__item">
               <NodeValve i={i} cur={cur} />
             </li>
           )}
