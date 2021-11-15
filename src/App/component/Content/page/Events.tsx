@@ -1,9 +1,9 @@
 import React from "react"
 
 import {Markdown, TabsContent} from "../share"
-import * as data from "./General/data"
+import * as data from "./Events/data"
 
-export const General = (): React.ReactElement =>
+export const Events = (): React.ReactElement =>
   <TabsContent
     items={[
       {

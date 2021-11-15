@@ -1,14 +1,14 @@
 import React from "react"
 
 import {CardsProject, Markdown, TabsContent} from "../share"
-import webProject from "./Software/web-project.json"
-import webExperiment from "./Software/web-experiment.json"
-import pcProject from "./Software/pc-project.json"
-import pcUtility from "./Software/pc-utility.json"
-import {learning} from "./Software/learning"
-import {pullRequest} from "./Software/pullrequest"
+import webProject from "./Create/web-project.json"
+import webExperiment from "./Create/web-experiment.json"
+import pcProject from "./Create/pc-project.json"
+import pcUtility from "./Create/pc-utility.json"
+import {learning} from "./Create/learning"
+import {pullRequest} from "./Create/pullrequest"
 
-export const Software = (): React.ReactElement =>
+export const Create = (): React.ReactElement =>
   <TabsContent
     items={[
       {

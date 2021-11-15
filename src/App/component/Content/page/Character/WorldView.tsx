@@ -74,7 +74,7 @@ export const WorldView = (): React.ReactElement =>
 
         &nbsp;|&nbsp;
         <MyReactTooltip id="tt-wv-travelling" text="Travelling">
-          The best travelling is not about price, beauty, people, or selfie images on Instagram but it is about the experience. And the experience will be unfortunately limited without prior appreciation. An unfamiliar person, unlike some architects or historians, can appreciate only the outer beauty of the Eiffel tower.
+          The best travelling is not about price, beauty, people, or selfie images on Instagram but it is about the experience. And the experience will be unfortunately limited without prior knowledge or research. An unfamiliar person, unlike some architects or historians, can appreciate only the outer beauty of the Eiffel tower.
         </MyReactTooltip>
 
         &nbsp;|&nbsp;

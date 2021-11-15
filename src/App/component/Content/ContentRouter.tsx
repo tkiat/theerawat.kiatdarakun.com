@@ -1,7 +1,7 @@
 import React from 'react'
 import {Router, RouteComponentProps} from '@reach/router'
 
-import {Character, Consume, Credits, General, Intro, NotFound, Resume, Software, Story} from './page'
+import {Character, Consume, Events, Create, Credits, Intro, NotFound, Resume, Story} from './page'
 
 import {pathToTestId} from 'src/App/share/general'
 import {pathObject} from 'src/App/share/path'
@@ -14,9 +14,9 @@ const mapping = {
   [paths[1]]: <Character />,
   [paths[2]]: <Story />,
   [paths[3]]: <Credits />,
-  [paths[4]]: <Software />,
-  [paths[5]]: <General />,
-  [paths[6]]: <Consume />,
+  [paths[4]]: <Create />,
+  [paths[5]]: <Consume />,
+  [paths[6]]: <Events />,
   [paths[7]]: <Resume />,
 }
 
