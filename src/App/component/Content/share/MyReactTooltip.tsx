@@ -1,7 +1,6 @@
 import React from "react"
 import ReactTooltip from "react-tooltip"
 
-// TODO move css here
 export const MyReactTooltip = (props: any): React.ReactElement =>
   <>
     <span className="tooltip-front" data-tip data-for={props.id}>{props.text}</span>

@@ -1,12 +1,12 @@
 import React from "react"
 
 import {TabsContent} from "../share"
-import {GoalAndPurposes} from "./AboutMe/GoalAndPurposes"
-import {Items} from "./AboutMe/Items"
-import {Personality} from "./AboutMe/Personality"
-import {WorldView} from "./AboutMe/WorldView"
+import {PurposeAndGoals} from "./Character/PurposeAndGoals"
+import {Items} from "./Character/Items"
+import {Personality} from "./Character/Personality"
+import {WorldView} from "./Character/WorldView"
 
-export const AboutMe = (): React.ReactElement =>
+export const Character = (): React.ReactElement =>
   <TabsContent
     items={[
       {
@@ -14,8 +14,8 @@ export const AboutMe = (): React.ReactElement =>
         content: <Personality />,
       },
       {
-        title: "Goal & Purpose",
-        content: <GoalAndPurposes />,
+        title: "Purpose & Goals",
+        content: <PurposeAndGoals />,
       },
       {
         title: "WorldView",

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Router, RouteComponentProps} from '@reach/router'
 
-import {AboutMe, Credits, General, Intro, Items, LifeStory, NotFound, Resume, Software} from './page'
+import {Character, Consume, Credits, General, Intro, NotFound, Resume, Software, Story} from './page'
 
 import {pathToTestId} from 'src/App/share/general'
 import {pathObject} from 'src/App/share/path'
@@ -11,12 +11,12 @@ const paths = Object.entries(pathObject).
 
 const mapping = {
   [paths[0]]: <Intro />,
-  [paths[1]]: <AboutMe />,
-  [paths[2]]: <Items />,
+  [paths[1]]: <Character />,
+  [paths[2]]: <Story />,
   [paths[3]]: <Credits />,
   [paths[4]]: <Software />,
   [paths[5]]: <General />,
-  [paths[6]]: <LifeStory />,
+  [paths[6]]: <Consume />,
   [paths[7]]: <Resume />,
 }
 

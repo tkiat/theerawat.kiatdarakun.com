@@ -25,16 +25,15 @@ export const WorldView = (): React.ReactElement =>
         </MyReactTooltip>
 
         &nbsp;|&nbsp;
-        <MyReactTooltip id="tt-wv-privacy" text="Online Privacy">
-          <p>Privacy is simply a basic human right but we have no right for it as long as we rely on other's work and effort. It is not ethical to ad-block Youtube because that is how they support the platform and you just steal their bandwidth. There are privacy-friendly Youtube alternatives but without the way to make money like personalized ads you cannot get too many things at zero cost. This means you might have to host videos yourself. As a consumer, you will find most popular videos hosted on the platform that give them money i.e. Youtube not MediaGoblin.</p>
-          <p>It is a trade-off and because of this I tend to be neutral about the online privacy issue. The only thing I wish is the existing privacy-friendly solution to everything for the sake of human rights.</p>
+        <MyReactTooltip id="tt-wv-privacy" text="Online Privacy" place="bottom">
+          <p>Privacy is simply a basic human right but we have no right for it as long as we rely on other's work and effort. It is not ethical to ad-block Youtube because that is how they support the platform and you just steal their bandwidth. There are privacy-friendly Youtube alternatives but without the way to make money like personalized ads you cannot get too many things at zero cost. This means you might have to host videos yourself. As a consumer, you will find most popular videos hosted on the platform that give them money directly i.e. Youtube not MediaGoblin.</p>
+          <p>It is a trade-off and because of this I tend to be neutral about the online privacy issue. The only thing I wish is the privacy-friendly alternative for each mainstream service/application for the sake of human rights.</p>
         </MyReactTooltip>
 
         &nbsp;|&nbsp;
-        <MyReactTooltip id="tt-wv-apple" text="Apple">
-//         TODO not world view change to proprietary tech tell good at answer customer needs unlike linux
-          <p>The hardware quality is respectable but their closed ecosystem sucks. I bought around 30 movies (only finished half of them) from iTunes and then promptly deleted my account after realizing how suck DRM and their proprietary platform are.</p>
-          <p>But their products are excellent for a non-technical person as it is idiot-proof. An old person might find a single big button easier to use than any other Android phone. They have many environmental campaigns but they shouldn't forget to improve the cable life also.</p>
+        <MyReactTooltip id="tt-wv-proprietary" text="Proprietary Store" place="bottom">
+          <p>It is understandable that Google Play and App Store restrict the users to their platform when he purchases an app because it is platform-specific. But, there is no need to tie something like a single-purchased movie to the iTunes app. It makes sense from a business prespective to do this but I find it disturbing. It gives a user a false notion of possession but in reality he just has the access right.</p>
+          <p>I deleted my Apple account (with around 30 movies) because of this. The subscriptions like Netflix and Apple Music, on the other hand, give user clear information about the duration and I find that more acceptable.</p>
         </MyReactTooltip>
       </li>
       <li>
@@ -46,7 +45,7 @@ export const WorldView = (): React.ReactElement =>
         &nbsp;|&nbsp;
         <MyReactTooltip id="tt-wv-porn" text="Ethical Porn" place="bottom">
           <p>The only ethical porn, in my opinion, is the porn with consent. Even if you buy porn, some actress might change her mind and feel shameful afterwards and you have no way to know it. Instead, focus on the live performance or active genuine channels/profiles.</p>
-          <p>The bigger scope of consideration is whether or not porns waste your time too much. It is unethical to watch porn if it prevents you from doing something ethical. The sweet spot is where it saves your time as compared to being distracted by a genuine sexual urge which is perhaps not applicable to most people.</p>
+          <p>The bigger scope of consideration is whether or not porns waste your time too much. It is unethical to watch porn if it prevents you from doing something necessary. The sweet spot is where it saves your time as compared to being distracted by a genuine sexual urge which is perhaps not applicable to most people.</p>
         </MyReactTooltip>
       </li>
       <li>
@@ -54,14 +53,11 @@ export const WorldView = (): React.ReactElement =>
         <MyReactTooltip id="tt-wv-abortion" text="Abortion">
           In my opinion, the only ethical abortion is the one from any kind of involuntary sex given that she does the abortion as early as possible to prevent the child from feeling the pain.
         </MyReactTooltip>
-
-//         TODO free vs paid education
-//         TODO social media
       </li>
       <li>
         <span className="bold highlight">Economy: </span>
         <MyReactTooltip id="tt-wv-equality" text="Equality">
-          <p>Instead of the zero-sum thinking, the only sensible thing we should focus on is to define what is "good enough life" and try to improve the poorest to such condition. Sometimes, inequality helps accelerate that goal.</p>
+          <p>Instead of the zero-sum thinking, the only sensible thing we should focus on is to define what is "good enough life" and try to improve the poorest to such condition. Inequality perhaps helps accelerate that goal.</p>
         </MyReactTooltip>
       </li>
       <li>
@@ -74,6 +70,11 @@ export const WorldView = (): React.ReactElement =>
         <MyReactTooltip id="tt-wv-lifemeaning" text="Meaning of Life">
           <p>Imaging having all sentient beings from the universe (including god) and the I ask: what is the purpose? None. The star floats around for what? None. There is no purpose whatsoever.</p>
           <p>So the purpose depends on being sentient. Try your best to know thyself and create purpose from what you value.</p>
+        </MyReactTooltip>
+
+        &nbsp;|&nbsp;
+        <MyReactTooltip id="tt-wv-travelling" text="Travelling">
+          The best travelling is not about price, beauty, people, or selfie images on Instagram but it is about the experience. And the experience will be unfortunately limited without prior appreciation. An unfamiliar person, unlike some architects or historians, can appreciate only the outer beauty of the Eiffel tower.
         </MyReactTooltip>
 
         &nbsp;|&nbsp;
