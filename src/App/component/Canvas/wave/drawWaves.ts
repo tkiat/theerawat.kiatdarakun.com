@@ -7,6 +7,8 @@ export const drawWaves = (
   physics: WavePhysics,
   colors: string[],
 ) => {
+  if (physics.height === 0 || physics.speed === 0) return
+
   const {width, height} = ctx.canvas
   ctx.clearRect(0, 0, width, height)
   const canvasDim = {w: width, h: height}
@@ -28,7 +30,7 @@ export const getTrajectory = (wave: Wave,
   let prevY = wave.points[0].getY()
   let cx, cy
 
-  wave.points.slice(1).map((point) => {
+  wave.points.slice(1).map(point => {
     point.oscillate(height, speed, shakiness)
 
     cx = (prevX + point.x) / 2
