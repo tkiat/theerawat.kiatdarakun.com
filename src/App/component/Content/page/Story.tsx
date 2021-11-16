@@ -1,45 +1,40 @@
 import React from "react"
 
-// import {CardsMarkdown, Markdown, TabsContent} from "../share"
+import {TabsContent} from "../share"
+import {Undergraduate} from "./Story/Undergraduate"
+import {Child} from "./Story/Child"
+import {MasterDegree} from "./Story/MasterDegree"
+import {Teen} from "./Story/Teen"
+import {WorkingGermany} from "./Story/WorkingGermany"
+import {LongUnemployment} from "./Story/LongUnemployment"
+
 export const Story = (): React.ReactElement =>
-  <>Story</>
-//   { title: 'Born' },
-//   {
-//     title: 'Very Smol',
-//     content: <Markdown content={data.verysmol} />,
-//   },
-//   { title: 'School' },
-//   {
-//     title: 'Primary School',
-//     content: <Markdown content={data.content} />,
-//   },
-//   {
-//     title: 'High School',
-//     content: <Markdown content={data.content} />,
-//   },
-//   { title: 'University' },
-//   {
-//     title: 'Bachelor',
-//     content: <Markdown content={data.content} />,
-//   },
-//   {
-//     title: 'Gap',
-//     content: <Markdown content={data.content} />,
-//   },
-//   {
-//     title: 'Master',
-//     content: <Markdown content={data.content} />,
-//   },
-//   { title: 'Work' },
-//   {
-//     title: 'Gap',
-//     content: <Markdown content={data.content} />,
-//   },
-//   {
-//     title: 'Work',
-//     content: <Markdown content={data.content} />,
-//   },
-//   {
-//     title: 'Gap',
-//     content: <Markdown content={data.content} />,
-//   },
+  <TabsContent
+    items={[
+      {
+        title: "Child",
+        content: <Child />,
+      },
+      {
+        title: "Teen",
+        content: <Teen />,
+      },
+      {
+        title: "Undergraduate",
+        content: <Undergraduate />,
+      },
+      {
+        title: "Master's Degree",
+        content: <MasterDegree />,
+      },
+      {
+        title: "Working in Germany",
+        content: <WorkingGermany />,
+      },
+      {
+        title: "Unemployment",
+        content: <LongUnemployment />,
+      },
+    ]}
+    localKey="tab-index-about-story"
+  />

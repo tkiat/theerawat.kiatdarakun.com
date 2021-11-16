@@ -96,7 +96,7 @@ export const Items = (): React.ReactElement =>
             <li>Dishwasher: I make myself (from pre-made ingredients)</li>
             <li>Soap: I prefer bar soap like Asepso over a liquid one except for camping</li>
             <li>Shampoo: typical one from supermarket. I would like to try making my ownhair shampoo but everybody else seems to discourage that idea</li>
-            <li>Toothpaste: I pretty much prefer tooth powder like Viset-Niyom. </li>
+            <li>Toothpaste: I pretty much use tooth powder like Viset-Niyom before bed. Since its flavor is quite too strong, I usually use typical toothpaste in the morning.</li>
           </ul>
         </MyReactTooltip>
       </li>
