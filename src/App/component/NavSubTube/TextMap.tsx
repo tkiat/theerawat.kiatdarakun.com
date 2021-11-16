@@ -6,6 +6,7 @@ import {ReactComponent as UpperDBorder} from './TextMap/_D-border.svg'
 import {ReactComponent as UpperEBorder} from './TextMap/_E-border.svg'
 import {ReactComponent as UpperFBorder} from './TextMap/_F-border.svg'
 import {ReactComponent as UpperGBorder} from './TextMap/_G-border.svg'
+import {ReactComponent as UpperHBorder} from './TextMap/_H-border.svg'
 import {ReactComponent as UpperIBorder} from './TextMap/_I-border.svg'
 import {ReactComponent as UpperLBorder} from './TextMap/_L-border.svg'
 import {ReactComponent as UpperMBorder} from './TextMap/_M-border.svg'
@@ -25,6 +26,7 @@ import {ReactComponent as UpperDMask} from './TextMap/_D-mask.svg'
 import {ReactComponent as UpperEMask} from './TextMap/_E-mask.svg'
 import {ReactComponent as UpperFMask} from './TextMap/_F-mask.svg'
 import {ReactComponent as UpperGMask} from './TextMap/_G-mask.svg'
+import {ReactComponent as UpperHMask} from './TextMap/_H-mask.svg'
 import {ReactComponent as UpperIMask} from './TextMap/_I-mask.svg'
 import {ReactComponent as UpperLMask} from './TextMap/_L-mask.svg'
 import {ReactComponent as UpperMMask} from './TextMap/_M-mask.svg'
@@ -93,6 +95,7 @@ export const mapping: P = {
     E: <UpperEBorder />,
     F: <UpperFBorder />,
     G: <UpperGBorder />,
+    H: <UpperHBorder />,
     I: <UpperIBorder />,
     L: <UpperLBorder />,
     M: <UpperMBorder />,
@@ -136,6 +139,7 @@ export const mapping: P = {
     E: <UpperEMask />,
     F: <UpperFMask />,
     G: <UpperGMask />,
+    H: <UpperHMask />,
     I: <UpperIMask />,
     L: <UpperLMask />,
     M: <UpperMMask />,

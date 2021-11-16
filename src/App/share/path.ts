@@ -3,7 +3,7 @@ import {isType} from './general'
 // definitions ----------------------------------------------------------------
 export type PathObject = typeof pathObject
 export const pathObject = {
-  'about': ['intro', 'character', 'story', 'credits'],
+  'about': ['hi', 'character', 'story', 'credits'],
   'activity': ['create', 'consume', 'events'],
   'resume': [''],
 } as const
