@@ -65,7 +65,7 @@ export const mkDuckWing = (key: string): UserAdjustable<string> => {
 
 export const mkTubeStroke = (key: string): UserAdjustable<string> => {
   const f = (base: BaseTheme, time: Time): string =>
-    hslToString({...getBaseThemeHS(base), l: time === 'day' ? 25 : 75})
+    hslToString({...getBaseThemeHS(base), l: time === 'day' ? 25 : 65})
   return {
     custom: localStorage.getItem(mkLocalKey(key)) ?? 'rgb(128, 128, 128)',
     mapping: mkMapping(f),
@@ -75,7 +75,7 @@ export const mkTubeStroke = (key: string): UserAdjustable<string> => {
 export const mkTubeWater = (key: string): UserAdjustable<string> => {
   const f = (base: BaseTheme, time: Time): string => {
     const {h, s} = getBaseThemeHS(base)
-    const [l, a] = time === 'day' ? [50, 0.9] : [50, 0.5]
+    const [l, a] = time === 'day' ? [50, 0.9] : [40, 0.8]
     return hslaToString({h: h + 180, s, l, a})
   }
   return {

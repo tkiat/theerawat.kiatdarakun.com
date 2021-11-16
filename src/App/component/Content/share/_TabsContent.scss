@@ -13,7 +13,7 @@
     .item {
       font-size: 1em;
       margin: 3px 2px 2px 2px;
-      padding: 10px;
+      padding: clamp(1px, 1vw, 10px);
 
       &--button {
         @include m.hsl(--border-color, 180, 0%, f.dayOrDark(15%, 70%));
