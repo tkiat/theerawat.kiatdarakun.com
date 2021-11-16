@@ -75,7 +75,7 @@ export const mkTubeStroke = (key: string): UserAdjustable<string> => {
 export const mkTubeWater = (key: string): UserAdjustable<string> => {
   const f = (base: BaseTheme, time: Time): string => {
     const {h, s} = getBaseThemeHS(base)
-    const [l, a] = time === 'day' ? [50, 0.9] : [30, 0.9]
+    const [l, a] = time === 'day' ? [50, 0.9] : [50, 0.5]
     return hslaToString({h: h + 180, s, l, a})
   }
   return {
