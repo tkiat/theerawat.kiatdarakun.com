@@ -1,0 +1,6 @@
+<svg class="valve-terminator" width="600" height="180" preserveAspectRatio="xMinYMid slice" version="1.1" viewBox="0 0 158.75 47.625" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(160.89 1.6212e-5)">
+    <rect class="valve-border__rect" transform="rotate(39.542)" x="-116.23" y="98.352" width="1.7477" height="12.84" stroke-width=".60834"/>
+    <path class="valve-border__rect" d="m-160.89-1.6212e-5v47.625h158.75v-4.2819h-154.47v-39.057h154.47v-4.286h-154.47z" stroke-width=".99314"/>
+  </g>
+</svg>

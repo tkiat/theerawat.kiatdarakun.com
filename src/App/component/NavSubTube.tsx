@@ -6,6 +6,7 @@ import {Path, pathObject} from 'src/App/share/path'
 
 import {NodeText} from './NavSubTube/NodeText'
 import {NodeValve} from './NavSubTube/NodeValve'
+import {ReactComponent as Terminator} from "./NavSubTube/NodeValve/terminator.svg"
 import {moveCurrentNode} from './NavSubTube/moveCurrentNode'
 
 const stepMs = 500
@@ -17,6 +18,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
   return (
     <nav className="nav-tube">
       <ul className="nav-tube__list">
+        <Terminator />
         {pathObject[path.current].map((x, i) => {
           const cur = pathObject[path.current].
             findIndex(x => x === path.mapping[path.current])
@@ -40,6 +42,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
           )}
           </React.Fragment>
         )})}
+        <Terminator style={{transform: "rotate(180deg)"}}/>
       </ul>
     </nav>
   )

@@ -25,4 +25,8 @@
 
     @include m.hsl(fill, 0, 0%, f.dayOrDark(97%, 5%));
   }
+  &-terminator {
+    @extend .valve-border;
+    width: 25px;
+  }
 }
