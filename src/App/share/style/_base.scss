@@ -65,8 +65,6 @@ h1, h2, h3, a, button, strong {
 
   color: var(--color);
   background-color: var(--background-color);
-/*   @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%)); */
-/*   @include m.hsl(background-color, 0, 0%, f.dayOrDark(97%, 3%)); */
   &.waiting {
     cursor: not-allowed;
     &:active {
@@ -94,6 +92,7 @@ a {
   }
   &:hover {
     @include m.hsl(color, 180, 0%, f.dayOrDark(25%, 75%));
+    font-weight: bold;
     transition: 500ms;
   }
   &:hover:after {

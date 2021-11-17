@@ -1,11 +1,15 @@
 .tooltip {
   font-size: 0.9em !important;
   cursor: help;
-  background: var(--highlight-color) !important;
-  color: var(--background-color) !important;
+  background: var(--background-color) !important;
+  color: var(--color) !important;
+  border: 1px dotted var(--highlight-color) !important;
   opacity: 1 !important;
-  li::marker {
-    color: var(--background-color);
+  ul {
+    padding-left: 1em;
+  }
+  li {
+    margin: 0;
   }
 }
 .tooltip-front {

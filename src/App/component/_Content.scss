@@ -8,7 +8,6 @@
   padding: 0 10px;
   width: calc(100% - var(--sidebar-width));
 
-/*   @include m.hsla(background-color, 0, 0%, f.dayOrDark(90%, 5%), 0.5); */
   overflow-y: auto;
 /*   z-index: 1; */
   li::marker {
