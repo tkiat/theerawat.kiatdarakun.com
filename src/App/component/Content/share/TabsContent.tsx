@@ -10,17 +10,6 @@ type TabItem = {title: string, content?: React.ReactElement}
 type P = {items: TabItem[], localKey: string}
 export const TabsContent = ({items, localKey}: P): React.ReactElement => {
   const [cur, setCur] = useImmer(mkInitIndex(localKey))
-  const curRef = React.useRef<number>(cur)
-  React.useEffect(() => {
-    const cleanup = () =>
-      localStorage.setItem(localKey, curRef.current.toString())
-    window.addEventListener("beforeunload", cleanup)
-    return () => {
-      cleanup()
-      window.removeEventListener("beforeunload", cleanup)
-    }
-  }, [])
-
   return (
     <>
       <div className="tab-content">
@@ -37,7 +26,7 @@ export const TabsContent = ({items, localKey}: P): React.ReactElement => {
               key={i}
               onClick={() => {
                 setCur(i)
-                curRef.current = i
+                localStorage.setItem(localKey, i.toString())
               }}
               aria-controls={"panel" + i}
               aria-selected={cur === i ? "true" : "false"}

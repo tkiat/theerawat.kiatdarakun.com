@@ -4,7 +4,7 @@ import {ThemeObject, wavesKey} from 'src/App/share/theme'
 import {WaveConfigs, drawWaves, moveItemsAlongWave} from './wave'
 
 const itemOffset = 20
-const fps = 20, frameInterval = Math.round(1000 / fps)
+const approxFps = 20, frameInterval = Math.round(1000 / approxFps)
 
 type P = {theme: ThemeObject, waveConfigs: React.MutableRefObject<WaveConfigs>}
 export const DrawCanvas = ({theme, waveConfigs}: P):
@@ -25,10 +25,10 @@ export const DrawCanvas = ({theme, waveConfigs}: P):
       document.body.querySelectorAll('.nav-main') as NodeListOf<HTMLElement>
     let animationFrameId: number
 
-    const waves = waveConfigs.current.waves
     const physics = waveConfigs.current.physics
 
     const updateCanvas = () => {
+      const waves = waveConfigs.current.waves
       drawWaves(context, waves, physics, waveColors.current)
       moveItemsAlongWave(itemsOnWave, waves[waves.length - 1], itemOffset)
     }
