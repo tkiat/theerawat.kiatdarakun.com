@@ -1,6 +1,6 @@
 import React from "react"
 
-import {MyReactTooltip} from "../../share/MyReactTooltip"
+import {MyTooltip} from "../../share/MyTooltip"
 
 export const Personality = (): React.ReactElement =>
   <ul>
@@ -9,7 +9,7 @@ export const Personality = (): React.ReactElement =>
 
       <a href="https://www.16personalities.com/">MBTI</a>
       &nbsp;(
-      <MyReactTooltip id="tooltip-mbti" text="Result">
+      <MyTooltip id="tooltip-mbti" text="Result">
         <p>Taken on 31 Mar 2021</p>
         <ul>
           <li>(I)ntroverted (79%) - (E)xtraverted</li>
@@ -18,13 +18,13 @@ export const Personality = (): React.ReactElement =>
           <li>(J)udging(58%) - (P)rospecting</li>
           <li>(A)ssertive (65%) - (T)erbulent</li>
         </ul>
-      </MyReactTooltip>
+      </MyTooltip>
       )
 
       &nbsp;|&nbsp;
       <a href="https://openpsychometrics.org/">Big 5</a>
       &nbsp;(
-      <MyReactTooltip id="tooltip-big5" text="Result">
+      <MyTooltip id="tooltip-big5" text="Result">
         <p>Taken on 31 Mar 2021</p>
         <ul>
           <li>Extroversion: 11 (percentile)</li>
@@ -33,7 +33,7 @@ export const Personality = (): React.ReactElement =>
           <li>Conscientiousness: 95</li>
           <li>Intellect/Imagination: 46</li>
         </ul>
-      </MyReactTooltip>
+      </MyTooltip>
       )
     </li>
     <li>
@@ -47,32 +47,32 @@ export const Personality = (): React.ReactElement =>
     </li>
     <li>
       <span className="bold highlight">My Ideal: </span>
-      <MyReactTooltip id="tooltip-ideal-job" text="Job">
+      <MyTooltip id="tooltip-ideal-job" text="Job">
         Can be litreally anywhere but very close to my living place, which can be mostly anywhere. I wish to live in a single-room apartment.
-      </MyReactTooltip>
+      </MyTooltip>
 
       &nbsp;|&nbsp;
-      <MyReactTooltip id="tooltip-ideal-computer" text="Computer">
+      <MyTooltip id="tooltip-ideal-computer" text="Computer">
         A blob-free coreboot-capable Laptop with red button on the keyboard like Thinkpad X200.
-      </MyReactTooltip>
+      </MyTooltip>
 
       &nbsp;|&nbsp;
-      <MyReactTooltip id="tooltip-ideal-software" text="Software">
+      <MyTooltip id="tooltip-ideal-software" text="Software">
         <ul>
           <li>FOSS for critical software installed on my devices like OS</li>
           <li>Open source for any software installed on my devices</li>
           <li>The rest can be closed source</li>
         </ul>
-      </MyReactTooltip>
+      </MyTooltip>
 
       &nbsp;|&nbsp;
-      <MyReactTooltip id="tooltip-ideal-superpower" text="Superpower">
+      <MyTooltip id="tooltip-ideal-superpower" text="Superpower">
         I want none. With great power comes great responsibilities.
-      </MyReactTooltip>
+      </MyTooltip>
 
       &nbsp;|&nbsp;
-      <MyReactTooltip id="tooltip-ideal-wife" text="Wife">
+      <MyTooltip id="tooltip-ideal-wife" text="Wife">
         Compatible with my purpose
-      </MyReactTooltip>
+      </MyTooltip>
     </li>
   </ul>

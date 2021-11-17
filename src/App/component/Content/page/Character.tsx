@@ -1,9 +1,9 @@
 import React from "react"
 
 import {TabsContent} from "../share"
-import {PurposeAndGoals} from "./Character/PurposeAndGoals"
 import {Items} from "./Character/Items"
 import {Personality} from "./Character/Personality"
+import {PurposeAndGoals} from "./Character/PurposeAndGoals"
 import {WorldView} from "./Character/WorldView"
 
 export const Character = (): React.ReactElement =>

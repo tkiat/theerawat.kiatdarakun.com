@@ -1,7 +1,7 @@
 import React from "react"
 import ReactTooltip from "react-tooltip"
 
-export const MyReactTooltip = (props: any): React.ReactElement =>
+export const MyTooltip = (props: any): React.ReactElement =>
   <>
     <span className="tooltip-front" data-tip data-for={props.id}>{props.text}</span>
     <ReactTooltip
@@ -16,3 +16,8 @@ export const MyReactTooltip = (props: any): React.ReactElement =>
       {props.children}
     </ReactTooltip>
   </>
+
+export const MyTooltipWithDelay = (props: any): React.ReactElement =>
+  <MyTooltip delayHide={500} delayUpdate={500} {...props}>
+    {props.children}
+  </MyTooltip>
