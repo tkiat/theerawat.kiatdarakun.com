@@ -5,24 +5,24 @@ import {MyReactTooltip} from "../../share/MyReactTooltip"
 export const MasterDegree = (): React.ReactElement =>
   <>
     <h1>24 - 26 Years</h1>
-    <div>I was still very ignorant about the direction in life but I felt that pursuing a Master's degree abroad was the best investment to do. And apart from the Cambodia border, I hadn't been outside of my country before. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of the&nbsp;
+    <div>I was still very ignorant about the direction in life but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
       <MyReactTooltip id="tt-s-ranking" text="ranking">
-        This was actually quite useless because many German universities have high standard. The area of study and thesis topics are more important in my opinion.
+        This was actually quite useless because many German universities have a similarly high standard. The area of study and thesis topics are more important in my opinion.
       </MyReactTooltip>
-      . The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
+      , and the fact that I hadn't been outside of my country apart from the Cambodia border. The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
       <MyReactTooltip id="tt-s-rwthfee" text="social contribution fee">
-        It costed me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I also could take the university cafeteria which was usually cheaper than eating outside.
+        It cost me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I also could take the university cafeteria which was usually cheaper than eating outside.
       </MyReactTooltip>
       . The application for RWTH Aachen required a bit of&nbsp;
       <MyReactTooltip id="tt-s-rwthprep" text="preparation">
-        I needed to send my IELTS scores and also open letters of recommendations. The annoying part was that they also require me taking GRE (which costed around 180 USD). I was so lazy that I took only one day to prepare it. The score was not nice except the qualitative section. I had to send applications via mail also.
+        I needed to send my IELTS scores and also open letters of recommendation. The annoying part was that they also require me to take GRE test (which cost around 180 USD). I was so lazy that I took only one day to prepare it. The score was not nice except for the qualitative section. I had to send applications via mail also.
       </MyReactTooltip>
       &nbsp;but I did it anyway.
     </div><br/>
     <div>
       On the first day of arrival, I had the appointment with&nbsp;
       <MyReactTooltip id="tt-s-twostudents" text="two kind Thai students">
-        One met me at Cologne and one took a taxi with me from Aachen Hofbahnhof (train station) to my room. I just met an unknown German lady (probably like 50 year old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
+        One met me at Cologne and one took a taxi with me from Aachen Hofbahnhof (train station) to my room. I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
       </MyReactTooltip>
       &nbsp;who will take me to my single-room apartment. I adapted quickly to a new&nbsp;
       <MyReactTooltip id="tt-s-lifestyle" text="lifestyle">
@@ -35,21 +35,42 @@ export const MasterDegree = (): React.ReactElement =>
       </MyReactTooltip>
       , and finally joined the&nbsp;
       <MyReactTooltip id="tt-s-orientation" text="orientation">
-        This was when I realized more than half was Indian. A very little chinese was here in my batch which was a little surprising. There was only one German. If you want to meet German in class, take a class in German, not in English.
+        This was when I realized more than half was Indian. A very little Chinese was here in my batch which was a little surprising. There was only one German. If you want to meet German in class, take a class in German, not in English.
       </MyReactTooltip>
       . The&nbsp;
       <MyReactTooltip id="tt-s-firstsem" text="first semester">
-        <p>I took all the courses as many as possible because I didn't have anything better to do. The exam here was taken only one time at the end of the semester and very short (15 minute oral exam or 1.5 hours written exam).</p>
+        <p>I took all the courses as many as possible because I didn't have anything better to do. The exam here was taken only one time at the end of the semester and very short (15-minute oral exam or 1.5 hours written exam).</p>
         <p>In my opinion, if you believe you cannot process the exam quickly, don't come. You will be rejected from the university if you fail the exam of the same course three times in a row.</p>
       </MyReactTooltip>
       &nbsp;passed quickly. The second semester was really interesting to me as I will share the same&nbsp;
       <MyReactTooltip id="tt-s-anilroom" text="room">
-        It costed me only around 210 EUR including internet, water, and electrity unlike 360 EUR in the previous apartment. And the best of all, it has balcony! Drinking beer over there during the summer was like a heaven!
+        It cost me only around 210 EUR including internet, water, and electricity unlike 360 EUR in the previous apartment. And best of all, it has a balcony! Drinking beer over there during the summer was like heaven!
       </MyReactTooltip>
-      &nbsp;as a fellow indian batchmate from Karnataka, India. The&nbsp;
-      <MyReactTooltip id="tt-s-thirdsem" text="third semester">
-        <p>TODO</p>
+      &nbsp;as a fellow Indian batchmate from Karnataka, India. I was almost idle during the third semester where I didn't get the internship offer so I applied for a&nbsp;
+      <MyReactTooltip id="tt-s-rwthgym" text="gym membership">
+        <p>The membership required participants to enroll in the introductory course first which lasted a few days and cost me 30 EUR. I, along with the other 5 German students, were introduced to how to use each machine but the trainer had to speak to me in English. The bathroom was full of naked people but I used a separate room myself because I didn't want to hurt their ego. Smaller is better.</p>
       </MyReactTooltip>
-      &nbsp;was
+      &nbsp;and travel with my&nbsp;
+      <MyReactTooltip id="tt-s-germanybicycle" text="bicycle">
+        <p>I won the touring bike from the auction on eBay for 140 EUR. It was cheap given the quality: too many gears, water bottle holder, two seats, and 28-inch wheel size. I took the free train to Duesseldorf where I met the seller. In Germany, you have to pay for a ticket for a bicycle if you carry it on a train. Make sense!</p>
+      </MyReactTooltip>
+      &nbsp;
+      <MyReactTooltip id="tt-s-rwthnearbytrip" text="nearby">
+        <p>Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot and it was full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35km destination. There was an American war memorial on the way to the city.</p>
+        <p>Monschau is a very beautiful town with some small rivers and a castle. Bar the constant flux of visitors, it was very nice to live there. It took me almost 2 hours by bike because of the slope but I spent only 1 hour on the way back. I went there two times by bike, alone.</p>
+      </MyReactTooltip>
+      . In general, you should expect to spend a little more than&nbsp;
+      <MyReactTooltip id="tt-s-masterlength" text="two years">
+        <p>Each semester lasts 6 months (including thesis and internship for around 6 months each). A transitioning gap should happen as a student has to find the thesis and the internship himself. There is simply no hand-holding whatsoever.</p>
+      </MyReactTooltip>
+      &nbsp;to finish the degree.
+    </div>
+    <br />
+    <div>
+      I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the practical test&nbsp;
+      <MyReactTooltip id="tt-s-mscthesis" text="stuff">
+        <p>It was a test on FPGA boards about the coding scheme that my supervisor researched. He wanted the practical test to confirm his theory. I learn about how to hack the board and carry out the test methodologically.</p>
+      </MyReactTooltip>
+      &nbsp;which should help me find the corporate internship as well.
     </div>
   </>
