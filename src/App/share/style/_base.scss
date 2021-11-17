@@ -88,15 +88,14 @@ a {
     height: 2px;
     display: block;
     @include m.hsl(background-color, 180, 0%, f.dayOrDark(25%, 75%));
-    transition: 500ms;
+    transition: width 500ms;
   }
   &:hover {
     @include m.hsl(color, 180, 0%, f.dayOrDark(25%, 75%));
     font-weight: bold;
-    transition: 500ms;
-  }
-  &:hover:after {
-    width: 0;
+    &:after {
+      width: 0;
+    }
   }
 }
 
