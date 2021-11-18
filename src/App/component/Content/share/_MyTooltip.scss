@@ -11,6 +11,9 @@
   li {
     margin: 0;
   }
+  &--withdelay {
+    cursor: unset;
+  }
 }
 .tooltip-front {
   cursor: help;
