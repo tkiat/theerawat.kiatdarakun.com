@@ -1,0 +1,21 @@
+[
+  {
+    "title": "This Website",
+    "src": "https://github.com/tkiat/tkiat.github.io",
+    "desc": "A very customizable personal website",
+    "keyword": "[SCSS, Typescript, React.js, Inkscape]"
+  },
+  {
+    "title": "A Freedom Blog",
+    "src": "https://github.com/tkiat/a-freedom-blog",
+    "desc": "A blog that promotes freedom",
+    "keyword": "[SCSS, Purescript, React.js]"
+  },
+  {
+    "title": "Interactive Vim Theme Generator",
+    "src": "https://github.com/tkiat/vim-custom-theme",
+    "desc": "Oversimplified and interactive",
+    "keyword": "[SCSS, React.js]",
+    "hidden": true
+  }
+]

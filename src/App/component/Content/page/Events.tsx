@@ -1,27 +1,14 @@
 import React from "react"
 
-import {Markdown, TabsContent} from "../share"
-import * as data from "./Events/data"
+import {TabsContent} from "../share"
 
 export const Events = (): React.ReactElement =>
   <TabsContent
     items={[
       {
-        title: "Reading",
-        content: <Markdown content={data.reading} />,
-      },
-      {
-        title: "Content",
-        content: <Markdown content={data.content} />,
-      },
-      {
-        title: "Courses",
-        content: <Markdown content={data.courses} />,
-      },
-      {
-        title: "Archive",
-        content: <Markdown content={data.archive} />,
+        title: "TODO",
+        content: <></>,
       },
     ]}
-    localKey="tab-index-activity-general"
+    localKey="tab-index-activity-events"
   />
