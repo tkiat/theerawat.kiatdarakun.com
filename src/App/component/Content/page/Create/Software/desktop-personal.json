@@ -6,8 +6,14 @@
     "src": "https://github.com/tkiat/configs-and-scripts"
   },
   {
+    "title": "Nix Channel",
+    "desc": "Contain my fork programs. Still lazy to learn Flakes.",
+    "keyword": "[Nix]",
+    "src": "https://gitlab.com/tkiat/nix-channel"
+  },
+  {
     "title": "Guix Channel",
-    "desc": "My fork of suckless programs",
+    "desc": "Contain my fork programs",
     "keyword": "[Guile]",
     "src": "https://gitlab.com/tkiat/guix-channel"
   }

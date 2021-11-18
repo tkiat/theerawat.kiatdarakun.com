@@ -1,14 +1,21 @@
 import React from "react"
 
 import {MyTooltipWithDelay} from "../../share/MyTooltip"
-import desktopProjects from "./Software/desktop-project.json"
 import desktopPersonal from "./Software/desktop-personal.json"
+import desktopProjects from "./Software/desktop-project.json"
 import webProjects from "./Software/web-project.json"
 import webTasks from "./Software/web-task.json"
 import webToys from "./Software/web-toy.json"
 
-// TODO any
-const ProjectEntry = (p: any): React.ReactElement => {
+type Project={
+  desc: string,
+  hidden?: boolean,
+  keyword: string,
+  live?: string,
+  src?: string,
+  title: string,
+}
+const ProjectEntry = (p: Project): React.ReactElement => {
   const src = p.src && <span><a href={p.src}>Source</a> - </span>
   const live = p.live && <span><a href={p.live}>Live</a> - </span>
   return (
@@ -23,14 +30,14 @@ const ProjectEntry = (p: any): React.ReactElement => {
   )
 }
 
-const ProjectEntries = ({list}: {list: any}): React.ReactElement => {
+const ProjectEntries = ({list}: {list: Project[]}): React.ReactElement => {
   return (
     <>
     {list.map((x, i) =>
-      <>
+      <span key={i}>
         {!x.hidden && <ProjectEntry {...x} />}
         {list[i + 1] && !list[i + 1].hidden && " | "}
-      </>
+      </span>
     )}
     </>
   )
@@ -42,26 +49,26 @@ export const Software = (): React.ReactElement =>
     <ul>
       <li>
         <span className="bold highlight">Project: </span>
-        <ProjectEntries list={webProjects} />
+        <ProjectEntries list={webProjects as Project[]} />
       </li>
       <li>
         <span className="bold highlight">Task: </span>
-        <ProjectEntries list={webTasks} />
+        <ProjectEntries list={webTasks as Project[]} />
       </li>
       <li>
         <span className="bold highlight">Toy: </span>
-        <ProjectEntries list={webToys} />
+        <ProjectEntries list={webToys as Project[]} />
       </li>
     </ul>
     <h2>Desktop</h2>
     <ul>
       <li>
         <span className="bold highlight">Project: </span>
-        <ProjectEntries list={desktopProjects} />
+        <ProjectEntries list={desktopProjects as Project[]} />
       </li>
       <li>
         <span className="bold highlight">Personal: </span>
-        <ProjectEntries list={desktopPersonal} />
+        <ProjectEntries list={desktopPersonal as Project[]} />
       </li>
     </ul>
     <h2>Contributions</h2>
