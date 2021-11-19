@@ -25,7 +25,7 @@ export const mayApplyBaseTheme = (): Promise<Status> => {
   return mayApplyCustomStyle(id, rules)
 }
 
-export const mkCustomBase = (): BaseTheme => {
+export const mkCustomBaseTheme = (): BaseTheme => {
   const l = localStorage.getItem(localCustomBaseThemeKey)
   return isType(l, baseThemes) ? l : 'sakura'
 }

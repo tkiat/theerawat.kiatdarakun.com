@@ -31,7 +31,7 @@ export const WaveColorPickers = (): React.ReactElement => {
       <RgbaPickerSidebar
         key={i}
         color={colors[i]}
-        onChange={rgba => setTheme(d => {d[wavesKey].custom[i] = rgba})}
+        onChange={rgba => setTheme(d => {d.custom[wavesKey][i] = rgba})}
         title={x}
       />
     )}
@@ -48,7 +48,7 @@ const DuckOrTubeColorPickers = (keys: readonly DuckAndTubeKeys[]):
       <RgbPickerSidebar
         key={i}
         color={theme.get(x)}
-        onChange={(rgb: string) => setTheme(d => {d[x].custom = rgb})}
+        onChange={(rgb: string) => setTheme(d => {d.custom[x] = rgb})}
         title={x}
       />
     )}

@@ -14,9 +14,9 @@ export const BaseThemePicker = (): React.ReactElement => {
             <button
               key={x}
               className={'basetheme-picker__picker' +
-                (theme.customBase === x ?
+                (theme.custom.baseTheme === x ?
                   ' basetheme-picker__picker--active' : '')}
-              onClick={() => {setTheme(d => {d.customBase = x})}}
+              onClick={() => {setTheme(d => {d.custom.baseTheme = x})}}
               theme-base={x}
             >
               {capitalize(x)}
