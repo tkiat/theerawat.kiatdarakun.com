@@ -6,7 +6,7 @@ const mkInitIndex = (k: string) => {
   return isNaN(temp) ? 0 : temp
 }
 
-type TabItem = {title: string, content?: React.ReactElement}
+type TabItem = {title: string, content: React.ReactElement}
 type P = {items: TabItem[], localKey: string}
 export const TabsContent = ({items, localKey}: P): React.ReactElement => {
   const [cur, setCur] = useImmer(mkInitIndex(localKey))
@@ -16,23 +16,22 @@ export const TabsContent = ({items, localKey}: P): React.ReactElement => {
         <div className="tab-content__tablist" role="tablist"
              aria-label="content tab-content"
         >
-        {items.map(({content, title}, i) => !content
-          ? <div className="item item--decorate" key={i}>{title + " >"}</div>
-          : <button
-              className={"item item--button" +
-                (cur === i ? " item--active" : "")}
-              role="tab"
-              id={"tab" + i}
-              key={i}
-              onClick={() => {
-                setCur(i)
-                localStorage.setItem(localKey, i.toString())
-              }}
-              aria-controls={"panel" + i}
-              aria-selected={cur === i ? "true" : "false"}
-            >
-              {title}
-            </button>
+        {items.map(({title}, i) =>
+          <button
+            className={"item item--button" +
+              (cur === i ? " item--active" : "")}
+            role="tab"
+            id={"tab" + i}
+            key={i}
+            onClick={() => {
+              setCur(i)
+              localStorage.setItem(localKey, i.toString())
+            }}
+            aria-controls={"panel" + i}
+            aria-selected={cur === i ? "true" : "false"}
+          >
+            {title}
+          </button>
         )}
         </div>
       </div>
