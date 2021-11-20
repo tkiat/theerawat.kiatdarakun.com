@@ -22,6 +22,7 @@ export type WavesKey = typeof wavesKey
 
 type Mapping<T> = Record<BaseTheme, Record<Time, T>>
 type MappingFunc<T> = (base: BaseTheme, time: Time) => T
+
 // utilities ------------------------------------------------------------------
 export const addCustomPrefix = (x: string) => 'custom-' + x
 

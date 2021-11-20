@@ -3,8 +3,8 @@ import {Path, adaptPathToUrl, mainPaths, pathObject} from './path'
 const a: Path = {
   current: mainPaths[0],
   mapping: {
-    about: 'intro',
-    activity: 'lifestory',
+    about: 'hi',
+    activity: 'create',
     resume: '',
   }
 }

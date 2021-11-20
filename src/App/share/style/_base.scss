@@ -92,7 +92,6 @@ a {
   }
   &:hover {
     @include m.hsl(color, 180, 0%, f.dayOrDark(25%, 75%));
-    font-weight: bold;
     &:after {
       width: 0;
     }

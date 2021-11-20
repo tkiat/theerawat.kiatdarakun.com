@@ -10,9 +10,6 @@ import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalSty
 
 import 'src/App/share/style/main.scss'
 
-// TODO const custom closure in themeobject
-// TODO letter S should have higher spaces
-
 const numPointsOnWave = 5 // <number of ducks> + 1
 const numWave = wavesSubKeys.length
 
