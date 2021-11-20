@@ -4,7 +4,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const WorkingGermany = (): React.ReactElement =>
   <>
-    <h1>26 - 28 Years</h1>
+    <h2>26 - 28 Years</h2>
     <div>Just before the end of my thesis I only applied to&nbsp;
       <MyTooltip text="National Instruments Dresden">
         A company in the east Germany acquired by National Instruments some time ago. It offers a testing solution mainly in the telecommunications area. People over there could speak German and also had German-like faces except one or two guys and some interns only.

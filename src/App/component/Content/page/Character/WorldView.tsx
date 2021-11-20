@@ -4,6 +4,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const WorldView = (): React.ReactElement =>
   <>
+    <p>My world views</p>
     <ul>
       <li>
         <span className="bold highlight">Tech: </span>
