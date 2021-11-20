@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Intro = (): React.ReactElement => (
-  <div className="content-intro">
+export const Hi = (): React.ReactElement => (
+  <div className="page-hi">
     <h1>
       <span role="img" aria-hidden="true">{'\u{1F600}'}</span>
       Hi! I am Theerawat.
