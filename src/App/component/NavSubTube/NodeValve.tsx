@@ -1,7 +1,7 @@
 import React from "react"
 
-import {ReactComponent as ValveBorder} from "./NodeValve/border.svg"
-import {ReactComponent as ValveMask} from "./NodeValve/mask.svg"
+import {ReactComponent as ValveBorder} from "./NodeValve/valve-border.svg"
+import {ReactComponent as ValveMask} from "./NodeValve/valve-mask.svg"
 import {NodeHighlighter} from "./NodeHighlighter"
 
 type P = {cur: number, i: number}

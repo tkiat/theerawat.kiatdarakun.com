@@ -1,0 +1,10 @@
+<svg class='letter-border' width="120.72" height="180" version="1.1" viewBox="0 0 31.94 47.625" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="m-uppercase-border">
+      <path d="m0 0v16.184h5v16.98h-2v113.6h1.6113v17.051h-4.6113v16.184h120.72v-16.184h-4.7207v-17.051h1.7207v-113.6h-1.6973v-16.98h4.6973v-16.184zm25 16.184h71.023v16.98h-1.8242l-33.92 64.641-33.6-64.641h-1.6797zm0.08008 56.021 29.119 55.52h12.32l29.121-55.52v74.561h1.8594v17.051h-74.389v-17.051h1.9688z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(1.524)">
+    <path class='letter-border__path' transform="matrix(.26458 0 0 .26458 -1.524 0)" d="m0 16.184h5v16.98h-2v113.6h1.6113v17.051h-4.6113m0 16.184h120.72m0-16.184h-4.7207v-17.051h1.7207v-113.6h-1.6973v-16.98h4.6973m0-16.184h-120.72m25 16.184h71.023v16.98h-1.8242l-33.92 64.641-33.6-64.641h-1.6797zm0.08008 56.021 29.119 55.52h12.32l29.121-55.52v74.561h1.8594v17.051h-74.389v-17.051h1.9688z" clip-path="url(#m-uppercase-border)" fill="none" stroke="#000" stroke-linecap="square" stroke-miterlimit="4.2" stroke-width="6"/>
+  </g>
+</svg>

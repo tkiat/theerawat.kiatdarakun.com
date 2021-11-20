@@ -42,7 +42,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
           )}
           </React.Fragment>
         )})}
-        <Terminator style={{transform: "rotate(180deg)"}}/>
+        <Terminator style={{transform: "scaleX(-1)"}} />
       </ul>
     </nav>
   )

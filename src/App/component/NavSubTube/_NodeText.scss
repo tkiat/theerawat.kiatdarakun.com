@@ -6,9 +6,10 @@
   position: relative;
   height: 100%;
   &:first-child {
-    margin-left: -1px; /* remove space between adjacent SVGs */
+    margin-left: -1px;
   }
-  margin-right: -1px; /* remove space between adjacent SVGs */
+  margin-left: -0.5px;
+  margin-right: -1.1px;
   &-border {
     height: 100%;
     width: auto;

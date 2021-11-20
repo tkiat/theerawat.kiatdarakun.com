@@ -1,0 +1,10 @@
+<svg class='letter-border' width="82.32" height="180" version="1.1" viewBox="0 0 21.78 47.625" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="f-uppercase-border">
+      <path d="m0 0v16.184h30.436v16.98h-27.436v113.6h3.5v17.051h-6.5v16.184h82.32v-16.184h-61.367v-17.051h4.127v-47.041h45.119v-17.92h-45.119v-29.279h54.24v-19.361h-27.436v-16.98h30.436v-16.184z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(1.524)">
+    <path class='letter-border__path' transform="matrix(.26458 0 0 .26458 -1.524 0)" d="m0 16.184h30.436v16.98h-27.436v113.6h3.5v17.051h-6.5m0 16.184h82.32m0-16.184h-61.367v-17.051h4.127v-47.041h45.119v-17.92h-45.119v-29.279h54.24v-19.361h-27.436v-16.98h30.436m0-16.184h-82.32" clip-path="url(#f-uppercase-border)" fill="none" stroke="#000" stroke-width="6"/>
+  </g>
+</svg>

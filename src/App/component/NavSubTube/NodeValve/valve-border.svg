@@ -1,0 +1,14 @@
+<svg class="valve-border" preserveAspectRatio="xMidYMid slice" width="600" height="180" version="1.1" viewBox="0 0 158.75 47.625" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipPath5654">
+      <path d="m291.91 0v163.82h-291.91v16.184h308.09v-163.82h291.91v-16.184h-291.91z" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(160.89 1.6212e-5)">
+    <path class="valve-border__path" transform="matrix(.26458 0 0 .26458 -160.89 -1.6212e-5)" d="m0 180h308.09v-163.82h291.91m0-16.184h-308.09v163.82h-291.91" clip-path="url(#clipPath5654)" fill="none" stroke="#000" stroke-width="6"/>
+    <g transform="translate(8.0122 -11.394)">
+      <rect class="valve-border__rect" x="-168.9" y="11.394" width="77.234" height="4.282"/>
+      <rect class="valve-border__rect" x="-87.387" y="54.736" width="77.234" height="4.282"/>
+    </g>
+  </g>
+</svg>
