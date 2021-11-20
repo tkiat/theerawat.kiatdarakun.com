@@ -6,7 +6,7 @@ import {Path, pathObject} from 'src/App/share/path'
 
 import {NodeText} from './NavSubTube/NodeText'
 import {NodeValve} from './NavSubTube/NodeValve'
-import {ReactComponent as Terminator} from "./NavSubTube/NodeValve/terminator.svg"
+import {ReactComponent as Terminator} from "./NavSubTube/NodeValve/valve-terminator.svg"
 import {moveCurrentNode} from './NavSubTube/moveCurrentNode'
 
 const stepMs = 500
