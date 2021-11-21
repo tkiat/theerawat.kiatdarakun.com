@@ -34,7 +34,7 @@ export const WorldView = (): React.ReactElement =>
         &nbsp;|&nbsp;
         <MyTooltip text="Proprietary Store" place="bottom">
           <p>It is understandable that Google Play and App Store restrict the users to their platform when he purchases an app because it is platform-specific. But, there is no need to tie something like a single-purchased movie to the iTunes app. It makes sense from a business prespective to do this but I find it disturbing. It gives a user a false notion of possession but in reality he just has the access right.</p>
-          <p>I deleted my Apple account (with around 30 movies) because of this. The subscriptions like Netflix and Apple Music, on the other hand, give user clear information about the duration and I find that more acceptable.</p>
+          <p>I deleted my Apple account (with around 30 movies) because of this. The subscriptions like Netflix and Apple Music, on the other hand, give the user clear information about the duration and I find that more acceptable.</p>
         </MyTooltip>
       </li>
       <li>

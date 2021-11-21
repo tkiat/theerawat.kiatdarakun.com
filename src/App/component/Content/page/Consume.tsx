@@ -8,12 +8,12 @@ export const Consume = (): React.ReactElement =>
   <TabsContent
     items={[
       {
-        title: "Course",
-        content: <Course />,
-      },
-      {
         title: "Book",
         content: <Book />,
+      },
+      {
+        title: "Course",
+        content: <Course />,
       },
     ]}
     localKey="tab-index-activity-consume"

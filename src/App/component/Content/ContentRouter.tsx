@@ -1,7 +1,7 @@
 import React from 'react'
 import {Router, RouteComponentProps} from '@reach/router'
 
-import {Character, Consume, Events, Create, Credits, Hi, NotFound, Resume, Story} from './page'
+import {Character, Consume, Create, Credits, Hi, NotFound, Resume, Story} from './page'
 
 import {pathToTestId} from 'src/App/share/general'
 import {pathObject} from 'src/App/share/path'
@@ -16,8 +16,7 @@ const mapping = {
   [paths[3]]: <Credits />,
   [paths[4]]: <Create />,
   [paths[5]]: <Consume />,
-  [paths[6]]: <Events />,
-  [paths[7]]: <Resume />,
+  [paths[6]]: <Resume />,
 }
 
 export const ContentRouter = (): React.ReactElement =>

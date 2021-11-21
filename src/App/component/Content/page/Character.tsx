@@ -10,7 +10,7 @@ export const Character = (): React.ReactElement =>
   <TabsContent
     items={[
       {
-        title: "Personality",
+        title: "General",
         content: <Personality />,
       },
       {

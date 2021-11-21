@@ -7,13 +7,13 @@
   },
   {
     "title": "Nix Channel",
-    "desc": "Contain my fork programs. Still lazy to learn Flakes.",
+    "desc": "Contain my forked repositories. Still lazy to learn Flakes.",
     "keyword": "[Nix]",
     "src": "https://gitlab.com/tkiat/nix-channel"
   },
   {
     "title": "Guix Channel",
-    "desc": "Contain my fork programs",
+    "desc": "Contain my forked repositories",
     "keyword": "[Guile]",
     "src": "https://gitlab.com/tkiat/guix-channel"
   }
