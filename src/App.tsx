@@ -11,6 +11,7 @@ import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalSty
 import 'src/App/share/style/main.scss'
 
 // TODO move all assets to assets folder alongside src?
+// TODO nav should be outside main because main is unique but nav shared
 
 const numPointsOnWave = 5 // <number of ducks> + 1
 const numWave = wavesSubKeys.length
