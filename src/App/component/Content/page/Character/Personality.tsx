@@ -46,7 +46,7 @@ export const Personality = (): React.ReactElement =>
         <span className="bold highlight">Outer Personality: </span>Quiet | Obsessed with Computer | Stable | Calm | Like to Ruminate | Dislike Pointless Arguments | Smile Less | Don't Gossip
       </li>
       <li>
-        <span className="bold highlight">Interest: </span>Coding | Functional Programming | Linux | Laptop | Sustainability | Philosophy of Freedom | Minimalism | Less Suffering Lifestyle
+        <span className="bold highlight">Interest: </span>Coding | Functional Programming | Linux | Laptop | Sustainability | Philosophy of Freedom | Minimalism
       </li>
       <li>
         <span className="bold highlight">Preference: </span>Rise Early | Tea | Warm Water | Simple Food | Linux | Smaller Form Factor/Openness over Performance | Less Stuff | My Own Container for Food and Drink | Bicycle | More Expensive Item that Last Longer | Repairable Gadgets over Quality | Growing Edible Rather than Decorative Plants | Solitude | Being Single | Compassion over Manner | Take a Short Bath Twice Daily | Brush Teeth Twice Daily | Clean Room Often

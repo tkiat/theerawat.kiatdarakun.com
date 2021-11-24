@@ -10,6 +10,8 @@ import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalSty
 
 import 'src/App/share/style/main.scss'
 
+// TODO move all assets to assets folder alongside src?
+
 const numPointsOnWave = 5 // <number of ducks> + 1
 const numWave = wavesSubKeys.length
 

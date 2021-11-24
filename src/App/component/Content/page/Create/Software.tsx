@@ -45,7 +45,7 @@ const ProjectEntries = ({list}: {list: Project[]}): React.ReactElement => {
 
 export const Software = (): React.ReactElement =>
   <>
-    <h2>Web</h2>
+    <p><span className="bold">Web: </span>SCSS, Typescript, React.js, and Purescript for front end</p>
     <ul>
       <li>
         <span className="bold highlight">Project: </span>
@@ -60,18 +60,23 @@ export const Software = (): React.ReactElement =>
         <ProjectEntries list={webToys as Project[]} />
       </li>
     </ul>
-    <h2>Desktop</h2>
+    <p><span className="bold">Desktop: </span>Haskell and Python</p>
     <ul>
       <li>
         <span className="bold highlight">Project: </span>
         <ProjectEntries list={desktopProjects as Project[]} />
       </li>
+    </ul>
+    <p><span className="bold">Configs & DevOps</span></p>
+    <ul>
       <li>
-        <span className="bold highlight">Personal: </span>
-        <ProjectEntries list={desktopPersonal as Project[]} />
+        <li>
+          <span className="bold highlight">Personal: </span>
+          <ProjectEntries list={desktopPersonal as Project[]} />
+        </li>
       </li>
     </ul>
-    <h2>Contributions</h2>
+    <p><span className="bold">Social: </span></p>
     <ul>
       <li>
         <span className="bold highlight">Others' Repositories: </span>
