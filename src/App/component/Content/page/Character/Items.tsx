@@ -4,7 +4,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const Items = (): React.ReactElement =>
   <>
-    <p>What I Have and What I Like</p>
+    <h1>What I Have and What I Like</h1>
     <ul>
       <li>
         <span className="bold highlight">Gadgets: </span>
