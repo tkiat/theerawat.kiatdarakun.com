@@ -51,7 +51,7 @@ const duckWingMapping = mkDefaultMapping(
 )
 const tubeStrokeMapping = mkDefaultMapping(
   (base: BaseTheme, time: Time): string =>
-    hslToString({...getBaseThemeHS(base), l: time === 'day' ? 25 : 75})
+    hslToString({...getBaseThemeHS(base), l: time === 'day' ? 25 : 85})
 )
 const tubeWaterMapping = mkDefaultMapping(
   (base: BaseTheme, time: Time): string => {

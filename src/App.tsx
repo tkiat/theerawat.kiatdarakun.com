@@ -3,14 +3,13 @@ import React from 'react'
 import {useImmer} from 'use-immer'
 
 import {Background, Canvas, Contact, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics, Title} from './App/component'
+import {appId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
 import {useViewportDimensions} from 'src/App/share/hook'
 import {Path, adaptPathToUrl, mkPath, storePath} from 'src/App/share/path'
 import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalStyle, mkThemeObject, wavesSubKeys, storeThemeObject, updateFavicon} from 'src/App/share/theme'
 
 import 'src/App/share/style/main.scss'
-
-// TODO only navMain not navtube should be outside main because navtube is inside main unlike navMain
 
 const numPointsOnWave = 5 // <number of ducks> + 1
 const numWave = wavesSubKeys.length
@@ -74,7 +73,7 @@ export const App = (): React.ReactElement => {
   const title = isMobile() && <Title title={path.mapping[path.current]} />
 
   return (
-    <div id="main" className="app" style={mkGlobalStyle(theme)}>
+    <div className="app" id={appId} style={mkGlobalStyle(theme)}>
       <NavMain path={path} setPath={setPath} />
       {navSub}
       <main className="app__main">

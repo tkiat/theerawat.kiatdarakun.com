@@ -1,5 +1,6 @@
 import React from 'react'
 
+import {sidebarId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
 import {WaveConfigs} from './Canvas/wave'
 import {BaseThemePicker}    from './Sidebar/BaseThemePicker'
@@ -18,7 +19,7 @@ export const Sidebar = ({willShowCustomMenu, waveConfigs}: P):
   <>
     <SidebarToggler />
 
-    <div className="sidebar" id="sidebar">
+    <div className="sidebar" id={sidebarId}>
       <section className="sidebar__section">
         <div className="sidebar__header">Wave</div>
         <WavePhysicsSliders waveConfigs={waveConfigs} />

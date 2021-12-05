@@ -1,3 +1,4 @@
+import {appId} from 'src/App/share/elementId'
 import {moveWater} from './moveWater'
 
 const isPositionValid = (x: number): boolean => x >= 0 && x % 2 === 0
@@ -8,7 +9,7 @@ export const moveCurrentNode = (
   stepMs: number,
   callback: Function
 ): void => {
-  const m = document.getElementById('main')
+  const m = document.getElementById(appId)
 
   new Promise<void>((resolve, reject) => {
     if (from === to) return {then: function() {}} // break promise chain
@@ -26,7 +27,7 @@ export const moveCurrentNode = (
     new Promise<void>((resolve, reject) => {
       if (!m) {
         callback()
-        reject('main not found')
+        reject('moveCurrentNode.ts: element of id "main" not found')
       } else {
         m.classList.toggle('waiting')
         resolve()
