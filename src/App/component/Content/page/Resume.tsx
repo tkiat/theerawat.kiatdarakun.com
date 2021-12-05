@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Resume = (): React.ReactElement =>
   <>
-    <h1>Work Experience</h1>
+    <h2>Work Experience</h2>
     <ul>
       <li>
         <strong>Feb 2017 - Jan 2018</strong> - <strong>Customer Care Agent</strong> - Arvato Bertelsmann - Berlin,
@@ -25,7 +25,7 @@ export const Resume = (): React.ReactElement =>
         <strong>Others</strong> - I used to be a tutor for students from primary school to university.
       </li>
     </ul>
-    <h1>Education</h1>
+    <h2>Education</h2>
     <ul>
       <li>
         <strong>2016</strong> - <strong>Msc. Communications Engineering</strong> -{' '}
@@ -42,16 +42,16 @@ export const Resume = (): React.ReactElement =>
         - First Class Honor - Thesis about character encodings
       </li>
     </ul>
-    <h1>Skills</h1>
+    <h2>Skills</h2>
     <ul>
       <li>
-        <strong>Coding</strong> - General front-end/back-end dev, Basic shell scripting, Linux, Git, Vim
+        <strong>Coding</strong> - General front-end dev, Basic shell scripting, Linux, Git, Vim
       </li>
       <li>
         <strong>Language</strong> - English (good), Thai (native), German (basic)
       </li>
     </ul>
-    <h1>Test</h1>
+    <h2>Test</h2>
     <ul>
       <li>
         <strong>2014</strong> - German DSM B1 Certificate
