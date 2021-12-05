@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ReactComponent as DuckSidebar} from './ItemSidebar/duck-sidebar.svg'
+import {ReactComponent as DuckSidebar} from 'assets/duck/duck-sidebar.svg'
 import {navMainSidebarId, toggleSidebar} from '../Sidebar/util/toggleSidebar'
 
 type P = {left: string}

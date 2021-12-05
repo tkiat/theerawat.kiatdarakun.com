@@ -1,12 +1,12 @@
 import React from 'react'
 import {Updater} from 'use-immer'
 
+import {ReactComponent as Terminator} from "assets/valve/valve-terminator.svg"
 import {capitalize} from 'src/App/share/general'
 import {Path, pathObject} from 'src/App/share/path'
 
 import {NodeText} from './NavSubTube/NodeText'
 import {NodeValve} from './NavSubTube/NodeValve'
-import {ReactComponent as Terminator} from "./NavSubTube/NodeValve/valve-terminator.svg"
 import {moveCurrentNode} from './NavSubTube/moveCurrentNode'
 
 const stepMs = 500

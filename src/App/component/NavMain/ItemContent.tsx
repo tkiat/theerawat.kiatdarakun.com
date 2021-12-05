@@ -1,9 +1,9 @@
 import {Link} from '@reach/router'
 import React from 'react'
 
-import {ReactComponent as DuckAboutMe} from './ItemContent/duck-aboutme.svg'
-import {ReactComponent as DuckHobby} from './ItemContent/duck-activity.svg'
-import {ReactComponent as DuckResume} from './ItemContent/duck-resume.svg'
+import {ReactComponent as DuckAboutMe} from 'assets/duck/duck-aboutme.svg'
+import {ReactComponent as DuckHobby} from 'assets/duck/duck-activity.svg'
+import {ReactComponent as DuckResume} from 'assets/duck/duck-resume.svg'
 import {capitalize} from 'src/App/share/general'
 import {MainPath} from 'src/App/share/path'
 

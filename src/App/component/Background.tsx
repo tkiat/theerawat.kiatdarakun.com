@@ -1,11 +1,11 @@
 import React from 'react'
 
-import {ThemeObject, baseThemes, getBaseTheme} from 'src/App/share/theme'
+import {ReactComponent as Desert} from 'assets/background/desert.svg'
+import {ReactComponent as Ocean} from 'assets/background/ocean.svg'
+import {ReactComponent as Sakura} from 'assets/background/sakura.svg'
+import {ReactComponent as Snow} from 'assets/background/snow.svg'
 
-import {ReactComponent as Desert} from './Background/desert.svg'
-import {ReactComponent as Ocean} from './Background/ocean.svg'
-import {ReactComponent as Sakura} from './Background/sakura.svg'
-import {ReactComponent as Snow} from './Background/snow.svg'
+import {ThemeObject, baseThemes, getBaseTheme} from 'src/App/share/theme'
 
 type P = {theme: ThemeObject}
 export const Background = ({theme}: P): React.ReactElement => [
