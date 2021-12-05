@@ -50,7 +50,7 @@ h1, h2, h3, a, button, strong {
   }
 }
 
-.main {
+.app {
   display: flex;
   flex-direction: row;
   position: relative;
@@ -89,6 +89,9 @@ h1, h2, h3, a, button, strong {
         transform: rotate(-45deg);
       }
     }
+  }
+  &__main {
+    display: flex;
   }
 }
 

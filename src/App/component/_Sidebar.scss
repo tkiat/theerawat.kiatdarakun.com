@@ -36,14 +36,21 @@
   font-size: 1.25rem;
   font-weight: bold;
 
-  @include m.hsl(background-color, 0, 0%, f.dayOrDark(5%, 95%));
   @include m.hsl(color, 0, 0%, f.dayOrDark(95%, 5%));
-  filter: saturate(0%);
-  visibility: hidden;
   z-index: 2;
 
+  background: #777;
+  opacity: 0.4;
+  visibility: hidden;
   transition-delay: 1s;
   transition-property: visibility;
+  &--appear {
+    @include m.hsl(background-color, 0, 0%, f.dayOrDark(5%, 95%));
+    opacity: 1;
+    filter: none;
+    visibility: visible;
+    transition: none;
+  }
   &__header {
     width: 100%;
     text-decoration: underline;

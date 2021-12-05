@@ -18,7 +18,7 @@ export const Sidebar = ({willShowCustomMenu, waveConfigs}: P):
   <>
     <SidebarToggler />
 
-    <div className="sidebar">
+    <div className="sidebar" id="sidebar">
       <section className="sidebar__section">
         <div className="sidebar__header">Wave</div>
         <WavePhysicsSliders waveConfigs={waveConfigs} />

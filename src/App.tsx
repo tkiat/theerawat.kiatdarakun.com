@@ -10,7 +10,6 @@ import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalSty
 
 import 'src/App/share/style/main.scss'
 
-// TODO move all assets to assets folder alongside src?
 // TODO only navMain not navtube should be outside main because navtube is inside main unlike navMain
 
 const numPointsOnWave = 5 // <number of ducks> + 1
@@ -75,24 +74,28 @@ export const App = (): React.ReactElement => {
   const title = isMobile() && <Title title={path.mapping[path.current]} />
 
   return (
-    <main id="main" className="main" style={mkGlobalStyle(theme)}>
-      <Router>
-        <Redirect
-          from="/"
-          to={path.current + '/' + path.mapping[path.current]}
-          noThrow />
-      </Router>
-      {contact}
-      {title}
-      <Background theme={theme} />
-      <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
-      <Content isInsideWater={isResumePage} />
+    <div id="main" className="app" style={mkGlobalStyle(theme)}>
       <NavMain path={path} setPath={setPath} />
       {navSub}
-      <ThemeProvider value={{setTheme, theme}}>
-        <Sidebar waveConfigs={waveConfigs}
-                 willShowCustomMenu={theme.current === 'custom'} />
-      </ThemeProvider>
-    </main>
+      <main className="app__main">
+        <div>
+          <Router>
+            <Redirect
+              from="/"
+              to={path.current + '/' + path.mapping[path.current]}
+              noThrow />
+          </Router>
+          {contact}
+          {title}
+          <Background theme={theme} />
+          <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
+          <Content isInsideWater={isResumePage} />
+        </div>
+        <ThemeProvider value={{setTheme, theme}}>
+          <Sidebar waveConfigs={waveConfigs}
+                   willShowCustomMenu={theme.current === 'custom'} />
+        </ThemeProvider>
+      </main>
+    </div>
   )
 }
