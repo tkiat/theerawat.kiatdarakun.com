@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const Contact = (): React.ReactElement =>
-  <div className="contact">
+  <header className="contact">
     <h1 className="contact__header">Contact</h1>
     <p className="contact__paragraph">
       <span role="img" aria-hidden="true">
@@ -19,4 +19,4 @@ export const Contact = (): React.ReactElement =>
       target="blank">
       GPG Public Key
     </a>
-  </div>
+  </header>
