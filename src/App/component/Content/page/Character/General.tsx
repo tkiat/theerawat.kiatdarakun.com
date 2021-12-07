@@ -2,7 +2,7 @@ import React from "react"
 
 import {MyTooltip} from "../../share/MyTooltip"
 
-export const Personality = (): React.ReactElement =>
+export const General = (): React.ReactElement =>
   <>
     <h1>About Me</h1>
     <ul>
@@ -40,16 +40,16 @@ export const Personality = (): React.ReactElement =>
         <span className="bold highlight">Inborn: </span>Thai | Thailand | Millennials | Straight | Zodiac Sign - Cancer
       </li>
       <li>
-        <span className="bold highlight">Appearance: </span>177 cm | 57kg | Ectomorphs | Black Hair | Brown to Dark Skin | Hair Reaches Shoulder | Quiet | No Piercings and Tattoos | Wear Prescription Glasses | Usually Wear Pant and No Shirt at Home | Don't Grow Long Bread
+        <span className="bold highlight">Appearance: </span>177 cm | 57kg | Ectomorphs | Black Hair | Brown to Dark Skin | Hair Reaches Shoulder | No Piercings and Tattoos | Wear Prescription Glasses | Wear Pant and No Shirt at Home | Don't Grow Long Bread
       </li>
       <li>
-        <span className="bold highlight">Outer Personality: </span>Quiet | Use Computer All Day | Stable | Calm | Like to Ruminate | Dislike Pointless Arguments | Smile Less | Don't Gossip
+        <span className="bold highlight">Outer Personality: </span>Quiet | Stable | Calm | Like to Ruminate | Dislike Pointless Arguments | Smile Less | Don't Gossip
       </li>
       <li>
-        <span className="bold highlight">Interest: </span>Coding | Functional Programming | Linux | Laptop | Sustainability | Philosophy of Freedom | Minimalism
+        <span className="bold highlight">Interest: </span>Linux | Open Source | Sustainability | Philosophy of Freedom
       </li>
       <li>
-        <span className="bold highlight">Preference: </span>Rise Early | Tea | Warm Water | Simple Food | Linux | Smaller Form Factor/Openness over Performance | My Own Container for Food and Drink | Bicycle | Repairable Gadgets over Quality | Growing Edible Rather than Decorative Plants | Solitude | Being Single | Compassion over Manner | Brush Teeth Twice Daily | Have Less Stuff in the Room and Clean It Often
+        <span className="bold highlight">Preference: </span>Rise Early | Tea | Warm Water | Simple Food | Linux | Small Form Factor | My Own Container for Food | Bicycle | Edible Over Decorative Plants | Solitude | Being Single | Compassion over Manner | Have Less Stuff and Clean Often
       </li>
     </ul>
   </>

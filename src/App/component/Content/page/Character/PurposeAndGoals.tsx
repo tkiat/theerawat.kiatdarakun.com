@@ -26,4 +26,9 @@ export const PurposeAndGoals = (): React.ReactElement =>
       <p>My appreciation of free and open-source software for enabling freedom leads me to study software. I acknowledge the type checking capability of Typescript and Haskell, the simplified language like Python, all the markup languages that make documentation simpler, and the ubiquity of Javascript. I study the tool that enables reproduciility like Nix, a configurable editor like Neovim, a source control like Git, and many more.</p>
       <p>There are too many things to learn and I am learning them. Together, these tools enable functional, maintainable and scalable programs. I want to become a craftman of software and contribute my knowledge for a betterment of mankind.</p>
     </MyTooltip>
+
+    &nbsp;|&nbsp;
+    <MyTooltip text="Become an Excellent Writer">
+      <p>Life is too short to die alone without anything else to share with others. I believe text is the best medium to convey thoughts because the author can make it as concise as he wants and also the storage size is low. I will keep reading and writing forever.</p>
+    </MyTooltip>
   </>

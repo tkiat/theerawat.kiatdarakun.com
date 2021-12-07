@@ -2,7 +2,7 @@ import React from "react"
 
 import {TabsContent} from "../share"
 import {Items} from "./Character/Items"
-import {Personality} from "./Character/Personality"
+import {General} from "./Character/General"
 import {PurposeAndGoals} from "./Character/PurposeAndGoals"
 import {WorldView} from "./Character/WorldView"
 
@@ -11,7 +11,7 @@ export const Character = (): React.ReactElement =>
     items={[
       {
         title: "General",
-        content: <Personality />,
+        content: <General />,
       },
       {
         title: "Purpose & Goals",
