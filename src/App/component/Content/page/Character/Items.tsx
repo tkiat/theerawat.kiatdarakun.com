@@ -113,7 +113,7 @@ export const Items = (): React.ReactElement =>
         </MyTooltip>
 
         &nbsp;|&nbsp;
-        <MyTooltip text="Heabal Tea">
+        <MyTooltip text="Herbal Tea">
           <p>Red Roibos, Chrysanthemum, Yerba Mate, and anything else adventurous</p>
           <p>The world has so many herbs and I can't wait to try them all! (but I am currently lazy)</p>
         </MyTooltip>

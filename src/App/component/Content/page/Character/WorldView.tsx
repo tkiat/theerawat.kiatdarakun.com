@@ -11,10 +11,10 @@ export const WorldView = (): React.ReactElement =>
           <p>In my opinion, ethical software should satisfy the followings</p>
           <ol>
             <li>Critical software like operating systems and bootloaders are indispensable. No one should have the right to revoke the right of users or else everybody will be screwed up. They should be FOSS so that at least someone can fork it and continue the glory.</li>
-            <li>Non-critical software like image editor installed on a client computer should be at least open-source. They shouldn't be closed-source to ensure that they don't violate others' license or user privacy. They don't have to be FOSS because it is possible to create the alternatives.</li>
+            <li>Non-critical software like image editor installed on a client computer should be at least open-source. They shouldn't be closed-source to ensure that they don't violate others' license or user's privacy. They don't have to be FOSS because it is very possible to create the alternatives.</li>
             <li>The server-side software can be closed source because even they release the source code they cannot prove anyway that they actually use it. You should not mistaken this as malicious Javascripts which should satisfy the second rule.</li>
           </ol>
-          <p>To me, it is not unethical to distribute unethical software given a clear warning. At the end, only the availability of the free and open-source software matters, the community should just make sure they exist. The distribution like Debian does the most right thing in this regard.</p>
+          <p>It is not unethical to distribute unethical software given a clear warning and the availability of the free and open-source software. The distribution like Debian does the most right thing in this regard.</p>
         </MyTooltip>
 
         &nbsp;|&nbsp;
@@ -26,7 +26,7 @@ export const WorldView = (): React.ReactElement =>
 
         &nbsp;|&nbsp;
         <MyTooltip text="Online Privacy" place="bottom">
-          <p>Privacy is simply a basic human right but we have no right for it as long as we rely on other's work and effort. It is not ethical to ad-block Youtube because that is how they support the platform and you just steal their bandwidth. There are privacy-friendly Youtube alternatives but without the way to make money like personalized ads you cannot get too many things at zero cost. This means you might have to host videos yourself. As a consumer, you will find most popular videos hosted on the platform that give them money directly i.e. Youtube not MediaGoblin.</p>
+          <p>Privacy is simply a basic human right but we have no right for it as long as we rely on other's work and effort. It is not ethical to ad-block Youtube because that is how they support the platform and you just steal their bandwidth. There are privacy-friendly Youtube alternatives but without the way to make money like personalized ads you cannot get too many things at zero cost. This means you might have to host videos yourself. You will find most popular videos hosted on the platform that give them money directly i.e. Youtube not MediaGoblin.</p>
           <p>It is a trade-off and because of this I tend to be neutral about the online privacy issue. The only thing I wish is the privacy-friendly alternative for each mainstream service/application for the sake of human rights.</p>
         </MyTooltip>
 
@@ -45,7 +45,7 @@ export const WorldView = (): React.ReactElement =>
         &nbsp;|&nbsp;
         <MyTooltip text="Ethical Porn" place="bottom">
           <p>The only ethical porn, in my opinion, is the porn with consent. Even if you buy porn, some actress might change her mind and feel shameful afterwards and you have no way to know it. Instead, focus on the live performance or active genuine channels/profiles.</p>
-          <p>The bigger scope of consideration is whether or not porns waste your time too much. It is unethical to watch porn if it prevents you from doing something necessary. The sweet spot is where it saves your time as compared to being distracted by a genuine sexual urge which is perhaps not applicable to most people.</p>
+          <p>However, the bigger scope of consideration is whether or not porns waste your time too much. It is unethical to watch porn if it prevents you from doing something necessary.</p>
         </MyTooltip>
       </li>
       <li>
@@ -63,23 +63,22 @@ export const WorldView = (): React.ReactElement =>
       <li>
         <span className="bold highlight">Lifestyle: </span>
         <MyTooltip text="Ethical Food">
-          <p>Ethical food is not about being organic or even clean. It is not about 100% natural, non-GMO, or not ultra-processed. It is about respecting everyone's freedom including animals i.e. vegan and transparent (i.e. include all information). I find the product whose ingredients don't add up to 100% not acceptable (but I sometimes cannot avoid it).</p>
+          <p>The most ethical food is not about being organic or even clean. It is not about 100% natural, non-GMO, or not ultra-processed. It is about respecting everyone's freedom including animals i.e. vegan and transparent. I find the product whose ingredients don't add up to 100% not acceptable (but I sometimes cannot avoid it).</p>
         </MyTooltip>
 
         &nbsp;|&nbsp;
         <MyTooltip text="Meaning of Life">
-          <p>Imaging having all sentient beings from the universe (including god) and the I ask: what is the purpose? None. The star floats around for what? None. There is no purpose whatsoever.</p>
-          <p>So the purpose depends on being sentient. Try your best to know thyself and create purpose from what you value.</p>
+          Imaging having all sentient beings from the universe (including god) and the I ask: what is the purpose? None. The star floats around for what? None. There is no purpose whatsoever. So the purpose depends on being sentient. Try your best to know thyself and create purpose from what you value.
         </MyTooltip>
 
         &nbsp;|&nbsp;
         <MyTooltip text="Travelling">
-          The best travelling is not about price, beauty, people, or selfie images on Instagram but it is about the experience. And the experience will be unfortunately limited without prior knowledge or research. An unfamiliar person, unlike some architects or historians, can appreciate only the outer beauty of the Eiffel tower.
+          The best travelling is not about price, beauty, people, or selfie images on Instagram but it is about the experience. And the experience will be unfortunately limited without prior knowledge or research. Many people, unlike some architects or historians, can appreciate only the outer beauty of the Eiffel tower.
         </MyTooltip>
 
         &nbsp;|&nbsp;
         <MyTooltip text="Party">
-          It is a waste of time unless you know your life's purpose and partying can help get you to that point.
+          It is a waste of time unless you know your life's purpose and partying can help get you to that point. It is also sometimes worth it if you are an extrovert.
         </MyTooltip>
       </li>
     </ul>

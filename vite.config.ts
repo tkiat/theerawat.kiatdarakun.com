@@ -12,6 +12,10 @@ export default defineConfig({
   //     rollupOptions: {
   //     }
   // },
+  server: {
+    host: true,
+    port: 3000,
+  },
   plugins: [reactRefresh(), svgr()],
   resolve: {
     alias: {
