@@ -12,11 +12,10 @@ const navPress = () => document.getElementById('nav-mobile')?.
 type P = {path: Path, setPath: Updater<Path>}
 export const NavSubMobile = ({path, setPath}: P): React.ReactElement =>
   <nav className="nav-mobile" id="nav-mobile" onClick={navPress}>
+    <button className="nav-mobile__button" aria-label="hamburger-menu">
+      <DuckHamburger />
+    </button>
     <ul className="nav-mobile__list">
-      <li className="nav-mobile__item nav-mobile__item--button"
-          aria-label="hamburger-menu">
-        <DuckHamburger />
-      </li>
     {pathObject[path.current].map(x => (
       <li key={x} className="nav-mobile__item">
         <Link
