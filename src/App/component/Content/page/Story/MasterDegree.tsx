@@ -5,20 +5,22 @@ import {MyTooltip} from "../../share/MyTooltip"
 export const MasterDegree = (): React.ReactElement =>
   <>
     <h1>24 - 26 Years</h1>
-    <div>I was still very ignorant about the direction in life but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
+    <div>
+      I was still totally oblivious about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
       <MyTooltip text="ranking">
-        This was actually quite useless because many German universities have a similarly high standard. The area of study and thesis topics are more important in my opinion.
+        This was actually quite useless because many German universities have a similarly high standard. The area of study, thesis topics, and tuition fees are more important in my opinion.
       </MyTooltip>
       , and the fact that I hadn't been outside of my country apart from the Cambodia border. The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
       <MyTooltip text="social contribution fee">
-        It cost me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I also could take the university cafeteria which was usually cheaper than eating outside.
+        It cost me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I could also take the university cafeteria which was usually cheaper than eating outside.
       </MyTooltip>
       . The application for RWTH Aachen required a bit of&nbsp;
       <MyTooltip text="preparation">
         I needed to send my IELTS scores and also open letters of recommendation. The annoying part was that they also require me to take GRE test (which cost around 180 USD). I was so lazy that I took only one day to prepare it. The score was not nice except for the qualitative section. I had to send applications via mail also.
       </MyTooltip>
       &nbsp;but I did it anyway.
-    </div><br/>
+    </div>
+    <br/>
     <div>
       On the first day of arrival, I had the appointment with&nbsp;
       <MyTooltip text="two kind Thai students">
@@ -26,7 +28,7 @@ export const MasterDegree = (): React.ReactElement =>
       </MyTooltip>
       &nbsp;who will take me to my single-room apartment. I adapted quickly to a new&nbsp;
       <MyTooltip text="lifestyle">
-        <p>where I have to cook myself. I always bought pre-made food in Thailand but it was prohibitive to buy them in Germany (it's like 1 vs 5 EUR). The average meal cost in Germany is 1.5 EUR only if I cook myself.</p>
+        <p>I had to cook myself. I always bought pre-made food in Thailand but it was prohibitive to buy them in Germany than cooking it myself (it's like 1.5 EUR vs 5 EUR).</p>
         <p>The climate was quite the opposite of Thailand where I had to heat my room instead of cooling it. My cloth needed to be thick during the cold winter when I could sometimes expect snow.</p>
       </MyTooltip>
       , went to&nbsp;
@@ -35,7 +37,7 @@ export const MasterDegree = (): React.ReactElement =>
       </MyTooltip>
       , and finally joined the&nbsp;
       <MyTooltip text="orientation">
-        This was when I realized more than half was Indian. A very little Chinese was here in my batch which was a little surprising. There was only one German. If you want to meet German in class, take a class in German, not in English.
+        This was when I realized more than half was Indian. A very little Chinese was here in my batch which was a little surprising. There was only one German. If you want to meet Germans in a class, take a class in German, not in English.
       </MyTooltip>
       . The&nbsp;
       <MyTooltip text="first semester">
@@ -53,10 +55,11 @@ export const MasterDegree = (): React.ReactElement =>
       &nbsp;and travel with my&nbsp;
       <MyTooltip text="bicycle">
         <p>I won the touring bike from the auction on eBay for 140 EUR. It was cheap given the quality: too many gears, water bottle holder, two seats, and 28-inch wheel size. I took the free train to Duesseldorf where I met the seller. In Germany, you have to pay for a ticket for a bicycle if you carry it on a train. Make sense!</p>
+        <p>I was about to get punished by the train officer that day but luckily a German guy talked with the office and somehow I had to pay only 6 EUR bicycle fee, not an additional, probably 40 EUR, punishment fee.</p>
       </MyTooltip>
       &nbsp;
       <MyTooltip text="nearby">
-        <p>Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot and it was full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35km destination. There was an American war memorial on the way to the city.</p>
+        <p>Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot. They were usually full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35km destination. There was an American war memorial on the way to the city.</p>
         <p>Monschau is a very beautiful town with some small rivers and a castle. Bar the constant flux of visitors, it was very nice to live there. It took me almost 2 hours by bike because of the slope but I spent only 1 hour on the way back. I went there two times by bike, alone.</p>
       </MyTooltip>
       . In general, you should expect to spend a little more than&nbsp;

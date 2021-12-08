@@ -64,7 +64,7 @@ export const WorkingGermany = (): React.ReactElement =>
       </MyTooltip>
       , I stayed at a very&nbsp;
       <MyTooltip text="cheap">
-        It cost only 200 EUR per month. She said she has rented it since around 30 years ago and the price remains low. The people live in three separate rooms. The kitchen was nicely furnished. The location was unbelievably convenient since there was a regular Turkish market just in front of the apartment and plenty of shops nearby.
+        It cost only 200 EUR per month. She said she has rented it since around 30 years ago and the price remains low. The people live in three separate rooms. The kitchen was nicely furnished. The location was unbelievably convenient since there were a regular Turkish market just in front of the apartment and plenty of shops nearby.
       </MyTooltip>
       &nbsp;place with a Thai nun (who seldom stayed) and another roommate. I took a plunge and enrolled two german&nbsp;
       <MyTooltip text="courses">
@@ -78,11 +78,11 @@ export const WorkingGermany = (): React.ReactElement =>
       &nbsp;around 8km from my apartment. I invited my father&nbsp;
       <MyTooltip text="here">
         <p>I paid everything for this visit including a two-way plane ticket. My father was amazed by the number of beers here. He like them a lot and drank a lot each day.</p>
-        <p>Then we went to Prague. The hostel we booked had no free place anymore so we got the private room for free! As I did with my fellow interns, we ate at the same restaurant and visited the same castle but my father felt really tired after the trip. I took my father for a beer in a bar in Prague which became his most favorite beer ever.</p>
+        <p>Then we went to Prague. The hostel we booked had no free place anymore so we got the upgrade to the private room for free! As I did with my fellow interns, we ate at the same restaurant and visited the same castle but my father felt really tired after the trip. I took my father for a beer in a bar in Prague which became his most favorite beer ever.</p>
       </MyTooltip>
       &nbsp;in March, 2017. The job&nbsp;
       <MyTooltip text="experience">
-        <p>Just sit in front of a computer for a long time. The company has some perks like half-price health insurance and train ticket but I rejected the latter because I prefer my bicycle. I, therefore, rode a bicycle alone on the way back. It was the best ever experience to put a beer bottle from the supermarket into my bicycle bottle holder, it became very cold naturally after I reached my place.</p>
+        <p>Just sit in front of a computer for a long time. The company has some perks like half-price health insurance and train ticket but I rejected the latter because I prefer my bicycle (the workpace was around 8km from my apartment). It was the best ever experience to put a beer bottle from the supermarket into my bicycle bottle holder, it became very cold naturally after I reached my place.</p>
         <p>Half of the time I expected to join a night shift and finished at 10 pm. It was dark and cold on the way back but not that much. My Jack Wolfskin jacket was always reliable.</p>
       </MyTooltip>
       &nbsp; was unbelievable and new. However, the&nbsp;

@@ -26,7 +26,7 @@ export const WorldView = (): React.ReactElement =>
 
         &nbsp;|&nbsp;
         <MyTooltip text="Online Privacy" place="bottom">
-          <p>Privacy is simply a basic human right but we have no right for it as long as we rely on other's work and effort. It is not ethical to ad-block Youtube because that is how they support the platform and you just steal their bandwidth. There are privacy-friendly Youtube alternatives but without the way to make money like personalized ads you cannot get too many things at zero cost. This means you might have to host videos yourself. You will find most popular videos hosted on the platform that give them money directly i.e. Youtube not MediaGoblin.</p>
+          <p>Privacy is simply a basic human right, but we cannot fully claim that as long as we rely on other's work. It is not ethical to ad-block Youtube because that is how they support the platform and you just steal their bandwidth. There are privacy-friendly alternatives but without the way to make money like personalized ads you cannot expect to host all videos at zero cost. You will find most popular videos hosted on the platform that give them money directly i.e. Youtube not MediaGoblin.</p>
           <p>It is a trade-off and because of this I tend to be neutral about the online privacy issue. The only thing I wish is the privacy-friendly alternative for each mainstream service/application for the sake of human rights.</p>
         </MyTooltip>
 
