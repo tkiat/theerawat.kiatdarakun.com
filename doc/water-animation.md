@@ -51,11 +51,11 @@ To animate the water flow, I put the rectangle behind each node occupying full w
 
 #### Explanation
 
-The symbol '-' denotes the middle of the transition which is not a keyframe itself so there is no need to write this to CSS. The symbol 'x' means the animation already ends at that point. As shown in the table above, there are four steps:
+The symbol '-' denotes the middle of the transition which is not a keyframe itself so there is no need to write this to CSS. The symbol 'x' means the animation is already ended at that point. As shown in the table above, there are four steps:
 
-1. The 80% water level assumption makes it 80L for text (100L capacity) and 16L for valve (20L capacity). We also need to shift both highlighter boxes by 20% to the bottom.
+1. The initial 80% water level assumption makes it 80L for text (100L capacity) and 16L for valve (20L capacity). We also need to shift both highlighter boxes by 20% to the bottom.
 2. The next row is considered a keyframe for the valve because it is the midpoint of two different behaviors (reducing volume to constant volume). This is not considered a keyframe for the text because it is in the middle of the constant transition from 80L to 0L. The total flow for this step is 4L (from the total of 100L in the last row) makes it 4% in the keyframe. We don't know this 100L value in advance so we have to compute this after everything else.
-3. The next row is considered a keyframe for the text because that is the end of the animation, and it is also considered the keyframe for the valve because it is the midpoint of two different behaviors (constant volume and decreasing volume).
+3. The next row is considered a keyframe for the text because that is the end of the animation, and it is also considered the keyframe for the valve because it is the midpoint of two different behaviors (constant volume to decreasing volume).
 4. We now don't have to care about the text anymore since the animation is already finished. We use translateY(-100%) because the water flows upwards.
 
 The cumulative water flow is not always 100L as we will see in one of the next examples. That's why we need something like Animation Duration Multiplier (just below the above table). This animation has a multiplier of 1 since I set this as a reference while `R-Pass` has 216L cumulative flow so its multipler becomes 2.16. This means the animation duration of `R-Pass` is 2.16 times that of `R-Drain`.
