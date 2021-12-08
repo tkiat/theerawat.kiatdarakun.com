@@ -1,14 +1,32 @@
 # Water Flow Animation
 
-Assumptions
+There are two types of node: text and valve, and they appear in this order.
 
-- A node consists of a text at the left and valve at the right except the last node where the valve is absent
-- The capacity of text and valve is 100L and 20L
+```
+text -> valve -> text -> valve -> ... -> text
+```
+
+The water moves from one text node to another text node. At the end of the flow, water occupies both the text node and the next valve node. The exception is the last text node where the water occupies only this one node.
+
+In this document, I would like to elaborate how to compute the water flow so that the animation looks reasonably convincing. I have got two assumptions to make the computation process easier:
+
+- The capacity of a text node and a valve node is 100L and 20L respectively
 - At the beginning, the water level is 80% of the total capacity
 
-This means we have 80L and 16L water at text and valve containers respectively at the beginning.
+Assume we have 4 nodes:
 
-Assume the navbar has 4 nodes. To move water from 1st node to 4th node, 4 steps are needed: 1. Drain water from the beginning node to the right node 2. Pass water through the 2nd node to the right 3. Pass water through the 3rd node to the right 4. Stop water at the 4th node. This is shown as the first row in the table below.
+```
+text -> valve -> text -> valve
+```
+
+We need 4 steps to move water from the first node to the last node:
+
+1. Drain water from the beginning node to the right node (denoted by `R-Drain`)
+2. Pass water through the 2nd node to the right (`R-Pass`)
+3. Pass water through the 3rd node to the right (`R-pass`)
+4. Stop water at the 4th node (`R-Stop`)
+
+This movement, along with some others, are shown in the table below.
 
 | Current Active Node # | Target Node # | Steps                                 |
 | :-------------------: | :-----------: | :------------------------------------ |
@@ -19,7 +37,7 @@ Assume the navbar has 4 nodes. To move water from 1st node to 4th node, 4 steps 
 
 To animate the water flow, I put the rectangle behind each node occupying full width and height and move only along Y axis to mimic the water flow. This is probably not the most realistic animation but it is accceptable to my eye when it is fast enough. The tables below show the corresponding CSS animation for each step.
 
-### R-Drain: Drain water from the beginning node to the right
+### R-Drain: Drain water to the next right text node
 
 | Water (L) | Valve (L) | Cumulative Flow (L) |          Text Animation           |           Valve Animation           |
 | :-------: | :-------: | :-----------------: | :-------------------------------: | :---------------------------------: |
@@ -33,16 +51,20 @@ To animate the water flow, I put the rectangle behind each node occupying full w
 
 #### Explanation
 
-- Step 1: the water level is 80L for text and 16L for valve as per assumption. This is implemented by shifting the highlighter by 20% to the bottom, hence "transform: translateY(20%);" for both text and valve.
-- Step 2: since the valve is always at the right to the text, the water (going to the right) must flow up to the valve's top. The movement of the valve from 16L to 20L must be considered a keyframe for the valve but not for the text since it is somewhere between two text animation keyframes (80L constantly reduced to 0L). We use 4% in the code since the current cumulative water flow is 4L from the total of 100L.
-- Step 3: the point at which the water in the text is empty must be marked as a keyframe. We use 100% in "transform: translateY(100%);" because the water flows downwards. This is also a keyframe for the valve since it is a joint between "constant water level" and "water gonna be drained".
-- Step 4: the water is totally drained from the valve. We use -100% in "transform: translateY(-100%);" because the water flows upwards.
+The symbol '-' denotes the middle of the transition which is not a keyframe itself so there is no need to write this to CSS. The symbol 'x' means the animation already ends at that point. As shown in the table above, there are four steps:
 
-It is very important to note that the overall animation duration depends on the cumulative water flow at the end. The animation whose final value is 216L (such as R-Pass) must be set 2.16 times longer than the one with 100L (such as R-Drain). This animation (R-Drain) has the lowest final cumulative water flow among others at 100L, hence the Animation Duration Multiplier of 1. This means if we set the base animation duration (which is the same value for R-Drain, R-Pass, etc.) to 1 second. The actual CSS animation duration for R-Drain will be 1 _ (Animation Duration Multiplier) = 1 _ 1 = 1 second
+1. The 80% water level assumption makes it 80L for text (100L capacity) and 16L for valve (20L capacity). We also need to shift both highlighter boxes by 20% to the bottom.
+2. The next row is considered a keyframe for the valve because it is the midpoint of two different behaviors (recuding volumne and constant volume). This is not considered a keyframe for the text because it is in the middle of the constant transition from 80L to 0L. The total flow for this step is 4L (from the total of 100L in the last row) makes it 4% in the keyframe. We don't know this 100L value in advance so we actually have to compute this after everything else.
+3. The next row is considered a keyframe for the text because that is the end of the animation, and it is also considered the keyframe for the valve because it is the midpoint of two different behaviors (constant volume and decreasing volume).
+4. We now don't have to care about the text anymore since the animation already finishes. We use translateY(-100%) because the water flows upwards.
 
-When water reaches any end of a node, naturally it should immediately trigger the animation of the next node. What's why we always need to add delay to the next animation to make the flow continuous. For R-Drain, we have to wait until the water flow to the tip of the valve to trigger the next animation. At this point, the cumulative water flow is 4L out of 100L total, hence Next Animation Delay Multiplier of 4/100. The CSS animation delay is therefore (base animation duration) _ (Animation Duration Multiplier) _ (Next Animation Delay Multiplier) = 1 _ 1 _ (4 / 100) = 0.04 second
+The cumulative water flow is not always 100L as we will see in one of the next examples. That's why we need something like Animation Duration Multiplier (just below the above table). This animation has the multiplier of 1 since I set this as a reference while `R-Pass` has 216L cumulative flow so its multipler becomes 2.16. This means the animation duration of `R-Pass` is 2.16 times of that from `R-Drain`.
 
-### R-Pass: Pass water through the intermediary node(s) (if any) to the right.
+We triggers the next animation when the water reaches the end of a node. This corresponds to the point where the water fill the valve (second row in the table) in this `R-Drain` case. At this point, the animation is still at 4% of its overal duration. Therefore, we set the Next Animation Delay Multiplier to 0.04.
+
+Given the base animation duration of 1 second. The overall animation duration of `R-Drain` is `1 * Animation Duration Multiplier` or `1` second. We trigger the next animation at `overall animation duration * Next Animation Delay Multiplier = 1 * 0.04 = 0.04` seconds.
+
+### R-Pass: Pass water to the next right node
 
 | Water (L) | Valve (L) | Cumulative Flow (L) |            Text Animation            |           Valve Animation           |
 | :-------: | :-------: | :-----------------: | :----------------------------------: | :---------------------------------: |
@@ -56,7 +78,9 @@ When water reaches any end of a node, naturally it should immediately trigger th
 - Animation Duration Multiplier = 2.16
 - Next Animation Delay Multiplier = 120/216
 
-### R-Stop: Stop water at the destination node at the right.
+Note: `(top)` denotes that water connects to the top of the node and disconnects to the bottom of the node
+
+### R-Stop: Stop water at the next right node
 
 | Water (L) | Valve (L) | Cumulative Flow (L) |          Text Animation           |           Valve Animation            |
 | :-------: | :-------: | :-----------------: | :-------------------------------: | :----------------------------------: |
@@ -70,7 +94,7 @@ When water reaches any end of a node, naturally it should immediately trigger th
 
 Note: Being the last node in the flow, the Next Animation Delay Multiplier must be 0.
 
-### L-Drain: Drain water from the beginning node to the left
+### L-Drain: Drain water to the next left text node
 
 | Water (L) | Valve (L) | Cumulative Flow (L) |           Text Animation            |           Valve Animation            |
 | :-------: | :-------: | :-----------------: | :---------------------------------: | :----------------------------------: |
@@ -82,7 +106,7 @@ Note: Being the last node in the flow, the Next Animation Delay Multiplier must 
 - Animation Duration Multiplier = 1.16
 - Next Animation Delay Multiplier = 20/116
 
-### L-Pass: Pass water through the intermediary node(s) (if any) to the left.
+### L-Pass: Pass water to the next left text node
 
 | Water (L) | Valve (L) | Cumulative Flow (L) |           Text Animation            |           Valve Animation           |
 | :-------: | :-------: | :-----------------: | :---------------------------------: | :---------------------------------: |
@@ -96,7 +120,7 @@ Note: Being the last node in the flow, the Next Animation Delay Multiplier must 
 - Animation Duration Multiplier = 2.16
 - Next Animation Delay Multiplier = 120/116
 
-### L-Stop: Stop water at the destination node at the left.
+### L-Stop: Stop water at the next left text node
 
 | Water (L) | Valve (L) | Cumulative Flow (L) |          Text Animation           |          Valve Animation          |
 | :-------: | :-------: | :-----------------: | :-------------------------------: | :-------------------------------: |
@@ -107,9 +131,3 @@ Note: Being the last node in the flow, the Next Animation Delay Multiplier must 
 
 - Animation Duration Multiplier = 1
 - Next Animation Delay Multiplier = 0
-
-Note
-
-- \- denotes skipping because it is somewhere between two keyframes and is not a keyframe itself
-- x denotes skipping because the animation already reaches the end
-- (top) denotes water above the ground that connects to the top

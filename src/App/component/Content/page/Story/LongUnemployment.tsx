@@ -19,6 +19,6 @@ export const LongUnemployment = (): React.ReactElement =>
       <MyTooltip text="Thinkpad X200">
         They allowed me to install open-source WiFi firmware and bootloader (Libreboot then coreboot). Previously, the proprietary solution might contain spyware because no one can see the code.
       </MyTooltip>
-      . I deleted my video game accounts. I sold my Ipad and bought new cheaper phones. I quit buying freezer food and chips from 7-11 (a convenience store). I valued something lean and liberating more than something convenient and costly (in terms of money or environment). I read a few philosophy blog posts and books. Now, I believe I am much wiser than I ever was before. I appreciate the given opportunity to introspect and I become more aware of my values. I now have a clearer purpose to pursue.
+      . I deleted my video game accounts. I sold my Ipad and bought new cheaper phones. I quit buying frozen food and chips from 7-11 convenience store. I valued something lean and liberating more than something convenient and costly (in terms of money or environment). I read a few philosophy blog posts and books. Now, I believe I am much wiser than I ever was before. I appreciate the given opportunity to introspect and I become more aware of my values. I now have a clearer purpose to pursue.
     </div>
   </>
