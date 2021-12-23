@@ -9,7 +9,7 @@ export const Book = (): React.ReactElement =>
       <li>
         <span className="bold highlight">Technical: </span>
         <MyTooltipWithDelay text="Learn You a Haskell for Great Good!">
-          [60% completed] I got this book from Humble Bundle but a free <a href="http://learnyouahaskell.com/">online</a> version exists. I understood it well in the first half not gonna lie but I was pretty much lost and skipped a lot in the later half. Having written a featureful pomodoro application in Haskell, I now have a much better understanding and I am glad to reread it.
+          [90% completed] I got this book from Humble Bundle, but a free <a href="http://learnyouahaskell.com/">online</a> version also exists. I was pretty much lost in the later half at first. Having written a featureful pomodoro application in Haskell, I later reread it and finally understood it. I skipped two chapters for I did't need the knowledge yet.
         </MyTooltipWithDelay>
 
         &nbsp;|&nbsp;

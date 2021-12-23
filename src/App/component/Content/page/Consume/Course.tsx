@@ -7,6 +7,23 @@ export const Course = (): React.ReactElement =>
     <p>Available DRM-free only</p>
     <ul>
       <li>
+        <span className="bold highlight">2021: </span>
+        <MyTooltipWithDelay text="CS240h: Functional Systems in Haskell">
+          <p>
+            TODO
+          </p>
+        </MyTooltipWithDelay>
+        &nbsp;|&nbsp;
+        <MyTooltipWithDelay text="CIS194: Introduction to Haskell">
+          <p>
+            I read Learn You a Haskell book before but I couldn't quite get it in the later part. I stumbled across the best free introduction Haskell course according to [bitemyapp](https://github.com/bitemyapp/learnhaskell) so I took it. It is the course from University of Pennsylvania by Brent Yorgey in 2013. You can download the material from [GitHub](https://github.com/byorgey/haskell-course).
+          </p>
+          <p>
+            The course content is not very in details; the instructor explains as necessary. Haskell beginners should find the course to be very worth at least a quick look. I gained some more understandings especially monad related ones. However, I didn't do any exercise since that seemed to take much time. You may request the solution from that GitHub link.
+          </p>
+        </MyTooltipWithDelay>
+      </li>
+      <li>
         <span className="bold highlight">2020: </span>
         <MyTooltipWithDelay text="Introduction to Personal Branding">
           <p>
