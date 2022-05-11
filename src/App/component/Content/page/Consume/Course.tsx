@@ -41,7 +41,7 @@ export const Course = (): React.ReactElement =>
 
         &nbsp;|&nbsp;
         <MyTooltipWithDelay text="Cloud Computing Basics">
-          I took this short [course](https://www.coursera.org/learn/cloud-computing-basics) for fun. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably < 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion. At the end, I got the <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99">verified certificate</a> for free.
+          I took this short [course](https://www.coursera.org/learn/cloud-computing-basics) for fun. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion. At the end, I got the <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99">verified certificate</a> for free.
         </MyTooltipWithDelay>
       </li>
       <li>

@@ -34,13 +34,13 @@
     filter: none !important;
   }
   &:hover {
-    opacity: 0.4;
+    opacity: 0.85;
     transition-delay: unset;
     &:after {
       animation: x-toggle 1s infinite linear forwards;
     }
     & + * {
-      opacity: 0.4;
+      opacity: 0.85;
     }
   }
 }

@@ -1,12 +1,16 @@
 # My Personal Website
 
-I create this website using Vite.
+I created this website using Vite and React.js with a lot of freedom given to the user to adjust the appearance.
 
-```bash
-$ npm init @vitejs/app tkiat.github.io -- --template react-ts
+## Usage
+
+```nix
+$ nix-shell
 ```
 
-I put an unopinionated personality into this website by giving users freedom to adjust the website.
+<!-- ```bash -->
+<!-- $ npm init @vitejs/app tkiat.github.io -- --template react-ts -->
+<!-- ``` -->
 
 ## Wave
 
