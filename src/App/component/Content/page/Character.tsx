@@ -8,10 +8,10 @@ export const Character = (): React.ReactElement => (
 
     <ul>
       <li>
-        <span className="bold highlight">Personality Test: </span>
+        <span className="bold highlight">Personality: </span>
 
         <a href="https://www.16personalities.com/">
-          <MyTooltip text="MBTI">
+          <MyTooltip text="MBTI Test">
             <p>https://www.16personalities.com/</p>
             <p>Taken on 31 Mar 2021</p>
             <ul>
@@ -24,9 +24,9 @@ export const Character = (): React.ReactElement => (
           </MyTooltip>
         </a>
         &nbsp;|&nbsp;
-        <a href="https://openpsychometrics.org/">
-          <MyTooltip text="Big 5">
-            <p>https://openpsychometrics.org/</p>
+        <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">
+          <MyTooltip text="Big 5 Test">
+            <p>https://openpsychometrics.org/tests/IPIP-BFFM/</p>
             <p>Taken on 31 Mar 2021</p>
             <ul>
               <li>Extroversion: 11 (percentile)</li>
@@ -37,6 +37,42 @@ export const Character = (): React.ReactElement => (
             </ul>
           </MyTooltip>
         </a>
+        &nbsp;|&nbsp;
+        <a href="http://openpsychometrics.org/tests/O4TS/">
+          <MyTooltip text="Four Temperaments Test">
+            <p>http://openpsychometrics.org/tests/O4TS/</p>
+            <p>Taken on 31 Mar 2021</p>
+            <ul>
+              <li>Choleric: 12</li>
+              <li>Melancholic: 12</li>
+              <li>Sanguine: 5</li>
+              <li>Phlegmatic: 22</li>
+            </ul>
+          </MyTooltip>
+        </a>
+        &nbsp;|&nbsp;
+        <MyTooltip text="Outer Personality">
+          <ul>
+            <li>Quiet</li>
+            <li>Calm and Stable</li>
+            <li>Dislike Pointless Arguments</li>
+            <li>Smile Less</li>
+            <li>Don't Gossip</li>
+          </ul>
+        </MyTooltip>
+        &nbsp;|&nbsp;
+        <MyTooltip text="Interests">
+          <ul>
+            <li>(Free and) Open Source Software</li>
+            <li>Programming</li>
+            <li>Philosophy</li>
+            <li>Sustainability</li>
+            <li>Minimalism</li>
+            <li>Less Waste Lifestyle</li>
+            <li>Veganism</li>
+            <li>Theravada and Zen Buddhism</li>
+          </ul>
+        </MyTooltip>
       </li>
       <li>
         <span className="bold highlight">Appearance: </span>
@@ -66,13 +102,7 @@ export const Character = (): React.ReactElement => (
         </MyTooltip>
       </li>
       <li>
-        <span className="bold highlight">Outer Personality: </span>Quiet | Stable | Calm | Dislike Pointless Arguments | Smile Less | Don't Gossip
-      </li>
-      <li>
-        <span className="bold highlight">Interests: </span>(Free and) Open Source Software | Programming | Sustainability | Minimalism | Less Waste Lifestyle | Veganism | Theravada and Zen Buddhism
-      </li>
-      <li>
-        <span className="bold highlight">Preference: </span>
+        <span className="bold highlight">Preferences: </span>
         <MyTooltip text="Food & Drinks">
           <ul>
             <li>Least Processed</li>
@@ -108,7 +138,7 @@ export const Character = (): React.ReactElement => (
         </MyTooltip>
       </li>
       <li>
-        <span className="bold highlight">Other Qualities: </span>Thai | Live in Thailand | Millennials | Straight | Zodiac Sign: Cancer
+        <span className="bold highlight">Other Qualities: </span>Thai | Being Raised in Thailand | Millennials | Straight | Zodiac Sign: Cancer
       </li>
     </ul>
 
@@ -116,25 +146,7 @@ export const Character = (): React.ReactElement => (
 
     <ul>
       <li><span className="bold highlight">Life Purpose</span>: To live by the reality and, if time and resources allowed, help others to do the same as well.</li>
-      <li><span className="bold highlight">Goals</span>: 1. Examine my life purpose philosophically to ensure its validity 2. Create a framework of how to live by the reality 3. Try to live by the reality and improve myself in the process. Also record some of my activities to ensure my integrity 4. Finish a book and/or a website that describes my philosophy 5. Tell others about it 6. If time and resources allowed, physically extend the scope beyond myself (e.g., open an affordable vegan restaurant).</li>
+      <li><span className="bold highlight">Goals</span>: Examine my life purpose philosophically to ensure its validity -> Create a framework of how to live by the reality -> Try to live by the reality and improve myself in the process. Also record some of my activities to ensure my integrity -> Finish a book and/or a website that describes my philosophy and share them -> If time and resources allowed, make a direct impact to the outside world (e.g., open an affordable vegan restaurant).</li>
     </ul>
   </>
 )
-//     <MyTooltip text="My Personalities, Values, and Purpose">
-//       <p>I want to write a book about how my personalities, values, and purpose link together and the process of creating such links.</p>
-//       <p>I believe this is a prerequisite for a fulfilled life and I recommend everyone to do it. This cannot be done without an extensive research on basic psychology and philosophy but I would like to take on the challenge. I plan to improve it over time.</p>
-//     </MyTooltip>
-//     &nbsp;|&nbsp;
-//     <MyTooltip text="Low Impact Life">
-//       <p>Living without damage to the environment and others is, to me, the best life to live. I would like to experiment and then elaborate on the challenges and trade-offs in a book or a website. There are some contents like this online but I have yet to find much content for Thai localization.</p>
-//     </MyTooltip>
-//     &nbsp;|&nbsp;
-//     <MyTooltip text="Become a Software Craftsman">
-//       <p>My appreciation of free and open-source software for enabling freedom leads me to study software. I acknowledge the type checking capability of Typescript and Haskell, the simplified language like Python, all the markup languages that make documentation simpler, and the ubiquity of Javascript. I study the tools that enables reproducibility like Nix and version control like Git, and many more.</p>
-//       <p>There are too many things to learn and I am learning them. Together, these tools enable functional, maintainable and scalable programs. I wish to utilize them for my work and the betterment of mankind.</p>
-//     </MyTooltip>
-// 
-//     &nbsp;|&nbsp;
-//     <MyTooltip text="Become an Excellent Writer">
-//       <p>Life is too short to die alone without anything else to share with others. I believe writing is the best way to convey thoughts because the author can make it as concise as he wants and also the storage size is low. I will keep reading and writing forever :)</p>
-//     </MyTooltip>
