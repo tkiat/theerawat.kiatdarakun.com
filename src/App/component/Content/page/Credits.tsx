@@ -18,10 +18,7 @@ export const Credits = (): React.ReactElement =>
         </MyTooltipWithDelay>
       </li>
       <li>
-        <span className="bold highlight">
-          SVG Backgrounds From&nbsp;
-          <a href="https://www.vecteezy.com/free-vector/nature">Vecteezy</a>:
-        </span>
+        <span className="bold highlight">SVG Backgrounds: </span>
         &nbsp;
         <a href="https://www.vecteezy.com/vector-art/229917-high-seas-vector-illustration">Ocean</a>&nbsp;|&nbsp;
         <a href="https://www.vecteezy.com/vector-art/192739-stone-gate-in-the-desert-landscape-vector">Desert</a>&nbsp;|&nbsp;
@@ -29,7 +26,7 @@ export const Credits = (): React.ReactElement =>
         <a href="https://www.vecteezy.com/vector-art/2395226-snow-mountain-background-vector">Snow</a>
       </li>
       <li>
-        <span className="bold highlight">Duck: </span>
+        <span className="bold highlight">SVG: </span>
         <a href="https://freesvg.org/duck">Duck</a>&nbsp;|&nbsp;
         <a href="https://freesvg.org/green-party-hat">Party Hat</a>&nbsp;|&nbsp;
         <a href="https://freesvg.org/necktie">Neck Tie</a>&nbsp;|&nbsp;
