@@ -1,12 +1,15 @@
 .page-hi {
-  h1 {
-    width: min-content;
-  }
+/*   h1 { */
+/*     width: min-content; */
+/*   } */
   p {
     font-weight: Raleway !important;
     font-size: 1.25em;
   }
-  .sleep {
+  .big-text {
+    font-size: 1.4em;
+  }
+  .hi-highlight {
     color: var(--highlight-color);
     font-weight: Bold;
   }
