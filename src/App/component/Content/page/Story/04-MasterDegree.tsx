@@ -29,9 +29,13 @@ export const MasterDegree = (): React.ReactElement =>
       </MyTooltip>
       &nbsp;passed quickly. The second semester was really interesting to me as I will share the same&nbsp;
       <MyTooltip text="room">
-        It cost me only around 210 EUR including internet, water, and electricity unlike 360 EUR in the previous apartment. And best of all, it has a balcony! Drinking beer over there during the summer was like heaven!
+        He is from Karnataka, India. It cost me only around 210 EUR including internet, water, and electricity unlike 360 EUR in the previous apartment. And best of all, it has a balcony! Drinking beer over there during the summer was like heaven!
       </MyTooltip>
-      &nbsp;as a fellow Indian batchmate from Karnataka, India. I was almost idle during the third semester where I didn't get the internship offer so I applied for a&nbsp;
+      &nbsp;as a fellow batchmate.
+    </p>
+
+    <p>
+      I was almost idle during the third semester where I didn't get the internship offer so I applied for a&nbsp;
       <MyTooltip text="gym membership">
         <p>The membership required participants to enroll in the introductory course first which lasted a few days and cost me 30 EUR. I, along with the other 5 German students, were introduced to how to use each machine but the trainer had to speak to me in English. The bathroom was full of naked people but I used a separate room myself because I didn't want to hurt their ego. Smaller is better.</p>
       </MyTooltip>
@@ -51,11 +55,7 @@ export const MasterDegree = (): React.ReactElement =>
       <MyTooltip text="two years">
         <p>Each semester lasts 6 months (including thesis and internship for around 6 months each). A transitioning gap should happen as a student has to find the thesis and the internship himself. There is simply no hand-holding whatsoever.</p>
       </MyTooltip>
-      &nbsp;to finish the degree.
-    </p>
-
-    <p>
-      I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the practical test&nbsp;
+      &nbsp;to finish the degree. I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the practical test&nbsp;
       <MyTooltip text="stuff">
         <p>It was a test on FPGA boards about the coding scheme that my supervisor were conducting research on. He wanted the practical test to confirm his theory. I learn about how to hack the board and carry out the test methodologically. I had to modify the existing C and Verilog codes to conduct the test.</p>
       </MyTooltip>

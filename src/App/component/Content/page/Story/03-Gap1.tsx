@@ -6,11 +6,15 @@ export const Gap1 = (): React.ReactElement =>
   <>
     <h1>23 - 24 Years Old (Before Master's Degree)</h1>
     <p>
-      I was still totally oblivious about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
+      I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
       <MyTooltip text="ranking">
         This was actually quite useless because many German universities have a similarly high standard. The area of study, thesis topics, and tuition fees are more important in my opinion.
       </MyTooltip>
-      , and the fact that I hadn't been outside of my country apart from the Cambodia border. The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
+      , and the fact that I hadn't been outside of my country apart from the Cambodia border.
+    </p>
+
+    <p>
+      The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
       <MyTooltip text="social contribution fee">
         It cost me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I could also take the university cafeteria which was usually cheaper than eating outside.
       </MyTooltip>
@@ -18,11 +22,7 @@ export const Gap1 = (): React.ReactElement =>
       <MyTooltip text="preparation">
         I needed to send my IELTS scores and also open letters of recommendation. The annoying parts were that I had to send the application via (non-electronics) mail and take GRE test (which cost around 180 USD). I was so lazy that I took only one day to prepare it. Needless to say, the scores, except the familiar qualitative section, were not nice.
       </MyTooltip>
-      &nbsp;but I did it anyway.
-    </p>
-
-    <p>
-      Apart from the master's degree applications, I was a teacher assistant in both&nbsp;
+      &nbsp;but I did it anyway. Apart from the master's degree applications, I was a teacher assistant in both&nbsp;
       <MyTooltip text="laboratories">
         It's ITS100 (3 sections) that is the introduction to programming in C. There were many teaching assistants in the room. We supervised students as the class went on.
       </MyTooltip>

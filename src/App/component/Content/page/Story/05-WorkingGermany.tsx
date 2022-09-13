@@ -40,15 +40,15 @@ export const WorkingGermany = (): React.ReactElement =>
       <MyTooltip text="supervision">
         There was a regular 30-minute two-person meeting at the beginning of Monday which was later increased to 1 hour. We wrote the plan all over the whiteboard and talked about the result. That was awesome.
       </MyTooltip>
-      &nbsp;of a German engineer until it was finally the end of the internship when I was given a textbook but never read. I still felt like I couldn't help those awesome German engineers much but I still wanted to stay there so I moved to nearby&nbsp;
-      <MyTooltip text="apartments">
-        The first apartment is a stay with some random Russian people. My mother visited me shortly here and we went together to Prague. In the second apartment, I lived with German and French students where I knew that Crepe was actually way simpler than the ones in Thailand.
-      </MyTooltip>
-      .
+      &nbsp;of a German engineer until it was finally the end of the internship when I was given a textbook but never read.
     </p>
 
     <p>
-      I was totally confused about the direction in life so I decided to find a job in Berlin because it was my dream city to live in. I managed to find an&nbsp;
+      I still felt like I couldn't help those awesome German engineers much but I still wanted to stay there so I moved to nearby&nbsp;
+      <MyTooltip text="apartments">
+        The first apartment is a stay with some random Russian people. My mother visited me shortly here and we went together to Prague. In the second apartment, I lived with German and French students where I knew that Crepe was actually way simpler than the ones in Thailand.
+      </MyTooltip>
+      . I was totally confused about the direction in life so I decided to find a job in Berlin because it was my dream city to live in. I managed to find an&nbsp;
       <MyTooltip text="expensive one">
         It cost a whopping 600 EUR per month. It was very big and for two people but I had no other offer because they seemed to prefer a long-term stay. I intended to find jobs over here but this was indeed a crazy decision.
       </MyTooltip>
@@ -64,7 +64,11 @@ export const WorkingGermany = (): React.ReactElement =>
       <MyTooltip text="cheap">
         It cost only 200 EUR per month. She said she has rented it since around 30 years ago and the price has remained low. There are three separate bedrooms. The kitchen was nicely furnished. The location was unbelievably convenient since there were a regular Turkish market just in front of the apartment and plenty of shops nearby.
       </MyTooltip>
-      &nbsp;place with a Thai nun (who seldom stayed) and another roommate. I took a plunge and enrolled two german&nbsp;
+      &nbsp;place from a Thai nun (who seldom stayed there) and another roommate.
+    </p>
+
+    <p>
+      I took a plunge and enrolled two german&nbsp;
       <MyTooltip text="courses">
         A B2 level German and also a speaking course. It was one of the best experiences ever since I passed Brandenburger Tor very often by bicycle. I felt I was a Berliner. I considered the course price to be cheap, at least cheaper than the one from Geothe Institute in Thailand.
       </MyTooltip>
@@ -82,23 +86,28 @@ export const WorkingGermany = (): React.ReactElement =>
       </MyTooltip>
       &nbsp;in March, 2017. The job&nbsp;
       <MyTooltip text="experience">
-        <p>Just sit in front of a computer for a long time. The company has some perks like half-price health insurance and train ticket but I rejected the latter because I prefer my bicycle (the workpace was around 8km from my apartment). It was the best ever experience to put a beer bottle from the supermarket into my bicycle bottle holder, it became very cold naturally after I reached my place.</p>
-        <p>Half of the time I expected to join a night shift and finished at 10 pm. It was dark and cold on the way back but not that much. My Jack Wolfskin jacket was always reliable.</p>
+        <p>Just sit in front of a computer for a long time. The company has some perks like half-price health insurance and train ticket but I rejected the latter because I prefer my bicycle (the workpace was around 8km from my apartment). It was the best ever experience to put a beer bottle from the supermarket into my bicycle bottle holder to get it very cold naturally after I reached my place.</p>
+
+        <p>Half of the time I worked a night shift and finished at 10 pm. It was dark and cold on the way back but not that much. My Jack Wolfskin jacket was always reliable.</p>
       </MyTooltip>
       &nbsp; was unbelievable and new. However, the&nbsp;
       <MyTooltip text="monotony">
         <p>Something in me changed. At first, I thought I can have good work and continue until I die. The ultimate purpose in life in my mind at the time was happiness but I still didn't know what it was. I finally felt the struggling some German people had.</p>
-        <p>They usually pay for a non-trivial amount of rent and tax and perhaps also the health insurance. They usually have pressure to find and retain a job or else they will face an unemployment nightmare. Mini-jobs exist but that was just enough to get by. I give the deepest sympathy to the homeless specifically during the winter.</p>
-        <p>I concluded that life without rent and without much pressure is a better life.</p>
+        <p>They usually pay for a non-trivial amount of rent and tax and perhaps also the health insurance. They usually have pressure to find and retain a job or else they will face an unemployment nightmare. Mini-jobs exist but that was just enough to get by. I give the deepest sympathy to the homeless specifically during the winter. I concluded that life without rent and without much pressure is a better life.</p>
       </MyTooltip>
-      &nbsp;creeped in and I decided not to extend the contract. Not long before the end of the job, my mother visited me from Norway and I also later&nbsp;
+      &nbsp;creeped in and I decided not to extend the contract. Not long before the end of the job, my mother visited me&nbsp;
+      <MyTooltip text="from Norway">
+        She married a guy there.
+      </MyTooltip>
+      &nbsp;. I also later&nbsp;
       <MyTooltip text="visited">
         <p>She lived in Kristiansand, Norway. The weather at that time was snowy and the town was crowded. We went with her husband on a ferryboat to Denmark where he bought an art piece and we visited an underwater museum.</p>
+
         <p>Norway was an interesting place with very high social welfare. At the same time, the fee when people misbehaved was very high. The food was very expensive but the nature there was lovely. Some people caught lobsters themselves and some picked berries in the wild.</p>
       </MyTooltip>
-      &nbsp;her back. I had to&nbsp;
+      &nbsp;her back, and I had to&nbsp;
       <MyTooltip text="sleep">
-        <p>Because of the weather, I got free food from the airline at both airports in Norway and Amsterdam. I was entitled to a free hotel also in Amsterdam but there was no vacancy nearby. So, I slept in the airport at the spot near the heater. To my surprise, many people did the same. It was one of the best sleep ever since I added this to my list of "interesting stuff to tell others".</p>
+        <p>Because of the weather, I got free food from the airline at both airports in Norway and Amsterdam. I was entitled to a free hotel also in Amsterdam but there was no vacancy nearby. So, I slept in the airport at the spot near the heater. To my surprise, many people did the same. It was one of the best sleep ever (due to a central heating radiator nearby and excitement).</p>
       </MyTooltip>
       &nbsp;at Schiphol airport on the way back to Germany.
     </p>
