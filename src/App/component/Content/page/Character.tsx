@@ -108,7 +108,7 @@ export const Character = (): React.ReactElement => (
             <li>Least Processed</li>
             <li>Self-Cooked</li>
             <li>Stored in Glass Container</li>
-            <li>Warm Water</li>
+            <li>Non-Chilled Water</li>
             <li>Loose Leaf Tea Over Teabags</li>
           </ul>
         </MyTooltip>
@@ -146,7 +146,7 @@ export const Character = (): React.ReactElement => (
 
     <ul>
       <li><span className="bold highlight">Life Purpose</span>: To live by the reality and, if time and resources allowed, help others to do the same as well.</li>
-      <li><span className="bold highlight">Goals</span>: Examine my life purpose philosophically to ensure its validity -> Create a framework of how to live by the reality -> Try to live by the reality and improve myself in the process. Also record some of my activities to ensure my integrity -> Finish a book and/or a website that describes my philosophy and share them -> If time and resources allowed, make a direct impact to the outside world (e.g., open an affordable vegan restaurant).</li>
+      <li><span className="bold highlight">Goals</span>: Create a framework of how to live by the reality -> Try to live by the reality and improve myself in the process. Meanwhile, record some of my activities to ensure my integrity -> Finish a book and/or a website that describes my philosophy and/or activities and share them -> If time and resources allowed, extend the scope beyond myself and my philosophy (e.g., open an affordable vegan restaurant).</li>
     </ul>
   </>
 )

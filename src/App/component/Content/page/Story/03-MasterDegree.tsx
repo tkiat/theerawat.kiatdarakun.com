@@ -4,7 +4,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const MasterDegree = (): React.ReactElement =>
   <>
-    <h1>24 - 26 Years</h1>
+    <h1>24 - 26 Years (Master's Degree)</h1>
     <div>
       I was still totally oblivious about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
       <MyTooltip text="ranking">

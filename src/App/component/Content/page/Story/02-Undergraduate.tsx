@@ -4,9 +4,12 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const Undergraduate = (): React.ReactElement =>
   <>
-    <h1>19 - 23 Years</h1>
+    <h1>19 - 23 Years (Bachelor's Degree)</h1>
+
     <p>My life began to change a bit more when I joined the university. By saying 'change' I mean in the sense of having more orientation in life towards a more sensible direction. I still knew nothing about what I wanted to do but it seems that I had only two options available: academia or corporate life. Both of which are good enough to me, even though I didn't have any personal goals.</p>
+
     <p>There were ways too many things to do but I still mostly played video games. Again, many people are interested in getting a girlfriend but I didn't seem to care. Things that interest me outside of the study are going for the volunteer camps (usually a few days), some exercises (swimming, jogging, badminton), and traveling (not that far). Everything new was opened to me and I appreciated that.</p>
+
     <div>
       The English curriculum broadened my horizon (in the technical knowledge aspect). My faculty simply has three choices: electronics, mechatronics, and communications. I prefer communications over the other two so I did an internship at&nbsp;
       <MyTooltip text="Thaicom">

@@ -1,40 +1,19 @@
 import React from "react"
 
-import {TabsContent} from "../share"
-import {Undergraduate} from "./Story/Undergraduate"
-import {Child} from "./Story/Child"
-import {MasterDegree} from "./Story/MasterDegree"
-import {Teen} from "./Story/Teen"
-import {WorkingGermany} from "./Story/WorkingGermany"
-import {LongUnemployment} from "./Story/LongUnemployment"
+import {Child} from "./Story/00-Child"
+import {Teen} from "./Story/01-Teen"
+import {Undergraduate} from "./Story/02-Undergraduate"
+import {MasterDegree} from "./Story/03-MasterDegree"
+import {WorkingGermany} from "./Story/04-WorkingGermany"
+import {LongUnemployment} from "./Story/05-LongUnemployment"
 
-export const Story = (): React.ReactElement =>
-  <TabsContent
-    items={[
-      {
-        title: "Child",
-        content: <Child />,
-      },
-      {
-        title: "Teen",
-        content: <Teen />,
-      },
-      {
-        title: "Undergraduate",
-        content: <Undergraduate />,
-      },
-      {
-        title: "Master's Degree",
-        content: <MasterDegree />,
-      },
-      {
-        title: "Working in Germany",
-        content: <WorkingGermany />,
-      },
-      {
-        title: "Unemployment",
-        content: <LongUnemployment />,
-      },
-    ]}
-    localKey="tab-index-about-story"
-  />
+export const Story = (): React.ReactElement => (
+  <>
+    <Child />
+    <Teen />
+    <Undergraduate />
+    <MasterDegree />
+    <WorkingGermany />
+    <LongUnemployment />
+  </>
+)
