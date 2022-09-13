@@ -24,7 +24,7 @@ export const Book = (): React.ReactElement =>
         </MyTooltipWithDelay>
       </li>
       <li>
-        <span className="bold highlight">Comics/Graphic Novels: </span>
+        <span className="bold highlight">Fiction: </span>
         <MyTooltipWithDelay text="A Walking Dead">
           I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation.
         </MyTooltipWithDelay>
