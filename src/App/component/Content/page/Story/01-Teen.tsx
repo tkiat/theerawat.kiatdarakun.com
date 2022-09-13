@@ -2,7 +2,7 @@ import React from "react"
 
 export const Teen = (): React.ReactElement =>
   <>
-    <h1>13 - 19 Years (High School)</h1>
+    <h1>13 - 19 Years Old (High School)</h1>
 
     <p>Everything was similar to my childhood except more responsibilities such as having to go to school myself. My mother tried to sell fried bananas and noodles but after a short while, she stopped. Of course, I helped her to do this stuff but not much since I also had to go to school. I joined the same school nearby for 6 years until joining the university.</p>
 

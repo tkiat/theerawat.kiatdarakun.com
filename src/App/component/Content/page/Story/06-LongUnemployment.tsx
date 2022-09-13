@@ -4,7 +4,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const LongUnemployment = (): React.ReactElement =>
   <>
-    <h1>28 Years - Present</h1>
+    <h1>28 Years - 32 Years Old</h1>
     <p>My mind became blank after coming back to Thailand. The sky train near my house was finished. A new shopping mall emerged. Many things seemed to change yet nothing was really changed. Something fundamental always stays the same, people still enjoy and suffer. Many things that I didn't consider useful still engrossed so many people. I applied to only three jobs but didn't pass all the interviews.</p>
     <div>
       This, coupled with the fact that I just bought a new Ikea table and a new 27-inch monitor, makes video games my new full-time job. It was an illusion, I was a mere consumer who didn't produce anything. After wasting life for more than one year, I noticed that my self-assembled PC incurred much electricity cost and was also prone to the occasional power shortage. My very old&nbsp;

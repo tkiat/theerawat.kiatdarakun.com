@@ -4,25 +4,9 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const MasterDegree = (): React.ReactElement =>
   <>
-    <h1>24 - 26 Years (Master's Degree)</h1>
-    <div>
-      I was still totally oblivious about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
-      <MyTooltip text="ranking">
-        This was actually quite useless because many German universities have a similarly high standard. The area of study, thesis topics, and tuition fees are more important in my opinion.
-      </MyTooltip>
-      , and the fact that I hadn't been outside of my country apart from the Cambodia border. The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
-      <MyTooltip text="social contribution fee">
-        It cost me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I could also take the university cafeteria which was usually cheaper than eating outside.
-      </MyTooltip>
-      . The application for RWTH Aachen required a bit of&nbsp;
-      <MyTooltip text="preparation">
- I had to send applications via mail also.
-        I needed to send my IELTS scores and also open letters of recommendation. The annoying parts were that I had to send the application via (non-electronics) mail and take GRE test (which cost around 180 USD). I was so lazy that I took only one day to prepare it. Needless to say, the scores, except the familiar qualitative section, were not nice.
-      </MyTooltip>
-      &nbsp;but I did it anyway.
-    </div>
-    <br/>
-    <div>
+    <h1>24 - 26 Years Old (Master's Degree)</h1>
+
+    <p>
       On the first day of arrival, I had the appointment with&nbsp;
       <MyTooltip text="two kind Thai students">
         One met me at Cologne and one took a taxi with me from Aachen Hofbahnhof (train station) to my room (which I paid the deposit and the rent in advance). I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
@@ -68,13 +52,13 @@ export const MasterDegree = (): React.ReactElement =>
         <p>Each semester lasts 6 months (including thesis and internship for around 6 months each). A transitioning gap should happen as a student has to find the thesis and the internship himself. There is simply no hand-holding whatsoever.</p>
       </MyTooltip>
       &nbsp;to finish the degree.
-    </div>
-    <br />
-    <div>
+    </p>
+
+    <p>
       I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the practical test&nbsp;
       <MyTooltip text="stuff">
         <p>It was a test on FPGA boards about the coding scheme that my supervisor were conducting research on. He wanted the practical test to confirm his theory. I learn about how to hack the board and carry out the test methodologically. I had to modify the existing C and Verilog codes to conduct the test.</p>
       </MyTooltip>
       , and I expect it to help me find the corporate internship.
-    </div>
+    </p>
   </>

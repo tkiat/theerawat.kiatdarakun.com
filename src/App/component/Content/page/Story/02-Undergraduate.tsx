@@ -4,7 +4,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const Undergraduate = (): React.ReactElement =>
   <>
-    <h1>19 - 23 Years (Bachelor's Degree)</h1>
+    <h1>19 - 23 Years Old (Bachelor's Degree)</h1>
 
     <p>There were ways too many things to do but I still mostly played video games (mostly DotA). Things that interested me outside of the study are volunteer camps (usually a few days each), some exercises (swimming, jogging, badminton), and traveling (not that far, usually by free trains). Everything new was opened to me and I appreciated that.</p>
 
