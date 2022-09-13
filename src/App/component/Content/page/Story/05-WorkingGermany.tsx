@@ -20,9 +20,9 @@ export const WorkingGermany = (): React.ReactElement =>
       </MyTooltip>
       &nbsp;here who went together places nearby such as&nbsp;
       <MyTooltip text="Prague">
-        <p>We booked a cheap hostel (10 EUR each) and in the night we visited a bar. There was some dancing lady with a lingerie who made her piece tighter after I stared at her. I felt sleepy but the guard prevented me from doing so and told me to sleep at my home instead. I never understand why someone would want to visit such a place.</p>
-
-        <p>We went to a very old restaurant in Prague where we were served big poultry food and beer. We went to a castle to inspect the heritage of something old I actually didn't know anything about. The beer was nice though. In fact, it was the best ever.</p>
+        We booked a cheap hostel (10 EUR each) and in the night we visited a bar. There was some dancing lady with a lingerie who made her piece tighter after I stared at her. I felt sleepy but the guard prevented me from doing so and told me to sleep at my home instead. I never understand why someone would want to visit such a place.
+        <br /><br />
+        We went to a very old restaurant in Prague where we were served big poultry food and beer. We went to a castle to inspect the heritage of something old I actually didn't know anything about. The beer was nice though. In fact, it was the best ever.
       </MyTooltip>
       . The company has some&nbsp;
       <MyTooltip text="perks">
@@ -74,26 +74,27 @@ export const WorkingGermany = (): React.ReactElement =>
       </MyTooltip>
       . After a while, I got a&nbsp;
       <MyTooltip text="job">
-        <p>A job that valued Thai language skills at Arvato Bertelsmann. I so far hadn't applied to any engineering job in Germany partly because I felt they don't need me except for cleaning and restaurant jobs but got rejected. I thought I would be needed there because I could speak Thai.</p>
-
-        <p>A job is more social-science related, not engineering at all which was fine as I didn't care much. I declined the full-time position and took part-time for 30 hours per week first. Nine months later, I converted to a full-time worker.</p>
+        It's a job that valued Thai language skills at Arvato Bertelsmann. I so far hadn't applied to any engineering job in Germany partly because I felt they don't need me except for cleaning and restaurant jobs but got rejected. I thought I would be needed there because I could speak Thai.
+        <br /><br />
+        A job is more social-science related, not engineering at all which was fine as I didn't care much. I declined the full-time position and took part-time for 30 hours per week first. Nine months later, I converted to a full-time worker.
       </MyTooltip>
       &nbsp;around 8km from my apartment. I invited my father&nbsp;
       <MyTooltip text="here">
-        <p>I paid everything for this visit including a two-way plane ticket. My father was amazed by the number of beers here. He like them a lot and drank a lot each day.</p>
-
-        <p>Then we went to Prague. The hostel we booked had no free place anymore so we got the upgrade to the private room for free! As I did with my fellow interns in my previous trip, we ate at the same restaurant and visited the same castle but my father felt really tired after the trip. I took my father for a beer in a bar in Prague which became his most favorite beer ever.</p>
+        I paid everything for this visit including a two-way plane ticket. My father was amazed by the number of beers here. He like them a lot and drank a lot each day.
+        <br /><br />
+        Then we went to Prague. The hostel we booked had no free place anymore so we got the upgrade to the private room for free! As I did with my fellow interns in my previous trip, we ate at the same restaurant and visited the same castle but my father felt really tired after the trip. I took my father for a beer in a bar in Prague which became his most favorite beer ever.
       </MyTooltip>
       &nbsp;in March, 2017. The job&nbsp;
       <MyTooltip text="experience">
-        <p>Just sit in front of a computer for a long time. The company has some perks like half-price health insurance and train ticket but I rejected the latter because I prefer my bicycle (the workpace was around 8km from my apartment). It was the best ever experience to put a beer bottle from the supermarket into my bicycle bottle holder to get it very cold naturally after I reached my place.</p>
-
-        <p>Half of the time I worked a night shift and finished at 10 pm. It was dark and cold on the way back but not that much. My Jack Wolfskin jacket was always reliable.</p>
+        Just sit in front of a computer for a long time. The company has some perks like half-price health insurance and train ticket but I rejected the latter because I prefer my bicycle (the workpace was around 8km from my apartment). It was the best ever experience to put a beer bottle from the supermarket into my bicycle bottle holder to get it very cold naturally after I reached my place.
+        <br /><br />
+        Half of the time I worked a night shift and finished at 10 pm. It was dark and cold on the way back but not that much. My Jack Wolfskin jacket was always reliable.
       </MyTooltip>
       &nbsp; was unbelievable and new. However, the&nbsp;
       <MyTooltip text="monotony">
-        <p>Something in me changed. At first, I thought I can have good work and continue until I die. The ultimate purpose in life in my mind at the time was happiness but I still didn't know what it was. I finally felt the struggling some German people had.</p>
-        <p>They usually pay for a non-trivial amount of rent and tax and perhaps also the health insurance. They usually have pressure to find and retain a job or else they will face an unemployment nightmare. Mini-jobs exist but that was just enough to get by. I give the deepest sympathy to the homeless specifically during the winter. I concluded that life without rent and without much pressure is a better life.</p>
+        Something in me changed. At first, I thought I can have good work and continue until I die. The ultimate purpose in life in my mind at the time was happiness but I still didn't know what it was. I finally felt the struggling some German people had.
+        <br /><br />
+        They usually pay for a non-trivial amount of rent and tax and perhaps also the health insurance. They usually have pressure to find and retain a job or else they will face an unemployment nightmare. Mini-jobs exist but that was just enough to get by. I give the deepest sympathy to the homeless specifically during the winter. I concluded that life without rent and without much pressure is a better life.
       </MyTooltip>
       &nbsp;creeped in and I decided not to extend the contract. Not long before the end of the job, my mother visited me&nbsp;
       <MyTooltip text="from Norway">
@@ -101,13 +102,13 @@ export const WorkingGermany = (): React.ReactElement =>
       </MyTooltip>
       &nbsp;. I also later&nbsp;
       <MyTooltip text="visited">
-        <p>She lived in Kristiansand, Norway. The weather at that time was snowy and the town was crowded. We went with her husband on a ferryboat to Denmark where he bought an art piece and we visited an underwater museum.</p>
-
-        <p>Norway was an interesting place with very high social welfare. At the same time, the fee when people misbehaved was very high. The food was very expensive but the nature there was lovely. Some people caught lobsters themselves and some picked berries in the wild.</p>
+        She lived in Kristiansand, Norway. The weather at that time was snowy and the town was crowded. We went with her husband on a ferryboat to Denmark where he bought an art piece and we visited an underwater museum.
+        <br /><br />
+        Norway was an interesting place with very high social welfare. At the same time, the fee when people misbehaved was very high. The food was very expensive but the nature there was lovely. Some people caught lobsters themselves and some picked berries in the wild.
       </MyTooltip>
       &nbsp;her back, and I had to&nbsp;
       <MyTooltip text="sleep">
-        <p>Because of the weather, I got free food from the airline at both airports in Norway and Amsterdam. I was entitled to a free hotel also in Amsterdam but there was no vacancy nearby. So, I slept in the airport at the spot near the heater. To my surprise, many people did the same. It was one of the best sleep ever (due to a central heating radiator nearby and excitement).</p>
+        Because of the weather, I got free food from the airline at both airports in Norway and Amsterdam. I was entitled to a free hotel also in Amsterdam but there was no vacancy nearby. So, I slept in the airport at the spot near the heater. To my surprise, many people did the same. It was one of the best sleep ever (due to a central heating radiator nearby and excitement).
       </MyTooltip>
       &nbsp;at Schiphol airport on the way back to Germany.
     </p>

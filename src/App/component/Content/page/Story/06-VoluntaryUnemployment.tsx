@@ -2,7 +2,7 @@ import React from "react"
 
 import {MyTooltip} from "../../share/MyTooltip"
 
-export const LongUnemployment = (): React.ReactElement =>
+export const VoluntaryUnemployment = (): React.ReactElement =>
   <>
     <h1>28 - 32 Years Old (Voluntary Unemployment)</h1>
 

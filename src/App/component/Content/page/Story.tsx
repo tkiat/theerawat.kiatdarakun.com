@@ -6,7 +6,7 @@ import {Undergraduate} from "./Story/02-Undergraduate"
 import {Gap1} from "./Story/03-Gap1"
 import {MasterDegree} from "./Story/04-MasterDegree"
 import {WorkingGermany} from "./Story/05-WorkingGermany"
-import {LongUnemployment} from "./Story/06-LongUnemployment"
+import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 
 export const Story = (): React.ReactElement => (
   <>
@@ -16,6 +16,6 @@ export const Story = (): React.ReactElement => (
     <Gap1 />
     <MasterDegree />
     <WorkingGermany />
-    <LongUnemployment />
+    <VoluntaryUnemployment />
   </>
 )

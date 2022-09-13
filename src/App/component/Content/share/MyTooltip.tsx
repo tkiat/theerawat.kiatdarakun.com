@@ -12,6 +12,7 @@ export const MyTooltip = (p: MyTooltipProps): React.ReactElement => {
       <ReactTooltip
         className="tooltip"
         arrowColor="transparent"
+        wrapper="span"
         overridePosition={({left, top}, _e, _t, _) => ({
           top,
           left: Math.max(left, 0),

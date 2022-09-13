@@ -17,7 +17,7 @@ export const MasterDegree = (): React.ReactElement =>
       </MyTooltip>
       , went to&nbsp;
       <MyTooltip text="Dreilaenderpunkt">
-        <p>It is simply the meeting point of three countries: Germany, The Netherlands, and Belgium. It took me around 1.5 hours by foot from my apartment. The view was nice and the path to it had some farming and horses. The experience was totally priceless. I visited this place many times (&gt; 5).</p>
+        It is simply the meeting point of three countries: Germany, The Netherlands, and Belgium. It took me around 1.5 hours by foot from my apartment. The view was nice and the path to it had some farming and horses. The experience was totally priceless. I visited this place many times (&gt; 5).
       </MyTooltip>
       , and finally joined the&nbsp;
       <MyTooltip text="orientation">
@@ -37,27 +37,27 @@ export const MasterDegree = (): React.ReactElement =>
     <p>
       I was almost idle during the third semester where I didn't get the internship offer so I applied for a&nbsp;
       <MyTooltip text="gym membership">
-        <p>The membership required participants to enroll in the introductory course first which lasted a few days and cost me 30 EUR. I, along with the other 5 German students, were introduced to how to use each machine but the trainer had to speak to me in English. The bathroom was full of naked people but I used a separate room myself because I didn't want to hurt their ego. Smaller is better.</p>
+        The membership required participants to enroll in the introductory course first which lasted a few days and cost me 30 EUR. I, along with the other 5 German students, were introduced to how to use each machine but the trainer had to speak to me in English. The bathroom was full of naked people but I used a separate room myself because I didn't want to hurt their ego. Smaller is better.
       </MyTooltip>
       &nbsp;and travelled with my&nbsp;
       <MyTooltip text="bicycle">
-        <p>I won the touring bike from the auction on eBay for 140 EUR. It was cheap given the quality: many gears, water bottle holder, two seats, and 28-inch wheel size. I took the free train to Duesseldorf where I met the seller. In Germany, you have to pay for a ticket for a bicycle if you carry it on a train. Make sense!</p>
-
-        <p>I was about to get punished by the train officer that day but luckily a German guy talked with the office and somehow I had to pay only 6 EUR bicycle fee, not an additional, probably around 40 EUR, punishment fee. I was fined 3 times with my bicycle usage. The first time was for the absence of rear light, and the other twos were too much speed.</p>
+        I won the touring bike from the auction on eBay for 140 EUR. It was cheap given the quality: many gears, water bottle holder, two seats, and 28-inch wheel size. I took the free train to Duesseldorf where I met the seller. In Germany, you have to pay for a ticket for a bicycle if you carry it on a train. Make sense!
+        <br /><br />
+        I was about to get punished by the train officer that day but luckily a German guy talked with the office and somehow I had to pay only 6 EUR bicycle fee, not an additional, probably around 40 EUR, punishment fee. I was fined 3 times with my bicycle usage. The first time was for the absence of rear light, and the other twos were too much speed.
       </MyTooltip>
       &nbsp;
       <MyTooltip text="nearby">
-        <p>Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot. They were usually full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35km destination. There was an American war memorial on the way to the city.</p>
-
-        <p>Monschau is a very beautiful town with some small rivers and a castle. Barred the constant flux of visitors, it was very nice to live there. It took me almost 2 hours by bike because of the slope but I spent only 1 hour on the way back. I went there two times by bike, alone.</p>
+        Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot. They were usually full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35km destination. There was an American war memorial on the way to the city.
+        <br /><br />
+        Monschau is a very beautiful town with some small rivers and a castle. Barred the constant flux of visitors, it was very nice to live there. It took me almost 2 hours by bike because of the slope but I spent only 1 hour on the way back. I went there two times by bike, alone.
       </MyTooltip>
       . In general, you should expect to spend a little more than&nbsp;
       <MyTooltip text="two years">
-        <p>Each semester lasts 6 months (including thesis and internship for around 6 months each). A transitioning gap should happen as a student has to find the thesis and the internship himself. There is simply no hand-holding whatsoever.</p>
+        Each semester lasts 6 months (including thesis and internship for around 6 months each). A transitioning gap should happen as a student has to find the thesis and the internship himself. There is simply no hand-holding whatsoever.
       </MyTooltip>
       &nbsp;to finish the degree. I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the practical test&nbsp;
       <MyTooltip text="stuff">
-        <p>It was a test on FPGA boards about the coding scheme that my supervisor were conducting research on. He wanted the practical test to confirm his theory. I learn about how to hack the board and carry out the test methodologically. I had to modify the existing C and Verilog codes to conduct the test.</p>
+        It was a test on FPGA boards about the coding scheme that my supervisor were conducting research on. He wanted the practical test to confirm his theory. I learn about how to hack the board and carry out the test methodologically. I had to modify the existing C and Verilog codes to conduct the test.
       </MyTooltip>
       , and I expect it to help me find the corporate internship.
     </p>
