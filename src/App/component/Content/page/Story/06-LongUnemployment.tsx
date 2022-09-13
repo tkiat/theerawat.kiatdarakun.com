@@ -27,29 +27,25 @@ export const LongUnemployment = (): React.ReactElement =>
       <MyTooltip text="laptop">
         It was VAIO VGNCS16S that cost me (to be more precise, my father) about 1000 USD in 2008. That was quite a lot of money but I liked its beauty (my only criterion at the time). With the notorious Microsoft Vista, it took me ages to boot successfully.
       </MyTooltip>
-      &nbsp;came to my mind.
+      &nbsp;came to my mind. I installed Void Linux on it, and the performance was an eye-opener for me.
     </p>
 
     <p>
-      I first replaced Microsoft Vista that comes with it with Void Linux. It was performant and that was an eye-opener for me. I became interested in this liberating piece of software (Linux), and I sold my PC afterward and bought two used&nbsp;
+      I then became much more interested in tinkering with software than playing video games, so I stopped playing games (intensively) ever since and replaced my PC with two used&nbsp;
       <MyTooltip text="Thinkpad X200">
         They allowed me to install open-source WiFi firmware and bootloader (Libreboot then coreboot). The proprietary counterparts might contain spyware because no one can see the code.
       </MyTooltip>
-      . I was much more interested in tinkering with software than playing video games, so I stopped playing games (intensively) ever since.
-    </p>
-
-    <p>
-      I began to value something&nbsp;
-      <MyTooltip text="lean and liberating">
-        I replaced my iPad with a cheaper tablet and quitted buying frozen food and chips from the convenience store.
+      . My perspective was broaden, and I began to value&nbsp;
+      <MyTooltip text="freedom">
+        Freedom, to me, is the ability to do anything; however, it cannot compromise others' freedom. I began to use free software and had a thought of using less waste and going vegan, though I still thought of veganism as a bit “too much”.
       </MyTooltip>
-      &nbsp;than something convenient and costly. My perspective was broaden, and I knew I wanted “freedom”. I immersed myself in (web) programming and Linux, thinking that they will give me freedom I want. My desire for freedom extends to other beings as well. This was when I began to perceive sufferings of everything around me. I has a thought of using less waste and going vegan, though I still thought of veganism as “too much”.
+      &nbsp;over convenience. I immersed myself in (web) programming and Linux, thinking that they will give me freedom I want. My desire for freedom extended to other beings as well. This was when I began to perceive sufferings of everything around me.
     </p>
 
     <p>
-      This eventually led to the strong urge to discover why (and how) I should live before beginning my job search again. For almost a year, I read some philosophy and also&nbsp;
-      <MyTooltip text="introspected a lot">
-        Why should I eat or survive? Does a tiger have right to kill other animals? What is good and bad? Do we have objective life purposes? Does God exist? Does rebirth exist?
+      I then realized that we are frequently ignorant to sufferings, which in turn led to the strong urge to discover why (and how) I should live before beginning my job search again. For almost a year, I examined some philosophical thoughts and&nbsp;
+      <MyTooltip text="introspected">
+        Why should I eat or survive? Does a tiger have right to kill other animals? What is good and bad? Do we have objective life purposes? Does God exist? Does rebirth exist? ...
       </MyTooltip>
       &nbsp;about the fundamental nature of things. I finally came to the conclusion that life purpose can be&nbsp;
       <MyTooltip text="anything">
@@ -69,7 +65,7 @@ export const LongUnemployment = (): React.ReactElement =>
       &nbsp;I appreciate the given opportunity to introspect. I now know why and how to live.
     </p>
 
-    <p>Why should I live? Using my awareness, I conclude that my body wants to survive (as it heals itself), and the same applies to other beings as well. Since I need to kill other beings for food, both decisions (to commit suicide and continue to hurt others) neither fully respect nor disrespect the reality. The only way to prevent this dilemma is to prevent myself from being born in the first place, which is impossible. Therefore, I must choose one of these two valid choices.</p>
+    <p>Why should I live? Using my awareness, I conclude that my body wants to survive (as it heals itself), and the same applies to other beings as well. Since I need to kill other beings for food, both decisions (to commit suicide and continue to hurt others) neither fully respect nor disrespect the reality. The only way to prevent this dilemma is to prevent myself from being born in the first place, which is impossible. Therefore, I must choose one of these two choices.</p>
 
-    <p>Of course, I decided to live. </p>
+    <p>The fact that I was still writing this paragraph showed that I decided to live. The next question is then “how should I live?”. Life purpose can be anything, but the wisest way of life (which is my choice) is to live by the reality, which is the collection of what I can aware of currently and in the past. I want to leave all the details for now. The thing is, I am now certain of why and how of my existence. It is now reasonable to find job and continue to exist.</p>
   </>
