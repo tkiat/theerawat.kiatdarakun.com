@@ -10,8 +10,7 @@ import {Rec2018} from "./Consume/Rec2018"
 
 export const Consume = (): React.ReactElement =>
   <>
-    <p>I frequently read blog/forum posts and encyclopedia entries and daily skim news, and I sometimes digest something more serious and usually longer, like courses, books, comics, documentaries, talks, etc. Hold a cursor on an item below for my experience or review of some selected items.</p>
-
+    <p>The list below contains the selection of what I have digested. Hold a cursor on an item below for my experience or review.</p>
     <Rec2022 />
     <Rec2021 />
     <Rec2020 />
