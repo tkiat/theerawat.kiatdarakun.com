@@ -1,5 +1,4 @@
 import React from 'react'
-
 import {MyTooltip} from "../share/MyTooltip"
 
 export const Character = (): React.ReactElement => (
