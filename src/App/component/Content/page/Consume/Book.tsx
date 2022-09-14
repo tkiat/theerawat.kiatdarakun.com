@@ -5,13 +5,13 @@ import {MyTooltipWithDelay} from "../../share/MyTooltip"
 export const Book = (): React.ReactElement =>
   <>
     <p>I order the list chronologically. All books here are available DRM-free.</p>
+
     <ul>
       <li>
         <span className="bold highlight">Technical: </span>
         <MyTooltipWithDelay text="Learn You a Haskell for Great Good!">
           [90% completed] I got this book from Humble Bundle, but a free <a href="http://learnyouahaskell.com/">online</a> version also exists. I was pretty much lost in the later half at first. Having written a featureful pomodoro application in Haskell, I later reread it and finally understood it. I skipped two chapters for I did't need the knowledge yet.
         </MyTooltipWithDelay>
-
         &nbsp;|&nbsp;
         <MyTooltipWithDelay text="Learning JavaScript Design Patterns">
           [50% completed] Thanks to the generous author, I read it for free <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book">online</a>. I have used the module pattern extensively in my personal website and perhaps in the future projects as well. I don't use many of the patterns here and require a reread.
