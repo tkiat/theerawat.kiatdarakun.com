@@ -36,14 +36,22 @@ export const Create = (): React.ReactElement =>
       </a>
     </p>
 
-    <h1>One-Off</h1>
+    <h1>Ongoing</h1>
+
+    <p>
+      <MyTooltip text="The Wisest Way of Life">
+        <b>[Book]</b> It describes the wisest way of life, which is guided by the awareness and the pure transformation of it. This is a serious philosophical work that will serve as a major milestone of my life, once finished of course.
+      </MyTooltip>
+    </p>
+
+    <h1>One-Off Projects</h1>
 
     <p>
       <span className="big-text-inline">[2022] </span>
 
       <a href="https://github.com/tkiat/pomodoro-bar">
         <MyTooltip text="pomodoro-bar">
-          <b>[Software]</b> <b className="highlight">[Haskell]</b> A pausable, configurable Pomodoro clock with integration to xmobar/polybar.
+          <b>[Software]</b> <b className="highlight">[Haskell]</b> A pausable, configurable Pomodoro clock with integration to xmobar/polybar. I could finish it in a day using Python, but my limited understanding of Haskell made this project longer than a month! It taught me a lot about how to manage side effects and signals in Haskell.
         </MyTooltip>
       </a>
       &nbsp;|&nbsp;

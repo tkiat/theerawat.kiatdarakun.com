@@ -10,7 +10,7 @@ import {Rec2018} from "./Consume/Rec2018"
 
 export const Consume = (): React.ReactElement =>
   <>
-    <p>The list below contains the selection of what I have digested. Hold a cursor on an item below for my experience or review.</p>
+    <p>I just realize that my memory retains much better when I shortly summarize books, courses, documentaries, etc., just after I digest them. The list below contains a selection of what I have digested (plus a few more from my memory). Hold a cursor on an item for information.</p>
     <Rec2022 />
     <Rec2021 />
     <Rec2020 />
