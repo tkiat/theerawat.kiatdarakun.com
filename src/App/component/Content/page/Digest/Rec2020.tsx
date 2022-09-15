@@ -9,7 +9,7 @@ export const Rec2020 = (): React.ReactElement =>
     <b className="bold highlight">Fiction: </b>
     Comics (
       <MyTooltipWithDelay text="The Last Unicorn">
-        It cost me 5$ on comiXology. It is a story of a unicorn finding the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
+        It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
       </MyTooltipWithDelay>
     ) — <b className="bold highlight">Software: </b>
     Course (
