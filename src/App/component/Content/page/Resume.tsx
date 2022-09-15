@@ -55,8 +55,7 @@ export const Resume = (): React.ReactElement =>
 
     <h2><u>Misc.</u></h2>
 
-    <ul>
-      <li>Published papers in ISCIT 2013 and DICTAP 2012 conferences</li>
-      <li>Awarded 4-year unconditional continuing full scholarships for undergraduate studies</li>
-    </ul>
+    <p>[2013] Published paper in ISCIT 2013 conference</p>
+    <p>[2012] Published paper in DICTAP 2012 conference</p>
+    <p>[2008] Awarded 4-year unconditional continuing full scholarships for undergraduate studies</p>
   </>
