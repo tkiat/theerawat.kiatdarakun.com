@@ -1,5 +1,5 @@
 import React from 'react'
-import {MyTooltip} from "../share/MyTooltip"
+import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Character = (): React.ReactElement => (
   <>
@@ -9,46 +9,37 @@ export const Character = (): React.ReactElement => (
       <li>
         <span className="bold highlight">Personality: </span>
 
-        <a href="https://www.16personalities.com/">
-          <MyTooltip text="MBTI Test">
-            <p>https://www.16personalities.com/</p>
-            <p>Taken on 31 Mar 2021</p>
-            <ul>
-              <li>(I)ntroverted (79%) - (E)xtraverted</li>
-              <li>I(N)tuitive (52%) - Ob(S)ervant</li>
-              <li>(T)hinking (51%) - (F)eeling</li>
-              <li>(J)udging(58%) - (P)rospecting</li>
-              <li>(A)ssertive (65%) - (T)erbulent</li>
-            </ul>
-          </MyTooltip>
-        </a>
+        <MyTooltipWithDelay text="MBTI Test">
+          <p>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></p>
+          <ul>
+            <li>(I)ntroverted (79%) - (E)xtraverted</li>
+            <li>I(N)tuitive (52%) - Ob(S)ervant</li>
+            <li>(T)hinking (51%) - (F)eeling</li>
+            <li>(J)udging(58%) - (P)rospecting</li>
+            <li>(A)ssertive (65%) - (T)erbulent</li>
+          </ul>
+        </MyTooltipWithDelay>
         &nbsp;|&nbsp;
-        <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">
-          <MyTooltip text="Big 5 Test">
-            <p>https://openpsychometrics.org/tests/IPIP-BFFM/</p>
-            <p>Taken on 31 Mar 2021</p>
-            <ul>
-              <li>Extroversion: 11 (percentile)</li>
-              <li>Emotional Stability: 57</li>
-              <li>Agreeableness: 7</li>
-              <li>Conscientiousness: 95</li>
-              <li>Intellect/Imagination: 46</li>
-            </ul>
-          </MyTooltip>
-        </a>
+        <MyTooltipWithDelay text="Big 5 Test">
+          <p>Taken on 31 Mar 2021 from <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
+          <ul>
+            <li>Extroversion: 11 (percentile)</li>
+            <li>Emotional Stability: 57</li>
+            <li>Agreeableness: 7</li>
+            <li>Conscientiousness: 95</li>
+            <li>Intellect/Imagination: 46</li>
+          </ul>
+        </MyTooltipWithDelay>
         &nbsp;|&nbsp;
-        <a href="http://openpsychometrics.org/tests/O4TS/">
-          <MyTooltip text="Four Temperaments Test">
-            <p>http://openpsychometrics.org/tests/O4TS/</p>
-            <p>Taken on 31 Mar 2021</p>
-            <ul>
-              <li>Choleric: 12</li>
-              <li>Melancholic: 12</li>
-              <li>Sanguine: 5</li>
-              <li>Phlegmatic: 22</li>
-            </ul>
-          </MyTooltip>
-        </a>
+        <MyTooltipWithDelay text="Four Temperaments Test">
+          <p>Taken on 31 Mar 2021 from <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
+          <ul>
+            <li>Choleric: 12</li>
+            <li>Melancholic: 12</li>
+            <li>Sanguine: 5</li>
+            <li>Phlegmatic: 22</li>
+          </ul>
+        </MyTooltipWithDelay>
         &nbsp;|&nbsp;
         <MyTooltip text="Outer Personality">
           <ul>

@@ -1,15 +1,14 @@
 import React from "react"
 
-import {MyTooltip} from "../share/MyTooltip"
-import {MyTooltipWithDelay} from "../share/MyTooltip"
+import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Create = (): React.ReactElement =>
   <>
     <h1>Ongoing</h1>
 
     <p>
-      <MyTooltip text="The Wisest Way of Life">
-        <b>[Book]</b> I regard the wisest way of life as the life guided by the awareness and the pure transformation of it. This book describes such way of life. I intend it to be a serious philosophical work that will serve as a major milestone of my life, once finished of course.
+      <MyTooltip text="Book: The Wisest Way of Life">
+        I regard the wisest way of life as the life guided by the awareness and the pure transformation of it. This book describes such way of life. I intend it to be a serious philosophical work that will serve as a major milestone of my life, once finished of course.
       </MyTooltip>
     </p>
 
@@ -22,11 +21,9 @@ export const Create = (): React.ReactElement =>
       &nbsp; — &nbsp;
 
       <b className="highlight">Dormant: </b>
-      <a href="https://a-freedom-blog.vercel.app/">
-        <MyTooltip text="A Freedom Blog">
-          <b>[Personal Blog]</b> It is oriented toward the freedom-friendly stuff. Currently, it contains articles of mixed qualities on many topics. I should revise them sometime.
-        </MyTooltip>
-      </a>
+      <MyTooltipWithDelay text="Blog: A Freedom Blog">
+        <b><a href="https://a-freedom-blog.vercel.app/">Link to Website</a></b> — This blog is oriented toward the freedom-friendly stuff. Currently, it contains articles of mixed qualities on many topics. I should revise them sometime.
+      </MyTooltipWithDelay>
       &nbsp;|&nbsp;
       <a href="https://www.youtube.com/channel/UCgCypxL_GouQb_kpDrHOIyQ">
         <MyTooltip text="Freedom in Computing">

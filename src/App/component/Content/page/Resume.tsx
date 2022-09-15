@@ -9,7 +9,7 @@ export const Resume = (): React.ReactElement =>
     </p>
 
     <p>
-      [Feb 2017 - Jan 2018] <b>Customer Care Agent</b> at Arvato Bertelsmann in Berlin, Germany — Reviewed social network contents based on client’s live policies
+      [Feb 2017 - Jan 2018] <b>Customer Care Agent</b> at Arvato Direct Services Potsdam GmbH in Berlin, Germany — Reviewed social network contents based on client’s live policies
     </p>
 
     <p>
