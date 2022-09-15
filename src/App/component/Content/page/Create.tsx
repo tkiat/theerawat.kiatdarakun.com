@@ -5,6 +5,14 @@ import {MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Create = (): React.ReactElement =>
   <>
+    <h1>Ongoing</h1>
+
+    <p>
+      <MyTooltip text="The Wisest Way of Life">
+        <b>[Book]</b> I regard the wisest way of life as the life guided by the awareness and the pure transformation of it. This book describes such way of life. I intend it to be a serious philosophical work that will serve as a major milestone of my life, once finished of course.
+      </MyTooltip>
+    </p>
+
     <h1>Without End</h1>
 
     <p>
@@ -16,7 +24,7 @@ export const Create = (): React.ReactElement =>
       <b className="highlight">Dormant: </b>
       <a href="https://a-freedom-blog.vercel.app/">
         <MyTooltip text="A Freedom Blog">
-          <b>[Personal Blog]</b> It is oriented toward the freedom-friendly stuff. Currently, it contains articles of mixed qualities on many topics. I am not sure I have time and expertise to separate each topic into a dedicated site.
+          <b>[Personal Blog]</b> It is oriented toward the freedom-friendly stuff. Currently, it contains articles of mixed qualities on many topics. I should revise them sometime.
         </MyTooltip>
       </a>
       &nbsp;|&nbsp;
@@ -34,14 +42,6 @@ export const Create = (): React.ReactElement =>
           <b>[Youtube channel]</b> Just replays of two games (Clash Royale and Cryptark) without commentaries.
         </MyTooltip>
       </a>
-    </p>
-
-    <h1>Ongoing</h1>
-
-    <p>
-      <MyTooltip text="The Wisest Way of Life">
-        <b>[Book]</b> It describes the wisest way of life, which is guided by the awareness and the pure transformation of it. This is a serious philosophical work that will serve as a major milestone of my life, once finished of course.
-      </MyTooltip>
     </p>
 
     <h1>One-Off Projects</h1>

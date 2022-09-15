@@ -15,7 +15,7 @@ export const Contact = (): React.ReactElement =>
     </p>
     <a
       className="contact__link"
-      href="https://raw.githubusercontent.com/tkiat/dotfiles-and-configs/master/gpg/public.gpg"
+      href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp"
       target="blank">
       GPG Public Key
     </a>
