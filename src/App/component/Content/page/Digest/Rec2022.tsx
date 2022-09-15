@@ -8,35 +8,25 @@ export const Rec2022 = (): React.ReactElement =>
 
     <b className="bold highlight">Buddhism: </b>
     Book (
-      <a href="https://www.watnyanaves.net/th/book_detail/302">
-        <MyTooltipWithDelay text="พุทธธรรม ฉบับเดิม">
-          หลักธรรมพุทธพื้นฐาน อยากสรุปแต่คงต้องอ่านอีกรอบ
-        </MyTooltipWithDelay>
-      </a>
+      <MyTooltipWithDelay text="พุทธธรรม ฉบับเดิม">
+        <a href="https://www.watnyanaves.net/th/book_detail/302">Link</a> — หลักธรรมพุทธพื้นฐาน อยากสรุปแต่คงต้องอ่านอีกรอบ
+      </MyTooltipWithDelay>
       &nbsp;|&nbsp;
-      <a href="https://www.watnyanaves.net/th/book_detail/583">
-        <MyTooltipWithDelay text="พุทธธรรม ฉบับปรับขยาย">
-          เหมือนหนังสือพุทธธรรม ฉบับเดิม แต่มีคำบรรยายเพิ่มเติมจากท่านผู้เขียนเข้ามามากขึ้น อยากสรุปแต่คงต้องอ่านอีกรอบ
-        </MyTooltipWithDelay>
-      </a>
+      <MyTooltipWithDelay text="พุทธธรรม ฉบับปรับขยาย">
+        <a href="https://www.watnyanaves.net/th/book_detail/583">Link</a> — เหมือนหนังสือพุทธธรรม ฉบับเดิม แต่มีคำบรรยายเพิ่มเติมจากท่านผู้เขียนเข้ามามากขึ้น อยากสรุปแต่คงต้องอ่านอีกรอบ
+      </MyTooltipWithDelay>
       &nbsp;|&nbsp;
-      <a href="http://watnapp.com/book">
-        <MyTooltipWithDelay text="พุทธวจน คู่มือโสดาบัน">
-          เป็นหนังสือที่คัดเฉพาะถ้อยคำพระพุทธเจ้าเกียวกับโสดาบัน โสดาบันเป็นเรื่องใหญ่ของคนนับถือพุทธ เหตุผลนึงเพราะเป็นจุดพ้นจากปุถุชนเป็นอริยะบุคคล และเชื่อกันว่าจะไม่ไปในเกิดในนรกแน่นอน ผมไม่เชื่อในนรกหรอกแต่โสดาบันก็ไม่ทำร้ายใครจึงน่ายกย่อง อยากสรุปแต่คงต้องอ่านอีกรอบ
-        </MyTooltipWithDelay>
-      </a>
+      <MyTooltipWithDelay text="พุทธวจน คู่มือโสดาบัน">
+        <a href="http://watnapp.com/book">Link</a> — เป็นหนังสือที่คัดเฉพาะถ้อยคำพระพุทธเจ้าเกียวกับโสดาบัน โสดาบันเป็นเรื่องใหญ่ของคนนับถือพุทธ เหตุผลนึงเพราะเป็นจุดพ้นจากปุถุชนเป็นอริยะบุคคล และเชื่อกันว่าจะไม่ไปในเกิดในนรกแน่นอน ผมไม่เชื่อในนรกหรอกแต่โสดาบันก็ไม่ทำร้ายใครจึงน่ายกย่อง อยากสรุปแต่คงต้องอ่านอีกรอบ
+      </MyTooltipWithDelay>
       &nbsp;|&nbsp;
-      <a href="http://watnapp.com/book">
-        <MyTooltipWithDelay text="พุทธวจน อานาปานสติ">
-          เป็นหนังสือที่คัดเฉพาะถ้อยคำพระพุทธเจ้าเกียวกับอานาปานสติ หลักๆคืออานาปานสติอย่างเดียวก็มีส่วนช่วยบรรลุธรรมได้มาก อยากสรุปแต่คงต้องอ่านอีกรอบ
-        </MyTooltipWithDelay>
-      </a>
+      <MyTooltipWithDelay text="พุทธวจน อานาปานสติ">
+        <a href="http://watnapp.com/book">Link</a> — เป็นหนังสือที่คัดเฉพาะถ้อยคำพระพุทธเจ้าเกียวกับอานาปานสติ หลักๆคืออานาปานสติอย่างเดียวก็มีส่วนช่วยบรรลุธรรมได้มาก อยากสรุปแต่คงต้องอ่านอีกรอบ
+      </MyTooltipWithDelay>
       &nbsp;|&nbsp;
-      <a href="http://library.nhrc.or.th/ulib/dublin.php?ID=2376">
-        <MyTooltipWithDelay text="พระไตรปิฏก ฉบับประชาชน">
-          เป็นประไตรปิฏกฉบับย่อ รวมถึงประวัติพระไตรปิฏกอย่างคร่าวๆ ผมเห็นว่าคนไทยที่สนใจพุทธทุกคนควรอ่าน อยากสรุปแต่คงต้องอ่านอีกรอบ
-        </MyTooltipWithDelay>
-      </a>
+      <MyTooltipWithDelay text="พระไตรปิฏก ฉบับประชาชน">
+        <a href="http://library.nhrc.or.th/ulib/dublin.php?ID=2376">Link</a> — เป็นประไตรปิฏกฉบับย่อ รวมถึงประวัติพระไตรปิฏกอย่างคร่าวๆ ผมเห็นว่าคนไทยที่สนใจพุทธทุกคนควรอ่าน อยากสรุปแต่คงต้องอ่านอีกรอบ
+      </MyTooltipWithDelay>
     ) — <b className="bold highlight">Fiction: </b>
     Comics (
       <MyTooltipWithDelay text="Incognegro: A Graphic Mystery">
@@ -44,11 +34,8 @@ export const Rec2022 = (): React.ReactElement =>
       </MyTooltipWithDelay>
     ) — <b className="bold highlight">Other: </b>
     Book (
-      <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/">
-        <MyTooltipWithDelay text="Sharia Law and the Death Penalty">
-          I read this to understand more about laws in Muslim countries after I perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explained the basic Islamic principles, then the death penalties, and finally suggested that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.
-        </MyTooltipWithDelay>
-      </a>
+      <MyTooltipWithDelay text="Sharia Law and the Death Penalty">
+        <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/">Link</a> — I read this to understand more about laws in Muslim countries after I perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explained the basic Islamic principles, then the death penalties, and finally suggested that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.
+      </MyTooltipWithDelay>
     )
   </p>
-// tao te ching
