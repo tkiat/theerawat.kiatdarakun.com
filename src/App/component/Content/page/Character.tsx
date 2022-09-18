@@ -59,7 +59,7 @@ export const Character = (): React.ReactElement => (
           <li>Minimalism</li>
           <li>Less Waste Lifestyle</li>
           <li>Veganism</li>
-          <li>Theravada and Zen Buddhism</li>
+          <li>Buddhism</li>
         </ul>
       </MyTooltip>
     </div>
