@@ -41,7 +41,7 @@ export const Resume = (): React.ReactElement =>
     </p>
 
     <p>
-      <b>Soft Skills</b> — Since living by the reality is my life purpose, I am not inclined to cause or support unnecessary sufferings (like dramas and animal industry). Furthermore, I am disciplined and possess good qualitive and analytical thinking skills.
+      <b>Soft Skills</b> — Since living by the reality is my life purpose, I am not inclined to cause or support unnecessary sufferings (like dramas and animal industry). Furthermore, I am disciplined and possess good quantitative and analytical thinking skills.
     </p>
 
     <p>
