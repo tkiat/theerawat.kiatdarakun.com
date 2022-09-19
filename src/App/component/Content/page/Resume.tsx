@@ -51,7 +51,7 @@ export const Resume = (): React.ReactElement =>
     <h2><u>Tests</u></h2>
 
     <p>[2014] <b>German DSM B1 Certificate</b></p>
-    <p>[2011] <b>IELTS</b> — Listening 7.0, Reading 7.5, Writing 6.0, Speaking 7.0</p>
+    <p>[2012] <b>IELTS</b> — Listening 7.5, Reading 8.5, Writing 5.5, Speaking 6.0</p>
 
     <h2><u>Misc.</u></h2>
 

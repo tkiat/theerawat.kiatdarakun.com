@@ -41,7 +41,7 @@ export const Rec2022 = (): React.ReactElement =>
     ) — <b className="bold highlight">Other: </b>
     Book (
       <MyTooltipWithDelay text="Sharia Law and the Death Penalty">
-        <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/">Link</a> — I read this to understand more about laws in Muslim countries after I perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explained the basic Islamic principles, then the death penalties, and finally suggested that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.
+        <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/">Link</a> — I read this to understand more about laws in Muslim countries after I perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explains the basic Islamic principles and then the death penalties, and finally suggests that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.
       </MyTooltipWithDelay>
     ), Documentary (
       <MyTooltipWithDelay text="Land of Hope and Glory">
