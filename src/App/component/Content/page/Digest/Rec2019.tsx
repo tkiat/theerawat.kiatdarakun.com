@@ -9,7 +9,7 @@ export const Rec2019 = (): React.ReactElement =>
     <b className="bold highlight">Software: </b>
     Course (
       <MyTooltipWithDelay text="freeCodeCamp">
-        I became aware that web knowledge offers a significant advantage so I took some 5 web-related courses here. The courses are about basics HTML/CSS/JS and React.js. I deleted my account there so the certificate links are gone.
+        I became aware that the web knowledge offers me significant freedom so I took some 5 web-related courses here. The courses are about basics HTML/CSS/JS, fornt-end/back-end coding, React.js, and a few other libraries. I deleted my account there so the certificate links are gone.
       </MyTooltipWithDelay>
     )
   </p>

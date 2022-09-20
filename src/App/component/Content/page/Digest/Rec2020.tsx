@@ -14,18 +14,18 @@ export const Rec2020 = (): React.ReactElement =>
     ) — <b className="bold highlight">Software: </b>
     Course (
       <MyTooltipWithDelay text="Cloud Computing Basics">
-        I took this short <a href="https://www.coursera.org/learn/cloud-computing-basics">course</a> for fun. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion. At the end, I got the <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99">verified certificate</a> for free.
+        <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99">Verified Certificate</a> — I took this short for fun as it offered a free certificate. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion.
       </MyTooltipWithDelay>
     ) — <b className="bold highlight">Other: </b>
     Course (
       <MyTooltipWithDelay text="Introduction to Personal Branding">
-        I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered <a href="https://www.coursera.org/learn/personal-branding">this course</a> and I got the <a href="https://coursera.org/verify/AZD6S5JVYEG8">verified certificate</a> for free because of the coronavirus outbreak giveaway.
+        <a href="https://coursera.org/verify/AZD6S5JVYEG8">Verified Certificate</a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.
         <br/><br/>
-        This course is about how to construct personal branding. The course has no practical assignments, just some talks. The instructor talks very casually and relaxing. I would say this is more like a fun short course around 4-10 hours which is not at all in-depth. The course is worth it to me though as I haven't been aware of some of the tips before.
+        This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.
       </MyTooltipWithDelay>
-      &nbsp;|&nbsp;
+      ,&nbsp;
       <MyTooltipWithDelay text="Sit Less, Get Active">
-        I got the free <a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99">verified certificate</a> offer and I sat all day so I took it. This <a href="https://www.coursera.org/learn/get-active">course</a> encouraged students to set less and get active (thanks!), but I later forgot everything except the course title itself which should be enough.
+        <a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99">Verified Certificate</a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.
       </MyTooltipWithDelay>
     )
   </p>
