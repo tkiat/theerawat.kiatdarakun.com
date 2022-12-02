@@ -3,7 +3,7 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Character = (): React.ReactElement => (
   <>
-    <h1>Personal Traits</h1>
+    <h1>Character</h1>
 
     <div>
       <span className="bold highlight">Personality: </span>
@@ -42,10 +42,9 @@ export const Character = (): React.ReactElement => (
       &nbsp;|&nbsp;
       <MyTooltip text="Outer Personality">
         <ul>
-          <li>Quiet</li>
           <li>Calm and Stable</li>
           <li>Dislike Pointless Arguments</li>
-          <li>Smile Less</li>
+          <li>Quit and Smile Less (Outside of Work)</li>
           <li>Don't Gossip</li>
         </ul>
       </MyTooltip>
@@ -63,7 +62,9 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltip>
     </div>
+
     <br />
+
     <div>
       <span className="bold highlight">Preferences: </span>
       <MyTooltip text="Food & Drinks">
@@ -79,9 +80,8 @@ export const Character = (): React.ReactElement => (
       <MyTooltip text="Companion">
         <ul>
           <li>No Pet Except Adoption</li>
-          <li>Prefer Being Single Unless We Share Life Purposes</li>
-          <li>Value Solitude</li>
-          <li>Prefer to Grow Edible Over Decorative Plants</li>
+          <li>Value Solitude (Outside of Work)</li>
+          <li>Prefer to Grow Edible Plants</li>
         </ul>
       </MyTooltip>
       &nbsp;|&nbsp;
@@ -107,7 +107,6 @@ export const Character = (): React.ReactElement => (
       <MyTooltip text="Body">
         <ul>
           <li>177 cm</li>
-          <li>57 kg</li>
           <li>Ectomorphs</li>
           <li>Brown Skin</li>
           <li>Black and Short Hair</li>
@@ -126,10 +125,6 @@ export const Character = (): React.ReactElement => (
       &nbsp;| Thai | Millennials | Straight | Zodiac Sign: Cancer
     </div>
 
-    <h1>Aspirations</h1>
-
-    <p><span className="bold highlight">Life Purpose</span>: To live by the reality and, if time and resources allowed, help others to do the same as well.</p>
-
-    <p><span className="bold highlight">Goals</span>: Create a framework of how to live by the reality -&gt; Follow that lifestyle and record some of my activities to ensure my integrity -&gt; Share this way of life and my record to the outside world -&gt; Extend the scope beyond myself in the physical world (e.g., open an affordable vegan restaurant) if time and resources allowed.</p>
+    <p><span className="bold highlight">Life Purpose</span>: I want to live by awareness, memory, and logic, record my lifestyle, and write a book about it. If time and resources allowed, I will help others to do the same as well by, e.g., opening an affordable vegan restaurant.</p>
   </>
 )
