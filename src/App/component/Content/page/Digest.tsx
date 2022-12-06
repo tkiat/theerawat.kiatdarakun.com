@@ -10,7 +10,7 @@ import {Rec2018} from "./Digest/Rec2018"
 
 export const Digest = (): React.ReactElement =>
   <>
-    <p>I just realize that my memory retains much better when I make a short summary, hence the list below. Hold a cursor on an item for information.</p>
+    <p>I just realize that my memory retains much better when I make a short summary, hence the list below. I list only DRM-free or free of charge media for now.</p>
     <Rec2022 />
     <Rec2021 />
     <Rec2020 />

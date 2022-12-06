@@ -4,19 +4,18 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Create = (): React.ReactElement =>
   <>
-    <h1>In Progress</h1>
-
-    <p>
-      <MyTooltip text="Book: The Wisest Way of Life">
-        I regard the wisest way of life as the life guided by the awareness and the pure transformation of it. This book describes such way of life. I intend it to be a serious philosophical work that will serve as a major milestone of my life, once finished of course.
-      </MyTooltip>
-    </p>
-
-    <h1>Without End</h1>
+    <h1>General</h1>
 
     <p>
       <b className="highlight">Active: </b>
       N/A
+
+      &nbsp; — &nbsp;
+
+      <b className="highlight">In Progress: </b>
+      <MyTooltip text="Book: The Wisest Way of Life">
+        I regard the wisest way of life as the life guided by the awareness and the pure transformation of it. This book describes such way of life. I intend it to be a serious philosophical work that will serve as a major milestone of my life, once finished of course.
+      </MyTooltip>
 
       &nbsp; — &nbsp;
 
@@ -37,7 +36,7 @@ export const Create = (): React.ReactElement =>
       </MyTooltipWithDelay>
     </p>
 
-    <h1>One-Off</h1>
+    <h1>Finished</h1>
 
     <p>
       <span className="big-text-inline">[2022] </span>
@@ -63,7 +62,7 @@ export const Create = (): React.ReactElement =>
       </MyTooltipWithDelay>
       &nbsp;|&nbsp;
       <MyTooltipWithDelay text="Software: A Freedom Blog">
-        <a href="https://github.com/tkiat/a-freedom-blog">Link</a> — <b className="highlight">[Purescript, React.js, SCSS]</b> —A blog that I wrote from scratch that promotes freedom. 
+        <a href="https://github.com/tkiat/a-freedom-blog">Link</a> — <b className="highlight">[Purescript, React.js, SCSS]</b> —A blog that I wrote from scratch that promotes freedom.
       </MyTooltipWithDelay>
     </p>
 
