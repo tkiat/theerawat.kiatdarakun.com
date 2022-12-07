@@ -7,7 +7,7 @@ export const Contact = (): React.ReactElement =>
       <span role="img" aria-hidden="true">
         {'\u{2709}'}
       </span>{' '}
-      tkiat(at)tutanota.com{' '}
+      theerawat@kiatdarakun.com{' '}
       <span role="img" aria-hidden="true">
         {'\u{260E}'}
       </span>{' '}
