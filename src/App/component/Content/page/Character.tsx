@@ -126,10 +126,12 @@ export const Character = (): React.ReactElement => (
     </div>
     <br />
     <div>
-      <span className="bold highlight">Life Purpose</span>: Because of this&nbsp;
-      <MyTooltip text="realization">
+      <span className="bold highlight">Life Purpose</span>: Because of the realization of my&nbsp;
+      <MyTooltip text="existence">
         <p>It took almost one year of constant comtemplation about the point of life and I finally found it. Without any sentient being from the universe, “goodness” and “badness” don't exist—who is gonna complain if the earth is shattered in million halves right? Since the the objective point of life doens't exist, I was depressed for quite a while. However, that realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
-
+      </MyTooltip>
+      &nbsp;and then my&nbsp;
+      <MyTooltip text="value">
         <p>What quality should I make it as my value? Almost every quality is not desirable. Being very rich is subject to being exploited; being too white is subject to being disliked by anti-white people; being a businessman is subject to a businessman's problems. The exception is being wise: better judgment is always desirable. In addition, as I have searched for meaning for so long, I know I subjectively want wisdom. I shall live my life toward this direction.</p>
 
         <p>Wisdom is about the ability to judge. In courts, good judges consider only the evidence, not beliefs. Likewise, the wisest way of life is based on awareness, for many things in the mind is made up. The awareness can be expanded by memory and logic as well since they are pure, i.e. depending on only inputs.
