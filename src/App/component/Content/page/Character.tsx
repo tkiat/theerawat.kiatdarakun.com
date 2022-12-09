@@ -132,7 +132,7 @@ export const Character = (): React.ReactElement => (
       </MyTooltip>
       &nbsp;and then my&nbsp;
       <MyTooltip text="value">
-        <p>What quality should I make it as my value? Almost every quality is not desirable. Being very rich is subject to being exploited; being too white is subject to being disliked by anti-white people; being a businessman is subject to a businessman's problems. The exception is being wise: better judgment is always desirable. In addition, as I have searched for meaning for so long, I know I subjectively want wisdom. I shall live my life toward this direction.</p>
+        <p>What should be my personal values? Almost every quality is not desirable. Being very rich is subject to being exploited; being too white is subject to being disliked by anti-white people; being a businessman is subject to a businessman's problems. The exception is being wise: better judgment is always desirable. In addition, as I have searched for meaning for so long, I know I subjectively want wisdom. I shall live my life toward this direction.</p>
 
         <p>Wisdom is about the ability to judge. In courts, good judges consider only the evidence, not beliefs. Likewise, the wisest way of life is based on awareness, for many things in the mind is made up. The awareness can be expanded by memory and logic as well since they are pure, i.e. depending on only inputs.
         </p>
