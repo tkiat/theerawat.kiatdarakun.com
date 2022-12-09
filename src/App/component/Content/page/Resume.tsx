@@ -2,10 +2,10 @@ import React from 'react'
 
 export const Resume = (): React.ReactElement =>
   <>
-    <h2><u>Work Experience</u></h2>
+    <h2>Work Experience</h2>
 
     <p>
-      [May 2018 - Aug 2022] <b>Voluntary Employment Gap</b> — Found the direction of the wisest way of life and made a lot of lifestyle changes accordingly. Also learned (web) programming and Linux in this period.
+      [May 2018 - Aug 2022] <b>Voluntary Employment Gap</b> — Found the direction of the wisest way of life and made a lot of lifestyle changes accordingly. Also learned (web) programming, Linux, and sustainability in this period.
     </p>
 
     <p>
@@ -24,7 +24,7 @@ export const Resume = (): React.ReactElement =>
       [Mar 2011 - May 2011] <b>Engineering Intern</b> at Thaicom <abbr title="Public Limited Company">PLC</abbr> in Phathum Thani, Thailand — Tested satellite dish components and wrote socket programming for test equipment
     </p>
 
-    <h2><u>Education</u></h2>
+    <h2>Education</h2>
 
     <p>
       [Oct 2013 - Jul 2016] <b>Msc. Communications Engineering</b> at <abbr title="Rheinisch-Westfälische Technische Hochschule">RWTH</abbr> in Aachen, Germany — Grade 2.0/1.0 (Good) — Thesis Title: Practical evaluation of Entangled Packet Repetition. I evaluated a channel coding scheme based on 802.11 reference design using WARP boards.
@@ -34,7 +34,7 @@ export const Resume = (): React.ReactElement =>
       [Jun 2008 - Apr 2012] <b>Beng. Electronics and Communications</b> at <abbr title="Sirindhorn International Institute of Technology">SIIT</abbr> in Phathum Thani, Thailand — First Class Honor
     </p>
 
-    <h2><u>Skills</u></h2>
+    <h2>Skills</h2>
 
     <p>
       <b>Language</b> — English (professional), Thai (native), German (basic)
@@ -45,15 +45,15 @@ export const Resume = (): React.ReactElement =>
     </p>
 
     <p>
-      <b>Software</b> — General front-end dev, Linux, Git, Vim, basic Haskell/Python/Typescript/SCSS/shell scripting
+      <b>Software</b> — General front-end dev, Linux, Git, Vim, basic Haskell/Python/Typescript/SCSS/shell scripting, basic office software
     </p>
 
-    <h2><u>Tests</u></h2>
+    <h2>Tests</h2>
 
     <p>[2014] <b>German DSM B1 Certificate</b></p>
     <p>[2012] <b>IELTS</b> — Listening 7.5, Reading 8.5, Writing 5.5, Speaking 6.0</p>
 
-    <h2><u>Misc.</u></h2>
+    <h2>Misc.</h2>
 
     <p>[2013] Published paper in ISCIT 2013 conference</p>
     <p>[2012] Published paper in DICTAP 2012 conference</p>
