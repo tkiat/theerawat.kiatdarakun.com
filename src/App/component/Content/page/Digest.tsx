@@ -65,28 +65,22 @@ export const Digest = (): React.ReactElement =>
 
     <h1>Fiction</h1>
 
-    <ul>
-      <li>
-        <b>Visual: </b>
+    <h2>Visual</h2>
 
-        <span>[2022] </span>
-        <MyTooltipWithDelay text="Incognegro: A Graphic Mystery">
-          <b>[Comics]</b> It is a part of 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past.
-        </MyTooltipWithDelay>
-        ,&nbsp;
-        <span>[2021] </span>
-        <MyTooltipWithDelay text="The Walking Dead">
-          I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation.
-        </MyTooltipWithDelay>
-        ,&nbsp;
-        <span>[2020] </span>
-        <MyTooltipWithDelay text="The Last Unicorn">
-          It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
-        </MyTooltipWithDelay>
-      </li>
+    <span>[2022] </span>
+    <MyTooltipWithDelay text="Incognegro: A Graphic Mystery">
+      <b>[Comics]</b> It is a part of 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past.
+    </MyTooltipWithDelay>
+    ,&nbsp;
+    <span>[2021] </span>
+    <MyTooltipWithDelay text="The Walking Dead">
+      I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation.
+    </MyTooltipWithDelay>
+    ,&nbsp;
+    <span>[2020] </span>
+    <MyTooltipWithDelay text="The Last Unicorn">
+      It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
+    </MyTooltipWithDelay>
 
-      <li>
-        <b>Text: </b>
-      </li>
-    </ul>
+    <h2>Text</h2>
   </>
