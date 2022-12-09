@@ -5,7 +5,7 @@ export const Resume = (): React.ReactElement =>
     <h2><u>Work Experience</u></h2>
 
     <p>
-      [May 2018 - Aug 2022] <b>Voluntary Employment Gap</b> — Found the wisest way of life and made a lot of lifestyle changes accordingly. Also learned (web) programming and Linux in this period.
+      [May 2018 - Aug 2022] <b>Voluntary Employment Gap</b> — Found the direction of the wisest way of life and made a lot of lifestyle changes accordingly. Also learned (web) programming and Linux in this period.
     </p>
 
     <p>
