@@ -41,11 +41,11 @@ export const Resume = (): React.ReactElement =>
     </p>
 
     <p>
-      <b>Soft Skills</b> — Since living by the reality is my life purpose, I am not inclined to cause or support unnecessary sufferings (like dramas and animal industry). Furthermore, I am disciplined and possess good quantitative and analytical thinking skills.
+      <b>Soft Skills</b> — Since living by the reality is my life purpose, I am inclined not to cause unnecessary dramas and sufferings. Furthermore, I am disciplined and possess good quantitative and analytical thinking skills.
     </p>
 
     <p>
-      <b>Software</b> — General front-end dev, Linux, Git, Vim, basic Haskell/Python/Typescript/SCSS/shell scripting, basic office software
+      <b>Software</b> — Basic front-end dev, Linux, Git, Vim, basic Haskell/Python/Typescript/SCSS/shell scripting, office software
     </p>
 
     <h2>Tests</h2>
