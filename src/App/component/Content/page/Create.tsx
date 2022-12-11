@@ -16,26 +16,6 @@ export const Create = (): React.ReactElement =>
     </p>
 
     <p>
-      <b className="highlight">Dormant: </b>
-      <MyTooltipWithDelay text="Blog: A Freedom Blog">
-        <a href="https://a-freedom-blog.vercel.app/">Link</a> — This blog is oriented toward the freedom-friendly stuff. Currently, it contains articles of mixed qualities on many topics. I should revise them sometime.
-      </MyTooltipWithDelay>
-      &nbsp;|&nbsp;
-      <MyTooltipWithDelay text="Channel: Freedom in Computing">
-        <a href="https://www.youtube.com/channel/UCgCypxL_GouQb_kpDrHOIyQ">Link</a> — I intend to add more videos about (free and) open-source software down the road, but there is currently only one SuperTux video available.
-      </MyTooltipWithDelay>
-    </p>
-
-    <p>
-      <b className="highlight">Abandoned: </b>
-
-      <span className="big-text-inline">[2020] </span>
-      <MyTooltipWithDelay text="Channel: Short Games Only">
-        <a href="https://www.youtube.com/channel/UC89LAwZdhzEAQWOjLFLcbWg">Link</a> — It contains just replays of two games (Clash Royale and Cryptark) without commentaries. I abandoned them in favor of DRM-free and/or open source software.
-      </MyTooltipWithDelay>
-    </p>
-
-    <p>
       <b className="highlight">Finished: </b>
       <span className="big-text-inline">[2022] </span>
 
@@ -75,6 +55,26 @@ export const Create = (): React.ReactElement =>
       &nbsp;|&nbsp;
       <MyTooltipWithDelay text="Toy Project: Typing Practice">
         <a href="https://codepen.io/tkiatd/pen/oNYWdLz">Link</a> — <b className="highlight">[HTML, SCSS, JS]</b> — I simulated a typing practice program.
+      </MyTooltipWithDelay>
+    </p>
+
+    <p>
+      <b className="highlight">Dormant: </b>
+      <MyTooltipWithDelay text="Blog: A Freedom Blog">
+        <a href="https://a-freedom-blog.vercel.app/">Link</a> — This blog is oriented toward the freedom-friendly stuff. Currently, it contains articles of mixed qualities on many topics. I should revise them sometime.
+      </MyTooltipWithDelay>
+      &nbsp;|&nbsp;
+      <MyTooltipWithDelay text="Youtube Channel: Freedom in Computing">
+        <a href="https://www.youtube.com/channel/UCgCypxL_GouQb_kpDrHOIyQ">Link</a> — I intend to add more videos about (free and) open-source software down the road, but there is currently only one SuperTux video available.
+      </MyTooltipWithDelay>
+    </p>
+
+    <p>
+      <b className="highlight">Abandoned: </b>
+
+      <span className="big-text-inline">[2020] </span>
+      <MyTooltipWithDelay text="Youtube Channel: Short Games Only">
+        <a href="https://www.youtube.com/channel/UC89LAwZdhzEAQWOjLFLcbWg">Link</a> — It contains just replays of two games (Clash Royale and Cryptark) without commentaries. I abandoned them in favor of DRM-free and/or open source software.
       </MyTooltipWithDelay>
     </p>
   </>

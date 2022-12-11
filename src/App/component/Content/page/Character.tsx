@@ -6,9 +6,9 @@ export const Character = (): React.ReactElement => (
     <h1>Character</h1>
 
     <div>
-      <span className="bold highlight">Personality: </span>
+      <span className="bold highlight">Personality Test: </span>
 
-      <MyTooltipWithDelay text="MBTI Test">
+      <MyTooltipWithDelay text="MBTI">
         <p>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></p>
         <ul>
           <li>(I)ntroverted (79%) - (E)xtraverted</li>
@@ -19,7 +19,7 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltipWithDelay>
       &nbsp;|&nbsp;
-      <MyTooltipWithDelay text="Big 5 Test">
+      <MyTooltipWithDelay text="Big 5">
         <p>Taken on 31 Mar 2021 from <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
         <ul>
           <li>Extroversion: 11 (percentile)</li>
@@ -30,7 +30,7 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltipWithDelay>
       &nbsp;|&nbsp;
-      <MyTooltipWithDelay text="Four Temperaments Test">
+      <MyTooltipWithDelay text="Four Temperaments">
         <p>Taken on 31 Mar 2021 from <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
         <ul>
           <li>Choleric: 12</li>
@@ -39,71 +39,22 @@ export const Character = (): React.ReactElement => (
           <li>Phlegmatic: 22</li>
         </ul>
       </MyTooltipWithDelay>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Outer Personality">
+    </div>
+
+    <br />
+
+    <div>
+      <span className="bold highlight">Outer Traits: </span>
+
+      <MyTooltip text="Behavior">
         <ul>
           <li>Calm and Stable</li>
           <li>Dislike Pointless Arguments</li>
-          <li>Quit and Smile Less (Outside of Work)</li>
+          <li>Quiet and Smile Less (Outside of Work)</li>
           <li>Don't Gossip</li>
         </ul>
       </MyTooltip>
       &nbsp;|&nbsp;
-      <MyTooltip text="Interests">
-        <ul>
-          <li>(Free and) Open Source Software</li>
-          <li>Programming</li>
-          <li>Philosophy</li>
-          <li>Sustainability</li>
-          <li>Minimalism</li>
-          <li>Less Waste Lifestyle</li>
-          <li>Veganism</li>
-          <li>Buddhism</li>
-        </ul>
-      </MyTooltip>
-    </div>
-
-    <br />
-
-    <div>
-      <span className="bold highlight">Preferences: </span>
-      <MyTooltip text="Food & Drinks">
-        <ul>
-          <li>Least Processed</li>
-          <li>Self-Cooked</li>
-          <li>Stored in Glass Container</li>
-          <li>Non-Chilled Water</li>
-          <li>Loose Leaf Tea Over Teabags</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Companion">
-        <ul>
-          <li>No Pet Except Adoption</li>
-          <li>Value Solitude (Outside of Work)</li>
-          <li>Prefer to Grow Edible Plants</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Belongings">
-        <ul>
-          <li>Always Have Bicycle</li>
-          <li>Prefer Small Form Factor (e.g., 12.5 inch Thinkpad X260)</li>
-          <li>Have Less Stuff and Clean Often</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Schedule">
-        <ul>
-          <li>Rise Early</li>
-          <li>Disciplined and Predictable</li>
-        </ul>
-      </MyTooltip>
-    </div>
-    <br />
-    <div>
-      <span className="bold highlight">Other Traits: </span>
-
       <MyTooltip text="Body">
         <ul>
           <li>177 cm</li>
@@ -122,9 +73,84 @@ export const Character = (): React.ReactElement => (
           <li>Usually Wear Short Pants Without Shirt at Home</li>
         </ul>
       </MyTooltip>
-      &nbsp;| Thai | Millennials | Straight | Zodiac Sign: Cancer
+      &nbsp;|&nbsp;
+      <MyTooltip text="Food & Drinks">
+        <ul>
+          <li>Least Processed</li>
+          <li>Cook Myself</li>
+          <li>Stored in Glass Container</li>
+          <li>Non-Chilled Water</li>
+          <li>Loose Leaf Tea Over Teabags</li>
+        </ul>
+      </MyTooltip>
+      &nbsp;|&nbsp;
+      <MyTooltip text="Belongings">
+        <ul>
+          <li>Always Have Bicycle</li>
+          <li>Prefer Small Form Factor (e.g., 12.5 inch Thinkpad X260)</li>
+          <li>Have Less Stuff and Clean Often</li>
+        </ul>
+      </MyTooltip>
+      &nbsp;|&nbsp;
+      <MyTooltip text="Schedule">
+        <ul>
+          <li>Rise Early</li>
+          <li>Disciplined and Predictable</li>
+        </ul>
+      </MyTooltip>
     </div>
+
     <br />
+
+    <div>
+      <span className="bold highlight">Inner Traits: </span>
+
+      <MyTooltip text="Interests">
+        <ul>
+          <li>(Free and) Open Source Software</li>
+          <li>Programming</li>
+          <li>Philosophy</li>
+          <li>Sustainability</li>
+          <li>Minimalism</li>
+          <li>Less Waste Lifestyle</li>
+          <li>Veganism</li>
+          <li>Buddhism</li>
+        </ul>
+      </MyTooltip>
+      &nbsp;| Attitudes Toward&nbsp;
+      <MyTooltip text="Mind">
+        <ul>
+          <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
+          <li>Let awareness, not mind, lead my life.</li>
+          <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
+        </ul>
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Management">
+        <ul>
+          <li>Simplicity and discipline are the top priorities.</li>
+          <li>Get rid of all physical books in favor of ebooks.</li>
+        </ul>
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Companion">
+        <ul>
+          <li>No Pet Except Adoption</li>
+          <li>Value Solitude (Outside of Work)</li>
+          <li>Prefer to Grow Edible Plants</li>
+        </ul>
+      </MyTooltip>
+    </div>
+
+    <br />
+
+    <div>
+      <span className="bold highlight">Innate Traits: </span>
+      Thai | Millennials | Straight | Zodiac Sign: Cancer
+    </div>
+
+    <br />
+
     <div>
       <span className="bold highlight">Life Purpose</span>: Because of the realization of my&nbsp;
       <MyTooltip text="existence">
