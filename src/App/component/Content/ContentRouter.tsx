@@ -13,9 +13,9 @@ const mapping = {
   [paths[0]]: <Hi />,
   [paths[1]]: <Character />,
   [paths[2]]: <Story />,
-  [paths[3]]: <Credits />,
-  [paths[4]]: <Create />,
-  [paths[5]]: <Digest />,
+//   [paths[3]]: <Credits />,
+  [paths[3]]: <Create />,
+  [paths[4]]: <Digest />,
 //   [paths[6]]: <Resume />,
 }
 

@@ -8,7 +8,7 @@ import {ItemSidebar} from './NavMain/ItemSidebar'
 
 const xOffset = '20px'
 const left = (index: number) =>
-  `calc((100% - var(--sidebar-width)) * (2 * ${index} + 1) /
+  `calc((100% - var(--sidebar-width)) * ${2 * index + 1} /
     ${numDucks * 2} - ${xOffset})`
 
 export type P = {path: Path, setPath: Updater<Path>}

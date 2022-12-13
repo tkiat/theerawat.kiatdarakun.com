@@ -3,14 +3,57 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Character = (): React.ReactElement => (
   <>
+    <h1>Character</h1>
+
+    <div>
+      <span className="bold highlight">Hard Skills: </span>
+
+      <MyTooltip text="Language">
+        <ul>
+          <li>English (professional, I used English during the internship and full-time work in Germany at ease)</li>
+          <li>German (basic, I could renew documents and shopping using only German)</li>
+          <li>Thai (native)</li>
+        </ul>
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Coding">
+        Basic front-end dev, Git, Vim, Haskell/Python/Typescript/SCSS/shell scripting, server hosting
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Computer">
+        <ul>
+          <li>Basic office software (Microsoft Office, Libreoffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
+          <li>(Desktop) computer assembly</li>
+          <li>Linux (Debian, Nix, NixOS, QubesOS, etc.)</li>
+          <li>OSS Firmware (coreboot/libreboot flashing, OSS WiFi adapter)</li>
+        </ul>
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Communications">
+        Obtain Bachelor and Master's degrees related to Communications technologies.
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Cooking">
+        <ul>
+          <li>Always cook for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, and smoothie.</li>
+          <li>Know how to spot genuine vegan and organic food.</li>
+        </ul>
+      </MyTooltip>
+      ,&nbsp;
+      <MyTooltip text="Low-Impact Living">
+        <ul>
+          <li>Digest a lot of media about low-impact living.</li>
+          <li>Know how to save household electrity/water and avoid using unnecessary disposable products.</li>
+        </ul>
+      </MyTooltip>
+    </div>
+
     <br />
 
     <div>
-      <span className="bold highlight">Skills: </span>
+      <span className="bold highlight">Soft Skills: </span>
 
-      <span>Hard Skills: </span>
-      &nbsp;|&nbsp;
-      <span>Soft Skills: </span>
+      Since living by the reality is my life purpose, I am inclined not to cause unnecessary dramas and sufferings. Furthermore, I am disciplined and possess good quantitative and analytical thinking skills.
     </div>
 
     <br />
