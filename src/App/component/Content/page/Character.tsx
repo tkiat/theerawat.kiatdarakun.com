@@ -3,7 +3,30 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Character = (): React.ReactElement => (
   <>
-    <h1>Character</h1>
+    <br />
+
+    <div>
+      <span className="bold highlight">Skills: </span>
+
+      <span>Hard Skills: </span>
+      &nbsp;|&nbsp;
+      <span>Soft Skills: </span>
+    </div>
+
+    <br />
+
+    <div>
+      <span className="bold highlight">Appearance: </span>
+
+      <MyTooltipWithDelay text="Others">
+        <ul>
+          <li>Thai</li>
+          <li>Millennials</li>
+        </ul>
+      </MyTooltipWithDelay>
+    </div>
+
+    <br />
 
     <div>
       <span className="bold highlight">Personality Test: </span>
@@ -44,66 +67,7 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight">Outer Traits: </span>
-
-      <MyTooltip text="Behavior">
-        <ul>
-          <li>Calm and Stable</li>
-          <li>Dislike Pointless Arguments</li>
-          <li>Quiet and Smile Less (Outside of Work)</li>
-          <li>Don't Gossip</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Body">
-        <ul>
-          <li>177 cm</li>
-          <li>Ectomorphs</li>
-          <li>Brown Skin</li>
-          <li>Black and Short Hair</li>
-          <li>Don't Grow Long Bread</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Clothing and Accessories">
-        <ul>
-          <li>No Piercings and Tattoos</li>
-          <li>Don't Usually Wear Watch</li>
-          <li>Wear Prescription Glasses</li>
-          <li>Usually Wear Short Pants Without Shirt at Home</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Food & Drinks">
-        <ul>
-          <li>Least Processed</li>
-          <li>Cook Myself</li>
-          <li>Stored in Glass Container</li>
-          <li>Non-Chilled Water</li>
-          <li>Loose Leaf Tea Over Teabags</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Belongings">
-        <ul>
-          <li>Always Have Bicycle</li>
-          <li>Prefer Small Form Factor (e.g., 12.5 inch Thinkpad X260)</li>
-          <li>Have Less Stuff and Clean Often</li>
-        </ul>
-      </MyTooltip>
-      &nbsp;|&nbsp;
-      <MyTooltip text="Schedule">
-        <ul>
-          <li>Rise Early</li>
-          <li>Disciplined and Predictable</li>
-        </ul>
-      </MyTooltip>
-    </div>
-
-    <br />
-
-    <div>
-      <span className="bold highlight">Inner Traits: </span>
+      <span className="bold highlight">Inclination: </span>
 
       <MyTooltip text="Interests">
         <ul>
@@ -117,18 +81,20 @@ export const Character = (): React.ReactElement => (
           <li>Buddhism</li>
         </ul>
       </MyTooltip>
-      &nbsp;| Attitudes Toward&nbsp;
-      <MyTooltip text="Mind">
+      &nbsp;|&nbsp;
+      <MyTooltip text="Behavior">
         <ul>
-          <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
-          <li>Let awareness, not mind, lead my life.</li>
-          <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
+          <li>Rise Early</li>
+          <li>Disciplined and Predictable</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
-      <MyTooltip text="Management">
+
+      &nbsp;| Preference for&nbsp;
+      <MyTooltip text="Belongings">
         <ul>
-          <li>Simplicity and discipline are the top priorities.</li>
+          <li>Always Have Bicycle</li>
+          <li>Prefer Small Form Factor (e.g., 12.5 inch Thinkpad X260)</li>
+          <li>Have Less Stuff and Clean Often</li>
           <li>Get rid of all physical books in favor of ebooks.</li>
         </ul>
       </MyTooltip>
@@ -140,13 +106,22 @@ export const Character = (): React.ReactElement => (
           <li>Prefer to Grow Edible Plants</li>
         </ul>
       </MyTooltip>
-    </div>
+      ,&nbsp;
+      <MyTooltip text="Management">
+        <ul>
+          <li>Simplicity and discipline are the top priorities.</li>
+        </ul>
+      </MyTooltip>
 
-    <br />
-
-    <div>
-      <span className="bold highlight">Innate Traits: </span>
-      Thai | Millennials | Straight | Zodiac Sign: Cancer
+      &nbsp;| Attitude Toward&nbsp;
+      <MyTooltip text="Thought">
+        <ul>
+          <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
+          <li>Let awareness, not mind, lead my life.</li>
+          <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
+        </ul>
+      </MyTooltip>
+      ,&nbsp;
     </div>
 
     <br />
@@ -167,3 +142,48 @@ export const Character = (): React.ReactElement => (
     </div>
   </>
 )
+// 
+//     <br />
+// 
+//     <div>
+//       <span className="bold highlight">Outer Traits: </span>
+// 
+//       <MyTooltip text="Behavior">
+//         <ul>
+//           <li>Calm and Stable</li>
+//           <li>Dislike Pointless Arguments</li>
+//           <li>Quiet and Smile Less (Outside of Work)</li>
+//           <li>Don't Gossip</li>
+//         </ul>
+//       </MyTooltip>
+//       &nbsp;|&nbsp;
+//       <MyTooltip text="Body">
+//         <ul>
+//           <li>177 cm</li>
+//           <li>Ectomorphs</li>
+//           <li>Brown Skin</li>
+//           <li>Black and Short Hair</li>
+//           <li>Don't Grow Long Bread</li>
+//         </ul>
+//       </MyTooltip>
+//       &nbsp;|&nbsp;
+//       <MyTooltip text="Clothing and Accessories">
+//         <ul>
+//           <li>No Piercings and Tattoos</li>
+//           <li>Don't Usually Wear Watch</li>
+//           <li>Wear Prescription Glasses</li>
+//           <li>Usually Wear Short Pants Without Shirt at Home</li>
+//         </ul>
+//       </MyTooltip>
+//       &nbsp;|&nbsp;
+//       <MyTooltip text="Food & Drinks">
+//         <ul>
+//           <li>Least Processed</li>
+//           <li>Cook Myself</li>
+//           <li>Stored in Glass Container</li>
+//           <li>Non-Chilled Water</li>
+//           <li>Loose Leaf Tea Over Teabags</li>
+//         </ul>
+//       </MyTooltip>
+//       &nbsp;|&nbsp;
+//     </div>
