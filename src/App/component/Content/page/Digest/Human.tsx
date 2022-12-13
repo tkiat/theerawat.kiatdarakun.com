@@ -4,7 +4,7 @@ import {MyTooltipWithDelay} from "../../share/MyTooltip"
 
 export const Human = (): React.ReactElement =>
   <>
-    <h2>Human</h2>
+    <h3>Human</h3>
 
     <span>[2022] </span>
     <MyTooltipWithDelay text="Sharia Law and the Death Penalty">
@@ -44,12 +44,12 @@ export const Human = (): React.ReactElement =>
     &nbsp;—&nbsp;
     <span>[2020] </span>
     <MyTooltipWithDelay text="Introduction to Personal Branding">
-      <a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>[Course]</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.
+      <a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>[Course, Coursera]</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.
       <br/><br/>
       This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.
     </MyTooltipWithDelay>
     &ensp;
     <MyTooltipWithDelay text="Sit Less, Get Active">
-      <a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>[Course]</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.
+      <a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>[Course, Coursera]</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.
     </MyTooltipWithDelay>
   </>

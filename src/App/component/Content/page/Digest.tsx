@@ -6,13 +6,13 @@ import {Human} from "./Digest/Human"
 
 export const Digest = (): React.ReactElement =>
   <>
-    <p>I list only some media that are DRM-free, part of a subscription with DRM, or free of charge here. I add a little summary for the sake of memory retention.</p>
+    <p>I list only some digital media that are DRM-free, part of a subscription with DRM, or free of charge here. I add a little summary for the sake of memory retention.</p>
 
-    <h1>Nonfiction</h1>
+    <h2>Nonfiction</h2>
 
     <Human />
 
-    <h2>Organisms and the Earth</h2>
+    <h3>Organisms and the Earth</h3>
 
     <p>
       <span>[2022] </span>
@@ -21,7 +21,7 @@ export const Digest = (): React.ReactElement =>
       </MyTooltipWithDelay>
     </p>
 
-    <h2>Digital</h2>
+    <h3>Digital</h3>
 
     <p>
       <span>[2021] </span>
@@ -39,7 +39,12 @@ export const Digest = (): React.ReactElement =>
       &nbsp;—&nbsp;
       <span>[2020] </span>
       <MyTooltipWithDelay text="Cloud Computing Basics">
-        <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99"><b>[Course]</b></a> — I took this short for fun as it offered a free certificate. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion.
+        <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99"><b>[Course, Coursera]</b></a> — I took this short for fun as it offered a free certificate. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion.
+      </MyTooltipWithDelay>
+      &nbsp;—&nbsp;
+      <span>[2019] </span>
+      <MyTooltipWithDelay text="React - The Complete Guide">
+        <b><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">[Course, Udemy]</a></b> — A popular course about React.js for beginners. I paid and enrolled in this course as I wanted to build some websites (including my personal website). The basic contents are laid out nicely but the instructor didn't cover all advanced stuff. At the end he did a project that I followed along but I knew unless I did the project from scratch myself I wouldn't be familiar with the language.
       </MyTooltipWithDelay>
       &nbsp;—&nbsp;
       <span>[2019] </span>
@@ -49,11 +54,11 @@ export const Digest = (): React.ReactElement =>
       &nbsp;—&nbsp;
       <span>[2018] </span>
       <MyTooltipWithDelay text="Algorithms">
-        <a href="https://coursera.org/verify/specialization/LP2AXJ7TUNRV"><b>[Course]</b></a> — I was unexplainably drawn to computer science just a month after coming back from Germany, and algorithms seemed like the most important basics so I took it. I paid 49 USD for the certificate and finished within a month. This coursera specialization contains 4 algorithm-related courses focusing deeply on theory. I would recommend this course for an aspiring computer scientist, but I was not that drawn much to the theoretical side so I skipped some lectures. I am not impressed with the assignment format since anyone can just put a correct number to pass the assignment.
+        <a href="https://coursera.org/verify/specialization/LP2AXJ7TUNRV"><b>[Course, Coursera]</b></a> — I was unexplainably drawn to computer science just a month after coming back from Germany, and algorithms seemed like the most important basics so I took it. I paid 49 USD for the certificate and finished within a month. This coursera specialization contains 4 algorithm-related courses focusing deeply on theory. I would recommend this course for an aspiring computer scientist, but I was not that drawn much to the theoretical side so I skipped some lectures. I am not impressed with the assignment format since anyone can just put a correct number to pass the assignment.
       </MyTooltipWithDelay>
       &ensp;
       <MyTooltipWithDelay text="Data Structures and Algorithms">
-        <a href="https://coursera.org/verify/specialization/MHRFWABPYTJU"><b>[Course]</b></a> — I was addicted to the previous algorithm specialization so I took this speciailization also. It contains 6 courses, and the hidden corner cases for the assignments alone made this course already worth it. I paid 49 USD for the certificate and finished within a month. This specialization is, to me, very challenging, especially some tasks in the capstone project. Therefore, I think non full-time learners might take longer than a month.
+        <a href="https://coursera.org/verify/specialization/MHRFWABPYTJU"><b>[Course, Coursera]</b></a> — I was addicted to the previous algorithm specialization so I took this speciailization also. It contains 6 courses, and the hidden corner cases for the assignments alone made this course already worth it. I paid 49 USD for the certificate and finished within a month. This specialization is, to me, very challenging, especially some tasks in the capstone project. Therefore, I think non full-time learners might take longer than a month.
         <br/><br/>
         This course covered the data structure and algorithms from the basics to more advanced topics. The genome-related courses provide me the insight into how the algorithm can help improve real-life applications. I was impressed by the coding assignments as there are a lot of them and there were a variety of programming languages to choose from. The runtime limit for each submission depends on the programming languages where C++ appeared to be less forgiving.
         <br/><br/>
@@ -61,11 +66,11 @@ export const Digest = (): React.ReactElement =>
       </MyTooltipWithDelay>
     </p>
 
-    <h2>Others</h2>
+    <h3>Others</h3>
 
-    <h1>Fiction</h1>
+    <h2>Fiction</h2>
 
-    <h2>Visual</h2>
+    <h3>Visual</h3>
 
     <span>[2022] </span>
     <MyTooltipWithDelay text="Incognegro: A Graphic Mystery">
@@ -82,5 +87,5 @@ export const Digest = (): React.ReactElement =>
       <b>[Graphic Novel]</b> — It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
     </MyTooltipWithDelay>
 
-    <h2>Text</h2>
+    <h3>Text</h3>
   </>

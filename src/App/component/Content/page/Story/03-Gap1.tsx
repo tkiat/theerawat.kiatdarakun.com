@@ -31,10 +31,10 @@ export const Gap1 = (): React.ReactElement =>
       <MyTooltip text="tutorial classes">
         It's ECS203 (2 sections) which contains basics of electrical engineering. It's mostly the selected (sometimes by myself) questions and solutions. Unlike laboratories, I was the sole instructor of the tutorial class.
       </MyTooltip>
-      . I also conducted&nbsp;
+      &nbsp;and a research assistance who conducted a&nbsp;
       <MyTooltip text="RFID research">
         I had to discuss with instructors in my department once a week until I published a paper.
       </MyTooltip>
-      .
+      . I also taught privately in some places including <a href="https://www.epa.ac.th/">EPA</a> (&gt; 50 hours).
     </p>
   </>
