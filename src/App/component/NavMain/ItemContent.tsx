@@ -3,7 +3,7 @@ import React from 'react'
 
 import {ReactComponent as DuckAboutMe} from 'assets/duck/duck-aboutme.svg'
 import {ReactComponent as DuckHobby} from 'assets/duck/duck-activity.svg'
-import {ReactComponent as DuckResume} from 'assets/duck/duck-resume.svg'
+// import {ReactComponent as DuckResume} from 'assets/duck/duck-resume.svg'
 import {capitalize} from 'src/App/share/general'
 import {MainPath} from 'src/App/share/path'
 
@@ -26,7 +26,7 @@ export const ItemContent = ({isActive, left, onclick, path, to}: P):
         {
           'about': <DuckAboutMe className={'nav-main__svg'} />,
           'activity': <DuckHobby className={'nav-main__svg'} />,
-          'resume': <DuckResume className={'nav-main__svg'} />,
+//           'resume': <DuckResume className={'nav-main__svg'} />,
         }[path]
       }
     </Link>

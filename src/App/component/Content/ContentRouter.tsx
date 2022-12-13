@@ -16,7 +16,7 @@ const mapping = {
   [paths[3]]: <Credits />,
   [paths[4]]: <Create />,
   [paths[5]]: <Digest />,
-  [paths[6]]: <Resume />,
+//   [paths[6]]: <Resume />,
 }
 
 export const ContentRouter = (): React.ReactElement =>

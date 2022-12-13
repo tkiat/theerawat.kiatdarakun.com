@@ -6,12 +6,12 @@ import {Background, Canvas, Contact, Content, NavMain, NavSubMobile, NavSubTube,
 import {appId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
 import {useViewportDimensions} from 'src/App/share/hook'
-import {Path, adaptPathToUrl, mkPath, storePath} from 'src/App/share/path'
+import {Path, adaptPathToUrl, mkPath, numDucks, storePath} from 'src/App/share/path'
 import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalStyle, mkThemeObject, wavesSubKeys, storeThemeObject, updateFavicon} from 'src/App/share/theme'
 
 import 'src/App/share/style/main.scss'
 
-const numPointsOnWave = 5 // <number of ducks> + 1
+const numPointsOnWave = numDucks + 1
 const numWave = wavesSubKeys.length
 
 export const App = (): React.ReactElement => {

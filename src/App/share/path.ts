@@ -5,8 +5,15 @@ export type PathObject = typeof pathObject
 export const pathObject = {
   'about': ['hi', 'character', 'story', 'credits'],
   'activity': ['create', 'digest'],
-  'resume': [''],
+//   'resume': [''],
 } as const
+
+const numMainPaths = Object.keys(pathObject).length
+
+const numDucksMain = numMainPaths
+const numDuckSetting = 1
+export const numDucks = numDucksMain + numDuckSetting
+
 
 export type MainPath = keyof PathObject
 export const mainPaths: MainPath[] = Object.keys(pathObject) as MainPath[]
