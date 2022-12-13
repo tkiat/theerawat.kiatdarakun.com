@@ -17,15 +17,16 @@ export const Character = (): React.ReactElement => (
       </MyTooltip>
       ,&nbsp;
       <MyTooltip text="Coding">
-        Basic front-end dev, Git, Vim, Haskell/Python/Typescript/SCSS/shell scripting, server hosting
+        Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, server hosting
       </MyTooltip>
       ,&nbsp;
       <MyTooltip text="Computer">
         <ul>
-          <li>Basic office software (Microsoft Office, Libreoffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
+          <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
           <li>(Desktop) computer assembly</li>
           <li>Linux (Debian, Nix, NixOS, QubesOS, etc.)</li>
-          <li>OSS Firmware (coreboot/libreboot flashing, OSS WiFi adapter)</li>
+          <li>OSS firmware (coreboot/libreboot flashing, WiFi adapter)</li>
+          <li>Typing speed of 60 WPM</li>
         </ul>
       </MyTooltip>
       ,&nbsp;
@@ -35,8 +36,8 @@ export const Character = (): React.ReactElement => (
       ,&nbsp;
       <MyTooltip text="Cooking">
         <ul>
-          <li>Always cook for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, and smoothie.</li>
-          <li>Know how to spot genuine vegan and organic food.</li>
+          <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie.</li>
+          <li>Usually know how to spot non-vegan and fake organic food.</li>
         </ul>
       </MyTooltip>
       ,&nbsp;
@@ -51,9 +52,7 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight">Soft Skills: </span>
-
-      Since living by the reality is my life purpose, I am inclined not to cause unnecessary dramas and sufferings. Furthermore, I am disciplined and possess good quantitative and analytical thinking skills.
+      <span className="bold highlight">Soft Skills: </span>I never want to cause unnecessary complications and sufferings to myself and others. Furthermore, I am disciplined and naturally inclined to learn something new. With good quantitative and analytical thinking skills, I believe I can handle most jobs.
     </div>
 
     <br />
@@ -84,6 +83,7 @@ export const Character = (): React.ReactElement => (
         <ul>
           <li>Thai</li>
           <li>Millennials</li>
+          <li>Almost Always Calm and not Angry</li>
         </ul>
       </MyTooltipWithDelay>
     </div>
@@ -133,14 +133,14 @@ export const Character = (): React.ReactElement => (
 
       <MyTooltip text="Interests">
         <ul>
-          <li>(Free and) Open Source Software</li>
-          <li>Programming</li>
-          <li>Philosophy</li>
           <li>Sustainability</li>
+          <li>Philosophy</li>
           <li>Minimalism</li>
           <li>Less Waste Lifestyle</li>
           <li>Veganism</li>
           <li>Buddhism</li>
+          <li>(Free and) Open Source Software</li>
+          <li>Programming</li>
         </ul>
       </MyTooltip>
       &nbsp;|&nbsp;
@@ -153,7 +153,7 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltip>
 
-      &nbsp;| Preference for&nbsp;
+      &nbsp;| Preferences for&nbsp;
       <MyTooltip text="Food & Drinks">
         <ul>
           <li>Least Processed</li>
@@ -182,7 +182,7 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltip>
 
-      &nbsp;| Attitude Toward&nbsp;
+      &nbsp;| Attitudes Toward&nbsp;
       <MyTooltip text="Thought">
         <ul>
           <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
@@ -191,6 +191,12 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltip>
       ,&nbsp;
+      <MyTooltip text="Computing">
+        <ul>
+          <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
+          <li>All operating systems and at least one collection of firmware in all computers should be FOSS because people deserve freedom-friendly choices.</li>
+        </ul>
+      </MyTooltip>
     </div>
 
     <br />
