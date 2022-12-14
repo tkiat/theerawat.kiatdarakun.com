@@ -6,7 +6,7 @@ import {Human} from "./Digest/Human"
 
 export const Digest = (): React.ReactElement =>
   <div className="page-digest">
-    <p>I list only some digital media that are DRM-free, part of a subscription with DRM, or free of charge here with a bit summary for the sake of memory retention.</p>
+    <p>Note: I list only some digital media that are DRM-free, part of a subscription with DRM, or free of charge here with a bit summary for the sake of memory retention.</p>
 
     <h1>Nonfiction</h1>
 

@@ -3,11 +3,11 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Character = (): React.ReactElement => (
   <>
-    <h1>Character</h1>
-
+    <br />
     <div>
-      <span className="bold highlight">Hard Skills: </span>
+      <b className="highlight">Hard Skills</b>
 
+      &nbsp;—&nbsp;
       <MyTooltip text="Language">
         <ul>
           <li>English (professional, I used English during the internship and full-time work in Germany at ease)</li>
@@ -15,11 +15,11 @@ export const Character = (): React.ReactElement => (
           <li>Thai (native)</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Coding">
         Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, server hosting
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Computer">
         <ul>
           <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
@@ -30,18 +30,18 @@ export const Character = (): React.ReactElement => (
           <li>Typing speed of 60 WPM</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Communications">
         Obtain Bachelor and Master's degrees related to Communications technologies.
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Cooking">
         <ul>
           <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie.</li>
           <li>Usually know how to spot non-vegan and fake organic food.</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Low-Impact Living">
         <ul>
           <li>Digest a lot of media about low-impact living.</li>
@@ -53,14 +53,18 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight">Soft Skills: </span>I never want to cause unnecessary complications and sufferings to myself and others. Furthermore, I am disciplined and naturally inclined to learn something new. With good quantitative and analytical thinking skills, I believe I can handle most jobs.
+      <b className="highlight">Soft Skills</b>
+
+      &nbsp;—&nbsp;
+      I never want to cause unnecessary complications and sufferings to myself and others. Furthermore, I am disciplined and naturally inclined to learn something new. With good quantitative and analytical thinking skills, I believe I can handle most jobs.
     </div>
 
     <br />
 
     <div>
-      <span className="bold highlight">Appearance: </span>
+      <b className="highlight">Appearance</b>
 
+      &nbsp;—&nbsp;
       <MyTooltip text="Body">
         <ul>
           <li>177 cm</li>
@@ -70,7 +74,7 @@ export const Character = (): React.ReactElement => (
           <li>Short Bread and Nails</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Clothing and Accessories">
         <ul>
           <li>No Piercings and Tattoos</li>
@@ -79,7 +83,7 @@ export const Character = (): React.ReactElement => (
           <li>Usually Wear Short Pants Without Shirt at Home</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltipWithDelay text="Others">
         <ul>
           <li>Thai</li>
@@ -92,8 +96,9 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight">Personality Test: </span>
+      <b className="highlight">Personality Test</b>
 
+      &nbsp;—&nbsp;
       <MyTooltipWithDelay text="MBTI">
         <p>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></p>
         <ul>
@@ -104,7 +109,7 @@ export const Character = (): React.ReactElement => (
           <li>(A)ssertive (65%) - (T)erbulent</li>
         </ul>
       </MyTooltipWithDelay>
-      &nbsp;|&nbsp;
+      &ensp;
       <MyTooltipWithDelay text="Big 5">
         <p>Taken on 31 Mar 2021 from <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
         <ul>
@@ -115,7 +120,7 @@ export const Character = (): React.ReactElement => (
           <li>Intellect/Imagination: 46</li>
         </ul>
       </MyTooltipWithDelay>
-      &nbsp;|&nbsp;
+      &ensp;
       <MyTooltipWithDelay text="Four Temperaments">
         <p>Taken on 31 Mar 2021 from <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
         <ul>
@@ -130,8 +135,9 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight">Inclination: </span>
+      <b className="highlight">Inclination</b>
 
+      &nbsp;—&nbsp;
       <MyTooltip text="Interests">
         <ul>
           <li>Sustainability</li>
@@ -144,7 +150,7 @@ export const Character = (): React.ReactElement => (
           <li>Programming</li>
         </ul>
       </MyTooltip>
-      &nbsp;|&nbsp;
+      &ensp;
       <MyTooltip text="Behavior">
         <ul>
           <li>Calm and Stable</li>
@@ -154,7 +160,7 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltip>
 
-      &nbsp;| Preferences for&nbsp;
+      &ensp;[Preferences for]&ensp;
       <MyTooltip text="Food & Drinks">
         <ul>
           <li>Least Processed</li>
@@ -164,7 +170,7 @@ export const Character = (): React.ReactElement => (
           <li>Loose Leaf Tea Over Teabags</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Belongings">
         <ul>
           <li>Always Have Bicycle</li>
@@ -173,7 +179,7 @@ export const Character = (): React.ReactElement => (
           <li>Get Rid of All Physical Books in Favor of Ebooks.</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Companion">
         <ul>
           <li>No Pet Except Adoption</li>
@@ -183,7 +189,7 @@ export const Character = (): React.ReactElement => (
         </ul>
       </MyTooltip>
 
-      &nbsp;| Attitudes Toward&nbsp;
+      &ensp;[Attitudes Toward]&ensp;
       <MyTooltip text="Thought">
         <ul>
           <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
@@ -191,7 +197,7 @@ export const Character = (): React.ReactElement => (
           <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
         </ul>
       </MyTooltip>
-      ,&nbsp;
+      &ensp;
       <MyTooltip text="Computing">
         <ul>
           <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
@@ -203,7 +209,11 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight">Life Purpose</span>: Because of the realization of my&nbsp;
+      <span className="bold highlight"></span>
+      <b className="highlight">Life Purpose</b>
+
+      &nbsp;—&nbsp;
+      Because of the realization of my&nbsp;
       <MyTooltip text="existence">
         <p>It took almost one year of constant comtemplation about the point of life and I finally found it. Without any sentient being from the universe, “goodness” and “badness” don't exist—who is gonna complain if the earth is shattered in million halves right? Since the the objective point of life doens't exist, I was depressed for quite a while. However, that realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
       </MyTooltip>
