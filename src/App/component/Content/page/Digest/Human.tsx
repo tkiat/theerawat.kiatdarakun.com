@@ -4,7 +4,7 @@ import {MyTooltipWithDelay} from "../../share/MyTooltip"
 
 export const Human = (): React.ReactElement =>
   <>
-    <h3>Human</h3>
+    <span className="bold highlight">Human: </span>
 
     <span>[2022] </span>
     <MyTooltipWithDelay text="Sharia Law and the Death Penalty">
