@@ -22,7 +22,7 @@ export const App = (): React.ReactElement => {
   const dimension = useViewportDimensions({msDelay: 500})
 
   const [path, setPath] = useImmer<Path>(mkPath())
-  const isResumePage = path.current === 'resume'
+  const isResumePage = false // path.current === 'resume'
   React.useEffect(() => {
     const setPathFromUrl = () => setPath(d => adaptPathToUrl(d))
     window.addEventListener('popstate', setPathFromUrl)

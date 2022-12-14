@@ -5,7 +5,7 @@ const a: Path = {
   mapping: {
     about: 'hi',
     activity: 'create',
-    resume: '',
+//     resume: '',
   }
 }
 

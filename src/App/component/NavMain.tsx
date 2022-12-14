@@ -12,17 +12,17 @@ const left = (index: number) =>
     ${numDucks * 2} - ${xOffset})`
 
 export type P = {path: Path, setPath: Updater<Path>}
-export const NavMain = ({path, numPointsOnWave, setPath}: P): React.ReactElement =>
-  <>
-  {mainPaths.map((x, i) =>
-    <ItemContent
-      key={x}
-      path={x}
-      to={'/' + x + '/' + path.mapping[x]}
-      isActive={x === path.current}
-      left={left(i)}
-      onclick={() => {setPath(d => {d.current = x})}}
-    />
-  )}
+export const NavMain = ({path, setPath}: P):
+  React.ReactElement => <>
+    {mainPaths.map((x, i) =>
+      <ItemContent
+        key={x}
+        path={x}
+        to={'/' + x + '/' + path.mapping[x]}
+        isActive={x === path.current}
+        left={left(i)}
+        onclick={() => {setPath(d => {d.current = x})}}
+      />
+    )}
     <ItemSidebar left={left(numDucks - 1)} />
   </>

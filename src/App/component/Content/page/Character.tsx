@@ -23,9 +23,10 @@ export const Character = (): React.ReactElement => (
       <MyTooltip text="Computer">
         <ul>
           <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
-          <li>(Desktop) computer assembly</li>
+          <li>Basic video editing skills</li>
           <li>Linux (Debian, Nix, NixOS, QubesOS, etc.)</li>
           <li>OSS firmware (coreboot/libreboot flashing, WiFi adapter)</li>
+          <li>(Desktop) computer assembly</li>
           <li>Typing speed of 60 WPM</li>
         </ul>
       </MyTooltip>
