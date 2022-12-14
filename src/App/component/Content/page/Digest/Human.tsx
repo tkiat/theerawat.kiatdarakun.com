@@ -4,9 +4,10 @@ import {MyTooltipWithDelay} from "../../share/MyTooltip"
 
 export const Human = (): React.ReactElement =>
   <>
-    <span className="bold highlight">Human: </span>
+    <b className="highlight">Human</b>
+    &nbsp;—&nbsp;
 
-    <span>[2022] </span>
+    <span>[2022]</span>&ensp;
     <MyTooltipWithDelay text="Sharia Law and the Death Penalty">
       <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/"><b>[Book]</b></a> — I read this to understand more about laws in Muslim countries after I perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explains the basic Islamic principles and then the death penalties, and finally suggests that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.
     </MyTooltipWithDelay>
@@ -36,20 +37,18 @@ export const Human = (): React.ReactElement =>
     <MyTooltipWithDelay text="พระไตรปิฏก ฉบับประชาชน">
       <a href="http://library.nhrc.or.th/ulib/dublin.php?ID=2376"><b>[Book]</b></a> — เป็นประไตรปิฏกฉบับย่อ รวมถึงประวัติพระไตรปิฏกอย่างคร่าวๆ ผมเห็นว่าคนไทยที่สนใจพุทธทุกคนควรอ่าน
     </MyTooltipWithDelay>
-    &nbsp;—&nbsp;
-    <span>[2021] </span>
+    &ensp;<span>[2021]</span>&ensp;
     <MyTooltipWithDelay text="A Confession">
       <a href="https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude"><b>[Book]</b></a> — It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose.
     </MyTooltipWithDelay>
-    &nbsp;—&nbsp;
-    <span>[2020] </span>
+    &ensp;<span>[2020]</span>&ensp;
     <MyTooltipWithDelay text="Introduction to Personal Branding">
-      <a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>[Course, Coursera]</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.
-      <br/><br/>
-      This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.
+      <p><a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>[Course, Coursera]</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.</p>
+
+      <p>This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.</p>
     </MyTooltipWithDelay>
     &ensp;
     <MyTooltipWithDelay text="Sit Less, Get Active">
-      <a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>[Course, Coursera]</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.
+      <p><a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>[Course, Coursera]</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.</p>
     </MyTooltipWithDelay>
   </>
