@@ -5,7 +5,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 export const VoluntaryUnemployment = (): React.ReactElement =>
   <>
     <p>
-      <b className="highlight">28 - 32 Years Old (Voluntary Unemployment)</b>
+      <b className="big highlight">28 - 32 Years Old (Voluntary Unemployment)</b>
       &nbsp;—&nbsp;
       <span>
         I became utterly confused after coming back to Thailand.&nbsp;

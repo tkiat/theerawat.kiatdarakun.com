@@ -5,7 +5,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 export const WorkingGermany = (): React.ReactElement =>
   <>
     <p>
-      <b className="highlight">26 - 28 Years Old (Working in Germany)</b>
+      <b className="big highlight">26 - 28 Years Old (Working in Germany)</b>
       &nbsp;—&nbsp;
       <span>
         Just before the end of my thesis I only applied to&nbsp;

@@ -3,7 +3,7 @@ import React from "react"
 export const Child = (): React.ReactElement =>
   <>
     <p>
-      <b className="highlight">&lt; 13 Years Old</b>
+      <b className="big highlight">&lt; 13 Years Old</b>
       &nbsp;—&nbsp;
       <span>I was born in Thailand, 1990. My childhood was like almost everybody else's. I played video games, watched cartoons, went to schools, and repeated. Everything was easy and fun because my mother cooked for me and sent me to school using her car. She usually bought food for me and let me sit at the bottom of the seat and place food on the seat. I usually finished it before reaching the school.</span>
     </p>

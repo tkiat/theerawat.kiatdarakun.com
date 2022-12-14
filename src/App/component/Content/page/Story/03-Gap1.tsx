@@ -5,7 +5,7 @@ import {MyTooltip} from "../../share/MyTooltip"
 export const Gap1 = (): React.ReactElement =>
   <>
     <p>
-      <b className="highlight">23 - 24 Years Old (Before Master's Degree)</b>
+      <b className="big highlight">23 - 24 Years Old (Before Master's Degree)</b>
       &nbsp;—&nbsp;
       <span>
         I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
