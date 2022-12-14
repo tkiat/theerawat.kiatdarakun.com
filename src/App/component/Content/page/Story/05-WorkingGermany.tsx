@@ -4,43 +4,46 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const WorkingGermany = (): React.ReactElement =>
   <>
-    <h1>26 - 28 Years Old (Working in Germany)</h1>
-
-    <p>Just before the end of my thesis I only applied to&nbsp;
-      <MyTooltip text="National Instruments Dresden">
-        A company in the Dresden (in the east of Germany, it took around 16 EUR to Berlin from there!) acquired by National Instruments some time ago. It offers a testing solution mainly in the telecommunications area. People over there could speak German and also had German-like faces except one or two guys and some interns only.
-      </MyTooltip>
-    &nbsp;and got the 6-month&nbsp;
-      <MyTooltip text="offer">
-        All internships in Germany were required to be paid by law. The stipend ranged from 550 EUR to 1700 EUR from what I had heard. The interns in the south of germany generally paid more than the east but the living cost is also higher. Obviously, it was harder to get one if you don't have a working German proficiency but you should be able to find it nonetheless with some effort.
-      </MyTooltip>
-    . There were three other fellow&nbsp;
-      <MyTooltip text="interns">
-        My batchmate and also a short-term roommate. The other two come from Columbia and Egypt. All studied here in Germany (of course). Another batchmate of mine got a full-time job here also at the time I took an internship.
-      </MyTooltip>
-      &nbsp;here who went together places nearby such as&nbsp;
-      <MyTooltip text="Prague">
-        We booked a cheap hostel (10 EUR each) and in the night we visited a bar. There was some dancing lady with a lingerie who made her piece tighter after I stared at her. I felt sleepy but the guard prevented me from doing so and told me to sleep at my home instead. I never understand why someone would want to visit such a place.
-        <br /><br />
-        We went to a very old restaurant in Prague where we were served big poultry food and beer. We went to a castle to inspect the heritage of something old I actually didn't know anything about. The beer was nice though. In fact, it was the best ever.
-      </MyTooltip>
-      . The company has some&nbsp;
-      <MyTooltip text="perks">
-        Free sugary drinks, coffee, and tea. Snooker table and table football.
-      </MyTooltip>
-      &nbsp;but the best things were&nbsp;
-      <MyTooltip text="buffets">
-        All you can eat including chickens, rice, and some soup cost me only 5 EUR, which was cheaper than many buffets in Thailand! Another restaurant offered similar meals but they were limited to a given container.
-      </MyTooltip>
-      &nbsp;in the Vietnamese restaurants nearby. I carried out the internship&nbsp;
-      <MyTooltip text="tasks">
-        Basically, some backlogs that engineers over there still didn't complete in the area of my internship (WiFi).
-      </MyTooltip>
-      &nbsp;day by day under the&nbsp;
-      <MyTooltip text="supervision">
-        There was a regular 30-minute two-person meeting at the beginning of Monday which was later increased to 1 hour. We wrote the plan all over the whiteboard and talked about the result. That was awesome.
-      </MyTooltip>
-      &nbsp;of a German engineer until it was finally the end of the internship when I was given a textbook but never read.
+    <p>
+      <b className="highlight">26 - 28 Years Old (Working in Germany)</b>
+      &nbsp;—&nbsp;
+      <span>
+        Just before the end of my thesis I only applied to&nbsp;
+        <MyTooltip text="National Instruments Dresden">
+          A company in the Dresden (in the east of Germany, it took around 16 EUR to Berlin from there!) acquired by National Instruments some time ago. It offers a testing solution mainly in the telecommunications area. People over there could speak German and also had German-like faces except one or two guys and some interns only.
+        </MyTooltip>
+      &nbsp;and got the 6-month&nbsp;
+        <MyTooltip text="offer">
+          All internships in Germany were required to be paid by law. The stipend ranged from 550 EUR to 1700 EUR from what I had heard. The interns in the south of germany generally paid more than the east but the living cost is also higher. Obviously, it was harder to get one if you don't have a working German proficiency but you should be able to find it nonetheless with some effort.
+        </MyTooltip>
+      . There were three other fellow&nbsp;
+        <MyTooltip text="interns">
+          My batchmate and also a short-term roommate. The other two come from Columbia and Egypt. All studied here in Germany (of course). Another batchmate of mine got a full-time job here also at the time I took an internship.
+        </MyTooltip>
+        &nbsp;here who went together places nearby such as&nbsp;
+        <MyTooltip text="Prague">
+          We booked a cheap hostel (10 EUR each) and in the night we visited a bar. There was some dancing lady with a lingerie who made her piece tighter after I stared at her. I felt sleepy but the guard prevented me from doing so and told me to sleep at my home instead. I never understand why someone would want to visit such a place.
+          <br /><br />
+          We went to a very old restaurant in Prague where we were served big poultry food and beer. We went to a castle to inspect the heritage of something old I actually didn't know anything about. The beer was nice though. In fact, it was the best ever.
+        </MyTooltip>
+        . The company has some&nbsp;
+        <MyTooltip text="perks">
+          Free sugary drinks, coffee, and tea. Snooker table and table football.
+        </MyTooltip>
+        &nbsp;but the best things were&nbsp;
+        <MyTooltip text="buffets">
+          All you can eat including chickens, rice, and some soup cost me only 5 EUR, which was cheaper than many buffets in Thailand! Another restaurant offered similar meals but they were limited to a given container.
+        </MyTooltip>
+        &nbsp;in the Vietnamese restaurants nearby. I carried out the internship&nbsp;
+        <MyTooltip text="tasks">
+          Basically, some backlogs that engineers over there still didn't complete in the area of my internship (WiFi).
+        </MyTooltip>
+        &nbsp;day by day under the&nbsp;
+        <MyTooltip text="supervision">
+          There was a regular 30-minute two-person meeting at the beginning of Monday which was later increased to 1 hour. We wrote the plan all over the whiteboard and talked about the result. That was awesome.
+        </MyTooltip>
+        &nbsp;of a German engineer until it was finally the end of the internship when I was given a textbook but never read.
+      </span>
     </p>
 
     <p>

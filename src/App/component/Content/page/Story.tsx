@@ -11,11 +11,17 @@ import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 export const Story = (): React.ReactElement => (
   <>
     <Child />
+    <hr />
     <Teen />
+    <hr />
     <Undergraduate />
+    <hr />
     <Gap1 />
+    <hr />
     <MasterDegree />
+    <hr />
     <WorkingGermany />
+    <hr />
     <VoluntaryUnemployment />
   </>
 )

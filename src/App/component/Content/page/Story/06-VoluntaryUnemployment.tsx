@@ -4,30 +4,32 @@ import {MyTooltip} from "../../share/MyTooltip"
 
 export const VoluntaryUnemployment = (): React.ReactElement =>
   <>
-    <h1>28 - 32 Years Old (Voluntary Unemployment)</h1>
-
     <p>
-      I became utterly confused after coming back to Thailand.&nbsp;
-      <MyTooltip text="Many things">
-        The sky train near my house was finished; a new shopping mall emerged.
-      </MyTooltip>
-      &nbsp;seemed to change, yet&nbsp;
-      <MyTooltip text="nothing">
-        People still enjoy and suffer, and they still do stuff they think they need to do. Many things that I didn't consider useful anymore still engrossed so many people.
-      </MyTooltip>
-      &nbsp;was really changed. After a month, I applied to only three jobs but didn't pass all the interviews so I stopped my job search and then played video games like a&nbsp;
-      <MyTooltip text="full-time job">
-        I bought a new IKEA table and a new 27-inch monitor, making it easier to engross myself in video games. I was then a mere consumer who didn't produce anything.
-      </MyTooltip>
-      &nbsp;for more than a year. One day, I noticed that my self-assembled PC was&nbsp;
-      <MyTooltip text="problematic">
-        It incurred much electricity cost and was also prone to the occasional power shortage.
-      </MyTooltip>
-      , and thus my very old&nbsp;
-      <MyTooltip text="laptop">
-        It was VAIO VGNCS16S that cost me (to be more precise, my father) about 1000 USD in 2008. That was quite a lot of money but I liked its beauty (my only criterion at the time). With the notorious Microsoft Vista, it took me ages to boot successfully.
-      </MyTooltip>
-      &nbsp;came to my mind. I installed Void Linux on it, and the performance was an eye-opener for me.
+      <b className="highlight">28 - 32 Years Old (Voluntary Unemployment)</b>
+      &nbsp;—&nbsp;
+      <span>
+        I became utterly confused after coming back to Thailand.&nbsp;
+        <MyTooltip text="Many things">
+          The sky train near my house was finished; a new shopping mall emerged.
+        </MyTooltip>
+        &nbsp;seemed to change, yet&nbsp;
+        <MyTooltip text="nothing">
+          People still enjoy and suffer, and they still do stuff they think they need to do. Many things that I didn't consider useful anymore still engrossed so many people.
+        </MyTooltip>
+        &nbsp;was really changed. After a month, I applied to only three jobs but didn't pass all the interviews so I stopped my job search and then played video games like a&nbsp;
+        <MyTooltip text="full-time job">
+          I bought a new IKEA table and a new 27-inch monitor, making it easier to engross myself in video games. I was then a mere consumer who didn't produce anything.
+        </MyTooltip>
+        &nbsp;for more than a year. One day, I noticed that my self-assembled PC was&nbsp;
+        <MyTooltip text="problematic">
+          It incurred much electricity cost and was also prone to the occasional power shortage.
+        </MyTooltip>
+        , and thus my very old&nbsp;
+        <MyTooltip text="laptop">
+          It was VAIO VGNCS16S that cost me (to be more precise, my father) about 1000 USD in 2008. That was quite a lot of money but I liked its beauty (my only criterion at the time). With the notorious Microsoft Vista, it took me ages to boot successfully.
+        </MyTooltip>
+        &nbsp;came to my mind. I installed Void Linux on it, and the performance was an eye-opener for me.
+      </span>
     </p>
 
     <p>
