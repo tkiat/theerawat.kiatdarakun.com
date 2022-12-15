@@ -35,17 +35,17 @@ export const Character = (): React.ReactElement => (
         Obtain Bachelor and Master's degrees related to Communications technologies.
       </MyTooltip>
       &ensp;
-      <MyTooltip text="Cooking">
-        <ul>
-          <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie.</li>
-          <li>Usually know how to spot non-vegan and fake organic food.</li>
-        </ul>
-      </MyTooltip>
-      &ensp;
       <MyTooltip text="Low-Impact Living">
         <ul>
           <li>Digest a lot of media about low-impact living.</li>
           <li>Know how to save household electrity/water and avoid using unnecessary disposable products.</li>
+        </ul>
+      </MyTooltip>
+      &ensp;
+      <MyTooltip text="Cooking">
+        <ul>
+          <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie.</li>
+          <li>Usually know how to spot non-vegan and fake organic food.</li>
         </ul>
       </MyTooltip>
     </div>
@@ -188,22 +188,6 @@ export const Character = (): React.ReactElement => (
           <li>Prefer Being Single</li>
         </ul>
       </MyTooltip>
-
-      &ensp;[Attitudes Toward]&ensp;
-      <MyTooltip text="Thought">
-        <ul>
-          <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
-          <li>Let awareness, not mind, lead my life.</li>
-          <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
-        </ul>
-      </MyTooltip>
-      &ensp;
-      <MyTooltip text="Computing">
-        <ul>
-          <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
-          <li>All operating systems and at least one collection of firmware in all computers should be FOSS because people deserve freedom-friendly choices.</li>
-        </ul>
-      </MyTooltip>
     </div>
 
     <br />
@@ -228,3 +212,18 @@ export const Character = (): React.ReactElement => (
     </div>
   </>
 )
+//       &ensp;[Attitudes Toward]&ensp;
+//       <MyTooltip text="Thought">
+//         <ul>
+//           <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
+//           <li>Let awareness, not mind, lead my life.</li>
+//           <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
+//         </ul>
+//       </MyTooltip>
+//       &ensp;
+//       <MyTooltip text="Computing">
+//         <ul>
+//           <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
+//           <li>All operating systems and at least one collection of firmware in all computers should be FOSS because people deserve freedom-friendly choices.</li>
+//         </ul>
+//       </MyTooltip>

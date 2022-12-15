@@ -6,6 +6,7 @@ I created this website using Vite and React.js with a lot of freedom given to th
 
 ```nix
 $ nix-shell
+$ npm run dev
 ```
 
 <!-- ```bash -->
