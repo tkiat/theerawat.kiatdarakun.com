@@ -6,7 +6,7 @@ import {Human} from "./Digest/Human"
 
 export const Digest = (): React.ReactElement =>
   <div className="page-digest">
-    <p>Note: I list only some digital media that are DRM-free, part of a subscription with DRM, or free of charge here with a bit summary for the sake of memory retention.</p>
+    <p>Note: I list only some digital media that are DRM-free, part of a subscription, or free of charge without any further purchase option with a bit summary each.</p>
 
     <h1>Nonfiction</h1>
 
@@ -115,12 +115,58 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         N/A
       </li>
-
-      <li>
-        <b className="highlight">Video Game</b>
-
-        &nbsp;—&nbsp;
-        N/A
-      </li>
     </ul>
   </div>
+/*
+      <li>
+        <b className="highlight">Video Game With Ending(s)</b>
+
+        &nbsp;—&nbsp;
+        <span>[2020]</span>&nbsp;
+        Giana Sisters: Rise of the Owlverlord
+        Chasm
+        Tower of Time
+        Blazing Stars
+        Shock Troopers
+        Planescape: Torment (Enhanced Edition)
+
+        <span>[2019]</span>&nbsp;
+        Lure of the Temptress
+        Celeste
+        Limbo
+        The Way
+        Candle
+        Beatbuddy: Tale of the Guardians
+        Anna's Quest
+        140
+        Anomaly 2
+        Botanicula Brutal Legend
+        Hollow Knight
+        Ankh - Anniversary Edition
+        Cryptark
+        Reventure
+        Sundered: Eldritch Edition
+        Titan Quest Anniversary Edition
+        Thronebreaker: The Witcher Tales
+        Machinarium Collector's Edition
+        Unmechanical: Extended
+        Bulb Boy
+        Undertale
+        Oxenfree
+
+        <span>[2018]</span>&nbsp;
+        Jill of the Jungle: The Complete Trilogy
+        Stealth Bastard Deluxe Complete Edition
+
+        <span>[2017]</span>&nbsp;
+        Inside
+        Wuppo
+        Never Alone (Kisima Ingitchuna)
+        Brothers: A Tale of Two Sons
+        stealth inc 2
+        tomb raider
+        bioshock infinite
+        gracamelee 2
+        old man's journey
+        </li>
+*/
