@@ -2,5 +2,8 @@
   ul li {
     line-height: 1.4;
     margin-bottom: 0.3em;
+    .tooltip {
+      line-height: initial;
+    }
   }
 }

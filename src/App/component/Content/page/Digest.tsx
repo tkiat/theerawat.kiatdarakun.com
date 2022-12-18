@@ -1,12 +1,23 @@
 import React from 'react'
 
-import {MyTooltipWithDelay} from "../share/MyTooltip"
+import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 import {Human} from "./Digest/Human"
 
 export const Digest = (): React.ReactElement =>
   <div className="page-digest">
-    <p>Note: I list only some digital media that are DRM-free, part of a subscription, or free of charge without any further purchase option with a bit summary each.</p>
+    <br />
+
+    <div>
+      I list only some digital media that follow these&nbsp;
+      <MyTooltip text="requirements">
+        <ol>
+          <li>Available digitally</li>
+          <li>Available DRM-free, part of a subscription with DRM, or free of charge</li>
+          <li>Can be consumed directly on a free and open source operating system</li>
+        </ol>
+      </MyTooltip>.
+    </div>
 
     <h1>Nonfiction</h1>
 
