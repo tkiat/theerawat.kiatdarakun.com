@@ -4,20 +4,10 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Create = (): React.ReactElement =>
   <>
-    <p>
-      <b className="highlight">Blog</b>
-
-      &nbsp;—&nbsp;
-      <span className="highlight">Abandoned: </span>
-
-      <span>[2022]</span>&nbsp;
-      <MyTooltipWithDelay text="A Freedom Blog">
-        <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness.
-      </MyTooltipWithDelay>
-    </p>
+    <h1>Software</h1>
 
     <p>
-      <b className="highlight">Software</b>
+      <b className="highlight">Projects</b>
 
       &nbsp;—&nbsp;
       <span>[2022]</span>&nbsp;
@@ -51,7 +41,7 @@ export const Create = (): React.ReactElement =>
     </p>
 
     <p>
-      <b className="highlight">Software (fun)</b>
+      <b className="highlight">Toy Projects</b>
 
       &nbsp;—&nbsp;
       <span>[2018]</span>&nbsp;
@@ -61,6 +51,22 @@ export const Create = (): React.ReactElement =>
       &ensp;
       <MyTooltipWithDelay text="Typing Practice">
         <a href="https://codepen.io/tkiatd/pen/oNYWdLz">Link</a> — <b className="highlight">[HTML, SCSS, JS]</b> — I simulated a typing practice program.
+      </MyTooltipWithDelay>
+    </p>
+
+    <hr />
+
+    <h1>Content</h1>
+
+    <p>
+      <b className="highlight">Blog</b>
+
+      &nbsp;—&nbsp;
+      <span className="highlight">Abandoned: </span>
+
+      <span>[2022]</span>&nbsp;
+      <MyTooltipWithDelay text="A Freedom Blog">
+        <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness.
       </MyTooltipWithDelay>
     </p>
 
@@ -77,7 +83,7 @@ export const Create = (): React.ReactElement =>
       <span className="highlight">Abandoned: </span>
       <span>[2020]</span>&nbsp;
       <MyTooltipWithDelay text="Short Games Only">
-        <a href="https://www.youtube.com/channel/UC89LAwZdhzEAQWOjLFLcbWg">Link</a> — It contains just replays of two games (Clash Royale and Cryptark) without commentaries. I abandoned them in favor of DRM-free and/or open source software.
+        <a href="https://www.youtube.com/channel/UC89LAwZdhzEAQWOjLFLcbWg">Link</a> — It contains just replays of two games (Clash Royale and Cryptark) without commentaries. I abandoned them in favor of DRM-free and open source software.
       </MyTooltipWithDelay>
     </p>
   </>
