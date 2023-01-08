@@ -4,6 +4,121 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 export const Character = (): React.ReactElement => (
   <>
     <br />
+
+    <div>
+      <b className="highlight">Inclination</b>
+
+      &nbsp;—&nbsp;[Personality Test]&ensp;
+      <MyTooltipWithDelay text="MBTI">
+        <p>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></p>
+        <ul>
+          <li>(I)ntroverted (79%) - (E)xtraverted</li>
+          <li>I(N)tuitive (52%) - Ob(S)ervant</li>
+          <li>(T)hinking (51%) - (F)eeling</li>
+          <li>(J)udging(58%) - (P)rospecting</li>
+          <li>(A)ssertive (65%) - (T)erbulent</li>
+        </ul>
+      </MyTooltipWithDelay>
+      &ensp;
+      <MyTooltipWithDelay text="Big 5">
+        <p>Taken on 31 Mar 2021 from <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
+        <ul>
+          <li>Extroversion: 11 (percentile)</li>
+          <li>Emotional Stability: 57</li>
+          <li>Agreeableness: 7</li>
+          <li>Conscientiousness: 95</li>
+          <li>Intellect/Imagination: 46</li>
+        </ul>
+      </MyTooltipWithDelay>
+      &ensp;
+      <MyTooltipWithDelay text="Four Temperaments">
+        <p>Taken on 31 Mar 2021 from <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
+        <ul>
+          <li>Choleric: 12</li>
+          <li>Melancholic: 12</li>
+          <li>Sanguine: 5</li>
+          <li>Phlegmatic: 22</li>
+        </ul>
+      </MyTooltipWithDelay>
+
+      &ensp;[Preferences]&ensp;
+      <MyTooltip text="Behavior">
+        <ul>
+          <li>Calm and Stable</li>
+          <li>No Insults, Pointless Arguments,  and Gossips</li>
+          <li>Quiet and Smile Less (Outside of Work)</li>
+          <li>Early Bird (Except in Winter), Disciplined, and Predictable</li>
+        </ul>
+      </MyTooltip>
+      &ensp;
+      <MyTooltip text="Food & Drinks">
+        <ul>
+          <li>Least Processed</li>
+          <li>Cook Myself</li>
+          <li>Stored in Glass Container</li>
+          <li>Chilled Water Only to Preserve It</li>
+          <li>Loose Leaf Tea Over Teabags</li>
+        </ul>
+      </MyTooltip>
+      &ensp;
+      <MyTooltip text="Belongings">
+        <ul>
+          <li>Love Bicycle</li>
+          <li>Prefer Small Form Factor (like 12-14 inch laptop)</li>
+          <li>Have Less Stuff and Clean Weekly</li>
+          <li>Prefer to Have Only Ebooks</li>
+        </ul>
+      </MyTooltip>
+      &ensp;
+      <MyTooltip text="Companion">
+        <ul>
+          <li>No Pet Except Adoption</li>
+          <li>Value Solitude (Outside of Work)</li>
+          <li>Prefer to Grow Edible Plants Rather Than Decorative Ones</li>
+          <li>Prefer Being Single</li>
+        </ul>
+      </MyTooltip>
+    </div>
+
+    <br />
+
+    <div>
+      <span className="bold highlight"></span>
+      <b className="highlight">Hobbies</b>
+
+      &nbsp;—&nbsp;
+      <MyTooltip text="(Free and) Open Source Software">
+        I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). As a result, I personally use them. I like to config my operating system and write some desktop software and scripts by my own that I find it useful and share to the world. I also write some programs for the web like this website.
+      </MyTooltip>
+      &ensp;
+      <MyTooltip text="Philosophy">
+        Philosophy is crucial for my lifelong goal (ideal personal life and society based on awareness) since it broadens my horizon. I have yet to read a lot of works but I will deinitely do so in free time.
+      </MyTooltip>
+      &ensp;
+      <MyTooltip text="Low-Impact Living">
+        My ideal life based on awareness is the one free of greediness, and thus I value minimalism and sustainability (that includes veganism). It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.
+      </MyTooltip>
+    </div>
+
+    <br />
+
+    <div>
+      <span className="bold highlight"></span>
+      <b className="highlight">Life Purpose</b>
+
+      &nbsp;— Because of the realization of&nbsp;
+      <MyTooltip text="the point of my existence">
+        <p>There is no point of my existence since, without any sentient being from the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
+      </MyTooltip>
+      &nbsp;and then my&nbsp;
+      <MyTooltip text="value">
+        <p>Every goal is not desirable. A prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first wisdom I attained. I knew that living by awareness was the only thing that could satisfy me, for it was the truest experience.</p>
+      </MyTooltip>
+      , I want to create the work that describes the ideal personal life and society based on my own awareness, and create my own exemplary record about this way of life. If time and resources allowed, I will help others to do the same as well by, e.g., opening an affordable vegan restaurant.
+    </div>
+
+    <br />
+
     <div>
       <b className="highlight">Hard Skills</b>
 
@@ -17,17 +132,15 @@ export const Character = (): React.ReactElement => (
       </MyTooltip>
       &ensp;
       <MyTooltip text="Coding">
-        Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, server hosting
+        Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, etc.
       </MyTooltip>
       &ensp;
       <MyTooltip text="Computer">
         <ul>
           <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
-          <li>Basic video editing skills</li>
           <li>Linux (Debian, Nix, NixOS, QubesOS, etc.)</li>
-          <li>OSS firmware (coreboot/libreboot flashing, WiFi adapter)</li>
-          <li>(Desktop) computer assembly</li>
           <li>Typing speed of 60 WPM</li>
+          <li>Desktop computer assembly</li>
         </ul>
       </MyTooltip>
       &ensp;
@@ -37,15 +150,8 @@ export const Character = (): React.ReactElement => (
       &ensp;
       <MyTooltip text="Low-Impact Living">
         <ul>
-          <li>Digest a lot of media about low-impact living.</li>
           <li>Know how to save household electrity/water and avoid using unnecessary disposable products.</li>
-        </ul>
-      </MyTooltip>
-      &ensp;
-      <MyTooltip text="Cooking">
-        <ul>
-          <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie.</li>
-          <li>Usually know how to spot non-vegan and fake organic food.</li>
+          <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie. I usually know how to spot non-vegan and fake organic food.</li>
         </ul>
       </MyTooltip>
     </div>
@@ -55,8 +161,7 @@ export const Character = (): React.ReactElement => (
     <div>
       <b className="highlight">Soft Skills</b>
 
-      &nbsp;—&nbsp;
-      I never want to cause unnecessary complications and sufferings to myself and others. Furthermore, I am disciplined and naturally inclined to learn something new. With good quantitative and analytical thinking skills, I believe I can handle most jobs.
+      &nbsp;— I never want to cause unnecessary complications and sufferings to myself and others. Furthermore, I am disciplined and naturally inclined to learn something new. With good quantitative and analytical thinking skills, I believe I can handle most jobs.
     </div>
 
     <br />
@@ -91,124 +196,6 @@ export const Character = (): React.ReactElement => (
           <li>Almost Always Calm and not Angry</li>
         </ul>
       </MyTooltipWithDelay>
-    </div>
-
-    <br />
-
-    <div>
-      <b className="highlight">Personality Test</b>
-
-      &nbsp;—&nbsp;
-      <MyTooltipWithDelay text="MBTI">
-        <p>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></p>
-        <ul>
-          <li>(I)ntroverted (79%) - (E)xtraverted</li>
-          <li>I(N)tuitive (52%) - Ob(S)ervant</li>
-          <li>(T)hinking (51%) - (F)eeling</li>
-          <li>(J)udging(58%) - (P)rospecting</li>
-          <li>(A)ssertive (65%) - (T)erbulent</li>
-        </ul>
-      </MyTooltipWithDelay>
-      &ensp;
-      <MyTooltipWithDelay text="Big 5">
-        <p>Taken on 31 Mar 2021 from <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
-        <ul>
-          <li>Extroversion: 11 (percentile)</li>
-          <li>Emotional Stability: 57</li>
-          <li>Agreeableness: 7</li>
-          <li>Conscientiousness: 95</li>
-          <li>Intellect/Imagination: 46</li>
-        </ul>
-      </MyTooltipWithDelay>
-      &ensp;
-      <MyTooltipWithDelay text="Four Temperaments">
-        <p>Taken on 31 Mar 2021 from <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
-        <ul>
-          <li>Choleric: 12</li>
-          <li>Melancholic: 12</li>
-          <li>Sanguine: 5</li>
-          <li>Phlegmatic: 22</li>
-        </ul>
-      </MyTooltipWithDelay>
-    </div>
-
-    <br />
-
-    <div>
-      <b className="highlight">Inclination</b>
-
-      &nbsp;—&nbsp;
-      <MyTooltip text="Interests">
-        <ul>
-          <li>Sustainability</li>
-          <li>Philosophy</li>
-          <li>Minimalism</li>
-          <li>Less Waste Lifestyle</li>
-          <li>Veganism</li>
-          <li>Buddhism</li>
-          <li>(Free and) Open Source Software</li>
-          <li>Programming</li>
-        </ul>
-      </MyTooltip>
-      &ensp;
-      <MyTooltip text="Behavior">
-        <ul>
-          <li>Calm and Stable</li>
-          <li>No Insults, Pointless Arguments,  and Gossips</li>
-          <li>Quiet and Smile Less (Outside of Work)</li>
-          <li>Early Bird, Disciplined, and Predictable</li>
-        </ul>
-      </MyTooltip>
-
-      &ensp;[Preferences for]&ensp;
-      <MyTooltip text="Food & Drinks">
-        <ul>
-          <li>Least Processed</li>
-          <li>Cook Myself</li>
-          <li>Stored in Glass Container</li>
-          <li>Non-Chilled Water</li>
-          <li>Loose Leaf Tea Over Teabags</li>
-        </ul>
-      </MyTooltip>
-      &ensp;
-      <MyTooltip text="Belongings">
-        <ul>
-          <li>Always Have Bicycle</li>
-          <li>Prefer Small Form Factor (like 12-14 inch laptop)</li>
-          <li>Have Less Stuff and Clean Weekly</li>
-          <li>Get Rid of All Physical Books in Favor of Ebooks.</li>
-        </ul>
-      </MyTooltip>
-      &ensp;
-      <MyTooltip text="Companion">
-        <ul>
-          <li>No Pet Except Adoption</li>
-          <li>Value Solitude (Outside of Work)</li>
-          <li>Prefer to Grow Edible Plants</li>
-          <li>Prefer Being Single</li>
-        </ul>
-      </MyTooltip>
-    </div>
-
-    <br />
-
-    <div>
-      <span className="bold highlight"></span>
-      <b className="highlight">Life Purpose</b>
-
-      &nbsp;—&nbsp;
-      Because of the realization of my&nbsp;
-      <MyTooltip text="existence">
-        <p>It took almost one year of constant comtemplation about the point of life and I finally found it. Without any sentient being from the universe, “goodness” and “badness” don't exist—who is gonna complain if the earth is shattered in million halves right? Since the the objective point of life doens't exist, I was depressed for quite a while. However, that realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
-      </MyTooltip>
-      &nbsp;and then my&nbsp;
-      <MyTooltip text="value">
-        <p>What should be my personal values? Almost every quality is not desirable. Being very rich is subject to being exploited; being too white is subject to being disliked by anti-white people; being a businessman is subject to a businessman's problems. The exception is being wise: better judgment is always desirable. In addition, as I have searched for meaning for so long, I know I subjectively want wisdom. I shall live my life toward this direction.</p>
-
-        <p>Wisdom is about the ability to judge. In courts, good judges consider only the evidence, not beliefs. Likewise, the wisest way of life is based on awareness, for many things in the mind is made up. The awareness can be expanded by memory and logic as well since they are pure, i.e. depending on only inputs.
-        </p>
-      </MyTooltip>
-      , I want to live by awareness, memory, and logic, record my own exemplary record about this way of life, and write a book about it. If time and resources allowed, I will help others to do the same as well by, e.g., opening an affordable vegan restaurant.
     </div>
   </>
 )

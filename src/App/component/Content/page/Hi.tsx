@@ -7,12 +7,12 @@ export const Hi = (): React.ReactElement => (
     <p className="big">
       <b className="highlight">Hi, I am Theerawat <span role="img" aria-hidden="true">{'\u{1F600}'}</span></b>
       &nbsp;—&nbsp;
-      My lifelong pursuit is working on moral philosophical works based on awareness, memory, and logic. With an analytical mindset, I dissect my actions to determine if they align with reality. It is not surprising that I follow minimalist and low-impact lifestyles. However, I am not planning to monetize this pursuit.
+      My lifelong pursuit is working on the philosophical work on the ideal personal life and society based on my awareness and also the record of my personal life that aligns to that ideal. It is not surprising that I follow minimalist and low-impact lifestyles. However, I am not planning to monetize this pursuit.
     </p>
 
-    <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Relevant skills and knowledge include English, (web) programming, Linux, an engineering background in telecommunications, basic German, and high school Math/Physics. Previously, I have been a student and then an employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places.</p>
+    <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Relevant skills and knowledge include English, (web) programming, Linux, a background in telecommunications, and high school Math/Physics. Previously, I have been a student and then an employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places.</p>
 
-    <p className="big">This website serves as an outlet for what I want to tell the world about myself: character, story, and activities. As I love to make records, the creation of this website brings me joy.</p>
+    <p className="big">This website serves as an outlet for what I want to tell the world about myself: character, story, and activities.</p>
 
     <hr />
     <p className="small">
