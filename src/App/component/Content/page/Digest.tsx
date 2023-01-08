@@ -9,12 +9,19 @@ export const Digest = (): React.ReactElement =>
     <br />
 
     <div>
-      I list only some digital media that follow these&nbsp;
-      <MyTooltip text="requirements">
+      I list only some items that follow my requirements for&nbsp;
+      <MyTooltip text="media">
         <ol>
           <li>Available digitally</li>
-          <li>Available DRM-free, part of a subscription with DRM, or free of charge</li>
-          <li>Can be consumed directly on a free and open source operating system</li>
+          <li>Available DRM-free or free of charge</li>
+          <li>Compatible with FOSS operating system (like Linux)</li>
+        </ol>
+      </MyTooltip> and&nbsp;
+      <MyTooltip text="video games">
+        <ol>
+          <li>Open-source</li>
+          <li>Available DRM-free</li>
+          <li>Compatible with FOSS operating system (like Linux)</li>
         </ol>
       </MyTooltip>.
     </div>

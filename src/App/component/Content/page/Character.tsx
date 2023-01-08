@@ -104,7 +104,7 @@ export const Character = (): React.ReactElement => (
 
     <div>
       <span className="bold highlight"></span>
-      <b className="highlight">Life Purpose</b>
+      <b className="highlight">Lifelong Goal</b>
 
       &nbsp;— Because of the realization of&nbsp;
       <MyTooltip text="the point of my existence">
