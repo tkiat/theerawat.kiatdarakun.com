@@ -3,7 +3,7 @@ import React from "react"
 import {MyTooltipWithDelay} from "../../share/MyTooltip"
 
 export const Religion = (): React.ReactElement =>
-  <>
+  <li>
     <b className="highlight">Religion</b>
     &nbsp;—&nbsp;
     <span>[2022] </span>
@@ -37,4 +37,4 @@ export const Religion = (): React.ReactElement =>
     <MyTooltipWithDelay text={'\u{1F56E}'}>
       <a href="http://library.nhrc.or.th/ulib/dublin.php?ID=2376"><b>Link</b></a> — เป็นประไตรปิฏกฉบับย่อ รวมถึงประวัติพระไตรปิฏกอย่างคร่าวๆ ผมเห็นว่าคนไทยที่สนใจพุทธทุกคนควรอ่าน
     </MyTooltipWithDelay>
-  </>
+  </li>
