@@ -2,7 +2,7 @@ import React from 'react'
 
 import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
-import {Human} from "./Digest/Human"
+import {Religion} from "./Digest/Religion"
 
 export const Digest = (): React.ReactElement =>
   <div className="page-digest">
@@ -14,34 +14,83 @@ export const Digest = (): React.ReactElement =>
         <ol>
           <li>Available digitally</li>
           <li>Available DRM-free or free of charge</li>
-          <li>Compatible with FOSS operating system (like Linux)</li>
+          <li>Compatible with FOSS operating systems (like Linux)</li>
         </ol>
       </MyTooltip> and&nbsp;
       <MyTooltip text="video games">
         <ol>
           <li>Open-source</li>
           <li>Available DRM-free</li>
-          <li>Compatible with FOSS operating system (like Linux)</li>
+          <li>Compatible with FOSS operating systems (like Linux)</li>
         </ol>
       </MyTooltip>.
     </div>
 
-    <h1>Nonfiction</h1>
+    <hr />
+
+    <h2>Nonfiction: Individual</h2>
 
     <ul>
-      <li><Human /></li>
-
       <li>
-        <b className="highlight">Organisms and the Earth</b>
-
+        <b className="highlight">(Auto)biography</b>
         &nbsp;—&nbsp;
-        <span>[2022]</span>&nbsp;
-        <span className="highlight">Documentary:</span>&nbsp;
-        <MyTooltipWithDelay text="Land of Hope and Glory">
-          <a href="https://www.youtube.com/watch?v=dvtVkNofcq8"><b>Link</b></a> — A documentary about animal abuse in the UK about which the narrator proceeds from pigs, cows, birds, and finally sheeps. While I believe farms with less cruel conditions than those in the documentary exist, unnecessary killing is never justifiable. This documentary doesn't offer anything particularly new, but the pieces of footage reminds me what can possibly be wrong in the industry.
+        <span>[2021] </span>
+        A Confession&nbsp;
+        <MyTooltipWithDelay text={'\u{1F56E}'}>
+          <a href="https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude"><b>Link</b></a> — It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose.
         </MyTooltipWithDelay>
       </li>
 
+      <li>
+        <b className="highlight">Job/Career</b>
+        &nbsp;—&nbsp;
+        <span>[2020] </span>
+        Introduction to Personal Branding&nbsp;
+        <MyTooltipWithDelay text={'\u{1F393}'}>
+          <p><a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>Coursera</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.</p>
+
+          <p>This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.</p>
+        </MyTooltipWithDelay>
+      </li>
+
+      <li>
+        <b className="highlight">Well-Being</b>
+        &nbsp;—&nbsp;
+        <span>[2020] </span>
+        Sit Less, Get Active&nbsp;
+        <MyTooltipWithDelay text={'\u{1F393}'}>
+          <p><a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>Coursera</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.</p>
+        </MyTooltipWithDelay>
+      </li>
+    </ul>
+
+    <hr />
+
+    <h2>Nonfiction: Human Society</h2>
+
+    <ul>
+      <li><Religion /></li>
+    </ul>
+
+    <hr />
+
+    <h2>Nonfiction: Nonhuman Organisms and the Earth</h2>
+
+    <ul>
+      <li>
+        <b className="highlight">Animal Ethics</b>
+        &nbsp;—&nbsp;
+        <span>[2022] </span>
+        Land of Hope and Glory (
+        <MyTooltipWithDelay text={'\u{1F4F9}'}>
+          <a href="https://www.youtube.com/watch?v=dvtVkNofcq8"><b>Link</b></a> — A documentary about animal abuse in the UK about which the narrator proceeds from pigs, cows, birds, and finally sheeps. While I believe farms with less cruel conditions than those in the documentary exist, unnecessary killing is never justifiable. This documentary doesn't offer anything particularly new, but the pieces of footage reminds me what can possibly be wrong in the industry.
+        </MyTooltipWithDelay>)
+      </li>
+    </ul>
+
+    <hr />
+
+    <ul>
       <li>
         <b className="highlight">Digital</b>
 
@@ -94,19 +143,22 @@ export const Digest = (): React.ReactElement =>
           <p>Furthermore, there were a lot of hidden cases (inputs and expected outputs) for each assignment so one cannot simply cheat easily. It was sometimes hard to overcome corner cases, but there was a healthy amount of hint from the discussion forum. Code copy/paste activity was strongly discouraged, of course, but pseudocodes were available. I would recommend this course to anyone.</p>
         </MyTooltipWithDelay>
       </li>
-
-      <li>
-        <b className="highlight">Others</b>
-        &nbsp;—&nbsp;
-        N/A
-      </li>
     </ul>
 
-    <h1>Fiction</h1>
+    <hr />
+
+    <h2>Fiction</h2>
 
     <ul>
       <li>
-        <b className="highlight">Visual</b>
+        <b className="highlight">Text</b>
+
+        &nbsp;—&nbsp;
+        N/A
+      </li>
+
+      <li>
+        <b className="highlight">Image</b>
 
         &nbsp;—&nbsp;
         <span>[2022]</span>&nbsp;
@@ -128,63 +180,10 @@ export const Digest = (): React.ReactElement =>
       </li>
 
       <li>
-        <b className="highlight">Text</b>
+        <b className="highlight">Video</b>
 
         &nbsp;—&nbsp;
         N/A
       </li>
     </ul>
   </div>
-/*
-      <li>
-        <b className="highlight">Video Game With Ending(s)</b>
-
-        &nbsp;—&nbsp;
-        <span>[2020]</span>&nbsp;
-        Giana Sisters: Rise of the Owlverlord
-        Chasm
-        Tower of Time
-        Blazing Stars
-        Shock Troopers
-        Planescape: Torment (Enhanced Edition)
-
-        <span>[2019]</span>&nbsp;
-        Lure of the Temptress
-        Celeste
-        Limbo
-        The Way
-        Candle
-        Beatbuddy: Tale of the Guardians
-        Anna's Quest
-        140
-        Anomaly 2
-        Botanicula Brutal Legend
-        Hollow Knight
-        Ankh - Anniversary Edition
-        Cryptark
-        Reventure
-        Sundered: Eldritch Edition
-        Titan Quest Anniversary Edition
-        Thronebreaker: The Witcher Tales
-        Machinarium Collector's Edition
-        Unmechanical: Extended
-        Bulb Boy
-        Undertale
-        Oxenfree
-
-        <span>[2018]</span>&nbsp;
-        Jill of the Jungle: The Complete Trilogy
-        Stealth Bastard Deluxe Complete Edition
-
-        <span>[2017]</span>&nbsp;
-        Inside
-        Wuppo
-        Never Alone (Kisima Ingitchuna)
-        Brothers: A Tale of Two Sons
-        stealth inc 2
-        tomb raider
-        bioshock infinite
-        gracamelee 2
-        old man's journey
-        </li>
-*/

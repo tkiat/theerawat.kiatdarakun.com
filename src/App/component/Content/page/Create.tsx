@@ -4,7 +4,7 @@ import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Create = (): React.ReactElement =>
   <>
-    <h1>Software</h1>
+    <h2>Software</h2>
 
     <p>
       <b className="highlight">Projects</b>
@@ -54,14 +54,14 @@ export const Create = (): React.ReactElement =>
 
     <hr />
 
-    <h1>Content</h1>
+    <h2>Content</h2>
 
     <p>
       <b className="highlight">Personal Blog</b>
       &nbsp;—&nbsp;
       <s>A Freedom Blog</s> (
       <MyTooltipWithDelay text="?">
-        [<b className="highlight">Abandoned in 2022</b>] <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness. I should be able to migrate a lot of content from here.
+        [<b className="highlight">Abandoned in 2021</b>] <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness. I should be able to migrate a lot of content from here.
       </MyTooltipWithDelay>)
     </p>
 

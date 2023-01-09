@@ -19,7 +19,7 @@ export const Character = (): React.ReactElement => (
           <li>(A)ssertive (65%) - (T)erbulent</li>
         </ul>
       </MyTooltipWithDelay>
-      &ensp;
+      ,&ensp;
       <MyTooltipWithDelay text="Big 5">
         <p>Taken on 31 Mar 2021 from <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
         <ul>
@@ -30,7 +30,7 @@ export const Character = (): React.ReactElement => (
           <li>Intellect/Imagination: 46</li>
         </ul>
       </MyTooltipWithDelay>
-      &ensp;
+      ,&ensp;
       <MyTooltipWithDelay text="Four Temperaments">
         <p>Taken on 31 Mar 2021 from <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
         <ul>
@@ -50,7 +50,7 @@ export const Character = (): React.ReactElement => (
           <li>Early Bird (Except in Winter), Disciplined, and Predictable</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Food & Drinks">
         <ul>
           <li>Least Processed</li>
@@ -60,7 +60,7 @@ export const Character = (): React.ReactElement => (
           <li>Loose Leaf Tea Over Teabags</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Belongings">
         <ul>
           <li>Love Bicycle</li>
@@ -69,7 +69,7 @@ export const Character = (): React.ReactElement => (
           <li>Prefer to Have Only Ebooks</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Companion">
         <ul>
           <li>No Pet Except Adoption</li>
@@ -90,11 +90,15 @@ export const Character = (): React.ReactElement => (
       <MyTooltip text="(Free and) Open Source Software">
         I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). As a result, I personally use them. I like to config my operating system and write some desktop software and scripts by my own that I find it useful and share to the world. I also write some programs for the web like this website.
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Philosophy">
         Philosophy is crucial for my lifelong goal (ideal personal life and society based on awareness) since it broadens my horizon. I have yet to read a lot of works but I will deinitely do so in free time.
       </MyTooltip>
-      &ensp;
+      ,&ensp;
+      <MyTooltip text="Low-Impact Living">
+        My ideal life based on awareness is the one free of greediness, and thus I value minimalism and sustainability (that includes veganism). It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.
+      </MyTooltip>
+      ,&ensp;
       <MyTooltip text="Low-Impact Living">
         My ideal life based on awareness is the one free of greediness, and thus I value minimalism and sustainability (that includes veganism). It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.
       </MyTooltip>
@@ -130,11 +134,11 @@ export const Character = (): React.ReactElement => (
           <li>Thai (native)</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Coding">
         Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, etc.
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Computer">
         <ul>
           <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
@@ -143,11 +147,11 @@ export const Character = (): React.ReactElement => (
           <li>Desktop computer assembly</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Communications">
         Obtain Bachelor and Master's degrees related to Communications technologies.
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Low-Impact Living">
         <ul>
           <li>Know how to save household electrity/water and avoid using unnecessary disposable products.</li>
@@ -179,7 +183,7 @@ export const Character = (): React.ReactElement => (
           <li>Short Bread and Nails</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltip text="Clothing and Accessories">
         <ul>
           <li>No Piercings and Tattoos</li>
@@ -188,26 +192,16 @@ export const Character = (): React.ReactElement => (
           <li>Usually Wear Short Pants Without Shirt at Home</li>
         </ul>
       </MyTooltip>
-      &ensp;
+      ,&ensp;
       <MyTooltipWithDelay text="Others">
         <ul>
           <li>Thai</li>
           <li>Millennials</li>
-          <li>Almost Always Calm and not Angry</li>
         </ul>
       </MyTooltipWithDelay>
     </div>
   </>
 )
-//       &ensp;[Attitudes Toward]&ensp;
-//       <MyTooltip text="Thought">
-//         <ul>
-//           <li>Pleasure is temporary. Don't trade it with something more valuable (like my body).</li>
-//           <li>Let awareness, not mind, lead my life.</li>
-//           <li>It doesn't make sense in any circumstance to be sad, angry, or attached to something/somebody.</li>
-//         </ul>
-//       </MyTooltip>
-//       &ensp;
 //       <MyTooltip text="Computing">
 //         <ul>
 //           <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
