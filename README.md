@@ -25,7 +25,6 @@ The hsl color system I am using makes it very convenient to make themes and the 
 
 - The colors of three waves are monochromatic. This gives a sense of oneness since there is only one ocean.
 - All the interactive elements have complementary color to the main color (wave color) to make it easier to spot.
-- The text header is the same as one of the waves to make my website look more unified.
 - The 'day' and 'dark' time differ in only lightness. The problem is that the l in hsl is not the same as the [lightness perceived by human](https://lea.verou.me/2021/03/inverted-lightness-variables) so I rely on manual adjustments until it feels right.
 
 ## Navbar Water Flow (Desktop Only)
@@ -42,7 +41,7 @@ There was a tiny (seemingly < 1px) unknown space between two adjacent SVGs in bo
 
 A total of 12 animations are required. Take a look at [this document](doc/water-animation.md) for details.
 
-## Others
+## Other
 
 ### Accessibility
 

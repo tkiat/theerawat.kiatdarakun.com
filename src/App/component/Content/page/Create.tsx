@@ -8,7 +8,6 @@ export const Create = (): React.ReactElement =>
 
     <p>
       <b className="highlight">Projects</b>
-
       &nbsp;—&nbsp;
       <span>[2022]</span>&nbsp;
       <MyTooltipWithDelay text="pomodoro-bar">
@@ -42,7 +41,6 @@ export const Create = (): React.ReactElement =>
 
     <p>
       <b className="highlight">Toy Projects</b>
-
       &nbsp;—&nbsp;
       <span>[2018]</span>&nbsp;
       <MyTooltipWithDelay text="RegEx Emulator">
@@ -59,31 +57,43 @@ export const Create = (): React.ReactElement =>
     <h1>Content</h1>
 
     <p>
-      <b className="highlight">Blog</b>
-
+      <b className="highlight">Personal Blog</b>
       &nbsp;—&nbsp;
-      <span className="highlight">Abandoned: </span>
-
-      <span>[2022]</span>&nbsp;
-      <MyTooltipWithDelay text="A Freedom Blog">
-        <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness.
-      </MyTooltipWithDelay>
+      <s>A Freedom Blog</s> (
+      <MyTooltipWithDelay text="?">
+        [<b className="highlight">Abandoned in 2022</b>] <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness. I should be able to migrate a lot of content from here.
+      </MyTooltipWithDelay>)
     </p>
 
-    <p>
-      <b className="highlight">Video Channel</b>
+    <p><b className="highlight">Video Channel</b></p>
 
-      &nbsp;—&nbsp;
-      <span className="highlight">Dormant: </span>
-      <MyTooltipWithDelay text="Freedom in Computing">
-        <a href="https://www.youtube.com/channel/UCgCypxL_GouQb_kpDrHOIyQ">Link</a> — I intend to add more videos about (free and) open-source software down the road, but there is currently only one SuperTux video available.
-      </MyTooltipWithDelay>
+    <ul>
+      <li>
+        <p>
+          <b className="highlight"></b>Freedom in Computing (
+          <MyTooltipWithDelay text="?">
+            I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.
+          </MyTooltipWithDelay>)
+        </p>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=1XVm_dLN5Zo">2021-02-06</a> — SuperTux All Secrets (World 1-2)</li>
+        </ul>
+      </li>
 
-      &nbsp;—&nbsp;
-      <span className="highlight">Abandoned: </span>
-      <span>[2020]</span>&nbsp;
-      <MyTooltipWithDelay text="Short Games Only">
-        <a href="https://www.youtube.com/channel/UC89LAwZdhzEAQWOjLFLcbWg">Link</a> — It contains just replays of two games (Clash Royale and Cryptark) without commentaries. I abandoned them in favor of DRM-free and open source software.
-      </MyTooltipWithDelay>
-    </p>
+      <li>
+        <p>
+          <s>Short Games Only</s> (
+        <MyTooltipWithDelay text="?">
+          [<b className="highlight">Abandoned</b>] It contains just replays of two games without commentaries. I abandoned them in favor of DRM-free and open source software.
+        </MyTooltipWithDelay>
+        )</p>
+        <ul>
+          <li><a href="https://youtu.be/NemKpZkV8yY">2020-06-01</a> — [Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!</li>
+          <li><a href="https://youtu.be/S5aLLY3Cn7I">2020-05-30</a> — [Clash Royale] Road to 5000 Trophies as Level 1</li>
+          <li><a href="https://youtu.be/j3CXU1Z3FB0">2020-05-20</a> — [Clash Royale] Sudden Death Challenge with Elixir Golem Cycle Deck</li>
+          <li><a href="https://youtu.be/1f9Pt9xYI-4">2019-11-13</a> — [Cryptark] Final Mission - All Systems Destroyed</li>
+          <li><a href="https://www.youtube.com/watch?v=yo89TlBl33E">2019-11-13</a> — [Cryptark] Final Mission in Rogue Mode</li>
+        </ul>
+      </li>
+    </ul>
   </>
