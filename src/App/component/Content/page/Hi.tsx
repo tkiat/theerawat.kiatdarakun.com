@@ -5,13 +5,13 @@ export const Hi = (): React.ReactElement => (
     <p className="big">
       <b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>
       &nbsp;—&nbsp;
-      My lifelong pursuit is working on the philosophical work on the ideal personal life and society based on my awareness and also the record of my personal life that aligns to that ideal. It is not surprising that I follow minimalist and low-impact lifestyles. However, I am not planning to monetize this pursuit.
+      My lifelong pursuit is working on the philosophical work on the way of life (including my personal record) and the ideal society based on my awareness. However, I am not planning to monetize this pursuit.
     </p>
 
-    <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Relevant skills and knowledge include English, (web) programming, Linux, a background in telecommunications, and high school Math/Physics. Previously, I have been a student and then an employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places.</p>
+    <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Before this, I have been an intern/employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places. I have good knowledge of English, telecommunications, basic (web) programming/Linux, and high school Math/Physics. My soft skills include quantitative/analytical skills, discipline, and stress management.
+    </p>
 
-    <p className="big">This website serves as an <i>informal</i> outlet for what I want to tell the world about myself: character, story, and activities.</p>
-
+    <p className="big">This website serves as an <span className="highlight"><i>informal</i></span> outlet for what I want to tell the world about myself: character, story, and activities.</p>
     <hr />
     <p className="small">
       <b className="highlight">Contact</b>
@@ -41,7 +41,7 @@ export const Hi = (): React.ReactElement => (
       <a href="https://freesvg.org/sunglasses-black-silhouette">Sunglasses</a>, &nbsp;
       <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>, &nbsp;
       <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>, &nbsp;
-      <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>, &nbsp;
+      <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>
     </p>
   </div>
 )
