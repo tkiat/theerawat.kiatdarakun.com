@@ -3,6 +3,29 @@ import ReactTooltip, {TooltipProps} from "react-tooltip"
 import {v4 as uuidv4} from "uuid"
 
 type MyTooltipProps = TooltipProps & {text: string}
+type MyTooltipImgProps = TooltipProps & {src: string}
+
+export const MyTooltipImg = (p: MyTooltipProps): React.ReactElement => {
+  const id = uuidv4()
+  return (
+    <>
+      <span className="tooltip-front" data-tip data-for={id}><img className="tooltip-img" src={p.src} width="20" alt="X" /></span>
+      <ReactTooltip
+        className="tooltip"
+        arrowColor="transparent"
+        wrapper="span"
+        overridePosition={({left, top}, _e, _t, _) => ({
+          top,
+          left: Math.max(left, 0),
+        })}
+        id={id}
+        {...p}
+      >
+        {p.children}
+      </ReactTooltip>
+    </>
+  )
+}
 
 export const MyTooltip = (p: MyTooltipProps): React.ReactElement => {
   const id = uuidv4()

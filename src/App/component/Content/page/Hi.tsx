@@ -49,6 +49,7 @@ export const Hi = (): React.ReactElement => (
       <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>&ensp;
       <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>&ensp;
       <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>
+      <a href="https://freesvg.org/book">Book</a>
     </p>
   </div>
 )
