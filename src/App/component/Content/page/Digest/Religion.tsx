@@ -11,7 +11,7 @@ export const Religion = (): React.ReactElement =>
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/"><b>Link</b></a> — I read this to understand more about laws in Muslim countries after I subjectively perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explains the basic Islamic principles and then the death penalties, and finally suggests that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.
     </FaTooltipWithDelay>
-    , พุทธธรรม ฉบับเดิม&nbsp;
+    &nbsp;, พุทธธรรม ฉบับเดิม&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="https://www.watnyanaves.net/th/book_detail/302"><b>Link</b></a> — หนังสือเล่มนี้เกี่ยวกับพุธธธรรมพื้นฐาน เป็นธรรมมะที่พระพุทธเจ้ามุ่งสอนคนทุกประเภท เกริ่นด้วยสภาพสังคมก่อนทรงตรัสรู้ คนพวกหนึ่งกำลังมัวเมาในวัตถุกับอีกพวกหนึ่งที่ปลีกตัวออกจากสังคมโดยสิ้นเชิงไปเป็นนักบวช จนถึงตอนตรัสรู้แล้วท่านได้เลือกทางสายกลาง แล้วแบ่งเนื้อหาเป็นสองตอน คือ
       <br/>
@@ -21,19 +21,19 @@ export const Religion = (): React.ReactElement =>
       <br/><br/>
       ปุถุชนมักทำอะไรเพื่อหวังผลประโยชน์สักอย่างหนึ่ง ส่วนพระอริยบุคคลทำตามเรื่องหนึ่งๆในสิ่งที่ควรจะเป็นเท่านั้น ในทางธรรมไม่เรียกว่ากรรม ดังนั้นพระอรหันต์ทำแต่กริยาบริสุทธิ์ ไม่ทำกรรมอีกต่อไป
     </FaTooltipWithDelay>
-    , พุทธธรรม ฉบับปรับขยาย&nbsp;
+    &nbsp;, พุทธธรรม ฉบับปรับขยาย&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="https://www.watnyanaves.net/th/book_detail/583"><b>Link</b></a> — เหมือนหนังสือพุทธธรรม ฉบับเดิม แต่มีคำบรรยายเพิ่มเติมจากท่านผู้เขียนเข้ามามากขึ้น ไม่ได้สรุปเลยลืมไปแล้วคงต้องอ่านอีกรอบ
     </FaTooltipWithDelay>
-    , พุทธวจน คู่มือโสดาบัน&nbsp;
+    &nbsp;, พุทธวจน คู่มือโสดาบัน&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="http://watnapp.com/book"><b>Link</b></a> — เป็นหนังสือที่คัดเฉพาะถ้อยคำพระพุทธเจ้าเกียวกับโสดาบัน โสดาบันเป็นเรื่องใหญ่ของคนนับถือพุทธ เหตุผลนึงเพราะเป็นจุดพ้นจากปุถุชนเป็นอริยะบุคคล และเชื่อกันว่าจะไม่ไปในเกิดในนรกแน่นอน ผมไม่เชื่อในนรกหรอกแต่โสดาบันก็ไม่ทำร้ายใครจึงน่ายกย่อง อยากสรุปแต่คงต้องอ่านอีกรอบ
     </FaTooltipWithDelay>
-    , พุทธวจน อานาปานสติ&nbsp;
+    &nbsp;, พุทธวจน อานาปานสติ&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="http://watnapp.com/book"><b>Link</b></a> — เป็นหนังสือที่คัดเฉพาะถ้อยคำพระพุทธเจ้าเกียวกับอานาปานสติ หลักๆคืออานาปานสติอย่างเดียวก็มีส่วนช่วยบรรลุธรรมได้มาก อยากสรุปแต่คงต้องอ่านอีกรอบ
     </FaTooltipWithDelay>
-    , พระไตรปิฏก ฉบับประชาชน&nbsp;
+    &nbsp;, พระไตรปิฏก ฉบับประชาชน&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="http://library.nhrc.or.th/ulib/dublin.php?ID=2376"><b>Link</b></a> — เป็นประไตรปิฏกฉบับย่อ รวมถึงประวัติพระไตรปิฏกอย่างคร่าวๆ ผมเห็นว่าคนไทยที่สนใจพุทธทุกคนควรอ่าน
     </FaTooltipWithDelay>

@@ -12,23 +12,23 @@ export const Software = (): React.ReactElement =>
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="http://learnyouahaskell.com/"><b>Link</b></a> — I mostly completed this book. I was pretty much lost in the later half at first. Having written a featureful pomodoro application in Haskell, I later reread it and finally understood it.
     </FaTooltipWithDelay>
-    , Learning JavaScript Design Patterns&nbsp;
+    &nbsp;, Learning JavaScript Design Patterns&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-book">
       <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book"><b>Link</b></a> — I completed probably half of the book, and I will probably forget most of them. I have used the module pattern extensively in my personal website and perhaps in the future projects as well. I might reread it later.
     </FaTooltipWithDelay>
-    , CIS194: Introduction to Haskell&nbsp;
+    &nbsp;, CIS194: Introduction to Haskell&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-graduation-cap">
       <a href="https://www.seas.upenn.edu/~cis1940/spring13/lectures.html"><b>Link</b></a> — I read Learn You a Haskell book before but I couldn't quite get much of it. I then stumbled across the best free introduction Haskell course according to <a href="https://github.com/bitemyapp/learnhaskell">bitemyapp</a> so I took it. The instructor explains not very in details, which I found it sufficient. I gained much more understandings especially Monad. However, I didn't do any exercise since that seemed to take much time. You may request the solution from this <a href="https://github.com/byorgey/haskell-course">GitHub</a> link.
     </FaTooltipWithDelay>
 
-    &nbsp;—&nbsp;
+    &ensp;—&ensp;
     <span>[2020] </span>
     Cloud Computing Basics&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-graduation-cap">
       <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99"><b>Coursera</b></a> — I took this short for fun as it offered a free certificate. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion.
     </FaTooltipWithDelay>
 
-    &nbsp;—&nbsp;
+    &ensp;—&ensp;
     <span>[2019] </span>
     freeCodeCamp&nbsp;
     <FaTooltip faclass="fa-solid fa-graduation-cap">
@@ -39,7 +39,7 @@ export const Software = (): React.ReactElement =>
       <b><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/">Udemy</a></b> — A popular course about React.js for beginners. I paid and enrolled in this course as I wanted to build some websites (including my personal website). The basic contents are laid out nicely but the instructor didn't cover all advanced stuff. At the end he did a project that I followed along but I knew unless I did the project from scratch myself I wouldn't be familiar with the language.
     </FaTooltipWithDelay>
 
-    &nbsp;—&nbsp;
+    &ensp;—&ensp;
     <span>[2018] </span>
     Algorithms&nbsp;
     <FaTooltipWithDelay faclass="fa-solid fa-graduation-cap">

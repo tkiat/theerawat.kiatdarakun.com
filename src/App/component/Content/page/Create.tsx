@@ -1,6 +1,6 @@
 import React from "react"
 
-import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
+import {FaTooltip, MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 export const Create = (): React.ReactElement =>
   <>
@@ -59,10 +59,10 @@ export const Create = (): React.ReactElement =>
     <p>
       <b className="highlight">Personal Blog</b>
       &nbsp;—&nbsp;
-      <s>A Freedom Blog</s> (
-      <MyTooltipWithDelay text="?">
+      <s>A Freedom Blog</s> &nbsp;
+      <FaTooltip faclass="fa-solid fa-circle-info">
         [<b className="highlight">Abandoned in 2021</b>] <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness. I should be able to migrate a lot of content from here.
-      </MyTooltipWithDelay>)
+      </FaTooltip>
     </p>
 
     <p><b className="highlight">Video Channel</b></p>
@@ -70,10 +70,10 @@ export const Create = (): React.ReactElement =>
     <ul>
       <li>
         <p>
-          <b className="highlight"></b>Freedom in Computing (
-          <MyTooltipWithDelay text="?">
+          <b className="highlight"></b>Freedom in Computing &nbsp;
+          <FaTooltip faclass="fa-solid fa-circle-info">
             I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.
-          </MyTooltipWithDelay>)
+          </FaTooltip>
         </p>
         <ul>
           <li><a href="https://www.youtube.com/watch?v=1XVm_dLN5Zo">2021-02-06</a> — SuperTux All Secrets (World 1-2)</li>
@@ -82,11 +82,11 @@ export const Create = (): React.ReactElement =>
 
       <li>
         <p>
-          <s>Short Games Only</s> (
-        <MyTooltipWithDelay text="?">
-          [<b className="highlight">Abandoned</b>] It contains just replays of two games without commentaries. I abandoned them in favor of DRM-free and open source software.
-        </MyTooltipWithDelay>
-        )</p>
+          <s>Short Games Only</s> &nbsp;
+          <FaTooltip faclass="fa-solid fa-circle-info">
+            [<b className="highlight">Abandoned</b>] It contains just replays of two games without commentaries. I abandoned them in favor of DRM-free and open source software.
+          </FaTooltip>
+        </p>
         <ul>
           <li><a href="https://youtu.be/NemKpZkV8yY">2020-06-01</a> — [Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!</li>
           <li><a href="https://youtu.be/S5aLLY3Cn7I">2020-05-30</a> — [Clash Royale] Road to 5000 Trophies as Level 1</li>

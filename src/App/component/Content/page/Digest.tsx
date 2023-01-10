@@ -94,51 +94,23 @@ export const Digest = (): React.ReactElement =>
 
     <h2>Fiction</h2>
 
-    <ul>
-      <li>
-        <b className="highlight">Text</b>
+    <span>[2022] </span>
+    Incognegro: A Graphic Mystery&nbsp;
+    <FaTooltip faclass="fa-regular fa-image">
+      <b>[Graphic Novel]</b> — It is a part of 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past.
+    </FaTooltip>
 
-        &nbsp;—&nbsp;
-        N/A
-      </li>
+    &ensp;—&ensp;
+    <span>[2021] </span>
+    The Walking Dead&nbsp;
+    <FaTooltip faclass="fa-regular fa-image">
+      <b>[Comic Books]</b> — I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation.
+    </FaTooltip>
 
-      <li>
-        <b className="highlight">Image</b>
-
-        &nbsp;—&nbsp;
-        <span>[2022] </span>
-        Incognegro: A Graphic Mystery&nbsp;
-        <FaTooltip faclass="fa-solid fa-circle-info">
-          <b>[Graphic Novel]</b> — It is a part of 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past.
-        </FaTooltip>
-
-        &nbsp;—&nbsp;
-        <span>[2021] </span>
-        The Walking Dead&nbsp;
-        <FaTooltip faclass="fa-solid fa-circle-info">
-          <b>[Comic Books]</b> — I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation.
-        </FaTooltip>
-
-        &nbsp;—&nbsp;
-        <span>[2020] </span>
-        The Last Unicorn&nbsp;
-        <FaTooltip faclass="fa-regular fa-image">
-          <b>[Graphic Novel]</b> — It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
-        </FaTooltip>
-      </li>
-
-      <li>
-        <b className="highlight">Video</b>
-
-        &nbsp;—&nbsp;
-        N/A
-      </li>
-
-      <li>
-        <b className="highlight">Video Games</b>
-
-        &nbsp;—&nbsp;
-        N/A
-      </li>
-    </ul>
+    &ensp;—&ensp;
+    <span>[2020] </span>
+    The Last Unicorn&nbsp;
+    <FaTooltip faclass="fa-regular fa-image">
+      <b>[Graphic Novel]</b> — It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
+    </FaTooltip>
   </div>
