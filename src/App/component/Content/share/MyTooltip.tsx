@@ -39,7 +39,7 @@ export const MyTooltipWithDelay = (p: MyTooltipProps): React.ReactElement =>
     {p.children}
   </MyTooltip>
 
-export const MyTooltipImg = (p: MyTooltipProps): React.ReactElement => {
+export const MyTooltipImg = (p: MyTooltipImgProps): React.ReactElement => {
   const id = uuidv4()
   return (
     <>
@@ -61,7 +61,7 @@ export const MyTooltipImg = (p: MyTooltipProps): React.ReactElement => {
   )
 }
 
-export const MyTooltipImgWithDelay = (p: MyTooltipProps): React.ReactElement =>
+export const MyTooltipImgWithDelay = (p: MyTooltipImgProps): React.ReactElement =>
   <MyTooltipImg
     className="tooltip tooltip--withdelay"
     delayHide={500}
