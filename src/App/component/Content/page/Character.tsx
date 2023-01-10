@@ -91,16 +91,20 @@ export const Character = (): React.ReactElement => (
         I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). As a result, I personally use them. I like to config my operating system and write some desktop software and scripts by my own that I find it useful and share to the world. I also write some programs for the web like this website.
       </MyTooltip>
       ,&ensp;
+      <MyTooltip text="Low-Impact Living">
+        My ideal life based on awareness is the one free of greediness, and thus I value minimalism and sustainability (that includes veganism). It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.
+      </MyTooltip>
+      ,&ensp;
+      <MyTooltip text="Increase Awareness">
+        I like to consume information to increase my awareness of the world. It can be news, documentaries, discoveries, inventions, opinions, etc.
+      </MyTooltip>
+      ,&ensp;
+      <MyTooltip text="Writing">
+        <p>Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for creativity.</p>
+      </MyTooltip>
+      ,&ensp;
       <MyTooltip text="Philosophy">
         Philosophy is crucial for my lifelong goal (ideal personal life and society based on awareness) since it broadens my horizon. I have yet to read a lot of works but I will deinitely do so in free time.
-      </MyTooltip>
-      ,&ensp;
-      <MyTooltip text="Low-Impact Living">
-        My ideal life based on awareness is the one free of greediness, and thus I value minimalism and sustainability (that includes veganism). It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.
-      </MyTooltip>
-      ,&ensp;
-      <MyTooltip text="Low-Impact Living">
-        My ideal life based on awareness is the one free of greediness, and thus I value minimalism and sustainability (that includes veganism). It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.
       </MyTooltip>
     </div>
 

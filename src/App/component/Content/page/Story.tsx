@@ -10,7 +10,7 @@ import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 
 export const Story = (): React.ReactElement => (
   <>
-    <p>I don't care if anyone read it {'\u{1F602}'}. This should help me remember my past.</p>
+    <p>I don't care if anyone read it <i class="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
     <hr />
     <Child />
     <hr />
