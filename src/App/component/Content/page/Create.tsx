@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipFa, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
+import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
 export const Create = (): React.ReactElement =>
   <>
@@ -60,9 +60,9 @@ export const Create = (): React.ReactElement =>
       <b className="highlight">Personal Blog</b>
       &nbsp;—&nbsp;
       <s>A Freedom Blog</s> &nbsp;
-      <TooltipFa faclass="fa-solid fa-circle-info">
+      <TooltipFaWithDelay faclass="fa-solid fa-circle-info">
         [<b className="highlight">Abandoned in 2021</b>] <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness. I should be able to migrate a lot of content from here.
-      </TooltipFa>
+      </TooltipFaWithDelay>
     </p>
 
     <p><b className="highlight">Video Channel</b></p>
