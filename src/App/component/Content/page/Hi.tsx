@@ -45,6 +45,7 @@ export const Hi = (): React.ReactElement => (
       <a href="https://commons.wikimedia.org/wiki/File:NotoSans_-_Book_-_1F56E.svg">Book</a>, &nbsp;
       <a href="https://upload.wikimedia.org/wikipedia/commons/9/96/Android_Emoji_1f393.svg">Graduation Hat</a>
       <a href="https://commons.wikimedia.org/wiki/File:Emoji_u1f39e.svg">Filmstrip</a>
+      <a href="https://commons.wikimedia.org/wiki/File:NotoSans_-_Circled_Information_Source_-_1F6C8.svg">Info</a>
     </p>
   </div>
 )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {MyTooltip, MyTooltipImg, MyTooltipImgWithDelay, MyTooltipWithDelay} from "../share/MyTooltip"
+import {FaTooltipWithDelay, MyTooltip, MyTooltipImg, MyTooltipImgWithDelay, MyTooltipWithDelay} from "../share/MyTooltip"
 
 import {Religion} from "./Digest/Religion"
 import {Software} from "./Digest/Software"
@@ -84,9 +84,9 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2022] </span>
         Land of Hope and Glory&nbsp;
-        <MyTooltipImgWithDelay src="/video.svg">
+        <FaTooltipWithDelay faclass="fa-solid fa-film">
           <a href="https://www.youtube.com/watch?v=dvtVkNofcq8"><b>Link</b></a> — A documentary about animal abuse in the UK about which the narrator proceeds from pigs, cows, birds, and finally sheeps. While I believe farms with less cruel conditions than those in the documentary exist, unnecessary killing is never justifiable. This documentary doesn't offer anything particularly new, but the pieces of footage reminds me what can possibly be wrong in the industry.
-        </MyTooltipImgWithDelay>
+        </FaTooltipWithDelay>
       </li>
     </ul>
 
