@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {MyTooltip, MyTooltipImgWithDelay, MyTooltipWithDelay} from "../share/MyTooltip"
+import {MyTooltip, MyTooltipImg, MyTooltipImgWithDelay, MyTooltipWithDelay} from "../share/MyTooltip"
 
 import {Religion} from "./Digest/Religion"
 import {Software} from "./Digest/Software"
@@ -108,9 +108,9 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2022] </span>
         Incognegro: A Graphic Mystery&nbsp;
-        <MyTooltipWithDelay text={'\u{1F6C8}'}>
+        <MyTooltipImg src="/info.svg">
           <b>[Graphic Novel]</b> — It is a part of 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past.
-        </MyTooltipWithDelay>
+        </MyTooltipImg>
 
         &nbsp;—&nbsp;
         <span>[2021] </span>
