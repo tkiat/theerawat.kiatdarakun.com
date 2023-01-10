@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {MyTooltip, MyTooltipImg, MyTooltipWithDelay} from "../share/MyTooltip"
+import {MyTooltip, MyTooltipImgWithDelay, MyTooltipWithDelay} from "../share/MyTooltip"
 
 import {Religion} from "./Digest/Religion"
 import {Software} from "./Digest/Software"
@@ -37,9 +37,9 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2021] </span>
         A Confession&nbsp;
-        <MyTooltipImg src="/book-small.svg">
+        <MyTooltipImgWithDelay src="/book.svg">
           <a href="https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude"><b>Link</b></a> — It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose.
-        </MyTooltipImg>
+        </MyTooltipImgWithDelay>
       </li>
 
       <li>
