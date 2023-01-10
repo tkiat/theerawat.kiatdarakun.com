@@ -3,7 +3,7 @@ import React from 'react'
 export const Hi = (): React.ReactElement => (
   <div className="page-hi">
     <p className="big">
-      <b className="highlight">Hi, I am Theerawat <span role="img" aria-hidden="true">{'\u{1F600}'}</span></b>
+      <b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>
       &nbsp;—&nbsp;
       My lifelong pursuit is working on the philosophical work on the ideal personal life and society based on my awareness and also the record of my personal life that aligns to that ideal. It is not surprising that I follow minimalist and low-impact lifestyles. However, I am not planning to monetize this pursuit.
     </p>
@@ -16,9 +16,9 @@ export const Hi = (): React.ReactElement => (
     <p className="small">
       <b className="highlight">Contact</b>
       &nbsp;—&nbsp;
-      <span role="img" aria-hidden="true">{'\u{2709}'}</span>&nbsp;theerawat@kiatdarakun.com &nbsp;
-      <span role="img" aria-hidden="true">{'\u{260E}'}</span>&nbsp;(+66)646468180 &nbsp;
-      <span role="img" aria-hidden="true">{'\u{26BF}'}</span>&nbsp;<a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
+      <i className="fa-regular fa-envelope"></i> theerawat@kiatdarakun.com &nbsp;
+      <i className="fa-solid fa-mobile-screen"></i> (+66)646468180 &nbsp;
+      <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
     </p>
 
     <p className="small">
@@ -42,10 +42,6 @@ export const Hi = (): React.ReactElement => (
       <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>, &nbsp;
       <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>, &nbsp;
       <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>, &nbsp;
-      <a href="https://commons.wikimedia.org/wiki/File:NotoSans_-_Book_-_1F56E.svg">Book</a>, &nbsp;
-      <a href="https://upload.wikimedia.org/wikipedia/commons/9/96/Android_Emoji_1f393.svg">Graduation Hat</a>
-      <a href="https://commons.wikimedia.org/wiki/File:Emoji_u1f39e.svg">Filmstrip</a>
-      <a href="https://commons.wikimedia.org/wiki/File:NotoSans_-_Circled_Information_Source_-_1F6C8.svg">Info</a>
     </p>
   </div>
 )

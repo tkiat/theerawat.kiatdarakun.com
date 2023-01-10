@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {FaTooltipWithDelay, MyTooltip, MyTooltipImg, MyTooltipImgWithDelay, MyTooltipWithDelay} from "../share/MyTooltip"
+import {FaTooltip, FaTooltipWithDelay, MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
 
 import {Religion} from "./Digest/Religion"
 import {Software} from "./Digest/Software"
@@ -37,9 +37,9 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2021] </span>
         A Confession&nbsp;
-        <MyTooltipImgWithDelay src="/book.svg">
+        <FaTooltipWithDelay faclass="fa-solid fa-book">
           <a href="https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude"><b>Link</b></a> — It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose.
-        </MyTooltipImgWithDelay>
+        </FaTooltipWithDelay>
       </li>
 
       <li>
@@ -47,15 +47,15 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2020] </span>
         Introduction to Personal Branding&nbsp;
-        <MyTooltipImgWithDelay src="/course.svg">
+        <FaTooltipWithDelay faclass="fa-solid fa-graduation-cap">
           <p><a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>Coursera</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.</p>
 
           <p>This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.</p>
-        </MyTooltipImgWithDelay>
+        </FaTooltipWithDelay>
         , Sit Less, Get Active&nbsp;
-        <MyTooltipImgWithDelay src="/course.svg">
+        <FaTooltipWithDelay faclass="fa-solid fa-graduation-cap">
           <p><a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>Coursera</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.</p>
-        </MyTooltipImgWithDelay>
+        </FaTooltipWithDelay>
       </li>
 
       <li>
@@ -108,23 +108,23 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2022] </span>
         Incognegro: A Graphic Mystery&nbsp;
-        <MyTooltipImg src="/info.svg">
+        <FaTooltip faclass="fa-solid fa-circle-info">
           <b>[Graphic Novel]</b> — It is a part of 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past.
-        </MyTooltipImg>
+        </FaTooltip>
 
         &nbsp;—&nbsp;
         <span>[2021] </span>
         The Walking Dead&nbsp;
-        <MyTooltipWithDelay text={'\u{1F6C8}'}>
+        <FaTooltip faclass="fa-solid fa-circle-info">
           <b>[Comic Books]</b> — I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation.
-        </MyTooltipWithDelay>
+        </FaTooltip>
 
         &nbsp;—&nbsp;
         <span>[2020] </span>
         The Last Unicorn&nbsp;
-        <MyTooltipWithDelay text={'\u{1F6C8}'}>
+        <FaTooltip faclass="fa-regular fa-image">
           <b>[Graphic Novel]</b> — It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
-        </MyTooltipWithDelay>
+        </FaTooltip>
       </li>
 
       <li>

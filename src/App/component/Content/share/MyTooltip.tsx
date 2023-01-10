@@ -3,7 +3,6 @@ import ReactTooltip, {TooltipProps} from "react-tooltip"
 import {v4 as uuidv4} from "uuid"
 
 type MyTooltipProps = TooltipProps & {text: string}
-type MyTooltipImgProps = TooltipProps & {src: string}
 type FaTooltipProps = TooltipProps & {faclass: string}
 
 export const MyTooltip = (p: MyTooltipProps): React.ReactElement => {
@@ -40,45 +39,11 @@ export const MyTooltipWithDelay = (p: MyTooltipProps): React.ReactElement =>
     {p.children}
   </MyTooltip>
 
-export const MyTooltipImg = (p: MyTooltipImgProps): React.ReactElement => {
-  const id = uuidv4()
-  return (
-    <>
-      <span data-tip data-for={id}><img className="tooltip-img" src={p.src} width="20" alt="" /></span>
-      <ReactTooltip
-        className="tooltip"
-        arrowColor="transparent"
-        wrapper="span"
-        overridePosition={({left, top}, _e, _t, _) => ({
-          top,
-          left: Math.max(left, 0),
-        })}
-        id={id}
-        {...p}
-      >
-        {p.children}
-      </ReactTooltip>
-    </>
-  )
-}
-
-export const MyTooltipImgWithDelay = (p: MyTooltipImgProps): React.ReactElement =>
-  <MyTooltipImg
-    className="tooltip tooltip--withdelay"
-    delayHide={500}
-    delayShow={500}
-    delayUpdate={500}
-    effect="solid"
-    {...p}
-  >
-    {p.children}
-  </MyTooltipImg>
-
 export const FaTooltip = (p: FaTooltipProps): React.ReactElement => {
   const id = uuidv4()
   return (
     <>
-      <span data-tip data-for={id}><i className={"tooltip-img " + p.faclass}></i></span>
+      <span data-tip data-for={id}><i className={"tooltip-fa " + p.faclass}></i></span>
       <ReactTooltip
         className="tooltip"
         arrowColor="transparent"
