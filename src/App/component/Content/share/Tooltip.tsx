@@ -2,10 +2,10 @@ import React from "react"
 import ReactTooltip, {TooltipProps} from "react-tooltip"
 import {v4 as uuidv4} from "uuid"
 
-type MyTooltipProps = TooltipProps & {text: string}
-type FaTooltipProps = TooltipProps & {faclass: string}
+type TooltipTextProps = TooltipProps & {text: string}
+type TooltipFaProps = TooltipProps & {faclass: string}
 
-export const MyTooltip = (p: MyTooltipProps): React.ReactElement => {
+export const TooltipText = (p: TooltipTextProps): React.ReactElement => {
   const id = uuidv4()
   return (
     <>
@@ -27,8 +27,8 @@ export const MyTooltip = (p: MyTooltipProps): React.ReactElement => {
   )
 }
 
-export const MyTooltipWithDelay = (p: MyTooltipProps): React.ReactElement =>
-  <MyTooltip
+export const TooltipTextWithDelay = (p: TooltipTextProps): React.ReactElement =>
+  <TooltipText
     className="tooltip tooltip--withdelay"
     delayHide={500}
     delayShow={500}
@@ -37,9 +37,9 @@ export const MyTooltipWithDelay = (p: MyTooltipProps): React.ReactElement =>
     {...p}
   >
     {p.children}
-  </MyTooltip>
+  </TooltipText>
 
-export const FaTooltip = (p: FaTooltipProps): React.ReactElement => {
+export const TooltipFa = (p: TooltipFaProps): React.ReactElement => {
   const id = uuidv4()
   return (
     <>
@@ -61,8 +61,8 @@ export const FaTooltip = (p: FaTooltipProps): React.ReactElement => {
   )
 }
 
-export const FaTooltipWithDelay = (p: FaTooltipProps): React.ReactElement =>
-  <FaTooltip
+export const TooltipFaWithDelay = (p: TooltipFaProps): React.ReactElement =>
+  <TooltipFa
     className="tooltip tooltip--withdelay"
     delayHide={500}
     delayShow={500}
@@ -71,4 +71,4 @@ export const FaTooltipWithDelay = (p: FaTooltipProps): React.ReactElement =>
     {...p}
   >
     {p.children}
-  </FaTooltip>
+  </TooltipFa>

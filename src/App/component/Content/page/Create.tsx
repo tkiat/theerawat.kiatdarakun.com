@@ -1,6 +1,6 @@
 import React from "react"
 
-import {FaTooltip, MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
+import {TooltipFa, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
 export const Create = (): React.ReactElement =>
   <>
@@ -10,46 +10,46 @@ export const Create = (): React.ReactElement =>
       <b className="highlight">Projects</b>
       &nbsp;—&nbsp;
       <span>[2022]</span>&nbsp;
-      <MyTooltipWithDelay text="pomodoro-bar">
+      <TooltipTextWithDelay text="pomodoro-bar">
         <a href="https://github.com/tkiat/pomodoro-bar">Link</a> — <b className="highlight">[Haskell]</b> — A pausable, configurable Pomodoro clock with integration to xmobar/polybar. I could finish it in a day using Python, but my limited understanding of Haskell made this project longer than a month. It taught me a lot about how to manage side effects and signals in Haskell.
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
       &ensp;
-      <MyTooltipWithDelay text="pomodoro-bar-py">
+      <TooltipTextWithDelay text="pomodoro-bar-py">
         <a href="https://github.com/tkiat/pomodoro-bar-py">Link</a> — <b className="highlight">[Python3]</b> — A single Python script alternative to pomodoro-bar
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
       &ensp;
-      <MyTooltipWithDelay text="vim-autofmt-gen">
+      <TooltipTextWithDelay text="vim-autofmt-gen">
         <a href="https://github.com/tkiat/vim-autofmt-gen">Link</a> — <b className="highlight">[Python3, Jinja 2]</b> — A single-script Vim/Neovim autoformatter plugin generator for CLI-based autoformatters (like yapf, brittany, js-beautify).
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
 
       &nbsp;—&nbsp;
       <span>[2021]</span>&nbsp;
-      <MyTooltipWithDelay text="Personal Website">
+      <TooltipTextWithDelay text="Personal Website">
         <a href="https://github.com/tkiat/tkiat.github.io">Link</a> — <b className="highlight">[Typescript, React.js, SCSS, Inkscape]</b> — It's this website. I wrote it from scratch.
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
       &ensp;
-      <MyTooltipWithDelay text="A Freedom Blog">
+      <TooltipTextWithDelay text="A Freedom Blog">
         <a href="https://github.com/tkiat/a-freedom-blog">Link</a> — <b className="highlight">[Purescript, React.js, SCSS]</b> —A blog that I wrote from scratch that promotes freedom.
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
 
       &nbsp;—&nbsp;
       <span>[2019]</span>&nbsp;
-      <MyTooltipWithDelay text="Christmas Card">
+      <TooltipTextWithDelay text="Christmas Card">
         <a href="https://github.com/tkiat/task/tree/main/christmas-mardon">Link</a> — <b className="highlight">[HTML, SCSS, JS]</b> — I gave it to my Mother's new husband in Norway at Christmas 2019.
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
     </p>
 
     <p>
       <b className="highlight">Toy Projects</b>
       &nbsp;—&nbsp;
       <span>[2018]</span>&nbsp;
-      <MyTooltipWithDelay text="RegEx Emulator">
+      <TooltipTextWithDelay text="RegEx Emulator">
         <a href="https://codepen.io/tkiatd/pen/bGBWvza">Link</a> — <b className="highlight">[HTML, SCSS, JS]</b> — I simulated a regex program by overlaying the highlight layer on top of textbox.
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
       &ensp;
-      <MyTooltipWithDelay text="Typing Practice">
+      <TooltipTextWithDelay text="Typing Practice">
         <a href="https://codepen.io/tkiatd/pen/oNYWdLz">Link</a> — <b className="highlight">[HTML, SCSS, JS]</b> — I simulated a typing practice program.
-      </MyTooltipWithDelay>
+      </TooltipTextWithDelay>
     </p>
 
     <hr />
@@ -60,9 +60,9 @@ export const Create = (): React.ReactElement =>
       <b className="highlight">Personal Blog</b>
       &nbsp;—&nbsp;
       <s>A Freedom Blog</s> &nbsp;
-      <FaTooltip faclass="fa-solid fa-circle-info">
+      <TooltipFa faclass="fa-solid fa-circle-info">
         [<b className="highlight">Abandoned in 2021</b>] <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it in favor of a newer blog based on awareness. I should be able to migrate a lot of content from here.
-      </FaTooltip>
+      </TooltipFa>
     </p>
 
     <p><b className="highlight">Video Channel</b></p>
@@ -71,9 +71,9 @@ export const Create = (): React.ReactElement =>
       <li>
         <p>
           <b className="highlight"></b>Freedom in Computing &nbsp;
-          <FaTooltip faclass="fa-solid fa-circle-info">
+          <TooltipFa faclass="fa-solid fa-circle-info">
             I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.
-          </FaTooltip>
+          </TooltipFa>
         </p>
         <ul>
           <li><a href="https://www.youtube.com/watch?v=1XVm_dLN5Zo">2021-02-06</a> — SuperTux All Secrets (World 1-2)</li>
@@ -83,9 +83,9 @@ export const Create = (): React.ReactElement =>
       <li>
         <p>
           <s>Short Games Only</s> &nbsp;
-          <FaTooltip faclass="fa-solid fa-circle-info">
+          <TooltipFa faclass="fa-solid fa-circle-info">
             [<b className="highlight">Abandoned</b>] It contains just replays of two games without commentaries. I abandoned them in favor of DRM-free and open source software.
-          </FaTooltip>
+          </TooltipFa>
         </p>
         <ul>
           <li><a href="https://youtu.be/NemKpZkV8yY">2020-06-01</a> — [Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!</li>

@@ -1,6 +1,5 @@
 export {Character} from './page/Character'
 export {Create} from './page/Create'
-export {Credits} from './page/Credits'
 export {Digest} from './page/Digest'
 export {Events} from './page/Events'
 export {Hi} from './page/Hi'

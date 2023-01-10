@@ -1,6 +1,6 @@
 import React from "react"
 
-import {MyTooltip} from "../../share/MyTooltip"
+import {TooltipText} from "../../share/Tooltip"
 
 export const Undergraduate = (): React.ReactElement =>
   <>
@@ -11,13 +11,13 @@ export const Undergraduate = (): React.ReactElement =>
     </p>
 
     <p>My life changed a lot more after I joined the university. The English curriculum broadened my horizon (in both technical knowledge and language senses). My faculty, at the time, had three choices: electronics, mechatronics, and communications. I preferred communications over the other two so I did an internship at&nbsp;
-      <MyTooltip text="Thaicom">
+      <TooltipText text="Thaicom">
         It was a three-month internship in 2011 at Ladlumkaew, Thailand. I mainly observed the workers there do the tasks. There was a satellite installation training that I took for free. The final project is about socket programming between a signal generator and a spectrum analyzer. I chose VB.net to carry out the task because it seemed easy to use! During free time, I wrote a Mario game with VB.net for fun.
-      </MyTooltip>
+      </TooltipText>
       &nbsp;and later&nbsp;
-      <MyTooltip text="thesis">
+      <TooltipText text="thesis">
         The thesis was organized into two parts: an abstract in the first semester and the execution in the second semester. I chose the uplink and downlink-related topic and I didn't actually know how to carry it out so I was the only one who changed the topic in the second semester. It was about the entropy of Thai text so I was proud to say that the Tripitaka was a part of my thesis!
-      </MyTooltip>
+      </TooltipText>
       &nbsp;in this area. These experiences later inspired me to begin the master's degree in Communications Engineering in 2013.
     </p>
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {MyTooltip, MyTooltipWithDelay} from "../share/MyTooltip"
+import {TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
 // import {Human} from "./Digest/Human"
 
