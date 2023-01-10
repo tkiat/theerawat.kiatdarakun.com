@@ -1,7 +1,5 @@
 import React from 'react'
 
-import {MyTooltipWithDelay} from "../share/MyTooltip"
-
 export const Hi = (): React.ReactElement => (
   <div className="page-hi">
     <p className="big">
@@ -18,38 +16,34 @@ export const Hi = (): React.ReactElement => (
     <p className="small">
       <b className="highlight">Contact</b>
       &nbsp;—&nbsp;
-      <span role="img" aria-hidden="true">{'\u{2709}'}</span>&ensp;theerawat@kiatdarakun.com&ensp;
-      <span role="img" aria-hidden="true">{'\u{260E}'}</span>&ensp;(+66)646468180&ensp;
-      <span role="img" aria-hidden="true">{'\u{26BF}'}</span>&ensp;<a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
+      <span role="img" aria-hidden="true">{'\u{2709}'}</span>&nbsp;theerawat@kiatdarakun.com &nbsp;
+      <span role="img" aria-hidden="true">{'\u{260E}'}</span>&nbsp;(+66)646468180 &nbsp;
+      <span role="img" aria-hidden="true">{'\u{26BF}'}</span>&nbsp;<a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
     </p>
 
     <p className="small">
       <b className="highlight">Credits</b>
       &nbsp;—&nbsp;
-      <span>[Google Fonts]</span>&ensp;
-      <MyTooltipWithDelay text="Lato">
-        By Lukasz Dziedzic
-      </MyTooltipWithDelay>
-      &ensp;
-      <MyTooltipWithDelay text="Raleway">
-        By Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida
-      </MyTooltipWithDelay>
-      &ensp;<span>[SVG Backgrounds]</span>&ensp;
-      <a href="https://www.vecteezy.com/vector-art/229917-high-seas-vector-illustration">Ocean</a>&ensp;
-      <a href="https://www.vecteezy.com/vector-art/192739-stone-gate-in-the-desert-landscape-vector">Desert</a>&ensp;
-      <a href="https://www.vecteezy.com/vector-art/271238-cherry-blossoms-background-illustration">Cherry Blossoms</a>&ensp;
-      <a href="https://www.vecteezy.com/vector-art/2395226-snow-mountain-background-vector">Snow</a>
-      &ensp;<span>[SVG]</span>&ensp;
-      <a href="https://freesvg.org/duck">Duck</a>&ensp;
-      <a href="https://freesvg.org/green-party-hat">Party Hat</a>&ensp;
-      <a href="https://freesvg.org/necktie">Neck Tie</a>&ensp;
-      <a href="https://freesvg.org/orange-balloon">Balloon</a>&ensp;
-      <a href="https://freesvg.org/raemi-stop-sign">Stop Sign</a>&ensp;
-      <a href="https://freesvg.org/sunglasses-black-silhouette">Sunglasses</a>&ensp;
-      <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>&ensp;
-      <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>&ensp;
-      <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>
-      <a href="https://freesvg.org/book">Book</a>
+      <span>[Google Fonts]</span> &nbsp;
+      <a href="https://fonts.google.com/specimen/Lato">Lato</a>, &nbsp;
+      <a href="https://fonts.google.com/specimen/Raleway">Raleway</a> &nbsp;
+      <span>[SVG Backgrounds]</span> &nbsp;
+      <a href="https://www.vecteezy.com/vector-art/229917-high-seas-vector-illustration">Ocean</a>, &nbsp;
+      <a href="https://www.vecteezy.com/vector-art/192739-stone-gate-in-the-desert-landscape-vector">Desert</a>, &nbsp;
+      <a href="https://www.vecteezy.com/vector-art/271238-cherry-blossoms-background-illustration">Cherry Blossoms</a>, &nbsp;
+      <a href="https://www.vecteezy.com/vector-art/2395226-snow-mountain-background-vector">Snow</a> &nbsp;
+      <span>[SVG]</span> &nbsp;
+      <a href="https://freesvg.org/duck">Duck</a>, &nbsp;
+      <a href="https://freesvg.org/green-party-hat">Party Hat</a>, &nbsp;
+      <a href="https://freesvg.org/necktie">Neck Tie</a>, &nbsp;
+      <a href="https://freesvg.org/orange-balloon">Balloon</a>, &nbsp;
+      <a href="https://freesvg.org/raemi-stop-sign">Stop Sign</a>, &nbsp;
+      <a href="https://freesvg.org/sunglasses-black-silhouette">Sunglasses</a>, &nbsp;
+      <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>, &nbsp;
+      <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>, &nbsp;
+      <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>, &nbsp;
+      <a href="https://commons.wikimedia.org/wiki/File:NotoSans_-_Book_-_1F56E.svg">Book</a>, &nbsp;
+      <a href="https://upload.wikimedia.org/wikipedia/commons/9/96/Android_Emoji_1f393.svg">Graduation Hat</a>
     </p>
   </div>
 )

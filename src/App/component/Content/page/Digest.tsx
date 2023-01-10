@@ -47,15 +47,15 @@ export const Digest = (): React.ReactElement =>
         &nbsp;—&nbsp;
         <span>[2020] </span>
         Introduction to Personal Branding&nbsp;
-        <MyTooltipWithDelay text={'\u{1F393}'}>
+        <MyTooltipImgWithDelay src="/course.svg">
           <p><a href="https://coursera.org/verify/AZD6S5JVYEG8"><b>Coursera</b></a> — I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.</p>
 
           <p>This course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth.</p>
-        </MyTooltipWithDelay>
+        </MyTooltipImgWithDelay>
         , Sit Less, Get Active&nbsp;
-        <MyTooltipWithDelay text={'\u{1F393}'}>
+        <MyTooltipImgWithDelay src="/course.svg">
           <p><a href="https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"><b>Coursera</b></a> — I got a free certificate offer and I sat all day so I took it. I later forgot everything except the course title itself which should be enough.</p>
-        </MyTooltipWithDelay>
+        </MyTooltipImgWithDelay>
       </li>
 
       <li>
