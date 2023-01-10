@@ -122,7 +122,7 @@ export const Character = (): React.ReactElement => (
       <TooltipText text="value">
         <p>Every goal is not desirable. A prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first wisdom I attained. I knew that living by awareness was the only thing that could satisfy me, for it was the truest experience.</p>
       </TooltipText>
-      , I want to create the work that describes the ideal personal life and society based on my own awareness, and create my own exemplary record about this way of life. If time and resources allowed, I will help others to do the same as well by, e.g., opening an affordable vegan restaurant.
+      , I want to create the work that describes the way of life (including my personal record) and ideal society based on my awareness. If time and resources allowed, I will contribute in the direction of such society by, e.g., opening an affordable vegan restaurant.
     </div>
 
     <br />

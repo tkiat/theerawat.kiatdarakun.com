@@ -11,8 +11,8 @@ export const Hi = (): React.ReactElement => (
     <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Before this, I have been an intern/employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places. I have good knowledge of English, telecommunications, basic (web) programming/Linux, and high school Math/Physics. My soft skills include quantitative/analytical skills, discipline, and stress management.
     </p>
 
-    <p className="big">This website serves as an <span className="highlight"><i>informal</i></span> outlet for what I want to tell the world about myself: character, story, and activities.</p>
     <hr />
+
     <p className="small">
       <b className="highlight">Contact</b>
       &nbsp;—&nbsp;
