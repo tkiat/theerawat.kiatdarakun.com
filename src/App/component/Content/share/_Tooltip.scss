@@ -18,12 +18,13 @@
 
 .tooltip-front {
   cursor: help;
+  border-bottom: 2px dotted var(--color);
 /*   text-decoration: underline; */
 /*   text-decoration-style: dotted; */
-  border-bottom: 2px dotted var(--color);
 }
 
 .tooltip-fa {
+  cursor: help;
   border-bottom: 2px dotted var(--color);
   padding-bottom: 1px;
 }

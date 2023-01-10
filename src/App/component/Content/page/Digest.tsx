@@ -10,18 +10,11 @@ export const Digest = (): React.ReactElement =>
     <br />
 
     <div>
-      I list only some items that follow my requirements for&nbsp;
-      <TooltipText text="media">
+      I list only some items that follow my&nbsp;
+      <TooltipText text="requirements">
         <ol>
           <li>Available digitally</li>
           <li>Available DRM-free or free of charge</li>
-          <li>Compatible with FOSS operating systems (like Linux)</li>
-        </ol>
-      </TooltipText> and&nbsp;
-      <TooltipText text="video games">
-        <ol>
-          <li>Open-source</li>
-          <li>Available DRM-free</li>
           <li>Compatible with FOSS operating systems (like Linux)</li>
         </ol>
       </TooltipText>.
@@ -114,3 +107,10 @@ export const Digest = (): React.ReactElement =>
       <b>[Graphic Novel]</b> — It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something.
     </TooltipFa>
   </div>
+//       <TooltipText text="video games">
+//         <ol>
+//           <li>Open-source</li>
+//           <li>Available DRM-free</li>
+//           <li>Compatible with FOSS operating systems (like Linux)</li>
+//         </ol>
+//       </TooltipText>.
