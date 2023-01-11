@@ -6,7 +6,7 @@ export const Religion = (): React.ReactElement =>
   <li>
     <b className="highlight">Religion</b>
     &nbsp;—&nbsp;
-    <span>[2022] </span>
+    <span className="highlight">2022 </span> |&nbsp;
     Sharia Law and the Death Penalty&nbsp;
     <TooltipFaWithDelay faclass="fa-solid fa-book">
       <a href="https://www.penalreform.org/resource/sharia-law-and-the-death-penalty/"><b>Link</b></a> — I read this to understand more about laws in Muslim countries after I subjectively perceived Sharia, Islam's legal system, as a bit too violent. I was by no means familiar with Islam and had no expertise to judge the correctness of the book, but I found that the book laid out the content nicely. It explains the basic Islamic principles and then the death penalties, and finally suggests that it is not a violation of Sharia law to adapt the death penalties in accordance with univeral human rights law.

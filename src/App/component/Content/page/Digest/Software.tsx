@@ -7,7 +7,7 @@ export const Software = (): React.ReactElement =>
     <b className="highlight">Software</b>
 
     &nbsp;—&nbsp;
-    <span>[2021] </span>
+    <span className="highlight">2021 </span> |&nbsp;
     Learn You a Haskell for Great Good!&nbsp;
     <TooltipFaWithDelay faclass="fa-solid fa-book">
       <a href="http://learnyouahaskell.com/"><b>Link</b></a> — I mostly completed this book. I was pretty much lost in the later half at first. Having written a featureful pomodoro application in Haskell, I later reread it and finally understood it.
@@ -22,14 +22,15 @@ export const Software = (): React.ReactElement =>
     </TooltipFaWithDelay>
 
     &ensp;—&ensp;
-    <span>[2020] </span>
+    <span className="highlight">2020 </span> |&nbsp;
     Cloud Computing Basics&nbsp;
     <TooltipFaWithDelay faclass="fa-solid fa-graduation-cap">
       <a href="https://coursera.org/share/7fa417bc8244a27c8ccb08295906fb99"><b>Coursera</b></a> — I took this short for fun as it offered a free certificate. It is a guide to cloud computing with a brief explanation of related technologies. This is a very short course (probably &lt; 3 hours with some preknowledge). The instructor at times reads what is shown on slides and not explains everything that appears on them so I personally don't recommend this course. You are better off reading Wikipedia in my opinion.
     </TooltipFaWithDelay>
 
     &ensp;—&ensp;
-    <span>[2019] </span>
+    <span className="highlight">2019 </span> |&nbsp;
+    Cloud Computing Basics&nbsp;
     freeCodeCamp&nbsp;
     <TooltipFa faclass="fa-solid fa-graduation-cap">
       I became aware that the web knowledge offers me significant freedom so I took some 5 web-related courses here. The courses are about basics HTML/CSS/JS, fornt-end/back-end coding, React.js, and a few other libraries. I deleted my account there so the certificate links are gone.
@@ -40,7 +41,7 @@ export const Software = (): React.ReactElement =>
     </TooltipFaWithDelay>
 
     &ensp;—&ensp;
-    <span>[2018] </span>
+    <span className="highlight">2018 </span> |&nbsp;
     Algorithms&nbsp;
     <TooltipFaWithDelay faclass="fa-solid fa-graduation-cap">
       <a href="https://coursera.org/verify/specialization/LP2AXJ7TUNRV"><b>Coursera</b></a> — I was unexplainably drawn to computer science just a month after coming back from Germany, and algorithms seemed like the most important basics so I took it. I paid 49 USD for the certificate and finished within a month. This coursera specialization contains 4 algorithm-related courses focusing deeply on theory. I would recommend this course for an aspiring computer scientist, but I was not that drawn much to the theoretical side so I skipped some lectures. I am not impressed with the assignment format since anyone can just put a correct number to pass the assignment.
