@@ -10,7 +10,7 @@ export const Digest = (): React.ReactElement =>
     <br />
 
     <div>
-      I list only some items that follow my&nbsp;
+      I list only some items that follow these&nbsp;
       <TooltipText text="requirements">
         <ol>
           <li>Available digitally</li>
@@ -54,7 +54,7 @@ export const Digest = (): React.ReactElement =>
       <li>
         <b className="highlight">Technical Skills</b>
         <ul>
-          <Software />
+          <li><Software /></li>
         </ul>
       </li>
     </ul>

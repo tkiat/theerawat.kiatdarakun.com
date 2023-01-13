@@ -3,7 +3,7 @@ import React from "react"
 import {TooltipFa, TooltipFaWithDelay} from "../../share/Tooltip"
 
 export const Software = (): React.ReactElement =>
-  <li>
+  <>
     <b className="highlight">Software</b>
 
     &nbsp;—&nbsp;
@@ -54,4 +54,4 @@ export const Software = (): React.ReactElement =>
 
       <p>Furthermore, there were a lot of hidden cases (inputs and expected outputs) for each assignment so one cannot simply cheat easily. It was sometimes hard to overcome corner cases, but there was a healthy amount of hint from the discussion forum. Code copy/paste activity was strongly discouraged, of course, but pseudocodes were available. I would recommend this course to anyone.</p>
     </TooltipFaWithDelay>
-  </li>
+  </>

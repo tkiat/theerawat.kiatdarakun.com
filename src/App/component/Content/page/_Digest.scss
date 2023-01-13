@@ -1,9 +1,12 @@
 .page-digest {
-  ul li {
-    line-height: 1.4;
-    margin-bottom: 0.3em;
-    .tooltip {
-      line-height: initial;
+  ul {
+    padding-left: 1.25em;
+    & li {
+      line-height: 1.4;
+      margin-bottom: 0.3em;
+      .tooltip {
+        line-height: initial;
+      }
     }
   }
 }
