@@ -35,7 +35,8 @@ export const DrawCanvas = ({theme, waveConfigs}: P):
 
     let then = 0
     const render = () => {
-      if (Date.now() > then + frameInterval) {
+      if (document.visibilityState === "visible" &&
+          Date.now() > then + frameInterval) {
         updateCanvas()
         then = Date.now()
       }
