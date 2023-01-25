@@ -39,7 +39,7 @@ const renderAppItems = (items: AppProps) => items.map((x, i) =>
       <ul>
         {x.items.map((y, j) =>
           <li className={y.abandoned ? "abandoned" : ""} aria-hidden={y.abandoned} key={j}>
-            <a href={y.link}>{y.date}</a> — {y.name}&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
+            {y.date} — <a href={y.link}>{y.name}</a>&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
           </li>
         )}
       </ul>
@@ -55,7 +55,7 @@ const renderContentItems = (items: ContentProps) => items.map((x, i) =>
 
     {x.items &&
       <ul>
-        {x.items.map((y, j) => <li key={j}><a href={y.link}>{y.date}</a> — {y.title}</li>)}
+        {x.items.map((y, j) => <li key={j}>{y.date} — <a href={y.link}>{y.title}</a></li>)}
       </ul>
     }
   </section>
