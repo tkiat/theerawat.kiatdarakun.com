@@ -12,10 +12,35 @@ type SoftwareItemProps = [{
   abandoned: boolean,
 }]
 
+type VideosProps = [{
+  group_name: string,
+  group_dscp: string,
+  abandoned: boolean,
+  videos: [
+    {
+      date: string,
+      link: string,
+      title: string,
+    }
+  ]
+}]
+
 const renderSoftwareItems = (items: SoftwareItemProps) => items.map((x, i) =>
   <li className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
     <a href={x.link}>{x.date}</a> — {x.name}&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
   </li>
+)
+
+const renderVideoItems = (items: VideosProps) => items.map((x, i) =>
+  <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
+    <h3>{x.group_name}</h3>
+
+    <p>{x.group_dscp}</p>
+
+    <ul>
+      {x.videos.map(y => <li><a href={y.link}>{y.date}</a> — {y.title}</li>)}
+    </ul>
+  </section>
 )
 
 export const Create = (): React.ReactElement => {
@@ -41,7 +66,7 @@ export const Create = (): React.ReactElement => {
     })()
   }, [])
 
-  return softwareProjs === undefined || softwareToys === undefined ?
+  return softwareProjs === undefined || softwareToys === undefined || videos === undefined ?
     <>Loading ...</> :
     <div className="page-create">
       <p>Abandoned projects are blurred.</p>
@@ -76,28 +101,6 @@ export const Create = (): React.ReactElement => {
 
       <h2>Video Channel</h2>
 
-      <section>
-        <h3>Freedom in Computing</h3>
-
-        <p>I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
-
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=1XVm_dLN5Zo">2021-02-06</a> — SuperTux All Secrets (World 1-2)</li>
-        </ul>
-      </section>
-
-      <section className="abandoned">
-        <h3>Short Games Only</h3>
-
-        <p>The channel contains just replays of two games without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
-
-        <ul>
-          <li><a href="https://youtu.be/NemKpZkV8yY">2020-06-01</a> — [Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!</li>
-          <li><a href="https://youtu.be/S5aLLY3Cn7I">2020-05-30</a> — [Clash Royale] Road to 5000 Trophies as Level 1</li>
-          <li><a href="https://youtu.be/j3CXU1Z3FB0">2020-05-20</a> — [Clash Royale] Sudden Death Challenge with Elixir Golem Cycle Deck</li>
-          <li><a href="https://youtu.be/1f9Pt9xYI-4">2019-11-13</a> — [Cryptark] Final Mission - All Systems Destroyed</li>
-          <li><a href="https://www.youtube.com/watch?v=yo89TlBl33E">2019-11-13</a> — [Cryptark] Final Mission in Rogue Mode</li>
-        </ul>
-      </section>
+      {renderVideoItems(videos)}
     </div>
 }
