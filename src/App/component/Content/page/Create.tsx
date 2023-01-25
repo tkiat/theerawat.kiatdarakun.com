@@ -2,14 +2,19 @@ import React from "react"
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
-type SoftwareItemProps = [{
-  name: string,
-  date: string,
-  link: string,
-  dscp: string,
-  type: string,
-  stack: string,
-  abandoned: boolean,
+type AppProps = [{
+  group_name: string,
+  items: [
+    {
+      name: string,
+      date: string,
+      link: string,
+      dscp: string,
+      type: string,
+      stack: string,
+      abandoned: boolean,
+    }
+  ]
 }]
 
 type ContentProps = [{
@@ -26,10 +31,20 @@ type ContentProps = [{
   ]
 }]
 
-const renderSoftwareItems = (items: SoftwareItemProps) => items.map((x, i) =>
-  <li className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
-    <a href={x.link}>{x.date}</a> — {x.name}&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
-  </li>
+const renderAppItems = (items: AppProps) => items.map((x, i) =>
+  <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
+    <h3>{x.group_name}</h3>
+
+    {x.items &&
+      <ul>
+        {x.items.map((y, j) =>
+          <li className={y.abandoned ? "abandoned" : ""} aria-hidden={y.abandoned} key={j}>
+            <a href={y.link}>{y.date}</a> — {y.name}&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
+          </li>
+        )}
+      </ul>
+    }
+  </section>
 )
 
 const renderContentItems = (items: ContentProps) => items.map((x, i) =>
@@ -48,50 +63,42 @@ const renderContentItems = (items: ContentProps) => items.map((x, i) =>
 
 export const Create = (): React.ReactElement => {
 
-  const [softwareProjs, setSoftwareProjs] = React.useState()
-  const [softwareToys, setSoftwareToys] = React.useState()
+  const [apps, setApps] = React.useState()
   const [blogs, setBlogs] = React.useState()
   const [videos, setVideos] = React.useState()
 
   React.useEffect(() => {
+    let mounted = true;
+
     (async () => {
 //       const sProjRaw = await fetch("/software-project.json")
 //       setSoftwareProjs(await sProjRaw.json())
 
-      const [sProjRaw, sToyRaw, blogsRaw, videosRaw] = await Promise.all([
-        fetch("/software-project.json"),
-        fetch("/software-toy.json"),
+      const [appsRaw, blogsRaw, videosRaw] = await Promise.all([
+        fetch("/apps.json"),
         fetch("/blog.json"),
         fetch("/videos.json"),
       ])
 
-      setSoftwareProjs(await sProjRaw.json())
-      setSoftwareToys(await sToyRaw.json())
-      setBlogs(await blogsRaw.json())
-      setVideos(await videosRaw.json())
+      if (mounted) {
+        setApps(await appsRaw.json())
+        setBlogs(await blogsRaw.json())
+        setVideos(await videosRaw.json())
+      }
     })()
+
+    return () => mounted = false
   }, [])
 
-  return softwareProjs === undefined || softwareToys === undefined || blogs === undefined || videos === undefined ?
+  return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
     <div className="page-create">
-      <p>Abandoned projects are blurred.</p>
+      <p>Abandoned works are blurred.</p>
 
       <hr />
 
       <h2>Apps</h2>
-
-      <h3>&gt; a Day</h3>
-
-      <ul>
-        {renderSoftwareItems(softwareProjs)}
-      </ul>
-
-      <h3>&lt; a Day</h3>
-
-      <ul>
-        {renderSoftwareItems(softwareToys)}
-      </ul>
+      {renderAppItems(apps)}
 
       <hr />
 
