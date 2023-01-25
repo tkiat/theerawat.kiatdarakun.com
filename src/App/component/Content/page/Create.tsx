@@ -12,11 +12,12 @@ type SoftwareItemProps = [{
   abandoned: boolean,
 }]
 
-type VideosProps = [{
+type ContentProps = [{
   group_name: string,
   group_dscp: string,
+  link: string,
   abandoned: boolean,
-  videos: [
+  items: [
     {
       date: string,
       link: string,
@@ -31,15 +32,17 @@ const renderSoftwareItems = (items: SoftwareItemProps) => items.map((x, i) =>
   </li>
 )
 
-const renderVideoItems = (items: VideosProps) => items.map((x, i) =>
+const renderContentItems = (items: ContentProps) => items.map((x, i) =>
   <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
     <h3>{x.group_name}</h3>
 
-    <p>{x.group_dscp}</p>
+    <p>{x.link && <><a href={x.link}>Link</a> —&nbsp;</>}{x.group_dscp}</p>
 
-    <ul>
-      {x.videos.map(y => <li><a href={y.link}>{y.date}</a> — {y.title}</li>)}
-    </ul>
+    {x.items &&
+      <ul>
+        {x.items.map((y, j) => <li key={j}><a href={y.link}>{y.date}</a> — {y.title}</li>)}
+      </ul>
+    }
   </section>
 )
 
@@ -47,6 +50,7 @@ export const Create = (): React.ReactElement => {
 
   const [softwareProjs, setSoftwareProjs] = React.useState()
   const [softwareToys, setSoftwareToys] = React.useState()
+  const [blogs, setBlogs] = React.useState()
   const [videos, setVideos] = React.useState()
 
   React.useEffect(() => {
@@ -54,34 +58,36 @@ export const Create = (): React.ReactElement => {
 //       const sProjRaw = await fetch("/software-project.json")
 //       setSoftwareProjs(await sProjRaw.json())
 
-      const [sProjRaw, sToyRaw, videosRaw] = await Promise.all([
+      const [sProjRaw, sToyRaw, blogsRaw, videosRaw] = await Promise.all([
         fetch("/software-project.json"),
         fetch("/software-toy.json"),
+        fetch("/blog.json"),
         fetch("/videos.json"),
       ])
 
       setSoftwareProjs(await sProjRaw.json())
       setSoftwareToys(await sToyRaw.json())
+      setBlogs(await blogsRaw.json())
       setVideos(await videosRaw.json())
     })()
   }, [])
 
-  return softwareProjs === undefined || softwareToys === undefined || videos === undefined ?
+  return softwareProjs === undefined || softwareToys === undefined || blogs === undefined || videos === undefined ?
     <>Loading ...</> :
     <div className="page-create">
       <p>Abandoned projects are blurred.</p>
 
       <hr />
 
-      <h2>Software</h2>
+      <h2>Apps</h2>
 
-      <h3>Apps</h3>
+      <h3>&gt; a Day</h3>
 
       <ul>
         {renderSoftwareItems(softwareProjs)}
       </ul>
 
-      <h3>Less-Than-a-Day Apps</h3>
+      <h3>&lt; a Day</h3>
 
       <ul>
         {renderSoftwareItems(softwareToys)}
@@ -90,17 +96,11 @@ export const Create = (): React.ReactElement => {
       <hr />
 
       <h2>Blog</h2>
-
-      <section className="abandoned" aria-hidden={true}>
-        <h3>A Freedom Blog</h3>
-
-        <p><a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the philosophical work of life guided by awareness. I should be able to migrate some content from here.</p>
-      </section>
+      {renderContentItems(blogs)}
 
       <hr />
 
       <h2>Video Channel</h2>
-
-      {renderVideoItems(videos)}
+      {renderContentItems(videos)}
     </div>
 }
