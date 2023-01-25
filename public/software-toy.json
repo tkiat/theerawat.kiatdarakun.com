@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Christmas Card",
+    "date": "2019-12-25",
+    "link": "https://github.com/tkiat/task/tree/main/christmas-mardon",
+    "dscp": "I gave it to my Mother's new husband in Norway at Christmas 2019",
+    "type": "web",
+    "stack": "HTML, SCSS, JS"
+  },
+  {
+    "name": "RegEx Emulator",
+    "date": "2018-11-17",
+    "link": "https://codepen.io/tkiatd/pen/bGBWvza",
+    "dscp": "I simulated a regex program by overlaying the highlight layer on top of textbox",
+    "type": "web",
+    "stack": "HTML, SCSS, JS"
+  },
+  {
+    "name": "Typing Practice",
+    "date": "2018-11-17",
+    "link": "https://codepen.io/tkiatd/pen/oNYWdLz",
+    "dscp": "I simulated a typing practice program",
+    "type": "web",
+    "stack": "HTML, SCSS, JS"
+  }
+]

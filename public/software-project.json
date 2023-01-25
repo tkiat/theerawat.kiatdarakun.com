@@ -1,0 +1,51 @@
+[
+  {
+    "name": "vim-autofmt-gen",
+    "date": "2022-05-15",
+    "link": "https://github.com/tkiat/vim-autofmt-gen",
+    "dscp": "A CLI-based autoformatter (like yapf, js-beautify) plugin generator for Vim/Neovim",
+    "type": "desktop",
+    "stack": "Python, Vimscript"
+  },
+  {
+    "name": "pomodoro-bar",
+    "date": "2022-05-11",
+    "link": "https://github.com/tkiat/pomodoro-bar",
+    "dscp": "A pausable, configurable CLI-based Pomodoro clock with integration to xmobar/polybar",
+    "type": "desktop",
+    "stack": "Haskell"
+  },
+  {
+    "name": "pomodoro-bar-py",
+    "date": "2022-05-11",
+    "link": "https://github.com/tkiat/pomodoro-bar-py",
+    "dscp": "A single Python script alternative to pomodoro-bar",
+    "type": "desktop",
+    "stack": "Python"
+  },
+  {
+    "name": "Personal Website",
+    "date": "2021-11-27",
+    "link": "https://github.com/tkiat/theerawat.kiatdarakun.com",
+    "dscp": "It's this website. I wrote it from scratch",
+    "type": "web",
+    "stack": "Typescript, React.js, SCSS, Inkscape"
+  },
+  {
+    "name": "A Freedom Blog",
+    "date": "2021-11-27",
+    "link": "https://github.com/tkiat/a-freedom-blog",
+    "dscp": "A blog that I wrote from scratch that promotes freedom",
+    "type": "web",
+    "stack": "Purescript, React.js, SCSS"
+  },
+  {
+    "name": "Personal Website",
+    "date": "2021-01-22",
+    "link": "https://github.com/tkiat/archive/tree/main/personal-website",
+    "dscp": "Previous versions of my personal website. I made backend part but I later found it too much of a hassle and moved to SPA with a hosting service (like Vercel) instead",
+    "type": "web",
+    "stack": "HTML, CSS, JS, Terraform, AWS, VPS",
+    "active": "no"
+  }
+]

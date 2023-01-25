@@ -2,124 +2,103 @@ import React from "react"
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
-export const Create = (): React.ReactElement =>
-  <div className="page-create">
-    <h2>Software</h2>
+export const Create = (): React.ReactElement => {
 
-    <ul>
-      <li>
-        <b className="highlight">Projects</b>
+  const [softwareProjs, setSoftwareProjs] = React.useState()
+  const [softwareToys, setSoftwareToys] = React.useState()
 
-        <ul>
-          <li>
-            <span className="highlight">2022</span> —&nbsp;
-            pomodoro-bar&nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-globe">
-            <a href="https://github.com/tkiat/pomodoro-bar">Link</a> — Haskell — A pausable, configurable Pomodoro clock with integration to xmobar/polybar. I could finish it in a day using Python, but my limited understanding of Haskell made this project longer than a month. It taught me a lot about how to manage side effects and signals in Haskell.
-            </TooltipFaWithDelay>
-            , pomodoro-bar-py&nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-display">
-              <a href="https://github.com/tkiat/pomodoro-bar-py">Link</a> — Python3 — A single Python script alternative to pomodoro-bar
-            </TooltipFaWithDelay>
-            , vim-autofmt-gen&nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-display">
-              <a href="https://github.com/tkiat/vim-autofmt-gen">Link</a> — Python3, Jinja 2, Vimscript — A single-script Vim/Neovim autoformatter plugin generator for CLI-based autoformatters (like yapf, brittany, js-beautify).
-            </TooltipFaWithDelay>
+  React.useEffect(
+    async () => {
+//       const sProjRaw = await fetch("/software-project.json")
+//       setSoftwareProjs(await sProjRaw.json())
+
+      const [sProjRaw, sToyRaw] = await Promise.all([
+        fetch("/software-project.json"),
+        fetch("/software-toy.json"),
+      ]);
+
+      setSoftwareProjs(await sProjRaw.json())
+      setSoftwareToys(await sToyRaw.json())
+    }
+  , []);
+
+  return softwareProjs === undefined || softwareToys === undefined ?
+    <>Loading ...</> :
+    <div className="page-create">
+      <p>Abandoned projects are blurred.</p>
+
+      <hr />
+
+      <h2>Software</h2>
+
+      <h3>Apps</h3>
+
+      <ul>
+        {softwareProjs.map(({name, date, link, dscp, type, stack, active}, i) =>
+          <li className={active === "no" ? "abandoned" : ""} aria-hidden={active === "no"} key={i}>
+            <a href={link}>{date}</a> — {name}&ensp;<i className={type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {dscp} — <span className="highlight">{stack}</span>
           </li>
+        )}
+      </ul>
 
-          <li>
-            <span className="highlight">2021</span> —&nbsp;
+      <h3>Less-Than-a-Day Apps</h3>
 
-            Personal Website&nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-globe">
-              <a href="https://github.com/tkiat/theerawat.kiatdarakun.com">Link</a> — Typescript, React.js, SCSS, Inkscape — It's this website. I wrote it from scratch.
-            </TooltipFaWithDelay>
-            , A Freedom Blog&nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-globe">
-              <a href="https://github.com/tkiat/a-freedom-blog">Link</a> — Purescript, React.js, SCSS — A blog that I wrote from scratch that promotes freedom.
-            </TooltipFaWithDelay>
+      <ul>
+        {softwareToys.map(({name, date, link, dscp, type, stack, active}, i) =>
+          <li className={active === "no" ? "abandoned" : ""} aria-hidden={active === "no"} key={i}>
+            <a href={link}>{date}</a> — {name}&ensp;<i className={type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {dscp} — <span className="highlight">{stack}</span>
           </li>
+        )}
+      </ul>
 
-          <li>
-            <span className="highlight">2020</span> —&nbsp;
-            <s className="abandoned">Personal Website</s>&nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-globe">
-              Abandoned — HTML, CSS, JS, Terraform, AWS — An old version of my personal website. As a part of learning, I rented server on Digitalocean and bought a domain for it. I made the whole things (including blog in my personal webite) using vanilla Javascript. Next, I move from Digitalocean to AWS and learned Terraform in the process. I later found that this is too much of a hassle and move to SPA with managed hosting somewhere else instead.
-            </TooltipFaWithDelay>
-          </li>
-        </ul>
-      </li>
+      <hr />
 
-      <li>
-        <b className="highlight">Toy Projects</b>
+      <h2>Blog</h2>
 
-        &ensp;—&ensp;
-        <span className="highlight">2019</span> |&nbsp;
-        Christmas Card&nbsp;
-        <TooltipFaWithDelay faclass="fa-solid fa-globe">
-          <a href="https://github.com/tkiat/task/tree/main/christmas-mardon">Link</a> — HTML, SCSS, JS — I gave it to my Mother's new husband in Norway at Christmas 2019.
-        </TooltipFaWithDelay>
+      <ul>
+        <li>
+          <b className="highlight">My Own Website</b>
 
-        &ensp;—&ensp;
-        <span className="highlight">2018</span> |&nbsp;
-        RegEx Emulator&nbsp;
-        <TooltipFaWithDelay faclass="fa-solid fa-globe">
-          <a href="https://codepen.io/tkiatd/pen/bGBWvza">Link</a> — HTML, SCSS, JS — I simulated a regex program by overlaying the highlight layer on top of textbox.
-        </TooltipFaWithDelay>
-        , Typing Practice&nbsp;
-        <TooltipFaWithDelay faclass="fa-solid fa-globe">
-          <a href="https://codepen.io/tkiatd/pen/oNYWdLz">Link</a> — HTML, SCSS, JS — I simulated a typing practice program.
-        </TooltipFaWithDelay>
-      </li>
-    </ul>
+          <ul>
+            <li>
+              <s className="abandoned">A Freedom Blog</s> &nbsp;
+              <TooltipFaWithDelay faclass="fa-solid fa-blog">
+                <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — Abandoned in 2021 — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it to focus my lifelong efforts on the philosophical work of life guided by awareness. I should be able to migrate some content from here.
+              </TooltipFaWithDelay>
+            </li>
+          </ul>
+        </li>
+      </ul>
 
-    <hr />
+      <hr />
 
-    <h2>Blog</h2>
+      <h2>Video Channel</h2>
 
-    <ul>
-      <li>
-        <b className="highlight">My Own Website</b>
+      <ul>
+        <li>
+          <b className="highlight">Freedom in Computing</b> &nbsp;
+          <TooltipFa faclass="fa-brands fa-youtube">
+            I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.
+          </TooltipFa>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=1XVm_dLN5Zo">2021-02-06</a> — SuperTux All Secrets (World 1-2)</li>
+          </ul>
+        </li>
 
-        <ul>
-          <li>
-            <s className="abandoned">A Freedom Blog</s> &nbsp;
-            <TooltipFaWithDelay faclass="fa-solid fa-blog">
-              <a href="https://a-freedom-blog.kiatdarakun.com">Link</a> — Abandoned in 2021 — This personal blog is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it to focus my lifelong efforts on the philosophical work of life guided by awareness. I should be able to migrate some content from here.
-            </TooltipFaWithDelay>
-          </li>
-        </ul>
-      </li>
-    </ul>
+        <li>
+          <s className="abandoned highlight">Short Games Only</s> &nbsp;
+          <TooltipFa faclass="fa-brands fa-youtube">
+            Abandoned in 2020 — The channel contains just replays of two games without commentaries. I abandoned it in favor of open-source video games.
+          </TooltipFa>
 
-    <hr />
-
-    <h2>Video Channel</h2>
-
-    <ul>
-      <li>
-        <b className="highlight">Freedom in Computing</b> &nbsp;
-        <TooltipFa faclass="fa-brands fa-youtube">
-          I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.
-        </TooltipFa>
-        <ul>
-          <li><a href="https://www.youtube.com/watch?v=1XVm_dLN5Zo">2021-02-06</a> — SuperTux All Secrets (World 1-2)</li>
-        </ul>
-      </li>
-
-      <li>
-        <s className="abandoned highlight">Short Games Only</s> &nbsp;
-        <TooltipFa faclass="fa-brands fa-youtube">
-          Abandoned in 2020 — The channel contains just replays of two games without commentaries. I abandoned it in favor of open-source video games.
-        </TooltipFa>
-
-        <ul className="abandoned">
-          <li><a href="https://youtu.be/NemKpZkV8yY">2020-06-01</a> — [Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!</li>
-          <li><a href="https://youtu.be/S5aLLY3Cn7I">2020-05-30</a> — [Clash Royale] Road to 5000 Trophies as Level 1</li>
-          <li><a href="https://youtu.be/j3CXU1Z3FB0">2020-05-20</a> — [Clash Royale] Sudden Death Challenge with Elixir Golem Cycle Deck</li>
-          <li><a href="https://youtu.be/1f9Pt9xYI-4">2019-11-13</a> — [Cryptark] Final Mission - All Systems Destroyed</li>
-          <li><a href="https://www.youtube.com/watch?v=yo89TlBl33E">2019-11-13</a> — [Cryptark] Final Mission in Rogue Mode</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+          <ul className="abandoned">
+            <li><a href="https://youtu.be/NemKpZkV8yY">2020-06-01</a> — [Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!</li>
+            <li><a href="https://youtu.be/S5aLLY3Cn7I">2020-05-30</a> — [Clash Royale] Road to 5000 Trophies as Level 1</li>
+            <li><a href="https://youtu.be/j3CXU1Z3FB0">2020-05-20</a> — [Clash Royale] Sudden Death Challenge with Elixir Golem Cycle Deck</li>
+            <li><a href="https://youtu.be/1f9Pt9xYI-4">2019-11-13</a> — [Cryptark] Final Mission - All Systems Destroyed</li>
+            <li><a href="https://www.youtube.com/watch?v=yo89TlBl33E">2019-11-13</a> — [Cryptark] Final Mission in Rogue Mode</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+}
