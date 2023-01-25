@@ -46,6 +46,6 @@
     "dscp": "Previous versions of my personal website. I made backend part but I later found it too much of a hassle and moved to SPA with a hosting service (like Vercel) instead",
     "type": "web",
     "stack": "HTML, CSS, JS, Terraform, AWS, VPS",
-    "active": "no"
+    "abandoned": true
   }
 ]
