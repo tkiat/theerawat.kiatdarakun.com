@@ -95,7 +95,7 @@ export const Create = (): React.ReactElement => {
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
     <div className="page-create">
-      <p>Abandoned works are blurred.</p>
+      <p>Abandoned items are displayed with less opacity.</p>
 
       <hr />
 
