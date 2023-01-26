@@ -1,6 +1,17 @@
 [
   {
-    "scope": "",
+    "date": "2021",
+    "scope": "Individual",
+    "category": "Autobiography",
+    "title": "A Confession",
+    "format": "book",
+    "length": "25992 Words",
+    "link": "https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude",
+    "review": "It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose."
+  },
+  {
+    "date": "",
+    "scope": "human society",
     "category": "",
     "title": "",
     "link": "",
@@ -8,6 +19,7 @@
     "review_link": ""
   },
   {
+    "date": "",
     "scope": "",
     "category": "",
     "title": "",

@@ -51,9 +51,9 @@ const renderAppItems = (items: AppProps) => items.map((x, i) =>
 
 const renderContentItems = (items: ContentProps) => items.map((x, i) =>
   <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
-    <h3>{x.group_name}</h3>
+    <h3>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h3>
 
-    <p>{x.link && <><a href={x.link}>Link</a> —&nbsp;</>}{x.group_dscp}</p>
+    <p>{x.group_dscp}</p>
 
     {x.items &&
       <ul>
