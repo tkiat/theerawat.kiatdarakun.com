@@ -1,6 +1,6 @@
 [
   {
-    "group_name": "Freedom in Computing",
+    "group_name": "Channel: Freedom in Computing",
     "group_dscp": "I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.",
     "items": [
       {
@@ -11,7 +11,7 @@
     ]
   },
   {
-    "group_name": "Short Games Only",
+    "group_name": "Channel: Short Games Only",
     "group_dscp": "The channel contains just replays of two games without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.",
     "abandoned": true,
     "items": [

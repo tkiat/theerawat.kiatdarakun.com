@@ -2,20 +2,22 @@ import React from "react"
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
-type AppProps = [{
-  group_name: string,
-  items: [
-    {
-      name: string,
-      date: string,
-      link: string,
-      dscp: string,
-      type: string,
-      stack: string,
-      abandoned: boolean,
-    }
-  ]
-}]
+type AppProps = [
+  {
+    group_name: string,
+    items: [
+      {
+        name: string,
+        date: string,
+        link: string,
+        dscp: string,
+        type: string,
+        stack: string,
+        abandoned: boolean,
+      }
+    ]
+  }
+]
 
 type ContentProps = [{
   group_name: string,
@@ -32,7 +34,7 @@ type ContentProps = [{
 }]
 
 const renderAppItems = (items: AppProps) => items.map((x, i) =>
-  <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
+  <section key={i}>
     <h3>{x.group_name}</h3>
 
     {x.items &&
@@ -67,7 +69,7 @@ export const Create = (): React.ReactElement => {
   const [blogs, setBlogs] = React.useState()
   const [videos, setVideos] = React.useState()
 
-  React.useEffect(() => {
+  React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
@@ -107,7 +109,7 @@ export const Create = (): React.ReactElement => {
 
       <hr />
 
-      <h2>Video Channel</h2>
+      <h2>Videos</h2>
       {renderContentItems(videos)}
     </div>
 }
