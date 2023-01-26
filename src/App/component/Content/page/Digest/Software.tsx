@@ -30,7 +30,6 @@ export const Software = (): React.ReactElement =>
 
     &ensp;—&ensp;
     <span className="highlight">2019 </span> |&nbsp;
-    Cloud Computing Basics&nbsp;
     freeCodeCamp&nbsp;
     <TooltipFa faclass="fa-solid fa-graduation-cap">
       I became aware that the web knowledge offers me significant freedom so I took some 5 web-related courses here. The courses are about basics HTML/CSS/JS, fornt-end/back-end coding, React.js, and a few other libraries. I deleted my account there so the certificate links are gone.
