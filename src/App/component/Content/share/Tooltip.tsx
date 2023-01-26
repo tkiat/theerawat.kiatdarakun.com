@@ -45,7 +45,7 @@ export const TooltipFa = (p: TooltipFaProps): React.ReactElement => {
     <>
       <span data-tip data-for={id}><i className={"tooltip-fa " + p.faclass}></i></span>
       <ReactTooltip
-        className="tooltip"
+        className="tooltip display-linebreak"
         arrowColor="transparent"
         wrapper="span"
         overridePosition={({left, top}, _e, _t, _) => ({

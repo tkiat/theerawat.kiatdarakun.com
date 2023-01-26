@@ -7,16 +7,17 @@
     "format": "book",
     "length": "25992 Words",
     "link": "https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude",
-    "review": "It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose."
+    "review_short": "It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose."
   },
   {
-    "date": "",
-    "scope": "human society",
-    "category": "",
-    "title": "",
-    "link": "",
-    "review": "",
-    "review_link": ""
+    "date": "2020-03-30",
+    "scope": "individual",
+    "category": "well-being",
+    "title": "Introduction to Personal Branding",
+    "format": "course",
+    "length": "3 hr",
+    "link": "https://coursera.org/verify/AZD6S5JVYEG8",
+    "review_short": "I was going to build my portfolio site and gaining more perspective about how to put myself out there sounds like a good idea. I, by chance, discovered this course and I got the certificate for free because of the coronavirus outbreak giveaway.\n\nThis course is about how to construct personal branding without any practical assignment. The instructor talks in a casual and relaxing manner. The course is worth it to me though as I haven't been aware of some of the tips before, but the length is only around 4-10 hours and not at all in-depth."
   },
   {
     "date": "",
@@ -24,7 +25,7 @@
     "category": "",
     "title": "",
     "link": "",
-    "review": "",
-    "review_link": ""
+    "review_short": "",
+    "review_ext": ""
   }
 ]

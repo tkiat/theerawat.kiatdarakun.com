@@ -5,14 +5,28 @@ import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "
 import {Religion} from "./Digest/Religion"
 import {Software} from "./Digest/Software"
 
-const renderFormatIcon = f => {
-  let c
+type ItemProps = [
+  {
+    date: string,
+    scope: string,
+    category: string,
+    title: string,
+    format: string,
+    length: string,
+    link: string,
+    review_short: string,
+    review_ext: string,
+  }
+]
 
+const renderFormatIcon = (f: string) => {
   switch(f) {
     case "book":
       return <i className="fa-solid fa-book"></i>
     case "video":
       return <i className="fa-solid fa-film"></i>
+    case "course":
+      return <i className="fa-solid fa-graduation-cap"></i>
     case "image":
       return <i className="fa-regular fa-image"></i>
     default:
@@ -20,10 +34,10 @@ const renderFormatIcon = f => {
   }
 }
 
-const renderItems = (items) =>
+const renderItems = (items: ItemProps) =>
   <section>
     <ul>
-      {items.map((x, i) => <li key={i}>{x.date} — {x.scope}/{x.category} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>}&ensp;{renderFormatIcon(x.format)} ({x.length}) — {x.review_link && <i class="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i>}{x.review && <TooltipFa faclass="fa-regular fa-circle-question">{x.review}</TooltipFa>}</li>)}
+      {items.map((x, i) => <li key={i}>{x.date} — {x.scope}/{x.category} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>}&ensp;{renderFormatIcon(x.format)}&ensp;{x.length} — {x.review_short && <TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa>}&ensp;{x.review_ext && <a href={x.review_ext}><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a>}</li>)}
     </ul>
   </section>
 
@@ -50,7 +64,7 @@ export const Digest = (): React.ReactElement => {
     <div className="page-digest">
       <br />
 
-      <p>Date — Scope/Category — Title&ensp;Format (Length) — Review (& Summary)</p>
+      <p>Date — Scope/Category — Title&ensp;Format&ensp;Length — Review (and Summary)</p>
       {renderItems(items)}
 
       <div>
