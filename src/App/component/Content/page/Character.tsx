@@ -111,23 +111,6 @@ export const Character = (): React.ReactElement => (
     <br />
 
     <div>
-      <span className="bold highlight"></span>
-      <b className="highlight">Lifelong Goal</b>
-
-      &nbsp;— Because of the realization of&nbsp;
-      <TooltipText text="the point of my existence">
-        <p>There is no point of my existence since, without any sentient being from the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
-      </TooltipText>
-      &nbsp;and then my&nbsp;
-      <TooltipText text="value">
-        <p>Every goal is not desirable. A prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first wisdom I attained. I knew that living by awareness was the only thing that could satisfy me, for it was the truest experience.</p>
-      </TooltipText>
-      , I want to create the work that describes the way of life (including my personal record) and ideal society based on my awareness. If time and resources allowed, I will contribute in the direction of such society by, e.g., opening an affordable vegan restaurant.
-    </div>
-
-    <br />
-
-    <div>
       <b className="highlight">Hard Skills</b>
 
       &nbsp;—&nbsp;
@@ -212,3 +195,18 @@ export const Character = (): React.ReactElement => (
 //           <li>All operating systems and at least one collection of firmware in all computers should be FOSS because people deserve freedom-friendly choices.</li>
 //         </ul>
 //       </TooltipText>
+
+//     <div>
+//       <span className="bold highlight"></span>
+//       <b className="highlight">Lifelong Goal</b>
+// 
+//       &nbsp;— Because of the realization of&nbsp;
+//       <TooltipText text="the point of my existence">
+//         <p>There is no point of my existence since, without any sentient being from the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
+//       </TooltipText>
+//       &nbsp;and then my&nbsp;
+//       <TooltipText text="value">
+//         <p>Every goal is not desirable. A prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first wisdom I attained. I knew that living by awareness was the only thing that could satisfy me, for it was the truest experience.</p>
+//       </TooltipText>
+//       , I want to create the work that describes the way of life (including my personal record) and ideal society based on my awareness. If time and resources allowed, I will contribute in the direction of such society by, e.g., opening an affordable vegan restaurant.
+//     </div>
