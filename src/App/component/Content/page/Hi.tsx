@@ -2,9 +2,7 @@ import React from 'react'
 
 export const Hi = (): React.ReactElement => (
   <div className="page-hi">
-    <p className="big">
-      <b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>. I have realized that the only things that <i>can</i> truly matter in the whole universe lie within the natural flow of sentient beings. I am dissecting everything to adjust my life according to this realization, and I am working on philosophical books that reflect this realization on both personal and societal scales. However, I am not planning to monetize this pursuit.
-    </p>
+    <p className="big"><b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>. I have realized that the only things that <i>can</i> truly matter in the whole universe lie within the natural flow of sentient beings. With my interpretations of this realization, I made a compatible lifestyle and relevant (philosophical) works on both personal and societal scales my lifelong pursuits. However, I am not planning to monetize them.</p>
 
     <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Before this, I have been an intern/employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places. I have good knowledge of English, telecommunications, basic (web) programming/Linux, and high school Math/Physics. My soft skills include quantitative/analytical skills, discipline, and minimalism.
     </p>
@@ -33,13 +31,15 @@ export const Hi = (): React.ReactElement => (
       <span>[SVG]</span> &nbsp;
       <a href="https://freesvg.org/duck">Duck</a>, &nbsp;
       <a href="https://freesvg.org/green-party-hat">Party Hat</a>, &nbsp;
-      <a href="https://freesvg.org/necktie">Neck Tie</a>, &nbsp;
       <a href="https://freesvg.org/orange-balloon">Balloon</a>, &nbsp;
-      <a href="https://freesvg.org/raemi-stop-sign">Stop Sign</a>, &nbsp;
       <a href="https://freesvg.org/sunglasses-black-silhouette">Sunglasses</a>, &nbsp;
       <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>, &nbsp;
-      <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>, &nbsp;
-      <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>
     </p>
   </div>
 )
+/*
+      <a href="https://freesvg.org/necktie">Neck Tie</a>, &nbsp;
+      <a href="https://freesvg.org/raemi-stop-sign">Stop Sign</a>, &nbsp;
+      <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>, &nbsp;
+      <a href="https://freesvg.org/vector-clip-art-of-man-geek-warning-road-sign">Geek sign</a>
+*/
