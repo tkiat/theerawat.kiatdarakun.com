@@ -16,7 +16,7 @@ export const ItemContent = ({isActive, left, onclick, path, to}: P):
     <Link
       className={'nav-main' + (isActive ? ' nav-main--active' : '')}
       to={to}
-      style={{left: left}}
+      style={{left: left, textDecoration: "none"}}
       onClick={onclick}
       aria-label={text}
       draggable="false"

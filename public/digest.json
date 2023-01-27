@@ -52,7 +52,7 @@
   {
     "date": "2022",
     "scope": "Nonhuman",
-    "category": "Animal Ethics",
+    "category": "Ethics",
     "title": "Land of Hope and Glory",
     "format": "video",
     "length": "48 min",
@@ -61,7 +61,7 @@
   },
   {
     "date": "2021",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Autobiography",
     "title": "A Confession",
     "format": "book",
@@ -71,7 +71,7 @@
   },
   {
     "date": "2021",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "Learn You a Haskell for Great Good!",
     "format": "book",
@@ -81,7 +81,7 @@
   },
   {
     "date": "2021",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "Learning JavaScript Design Patterns",
     "format": "book",
@@ -91,7 +91,7 @@
   },
   {
     "date": "2021",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "CIS194: Introduction to Haskell",
     "format": "course",
@@ -110,7 +110,7 @@
   },
   {
     "date": "2020-04-10",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Well-Being",
     "title": "Sit Less, Get Active",
     "format": "course",
@@ -120,7 +120,7 @@
   },
   {
     "date": "2020-03-30",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Well-Being",
     "title": "Introduction to Personal Branding",
     "format": "course",
@@ -130,7 +130,7 @@
   },
   {
     "date": "2020",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "Cloud Computing Basics",
     "format": "course",
@@ -150,7 +150,7 @@
   },
   {
     "date": "2019-01",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "React - The Complete Guide",
     "format": "course",
@@ -160,7 +160,7 @@
   },
   {
     "date": "2019",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "freeCodeCamp",
     "format": "course",
@@ -169,7 +169,7 @@
   },
   {
     "date": "2018-06-23",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "Data Structures and Algorithms",
     "format": "course",
@@ -179,7 +179,7 @@
   },
   {
     "date": "2018-05-05",
-    "scope": "Individual",
+    "scope": "Person",
     "category": "Technical",
     "title": "Algorithms",
     "format": "course",

@@ -96,14 +96,14 @@ h1, h2, h3, a, button, strong, b {
 }
 
 a {
-  position: relative;
-  display: inline-block;
-
   @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
   @include m.hsl(text-decoration-color, 180, 0%, f.dayOrDark(25%, 75%));
   &:hover {
-    @include m.hsl(text-decoration-color, 180, 0%, f.dayOrDark(40%, 50%));
+    @include m.hsl(text-decoration-color, 180, 0%, f.dayOrDark(50%, 25%));
   }
+/*   position: relative; */
+/*   display: inline-block; */
+
 /*   text-decoration: none; */
 /*   transition: color 500ms; */
 /*   &:after { */

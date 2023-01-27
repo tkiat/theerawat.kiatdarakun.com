@@ -2,9 +2,6 @@ import React from 'react'
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
-import {Religion} from "./Digest/Religion"
-import {Software} from "./Digest/Software"
-
 type ItemProps = [
   {
     date: string,
@@ -36,9 +33,7 @@ const renderFormatIcon = (f: string) => {
 
 const renderItems = (items: ItemProps) =>
   <section>
-    <ul>
-      {items.map((x, i) => <li key={i}>{x.date} — {x.scope} &gt; {x.category} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {renderFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext}><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</li>)}
-    </ul>
+      {items.map((x, i) => <p key={i}>{x.date} — {x.scope} &gt; {x.category} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {renderFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext}><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>)}
   </section>
 
 export const Digest = (): React.ReactElement => {
@@ -63,20 +58,24 @@ export const Digest = (): React.ReactElement => {
     <>Loading ...</> :
     <div className="page-digest">
       <br />
+
       <div>
-        I list only some media that follow these&nbsp;
-        <TooltipText text="requirements">
+        I select only pieces of media that align with my philosophical&nbsp;
+        <TooltipText text="ideals">
           <ol>
             <li>Available digitally</li>
             <li>Available DRM-free or free of charge</li>
-            <li>Compatible with FOSS operating systems (like Linux)</li>
+            <li>Can be Consumed on FOSS operating systems (like Linux)</li>
           </ol>
-        </TooltipText>.
+        </TooltipText> and categorize them into 5 scopes (mind, person, human society, nonhuman, and the earth). This list should help me recall information as time goes by.
       </div>
+
+      <br />
+
+      <p>Date — Scope &gt; Category — Title — Format&ensp;Length&ensp;Review/Summary</p>
 
       <hr />
 
-      <p>Date — Scope &gt; Category — Title — Format&ensp;Length&ensp;Review/Summary</p>
       {renderItems(items)}
     </div>
 }

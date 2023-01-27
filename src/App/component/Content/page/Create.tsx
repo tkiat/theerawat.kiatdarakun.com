@@ -95,7 +95,7 @@ export const Create = (): React.ReactElement => {
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
     <div className="page-create">
-      <p>Abandoned items are displayed with less opacity.</p>
+      <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
       <hr />
 
