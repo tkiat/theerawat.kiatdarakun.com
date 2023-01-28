@@ -5,7 +5,7 @@ import {WaveConfigs, WavePhysics} from 'src/App/component/Canvas/wave'
 type M = {[key in keyof WavePhysics]: {min: number, max: number, step: number}}
 const mapping: M = {
   'height': {min: 10, max: 70, step: 10 },
-  'speed': {min: 0.05, max: 0.3, step: 0.05 },
+  'speed': {min: 0, max: 0.3, step: 0.05 },
   'shakiness': {min: 0, max: 6, step: 1.5 },
 }
 

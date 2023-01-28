@@ -1,13 +1,16 @@
 import {Coordinate, Dimension, Line} from '@types-basic'
 import {Wave, WavePhysics} from './wave'
 
+let flag = false
+
 export const drawWaves = (
   ctx: CanvasRenderingContext2D,
   waves: Wave[],
   physics: WavePhysics,
   colors: string[],
 ) => {
-  if (physics.height === 0 || physics.speed === 0) return
+  if (flag && (physics.speed === 0 && physics.shakiness === 0)) return // first render wave if stopped
+  flag = true
 
   const {width, height} = ctx.canvas
   ctx.clearRect(0, 0, width, height)
