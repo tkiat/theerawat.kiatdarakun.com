@@ -4,7 +4,7 @@ import {ThemeObject, wavesKey} from 'src/App/share/theme'
 import {WaveConfigs, drawWaves, moveItemsAlongWave} from './wave'
 
 const itemOffset = 20
-const approxFps = 20, frameInterval = Math.round(1000 / approxFps)
+const approxFps = 10, frameInterval = Math.round(1000 / approxFps)
 
 type P = {theme: ThemeObject, waveConfigs: React.MutableRefObject<WaveConfigs>}
 export const DrawCanvas = ({theme, waveConfigs}: P):
@@ -35,8 +35,8 @@ export const DrawCanvas = ({theme, waveConfigs}: P):
 
     let then = 0
     const render = () => {
-      if (document.visibilityState === "visible" &&
-          Date.now() > then + frameInterval) {
+      if (Date.now() > then + frameInterval &&
+          document.visibilityState === "visible" ) {
         updateCanvas()
         then = Date.now()
       }
