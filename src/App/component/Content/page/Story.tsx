@@ -10,7 +10,7 @@ import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 
 export const Story = (): React.ReactElement => (
   <>
-    <p>I don't care if anyone read it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
+    <p>I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
     <hr />
     <Child />
     <hr />
@@ -25,5 +25,13 @@ export const Story = (): React.ReactElement => (
     <WorkingGermany />
     <hr />
     <VoluntaryUnemployment />
+    <hr />
+    <p>
+      <b className="big highlight">32 Years Old - Present (Finding a Full-Time Job)</b>
+      &nbsp;—&nbsp;
+      <span>
+        TODO
+      </span>
+    </p>
   </>
 )

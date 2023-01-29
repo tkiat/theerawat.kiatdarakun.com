@@ -179,6 +179,7 @@ export const Character = (): React.ReactElement => (
               <li>Calm and Stable</li>
               <li>No Insults, Pointless Arguments, and Gossips</li>
               <li>Quiet and Smile Less (Outside of Work)</li>
+              <li>Never Have Sexual or Romantic Relationship</li>
             </ul>
           </TooltipText>
           ,&ensp;

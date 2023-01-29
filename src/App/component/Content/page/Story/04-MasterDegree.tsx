@@ -10,9 +10,9 @@ export const MasterDegree = (): React.ReactElement =>
       <span>
         On the first day of arrival, I had the appointment with&nbsp;
         <TooltipText text="two kind Thai students">
-          One met me at Cologne and one took a taxi with me from Aachen Hofbahnhof (train station) to my room (which I paid the deposit and the rent in advance). I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
+          One met me at Cologne and another one took a taxi with me from Aachen Hofbahnhof (train station) to my room (which I paid the deposit and the rent in advance). I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
         </TooltipText>
-        &nbsp;who will take me to my single-room apartment. I adapted quickly to a new&nbsp;
+        &nbsp;who will take me to my single-room apartment. I adapted quickly to the new&nbsp;
         <TooltipText text="lifestyle">
           I had to cook myself. I always bought pre-made food in Thailand but it was more prohibitive to buy them in Germany than cooking it myself (it's like 1.5 EUR vs 5 EUR). The climate was quite the opposite of Thailand where I had to heat my room instead of cooling it. My cloth needed to be thick during the cold winter when I could sometimes expect snow.
         </TooltipText>
@@ -22,7 +22,7 @@ export const MasterDegree = (): React.ReactElement =>
         </TooltipText>
         , and finally joined the&nbsp;
         <TooltipText text="orientation">
-          This was when I realized more than half was Indian. A very little Chinese was here in my batch which was a little surprising. There was only one German. If you want to meet more Germans in a class, you probably want to take a class in German, not in English.
+          This was when I realized more than half was Indian. A very few Chinese were here in my batch which was a little surprising. There was only one German. If you want to meet more Germans in a class, you probably want to take a class in German, not in English.
         </TooltipText>
         . The&nbsp;
         <TooltipText text="first semester">
@@ -49,7 +49,7 @@ export const MasterDegree = (): React.ReactElement =>
       </TooltipText>
       &nbsp;
       <TooltipText text="nearby">
-        Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot. They were usually full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35km destination. There was an American war memorial on the way to the city.
+        Maastricht is a beautiful city in the Netherlands. Shopping malls and the river port attracted me a lot. They were usually full of people and I went there more than 15 times! The best part was the quality of the bicycle road to the city. It took me 1.5 hours to reach this 35 km destination. There was an American war memorial on the way to the city.
         <br /><br />
         Monschau is a very beautiful town with some small rivers and a castle. Barred the constant flux of visitors, it was very nice to live there. It took me almost 2 hours by bike because of the slope but I spent only 1 hour on the way back. I went there two times by bike, alone.
       </TooltipText>
@@ -57,10 +57,10 @@ export const MasterDegree = (): React.ReactElement =>
       <TooltipText text="two years">
         Each semester lasts 6 months (including thesis and internship for around 6 months each). A transitioning gap should happen as a student has to find the thesis and the internship himself. There is simply no hand-holding whatsoever.
       </TooltipText>
-      &nbsp;to finish the degree. I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the practical test&nbsp;
-      <TooltipText text="stuff">
+      &nbsp;to finish the degree. I decided to do the thesis before the internship because I found this an easier path. I couldn't find any other interesting thesis so I did the&nbsp;
+      <TooltipText text="practical test stuff">
         It was a test on FPGA boards about the coding scheme that my supervisor were conducting research on. He wanted the practical test to confirm his theory. I learn about how to hack the board and carry out the test methodologically. I had to modify the existing C and Verilog codes to conduct the test.
       </TooltipText>
-      , and I expect it to help me find the corporate internship.
+      , and I expected it to help me find the corporate internship.
     </p>
   </>

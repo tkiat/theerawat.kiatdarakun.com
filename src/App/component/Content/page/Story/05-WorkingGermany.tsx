@@ -10,9 +10,9 @@ export const WorkingGermany = (): React.ReactElement =>
       <span>
         Just before the end of my thesis I only applied to&nbsp;
         <TooltipText text="National Instruments Dresden">
-          A company in the Dresden (in the east of Germany, it took around 16 EUR to Berlin from there!) acquired by National Instruments some time ago. It offers a testing solution mainly in the telecommunications area. People over there could speak German and also had German-like faces except one or two guys and some interns only.
+          A company in the Dresden (in the east of Germany, it cost me around 16 EUR to Berlin from there!) acquired by National Instruments some time ago. It offers a testing solution mainly in the telecommunications area. People over there could speak German and also had German-like faces except one or two guys and some interns only.
         </TooltipText>
-      &nbsp;and got the 6-month&nbsp;
+      &nbsp;and got a 6-month&nbsp;
         <TooltipText text="offer">
           All internships in Germany were required to be paid by law. The stipend ranged from 550 EUR to 1700 EUR from what I had heard. The interns in the south of germany generally paid more than the east but the living cost is also higher. Obviously, it was harder to get one if you don't have a working German proficiency but you should be able to find it nonetheless with some effort.
         </TooltipText>
@@ -77,7 +77,7 @@ export const WorkingGermany = (): React.ReactElement =>
       </TooltipText>
       . After a while, I got a&nbsp;
       <TooltipText text="job">
-        It's a job that valued Thai language skills at Arvato Bertelsmann. I so far hadn't applied to any engineering job in Germany partly because I felt they don't need me except for cleaning and restaurant jobs but got rejected. I thought I would be needed there because I could speak Thai.
+        It's a job that valued Thai language skills at Arvato Bertelsmann. I so far hadn't applied to any engineering job in Germany partly because I felt they didn't need me except for cleaning and restaurant jobs but got rejected. I thought I would be needed there because I could speak Thai.
         <br /><br />
         A job is more social-science related, not engineering at all which was fine as I didn't care much. I declined the full-time position and took part-time for 30 hours per week first. Nine months later, I converted to a full-time worker.
       </TooltipText>
@@ -103,13 +103,13 @@ export const WorkingGermany = (): React.ReactElement =>
       <TooltipText text="from Norway">
         She married a guy there.
       </TooltipText>
-      &nbsp;. I also later&nbsp;
-      <TooltipText text="visited">
+      . I also later paid her a&nbsp;
+      <TooltipText text="visit">
         She lived in Kristiansand, Norway. The weather at that time was snowy and the town was crowded. We went with her husband on a ferryboat to Denmark where he bought an art piece and we visited an underwater museum.
         <br /><br />
         Norway was an interesting place with very high social welfare. At the same time, the fee when people misbehaved was very high. The food was very expensive but the nature there was lovely. Some people caught lobsters themselves and some picked berries in the wild.
       </TooltipText>
-      &nbsp;her back, and I had to&nbsp;
+      , but I had to&nbsp;
       <TooltipText text="sleep">
         Because of the weather, I got free food from the airline at both airports in Norway and Amsterdam. I was entitled to a free hotel also in Amsterdam but there was no vacancy nearby. So, I slept in the airport at the spot near the heater. To my surprise, many people did the same. It was one of the best sleep ever (due to a central heating radiator nearby and excitement).
       </TooltipText>

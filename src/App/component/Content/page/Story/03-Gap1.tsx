@@ -8,9 +8,9 @@ export const Gap1 = (): React.ReactElement =>
       <b className="big highlight">23 - 24 Years Old (Before Master's Degree)</b>
       &nbsp;—&nbsp;
       <span>
-        I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to RWTH Aachen and TU Muenchen in Germany because of low to zero tuition fees,&nbsp;
+        I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to two universities in Germany because of low to zero tuition fees,&nbsp;
         <TooltipText text="ranking">
-          This was actually quite useless because many German universities have a similarly high standard. The area of study, thesis topics, and tuition fees are more important in my opinion.
+          This was actually quite useless because many German universities have similarly high standards. The area of study, thesis topics, and tuition fees are more important in my opinion.
         </TooltipText>
       , and the fact that I hadn't been outside of my country apart from the Cambodia border.
       </span>
@@ -18,7 +18,7 @@ export const Gap1 = (): React.ReactElement =>
 
     <p>
       The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;
-      <TooltipText text="social contribution fee">
+      <TooltipText text="social contribution fees">
         It cost me around 220 EUR per semester. This granted me free transport (bus, train) within the Nordrhein-Westfalen. The area was quite big which includes Duesseldorf, Cologne, and Dortmund. I could also take the university cafeteria which was usually cheaper than eating outside.
       </TooltipText>
       . The application for RWTH Aachen required a bit of&nbsp;

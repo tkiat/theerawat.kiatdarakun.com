@@ -8,17 +8,21 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
       <b className="big highlight">28 - 32 Years Old (Voluntary Unemployment)</b>
       &nbsp;—&nbsp;
       <span>
-        I became utterly confused after coming back to Thailand.&nbsp;
+        I felt&nbsp;
+        <TooltipText text="useful">
+          I spent money and did the thesis in Aachen (that was still not as worth as free education I received). I then proceeded to work in Berlin that required Thai language, and therefore I didn't feel like I took away jobs from Germans.
+        </TooltipText>
+        &nbsp;right after coming back to Thailand but also became utterly confused.&nbsp;
         <TooltipText text="Many things">
-          The sky train near my house was finished; a new shopping mall emerged.
+          The sky train near my house was finished; new shopping malls and shops emerged.
         </TooltipText>
         &nbsp;seemed to change, yet&nbsp;
         <TooltipText text="nothing">
-          People still enjoy and suffer, and they still do stuff they think they need to do. Many things that I didn't consider useful anymore still engrossed so many people.
+          People still enjoyed and suffered, and they still did stuff they think they need to do. Many things that I didn't consider useful anymore (like status) still engrossed so many people.
         </TooltipText>
-        &nbsp;was really changed. After a month, I applied to only three jobs but didn't pass all the interviews so I stopped my job search and then played video games like a&nbsp;
+        &nbsp;was really changed. After a month, I applied to only three jobs but I didn't pass any of the interviews so I stopped my job search and then played video games like a&nbsp;
         <TooltipText text="full-time job">
-          I bought a new IKEA table and a new 27-inch monitor, making it easier to engross myself in video games. I was then a mere consumer who didn't produce anything.
+          I bought a new IKEA table and a new 27-inch monitor, making it easier to immerse myself in video games. I was then a mere consumer who didn't produce anything.
         </TooltipText>
         &nbsp;for more than a year. One day, I noticed that my self-assembled PC was&nbsp;
         <TooltipText text="problematic">
