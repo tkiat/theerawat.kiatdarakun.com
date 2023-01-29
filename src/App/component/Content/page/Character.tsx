@@ -219,9 +219,8 @@ export const Character = (): React.ReactElement => (
           ,&ensp;
           <TooltipText text="Food & Drinks">
             <ul>
-              <li>Food Container: Glass (Rectangular: 0.45L x 7, 0.75L x4, 1.25L x2, Cylindrical: 0.3L x 6, 0.7L x 5, Jar: 2L x 2, 4L x 1, TODO x 2), Plastic (Rectangular 2.8L)</li>
-              <li>Water Bottle: Plastic 1.2L x 3, Aluminium Vacuum Flask 0.75L</li>
-              <li>Tea: Tea Pot 150ml, Tea Cup 90ml x 2, Tea Clip, Tray (Plastic)</li>
+              <li>Container: Glass (Rectangular: 0.45L x 7, 0.75L x4, 1.25L x2 / Cylindrical: 0.3L x 6, 0.7L x 5 / Jar: 2L x 2, 4L x 1, TODO x 2 / Bottle: 1L x 4), Plastic (Rectangular: 2.8L / Bottle: 1.2L x 3), Aluminium (Vacuum Flask 0.75L), Ceramic (Glass 360ml)</li>
+              <li>Tea: Tea Pot 150ml (Porcelain), Tea Cup 90ml x 2 (Porcelain), Tea Clip (Wood), Tray (Plastic & Wood), Filter Cup (Aluminium)</li>
             </ul>
           </TooltipText>
         </li>
