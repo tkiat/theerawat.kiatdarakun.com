@@ -185,3 +185,20 @@ input[type='range'] {
 .display-linebreak {
   white-space: pre-line;
 }
+
+.ul-more-space {
+  & li {
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+  }
+}
+
+.abandoned {
+  opacity: 0.5;
+}
+
+.tooltip {
+  ul {
+/*     padding: 1px 0; */
+  }
+}

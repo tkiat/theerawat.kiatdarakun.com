@@ -38,7 +38,7 @@ const renderAppItems = (items: AppProps) => items.map((x, i) =>
     <h3>{x.group_name}</h3>
 
     {x.items &&
-      <ul>
+      <ul className="ul-more-space">
         {x.items.map((y, j) =>
           <li className={y.abandoned ? "abandoned" : ""} aria-hidden={y.abandoned} key={j}>
             {y.date} — <a href={y.link}>{y.name}</a>&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
@@ -56,7 +56,7 @@ const renderContentItems = (items: ContentProps) => items.map((x, i) =>
     <p>{x.group_dscp}</p>
 
     {x.items &&
-      <ul>
+      <ul className="ul-more-space">
         {x.items.map((y, j) => <li key={j}>{y.date} — <a href={y.link}>{y.title}</a></li>)}
       </ul>
     }
@@ -77,9 +77,9 @@ export const Create = (): React.ReactElement => {
 //       setSoftwareProjs(await sProjRaw.json())
 
       const [appsRaw, blogsRaw, videosRaw] = await Promise.all([
-        fetch("/apps.json"),
-        fetch("/blog.json"),
-        fetch("/videos.json"),
+        fetch("/create/apps.json"),
+        fetch("/create/blog.json"),
+        fetch("/create/videos.json"),
       ])
 
       if (mounted) {
@@ -95,21 +95,29 @@ export const Create = (): React.ReactElement => {
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
     <div className="page-create">
-      <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
+      <section>
+        <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
+      </section>
 
       <hr />
 
-      <h2>Apps</h2>
-      {renderAppItems(apps)}
+      <section>
+        <h2>Apps</h2>
+        {renderAppItems(apps)}
+      </section>
 
       <hr />
 
-      <h2>Blog</h2>
-      {renderContentItems(blogs)}
+      <section>
+        <h2>Blog</h2>
+        {renderContentItems(blogs)}
+      </section>
 
       <hr />
 
-      <h2>Videos</h2>
-      {renderContentItems(videos)}
+      <section>
+        <h2>Videos</h2>
+        {renderContentItems(videos)}
+      </section>
     </div>
 }

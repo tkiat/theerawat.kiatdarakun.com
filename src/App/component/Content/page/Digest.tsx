@@ -59,7 +59,7 @@ export const Digest = (): React.ReactElement => {
     <div className="page-digest">
       <br />
 
-      <div>
+      <section>
         I select only pieces of media that align with my philosophical&nbsp;
         <TooltipText text="ideals">
           <ol>
@@ -68,14 +68,14 @@ export const Digest = (): React.ReactElement => {
             <li>Can be Consumed on FOSS operating systems (like Linux)</li>
           </ol>
         </TooltipText> and categorize them into 5 scopes (mind, person, human society, nonhuman, and the earth). This list should help me recall information as time goes by.
-      </div>
+      </section>
 
-      <br />
+      <section>
+        <p>Date — Scope &gt; Category — Title — Format&ensp;Length&ensp;Review/Summary</p>
 
-      <p>Date — Scope &gt; Category — Title — Format&ensp;Length&ensp;Review/Summary</p>
+        <hr />
 
-      <hr />
-
-      {renderItems(items)}
+        {renderItems(items)}
+      </section>
     </div>
 }
