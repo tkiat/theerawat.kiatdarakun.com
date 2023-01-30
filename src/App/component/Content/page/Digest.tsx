@@ -33,7 +33,7 @@ const renderFormatIcon = (f: string) => {
 
 const renderItems = (items: ItemProps) =>
   <section>
-      {items.map((x, i) => <p key={i}>{x.date} — {x.scope} &gt; {x.category} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {renderFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext}><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>)}
+      {items.map((x, i) => <p key={i}>{x.date} — {x.scope} &gt; {x.category} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {renderFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>)}
   </section>
 
 export const Digest = (): React.ReactElement => {
