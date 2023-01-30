@@ -205,14 +205,23 @@ export const Character = (): React.ReactElement => (
                 <ul>
                   <li>Laptop: Thinkpad X260, Thinkpad X200</li>
                   <li>SSD: WD Blue 500GB, Apacer Panther 120GB x 2</li>
-                  <li>RAM: DDR4 (16GB 3200, 4GB 2133), DDR3 (2GB x 2, 1GB x 3)</li>
+                  <li>RAM: DDR4 (16GB, 4GB), DDR3 (2GB x 2, 1GB x 3)</li>
+                  <li>Accessories: Flasher Programmer x 2, Keyboard Brush, Flash Drive (32GB, 16GB), Mouse, Camera 720p, WiFi Adapter, Wacom Tablet, AMP/DAC</li>
                 </ul>
               </li>
 
               <li>
                 Mobile
                 <ul>
-                  <li>Phone: Huawei P10, Nokia 2</li>
+                  <li>Phone: Huawei P10, Nokia 2, True Super Hero 4G Entertainment & Plus</li>
+                  <li>Accessories: Micro SD Card 32GB, Phone Holder x 2</li>
+                </ul>
+              </li>
+
+              <li>
+                Accessories: Earphone x 2
+                <ul>
+                  <li></li>
                 </ul>
               </li>
             </ul>
@@ -220,17 +229,28 @@ export const Character = (): React.ReactElement => (
           ,&ensp;
           <TooltipText text="Food & Drinks">
             <ul>
-              <li>Container: Glass (Rectangular: 0.45L x 7, 0.75L x4, 1.25L x2 / Cylindrical: 0.3L x 6, 0.7L x 5 / Jar: 2L x 2, 4L x 1, TODO x 2 / Bottle: 1L x 4), Plastic (Rectangular: 2.8L / Bottle: 1.2L x 3), Aluminium (Vacuum Flask 0.75L), Ceramic (Glass 360ml)</li>
-              <li>Tea: Tea Pot 150ml (Porcelain), Tea Cup 90ml x 2 (Porcelain), Tea Clip (Wood), Tray (Plastic & Wood), Filter Cup (Aluminium)</li>
+              <li>Container: Glass (Rectangular 0.45L x 7 / 0.75L x4 / 1.25L x2 — Cylindrical 0.3L x 6 / 0.7L x 5 — Jar 2L x 2 / 4L x 1 / TODO x 2 — Bottle 1L x 4), Plastic (Rectangular 2.8L — Bottle: 1.2L x 3), Aluminium (Vacuum Flask 0.75L)</li>
+              <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain), Clip (Wood), Tray (Plastic & Wood), Filter Cup (Aluminium)</li>
+              <li>Cutlery: Spoon (Stainless: Normal x 2, Small x 11), Glass (Ceramic 360ml, Stainless x 2)</li>
+              <li>Crockery: Bowl (Insulated: Big and Small)</li>
+              <li>Cooking: Pan, Pot, Rice Cooker, Blender (Smoothie), Spatula</li>
+              <li>Accessories: Silicone Mat x 4</li>
             </ul>
           </TooltipText>
-        </li>
-
-        <li>
-          <b className="highlight">Digital Possessions</b>
-
-          &nbsp;—&nbsp;
-          TODO
+          ,&ensp;
+          <TooltipText text="Clothing & Accessories">
+            <ul>
+              <li>Face: Eyeglasses x 2, Eye Cover x 1, Handkerchief x 8, Earplug Pair x 1</li>
+              <li>Upper Body: Jacket (Fleet and Hard Shell), Long Shirts (Work x 2, Casual x 2), Necktie, Suit x 3, Short Shirts (Casual x 6, Workout x 3), Watches x 2</li>
+              <li>Lower Body: Shorts (Casual/Sleep x 3, Workout x 1), Long Pants (Sleep, Work, Jeans x 3), Underwear (Casual x 6, Swimming, Bicycle)</li>
+              <li>Foot: Shoe (Sandals, Sneaker, Running, Work), Sock (Work x 11, Running)</li>
+              <li>Others: Wallet, Grocery Bag (Jute (Big x 1, Small x 2), Plastic x 2)</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Travel">
+            Backpack (small and Medium), Luggage (Big) x 2, Bicycle (Portable Multitool, Helmet)
+          </TooltipText>
         </li>
 
         <li>
