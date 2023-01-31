@@ -198,40 +198,34 @@ export const Character = (): React.ReactElement => (
           <b className="highlight">Belongings</b>
 
           &nbsp;—&nbsp;
-          <TooltipText text="Food & Drinks">
+          Food & Drinks (
+          <TooltipText text="Container">
             <ul>
-              <li>
-                Container
-                <ul>
-                  <li>Rectangular: Glass (0.45L x 7 / 0.75L x4 / 1.25L x2), Plastic (2.8L)</li>
-                  <li>Cylindrical: Glass (0.3L x 6 / 0.7L x 5)</li>
-                  <li>Jar: Glass (2L x 2 / 4L / TODO x 2)</li>
-                  <li>Bottle: Glass (1L x 4), Plastic (1.2L x 3), Aluminium Vacuum Flask 0.75L</li>
-                  <li>Bowl: Insulated Stainless Steel (Big, Small)</li>
-                  <li>Glass: Ceramic (360ml), Stainless (TODO x 2)</li>
-                  <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain)</li>
-                </ul>
-              </li>
-
-              <li>
-                Processing
-                <ul>
-                  <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
-                  <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
-                  <li>Accessories: Spatula, Cheesecloth (Big x 2, Medium, Small), Silicone Mat x 4, Thermometer, Weighing Machine (&lt;= 5 kg)</li>
-                </ul>
-              </li>
-
-              <li>
-                Consuming
-                <ul>
-                  <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11), WMF Corvo Set of 30</li>
-                  <li>Accessories: Bottle Opener, Tea (Clip [Wood], Tray [Plastic With Wood Top], Filter [Aluminium Cup]), Wine Opener</li>
-                </ul>
-              </li>
+              <li>Rectangular: Glass (0.45L x 7 / 0.75L x4 / 1.25L x2), Plastic (2.8L)</li>
+              <li>Cylindrical: Glass (0.3L x 6 / 0.7L x 5)</li>
+              <li>Jar: Glass (2L x 2 / 4L / TODO x 2)</li>
+              <li>Bottle: Glass (1L x 4), Plastic (1.2L x 3), Aluminium 0.75L</li>
+              <li>Bowl: Insulated Stainless Steel (Big, Small)</li>
+              <li>Glass: Ceramic (360ml), Stainless (TODO x 2)</li>
+              <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain)</li>
             </ul>
           </TooltipText>
           ,&ensp;
+          <TooltipText text="Processing">
+            <ul>
+              <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
+              <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
+              <li>Accessories: Spatula, Cheesecloth (Big x 2, Medium, Small), Silicone Mat x 4, Thermometer, Weighing Machine (&lt;= 5 kg)</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Consuming">
+            <ul>
+              <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11), WMF Corvo Set of 30</li>
+              <li>Accessories: Bottle Opener, Tea (Clip [Wood], Tray [Plastic With Wood Top], Filter [Aluminium Cup]), Wine Opener</li>
+            </ul>
+          </TooltipText>
+          ),&ensp;
           <TooltipText text="Health">
             <ul>
               <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
@@ -240,26 +234,15 @@ export const Character = (): React.ReactElement => (
           </TooltipText>
           ,&ensp;
           <TooltipText text="Hygiene">
-            <ul>
-              <li>Body: Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Towel (Big, Small)</li>
-              <li>External: Cleaning Cloth x 5, Spray Bottle (350ml)</li>
-            </ul>
+            Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)
           </TooltipText>
           ,&ensp;
           <TooltipText text="Clothing & Accessories">
             <ul>
-              <li>
-                General
-                <ul>
-                  <li>Face: Eyeglasses x 2, Handkerchief x 8</li>
-                  <li>Upper Body: Jacket (Fleet, Hard Shell), Long Shirts x 2, Short Shirts (Casual x 6), Watches x 2</li>
-                  <li>Lower Body: Shorts (Casual/Sleep x 3), Long Pants (Sleep, Jeans x 3), Underwear (Casual x 6), Wallet</li>
-                  <li>Foot: Shoe (Sandals, Sneaker), Sock x 11</li>
-                </ul>
-              </li>
-              <li>Work: Necktie, Shoe (Leather), Long Pants, Long Shirt x 2, Suit x 3</li>
-              <li>Workout: Shorts, Shirt x 3, Shoe (Running), Sock (Running), Underware (Bicycle, Swimming)</li>
-              <li>Very Cold Climate: Leggings, Scarf, Shirt (Inner x 2, Main x 3, Outer)</li>
+              <li>General: Eyeglasses x 2, Handkerchief x 8, Pants (Long, Jeans x 3, Short x 3), Shirt (Jacket x 2, Long x 2, Short x 6), Shoe (Sandals, Sneaker), Sock x 11, Underwear x 6, Wallet, Watches x 2</li>
+              <li>Work: Long Pants, Long Shirt x 2, Necktie, Shoe, Suit x 3</li>
+              <li>Workout: Shirt x 3, Shoe, Shorts, Sock, Underware x 2</li>
+              <li>Very Cold Climate: Leggings, Scarf, Shirt x 6</li>
             </ul>
           </TooltipText>
           ,&ensp;
@@ -305,7 +288,7 @@ export const Character = (): React.ReactElement => (
             </ul>
           </TooltipText>
           ,&ensp;
-          <TooltipText text="Other">
+          <TooltipText text="Household">
             <ul>
               <li>Container: Plastic (Small), Glass (100ml x 4), Stainless Water Bowl (Big, Small)</li>
               <li>Electronics: USB Fan, Air Purifier, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
