@@ -1,8 +1,16 @@
 import React from 'react'
 
+import {TooltipText} from "../share/Tooltip"
+
 export const Hi = (): React.ReactElement => (
   <div className="page-hi">
-    <p className="big"><b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>. I have realized that the only things that <i>can</i> truly matter, to any sentient being, lie within the flows inherent in all sentient beings. With my interpretations of this realization, I made a compatible lifestyle and relevant (philosophical) works on both personal and societal scales my lifelong pursuits. However, I am not planning to monetize them.</p>
+    <p className="big">
+      <b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>. I made a compatible lifestyle and relevant (written) works on both personal and societal scales based on my interpretations of this basic&nbsp;
+      <TooltipText text="realization">
+        The only things that <i>can</i> truly matter, to any sentient being, lie within the flows inherent in all sentient beings.
+      </TooltipText>
+      &nbsp;my lifelong pursuits. However, I am not planning to monetize them.
+    </p>
 
     <p className="big">I plan to sustain myself primarily by working full-time in Thailand. Before this, I have been an intern/employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places. I have good knowledge of English, basic (web) programming/Linux, telecommunications, and wholesome lifestyles. My soft skills include quantitative/analytical skills, discipline, self-introspection, and minimalism.
     </p>
