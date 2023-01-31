@@ -25,6 +25,6 @@ export const Realization = (): React.ReactElement =>
     </p>
 
     <p>
-      This realization led to my rejection of all dogmas, beliefs, religions, spiritual practices, etc., as irrelevant. They often focused on the perceived truths (e.g, by using awareness) or the elimination of things that don't truly matter (like ego or greed), but none of them focused on what truly matters. I shall live by and create works upon what <i>can</i> truly matters for the benefits of beings.
+      This realization led to my rejection of all dogmas, beliefs, religions, spiritual practices, etc., as irrelevant. They often focused on the perceived truths (e.g, by using awareness) or the elimination of things that don't truly matter (like ego or greed), but none of them focused on what truly matters. Many people are blind to this realization, and I shall live by and create works upon what <i>can</i> truly matters for the benefits of beings.
     </p>
   </>
