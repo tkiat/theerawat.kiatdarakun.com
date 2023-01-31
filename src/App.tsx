@@ -15,9 +15,9 @@ const numPointsOnWave = numDucks + 1
 const numWave = wavesSubKeys.length
 
 export const App = (): React.ReactElement => {
-  React.useEffect(() => {
-    document.getElementById('content-container')?.scrollTo(0, 0)
-  }, [location.pathname])
+//   React.useEffect(() => {
+//     document.getElementById('content-container')?.scrollTo(0, 0)
+//   }, [location.pathname])
 
   const dimension = useViewportDimensions({msDelay: 500})
 

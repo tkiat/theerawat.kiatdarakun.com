@@ -26,9 +26,12 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
         </TooltipText>
         &nbsp;for more than a year. Unexpectedly, my&nbsp;
         <TooltipText text="very old laptop">
-          <p>One day, I noticed that my self-assembled PC incurred much electricity cost and it was also prone to the occasional power shortage. I then had a memory flashback of a VAIO VGNCS16S laptop that cost me (actually my father) about 1000 USD in 2008. That was quite a lot of money but I liked its beauty (my only criterion at the time). With the notorious Microsoft Vista, it took me ages to boot successfully.</p>
+          One day, I noticed that my self-assembled PC incurred much electricity cost and it was also prone to the occasional power shortage. I then had a memory flashback of a VAIO VGNCS16S laptop that cost me (actually my father) about 1000 USD in 2008. That was quite a lot of money but I liked its beauty (my only criterion at the time). With the notorious Microsoft Vista, it took me ages to boot successfully.
 
-        <p>I installed Void Linux on it, and the performance was an eye-opener for me. I then became much more interested in tinkering with software than playing video games, so I stopped playing games (intensively) ever since and replaced my PC with two used Thinkpad X200. They are compatible with open-source WiFi firmware and bootloader (like libreboot and coreboot), which I preferred than the proprietary counterparts (due to potential spyware).</p>
+          <br />
+          <br />
+
+          I installed Void Linux on it, and the performance was an eye-opener for me. I then became much more interested in tinkering with software than playing video games, so I stopped playing games (intensively) ever since and replaced my PC with two used Thinkpad X200. They are compatible with open-source WiFi firmware and bootloader (like libreboot and coreboot), which I preferred than the proprietary counterparts (due to potential spyware).
         </TooltipText>
         &nbsp;liberated me from this addiction. My perspective was broaden, and I began to value&nbsp;
         <TooltipText text="freedom">
@@ -49,8 +52,8 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
       </TooltipText>
       . However, it is the&nbsp;
       <TooltipText text="wisest">
-        Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life.
+        Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life. I am calling what I am aware of “truth”.
       </TooltipText>
-      &nbsp;to use the awareness to guide my life. I long for the truth, and this seemed to be the answer I have been searching for.
+      &nbsp;to use the awareness to guide my life. I long for truths, and this seemed to be the answer I have been searching for.
     </p>
   </>
