@@ -162,7 +162,7 @@ export const Character = (): React.ReactElement => (
             </ul>
           </TooltipText>
           ,&ensp;
-          <TooltipTextWithDelay text="Others">
+          <TooltipTextWithDelay text="Other">
             <ul>
               <li>Thai</li>
               <li>Millennials</li>
@@ -195,9 +195,74 @@ export const Character = (): React.ReactElement => (
         </li>
 
         <li>
-          <b className="highlight">Physical Belongings</b>
+          <b className="highlight">Belongings</b>
 
           &nbsp;—&nbsp;
+          <TooltipText text="Hygiene">
+            <ul>
+              <li>Body: Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Towel (Big, Small)</li>
+              <li>External: Cleaning Cloth x 5, Spray Bottle (350ml)</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Health">
+            <ul>
+              <li>Protection: Earplug Pair, Eye Cover</li>
+              <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Food & Drinks">
+            <ul>
+              <li>
+                Container
+                <ul>
+                  <li>Rectangular: Glass (0.45L x 7 / 0.75L x4 / 1.25L x2), Plastic (2.8L)</li>
+                  <li>Cylindrical: Glass (0.3L x 6 / 0.7L x 5)</li>
+                  <li>Jar: Glass (2L x 2 / 4L / TODO x 2)</li>
+                  <li>Bottle: Glass (1L x 4), Plastic (1.2L x 3), Aluminium Vacuum Flask 0.75L</li>
+                  <li>Bowl: Insulated Stainless Steel (Big, Small)</li>
+                  <li>Glass: Ceramic (360ml), Stainless (TODO x 2)</li>
+                  <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain)</li>
+                </ul>
+              </li>
+
+              <li>
+                Processing
+                <ul>
+                  <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
+                  <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
+                  <li>Accessories: Spatula, Cheesecloth (Big x 2, Medium, Small), Silicone Mat x 4, Thermometer, Weighing Machine (&lt;= 5 kg)</li>
+                </ul>
+              </li>
+
+              <li>
+                Consuming
+                <ul>
+                  <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11), WMF Corvo Set of 30</li>
+                  <li>Accessories: Bottle Opener, Tea (Clip [Wood], Tray [Plastic With Wood Top], Filter [Aluminium Cup]), Wine Opener</li>
+                </ul>
+              </li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Clothing & Accessories">
+            <ul>
+              <li>
+                General
+                <ul>
+                  <li>Face: Eyeglasses x 2, Handkerchief x 8</li>
+                  <li>Upper Body: Jacket (Fleet, Hard Shell), Long Shirts x 2, Short Shirts (Casual x 6), Watches x 2</li>
+                  <li>Lower Body: Shorts (Casual/Sleep x 3), Long Pants (Sleep, Jeans x 3), Underwear (Casual x 6), Wallet</li>
+                  <li>Foot: Shoe (Sandals, Sneaker), Sock x 11</li>
+                </ul>
+              </li>
+              <li>Work: Necktie, Shoe (Leather), Long Pants, Long Shirt x 2, Suit x 3</li>
+              <li>Workout: Shorts, Shirt x 3, Shoe (Running), Sock (Running), Underware (Bicycle, Swimming)</li>
+              <li>Very Cold Climate: Leggings, Scarf, Shirt (Inner x 2, Main x 3, Outer)</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
           <TooltipText text="Computing">
             <ul>
               <li>
@@ -206,7 +271,7 @@ export const Character = (): React.ReactElement => (
                   <li>Laptop: Thinkpad X260, Thinkpad X200</li>
                   <li>SSD: WD Blue 500GB, Apacer Panther 120GB x 2</li>
                   <li>RAM: DDR4 (16GB, 4GB), DDR3 (2GB x 2, 1GB x 3)</li>
-                  <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC</li>
+                  <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC, Cable (HDMI, VGA)</li>
                 </ul>
               </li>
 
@@ -214,78 +279,37 @@ export const Character = (): React.ReactElement => (
                 Mobile
                 <ul>
                   <li>Phone: Huawei P10, Nokia 2, True Super Hero 4G Entertainment & Plus</li>
-                  <li>Accessories: Micro SD Card 32GB, Phone Holder x 2</li>
+                  <li>Internal: Micro SD Card 32GB</li>
+                  <li>Accessories: Phone Holder x 2</li>
                 </ul>
               </li>
 
               <li>
-                General: Earphone x 2, WiFi Adapter AR9271
+                Other: Earphone x 2, WiFi Adapter AR9271
               </li>
             </ul>
           </TooltipText>
           ,&ensp;
-          <TooltipText text="Food & Drinks">
-            <ul>
-              <li>Container: Glass (Rectangular: 0.45L x 7 / 0.75L x4 / 1.25L x2 — Cylindrical: 0.3L x 6 / 0.7L x 5 — Jar: 2L x 2 / 4L x 1 / TODO x 2 — Bottle: 1L x 4), Plastic (Rectangular: 2.8L — Bottle: 1.2L x 3), Aluminium (Vacuum Flask: 0.75L)</li>
-              <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain), Clip (Wood), Tray (Plastic & Wood), Filter Cup (Aluminium)</li>
-              <li>Cutlery: Spoon (Stainless: Normal x 2, Small x 11), Glass (Ceramic 360ml, Stainless x 2)</li>
-              <li>Crockery: Insulated Bowl (Big, Small)</li>
-              <li>Cooking: Pan, Pot, Rice Cooker, Smoothie Blender (and Two Plastic Bottles), Spatula</li>
-              <li>Accessories: Silicone Mat x 4, Weighing Machine (&lt;= 5 kg), Thermometer, Bottle Opener, Wine Opener, Cheesecloth (Big x 2, Medium, Small)</li>
-            </ul>
-          </TooltipText>
-          ,&ensp;
-          <TooltipText text="Clothing & Accessories">
-            <ul>
-              <li>Face: Eyeglasses x 2, Eye Cover x 1, Handkerchief x 8, Earplug Pair x 1</li>
-              <li>Upper Body: Jacket (Fleet and Hard Shell), Long Shirts (Work x 2, Casual x 2), Necktie, Suit x 3, Short Shirts (Casual x 6, Workout x 3), Watches x 2</li>
-              <li>Lower Body: Shorts (Casual/Sleep x 3, Workout x 1), Long Pants (Sleep, Work, Jeans x 3), Underwear (Casual x 6, Swimming, Bicycle)</li>
-              <li>Foot: Shoe (Sandals, Sneaker, Running, Work), Sock (Work x 11, Running)</li>
-              <li>Reserve for Cold Climate: Scarf, Leggings, Shirt (Inner x 2, Main x 3, Outer x 1)</li>
-              <li>Others: Wallet, Grocery Bag (Jute (Big x 1, Small x 2), Plastic x 2)</li>
-            </ul>
-          </TooltipText>
-          ,&ensp;
-          <TooltipText text="Household">
-            <ul>
-              <li>Electronics: Weighing Machine, USB Fan, Air Purifier, Power Bank, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
-              <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post, Pillow (and Case)</li>
-              <li>Others: Spray Bottle (350ml), Water Bowl (Small and Big), Hand Massager Stick (Wood)</li>
-            </ul>
-          </TooltipText>
-          ,&ensp;
           <TooltipText text="Travel">
-            Backpack (Small and Medium), Luggage (Big) x 2, Bicycle (Portable Multitool, Helmet)
-          </TooltipText>
-          ,&ensp;
-          <TooltipText text="Grooming">
-            Shavette, Safety Razor, Nose Scissors, Nail Cliper, Comb
-          </TooltipText>
-          ,&ensp;
-          <TooltipText text="Office">
             <ul>
-              <li>Measurement: Foldable Ruler (200cm, 50cm), Tape (150cm)</li>
-              <li>Paper: Pen (Red, Blue), Pencil (Mechanical, Sharpener), Stapler, Scissor</li>
-              <li>Others: Screwdriver Set (Small, Medium)</li>
-            </ul>
-          </TooltipText>
-        </li>
-
-        <li>
-          <b className="highlight">Chosen Apps/Services</b>
-
-          &nbsp;—&nbsp;
-          <TooltipText text="OS">
-            <ul>
-              <li>Desktop: QubesOS, Debian, NixOS</li>
-              <li>Mobile: Android (Mainly for Shopping and Banking)</li>
+              <li>Container: Backpack (Small, Medium), Grocery Bag (Jute Big, Jute Small, Plastic x 2), Luggage (Big x 2)</li>
+              <li>Other: Bicycle (Portable Multitool, Helmet), Power Bank</li>
             </ul>
           </TooltipText>
           ,&ensp;
-          <TooltipText text="Email">
+          <TooltipText text="Tool">
             <ul>
-              <li>One Tutanota domain</li>
-              <li>One Custom Domain, Hosted on Zoho</li>
+              <li>Measurement: Ruler (200cm, 50cm) [Foldable], Tape (150cm), Weighing Machine [Body]</li>
+              <li>Paper: Folder x 2, Pen (Red, Blue), Pencil [Mechanical], Stapler</li>
+              <li>General: Scissor, Screwdriver Set (Medium, Small)</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Other">
+            <ul>
+              <li>Container: Plastic (Small), Glass (100ml x 4), Stainless Water Bowl (Big, Small)</li>
+              <li>Electronics: USB Fan, Air Purifier, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
+              <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post x 2, Pillow (and Case)</li>
             </ul>
           </TooltipText>
         </li>
@@ -293,6 +317,27 @@ export const Character = (): React.ReactElement => (
     </section>
   </div>
 )
+
+//         <li>
+//           <b className="highlight">Chosen Apps/Services</b>
+// 
+//           &nbsp;—&nbsp;
+//           <TooltipText text="OS">
+//             <ul>
+//               <li>Desktop: QubesOS, Debian, NixOS</li>
+//               <li>Mobile: Android (Mainly for Shopping and Banking)</li>
+//             </ul>
+//           </TooltipText>
+//           ,&ensp;
+//           <TooltipText text="Email">
+//             <ul>
+//               <li>One Tutanota domain</li>
+//               <li>One Custom Domain, Hosted on Zoho</li>
+//             </ul>
+//           </TooltipText>
+//         </li>
+
+
 //       <TooltipText text="Computing">
 //         <ul>
 //           <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
