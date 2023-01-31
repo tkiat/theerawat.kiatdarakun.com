@@ -206,7 +206,7 @@ export const Character = (): React.ReactElement => (
                   <li>Laptop: Thinkpad X260, Thinkpad X200</li>
                   <li>SSD: WD Blue 500GB, Apacer Panther 120GB x 2</li>
                   <li>RAM: DDR4 (16GB, 4GB), DDR3 (2GB x 2, 1GB x 3)</li>
-                  <li>Accessories: Flasher Programmer x 2, Keyboard Brush, Flash Drive (32GB, 16GB), Mouse, Camera 720p, WiFi Adapter, Wacom Tablet, AMP/DAC</li>
+                  <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC</li>
                 </ul>
               </li>
 
@@ -219,22 +219,19 @@ export const Character = (): React.ReactElement => (
               </li>
 
               <li>
-                Accessories: Earphone x 2
-                <ul>
-                  <li></li>
-                </ul>
+                General: Earphone x 2, WiFi Adapter AR9271
               </li>
             </ul>
           </TooltipText>
           ,&ensp;
           <TooltipText text="Food & Drinks">
             <ul>
-              <li>Container: Glass (Rectangular 0.45L x 7 / 0.75L x4 / 1.25L x2 — Cylindrical 0.3L x 6 / 0.7L x 5 — Jar 2L x 2 / 4L x 1 / TODO x 2 — Bottle 1L x 4), Plastic (Rectangular 2.8L — Bottle: 1.2L x 3), Aluminium (Vacuum Flask 0.75L)</li>
+              <li>Container: Glass (Rectangular: 0.45L x 7 / 0.75L x4 / 1.25L x2 — Cylindrical: 0.3L x 6 / 0.7L x 5 — Jar: 2L x 2 / 4L x 1 / TODO x 2 — Bottle: 1L x 4), Plastic (Rectangular: 2.8L — Bottle: 1.2L x 3), Aluminium (Vacuum Flask: 0.75L)</li>
               <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain), Clip (Wood), Tray (Plastic & Wood), Filter Cup (Aluminium)</li>
               <li>Cutlery: Spoon (Stainless: Normal x 2, Small x 11), Glass (Ceramic 360ml, Stainless x 2)</li>
-              <li>Crockery: Bowl (Insulated: Big and Small)</li>
-              <li>Cooking: Pan, Pot, Rice Cooker, Blender (Smoothie), Spatula</li>
-              <li>Accessories: Silicone Mat x 4</li>
+              <li>Crockery: Insulated Bowl (Big, Small)</li>
+              <li>Cooking: Pan, Pot, Rice Cooker, Smoothie Blender (and Two Plastic Bottles), Spatula</li>
+              <li>Accessories: Silicone Mat x 4, Weighing Machine (&lt;= 5 kg), Thermometer, Bottle Opener, Wine Opener, Cheesecloth (Big x 2, Medium, Small)</li>
             </ul>
           </TooltipText>
           ,&ensp;
@@ -244,12 +241,33 @@ export const Character = (): React.ReactElement => (
               <li>Upper Body: Jacket (Fleet and Hard Shell), Long Shirts (Work x 2, Casual x 2), Necktie, Suit x 3, Short Shirts (Casual x 6, Workout x 3), Watches x 2</li>
               <li>Lower Body: Shorts (Casual/Sleep x 3, Workout x 1), Long Pants (Sleep, Work, Jeans x 3), Underwear (Casual x 6, Swimming, Bicycle)</li>
               <li>Foot: Shoe (Sandals, Sneaker, Running, Work), Sock (Work x 11, Running)</li>
+              <li>Reserve for Cold Climate: Scarf, Leggings, Shirt (Inner x 2, Main x 3, Outer x 1)</li>
               <li>Others: Wallet, Grocery Bag (Jute (Big x 1, Small x 2), Plastic x 2)</li>
             </ul>
           </TooltipText>
           ,&ensp;
+          <TooltipText text="Household">
+            <ul>
+              <li>Electronics: Weighing Machine, USB Fan, Air Purifier, Power Bank, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
+              <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post, Pillow (and Case)</li>
+              <li>Others: Spray Bottle (350ml), Water Bowl (Small and Big), Hand Massager Stick (Wood)</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
           <TooltipText text="Travel">
-            Backpack (small and Medium), Luggage (Big) x 2, Bicycle (Portable Multitool, Helmet)
+            Backpack (Small and Medium), Luggage (Big) x 2, Bicycle (Portable Multitool, Helmet)
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Grooming">
+            Shavette, Safety Razor, Nose Scissors, Nail Cliper, Comb
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Office">
+            <ul>
+              <li>Measurement: Foldable Ruler (200cm, 50cm), Tape (150cm)</li>
+              <li>Paper: Pen (Red, Blue), Pencil (Mechanical, Sharpener), Stapler, Scissor</li>
+              <li>Others: Screwdriver Set (Small, Medium)</li>
+            </ul>
           </TooltipText>
         </li>
 
