@@ -198,20 +198,6 @@ export const Character = (): React.ReactElement => (
           <b className="highlight">Belongings</b>
 
           &nbsp;—&nbsp;
-          <TooltipText text="Hygiene">
-            <ul>
-              <li>Body: Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Towel (Big, Small)</li>
-              <li>External: Cleaning Cloth x 5, Spray Bottle (350ml)</li>
-            </ul>
-          </TooltipText>
-          ,&ensp;
-          <TooltipText text="Health">
-            <ul>
-              <li>Protection: Earplug Pair, Eye Cover</li>
-              <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
-            </ul>
-          </TooltipText>
-          ,&ensp;
           <TooltipText text="Food & Drinks">
             <ul>
               <li>
@@ -243,6 +229,20 @@ export const Character = (): React.ReactElement => (
                   <li>Accessories: Bottle Opener, Tea (Clip [Wood], Tray [Plastic With Wood Top], Filter [Aluminium Cup]), Wine Opener</li>
                 </ul>
               </li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Health">
+            <ul>
+              <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
+              <li>Protection: Earplug Pair, Eye Cover</li>
+            </ul>
+          </TooltipText>
+          ,&ensp;
+          <TooltipText text="Hygiene">
+            <ul>
+              <li>Body: Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Towel (Big, Small)</li>
+              <li>External: Cleaning Cloth x 5, Spray Bottle (350ml)</li>
             </ul>
           </TooltipText>
           ,&ensp;
