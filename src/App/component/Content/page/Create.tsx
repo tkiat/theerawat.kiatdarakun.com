@@ -73,9 +73,6 @@ export const Create = (): React.ReactElement => {
     let mounted = true;
 
     (async () => {
-//       const sProjRaw = await fetch("/software-project.json")
-//       setSoftwareProjs(await sProjRaw.json())
-
       const [appsRaw, blogsRaw, videosRaw] = await Promise.all([
         fetch("/create/apps.json"),
         fetch("/create/blog.json"),

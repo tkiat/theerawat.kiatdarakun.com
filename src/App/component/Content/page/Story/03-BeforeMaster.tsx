@@ -3,7 +3,7 @@ import React from "react"
 import {TooltipText} from "../../share/Tooltip"
 
 export const BeforeMaster = (): React.ReactElement =>
-  <>
+  <section data-section="story-beforemaster">
     <p><a id="story-beforemaster"><b className="big highlight">23 - 24 Years Old (Before Master's Degree)</b></a> — I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to two universities in Germany because of low to zero tuition fees, <TooltipText text="ranking">This was actually quite useless because many German universities have similarly high standards. The area of study, thesis topics, and tuition fees are more important in my opinion.</TooltipText>, and the fact that I hadn't been outside of my country apart from the Cambodia border.</p>
 
     <p>
@@ -29,4 +29,4 @@ export const BeforeMaster = (): React.ReactElement =>
       </TooltipText>
       . I also taught privately in some places including <a href="https://www.epa.ac.th/">EPA</a> (&gt; 50 hours).
     </p>
-  </>
+  </section>

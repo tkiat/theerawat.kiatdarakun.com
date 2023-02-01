@@ -198,16 +198,11 @@ input[type='range'] {
 }
 
 .vsplit {
-/*   height: 100%; */
-/*   width: 100%; */
-/*   position: relative; */
   &__left {
     position: fixed;
-    height: calc(100% - var(--nav-tube-height) - 130px);
-/*     height: 100%; */
-    width: 5%;
+    height: calc(100% - var(--nav-tube-height) - 140px);
+    width: max(5%, clamp(35px, 3vw, 45px));
     left: 0;
-/*     background: green; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -216,17 +211,19 @@ input[type='range'] {
   &__right {
     position: absolute;
     right: 0;
-    width: 95%;
-/*     background: orange; */
+    width: calc(100% - max(5%, clamp(35px, 3vw, 45px)));
   }
-}
-
-.noob {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: var(--highlight-color);
+  &__prog {
+    display: block;
+    width: clamp(15px, 3vw, 25px);
+    height: clamp(15px, 3vw, 25px);
+    border-radius: 50%;
+    background: var(--highlight-color);
+    &:hover {
+      width: clamp(25px, 3vw, 35px);
+      height: clamp(25px, 3vw, 35px);
+    }
+  }
 }
 
 /* ::-webkit-scrollbar { */
