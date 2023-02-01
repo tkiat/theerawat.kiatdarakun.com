@@ -22,7 +22,6 @@ export const App = (): React.ReactElement => {
   const dimension = useViewportDimensions({msDelay: 500})
 
   const [path, setPath] = useImmer<Path>(mkPath())
-  const isResumePage = false // path.current === 'resume'
   React.useEffect(() => {
     const setPathFromUrl = () => setPath(d => adaptPathToUrl(d))
     window.addEventListener('popstate', setPathFromUrl)
@@ -38,7 +37,7 @@ export const App = (): React.ReactElement => {
   React.useEffect(() => {
     waveConfigs.current.waves =
       mkWaves(numWave, numPointsOnWave, dimension, path.current)
-  }, [isResumePage, dimension])
+  }, [dimension])
 
   const [theme, setTheme] = useImmer<ThemeObject>(mkThemeObject())
   React.useLayoutEffect(() => {
@@ -68,12 +67,9 @@ export const App = (): React.ReactElement => {
     document.getElementById('loading')?.remove()
   }, [])
 
-  const contact = isResumePage && <Contact />
-  const navSub = !isResumePage && (
-    isMobile() ?
-      <NavSubMobile path={path} setPath={setPath} />
+  const navSub = isMobile() ?
+    <NavSubMobile path={path} setPath={setPath} />
     : <NavSubTube path={path} setPath={setPath} />
-  )
   const title = isMobile() && <Title title={path.mapping[path.current]} />
 
   return (
@@ -88,11 +84,10 @@ export const App = (): React.ReactElement => {
               to={path.current + '/' + path.mapping[path.current]}
               noThrow />
           </Router>
-          {contact}
           {title}
           <Background theme={theme} />
           <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
-          <Content isInsideWater={isResumePage} />
+          <Content />
         </div>
         <ThemeProvider value={{setTheme, theme}}>
           <Sidebar waveConfigs={waveConfigs}

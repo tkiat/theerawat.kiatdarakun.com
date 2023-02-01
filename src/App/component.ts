@@ -1,7 +1,6 @@
 export {Background} from './component/Background'
 export {Canvas} from './component/Canvas'
 export {mkWaves, mkWavePhysics, storeWavePhysics} from './component/Canvas/wave'
-export {Contact} from './component/Contact'
 export {Content} from './component/Content'
 export {NavMain} from './component/NavMain'
 export {NavSubMobile} from './component/NavSubMobile'

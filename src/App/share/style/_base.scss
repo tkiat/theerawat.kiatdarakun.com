@@ -196,3 +196,39 @@ input[type='range'] {
 .abandoned {
   opacity: 0.5;
 }
+
+.vsplit {
+/*   height: 100%; */
+/*   width: 100%; */
+/*   position: relative; */
+  &__left {
+    position: fixed;
+    height: calc(100% - var(--nav-tube-height) - 130px);
+/*     height: 100%; */
+    width: 5%;
+    left: 0;
+/*     background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__right {
+    position: absolute;
+    right: 0;
+    width: 95%;
+/*     background: orange; */
+  }
+}
+
+.noob {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--highlight-color);
+}
+
+/* ::-webkit-scrollbar { */
+/*   display: none; */
+/* } */

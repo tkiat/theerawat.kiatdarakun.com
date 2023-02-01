@@ -2,38 +2,33 @@ import React from "react"
 
 import {TooltipText} from "../../share/Tooltip"
 
-export const MasterDegree = (): React.ReactElement =>
+export const Master = (): React.ReactElement =>
   <>
-    <p>
-      <b className="big highlight">24 - 26 Years Old (Master's Degree)</b>
-      &nbsp;—&nbsp;
-      <span>
-        On the first day of arrival, I had the appointment with&nbsp;
-        <TooltipText text="two kind Thai students">
-          One met me at Cologne and another one took a taxi with me from Aachen Hofbahnhof (train station) to my room (which I paid the deposit and the rent in advance). I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
-        </TooltipText>
-        &nbsp;who will take me to my single-room apartment. I adapted quickly to the new&nbsp;
-        <TooltipText text="lifestyle">
-          I had to cook myself. I always bought pre-made food in Thailand but it was more prohibitive to buy them in Germany than cooking it myself (it's like 1.5 EUR vs 5 EUR). The climate was quite the opposite of Thailand where I had to heat my room instead of cooling it. My cloth needed to be thick during the cold winter when I could sometimes expect snow.
-        </TooltipText>
-        , went to&nbsp;
-        <TooltipText text="Dreilaenderpunkt">
-          It is simply the meeting point of three countries: Germany, The Netherlands, and Belgium. It took me around 1.5 hours by foot from my apartment. The view was nice and the path to it had some farming and horses. The experience was totally priceless. I visited this place many times (&gt; 5).
-        </TooltipText>
-        , and finally joined the&nbsp;
-        <TooltipText text="orientation">
-          This was when I realized more than half was Indian. A very few Chinese were here in my batch which was a little surprising. There was only one German. If you want to meet more Germans in a class, you probably want to take a class in German, not in English.
-        </TooltipText>
-        . The&nbsp;
-        <TooltipText text="first semester">
-          I took all the courses as many as possible because I didn't have anything better to do. The exam here was taken only one time at the end of the semester and very short (15-minute oral exam or 1.5 hours written exam). In my opinion, if you believe you cannot process the exam quickly, don't come. You will be rejected from the university if you fail the exam of the same course three times in a row.
-        </TooltipText>
-        &nbsp;passed quickly. The second semester was really interesting to me as I will share the same&nbsp;
-        <TooltipText text="room">
-          He is from Karnataka, India. It cost me only around 210 EUR including internet, water, and electricity unlike 360 EUR in the previous apartment. And best of all, it has a balcony! Drinking beer over there during the summer was like heaven!
-        </TooltipText>
-        &nbsp;as a fellow batchmate.
-      </span>
+    <p><a id="story-master"><b className="big highlight">24 - 26 Years Old (Master's Degree)</b></a> — On the first day of arrival, I had the appointment with&nbsp;
+      <TooltipText text="two kind Thai students">
+        One met me at Cologne and another one took a taxi with me from Aachen Hofbahnhof (train station) to my room (which I paid the deposit and the rent in advance). I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
+      </TooltipText>
+      &nbsp;who will take me to my single-room apartment. I adapted quickly to the new&nbsp;
+      <TooltipText text="lifestyle">
+        I had to cook myself. I always bought pre-made food in Thailand but it was more prohibitive to buy them in Germany than cooking it myself (it's like 1.5 EUR vs 5 EUR). The climate was quite the opposite of Thailand where I had to heat my room instead of cooling it. My cloth needed to be thick during the cold winter when I could sometimes expect snow.
+      </TooltipText>
+      , went to&nbsp;
+      <TooltipText text="Dreilaenderpunkt">
+        It is simply the meeting point of three countries: Germany, The Netherlands, and Belgium. It took me around 1.5 hours by foot from my apartment. The view was nice and the path to it had some farming and horses. The experience was totally priceless. I visited this place many times (&gt; 5).
+      </TooltipText>
+      , and finally joined the&nbsp;
+      <TooltipText text="orientation">
+        This was when I realized more than half was Indian. A very few Chinese were here in my batch which was a little surprising. There was only one German. If you want to meet more Germans in a class, you probably want to take a class in German, not in English.
+      </TooltipText>
+      . The&nbsp;
+      <TooltipText text="first semester">
+        I took all the courses as many as possible because I didn't have anything better to do. The exam here was taken only one time at the end of the semester and very short (15-minute oral exam or 1.5 hours written exam). In my opinion, if you believe you cannot process the exam quickly, don't come. You will be rejected from the university if you fail the exam of the same course three times in a row.
+      </TooltipText>
+      &nbsp;passed quickly. The second semester was really interesting to me as I will share the same&nbsp;
+      <TooltipText text="room">
+        He is from Karnataka, India. It cost me only around 210 EUR including internet, water, and electricity unlike 360 EUR in the previous apartment. And best of all, it has a balcony! Drinking beer over there during the summer was like heaven!
+      </TooltipText>
+      &nbsp;as a fellow batchmate.
     </p>
 
     <p>

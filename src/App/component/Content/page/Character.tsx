@@ -221,8 +221,8 @@ export const Character = (): React.ReactElement => (
           ,&ensp;
           <TooltipText text="Consuming">
             <ul>
-              <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11), WMF Corvo Set of 30</li>
-              <li>Accessories: Bottle Opener, Tea (Clip [Wood], Tray [Plastic With Wood Top], Filter [Aluminium Cup]), Wine Opener</li>
+              <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11)</li>
+              <li>Accessories: Bottle Opener, Tea (Wood Clip, Plastic Tray With Wood Top, Aluminium Cup Filter), Wine Opener</li>
             </ul>
           </TooltipText>
           ),&ensp;
@@ -282,8 +282,8 @@ export const Character = (): React.ReactElement => (
           ,&ensp;
           <TooltipText text="Tool">
             <ul>
-              <li>Measurement: Ruler (200cm, 50cm) [Foldable], Tape (150cm), Weighing Machine [Body]</li>
-              <li>Paper: Folder x 2, Pen (Red, Blue), Pencil [Mechanical], Stapler</li>
+              <li>Measurement: Foldable Ruler (200cm, 50cm), Tape (150cm), Body Weighing Machine</li>
+              <li>Paper: Folder x 2, Pen (Red, Blue), Mechanical Pencil , Stapler</li>
               <li>General: Scissor, Screwdriver Set (Medium, Small)</li>
             </ul>
           </TooltipText>
@@ -292,7 +292,7 @@ export const Character = (): React.ReactElement => (
             <ul>
               <li>Container: Plastic (Small), Glass (100ml x 4), Stainless Water Bowl (Big, Small)</li>
               <li>Electronics: USB Fan, Air Purifier, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
-              <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post x 2, Pillow (and Case)</li>
+              <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post x 3, Pillow (and Case)</li>
             </ul>
           </TooltipText>
         </li>

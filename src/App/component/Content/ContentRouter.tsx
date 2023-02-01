@@ -3,7 +3,6 @@ import {Router, RouteComponentProps} from '@reach/router'
 
 import {Character, Digest, Events, Create, Hi, NotFound, Story} from './page'
 
-import {pathToTestId} from 'src/App/share/general'
 import {pathObject} from 'src/App/share/path'
 
 const paths = Object.entries(pathObject).
@@ -22,16 +21,13 @@ export const ContentRouter = (): React.ReactElement =>
   <Router>
     {(() => {
       const NotFoundRoute = (_: RouteComponentProps) => (
-        <div data-testid="page-notfound">
-          <NotFound className="notfound notfound--content" />
-        </div>
+        <NotFound className="notfound notfound--content" />
       )
       return <NotFoundRoute default />
     })()}
 
     {Object.entries(mapping).map(([k, v], i) => {
-      const Route = (_: RouteComponentProps) =>
-        <div data-testid={pathToTestId(k)}>{v}</div>
+      const Route = (_: RouteComponentProps) => v
       return <Route key={i} path={k} />
     })}
   </Router>
