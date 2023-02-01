@@ -5,11 +5,11 @@ import {TooltipText} from "../../share/Tooltip"
 export const Realization = (): React.ReactElement =>
   <>
     <p>
-      <b className="big highlight">32 Years Old (Satisfactory Realization)</b> — After a while, I realized that truths alone&nbsp;
-      <TooltipText text="cannot always dictate">
+      <b className="big highlight">32 Years Old (Satisfactory Realization)</b> — After a while, I realized that truths alone cannot guide me to the resolution of&nbsp;
+      <TooltipText text="inevitable conflicts">
         Sure, it tells me to change my position when I ache, but what about eating? I currently need to harm other sentient beings for food (even vegan food due to insects), which is a conflict since my awareness tells me that all beings want to survive (as, e.g., their bodies heals themselves). Should I commit suicide or continue living?
       </TooltipText>
-      &nbsp;what I should do. In fact, a degree of subjectiveness has to be added to the truths in order to resolve a conflict. This changed the question from “what are truths?” to “what truly matter?”. After the&nbsp;
+      . In fact, a degree of subjectiveness has to be added on top of the truths in order to resolve such conflicts. This is not unwise, for I have to choose. This changed the question from “what are truths?” to “what truly matter?”. After the&nbsp;
       <TooltipText text="first">
         Everything that truly matters lies within sentient beings. Why? Without sentient beings, who's gonna complain after Saturn crashes with a moon right?
       </TooltipText>
@@ -25,6 +25,6 @@ export const Realization = (): React.ReactElement =>
     </p>
 
     <p>
-      This realization led to my rejection of all dogmas, beliefs, religions, spiritual practices, etc., as irrelevant. They often focused on the perceived truths (e.g, by using awareness) or the elimination of things that don't truly matter (like ego or greed), but none of them focused on what truly matters. Many people are blind to this realization, and I shall live by and create works upon what <i>can</i> truly matters for the benefits of beings.
+       Since the word “can” and “matter” are of subjective kinds, I can only create possible, non-judgmental interpretations from this realization, all of which are equally valid as they all stem from what truly matters. I became free from all dogmas, beliefs, religions, spiritual practices, etc. Many of them may offer wisdom (like the elimination of ego and greed), but none actually focused on what truly matters. Some people are unaware to this basic realization, and I shall live by and create works upon what <i>can</i> truly matters for the benefits of beings.
     </p>
   </>
