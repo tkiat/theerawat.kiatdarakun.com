@@ -15,7 +15,7 @@ export const Realization = (): React.ReactElement =>
       </TooltipText>
       ,&nbsp;
       <TooltipText text="second">
-        Everything that truly matters is limited to existing qualities or flows inside sentient beings. Why? “truly” in “truly matters” means something that is not made-up. For example, I would think a computer that I are seeing is “true”, unlike a computer in a fairy tale. Anything that is not made-up can only be discovered through six senses, not anything in the mind. Though, I can use memory and denotation, for example, to refer to past perceptions. They are still truths, for they don't change anything.
+        Everything that truly matters is limited to existing qualities or flows inside sentient beings. Why? “Truly” in “truly matters” means something that is not made-up. For example, I would think a computer that I are seeing is “true”, unlike a computer in a fairy tale. Anything that is not made-up can only be discovered through six senses, not anything in the mind. Though, I can use memory and denotation, for example, to refer to past perceptions. They are still truths, for they don't change anything.
       </TooltipText>
       , then&nbsp;
       <TooltipText text="third">

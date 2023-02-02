@@ -2,6 +2,8 @@ import React from "react"
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
+// desktop/web/blog (rss icon)/video
+
 type AppProps = [
   {
     group_name: string,

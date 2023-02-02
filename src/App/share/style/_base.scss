@@ -215,7 +215,14 @@ input[type='range'] {
     width: calc(100% - max(5%, clamp(35px, 3vw, 45px)));
     padding-right: clamp(0px, 3vw, 20px);
   }
-  &__prog {
+  &__icon {
+    font-size: clamp(15px, 3vw, 25px);
+    color: var(--highlight-color);
+    &:hover {
+      font-size: clamp(25px, 3vw, 35px);
+    }
+  }
+  &__circle {
     display: block;
     width: clamp(15px, 3vw, 25px);
     height: clamp(15px, 3vw, 25px);

@@ -9,7 +9,7 @@ import {WorkGermany} from "./Story/05-WorkGermany"
 import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 import {Realization} from "./Story/07-Realization"
 
-import {TooltipText} from "../share/Tooltip"
+import {TooltipFa, TooltipText} from "../share/Tooltip"
 
 
 export const Story = (): React.ReactElement => {
@@ -47,15 +47,33 @@ export const Story = (): React.ReactElement => {
   return (
     <div className="vsplit">
       <div className="vsplit__left">
-        <a className="vsplit__prog" id="story-child-btn" href="#story-child"></a>
-        <a className="vsplit__prog" id="story-teen-btn" href="#story-teen"></a>
-        <a className="vsplit__prog" id="story-undergraduate-btn" href="#story-undergraduate"></a>
-        <a className="vsplit__prog" id="story-beforemaster-btn" href="#story-beforemaster"></a>
-        <a className="vsplit__prog" id="story-master-btn" href="#story-master"></a>
-        <a className="vsplit__prog" id="story-workgermany-btn" href="#story-workgermany"></a>
-        <a className="vsplit__prog" id="story-voluntaryunemployment-btn" href="#story-voluntaryunemployment"></a>
-        <a className="vsplit__prog" id="story-realization-btn" href="#story-realization"></a>
-        <a className="vsplit__prog" id="story-findwork-btn" href="#story-findwork"></a>
+        <a className="vsplit__icon" id="story-child-btn" href="#story-child">
+          <i className="fa-solid fa-baby"></i>
+        </a>
+        <a className="vsplit__icon" id="story-teen-btn" href="#story-teen">
+          <i className="fa-solid fa-child"></i>
+        </a>
+        <a className="vsplit__icon" id="story-undergraduate-btn" href="#story-undergraduate">
+          <i className="fa-solid fa-graduation-cap"></i>
+        </a>
+        <a className="vsplit__icon" id="story-beforemaster-btn" href="#story-beforemaster">
+          <i className="fa-solid fa-arrows-left-right-to-line"></i>
+        </a>
+        <a className="vsplit__icon" id="story-master-btn" href="#story-master">
+          <i className="fa-solid fa-graduation-cap"></i>
+        </a>
+        <a className="vsplit__icon" id="story-workgermany-btn" href="#story-workgermany">
+          <i className="fa-solid fa-briefcase"></i>
+        </a>
+        <a className="vsplit__icon" id="story-voluntaryunemployment-btn" href="#story-voluntaryunemployment">
+          <i className="fa-solid fa-arrow-trend-down"></i>
+        </a>
+        <a className="vsplit__icon" id="story-realization-btn" href="#story-realization">
+          <i className="fa-solid fa-lightbulb"></i>
+        </a>
+        <a className="vsplit__icon" id="story-findwork-btn" href="#story-findwork">
+          <i className="fa-solid fa-magnifying-glass-dollar"></i>
+        </a>
       </div>
 
       <div className="vsplit__right">
