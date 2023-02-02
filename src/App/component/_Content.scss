@@ -14,6 +14,9 @@
     top: calc(var(--nav-tube-height) + 20px);
     height: calc(100% - var(--nav-tube-height) - 140px);
   }
+  &--about_story::-webkit-scrollbar {
+    display: none;
+  }
   li::marker {
     color: var(--highlight-color);
   }
@@ -72,8 +75,4 @@
 /*       @include m.hsl(color, 180, 0%, 70%); */
 /*     } */
 /*   } */
-}
-
-.big-text-inline {
-  font-size: 1.25em;
 }

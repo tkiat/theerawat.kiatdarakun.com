@@ -57,6 +57,7 @@ export const Story = (): React.ReactElement => {
         <a className="vsplit__prog" id="story-realization-btn" href="#story-realization"></a>
         <a className="vsplit__prog" id="story-findwork-btn" href="#story-findwork"></a>
       </div>
+
       <div className="vsplit__right">
         <p>I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
         <hr />

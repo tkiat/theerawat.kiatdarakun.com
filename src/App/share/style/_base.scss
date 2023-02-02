@@ -198,6 +198,7 @@ input[type='range'] {
 }
 
 .vsplit {
+  width: 100%;
   &__left {
     position: fixed;
     height: calc(100% - var(--nav-tube-height) - 140px);
@@ -212,6 +213,7 @@ input[type='range'] {
     position: absolute;
     right: 0;
     width: calc(100% - max(5%, clamp(35px, 3vw, 45px)));
+    padding-right: clamp(0px, 3vw, 20px);
   }
   &__prog {
     display: block;
@@ -225,7 +227,3 @@ input[type='range'] {
     }
   }
 }
-
-/* ::-webkit-scrollbar { */
-/*   display: none; */
-/* } */
