@@ -14,8 +14,10 @@
     top: calc(var(--nav-tube-height) + 20px);
     height: calc(100% - var(--nav-tube-height) - 140px);
   }
-  &--about_story::-webkit-scrollbar {
-    display: none;
+  &--about_story, &--activity_create {
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   li::marker {
     color: var(--highlight-color);
