@@ -2,8 +2,6 @@ import React from "react"
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
-// desktop/web/blog (rss icon)/video
-
 type AppProps = [
   {
     group_name: string,
@@ -91,32 +89,50 @@ export const Create = (): React.ReactElement => {
     return () => mounted = false
   }, [])
 
+// desktop/web/blog (rss icon)/video
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
-    <div className="page-create">
-      <section>
-        <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
-      </section>
+    <div className="vsplit">
+      <div className="vsplit__left">
+        <a className="vsplit__icon" id="story-child-btn" href="#story-child">
+          <i className="fa-solid fa-globe"></i>
+        </a>
+        <a className="vsplit__icon" id="story-teen-btn" href="#story-teen">
+          <i className="fa-solid fa-display"></i>
+        </a>
+        <a className="vsplit__icon" id="story-undergraduate-btn" href="#story-undergraduate">
+          <i className="fa-solid fa-pen"></i>
+        </a>
+        <a className="vsplit__icon" id="story-beforemaster-btn" href="#story-beforemaster">
+          <i className="fa-solid fa-film"></i>
+        </a>
+      </div>
 
-      <hr />
+      <div className="vsplit__right vsplit__right--border">
+        <section>
+          <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
+        </section>
 
-      <section>
-        <h2>Apps</h2>
-        {renderAppItems(apps)}
-      </section>
+        <hr />
 
-      <hr />
+        <section>
+          <h2>Apps</h2>
+          {renderAppItems(apps)}
+        </section>
 
-      <section>
-        <h2>Blog</h2>
-        {renderContentItems(blogs)}
-      </section>
+        <hr />
 
-      <hr />
+        <section>
+          <h2>Blog</h2>
+          {renderContentItems(blogs)}
+        </section>
 
-      <section>
-        <h2>Videos</h2>
-        {renderContentItems(videos)}
-      </section>
+        <hr />
+
+        <section>
+          <h2>Videos</h2>
+          {renderContentItems(videos)}
+        </section>
+      </div>
     </div>
 }

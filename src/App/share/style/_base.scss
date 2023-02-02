@@ -214,6 +214,10 @@ input[type='range'] {
     right: 0;
     width: calc(100% - max(5%, clamp(35px, 3vw, 45px)));
     padding-right: clamp(0px, 3vw, 20px);
+    &--border {
+      border-left: 1px dashed var(--highlight-color);
+      padding-left: 10px;
+    }
   }
   &__icon {
     font-size: clamp(15px, 3vw, 25px);
