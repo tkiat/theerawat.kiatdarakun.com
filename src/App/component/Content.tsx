@@ -22,7 +22,9 @@ export const Content = (): React.ReactElement =>
   <Router>
     {(() => {
       const NotFoundRoute = (_: RouteComponentProps) => (
-        <NotFound className="notfound notfound--content" />
+        <div className="content content--outside-water">
+          <NotFound className="notfound notfound--content" />
+        </div>
       )
       return <NotFoundRoute default />
     })()}

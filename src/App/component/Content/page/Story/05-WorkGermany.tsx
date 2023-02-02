@@ -3,7 +3,7 @@ import React from "react"
 import {TooltipText} from "../../share/Tooltip"
 
 export const WorkGermany = (): React.ReactElement =>
-  <section data-section="story-workgermany">
+  <section data-storysection="story-workgermany">
     <p><a id="story-workgermany"><b className="big highlight">26 - 28 Years Old (Working in Germany)</b></a> — Just before the end of my thesis I only applied to&nbsp;
       <TooltipText text="National Instruments Dresden">
         A company in the Dresden (in the east of Germany, it cost me around 16 EUR to Berlin from there!) acquired by National Instruments some time ago. It offers a testing solution mainly in the telecommunications area. People over there could speak German and also had German-like faces except one or two guys and some interns only.

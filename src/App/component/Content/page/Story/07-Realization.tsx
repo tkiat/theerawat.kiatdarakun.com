@@ -3,7 +3,7 @@ import React from "react"
 import {TooltipText} from "../../share/Tooltip"
 
 export const Realization = (): React.ReactElement =>
-  <section data-section="story-realization">
+  <section data-storysection="story-realization">
     <p>
       <a id="story-realization"><b className="big highlight">32 Years Old (Satisfactory Realization)</b></a> — After a while, I realized that truths alone cannot guide me to the resolution of&nbsp;
       <TooltipText text="inevitable conflicts">

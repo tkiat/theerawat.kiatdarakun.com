@@ -22,5 +22,39 @@ export const pathToTestId = (path: string) =>
 
 export const splitCamelCase = (s: string) => s.replace(/([A-Z])/g, ' $1')
 
+export const initiateIntObserver = (field: string): (() => void) => {
+    const sections = [...document.querySelectorAll("[data-" + field +"]")]
+    console.log('initiate')
+
+    const onIntersect = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        const t = entry.target
+        if (t instanceof HTMLElement) {
+//           console.log(t.dataset[field])
+          const e = document.getElementById(t.dataset[field] + "-btn")
+          if (e) {
+            e.style.opacity = entry.intersectionRatio > 0 ? "1" : "0.2"
+          }
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(onIntersect, {
+      rootMargin: "0px",
+      threshold: 0,
+    })
+
+    sections.forEach(section => {
+      observer.observe(section)
+    })
+
+    return () => {
+      sections.forEach(section => {
+        observer.unobserve(section)
+      })
+    }
+  }
+
+
 // export const stripHTMLWhitespaces =
   // (str: string) => str.replace(/>\s+</g, '><')

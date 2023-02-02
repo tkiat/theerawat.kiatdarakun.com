@@ -1,7 +1,5 @@
 import React from "react"
 
-import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
-
 type AppProps = [
   {
     group_name: string,
@@ -89,21 +87,20 @@ export const Create = (): React.ReactElement => {
     return () => mounted = false
   }, [])
 
-// desktop/web/blog (rss icon)/video
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
     <div className="vsplit">
       <div className="vsplit__left">
-        <a className="vsplit__icon" id="story-child-btn" href="#story-child">
+        <a className="vsplit__icon" id="create-web-btn" href="#create-web">
           <i className="fa-solid fa-globe"></i>
         </a>
-        <a className="vsplit__icon" id="story-teen-btn" href="#story-teen">
+        <a className="vsplit__icon" id="create-teen-btn" href="#create-teen">
           <i className="fa-solid fa-display"></i>
         </a>
-        <a className="vsplit__icon" id="story-undergraduate-btn" href="#story-undergraduate">
+        <a className="vsplit__icon" id="create-undergraduate-btn" href="#create-undergraduate">
           <i className="fa-solid fa-pen"></i>
         </a>
-        <a className="vsplit__icon" id="story-beforemaster-btn" href="#story-beforemaster">
+        <a className="vsplit__icon" id="create-beforemaster-btn" href="#create-beforemaster">
           <i className="fa-solid fa-film"></i>
         </a>
       </div>
@@ -116,7 +113,7 @@ export const Create = (): React.ReactElement => {
         <hr />
 
         <section>
-          <h2>Apps</h2>
+          <h2><a id="creat-web">Apps</a></h2>
           {renderAppItems(apps)}
         </section>
 
