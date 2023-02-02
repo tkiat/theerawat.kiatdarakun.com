@@ -22,36 +22,42 @@ export const pathToTestId = (path: string) =>
 
 export const splitCamelCase = (s: string) => s.replace(/([A-Z])/g, ' $1')
 
-export const initiateIntObserver = (field: string): (() => void) => {
-    const sections = [...document.querySelectorAll(`[id^="${field}"]`)]
+export const initInPageNavButtons = (buttons: NodeListOf<Element>) => {
+  buttons.forEach(e => {
+    e.addEventListener('click', () => {
+      document.getElementById("section" + e.id.slice(3))?.scrollIntoView()
+    })
+  })
+}
 
-    const onIntersect = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach(entry => {
-        const t = entry.target
-        if (t instanceof HTMLElement) {
-          const e = document.getElementById("btn" + t.id.slice(7))
-          if (e) {
-            e.style.opacity = entry.intersectionRatio > 0 ? "1" : "0.2"
-          }
+export const initIntObserver = (sections: NodeListOf<Element>): (() => void) => {
+  const onIntersect = (entries: IntersectionObserverEntry[]) => {
+    entries.forEach(entry => {
+      const t = entry.target
+      if (t instanceof HTMLElement) {
+        const e = document.getElementById("btn" + t.id.slice(7))
+        if (e) {
+          e.style.opacity = entry.intersectionRatio > 0 ? "1" : "0.2"
         }
-      })
-    }
-
-    const observer = new IntersectionObserver(onIntersect, {
-      rootMargin: "0px",
-      threshold: 0,
+      }
     })
-
-    sections.forEach(section => {
-      observer.observe(section)
-    })
-
-    return () => {
-      sections.forEach(section => {
-        observer.unobserve(section)
-      })
-    }
   }
+
+  const observer = new IntersectionObserver(onIntersect, {
+    rootMargin: "0px",
+    threshold: 0,
+  })
+
+  sections.forEach(section => {
+    observer.observe(section)
+  })
+
+  return () => {
+    sections.forEach(section => {
+      observer.unobserve(section)
+    })
+  }
+}
 
 
 // export const stripHTMLWhitespaces =

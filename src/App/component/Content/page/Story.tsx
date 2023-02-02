@@ -10,18 +10,19 @@ import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 import {Realization} from "./Story/07-Realization"
 import {FindWork} from "./Story/08-FindWork"
 
-import {initiateIntObserver} from 'src/App/share/general'
+import {initInPageNavButtons, initIntObserver} from 'src/App/share/general'
+
+const page = "about-story"
 
 export const Story = (): React.ReactElement => {
-  React.useEffect(() => initiateIntObserver("section-about-story"), [])
+  React.useEffect(() => {
+    const sections = document.querySelectorAll(`[id^="section-${page}"]`)
+    initIntObserver(sections)
+  }, [])
 
   React.useEffect(() => {
-    const root = document.getElementById("about-story")
-    root?.querySelectorAll("button.vsplit__icon").forEach(e => {
-      e.addEventListener('click', () => {
-        document.getElementById("section" + e.id.slice(3))?.scrollIntoView()
-      })
-    })
+    const buttons = document.querySelectorAll(`[id^="btn-${page}"]`)
+    initInPageNavButtons(buttons)
   }, [])
 
   return (
