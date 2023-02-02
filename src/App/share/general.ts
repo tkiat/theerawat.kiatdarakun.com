@@ -23,15 +23,13 @@ export const pathToTestId = (path: string) =>
 export const splitCamelCase = (s: string) => s.replace(/([A-Z])/g, ' $1')
 
 export const initiateIntObserver = (field: string): (() => void) => {
-    const sections = [...document.querySelectorAll("[data-" + field +"]")]
-    console.log('initiate')
+    const sections = [...document.querySelectorAll(`[id^="${field}"]`)]
 
     const onIntersect = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         const t = entry.target
         if (t instanceof HTMLElement) {
-//           console.log(t.dataset[field])
-          const e = document.getElementById(t.dataset[field] + "-btn")
+          const e = document.getElementById("btn" + t.id.slice(7))
           if (e) {
             e.style.opacity = entry.intersectionRatio > 0 ? "1" : "0.2"
           }

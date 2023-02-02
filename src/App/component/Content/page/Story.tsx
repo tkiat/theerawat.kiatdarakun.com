@@ -2,84 +2,88 @@ import React from "react"
 
 import {Child} from "./Story/00-Child"
 import {Teen} from "./Story/01-Teen"
-import {Undergraduate} from "./Story/02-Undergraduate"
+import {Bachelor} from "./Story/02-Bachelor"
 import {BeforeMaster} from "./Story/03-BeforeMaster"
 import {Master} from "./Story/04-Master"
 import {WorkGermany} from "./Story/05-WorkGermany"
 import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 import {Realization} from "./Story/07-Realization"
+import {FindWork} from "./Story/08-FindWork"
 
 import {initiateIntObserver} from 'src/App/share/general'
-import {TooltipFa, TooltipText} from "../share/Tooltip"
 
 export const Story = (): React.ReactElement => {
-  React.useEffect(() => initiateIntObserver("storysection"), [])
+  React.useEffect(() => initiateIntObserver("section-about-story"), [])
 
-//   React.useEffect(() => {
-//   document.querySelectorAll("a[href^='#']").forEach(node => {
-//     console.log(node)
-//       node.addEventListener('click', e => {
-//         e.preventDefault();
-//         console.log(e.target);
-//         //this.props.history.push(e.target.href);
-//       });
-//     })
-//   }, [])
+  React.useEffect(() => {
+    const root = document.getElementById("about-story")
+    root?.querySelectorAll("button.vsplit__icon").forEach(e => {
+      e.addEventListener('click', () => {
+        document.getElementById("section" + e.id.slice(3))?.scrollIntoView()
+      })
+    })
+  }, [])
 
   return (
-    <div className="vsplit">
+    <div id="about-story" className="vsplit">
       <div className="vsplit__left">
-        <a className="vsplit__icon" id="story-child-btn" href="#story-child">
+        <button className="vsplit__icon" id="btn-about-story-child">
           <i className="fa-solid fa-baby"></i>
-        </a>
-        <a className="vsplit__icon" id="story-teen-btn" href="#story-teen">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-teen">
           <i className="fa-solid fa-child"></i>
-        </a>
-        <a className="vsplit__icon" id="story-undergraduate-btn" href="#story-undergraduate">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-bachelor">
           <i className="fa-solid fa-graduation-cap"></i>
-        </a>
-        <a className="vsplit__icon" id="story-beforemaster-btn" href="#story-beforemaster">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-beforemaster">
           <i className="fa-solid fa-arrows-left-right-to-line"></i>
-        </a>
-        <a className="vsplit__icon" id="story-master-btn" href="#story-master">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-master">
           <i className="fa-solid fa-graduation-cap"></i>
-        </a>
-        <a className="vsplit__icon" id="story-workgermany-btn" href="#story-workgermany">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-workgermany">
           <i className="fa-solid fa-briefcase"></i>
-        </a>
-        <a className="vsplit__icon" id="story-voluntaryunemployment-btn" href="#story-voluntaryunemployment">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-voluntaryunemployment">
           <i className="fa-solid fa-arrow-trend-down"></i>
-        </a>
-        <a className="vsplit__icon" id="story-realization-btn" href="#story-realization">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-realization">
           <i className="fa-solid fa-lightbulb"></i>
-        </a>
-        <a className="vsplit__icon" id="story-findwork-btn" href="#story-findwork">
+        </button>
+
+        <button className="vsplit__icon" id="btn-about-story-findwork">
           <i className="fa-solid fa-magnifying-glass-dollar"></i>
-        </a>
+        </button>
       </div>
 
       <div className="vsplit__right">
         <p>I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
         <hr />
-        <Child />
+        <Child part="about-story-child" />
         <hr />
-        <Teen />
+        <Teen part="about-story-teen" />
         <hr />
-        <Undergraduate />
+        <Bachelor part="about-story-bachelor" />
         <hr />
-        <BeforeMaster />
+        <BeforeMaster part="about-story-beforemaster" />
         <hr />
-        <Master />
+        <Master part="about-story-master" />
         <hr />
-        <WorkGermany />
+        <WorkGermany part="about-story-workgermany" />
         <hr />
-        <VoluntaryUnemployment />
+        <VoluntaryUnemployment part="about-story-voluntaryunemployment" />
         <hr />
-        <Realization />
+        <Realization part="about-story-realization" />
         <hr />
-        <section data-storysection="story-findwork">
-          <p><a id="story-findwork"><b className="big highlight">32 Years Old - Present (Finding a Full-Time Job)</b></a> — I am now <TooltipText text="more aware">While it can take forever to uncover the <i>actual</i> flows inside all sentient beings, I now know reasons behind many of my actions. For example, I should turn on a fan when my body needs it, and one sign for this is sweat. I shouldn't harm myself because of any trauma, because the flow inside me truly matters, while any illusory mind can matter but it isn't true.</TooltipText> than ever before. Since I've got a satisfactory conclusion from self-introspection (about what truly matters), it is now reasonable to find job to sustain myself that allow me to continue my endeavors.</p>
-        </section>
+        <FindWork part="about-story-findwork" />
       </div>
     </div>
   )

@@ -222,6 +222,11 @@ input[type='range'] {
   &__icon {
     font-size: clamp(15px, 3vw, 25px);
     color: var(--highlight-color);
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
     &:hover {
       font-size: clamp(25px, 3vw, 35px);
     }
