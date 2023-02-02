@@ -30,7 +30,7 @@ export const initInPageNavButtons = (buttons: NodeListOf<Element>) => {
   })
 }
 
-export const initIntObserver = (sections: NodeListOf<Element>): (() => void) => {
+export const initIntObserver = (sections: NodeListOf<Element>): IntersectionObserver => {
   const onIntersect = (entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
       const t = entry.target
@@ -52,13 +52,8 @@ export const initIntObserver = (sections: NodeListOf<Element>): (() => void) => 
     observer.observe(section)
   })
 
-  return () => {
-    sections.forEach(section => {
-      observer.unobserve(section)
-    })
-  }
+  return observer
 }
-
 
 // export const stripHTMLWhitespaces =
   // (str: string) => str.replace(/>\s+</g, '><')

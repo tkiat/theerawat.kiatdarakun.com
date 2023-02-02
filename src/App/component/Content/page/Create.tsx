@@ -1,5 +1,7 @@
 import React from "react"
 
+import {initInPageNavButtons, initIntObserver} from 'src/App/share/general'
+
 type AppProps = [
   {
     group_name: string,
@@ -31,6 +33,8 @@ type ContentProps = [{
   ]
 }]
 
+const page = "activity-create"
+
 const renderAppItems = (items: AppProps) => items.map((x, i) =>
   <section key={i}>
     <h3>{x.group_name}</h3>
@@ -61,6 +65,8 @@ const renderContentItems = (items: ContentProps) => items.map((x, i) =>
   </section>
 )
 
+let observer: IntersectionObserver, sections: NodeListOf<Element>
+
 export const Create = (): React.ReactElement => {
 
   const [apps, setApps] = React.useState()
@@ -81,28 +87,44 @@ export const Create = (): React.ReactElement => {
         setApps(await appsRaw.json())
         setBlogs(await blogsRaw.json())
         setVideos(await videosRaw.json())
+
+        initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
+        sections = document.querySelectorAll(`[id^="section-${page}"]`)
+        observer = initIntObserver(sections)
       }
     })()
 
-    return () => mounted = false
+    return () => {
+      mounted = false
+      sections.forEach(section => {
+        observer.unobserve(section)
+      })
+    }
   }, [])
+
+  React.useEffect(() => {
+
+  }, [])
+
+  React.useEffect(() => {
+  }, [])
+
 
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
     <div className="vsplit">
       <div className="vsplit__left">
-        <a className="vsplit__icon" id="create-web-btn" href="#create-web">
+        <button className="vsplit__icon" id={`btn-${page}-apps`}>
           <i className="fa-solid fa-globe"></i>
-        </a>
-        <a className="vsplit__icon" id="create-teen-btn" href="#create-teen">
-          <i className="fa-solid fa-display"></i>
-        </a>
-        <a className="vsplit__icon" id="create-undergraduate-btn" href="#create-undergraduate">
+        </button>
+
+        <button className="vsplit__icon" id={`btn-${page}-write`}>
           <i className="fa-solid fa-pen"></i>
-        </a>
-        <a className="vsplit__icon" id="create-beforemaster-btn" href="#create-beforemaster">
-          <i className="fa-solid fa-film"></i>
-        </a>
+        </button>
+
+        <button className="vsplit__icon" id={`btn-${page}-video`}>
+          <i className="fa-solid fa-display"></i>
+        </button>
       </div>
 
       <div className="vsplit__right vsplit__right--border">
@@ -112,21 +134,21 @@ export const Create = (): React.ReactElement => {
 
         <hr />
 
-        <section>
-          <h2><a id="creat-web">Apps</a></h2>
+        <section id={`section-${page}-apps`}>
+          <h2>Apps</h2>
           {renderAppItems(apps)}
         </section>
 
         <hr />
 
-        <section>
+        <section id={`section-activity-create-write`}>
           <h2>Blog</h2>
           {renderContentItems(blogs)}
         </section>
 
         <hr />
 
-        <section>
+        <section id={`section-${page}-video`}>
           <h2>Videos</h2>
           {renderContentItems(videos)}
         </section>

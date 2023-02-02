@@ -16,13 +16,16 @@ const page = "about-story"
 
 export const Story = (): React.ReactElement => {
   React.useEffect(() => {
-    const sections = document.querySelectorAll(`[id^="section-${page}"]`)
-    initIntObserver(sections)
-  }, [])
+    initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
 
-  React.useEffect(() => {
-    const buttons = document.querySelectorAll(`[id^="btn-${page}"]`)
-    initInPageNavButtons(buttons)
+    const sections = document.querySelectorAll(`[id^="section-${page}"]`)
+    const observer = initIntObserver(sections)
+
+    return () => {
+      sections.forEach(section => {
+        observer.unobserve(section)
+      })
+    }
   }, [])
 
   return (
