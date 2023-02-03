@@ -3,24 +3,26 @@ import React from 'react'
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 import {initInPageNavButtons, initIntObserver} from 'src/App/share/general'
 
-type ItemProps = [
-  {
-    category: string,
-    items: [
-      {
-        date: string,
-        scope: string,
-        category: string,
-        title: string,
-        format: string,
-        length: string,
-        link: string,
-        review_short: string,
-        review_ext: string,
-      }
-    ]
-  }
-]
+type CategoryProps = {
+  header: string,
+  items: [
+    {
+      header: string,
+      items: [
+        {
+          date: string,
+          title: string,
+          format: string,
+          length: string,
+          link: string,
+          review_short: string,
+          review_ext: string,
+        }
+      ]
+    }
+  ]
+}
+
 
 const getFormatIcon = (f: string) => {
   switch(f) {
@@ -37,11 +39,11 @@ const getFormatIcon = (f: string) => {
   }
 }
 
-const renderCategory = (main: ItemProps) =>
+const renderCategory = (cat: CategoryProps) =>
   <>
-    <h2>{main.header}</h2>
+    <h2>{cat.header}</h2>
     {
-      main.items.map((sub, j) =>
+      cat.items.map((sub, j) =>
         <section key={j}>
           <h3 className="highlight">{sub.header}</h3>
           {
