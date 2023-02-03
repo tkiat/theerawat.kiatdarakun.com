@@ -33,8 +33,6 @@ type ContentProps = [{
   ]
 }]
 
-const page = "activity-create"
-
 const renderAppItems = (items: AppProps) => items.map((x, i) =>
   <section key={i}>
     <h4>{x.group_name}</h4>
@@ -65,6 +63,7 @@ const renderContentItems = (items: ContentProps) => items.map((x, i) =>
   </section>
 )
 
+const page = "activity-create"
 let observer: IntersectionObserver, sections: NodeListOf<Element>
 
 export const Create = (): React.ReactElement => {
