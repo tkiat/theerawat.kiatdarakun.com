@@ -22,7 +22,7 @@ type ItemProps = [
   }
 ]
 
-const renderFormatIcon = (f: string) => {
+const getFormatIcon = (f: string) => {
   switch(f) {
     case "book":
       return <i className="fa-solid fa-book"></i>
@@ -37,18 +37,22 @@ const renderFormatIcon = (f: string) => {
   }
 }
 
-const renderItems = (categories: ItemProps) =>
-  categories.map((x, i) => {
-    return (
-      <section id={`section-${page}-${i}`} key={i}>
-        <h2>{x.category}</h2>
-        {x.items.map((y, j) =>
-          <p key={j}>{y.date} — {y.scope} &gt; {y.category} — {y.link ? <a href={y.link}>{y.title}</a> : <>{y.title}</>} — {renderFormatIcon(y.format)}{y.length && <>&ensp;{y.length}</>}{y.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{y.review_short}</TooltipFa></>}{y.review_ext && <>&ensp;<a href={y.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}
-          </p>
-        )}
-      </section>
-    )
-  })
+const renderCategory = (main: ItemProps) =>
+  <>
+    <h2>{main.header}</h2>
+    {
+      main.items.map((sub, j) =>
+        <section key={j}>
+          <h3 className="highlight">{sub.header}</h3>
+          {
+            sub.items.map((y, k) =>
+              <p key={k}>{y.date} — {y.link ? <a href={y.link}>{y.title}</a> : <>{y.title}</>} — {getFormatIcon(y.format)}{y.length && <>&ensp;{y.length}</>}{y.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{y.review_short}</TooltipFa></>}{y.review_ext && <>&ensp;<a href={y.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>
+            )
+          }
+        </section>
+      )
+    }
+  </>
 
 const page = "activity-digest"
 let observer: IntersectionObserver, sections: NodeListOf<Element>
@@ -116,11 +120,35 @@ export const Digest = (): React.ReactElement => {
           </ol>
         </TooltipText>
 
-        <p>Date — Scope &gt; Category — Title — Format&ensp;Length&ensp;Review/Summary</p>
+        <p>Date — Title — Format&ensp;Length&ensp;Review/Summary</p>
+
+        <section id={`section-${page}-0`}>
+          {renderCategory(items[0])}
+        </section>
 
         <hr />
 
-        {renderItems(items)}
+        <section id={`section-${page}-1`}>
+          {renderCategory(items[1])}
+        </section>
+
+        <hr />
+
+        <section id={`section-${page}-2`}>
+          {renderCategory(items[2])}
+        </section>
+
+        <hr />
+
+        <section id={`section-${page}-3`}>
+          {renderCategory(items[3])}
+        </section>
+
+        <hr />
+
+        <section id={`section-${page}-4`}>
+          {renderCategory(items[4])}
+        </section>
       </div>
     </div>
 }
