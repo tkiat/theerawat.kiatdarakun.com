@@ -2,10 +2,10 @@ import React from "react"
 
 import {TooltipText} from "../../share/Tooltip"
 
-export const Realization = ({part}: {part: string}): React.ReactElement =>
-  <section id={"section-" + part}>
+export const Realization = (): React.ReactElement =>
+  <>
     <p>
-      <b className="big highlight">32 Years Old (Satisfactory Realization)</b> — After a while, I realized that truths alone cannot guide me to the resolution of&nbsp;
+      <b className="big-text highlight">32 Years Old (Satisfactory Realization)</b> — After a while, I realized that truths alone cannot guide me to the resolution of&nbsp;
       <TooltipText text="inevitable conflicts">
         Sure, it tells me to change my position when I ache, but what about eating? I currently need to harm other sentient beings for food (even vegan food due to insects), which is a conflict since my awareness tells me that all beings want to survive (as, e.g., their bodies heals themselves). Should I commit suicide or continue living?
       </TooltipText>
@@ -27,4 +27,4 @@ export const Realization = ({part}: {part: string}): React.ReactElement =>
     <p>
        Since the word “can” and “matter” are of subjective kinds, I can only create possible, non-judgmental interpretations from this realization, all of which are equally valid as they all stem from what truly matters. I became free from all dogmas, beliefs, religions, spiritual practices, etc. Many of them may offer wisdom (like the elimination of ego and greed), but none actually focused on what truly matters. Some people are unaware to this basic realization, and I shall live by and create works upon what <i>can</i> truly matters for the benefits of beings.
     </p>
-  </section>
+  </>

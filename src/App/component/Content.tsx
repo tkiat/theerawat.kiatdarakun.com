@@ -22,7 +22,7 @@ export const Content = (): React.ReactElement =>
   <Router>
     {(() => {
       const NotFoundRoute = (_: RouteComponentProps) => (
-        <div className="content content--outside-water">
+        <div className="content">
           <NotFound className="notfound notfound--content" />
         </div>
       )
@@ -31,7 +31,7 @@ export const Content = (): React.ReactElement =>
 
     {Object.entries(mapping).map(([k, v], i) => {
       const Route = (_: RouteComponentProps) =>
-        <div className={"content content--outside-water " + beautify(k)}>
+        <div className={"content " + beautify(k)}>
           {v}
         </div>
       return <Route key={i} path={k} />

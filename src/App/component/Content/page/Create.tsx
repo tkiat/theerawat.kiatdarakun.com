@@ -37,7 +37,7 @@ const page = "activity-create"
 
 const renderAppItems = (items: AppProps) => items.map((x, i) =>
   <section key={i}>
-    <h3>{x.group_name}</h3>
+    <h4>{x.group_name}</h4>
 
     {x.items &&
       <ul className="ul-more-space">
@@ -53,7 +53,7 @@ const renderAppItems = (items: AppProps) => items.map((x, i) =>
 
 const renderContentItems = (items: ContentProps) => items.map((x, i) =>
   <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
-    <h3>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h3>
+    <h4>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h4>
 
     <p>{x.group_dscp}</p>
 
@@ -115,7 +115,8 @@ export const Create = (): React.ReactElement => {
     <div className="vsplit">
       <div className="vsplit__left">
         <button className="vsplit__icon" id={`btn-${page}-apps`}>
-          <i className="fa-solid fa-globe"></i>
+          <i className="fa-solid fa-0"></i>
+          <i className="fa-solid fa-1"></i>
         </button>
 
         <button className="vsplit__icon" id={`btn-${page}-write`}>
@@ -135,14 +136,16 @@ export const Create = (): React.ReactElement => {
         <hr />
 
         <section id={`section-${page}-apps`}>
-          <h2>Apps</h2>
+          <h2>Software</h2>
+          <h3 className="highlight">Apps</h3>
           {renderAppItems(apps)}
         </section>
 
         <hr />
 
-        <section id={`section-activity-create-write`}>
-          <h2>Blog</h2>
+        <section id={`section-${page}-write`}>
+          <h2>Writing</h2>
+          <h3 className="highlight">My Own Blog Site</h3>
           {renderContentItems(blogs)}
         </section>
 
@@ -150,6 +153,7 @@ export const Create = (): React.ReactElement => {
 
         <section id={`section-${page}-video`}>
           <h2>Videos</h2>
+          <h3 className="highlight">Channel</h3>
           {renderContentItems(videos)}
         </section>
       </div>

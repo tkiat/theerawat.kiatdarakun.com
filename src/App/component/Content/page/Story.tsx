@@ -29,65 +29,101 @@ export const Story = (): React.ReactElement => {
   }, [])
 
   return (
-    <div id="about-story" className="vsplit">
+    <div className="vsplit">
       <div className="vsplit__left">
-        <button className="vsplit__icon" id="btn-about-story-child">
+        <button className="vsplit__icon" id={`btn-${page}-child`}>
           <i className="fa-solid fa-baby"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-teen">
+        <button className="vsplit__icon" id={`btn-${page}-teen`}>
           <i className="fa-solid fa-child"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-bachelor">
+        <button className="vsplit__icon" id={`btn-${page}-bachelor`}>
           <i className="fa-solid fa-graduation-cap"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-beforemaster">
+        <button className="vsplit__icon" id={`btn-${page}-beforemaster`}>
           <i className="fa-solid fa-arrows-left-right-to-line"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-master">
+        <button className="vsplit__icon" id={`btn-${page}-master`}>
           <i className="fa-solid fa-graduation-cap"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-workgermany">
+        <button className="vsplit__icon" id={`btn-${page}-workgermany`}>
           <i className="fa-solid fa-briefcase"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-voluntaryunemployment">
+        <button className="vsplit__icon" id={`btn-${page}-voluntaryunemployment`}>
           <i className="fa-solid fa-arrow-trend-down"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-realization">
+        <button className="vsplit__icon" id={`btn-${page}-realization`}>
           <i className="fa-solid fa-lightbulb"></i>
         </button>
 
-        <button className="vsplit__icon" id="btn-about-story-findwork">
+        <button className="vsplit__icon" id={`btn-${page}-findwork`}>
           <i className="fa-solid fa-magnifying-glass-dollar"></i>
         </button>
       </div>
 
       <div className="vsplit__right">
         <p>I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
+
         <hr />
-        <Child part="about-story-child" />
+
+        <section id={`section-${page}-child`}>
+          <Child />
+        </section>
+
         <hr />
-        <Teen part="about-story-teen" />
+
+        <section id={`section-${page}-teen`}>
+          <Teen />
+        </section>
+
         <hr />
-        <Bachelor part="about-story-bachelor" />
+
+        <section id={`section-${page}-bachelor`}>
+          <Bachelor />
+        </section>
+
         <hr />
-        <BeforeMaster part="about-story-beforemaster" />
+
+        <section id={`section-${page}-beforemaster`}>
+          <BeforeMaster />
+        </section>
+
         <hr />
-        <Master part="about-story-master" />
+
+        <section id={`section-${page}-master`}>
+          <Master />
+        </section>
+
         <hr />
-        <WorkGermany part="about-story-workgermany" />
+
+        <section id={`section-${page}-workgermany`}>
+          <WorkGermany />
+        </section>
+
         <hr />
-        <VoluntaryUnemployment part="about-story-voluntaryunemployment" />
+
+        <section id={`section-${page}-voluntaryunemployment`}>
+          <VoluntaryUnemployment />
+        </section>
+
         <hr />
-        <Realization part="about-story-realization" />
+
+        <section id={`section-${page}-realization`}>
+          <Realization />
+        </section>
+
         <hr />
-        <FindWork part="about-story-findwork" />
+
+        <section id={`section-${page}-findwork`}>
+          <FindWork />
+        </section>
       </div>
     </div>
   )

@@ -2,9 +2,9 @@ import React from "react"
 
 import {TooltipText} from "../../share/Tooltip"
 
-export const VoluntaryUnemployment = ({part}: {part: string}): React.ReactElement =>
-  <section id={"section-" + part}>
-    <p><b className="big highlight">28 - 32 Years Old (Voluntary Unemployment)</b> — I felt&nbsp;
+export const VoluntaryUnemployment = (): React.ReactElement =>
+  <>
+    <p><b className="big-text highlight">28 - 32 Years Old (Voluntary Unemployment)</b> — I felt&nbsp;
       <TooltipText text="useful">
         I spent money and did the thesis in Aachen (that was still not as worth as free education I received). I then proceeded to work in Berlin that required Thai language, and therefore I didn't feel like I took away jobs from Germans.
       </TooltipText>
@@ -51,4 +51,4 @@ export const VoluntaryUnemployment = ({part}: {part: string}): React.ReactElemen
       </TooltipText>
       &nbsp;to use the awareness to guide my life. I long for truths, and this seemed to be the answer I have been searching for.
     </p>
-  </section>
+  </>
