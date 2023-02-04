@@ -8,6 +8,7 @@
 }
 
 html {
+  background: yellow;
   font-size: clamp(14px, 1.5vw, 32px);
   @include m.fluid-type(--nav-tube-height, 768px, 1920px, 60px, 150px);
   --sidebar-width: max(300px, 30vw);
@@ -195,4 +196,8 @@ input[type='range'] {
 
 .abandoned {
   opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

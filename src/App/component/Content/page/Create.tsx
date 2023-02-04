@@ -101,16 +101,8 @@ export const Create = (): React.ReactElement => {
     }
   }, [])
 
-  React.useEffect(() => {
-
-  }, [])
-
-  React.useEffect(() => {
-  }, [])
-
-
   return (apps === undefined || blogs === undefined || videos === undefined) ?
-    <>Loading ...</> :
+    <div className="no-split">Loading ...</div> :
     <div className="split">
       <div className="split__status">
         <button className="split__icon" id={`btn-${page}-software`}>
@@ -122,7 +114,7 @@ export const Create = (): React.ReactElement => {
         </button>
 
         <button className="split__icon" id={`btn-${page}-video`}>
-          <i className="fa-solid fa-display"></i>
+          <i className="fa-solid fa-film"></i>
         </button>
       </div>
 

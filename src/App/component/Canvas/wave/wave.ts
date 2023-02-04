@@ -44,7 +44,6 @@ export const mkWave = (a: MkWaveArgument): Wave => ({
 export const mkWaveLine = (d: Dimension, p: MainPath): Line => [
   {from: {x: 0, y: d.h - 30,}, to: {x: d.w, y: d.h - 30,},},
   {from: {x: 0, y: d.h - 30,}, to: {x: d.w, y: d.h - 30,},},
-//   {from: {x: 0, y: 120,     }, to: {x: d.w, y: 200,     },},
 ][mainPaths.indexOf(p)]
 
 export const mkWavePhysics = (): WavePhysics => {

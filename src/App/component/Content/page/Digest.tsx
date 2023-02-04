@@ -87,7 +87,7 @@ export const Digest = (): React.ReactElement => {
   }, [])
 
   return items === undefined ?
-    <>Loading ...</> :
+    <div className="no-split">Loading ...</div> :
     <div className="split">
       <div className="split__status">
         <button className="split__icon" id={`btn-${page}-0`}>

@@ -51,6 +51,8 @@
       &::-webkit-scrollbar {
         display: none;
       }
+      -ms-overflow-style: none;
+      scrollbar-width: none;
     }
     &__icon {
       font-size: clamp(15px, 3vw, 25px);

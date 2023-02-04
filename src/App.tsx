@@ -86,8 +86,8 @@ export const App = (): React.ReactElement => {
           </Router>
           {title}
           <Background theme={theme} />
-          <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
           <Content />
+          <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
         </div>
         <ThemeProvider value={{setTheme, theme}}>
           <Sidebar waveConfigs={waveConfigs}

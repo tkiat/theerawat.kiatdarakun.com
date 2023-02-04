@@ -16,22 +16,19 @@ const mapping = {
   [paths[5]]: <Events />,
 }
 
-const beautify = (x: string) => "content--" + x.replace("/", "_")
-
 export const Content = (): React.ReactElement =>
   <Router>
     {(() => {
-      const NotFoundRoute = (_: RouteComponentProps) => (
+      const NotFoundRoute = (_: RouteComponentProps) =>
         <div className="content">
           <NotFound />
         </div>
-      )
       return <NotFoundRoute default />
     })()}
 
     {Object.entries(mapping).map(([k, v], i) => {
       const Route = (_: RouteComponentProps) =>
-        <div className={"content " + beautify(k)}>
+        <div className="content">
           {v}
         </div>
       return <Route key={i} path={k} />
