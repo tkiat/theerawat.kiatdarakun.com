@@ -88,41 +88,39 @@ export const Digest = (): React.ReactElement => {
 
   return items === undefined ?
     <>Loading ...</> :
-    <div className="vsplit">
-      <div className="vsplit__left">
-        <button className="vsplit__icon" id={`btn-${page}-0`}>
+    <div className="split">
+      <div className="split__status">
+        <button className="split__icon" id={`btn-${page}-0`}>
           <i className="fa-solid fa-user"></i>
         </button>
 
-        <button className="vsplit__icon" id={`btn-${page}-1`}>
+        <button className="split__icon" id={`btn-${page}-1`}>
           <i className="fa-solid fa-users"></i>
         </button>
 
-        <button className="vsplit__icon" id={`btn-${page}-2`}>
+        <button className="split__icon" id={`btn-${page}-2`}>
           <i className="fa-solid fa-earth-americas"></i>
         </button>
 
-        <button className="vsplit__icon" id={`btn-${page}-3`}>
+        <button className="split__icon" id={`btn-${page}-3`}>
           <i className="fa-solid fa-plus"></i>
         </button>
 
-        <button className="vsplit__icon" id={`btn-${page}-4`}>
+        <button className="split__icon" id={`btn-${page}-4`}>
           <i className="fa-solid fa-wand-magic-sparkles"></i>
         </button>
       </div>
 
-      <div className="vsplit__right vsplit__right--border">
+      <div className="split__content">
         <br />
         I create this page for the sake of memory retention. I only list media that aligns with my&nbsp;
         <TooltipText text="ideals">
-          <ol>
+          <ul>
             <li>Available digitally</li>
             <li>Available DRM-free or free of charge</li>
             <li>Can be consumed on FOSS operating systems (like Linux)</li>
-          </ol>
-        </TooltipText>
-
-        <p>Date — Title — Format&ensp;Length&ensp;Review/Summary</p>
+          </ul>
+        </TooltipText>.
 
         <section id={`section-${page}-0`}>
           {renderCategory(items[0])}

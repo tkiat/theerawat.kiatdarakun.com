@@ -3,7 +3,7 @@ import React from 'react'
 import {TooltipText} from "../share/Tooltip"
 
 export const Hi = (): React.ReactElement => (
-  <div className="page-hi">
+  <div className="no-split">
     <p className="big-text">
       <b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>. I made a compatible lifestyle and relevant (written) works on both personal and societal scales based on my interpretations of this basic&nbsp;
       <TooltipText text="realization">

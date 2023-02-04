@@ -5,27 +5,86 @@
   position: absolute;
 
   font-size: 1rem;
-  padding: 0 10px;
+/*   padding: 0 10px; */
   margin-top: 10px;
   width: calc(100% - var(--sidebar-width));
   top: calc(var(--nav-tube-height) + 20px);
   height: calc(100% - var(--nav-tube-height) - 140px);
 
-  overflow-y: auto;
-  &--about_story, &--activity_create, &--activity_digest {
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
   li::marker {
     color: var(--highlight-color);
   }
   .big-text {
     font-size: 1.25rem;
   }
+  .small-text {
+    font-size: 0.9em;
+  }
   .highlight {
     color: var(--highlight-color);
   }
+
+  .no-split {
+    padding: 0 10px;
+    overflow-y: auto;
+    height: 100%;
+  }
+
+  .split {
+    &__status {
+      position: fixed;
+      height: calc(100% - var(--nav-tube-height) - 140px);
+      width: clamp(45px, 4vw, 75px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border-right: 1px dashed var(--highlight-color);
+    }
+    &__content {
+      position: absolute;
+      right: 0;
+      width: calc(100% - clamp(45px, 4vw, 75px));
+      height: 100%;
+      overflow-y: auto;
+      padding: 0 clamp(0px, 3vw, 20px);
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+    &__icon {
+      font-size: clamp(15px, 3vw, 25px);
+      color: var(--highlight-color);
+      background:none;
+      border:none;
+      margin:0;
+      padding:0;
+      cursor: pointer;
+      &:hover {
+        font-size: clamp(25px, 3vw, 35px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    .split {
+      &__status {
+        height: clamp(35px, 3vw, 45px);
+        width: 100%;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 1px dashed var(--highlight-color);
+      }
+      &__content {
+        top: clamp(45px, 3vw, 55px);
+        height: calc(100% - clamp(55px, 3vw, 65px));
+        width: 100%;
+      }
+    }
+  }
+}
 /*   h1 { */
 /*     font-size: 1.563rem; */
 /*   } */
@@ -66,4 +125,3 @@
 /*       @include m.hsl(color, 180, 0%, 70%); */
 /*     } */
 /*   } */
-}

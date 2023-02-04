@@ -2,7 +2,7 @@ import React from 'react'
 import {TooltipText, TooltipTextWithDelay} from "../share/Tooltip"
 
 export const Character = (): React.ReactElement => (
-  <div className="page-character">
+  <div className="no-split">
     <section>
       <h2>Internal</h2>
 

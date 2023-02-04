@@ -111,30 +111,27 @@ export const Create = (): React.ReactElement => {
 
   return (apps === undefined || blogs === undefined || videos === undefined) ?
     <>Loading ...</> :
-    <div className="vsplit">
-      <div className="vsplit__left">
-        <button className="vsplit__icon" id={`btn-${page}-apps`}>
-          <i className="fa-solid fa-0"></i>
-          <i className="fa-solid fa-1"></i>
+    <div className="split">
+      <div className="split__status">
+        <button className="split__icon" id={`btn-${page}-software`}>
+          <i className="fa-solid fa-code"></i>
         </button>
 
-        <button className="vsplit__icon" id={`btn-${page}-write`}>
+        <button className="split__icon" id={`btn-${page}-write`}>
           <i className="fa-solid fa-pen"></i>
         </button>
 
-        <button className="vsplit__icon" id={`btn-${page}-video`}>
+        <button className="split__icon" id={`btn-${page}-video`}>
           <i className="fa-solid fa-display"></i>
         </button>
       </div>
 
-      <div className="vsplit__right vsplit__right--border">
+      <div className="split__content">
         <section>
           <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
         </section>
 
-        <hr />
-
-        <section id={`section-${page}-apps`}>
+        <section id={`section-${page}-software`}>
           <h2>Software</h2>
           <h3 className="highlight">Apps</h3>
           {renderAppItems(apps)}

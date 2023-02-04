@@ -23,7 +23,7 @@ export const Content = (): React.ReactElement =>
     {(() => {
       const NotFoundRoute = (_: RouteComponentProps) => (
         <div className="content">
-          <NotFound className="notfound notfound--content" />
+          <NotFound />
         </div>
       )
       return <NotFoundRoute default />
