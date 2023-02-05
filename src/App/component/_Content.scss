@@ -54,6 +54,7 @@
       scrollbar-width: none;
     }
     &__icon {
+      opacity: 0.2;
       font-size: clamp(15px, 3vw, 25px);
       color: var(--highlight-color);
       background:none;
