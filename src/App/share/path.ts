@@ -5,7 +5,6 @@ export type PathObject = typeof pathObject
 export const pathObject = {
   'about': ['hi', 'character', 'story'],
   'activity': ['create', 'digest', 'events'],
-//   'resume': [''],
 } as const
 
 const numMainPaths = Object.keys(pathObject).length
@@ -60,11 +59,20 @@ const mkLocalPath = (): Path => {
   return {current: fc, mapping: fm}
 }
 
+export const getSubpageIndex = (page: string, subpage: string) =>
+  pathObject[page].findIndex(i => i === subpage)
+
 // prioritize current url > local storage > first index
 export const mkPath = (): Path => adaptPathToUrl(mkLocalPath())
 
 export const storePath = (p: Path) => {
   localStorage.setItem(localCurrentPathKey, p.current)
-  mainPaths.map(x =>
-    localStorage.setItem(localMappingPrefix + x, p.mapping[x]))
+  mainPaths.map(x => {
+    if (x === p.current) {
+      const [subpage] = window.location.pathname.split("/").slice(-1)
+      localStorage.setItem(localMappingPrefix + x, subpage)
+    } else {
+      localStorage.setItem(localMappingPrefix + x, p.mapping[x])
+    }
+  })
 }

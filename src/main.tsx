@@ -12,6 +12,8 @@ const willShowSafariWarning = (): boolean => {
   return isSafari && localStorage.getItem(localSafariBypassKey) !== 'true'
 }
 
+// ReactDOM.render(<App />,document.getElementById('root'))
+
 ReactDOM.render(
   <React.StrictMode>
     {willShowSafariWarning() ? <SafariWarning /> : <App />}

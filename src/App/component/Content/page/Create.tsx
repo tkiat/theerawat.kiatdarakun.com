@@ -120,7 +120,7 @@ export const Create = (): React.ReactElement => {
 
       <div className="split__content">
         <section>
-          <p>I display both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
+          <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
         </section>
 
         <section id={`section-${page}-software`}>

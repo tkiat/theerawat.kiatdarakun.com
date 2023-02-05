@@ -27,7 +27,7 @@ export const mayApplyBaseTheme = (): Promise<Status> => {
 
 export const mkCustomBaseTheme = (): BaseTheme => {
   const l = localStorage.getItem(localCustomBaseThemeKey)
-  return isType(l, baseThemes) ? l : 'sakura'
+  return isType(l, baseThemes) ? l : 'ocean'
 }
 
 export const storeCustomBaseTheme = (b: BaseTheme) =>

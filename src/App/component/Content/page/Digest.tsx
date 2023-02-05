@@ -113,7 +113,7 @@ export const Digest = (): React.ReactElement => {
 
       <div className="split__content">
         <br />
-        I create this page for the sake of memory retention. I only list media that aligns with my&nbsp;
+        Here is the list of pieces of media that align with my&nbsp;
         <TooltipText text="ideals">
           <ul>
             <li>Available digitally</li>

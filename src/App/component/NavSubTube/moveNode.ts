@@ -3,7 +3,7 @@ import {moveWater} from './moveWater'
 
 const isPositionValid = (x: number): boolean => x >= 0 && x % 2 === 0
 
-export const moveCurrentNode = (
+export const moveNode = (
   from: number,
   to: number,
   stepMs: number,
@@ -27,7 +27,7 @@ export const moveCurrentNode = (
     new Promise<void>((resolve, reject) => {
       if (!m) {
         callback()
-        reject('moveCurrentNode.ts: element of id "main" not found')
+        reject('moveNode.ts: element of id "main" not found')
       } else {
         m.classList.toggle('waiting')
         resolve()

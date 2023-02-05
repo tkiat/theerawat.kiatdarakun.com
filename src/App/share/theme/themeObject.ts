@@ -43,7 +43,7 @@ export const mkGlobalStyle = (t: ThemeObject) => ({
 
 const mkTheme = (): Theme => {
   const l = localStorage.getItem(localThemeKey)
-  return isType(l, themes) ? l : 'sakura'
+  return isType(l, themes) ? l : 'ocean'
 }
 
 export const mkThemeObject = (): ThemeObject => {

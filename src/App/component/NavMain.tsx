@@ -18,10 +18,17 @@ export const NavMain = ({path, setPath}: P):
       <ItemContent
         key={x}
         path={x}
-        to={'/' + x + '/' + path.mapping[x]}
+        to={path.current === x ? window.location.pathname
+          : '/' + x + '/' + path.mapping[x]}
         isActive={x === path.current}
         left={left(i)}
-        onclick={() => {setPath(d => {d.current = x})}}
+        onclick={() => {
+          setPath(d => {
+            const p = window.location.pathname
+            d.mapping[d.current] = p.substring(p.lastIndexOf('/') + 1)
+            d.current = x
+          })
+        }}
       />
     )}
     <ItemSidebar left={left(numDucks - 1)} />

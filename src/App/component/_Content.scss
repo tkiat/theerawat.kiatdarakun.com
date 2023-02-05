@@ -5,7 +5,6 @@
   position: absolute;
 
   font-size: 1rem;
-/*   padding: 0 10px; */
   margin-top: 10px;
   width: calc(100% - var(--sidebar-width));
   top: calc(var(--nav-tube-height) + 20px);
@@ -63,7 +62,7 @@
       padding:0;
       cursor: pointer;
       &:hover {
-        font-size: clamp(25px, 3vw, 35px);
+        font-size: clamp(30px, 3vw, 40px);
       }
     }
   }
@@ -87,13 +86,6 @@
     }
   }
 }
-/*   h1 { */
-/*     font-size: 1.563rem; */
-/*   } */
-/*   h2 { */
-/*     font-size: 1.25rem; */
-/*   } */
-
 /*   &--inside-water { */
 /*     top: 220px; */
 /*     @include m.hsl(color, 90, 0%, 95%); */
