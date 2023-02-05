@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {pathObject} from 'src/App/share/path'
+import {MainPath, pathObject} from 'src/App/share/path'
 
-const firstPage = Object.keys(pathObject)[0]
+const firstPage = Object.keys(pathObject)[0] as keyof typeof pathObject
 const route = "/" + firstPage + "/" + pathObject[firstPage][0]
 
 export const NotFound = (): React.ReactElement =>

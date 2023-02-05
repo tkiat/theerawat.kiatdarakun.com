@@ -13,22 +13,23 @@ const stepMs = 500
 
 type P = {path: Path, setPath: Updater<Path>}
 export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
-  const initPos = pathObject[path.current].
-    findIndex(x => x === path.mapping[path.current])
+  const curPage = path.current
+  const initPos = pathObject[curPage].
+    findIndex(x => x === path.mapping[curPage])
   return (
     <nav className="nav-tube">
       <ul className="nav-tube__list">
         <Terminator />
-        {pathObject[path.current].map((x, i) =>
+        {pathObject[curPage].map((x, i) =>
           <React.Fragment key={x}>
             <li className="nav-tube__item">
               <NodeText
                 i={i}
                 cur={initPos}
-                to={'/' + path.current + '/' + x}
+                to={'/' + curPage + '/' + x}
                 onclick={() => {
-                  const [curPage, curSubpage] =
-                    window.location.href.split("/").slice(-2)
+                  const [curSubpage] =
+                    window.location.pathname.split("/").slice(-1)
                   const curPos = getSubpageIndex(curPage, curSubpage)
                   const destPos = getSubpageIndex(curPage, x)
                   moveNode(curPos * 2, destPos * 2, stepMs, () => () => {})
@@ -37,7 +38,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
               />
             </li>
             {
-              i < pathObject[path.current].length - 1 && (
+              i < pathObject[curPage].length - 1 && (
               <li className="nav-tube__item">
                 <NodeValve i={i} cur={initPos} />
               </li>

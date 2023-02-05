@@ -1,7 +1,8 @@
 import React from 'react'
 import {Updater} from 'use-immer'
 
-import {Path, mainPaths, numDucks} from 'src/App/share/path'
+import {isType} from 'src/App/share/general'
+import {Path, mainPaths, numDucks, pathObject, subPaths} from 'src/App/share/path'
 
 import {ItemContent} from './NavMain/ItemContent'
 import {ItemSidebar} from './NavMain/ItemSidebar'
@@ -25,7 +26,10 @@ export const NavMain = ({path, setPath}: P):
         onclick={() => {
           setPath(d => {
             const p = window.location.pathname
-            d.mapping[d.current] = p.substring(p.lastIndexOf('/') + 1)
+            const curSubpage = p.substring(p.lastIndexOf('/') + 1)
+            if (isType(curSubpage, subPaths)) {
+              d.mapping[d.current] = curSubpage
+            }
             d.current = x
           })
         }}

@@ -18,7 +18,7 @@ export type MainPath = keyof PathObject
 export const mainPaths: MainPath[] = Object.keys(pathObject) as MainPath[]
 
 type SubPath = PathObject[MainPath][number]
-const subPaths: SubPath[] =
+export const subPaths: SubPath[] =
   Object.values(pathObject).flat(1) as SubPath[]
 
 export type Path = {
@@ -59,7 +59,7 @@ const mkLocalPath = (): Path => {
   return {current: fc, mapping: fm}
 }
 
-export const getSubpageIndex = (page: string, subpage: string) =>
+export const getSubpageIndex = (page: MainPath, subpage: string) =>
   pathObject[page].findIndex(i => i === subpage)
 
 // prioritize current url > local storage > first index
