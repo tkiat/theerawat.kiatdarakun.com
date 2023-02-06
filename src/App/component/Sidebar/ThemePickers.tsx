@@ -1,8 +1,8 @@
 import React from 'react'
 import {Updater, useImmer} from 'use-immer'
 
-import {Theme, themes} from 'src/App/share/theme'
-import {capitalize, hslToString} from 'src/App/share/general'
+import {Theme, genWaveColors, getPlaceHS, placeList} from 'src/App/share/theme'
+import {capitalize} from 'src/App/share/general'
 import {appId} from 'src/App/share/elementId'
 
 type P = {initPlace: string, waveConfigs: React.MutableRefObject<WaveConfigs>}
@@ -10,7 +10,7 @@ export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement =>
   const [curPlace, setCurPlace] = React.useState(initPlace)
   return (
     <>
-      {themes.map(x =>
+      {placeList.map(x =>
         <div className="grid__item grid__item--6em" key={x}>
           <Picker
             place={x}
@@ -23,8 +23,6 @@ export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement =>
     </>
   )}
 
-type P = {
-          place: Theme, waveConfigs: React.MutableRefObject<WaveConfigs>}
 type P = {
   curPlace: string,
   setCurPlace: Updater<string>,
@@ -39,8 +37,7 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: P): React.ReactElem
       onClick={() => {
         document.getElementById(appId).dataset.themeBase = place
         setCurPlace(place)
-        const [custom, step] = [25, 15]
-        waveConfigs.current.colors = [0, 1, 2].map(x => hslToString({h: 90, s: 100, l: custom + step * x}))
+        waveConfigs.current.colors = genWaveColors(place)
       }}
       data-theme-base={place}
     >
@@ -52,9 +49,9 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: P): React.ReactElem
       <div className="theme-picker__text">Sample text</div>
       <div className="theme-picker__nav-main theme-picker__nav-main--l"></div>
       <div className="theme-picker__nav-main theme-picker__nav-main--r"></div>
-      <div className="theme-picker__wave theme-picker__wave--0"></div>
-      <div className="theme-picker__wave theme-picker__wave--1"></div>
-      <div className="theme-picker__wave theme-picker__wave--2"></div>
+      <div className="theme-picker__wave theme-picker__wave" style={{
+        background: genWaveColors(place)[0]
+      }}></div>
     </button>
   )
 }

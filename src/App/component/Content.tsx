@@ -19,7 +19,6 @@ const mapping = {
 export const Content = (): React.ReactElement =>
   <Router>
     {(() => {
-      console.log("TODO")
       const NotFoundRoute = (_: RouteComponentProps) =>
         <div className="content">
           <NotFound />

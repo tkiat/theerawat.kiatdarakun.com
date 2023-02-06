@@ -1,13 +1,12 @@
 import React from 'react'
 
-import {ThemeObject, wavesKey} from 'src/App/share/theme'
 import {WaveConfigs, drawWaves, moveItemsAlongWave} from './wave'
 
 const itemOffset = 20
 const approxFps = 10, frameInterval = Math.round(1000 / approxFps)
 
-type P = {theme: ThemeObject, waveConfigs: React.MutableRefObject<WaveConfigs>}
-export const DrawCanvas = ({theme, waveConfigs}: P):
+type P = {waveConfigs: React.MutableRefObject<WaveConfigs>}
+export const DrawCanvas = ({waveConfigs}: P):
   React.Ref<HTMLCanvasElement> | undefined => {
   const ref = React.useRef<HTMLCanvasElement>(null)
 

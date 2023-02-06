@@ -45,51 +45,6 @@ h1, h2, h3, a, button, strong, b {
   }
 }
 
-[data-theme-base="ocean"] {
-  --background-image: url("/assets/background/ocean.svg");
-  --hue: 210;
-  --saturation: 100%;
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
-  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
-
-  @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
-  @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
-  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
-}
-[data-theme-base="desert"] {
-  --background-image: url("/assets/background/desert.svg");
-  --hue: 30;
-  --saturation: 100%;
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
-  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
-
-  @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
-  @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
-  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
-}
-[data-theme-base="sakura"] {
-  --background-image: url("/assets/background/sakura.svg");
-  --hue: 330;
-  --saturation: 100%;
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
-  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
-
-  @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
-  @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
-  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
-}
-[data-theme-base="snow"] {
-  --background-image: url("/assets/background/snow.svg");
-  --hue: 0;
-  --saturation: 0%;
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
-  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
-
-  @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
-  @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
-  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
-}
-
 .app {
   &[data-theme-time="day"] {
     --dark: 0;
@@ -245,4 +200,39 @@ input[type='range'] {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@mixin app-and-selector() {
+/*   fields to be shared between the whole app and place selector in the settings menu */
+  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
+  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
+
+  @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
+  @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
+  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
+}
+
+[data-theme-base="ocean"] {
+  --background-image: url("/assets/background/ocean.svg");
+  --hue: 210;
+  --saturation: 100%;
+  @include app-and-selector;
+}
+[data-theme-base="desert"] {
+  --background-image: url("/assets/background/desert.svg");
+  --hue: 30;
+  --saturation: 100%;
+  @include app-and-selector;
+}
+[data-theme-base="sakura"] {
+  --background-image: url("/assets/background/sakura.svg");
+  --hue: 330;
+  --saturation: 100%;
+  @include app-and-selector;
+}
+[data-theme-base="snow"] {
+  --background-image: url("/assets/background/snow.svg");
+  --hue: 0;
+  --saturation: 0%;
+  @include app-and-selector;
 }

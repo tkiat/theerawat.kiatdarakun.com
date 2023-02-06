@@ -69,7 +69,7 @@
   }
   &__nav-main {
     position: absolute;
-    bottom: 9px;
+    bottom: 5px;
 
     width: 6%;
     height: 10px;
@@ -88,17 +88,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    &--0 {
-      bottom: 0;
-      height: 5px;
-    }
-    &--1 {
-      bottom: 5px;
-      height: 2px;
-    }
-    &--2 {
-      bottom: 7px;
-      height: 2px;
-    }
+    bottom: 0;
+    height: 5px;
   }
 }

@@ -1,4 +1,3 @@
-export {Background} from './component/Background'
 export {Canvas} from './component/Canvas'
 export {mkWaves, mkWavePhysics, storeWavePhysics} from './component/Canvas/wave'
 export {Content} from './component/Content'

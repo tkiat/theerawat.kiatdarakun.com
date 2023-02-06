@@ -8,12 +8,12 @@ import {isMobile} from 'src/App/share/general'
 import {hslToString} from 'src/App/share/general'
 import {useViewportDimensions} from 'src/App/share/hook'
 import {Path, adaptPathToUrl, mkPath, numDucks, storePath} from 'src/App/share/path'
-import {initTheme, ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalStyle, mkThemeObject, wavesSubKeys, storeTheme, storeThemeObject, updateFavicon} from 'src/App/share/theme'
+import {genWaveColors, initTheme, storeTheme, updateFavicon} from 'src/App/share/theme'
 
 import 'src/App/share/style/main.scss'
 
 const numPointsOnWave = numDucks + 1
-const numWave = wavesSubKeys.length
+const numWave = 3 // TODO
 
 const { initPlace, initTime } = initTheme()
 
@@ -34,31 +34,23 @@ export const App = (): React.ReactElement => {
   const waveConfigs = React.useRef<WaveConfigs>({
     waves: mkWaves(numWave, numPointsOnWave, dimension, path.current),
     physics: mkWavePhysics(),
-    colors: [0, 1, 2].map(x => hslToString({h: 0, s: 100, l: custom + step * x})),
+    colors: genWaveColors(initPlace)
   })
   React.useEffect(() => {
     waveConfigs.current.waves =
       mkWaves(numWave, numPointsOnWave, dimension, path.current)
   }, [dimension])
 
-//   console.log(document.getElementById("app"))
-//   console.log(getComputedStyle(document.getElementById("app")).getPropertyValue("--hue"))
-
-  const [theme, setTheme] = useImmer<ThemeObject>(mkThemeObject())
   React.useLayoutEffect(() => {
-//     const base = getBaseTheme(theme)
-//     document.documentElement.setAttribute('theme-base', base)
-//     document.documentElement.setAttribute('theme-supplement', theme.current)
-//     document.documentElement.setAttribute('time', theme.time)
 //     updateFavicon(base)
-  }, [theme])
+  }, [])
 
 //   const cleanupRef = React.useRef({path: path, theme: theme})
 //   cleanupRef.current = {path: path, theme: theme}
   React.useEffect(() => {
     const cleanup = () => {
 //       storePath(cleanupRef.current.path)
-      storeTheme(theme)
+      storeTheme()
 //       storeWavePhysics(waveConfigs.current.physics)
     }
     window.addEventListener('beforeunload', cleanup)
@@ -68,7 +60,7 @@ export const App = (): React.ReactElement => {
   }, [])
 
   React.useLayoutEffect(() => {
-    mayApplyBaseTheme()
+//     mayApplyBaseTheme()
     document.getElementById('loading')?.remove()
   }, [])
 
@@ -76,7 +68,6 @@ export const App = (): React.ReactElement => {
     <NavSubMobile path={path} setPath={setPath} />
     : <NavSubTube path={path} setPath={setPath} />
   const title = isMobile() && <Title title={path.mapping[path.current]} />
-//     <div className="app" id={appId} style={mkGlobalStyle(theme)}>
   return (
     <div className="app" data-theme-base={initPlace} data-theme-time={initTime} id={appId}>
       <NavMain path={path} setPath={setPath} />
@@ -90,16 +81,18 @@ export const App = (): React.ReactElement => {
               noThrow />
           </Router>
           {title}
-    {/*      <Background theme={theme} /> */}
           <div id="background"></div>
           <Content />
-          <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
+          <Canvas
+            dimension={dimension}
+            waveConfigs={waveConfigs}
+          />
         </div>
-    {/* <ThemeProvider value={{setTheme, theme}}>      */}
-          <Sidebar waveConfigs={waveConfigs}
-                   initPlace={initPlace}
-                   willShowCustomMenu={theme.current === 'custom'} />
-    {/* </ThemeProvider>      */}
+        <Sidebar
+          waveConfigs={waveConfigs}
+          initPlace={initPlace}
+          initTime={initTime}
+        />
       </main>
     </div>
   )
