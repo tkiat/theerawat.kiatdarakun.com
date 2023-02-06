@@ -2,6 +2,7 @@
 
 @function dayOrDark($day, $dark) {
   @return calc((1 - #{var(--dark)}) * #{$day} + #{var(--dark)} * #{$dark});
+/*   @return calc((1 - var(--dark)) * #{$day} + var(--dark) * #{$dark}); */
 }
 
 @function strip-unit($value) {

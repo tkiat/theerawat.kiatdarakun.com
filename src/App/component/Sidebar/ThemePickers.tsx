@@ -3,6 +3,7 @@ import {Updater} from 'use-immer'
 
 import {Theme, ThemeContext, ThemeObject, duckBodyKey, themes, tubeStrokeKey, tubeWaterKey, wavesKey} from 'src/App/share/theme'
 import {capitalize} from 'src/App/share/general'
+import {appId} from 'src/App/share/elementId'
 
 export const ThemePickers = (): React.ReactElement => {
   const {theme, setTheme} = React.useContext(ThemeContext)
@@ -26,7 +27,10 @@ const Picker = ({themeDisplay, theme, setTheme}: P): React.ReactElement => {
     <button
       className={'theme-picker' +
         (theme.current === themeDisplay ? ' theme-picker--active' : '')}
-      onClick={() => setTheme(d => {d.current = themeDisplay})}
+      onClick={() => {
+        document.getElementById(appId).dataset.themeBase = themeDisplay
+      }}
+//       onClick={() => setTheme(d => {d.current = themeDisplay})}
       theme-base={themeDisplay}
       theme-supplement={themeDisplay}
     >

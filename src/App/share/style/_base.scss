@@ -9,18 +9,11 @@
 
 html {
   font-size: clamp(14px, 1.5vw, 32px);
-  @include m.fluid-type(--nav-tube-height, 768px, 1920px, 60px, 150px);
-  --sidebar-width: max(300px, 30vw);
 
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   overflow: hidden;
-}
-
-::selection {
-  @include m.hsl(background-color, 0, 0%, f.dayOrDark(5%, 95%));
-  @include m.hsl(color, 0, 0%, f.dayOrDark(95%, 5%));
 }
 
 body {
@@ -37,6 +30,8 @@ h1, h2, h3, a, button, strong, b {
 }
 
 .root {
+  --sidebar-width: max(300px, 30vw);
+
   width: calc(100% + var(--sidebar-width));
   height: 100%;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,6 +46,46 @@ h1, h2, h3, a, button, strong, b {
 }
 
 .app {
+  &[data-theme-base="ocean"] {
+    --background-image: url("/assets/background/ocean.svg");
+    --hue: 210;
+    --saturation: 100%;
+/*     --duck-body-color: red !important; */
+  }
+  &[data-theme-base="desert"] {
+    --background-image: url("/assets/background/desert.svg");
+    --hue: 30;
+    --saturation: 100%;
+  }
+  &[data-theme-base="sakura"] {
+    --background-image: url("/assets/background/sakura.svg");
+    --hue: 330;
+    --saturation: 100%;
+  }
+  &[data-theme-base="snow"] {
+    --background-image: url("/assets/background/snow.svg");
+    --hue: 0;
+    --saturation: 0%;
+  }
+
+  &[data-theme-time="day"] {
+    --dark: 0;
+  }
+  &[data-theme-time="dark"] {
+    --dark: 1;
+  }
+
+  @include m.fluid-type(--nav-tube-height, 768px, 1920px, 60px, 150px);
+
+  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
+  @include m.hsl(--background-color, 0, 0%, f.dayOrDark(97%, 3%));
+  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
+  @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
+  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
+  @include m.hsl(--duck-beak-color, 270, 0%, f.dayOrDark(50%, 40%));
+  @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
+  @include m.hsl(--duck-wing-color, 90, 0%, f.dayOrDark(50%, 40%));
+
   display: flex;
   flex-direction: row;
   position: relative;
@@ -58,13 +93,14 @@ h1, h2, h3, a, button, strong, b {
   width: 100%;
   z-index: 12345;
 
-  @include m.hsl(--background-color, 0, 0%, f.dayOrDark(97%, 3%));
-  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
-  @include m.hsl(--link-color, 180, 0%, f.dayOrDark(25%, 75%));
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
-
   color: var(--color);
   background-color: var(--background-color);
+
+  ::selection {
+    @include m.hsl(background-color, 0, 0%, f.dayOrDark(5%, 95%));
+    @include m.hsl(color, 0, 0%, f.dayOrDark(95%, 5%));
+  }
+
   &.waiting {
     cursor: not-allowed;
     &:active {
@@ -92,37 +128,29 @@ h1, h2, h3, a, button, strong, b {
   }
   &__main {
     display: flex;
+
+    #background {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: calc(100% - var(--sidebar-width));
+      height: 100%;
+
+      background-image: var(--background-image);
+      opacity: f.dayOrDark(0.08, 0.05);
+      pointer-events: none;
+      z-index: -1;
+    }
   }
 }
 
 a {
-  @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
+  color: var(--color);
   @include m.hsl(text-decoration-color, 180, 0%, f.dayOrDark(25%, 75%));
   &:hover {
     @include m.hsl(text-decoration-color, 180, 0%, f.dayOrDark(50%, 25%));
   }
-/*   position: relative; */
-/*   display: inline-block; */
-
-/*   text-decoration: none; */
-/*   transition: color 500ms; */
-/*   &:after { */
-/*     position: absolute; */
-/*     display: block; */
-/*     bottom: 0px; */
-/*     width: 100%; */
-/*     height: 2px; */
-/*  */
-/*     content: ''; */
-/*     @include m.hsl(background-color, 180, 0%, f.dayOrDark(25%, 75%)); */
-/*     transition: width 500ms; */
-/*   } */
-/*   &:hover { */
-/*     @include m.hsl(color, 180, 0%, f.dayOrDark(25%, 75%)); */
-/*     &:after { */
-/*       width: 0; */
-/*     } */
-/*   } */
 }
 
 a:focus,

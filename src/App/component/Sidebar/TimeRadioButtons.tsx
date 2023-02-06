@@ -1,5 +1,6 @@
 import React from 'react'
 
+import {appId} from 'src/App/share/elementId'
 import {capitalize} from 'src/App/share/general'
 import {ThemeContext, Time, times} from 'src/App/share/theme'
 
@@ -8,8 +9,9 @@ export const TimeRadioButtons = (): React.ReactElement => {
   return (
     <div
       className="sidebar__time"
+      onClick={e => {document.getElementById(appId).dataset.themeTime = e.target.value}}
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-        setTheme(d => {d.time = e.target.value as Time})
+//         setTheme(d => {d.time = e.target.value as Time})
       }}
     >
     {times.map((t, i) =>

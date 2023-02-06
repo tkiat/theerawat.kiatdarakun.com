@@ -68,8 +68,9 @@ export const App = (): React.ReactElement => {
     : <NavSubTube path={path} setPath={setPath} />
   const title = isMobile() && <Title title={path.mapping[path.current]} />
 
+//     <div className="app" id={appId} style={mkGlobalStyle(theme)}>
   return (
-    <div className="app" id={appId} style={mkGlobalStyle(theme)}>
+    <div className="app" data-theme-base="ocean" data-theme-time="day" id={appId}>
       <NavMain path={path} setPath={setPath} />
       {navSub}
       <main className="app__main">
@@ -81,7 +82,8 @@ export const App = (): React.ReactElement => {
               noThrow />
           </Router>
           {title}
-          <Background theme={theme} />
+    {/*      <Background theme={theme} /> */}
+          <div id="background"></div>
           <Content />
           <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
         </div>

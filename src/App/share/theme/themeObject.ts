@@ -8,7 +8,8 @@ import {DuckAndTubeKeys, WavesKey, defaultMappings, duckBeakKey, duckBodyKey, du
 export const customTheme = 'custom'
 
 export type Theme = (typeof themes)[number]
-export const themes = [...baseThemes, customTheme] as const
+// export const themes = [...baseThemes, customTheme] as const
+export const themes = baseThemes as const
 
 const localThemeKey = 'theme'
 

@@ -12,8 +12,6 @@
   height: 100vh;
   width: 100vw;
 
-  @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
-/*   text-shadow: -1px 1px x, 1px 1px x, 1px -1px x, -2px -2px x; */
   &--content {
     position: unset;
     height: unset;
