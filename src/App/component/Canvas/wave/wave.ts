@@ -10,7 +10,11 @@ type MkWaveArgument = {
 }
 
 export type Wave = {points: Point[]}
-export type WaveConfigs = {waves: Wave[], physics: WavePhysics}
+export type WaveConfigs = {
+  waves: Wave[],
+  physics: WavePhysics,
+  colors: string[],
+}
 export type WavePhysics = {height: number, speed: number, shakiness: number}
 
 const localWavePhysicsKey = {

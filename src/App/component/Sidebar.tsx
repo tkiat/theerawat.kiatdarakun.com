@@ -3,8 +3,6 @@ import React from 'react'
 import {sidebarId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
 import {WaveConfigs} from './Canvas/wave'
-import {BaseThemePicker}    from './Sidebar/BaseThemePicker'
-import {DuckColorPickers, TubeColorPickers, WaveColorPickers}   from './Sidebar/ColorPicker'
 import {SidebarToggler}     from './Sidebar/SidebarToggler'
 import {ThemePickers}       from './Sidebar/ThemePickers'
 import {TimeRadioButtons}   from './Sidebar/TimeRadioButtons'
@@ -15,7 +13,7 @@ type P = {
   initTime: string
   waveConfigs: React.MutableRefObject<WaveConfigs>
 }
-export const Sidebar = ({initPlace, initTime, waveConfigs, willShowCustomMenu}: P):
+export const Sidebar = ({initPlace, initTime, waveConfigs}: P):
   React.ReactElement =>
   <>
     <SidebarToggler />

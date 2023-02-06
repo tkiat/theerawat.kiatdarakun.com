@@ -1,2 +1,1 @@
-export {Markdown} from './share/Markdown'
-export {TabsContent} from './share/TabsContent'
+export {TooltipText, TooltipTextWithDelay, TooltipFa, TooltipFaWithDelay} from './share/Tooltip'

@@ -2,7 +2,7 @@ import {Redirect, Router} from '@reach/router'
 import React from 'react'
 import {useImmer} from 'use-immer'
 
-import {Background, Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics, Title} from './App/component'
+import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics} from 'src/App/component'
 import {appId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
 import {hslToString} from 'src/App/share/general'
@@ -51,7 +51,7 @@ export const App = (): React.ReactElement => {
     const cleanup = () => {
 //       storePath(cleanupRef.current.path)
       storeTheme()
-//       storeWavePhysics(waveConfigs.current.physics)
+      storeWavePhysics(waveConfigs.current.physics)
     }
     window.addEventListener('beforeunload', cleanup)
     return () => {

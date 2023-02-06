@@ -1,3 +1,5 @@
+import {DuckColorPickers, TubeColorPickers, WaveColorPickers}   from './Sidebar/ColorPicker'
+
 {willShowCustomMenu &&
 <>
   <hr className="sidebar__linebreak sidebar__linebreak--custom" />

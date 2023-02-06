@@ -1,7 +1,8 @@
 import React from 'react'
 import {Updater, useImmer} from 'use-immer'
 
-import {Theme, genWaveColors, getPlaceHS, placeList} from 'src/App/share/theme'
+import {WaveConfigs} from 'src/App/component/Canvas/wave'
+import {Place, genWaveColors, getPlaceHS, placeList} from 'src/App/share/theme'
 import {capitalize} from 'src/App/share/general'
 import {appId} from 'src/App/share/elementId'
 
@@ -23,19 +24,22 @@ export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement =>
     </>
   )}
 
-type P = {
+type Q = {
   curPlace: string,
-  setCurPlace: Updater<string>,
-  place: Theme,
+  setCurPlace: React.Dispatch<React.SetStateAction<string>>,
+  place: Place,
   waveConfigs: React.MutableRefObject<WaveConfigs>
 }
-const Picker = ({curPlace, place, setCurPlace, waveConfigs}: P): React.ReactElement => {
+const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElement => {
   const title = capitalize(place)
   return (
     <button
       className={'theme-picker' + (place === curPlace ? ' theme-picker--active' : '')}
       onClick={() => {
-        document.getElementById(appId).dataset.themeBase = place
+        const app = document.getElementById(appId)
+        if (app) {
+          app.dataset.themeBase = place
+        }
         setCurPlace(place)
         waveConfigs.current.colors = genWaveColors(place)
       }}

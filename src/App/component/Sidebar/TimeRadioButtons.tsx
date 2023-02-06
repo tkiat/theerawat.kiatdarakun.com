@@ -10,7 +10,10 @@ export const TimeRadioButtons = ({initTime}: P): React.ReactElement => {
     <div
       className="sidebar__time"
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-        document.getElementById(appId).dataset.themeTime = e.target.value
+        const app = document.getElementById(appId)
+        if (app) {
+          app.dataset.themeTime = e.target.value
+        }
       }}
     >
     {timeList.map((t, i) =>
