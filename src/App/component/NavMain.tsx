@@ -19,8 +19,7 @@ export const NavMain = ({path, setPath}: P):
       <ItemContent
         key={x}
         path={x}
-        to={path.current === x ? window.location.pathname
-          : '/' + x + '/' + path.mapping[x]}
+        to={'/' + x + '/' + path.mapping[x]}
         isActive={x === path.current}
         left={left(i)}
         onclick={() => {

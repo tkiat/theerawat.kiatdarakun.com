@@ -20,6 +20,15 @@
   color: inherit;
 
   will-change: transform;
+  &--content {
+    &.nav-main--active {
+      pointer-events: none;
+    }
+  }
+  &--sidebar {
+    cursor: pointer;
+    background: none;
+  }
   &--active {
     #{$root}__svg {
       filter: none;
@@ -30,10 +39,6 @@
     #{$root}__text:after {
       width: 0;
     }
-  }
-  &--sidebar {
-    cursor: pointer;
-    background: none;
   }
   &:active {
     #{$root}__svg {

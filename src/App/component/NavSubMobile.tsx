@@ -2,7 +2,7 @@ import {Link} from '@reach/router'
 import React from 'react'
 import {Updater} from 'use-immer'
 
-import {ReactComponent as DuckHamburger} from 'assets/duck/duck-hamburger.svg'
+import {ReactComponent as DuckHamburger} from 'assets/duck/hamburger.svg'
 import {capitalize} from 'src/App/share/general'
 import {Path, pathObject} from 'src/App/share/path'
 

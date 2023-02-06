@@ -198,10 +198,6 @@ input[type='range'] {
   opacity: 0.5;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 @mixin app-and-selector() {
 /*   fields to be shared between the whole app and place selector in the settings menu */
   @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
