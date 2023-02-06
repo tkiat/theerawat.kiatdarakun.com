@@ -57,7 +57,7 @@
     top: 30%;
 
     font-weight: bold;
-    @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+    color: var(--highlight-color)
   }
   &__text {
     position: absolute;
@@ -65,7 +65,7 @@
     top: 50%;
     white-space: wrap;
 
-    @include m.hsl(color, 0, 0%, f.dayOrDark(5%, 95%));
+    color: var(--color)
   }
   &__nav-main {
     position: absolute;

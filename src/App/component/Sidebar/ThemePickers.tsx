@@ -2,58 +2,51 @@ import React from 'react'
 import {Updater} from 'use-immer'
 
 import {Theme, ThemeContext, ThemeObject, duckBodyKey, themes, tubeStrokeKey, tubeWaterKey, wavesKey} from 'src/App/share/theme'
-import {capitalize} from 'src/App/share/general'
+import {capitalize, hslToString} from 'src/App/share/general'
 import {appId} from 'src/App/share/elementId'
 
-export const ThemePickers = (): React.ReactElement => {
+type P = {waveConfigs: React.MutableRefObject<WaveConfigs>}
+export const ThemePickers = ({waveConfigs}: P): React.ReactElement => {
   const {theme, setTheme} = React.useContext(ThemeContext)
   return (
     <>
       {themes.map(x =>
         <div className="grid__item grid__item--6em" key={x}>
-          <Picker setTheme={setTheme} themeDisplay={x} theme={theme} />
+          <Picker setTheme={setTheme} place={x} theme={theme} waveConfigs={waveConfigs} />
         </div>
       )}
     </>
   )}
 
 type P = {setTheme: Updater<ThemeObject>, theme: ThemeObject,
-          themeDisplay: Theme}
-const Picker = ({themeDisplay, theme, setTheme}: P): React.ReactElement => {
-  const o = {...theme, current: themeDisplay}
+          place: Theme, waveConfigs: React.MutableRefObject<WaveConfigs>}
+const Picker = ({place, theme, setTheme, waveConfigs}: P): React.ReactElement => {
+  const o = {...theme, current: place}
   const ts = o.get(tubeStrokeKey)
-  const title = capitalize(themeDisplay)
+  const title = capitalize(place)
   return (
     <button
       className={'theme-picker' +
-        (theme.current === themeDisplay ? ' theme-picker--active' : '')}
+        (theme.current === place ? ' theme-picker--active' : '')}
       onClick={() => {
-        document.getElementById(appId).dataset.themeBase = themeDisplay
+        document.getElementById(appId).dataset.themeBase = place
+        const [custom, step] = [25, 15]
+        waveConfigs.current.colors = [0, 1, 2].map(x => hslToString({h: 90, s: 100, l: custom + step * x}))
       }}
-//       onClick={() => setTheme(d => {d.current = themeDisplay})}
-      theme-base={themeDisplay}
-      theme-supplement={themeDisplay}
+//       theme-supplement={place}
+      data-theme-base={place}
     >
     {
       //@ts-ignore
-      <div className={'theme-picker__nav-tube'} overlay={title} style={{
-        color: o.get(tubeWaterKey),
-        textShadow: `-1px 0 ${ts}, 0 1px ${ts}, 1px 0 ${ts}, 0 -1px ${ts}`
-      }}>{title}</div>
+      <div className="theme-picker__nav-tube" overlay={title}>{title}</div>
     }
-      <div className={'theme-picker__header'}>Header</div>
-      <div className={'theme-picker__text'}>Sample text</div>
-    {['l', 'r'].map((x, i) =>
-      <div key={i}
-           className={'theme-picker__nav-main theme-picker__nav-main--' + x}
-           style={{backgroundColor: o.get(duckBodyKey)}}
-      >
-      </div>
-    )}
-    {o.getArr(wavesKey).map((x, i) =>
-      <div key={i} className={`theme-picker__wave theme-picker__wave--${i}`}
-           style={{backgroundColor: x}}></div>
-    )}
+      <div className="theme-picker__header">Header</div>
+      <div className="theme-picker__text">Sample text</div>
+      <div className="theme-picker__nav-main theme-picker__nav-main--l"></div>
+      <div className="theme-picker__nav-main theme-picker__nav-main--r"></div>
+      <div className="theme-picker__wave theme-picker__wave--0"></div>
+      <div className="theme-picker__wave theme-picker__wave--1"></div>
+      <div className="theme-picker__wave theme-picker__wave--2"></div>
     </button>
   )
 }

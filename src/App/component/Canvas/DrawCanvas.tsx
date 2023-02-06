@@ -11,9 +11,6 @@ export const DrawCanvas = ({theme, waveConfigs}: P):
   React.Ref<HTMLCanvasElement> | undefined => {
   const ref = React.useRef<HTMLCanvasElement>(null)
 
-  const waveColors = React.useRef<string[]>(theme.getArr(wavesKey))
-  waveColors.current = theme.getArr(wavesKey)
-
   React.useEffect(() => {
     if (!ref.current) return
     const canvas = ref.current
@@ -29,7 +26,7 @@ export const DrawCanvas = ({theme, waveConfigs}: P):
 
     const updateCanvas = () => {
       const waves = waveConfigs.current.waves
-      drawWaves(context, waves, physics, waveColors.current)
+      drawWaves(context, waves, physics, waveConfigs.current.colors)
       moveItemsAlongWave(itemsOnWave, waves[waves.length - 1], itemOffset)
     }
 

@@ -37,7 +37,7 @@ export const Sidebar = ({willShowCustomMenu, waveConfigs}: P):
       <section className="sidebar__section">
         <div className="sidebar__header">Theme</div>
         <div className="grid">
-          <ThemePickers />
+          <ThemePickers waveConfigs={waveConfigs} />
         </div>
       </section>
 

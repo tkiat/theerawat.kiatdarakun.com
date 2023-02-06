@@ -5,14 +5,17 @@ import {useImmer} from 'use-immer'
 import {Background, Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics, Title} from './App/component'
 import {appId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
+import {hslToString} from 'src/App/share/general'
 import {useViewportDimensions} from 'src/App/share/hook'
 import {Path, adaptPathToUrl, mkPath, numDucks, storePath} from 'src/App/share/path'
-import {ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalStyle, mkThemeObject, wavesSubKeys, storeThemeObject, updateFavicon} from 'src/App/share/theme'
+import {initTheme, ThemeObject, ThemeProvider, getBaseTheme, mayApplyBaseTheme, mkGlobalStyle, mkThemeObject, wavesSubKeys, storeTheme, storeThemeObject, updateFavicon} from 'src/App/share/theme'
 
 import 'src/App/share/style/main.scss'
 
 const numPointsOnWave = numDucks + 1
 const numWave = wavesSubKeys.length
+
+const { initPlace, initTime } = initTheme()
 
 export const App = (): React.ReactElement => {
   const dimension = useViewportDimensions({msDelay: 500})
@@ -26,31 +29,37 @@ export const App = (): React.ReactElement => {
     }
   }, [])
 
+  const [custom, step] = [25, 15]
+
   const waveConfigs = React.useRef<WaveConfigs>({
     waves: mkWaves(numWave, numPointsOnWave, dimension, path.current),
-    physics: mkWavePhysics()
+    physics: mkWavePhysics(),
+    colors: [0, 1, 2].map(x => hslToString({h: 0, s: 100, l: custom + step * x})),
   })
   React.useEffect(() => {
     waveConfigs.current.waves =
       mkWaves(numWave, numPointsOnWave, dimension, path.current)
   }, [dimension])
 
+//   console.log(document.getElementById("app"))
+//   console.log(getComputedStyle(document.getElementById("app")).getPropertyValue("--hue"))
+
   const [theme, setTheme] = useImmer<ThemeObject>(mkThemeObject())
   React.useLayoutEffect(() => {
-    const base = getBaseTheme(theme)
-    document.documentElement.setAttribute('theme-base', base)
-    document.documentElement.setAttribute('theme-supplement', theme.current)
-    document.documentElement.setAttribute('time', theme.time)
-    updateFavicon(base)
+//     const base = getBaseTheme(theme)
+//     document.documentElement.setAttribute('theme-base', base)
+//     document.documentElement.setAttribute('theme-supplement', theme.current)
+//     document.documentElement.setAttribute('time', theme.time)
+//     updateFavicon(base)
   }, [theme])
 
-  const cleanupRef = React.useRef({path: path, theme: theme})
-  cleanupRef.current = {path: path, theme: theme}
+//   const cleanupRef = React.useRef({path: path, theme: theme})
+//   cleanupRef.current = {path: path, theme: theme}
   React.useEffect(() => {
     const cleanup = () => {
-      storePath(cleanupRef.current.path)
-      storeThemeObject(cleanupRef.current.theme)
-      storeWavePhysics(waveConfigs.current.physics)
+//       storePath(cleanupRef.current.path)
+      storeTheme(theme)
+//       storeWavePhysics(waveConfigs.current.physics)
     }
     window.addEventListener('beforeunload', cleanup)
     return () => {
@@ -67,10 +76,9 @@ export const App = (): React.ReactElement => {
     <NavSubMobile path={path} setPath={setPath} />
     : <NavSubTube path={path} setPath={setPath} />
   const title = isMobile() && <Title title={path.mapping[path.current]} />
-
 //     <div className="app" id={appId} style={mkGlobalStyle(theme)}>
   return (
-    <div className="app" data-theme-base="ocean" data-theme-time="day" id={appId}>
+    <div className="app" data-theme-base={initPlace} data-theme-time={initTime} id={appId}>
       <NavMain path={path} setPath={setPath} />
       {navSub}
       <main className="app__main">
@@ -87,10 +95,10 @@ export const App = (): React.ReactElement => {
           <Content />
           <Canvas dimension={dimension} theme={theme} waveConfigs={waveConfigs} />
         </div>
-        <ThemeProvider value={{setTheme, theme}}>
+    {/* <ThemeProvider value={{setTheme, theme}}>      */}
           <Sidebar waveConfigs={waveConfigs}
                    willShowCustomMenu={theme.current === 'custom'} />
-        </ThemeProvider>
+    {/* </ThemeProvider>      */}
       </main>
     </div>
   )

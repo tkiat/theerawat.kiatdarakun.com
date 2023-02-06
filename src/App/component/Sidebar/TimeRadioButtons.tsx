@@ -9,8 +9,8 @@ export const TimeRadioButtons = (): React.ReactElement => {
   return (
     <div
       className="sidebar__time"
-      onClick={e => {document.getElementById(appId).dataset.themeTime = e.target.value}}
       onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
+        document.getElementById(appId).dataset.themeTime = e.target.value
 //         setTheme(d => {d.time = e.target.value as Time})
       }}
     >
