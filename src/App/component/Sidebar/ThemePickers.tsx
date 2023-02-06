@@ -1,39 +1,47 @@
 import React from 'react'
-import {Updater} from 'use-immer'
+import {Updater, useImmer} from 'use-immer'
 
-import {Theme, ThemeContext, ThemeObject, duckBodyKey, themes, tubeStrokeKey, tubeWaterKey, wavesKey} from 'src/App/share/theme'
+import {Theme, themes} from 'src/App/share/theme'
 import {capitalize, hslToString} from 'src/App/share/general'
 import {appId} from 'src/App/share/elementId'
 
-type P = {waveConfigs: React.MutableRefObject<WaveConfigs>}
-export const ThemePickers = ({waveConfigs}: P): React.ReactElement => {
-  const {theme, setTheme} = React.useContext(ThemeContext)
+type P = {initPlace: string, waveConfigs: React.MutableRefObject<WaveConfigs>}
+export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement => {
+  const [curPlace, setCurPlace] = React.useState(initPlace)
   return (
     <>
       {themes.map(x =>
         <div className="grid__item grid__item--6em" key={x}>
-          <Picker setTheme={setTheme} place={x} theme={theme} waveConfigs={waveConfigs} />
+          <Picker
+            place={x}
+            curPlace={curPlace}
+            setCurPlace={setCurPlace}
+            waveConfigs={waveConfigs}
+          />
         </div>
       )}
     </>
   )}
 
-type P = {setTheme: Updater<ThemeObject>, theme: ThemeObject,
+type P = {
           place: Theme, waveConfigs: React.MutableRefObject<WaveConfigs>}
-const Picker = ({place, theme, setTheme, waveConfigs}: P): React.ReactElement => {
-  const o = {...theme, current: place}
-  const ts = o.get(tubeStrokeKey)
+type P = {
+  curPlace: string,
+  setCurPlace: Updater<string>,
+  place: Theme,
+  waveConfigs: React.MutableRefObject<WaveConfigs>
+}
+const Picker = ({curPlace, place, setCurPlace, waveConfigs}: P): React.ReactElement => {
   const title = capitalize(place)
   return (
     <button
-      className={'theme-picker' +
-        (theme.current === place ? ' theme-picker--active' : '')}
+      className={'theme-picker' + (place === curPlace ? ' theme-picker--active' : '')}
       onClick={() => {
         document.getElementById(appId).dataset.themeBase = place
+        setCurPlace(place)
         const [custom, step] = [25, 15]
         waveConfigs.current.colors = [0, 1, 2].map(x => hslToString({h: 90, s: 100, l: custom + step * x}))
       }}
-//       theme-supplement={place}
       data-theme-base={place}
     >
     {

@@ -97,6 +97,7 @@ export const App = (): React.ReactElement => {
         </div>
     {/* <ThemeProvider value={{setTheme, theme}}>      */}
           <Sidebar waveConfigs={waveConfigs}
+                   initPlace={initPlace}
                    willShowCustomMenu={theme.current === 'custom'} />
     {/* </ThemeProvider>      */}
       </main>

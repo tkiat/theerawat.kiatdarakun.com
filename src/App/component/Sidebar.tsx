@@ -11,10 +11,11 @@ import {TimeRadioButtons}   from './Sidebar/TimeRadioButtons'
 import {WavePhysicsSliders} from './Sidebar/WavePhysicsSliders'
 
 type P = {
-  willShowCustomMenu: boolean
+  initPlace: string
   waveConfigs: React.MutableRefObject<WaveConfigs>
+  willShowCustomMenu: boolean
 }
-export const Sidebar = ({willShowCustomMenu, waveConfigs}: P):
+export const Sidebar = ({initPlace, waveConfigs, willShowCustomMenu}: P):
   React.ReactElement =>
   <>
     <SidebarToggler />
@@ -37,7 +38,7 @@ export const Sidebar = ({willShowCustomMenu, waveConfigs}: P):
       <section className="sidebar__section">
         <div className="sidebar__header">Theme</div>
         <div className="grid">
-          <ThemePickers waveConfigs={waveConfigs} />
+          <ThemePickers initPlace={initPlace} waveConfigs={waveConfigs} />
         </div>
       </section>
 
