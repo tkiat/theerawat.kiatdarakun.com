@@ -1,7 +1,7 @@
 import React from "react"
 
 import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from "../share"
-import {initInPageNavButtons, initIntObserver} from "@app/share"
+import {getRange, initInPageNavButtons, initIntObserver} from "@app/share"
 
 type CategoryProps = {
   header: string,
@@ -22,7 +22,6 @@ type CategoryProps = {
     }
   ]
 }
-
 
 const getFormatIcon = (f: string) => {
   switch(f) {
@@ -60,17 +59,19 @@ const page = "activity-digest"
 let observer: IntersectionObserver, sections: NodeListOf<Element>
 
 export const Digest = (): React.ReactElement => {
-
-  const [items, setItems] = React.useState()
+  const [items, setItems] = React.useState([])
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const raw = await fetch("/digest.json")
+      const res = await fetch("/digest.json")
 
       if (mounted) {
-        setItems(await raw.json())
+        const contentType = res.headers.get("content-type");
+        if (contentType && contentType.indexOf("application/json") !== -1) {
+           setItems(await res.json())
+        }
 
         initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
         sections = document.querySelectorAll(`[id^="section-${page}"]`)
@@ -80,14 +81,16 @@ export const Digest = (): React.ReactElement => {
 
     return () => {
       mounted = false
-      sections.forEach(section => {
+      sections?.forEach(section => {
         observer.unobserve(section)
       })
     }
   }, [])
 
-  return items === undefined ?
-    <div className="no-split">Loading ...</div> :
+  const numCategories = items.length
+  const categoryIndexes = getRange(0, numCategories - 1)
+
+  return (
     <div className="split">
       <div className="split__status">
         <button className="split__icon" id={`btn-${page}-0`}>
@@ -122,33 +125,25 @@ export const Digest = (): React.ReactElement => {
           </ul>
         </TooltipText>.
 
-        <section id={`section-${page}-0`}>
-          {renderCategory(items[0])}
-        </section>
-
-        <hr />
-
-        <section id={`section-${page}-1`}>
-          {renderCategory(items[1])}
-        </section>
-
-        <hr />
-
-        <section id={`section-${page}-2`}>
-          {renderCategory(items[2])}
-        </section>
-
-        <hr />
-
-        <section id={`section-${page}-3`}>
-          {renderCategory(items[3])}
-        </section>
-
-        <hr />
-
-        <section id={`section-${page}-4`}>
-          {renderCategory(items[4])}
-        </section>
+      {
+        items === undefined ?
+          <p>Loading ...</p> :
+          <>
+            {
+              categoryIndexes.map((x, i) =>
+                <React.Fragment key={i}>
+                  <section id={`section-${page}-${x}`}>
+                    {renderCategory(items[x])}
+                  </section>
+                  {
+                    i !== categoryIndexes.length - 1 && <hr />
+                  }
+                </React.Fragment >
+              )
+            }
+          </>
+      }
       </div>
     </div>
+  )
 }

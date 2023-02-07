@@ -76,33 +76,44 @@ export const Create = (): React.ReactElement => {
     let mounted = true;
 
     (async () => {
-      const [appsRaw, blogsRaw, videosRaw] = await Promise.all([
+      const [aRes, bRes, vRes] = await Promise.all([
         fetch("/create/apps.json"),
         fetch("/create/blog.json"),
         fetch("/create/videos.json"),
       ])
 
       if (mounted) {
-        setApps(await appsRaw.json())
-        setBlogs(await blogsRaw.json())
-        setVideos(await videosRaw.json())
+        const aResType = aRes.headers.get("content-type");
+        if (aResType && aResType.indexOf("application/json") !== -1) {
+          setApps(await aRes.json())
+        }
+
+        const bResType = bRes.headers.get("content-type");
+        if (bResType && bResType.indexOf("application/json") !== -1) {
+          setBlogs(await bRes.json())
+        }
+
+        const vResType = vRes.headers.get("content-type");
+        if (vResType && vResType.indexOf("application/json") !== -1) {
+          setVideos(await vRes.json())
+        }
 
         initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
         sections = document.querySelectorAll(`[id^="section-${page}"]`)
         observer = initIntObserver(sections)
+
       }
     })()
 
     return () => {
       mounted = false
-      sections.forEach(section => {
+      sections?.forEach(section => {
         observer.unobserve(section)
       })
     }
   }, [])
 
-  return (apps === undefined || blogs === undefined || videos === undefined) ?
-    <div className="no-split">Loading ...</div> :
+  return (
     <div className="split">
       <div className="split__status">
         <button className="split__icon" id={`btn-${page}-software`}>
@@ -126,7 +137,7 @@ export const Create = (): React.ReactElement => {
         <section id={`section-${page}-software`}>
           <h2>Software</h2>
           <h3 className="highlight">Apps</h3>
-          {renderAppItems(apps)}
+          {apps === undefined ? <p>Loading ...</p> : renderAppItems(apps)}
         </section>
 
         <hr />
@@ -134,7 +145,7 @@ export const Create = (): React.ReactElement => {
         <section id={`section-${page}-write`}>
           <h2>Writing</h2>
           <h3 className="highlight">My Own Blog Site</h3>
-          {renderContentItems(blogs)}
+          {blogs === undefined ? <p>Loading ...</p> : renderContentItems(blogs)}
         </section>
 
         <hr />
@@ -142,8 +153,9 @@ export const Create = (): React.ReactElement => {
         <section id={`section-${page}-video`}>
           <h2>Videos</h2>
           <h3 className="highlight">Channel</h3>
-          {renderContentItems(videos)}
+          {videos === undefined ? <p>Loading ...</p> : renderContentItems(videos)}
         </section>
       </div>
     </div>
+  )
 }
