@@ -205,7 +205,7 @@ input[type="range"] {
 
   @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
   @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));
-  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
+  @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 25%), 1);
 }
 
 [data-location="ocean"] {
@@ -227,7 +227,7 @@ input[type="range"] {
   @include app-and-selector;
 }
 [data-location="snow"] {
-  --background-image: url("/assets/background/snow.svg");
+  --background-image: url("@assets/background/snow.svg");
   --hue: 0;
   --saturation: 0%;
   @include app-and-selector;
