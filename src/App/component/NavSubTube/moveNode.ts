@@ -1,4 +1,4 @@
-import {appId} from 'src/App/share/elementId'
+import {appId} from 'share/elementId'
 import {moveWater} from './moveWater'
 
 const isPositionValid = (x: number): boolean => x >= 0 && x % 2 === 0

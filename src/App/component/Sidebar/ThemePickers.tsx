@@ -1,10 +1,10 @@
 import React from 'react'
 import {Updater, useImmer} from 'use-immer'
 
-import {WaveConfigs, numWave} from 'src/App/component/Canvas/wave'
-import {Place, genWaveColors, placeList, updateFavicon} from 'src/App/share/theme'
-import {capitalize} from 'src/App/share/general'
-import {appId} from 'src/App/share/elementId'
+import {WaveConfigs, numWave} from 'component/Canvas/wave'
+import {Place, genWaveColors, placeList, updateFavicon} from 'share/theme'
+import {capitalize} from 'share/general'
+import {appId} from 'share/elementId'
 
 type P = {initPlace: string, waveConfigs: React.MutableRefObject<WaveConfigs>}
 export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement => {

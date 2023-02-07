@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipText} from 'src/App/component/Content/share'
+import {TooltipText} from 'component/Content/share'
 
 export const Realization = (): React.ReactElement =>
   <>

@@ -1,5 +1,5 @@
-import {appId} from 'src/App/share/elementId'
-import {getRange, isType, hslToString} from 'src/App/share/general'
+import {appId} from './elementId'
+import {getRange, isType, hslToString} from './general'
 
 type HS = {h: number, s: number}
 

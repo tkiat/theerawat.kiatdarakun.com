@@ -1,4 +1,4 @@
-import {navMainSidebarId, sidebarId, sidebarTogglerId} from 'src/App/share/elementId'
+import {navMainSidebarId, sidebarId, sidebarTogglerId} from 'share/elementId'
 
 export const toggleSidebar = () => {
   document.getElementById('root')?.classList?.toggle('move')

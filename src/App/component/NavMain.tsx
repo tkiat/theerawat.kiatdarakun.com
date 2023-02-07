@@ -1,8 +1,8 @@
 import React from 'react'
 import {Updater} from 'use-immer'
 
-import {isType} from 'src/App/share/general'
-import {Path, mainPaths, numDucks, pathObject, subPaths} from 'src/App/share/path'
+import {isType} from 'share/general'
+import {Path, mainPaths, numDucks, pathObject, subPaths} from 'share/path'
 
 import {ItemContent} from './NavMain/ItemContent'
 import {ItemSidebar} from './NavMain/ItemSidebar'

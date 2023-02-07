@@ -3,15 +3,11 @@ import path from 'path'
 import {defineConfig} from 'vite'
 import svgr from 'vite-plugin-svgr'
 
-const pathAssets = path.resolve(__dirname, './assets')
-const pathSrc = path.resolve(__dirname, './src')
+const pathAssets = path.resolve(__dirname, './src/App/assets')
+const pathComponent = path.resolve(__dirname, './src/App/component')
+const pathShare = path.resolve(__dirname, './src/App/share')
 
 export default defineConfig({
-  // build: {
-  // minify: false,
-  //     rollupOptions: {
-  //     }
-  // },
   server: {
     host: true,
     port: 3000,
@@ -20,7 +16,8 @@ export default defineConfig({
   resolve: {
     alias: {
       assets: pathAssets,
-      src: pathSrc,
+      component: pathComponent,
+      share: pathShare,
     },
   },
 })

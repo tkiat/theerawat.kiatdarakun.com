@@ -1,5 +1,5 @@
 import {Coordinate, Dimension, Line} from '@types-basic'
-import {MainPath, mainPaths} from 'src/App/share/path'
+import {MainPath, mainPaths} from 'share/path'
 import {point, Point} from './point'
 
 type MkWaveArgument = {

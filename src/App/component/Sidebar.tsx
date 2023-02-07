@@ -1,8 +1,8 @@
 import React from 'react'
 
-import {sidebarId} from 'src/App/share/elementId'
-import {isMobile} from 'src/App/share/general'
-import {WaveConfigs} from './Canvas/wave'
+import {sidebarId} from 'share/elementId'
+import {isMobile} from 'share/general'
+import {WaveConfigs} from 'component/Canvas/wave'
 import {SidebarToggler}     from './Sidebar/SidebarToggler'
 import {ThemePickers}       from './Sidebar/ThemePickers'
 import {TimeRadioButtons}   from './Sidebar/TimeRadioButtons'

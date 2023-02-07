@@ -2,7 +2,7 @@ import React from 'react'
 import {Router, RouteComponentProps} from '@reach/router'
 
 import {Character, Digest, Events, Create, Hi, NotFound, Story} from './Content/page'
-import {pathObject} from 'src/App/share/path'
+import {pathObject} from 'share/path'
 
 const paths = Object.entries(pathObject).
   map(([k, v]) => v.length ? v.map(x => k + '/' + x) : [k]).flat(1)

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from 'src/App/component/Content/share'
-import {initInPageNavButtons, initIntObserver} from 'src/App/share/general'
+import {TooltipFa, TooltipFaWithDelay, TooltipText, TooltipTextWithDelay} from 'component/Content/share'
+import {initInPageNavButtons, initIntObserver} from 'share/general'
 
 type CategoryProps = {
   header: string,
