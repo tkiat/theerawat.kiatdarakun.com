@@ -2,8 +2,9 @@ import React from "react"
 import {Updater} from "use-immer"
 
 import {ReactComponent as Terminator} from "@assets/valve/valve-terminator.svg"
-import {capitalize} from "@share/general"
-import {Path, getSubpageIndex, pathObject} from "@share/path"
+
+import {Path, capitalize, getSubpageIndex, pathObject} from "@app/share"
+
 import {NodeText} from "./NavSubTube/NodeText"
 import {NodeValve} from "./NavSubTube/NodeValve"
 import {moveNode} from "./NavSubTube/moveNode"

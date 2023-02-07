@@ -12,9 +12,8 @@
     "jsx": "react",
     "noEmit": true,
     "paths": {
-      "@assets/*": ["src/App/assets/*"],
-      "@component/*": ["src/App/component/*"],
-      "@share/*": ["src/App/share/*"]
+      "@app/*": ["src/App/*"],
+      "@assets/*": ["assets/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": false,

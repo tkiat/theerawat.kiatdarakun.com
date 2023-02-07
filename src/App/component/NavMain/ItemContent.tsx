@@ -1,10 +1,10 @@
 import {Link} from "@reach/router"
 import React from "react"
 
+import {MainPath, capitalize} from "@app/share"
+
 import {ReactComponent as DuckAboutMe} from "@assets/duck/aboutme.svg"
 import {ReactComponent as DuckHobby} from "@assets/duck/activity.svg"
-import {capitalize} from "@share/general"
-import {MainPath} from "@share/path"
 
 type P = {isActive: boolean, left: string, onclick: () => void, path: MainPath,
           to: string}

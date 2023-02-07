@@ -3,8 +3,8 @@ import React from "react"
 import {Updater} from "use-immer"
 
 import {ReactComponent as DuckHamburger} from "@assets/duck/hamburger.svg"
-import {capitalize} from "@share/general"
-import {Path, pathObject} from "@share/path"
+
+import {Path, capitalize, pathObject} from "@app/share"
 
 const navPress = () => document.getElementById("nav-mobile")?.
   classList.toggle("nav-mobile--pressed")

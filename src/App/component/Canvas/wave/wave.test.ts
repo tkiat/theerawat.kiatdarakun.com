@@ -1,7 +1,7 @@
 import * as fc from "fast-check"
 
 import {mkWave, mkWaveLine} from "./wave"
-import {mainPaths} from "@share/path"
+import {mainPaths} from "@app/share"
 
 test("check all points on wave after creation", () => {
   const y = 600

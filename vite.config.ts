@@ -1,11 +1,7 @@
-import reactRefresh from '@vitejs/plugin-react-refresh'
-import path from 'path'
-import {defineConfig} from 'vite'
-import svgr from 'vite-plugin-svgr'
-
-const pathAssets = path.resolve(__dirname, './src/App/assets')
-const pathComponent = path.resolve(__dirname, './src/App/component')
-const pathShare = path.resolve(__dirname, './src/App/share')
+import reactRefresh from "@vitejs/plugin-react-refresh"
+import path from "path"
+import {defineConfig} from "vite"
+import svgr from "vite-plugin-svgr"
 
 export default defineConfig({
   server: {
@@ -15,9 +11,8 @@ export default defineConfig({
   plugins: [reactRefresh(), svgr()],
   resolve: {
     alias: {
-      "@assets": pathAssets,
-      '@component': pathComponent,
-      "@share": pathShare,
+      "@app": path.resolve(__dirname, "./src/App"),
+      "@assets": path.resolve(__dirname, "./assets"),
     },
   },
 })

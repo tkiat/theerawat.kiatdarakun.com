@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipText} from "@component/Content/share"
+import {TooltipText} from "../../share"
 
 export const FindWork = (): React.ReactElement =>
   <>

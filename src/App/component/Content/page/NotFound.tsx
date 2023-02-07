@@ -1,6 +1,6 @@
 import React from "react"
 
-import {MainPath, pathObject} from "@share/path"
+import {MainPath, pathObject} from "@app/share"
 
 const firstPage = Object.keys(pathObject)[0] as keyof typeof pathObject
 const route = "/" + firstPage + "/" + pathObject[firstPage][0]

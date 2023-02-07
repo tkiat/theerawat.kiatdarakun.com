@@ -1,5 +1,5 @@
 import React from "react"
-import {TooltipText, TooltipTextWithDelay} from "@component/Content/share"
+import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Character = (): React.ReactElement => (
   <div className="no-split">

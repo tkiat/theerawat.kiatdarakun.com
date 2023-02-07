@@ -1,5 +1,5 @@
-@use 'src/App/share/style/functions' as f;
-@use 'src/App/share/style/mixins' as m;
+@use '@app/share/style/functions' as f;
+@use '@app/share/style/mixins' as m;
 
 .theme-picker {
   @include m.hsl(--bg-color, 0, 0%, f.dayOrDark(97%, 5%));

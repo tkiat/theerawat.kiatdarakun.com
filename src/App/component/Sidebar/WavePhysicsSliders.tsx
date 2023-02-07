@@ -1,6 +1,6 @@
 import React from "react"
 
-import {WaveConfigs, WavePhysics} from "@component/Canvas/wave"
+import {WaveConfigs, WavePhysics} from "../Canvas/wave"
 
 type M = {[key in keyof WavePhysics]: {min: number, max: number, step: number}}
 const mapping: M = {

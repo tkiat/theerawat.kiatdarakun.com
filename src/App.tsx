@@ -2,14 +2,9 @@ import {Redirect, Router} from "@reach/router"
 import React from "react"
 import {useImmer} from "use-immer"
 
-import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, numWave, storeWavePhysics} from "./App/component"
-
-import {appId} from "@share/elementId"
-import {hslToString, isMobile} from "@share/general"
-import {useViewportDimensions} from "@share/hook"
-import {Path, adaptPathToUrl, mkPath, numDucks, storePath} from "@share/path"
-import {genWaveColors, initTheme, storeTheme, updateFavicon} from "@share/theme"
-import "@share/style/main.scss"
+import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, numWave, storeWavePhysics} from "@app/component"
+import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
+import "@app/share/style/main.scss"
 
 const numPointsOnWave = numDucks + 1
 

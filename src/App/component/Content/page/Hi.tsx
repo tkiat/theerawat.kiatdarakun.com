@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipText} from "@component/Content/share"
+import {TooltipText} from "../share"
 
 export const Hi = (): React.ReactElement => (
   <div className="no-split">

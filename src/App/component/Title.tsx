@@ -1,6 +1,6 @@
 import React from "react"
 
-import {capitalize} from "@share/general"
+import {capitalize} from "@app/share"
 
 type P = {title: string}
 export const Title = ({title}: P): React.ReactElement =>

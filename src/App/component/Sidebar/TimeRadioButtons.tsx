@@ -1,8 +1,6 @@
 import React from "react"
 
-import {appId} from "@share/elementId"
-import {capitalize} from "@share/general"
-import {timeList} from "@share/theme"
+import {appId, capitalize, timeList} from "@app/share"
 
 type P = {initTime: string}
 export const TimeRadioButtons = ({initTime}: P): React.ReactElement => {
