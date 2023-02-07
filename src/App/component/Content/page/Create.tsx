@@ -67,7 +67,6 @@ const page = "activity-create"
 let observer: IntersectionObserver, sections: NodeListOf<Element>
 
 export const Create = (): React.ReactElement => {
-
   const [apps, setApps] = React.useState()
   const [blogs, setBlogs] = React.useState()
   const [videos, setVideos] = React.useState()
