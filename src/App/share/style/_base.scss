@@ -46,10 +46,10 @@ h1, h2, h3, a, button, strong, b {
 }
 
 .app {
-  &[data-theme-time="day"] {
+  &[data-time="day"] {
     --dark: 0;
   }
-  &[data-theme-time="dark"] {
+  &[data-time="dark"] {
     --dark: 1;
   }
 
@@ -208,25 +208,25 @@ input[type="range"] {
   @include m.hsla(--tube-water-color, 180, 0%, f.dayOrDark(50%, 30%), 0.9);
 }
 
-[data-theme-base="ocean"] {
+[data-location="ocean"] {
   --background-image: url("@assets/background/ocean.svg");
   --hue: 210;
   --saturation: 100%;
   @include app-and-selector;
 }
-[data-theme-base="desert"] {
+[data-location="desert"] {
   --background-image: url("@assets/background/desert.svg");
   --hue: 30;
   --saturation: 100%;
   @include app-and-selector;
 }
-[data-theme-base="sakura"] {
+[data-location="sakura"] {
   --background-image: url("@assets/background/sakura.svg");
   --hue: 330;
   --saturation: 100%;
   @include app-and-selector;
 }
-[data-theme-base="snow"] {
+[data-location="snow"] {
   --background-image: url("/assets/background/snow.svg");
   --hue: 0;
   --saturation: 0%;

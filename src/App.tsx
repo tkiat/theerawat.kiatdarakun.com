@@ -14,21 +14,32 @@ export const App = (): React.ReactElement => {
   const dimension = useViewportDimensions({msDelay: 500})
 
   const [path, setPath] = useImmer<Path>(mkPath())
-  React.useEffect(() => {
-    const setPathFromUrl = () => setPath(d => adaptPathToUrl(d))
-    window.addEventListener("popstate", setPathFromUrl)
-    return () => {
-      window.removeEventListener("popstate", setPathFromUrl)
-    }
-  }, [])
-
-  const [custom, step] = [25, 15]
 
   const waveConfigs = React.useRef<WaveConfigs>({
     waves: mkWaves(numWave, numPointsOnWave, dimension, path.current),
     physics: mkWavePhysics(),
     colors: genWaveColors(initPlace, numWave)
   })
+
+  const cleanupRef = React.useRef(path)
+  cleanupRef.current = path
+
+  React.useEffect(() => {
+    const cleanup = () => {
+      storePath(cleanupRef.current)
+      storeTheme()
+      storeWavePhysics(waveConfigs.current.physics)
+    }
+    const setPathFromUrl = () => setPath(d => adaptPathToUrl(d))
+
+    window.addEventListener("beforeunload", cleanup)
+    window.addEventListener("popstate", setPathFromUrl)
+    return () => {
+      window.removeEventListener("beforeunload", cleanup)
+      window.removeEventListener("popstate", setPathFromUrl)
+    }
+  }, [])
+
   React.useEffect(() => {
     waveConfigs.current.waves =
       mkWaves(numWave, numPointsOnWave, dimension, path.current)
@@ -36,24 +47,6 @@ export const App = (): React.ReactElement => {
 
   React.useLayoutEffect(() => {
     updateFavicon(initPlace)
-  }, [])
-
-//   const cleanupRef = React.useRef({path: path, theme: theme})
-//   cleanupRef.current = {path: path, theme: theme}
-  React.useEffect(() => {
-    const cleanup = () => {
-//       storePath(cleanupRef.current.path)
-      storeTheme()
-      storeWavePhysics(waveConfigs.current.physics)
-    }
-    window.addEventListener("beforeunload", cleanup)
-    return () => {
-      window.removeEventListener("beforeunload", cleanup)
-    }
-  }, [])
-
-  React.useLayoutEffect(() => {
-//     mayApplyBaseTheme()
     document.getElementById("loading")?.remove()
   }, [])
 
@@ -61,8 +54,9 @@ export const App = (): React.ReactElement => {
     <NavSubMobile path={path} setPath={setPath} />
     : <NavSubTube path={path} setPath={setPath} />
   const title = isMobile() && <Title title={path.mapping[path.current]} />
+
   return (
-    <div className="app" data-theme-base={initPlace} data-theme-time={initTime} id={appId}>
+    <div className="app" data-location={initPlace} data-time={initTime} id={appId}>
       <NavMain path={path} setPath={setPath} />
       {navSub}
       <main className="app__main">

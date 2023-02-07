@@ -1,6 +1,6 @@
 import React from "react"
 
-export const localSafariBypassKey = "will-skip-safari-prompt"
+export const storageSafariBypassKey = "skip-safari-prompt"
 
 export const SafariWarning = () => {
   document.getElementById("loading")?.remove()
@@ -13,7 +13,7 @@ export const SafariWarning = () => {
       <p>Switch to another browser like Firefox or
         <button
           onClick={() => {
-            localStorage.setItem(localSafariBypassKey, "true")
+            localStorage.setItem(storageSafariBypassKey, "true")
             location.reload()
           }}
         >proceed anyway.</button>

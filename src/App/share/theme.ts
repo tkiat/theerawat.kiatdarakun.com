@@ -25,8 +25,8 @@ export const initTheme = (): Theme => {
 
 export const storeTheme = () => {
   const app = document.getElementById(appId)
-  const p = app?.dataset.themeBase
-  const t = app?.dataset.themeTime
+  const p = app?.dataset.location
+  const t = app?.dataset.time
 
   if (p) {
     localStorage.setItem(storagePlaceKey, p)

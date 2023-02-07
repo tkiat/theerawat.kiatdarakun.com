@@ -6,7 +6,7 @@ import {Place, appId, capitalize, genWaveColors, placeList, updateFavicon} from 
 import {WaveConfigs, numWave} from "../Canvas/wave"
 
 type P = {initPlace: string, waveConfigs: React.MutableRefObject<WaveConfigs>}
-export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement => {
+export const LocationPicker = ({initPlace, waveConfigs}: P): React.ReactElement => {
   const [curPlace, setCurPlace] = React.useState(initPlace)
   return (
     <>
@@ -39,13 +39,13 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElem
         if (place === curPlace) return
 
         const app = document.getElementById(appId)
-        if (app) app.dataset.themeBase = place
+        if (app) app.dataset.location = place
 
         setCurPlace(place)
         updateFavicon(place)
         waveConfigs.current.colors = wc
       }}
-      data-theme-base={place}
+      data-location={place}
     >
     {
       //@ts-ignore

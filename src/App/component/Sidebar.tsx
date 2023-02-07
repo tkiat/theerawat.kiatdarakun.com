@@ -4,9 +4,9 @@ import {isMobile, sidebarId} from "@app/share"
 
 import {WaveConfigs} from "./Canvas/wave"
 import {SidebarToggler} from "./Sidebar/SidebarToggler"
-import {ThemePickers} from "./Sidebar/ThemePickers"
-import {TimeRadioButtons} from "./Sidebar/TimeRadioButtons"
-import {WavePhysicsSliders} from "./Sidebar/WavePhysicsSliders"
+import {LocationPicker} from "./Sidebar/LocationPicker"
+import {TimePicker} from "./Sidebar/TimePicker"
+import {WavePhysicsSettings} from "./Sidebar/WavePhysicsSettings"
 
 type P = {
   initPlace: string
@@ -21,14 +21,14 @@ export const Sidebar = ({initPlace, initTime, waveConfigs}: P):
     <div className="sidebar" id={sidebarId}>
       <section className="sidebar__section">
         <div className="sidebar__header">Wave</div>
-        <WavePhysicsSliders waveConfigs={waveConfigs} />
+        <WavePhysicsSettings waveConfigs={waveConfigs} />
       </section>
 
       <hr className="sidebar__linebreak" />
 
       <section className="sidebar__section">
         <div className="sidebar__header">Time</div>
-        <TimeRadioButtons initTime={initTime} />
+        <TimePicker initTime={initTime} />
       </section>
 
       <hr className="sidebar__linebreak" />
@@ -36,7 +36,7 @@ export const Sidebar = ({initPlace, initTime, waveConfigs}: P):
       <section className="sidebar__section">
         <div className="sidebar__header">Theme</div>
         <div className="grid">
-          <ThemePickers initPlace={initPlace} waveConfigs={waveConfigs} />
+          <LocationPicker initPlace={initPlace} waveConfigs={waveConfigs} />
         </div>
       </section>
     </div>

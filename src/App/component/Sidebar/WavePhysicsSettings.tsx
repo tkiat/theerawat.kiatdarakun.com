@@ -10,7 +10,7 @@ const mapping: M = {
 }
 
 type P = {waveConfigs: React.MutableRefObject<WaveConfigs>}
-export const WavePhysicsSliders = ({waveConfigs}: P): React.ReactElement => {
+export const WavePhysicsSettings = ({waveConfigs}: P): React.ReactElement => {
   const [, triggerReRender] = React.useState({})
   return (
     <>
