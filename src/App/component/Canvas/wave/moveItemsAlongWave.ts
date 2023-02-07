@@ -1,5 +1,5 @@
-import {Point} from './point'
-import {Wave} from './wave'
+import {Point} from "./point"
+import {Wave} from "./wave"
 
 type NumItem = number
 

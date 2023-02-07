@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react"
 
-import {sidebarId} from 'share/elementId'
-import {isMobile} from 'share/general'
-import {WaveConfigs} from 'component/Canvas/wave'
-import {SidebarToggler}     from './Sidebar/SidebarToggler'
-import {ThemePickers}       from './Sidebar/ThemePickers'
-import {TimeRadioButtons}   from './Sidebar/TimeRadioButtons'
-import {WavePhysicsSliders} from './Sidebar/WavePhysicsSliders'
+import {sidebarId} from "@share/elementId"
+import {isMobile} from "@share/general"
+import {WaveConfigs} from "@component/Canvas/wave"
+import {SidebarToggler} from "./Sidebar/SidebarToggler"
+import {ThemePickers} from "./Sidebar/ThemePickers"
+import {TimeRadioButtons} from "./Sidebar/TimeRadioButtons"
+import {WavePhysicsSliders} from "./Sidebar/WavePhysicsSliders"
 
 type P = {
   initPlace: string

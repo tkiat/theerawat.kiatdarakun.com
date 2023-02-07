@@ -1,5 +1,5 @@
-import {appId} from 'share/elementId'
-import {moveWater} from './moveWater'
+import {appId} from "@share/elementId"
+import {moveWater} from "./moveWater"
 
 const isPositionValid = (x: number): boolean => x >= 0 && x % 2 === 0
 
@@ -16,10 +16,10 @@ export const moveNode = (
     if (isPositionValid(from) && isPositionValid(to)) {
       resolve()
     } else {
-      reject('invalid input')
+      reject("invalid input")
     }
   }).then(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       callback()
       return {then: function() {}}
     }
@@ -27,9 +27,9 @@ export const moveNode = (
     new Promise<void>((resolve, reject) => {
       if (!m) {
         callback()
-        reject('moveNode.ts: element of id "main" not found')
+        reject("moveNode.ts: element of id “main” not found")
       } else {
-        m.classList.toggle('waiting')
+        m.classList.toggle("waiting")
         resolve()
       }
     })
@@ -38,7 +38,7 @@ export const moveNode = (
   ).then(delay => new Promise(resolve => {setTimeout(resolve, delay)})
   ).then(() => {
     callback()
-    m?.classList.toggle('waiting')
+    m?.classList.toggle("waiting")
   })
   .catch(msg => console.error(msg))
 }

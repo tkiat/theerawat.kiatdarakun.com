@@ -1,13 +1,13 @@
-import React from 'react'
-import {Updater} from 'use-immer'
+import React from "react"
+import {Updater} from "use-immer"
 
-import {isType} from 'share/general'
-import {Path, mainPaths, numDucks, pathObject, subPaths} from 'share/path'
+import {isType} from "@share/general"
+import {Path, mainPaths, numDucks, pathObject, subPaths} from "@share/path"
 
-import {ItemContent} from './NavMain/ItemContent'
-import {ItemSidebar} from './NavMain/ItemSidebar'
+import {ItemContent} from "./NavMain/ItemContent"
+import {ItemSidebar} from "./NavMain/ItemSidebar"
 
-const xOffset = '20px'
+const xOffset = "20px"
 const left = (index: number) =>
   `calc((100% - var(--sidebar-width)) * ${2 * index + 1} /
     ${numDucks * 2} - ${xOffset})`
@@ -19,13 +19,13 @@ export const NavMain = ({path, setPath}: P):
       <ItemContent
         key={x}
         path={x}
-        to={'/' + x + '/' + path.mapping[x]}
+        to={"/" + x + "/" + path.mapping[x]}
         isActive={x === path.current}
         left={left(i)}
         onclick={() => {
           setPath(d => {
             const p = window.location.pathname
-            const curSubpage = p.substring(p.lastIndexOf('/') + 1)
+            const curSubpage = p.substring(p.lastIndexOf("/") + 1)
             if (isType(curSubpage, subPaths)) {
               d.mapping[d.current] = curSubpage
             }

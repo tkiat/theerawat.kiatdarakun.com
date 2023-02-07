@@ -1,6 +1,6 @@
 import React from "react"
 
-import {initInPageNavButtons, initIntObserver} from 'share/general'
+import {initInPageNavButtons, initIntObserver} from "@share/general"
 
 type AppProps = [
   {

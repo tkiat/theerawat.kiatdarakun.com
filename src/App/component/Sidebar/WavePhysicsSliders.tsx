@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react"
 
-import {WaveConfigs, WavePhysics} from 'component/Canvas/wave'
+import {WaveConfigs, WavePhysics} from "@component/Canvas/wave"
 
 type M = {[key in keyof WavePhysics]: {min: number, max: number, step: number}}
 const mapping: M = {
-  'height': {min: 10, max: 70, step: 10 },
-  'speed': {min: 0, max: 0.3, step: 0.05 },
-  'shakiness': {min: 0, max: 6, step: 1.5 },
+  "height": {min: 10, max: 70, step: 10 },
+  "speed": {min: 0, max: 0.3, step: 0.05 },
+  "shakiness": {min: 0, max: 6, step: 1.5 },
 }
 
 type P = {waveConfigs: React.MutableRefObject<WaveConfigs>}
@@ -49,7 +49,7 @@ const WavePhysicsSlider = ({onChange, prop, value}: SliderP):
           step={mapping[prop].step}
           value={value}
           onChange={onChange}
-          aria-label={'set wave ' + prop}
+          aria-label={"set wave " + prop}
         />
       </div>
     </div>

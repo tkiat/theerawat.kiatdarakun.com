@@ -1,16 +1,15 @@
-import {Redirect, Router} from '@reach/router'
-import React from 'react'
-import {useImmer} from 'use-immer'
+import {Redirect, Router} from "@reach/router"
+import React from "react"
+import {useImmer} from "use-immer"
 
-import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics} from 'component'
-import {numWave} from 'component/Canvas/wave'
-import {appId} from 'share/elementId'
-import {hslToString, isMobile} from 'share/general'
-import {useViewportDimensions} from 'share/hook'
-import {Path, adaptPathToUrl, mkPath, numDucks, storePath} from 'share/path'
-import {genWaveColors, initTheme, storeTheme, updateFavicon} from 'share/theme'
-
-import 'share/style/main.scss'
+import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics} from "src/App/component"
+import {numWave} from "@component/Canvas/wave"
+import {appId} from "@share/elementId"
+import {hslToString, isMobile} from "@share/general"
+import {useViewportDimensions} from "@share/hook"
+import {Path, adaptPathToUrl, mkPath, numDucks, storePath} from "@share/path"
+import {genWaveColors, initTheme, storeTheme, updateFavicon} from "@share/theme"
+import "@share/style/main.scss"
 
 const numPointsOnWave = numDucks + 1
 
@@ -22,9 +21,9 @@ export const App = (): React.ReactElement => {
   const [path, setPath] = useImmer<Path>(mkPath())
   React.useEffect(() => {
     const setPathFromUrl = () => setPath(d => adaptPathToUrl(d))
-    window.addEventListener('popstate', setPathFromUrl)
+    window.addEventListener("popstate", setPathFromUrl)
     return () => {
-      window.removeEventListener('popstate', setPathFromUrl)
+      window.removeEventListener("popstate", setPathFromUrl)
     }
   }, [])
 
@@ -52,15 +51,15 @@ export const App = (): React.ReactElement => {
       storeTheme()
       storeWavePhysics(waveConfigs.current.physics)
     }
-    window.addEventListener('beforeunload', cleanup)
+    window.addEventListener("beforeunload", cleanup)
     return () => {
-      window.removeEventListener('beforeunload', cleanup)
+      window.removeEventListener("beforeunload", cleanup)
     }
   }, [])
 
   React.useLayoutEffect(() => {
 //     mayApplyBaseTheme()
-    document.getElementById('loading')?.remove()
+    document.getElementById("loading")?.remove()
   }, [])
 
   const navSub = isMobile() ?
@@ -76,7 +75,7 @@ export const App = (): React.ReactElement => {
           <Router>
             <Redirect
               from="/"
-              to={path.current + '/' + path.mapping[path.current]}
+              to={path.current + "/" + path.mapping[path.current]}
               noThrow />
           </Router>
           {title}

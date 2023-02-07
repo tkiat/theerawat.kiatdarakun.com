@@ -1,8 +1,8 @@
-import React from 'react'
-import {useImmer} from 'use-immer'
+import React from "react"
+import {useImmer} from "use-immer"
 
-import {Dimension} from '@types-basic'
-import {useDebounce} from './useDebounce'
+import {Dimension} from "@types-basic"
+import {useDebounce} from "./useDebounce"
 
 type P = {msDelay: number}
 export const useViewportDimensions = ({msDelay}: P): Dimension => {
@@ -19,9 +19,9 @@ export const useViewportDimensions = ({msDelay}: P): Dimension => {
         d.w = document.documentElement.clientWidth
       })
     }
-    window.addEventListener('resize', debouncedHandleResize)
+    window.addEventListener("resize", debouncedHandleResize)
     return () => {
-      window.removeEventListener('resize', debouncedHandleResize)
+      window.removeEventListener("resize", debouncedHandleResize)
     }
   }, [setDimensions])
 

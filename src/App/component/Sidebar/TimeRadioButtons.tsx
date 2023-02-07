@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react"
 
-import {appId} from 'share/elementId'
-import {capitalize} from 'share/general'
-import {timeList} from 'share/theme'
+import {appId} from "@share/elementId"
+import {capitalize} from "@share/general"
+import {timeList} from "@share/theme"
 
 type P = {initTime: string}
 export const TimeRadioButtons = ({initTime}: P): React.ReactElement => {
@@ -18,11 +18,11 @@ export const TimeRadioButtons = ({initTime}: P): React.ReactElement => {
     >
     {timeList.map((t, i) =>
       <div key={i}>
-        <input type="radio" name='time' id={'time-' + t} value={t}
-               style={{cursor: 'pointer'}}
+        <input type="radio" name="time" id={"time-" + t} value={t}
+               style={{cursor: "pointer"}}
                defaultChecked={t === initTime} />
         <span>&nbsp;&nbsp;</span>
-        <label style={{cursor: 'pointer'}} htmlFor={'time-' + t}>
+        <label style={{cursor: "pointer"}} htmlFor={"time-" + t}>
           {capitalize(t)}
         </label>
       </div>

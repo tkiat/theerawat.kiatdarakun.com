@@ -6,6 +6,7 @@ import svgr from 'vite-plugin-svgr'
 const pathAssets = path.resolve(__dirname, './src/App/assets')
 const pathComponent = path.resolve(__dirname, './src/App/component')
 const pathShare = path.resolve(__dirname, './src/App/share')
+const pathSrc = path.resolve(__dirname, './src')
 
 export default defineConfig({
   server: {
@@ -15,9 +16,10 @@ export default defineConfig({
   plugins: [reactRefresh(), svgr()],
   resolve: {
     alias: {
-      assets: pathAssets,
-      component: pathComponent,
-      share: pathShare,
+      "@assets": pathAssets,
+      '@component': pathComponent,
+      "@share": pathShare,
+      src: pathSrc,
     },
   },
 })

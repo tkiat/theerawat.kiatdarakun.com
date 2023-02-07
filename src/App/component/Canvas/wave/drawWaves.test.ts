@@ -1,9 +1,9 @@
-import * as fc from 'fast-check'
+import * as fc from "fast-check"
 
-import {getTrajectory} from './drawWaves'
-import {mkWave} from './wave'
+import {getTrajectory} from "./drawWaves"
+import {mkWave} from "./wave"
 
-test('getTrajectory', () => {
+test("getTrajectory", () => {
   fc.assert(
     fc.property(fc.integer({min: 2, max: 10}),
                 fc.integer({min: 960}),

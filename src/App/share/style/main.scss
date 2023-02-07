@@ -1,21 +1,21 @@
-@use 'functions';
-@use 'mixins';
+@use "functions";
+@use "mixins";
 
-@use 'vendor/normalize';
-@use 'base';
+@use "vendor/normalize";
+@use "base";
 
-@use 'src/App/component/Canvas';
-@use 'src/App/component/NavMain';
-@use 'src/App/component/NavSubMobile';
-@use 'src/App/component/NavSubTube';
-@use 'src/App/component/NavSubTube/NodeHighlighter';
-@use 'src/App/component/NavSubTube/NodeText';
-@use 'src/App/component/NavSubTube/NodeValve';
-@use 'src/App/component/Sidebar';
-@use 'src/App/component/Sidebar/SidebarToggler';
-@use 'src/App/component/Sidebar/ThemePickers';
-@use 'src/App/component/Title';
+@use "src/App/component/Canvas";
+@use "src/App/component/NavMain";
+@use "src/App/component/NavSubMobile";
+@use "src/App/component/NavSubTube";
+@use "src/App/component/NavSubTube/NodeHighlighter";
+@use "src/App/component/NavSubTube/NodeText";
+@use "src/App/component/NavSubTube/NodeValve";
+@use "src/App/component/Sidebar";
+@use "src/App/component/Sidebar/SidebarToggler";
+@use "src/App/component/Sidebar/ThemePickers";
+@use "src/App/component/Title";
 
-@use 'src/App/component/Content';
-@use 'src/App/component/Content/page/NotFound';
-@use 'src/App/component/Content/share/Tooltip';
+@use "src/App/component/Content";
+@use "src/App/component/Content/page/NotFound";
+@use "src/App/component/Content/share/Tooltip";

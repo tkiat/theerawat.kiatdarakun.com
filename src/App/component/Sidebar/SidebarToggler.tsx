@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 
-import {sidebarTogglerId} from 'share/elementId'
-import {toggleSidebar} from './util/toggleSidebar'
+import {sidebarTogglerId} from "@share/elementId"
+import {toggleSidebar} from "./util/toggleSidebar"
 
 export const SidebarToggler = (): React.ReactElement =>
   <button

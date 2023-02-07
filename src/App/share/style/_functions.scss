@@ -1,4 +1,4 @@
-@use 'sass:math';
+@use "sass:math";
 
 @function dayOrDark($day, $dark) {
   @return calc((1 - #{var(--dark)}) * #{$day} + #{var(--dark)} * #{$dark});

@@ -1,13 +1,13 @@
-import {Link} from '@reach/router'
-import React from 'react'
-import {Updater} from 'use-immer'
+import {Link} from "@reach/router"
+import React from "react"
+import {Updater} from "use-immer"
 
-import {ReactComponent as DuckHamburger} from 'assets/duck/hamburger.svg'
-import {capitalize} from 'share/general'
-import {Path, pathObject} from 'share/path'
+import {ReactComponent as DuckHamburger} from "@assets/duck/hamburger.svg"
+import {capitalize} from "@share/general"
+import {Path, pathObject} from "@share/path"
 
-const navPress = () => document.getElementById('nav-mobile')?.
-  classList.toggle('nav-mobile--pressed')
+const navPress = () => document.getElementById("nav-mobile")?.
+  classList.toggle("nav-mobile--pressed")
 
 type P = {path: Path, setPath: Updater<Path>}
 export const NavSubMobile = ({path, setPath}: P): React.ReactElement =>
@@ -19,9 +19,9 @@ export const NavSubMobile = ({path, setPath}: P): React.ReactElement =>
     {pathObject[path.current].map(x => (
       <li key={x} className="nav-mobile__item">
         <Link
-          className={'nav-mobile__link' + (x === path.mapping[path.current] ?
-            ' nav-mobile__link--active' : '')}
-          to={'/' + path.current + '/' + x}
+          className={"nav-mobile__link" + (x === path.mapping[path.current] ?
+            " nav-mobile__link--active" : "")}
+          to={"/" + path.current + "/" + x}
           onClick={() => {setPath(d => {d.mapping[path.current] = x})}}
         >
           {capitalize(x)}

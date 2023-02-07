@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 export const useDebounce = <T>(value: T, msDelay: number): T => {
   const [debouncedValue, setDebouncedValue] = React.useState(value)

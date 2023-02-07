@@ -1,10 +1,10 @@
-import {isType} from './general'
+import {isType} from "./general"
 
 // definitions ----------------------------------------------------------------
 export type PathObject = typeof pathObject
 export const pathObject = {
-  'about': ['hi', 'character', 'story'],
-  'activity': ['create', 'digest', 'events'],
+  "about": ["hi", "character", "story"],
+  "activity": ["create", "digest", "events"],
 } as const
 
 const numMainPaths = Object.keys(pathObject).length
@@ -26,15 +26,15 @@ export type Path = {
   mapping: Record<MainPath, SubPath>
 }
 
-const localCurrentPathKey = 'path-current'
-const localMappingPrefix = 'path-mapping-'
+const localCurrentPathKey = "path-current"
+const localMappingPrefix = "path-mapping-"
 
 // utilities ------------------------------------------------------------------
 export const adaptPathToUrl = (p: Path,
                                urlPath: string = window.location.pathname):
                                Path => {
   const temp = JSON.parse(JSON.stringify(p)) as Path
-  const [p1, p2] = urlPath.split('/').filter(x => x !== '')
+  const [p1, p2] = urlPath.split("/").filter(x => x !== "")
 
   const m = mainPaths.find(x => p1 === x)
   if (isType(m, mainPaths)) {
@@ -54,7 +54,7 @@ const mkLocalPath = (): Path => {
     const l = localStorage.getItem(localMappingPrefix + k)
     const v = isType(l, subPaths) ? l : pathObject[k][0]
     return {...acc, [k as MainPath]: v as SubPath}
-  }, {} as Path['mapping'])
+  }, {} as Path["mapping"])
 
   return {current: fc, mapping: fm}
 }

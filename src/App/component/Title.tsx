@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 
-import {capitalize} from 'share/general'
+import {capitalize} from "@share/general"
 
 type P = {title: string}
 export const Title = ({title}: P): React.ReactElement =>
-  <h1 className='title'>{capitalize(title)}</h1>
+  <h1 className="title">{capitalize(title)}</h1>

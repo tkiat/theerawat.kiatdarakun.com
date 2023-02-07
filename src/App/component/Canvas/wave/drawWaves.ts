@@ -1,5 +1,5 @@
-import {Coordinate, Dimension, Line} from '@types-basic'
-import {Wave, WavePhysics} from './wave'
+import {Coordinate, Dimension, Line} from "@types-basic"
+import {Wave, WavePhysics} from "./wave"
 
 let flag = false
 

@@ -1,10 +1,10 @@
-import React from 'react'
-import {Updater, useImmer} from 'use-immer'
+import React from "react"
+import {Updater, useImmer} from "use-immer"
 
-import {WaveConfigs, numWave} from 'component/Canvas/wave'
-import {Place, genWaveColors, placeList, updateFavicon} from 'share/theme'
-import {capitalize} from 'share/general'
-import {appId} from 'share/elementId'
+import {WaveConfigs, numWave} from "@component/Canvas/wave"
+import {Place, genWaveColors, placeList, updateFavicon} from "@share/theme"
+import {capitalize} from "@share/general"
+import {appId} from "@share/elementId"
 
 type P = {initPlace: string, waveConfigs: React.MutableRefObject<WaveConfigs>}
 export const ThemePickers = ({initPlace, waveConfigs}: P): React.ReactElement => {
@@ -35,7 +35,7 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElem
   const wc = genWaveColors(place, numWave)
   return (
     <button
-      className={'theme-picker' + (place === curPlace ? ' theme-picker--active' : '')}
+      className={"theme-picker" + (place === curPlace ? " theme-picker--active" : "")}
       onClick={() => {
         if (place === curPlace) return
 

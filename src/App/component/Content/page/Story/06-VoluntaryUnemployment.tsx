@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipText} from 'component/Content/share'
+import {TooltipText} from "@component/Content/share"
 
 export const VoluntaryUnemployment = (): React.ReactElement =>
   <>

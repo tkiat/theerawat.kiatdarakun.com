@@ -1,1 +1,1 @@
-export {TooltipText, TooltipTextWithDelay, TooltipFa, TooltipFaWithDelay} from './share/Tooltip'
+export {TooltipText, TooltipTextWithDelay, TooltipFa, TooltipFaWithDelay} from "./share/Tooltip"

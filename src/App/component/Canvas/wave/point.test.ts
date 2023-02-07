@@ -1,8 +1,8 @@
-import * as fc from 'fast-check'
+import * as fc from "fast-check"
 
-import {point} from './point'
+import {point} from "./point"
 
-test('getRange', () => {
+test("getRange", () => {
   fc.assert(
     fc.property(fc.integer({min: 0}),
                 fc.integer({min: 0}),

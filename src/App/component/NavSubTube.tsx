@@ -1,12 +1,12 @@
-import React from 'react'
-import {Updater} from 'use-immer'
+import React from "react"
+import {Updater} from "use-immer"
 
-import {ReactComponent as Terminator} from "assets/valve/valve-terminator.svg"
-import {capitalize} from 'share/general'
-import {Path, getSubpageIndex, pathObject} from 'share/path'
-import {NodeText} from './NavSubTube/NodeText'
-import {NodeValve} from './NavSubTube/NodeValve'
-import {moveNode} from './NavSubTube/moveNode'
+import {ReactComponent as Terminator} from "@assets/valve/valve-terminator.svg"
+import {capitalize} from "@share/general"
+import {Path, getSubpageIndex, pathObject} from "@share/path"
+import {NodeText} from "./NavSubTube/NodeText"
+import {NodeValve} from "./NavSubTube/NodeValve"
+import {moveNode} from "./NavSubTube/moveNode"
 
 const stepMs = 500
 
@@ -25,7 +25,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
               <NodeText
                 i={i}
                 cur={initPos}
-                to={'/' + curPage + '/' + x}
+                to={"/" + curPage + "/" + x}
                 onclick={() => {
                   const [curSubpage] =
                     window.location.pathname.split("/").slice(-1)

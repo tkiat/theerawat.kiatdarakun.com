@@ -1,8 +1,8 @@
-import {Dimension} from '@types-basic'
-import React from 'react'
+import {Dimension} from "@types-basic"
+import React from "react"
 
-import {DrawCanvas} from './Canvas/DrawCanvas'
-import {WaveConfigs} from './Canvas/wave'
+import {DrawCanvas} from "./Canvas/DrawCanvas"
+import {WaveConfigs} from "./Canvas/wave"
 
 type P = {
   dimension: Dimension

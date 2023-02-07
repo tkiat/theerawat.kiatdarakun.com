@@ -1,6 +1,6 @@
-import {Coordinate, Dimension, Line} from '@types-basic'
-import {MainPath, mainPaths} from 'share/path'
-import {point, Point} from './point'
+import {Coordinate, Dimension, Line} from "@types-basic"
+import {MainPath, mainPaths} from "@share/path"
+import {point, Point} from "./point"
 
 type MkWaveArgument = {
   index: number
@@ -20,9 +20,9 @@ export type WavePhysics = {height: number, speed: number, shakiness: number}
 export const numWave = 3
 
 const localWavePhysicsKey = {
-  h: 'wave-height',
-  sp: 'wave-speed',
-  sh: 'wave-shakiness',
+  h: "wave-height",
+  sp: "wave-speed",
+  sh: "wave-shakiness",
 }
 
 const mkPoints = (a: MkWaveArgument) => {
@@ -54,11 +54,11 @@ export const mkWaveLine = (d: Dimension, p: MainPath): Line => [
 
 export const mkWavePhysics = (): WavePhysics => {
   const s = window && window.matchMedia
-    ('(prefers-reduced-motion: reduce)').matches ? '0' : '0.05'
+    ("(prefers-reduced-motion: reduce)").matches ? "0" : "0.05"
 
-  const h = localStorage.getItem(localWavePhysicsKey.h) ?? '10'
+  const h = localStorage.getItem(localWavePhysicsKey.h) ?? "10"
   const sp = localStorage.getItem(localWavePhysicsKey.sp) ?? s
-  const sh = localStorage.getItem(localWavePhysicsKey.sh) ?? '0'
+  const sh = localStorage.getItem(localWavePhysicsKey.sh) ?? "0"
   return {
     height: parseFloat(h),
     speed: parseFloat(sp),

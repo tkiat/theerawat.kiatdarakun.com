@@ -1,5 +1,5 @@
-@use './functions' as f;
-@use './mixins' as m;
+@use "./functions" as f;
+@use "./mixins" as m;
 
 *,
 *::before,
@@ -25,7 +25,7 @@ body {
 
 h1, h2, h3, a, button, strong, b {
   font-family: Raleway, sans-serif;
-  font-feature-settings: 'lnum';
+  font-feature-settings: "lnum";
   /*font-kerning: none;*/
 }
 
@@ -88,7 +88,7 @@ h1, h2, h3, a, button, strong, b {
         width: 20%;
         height: 1em;
 
-        content: '';
+        content: "";
         background-color: red;
       }
       &::before {
@@ -136,7 +136,7 @@ button:focus {
   }
 }
 
-input[type='range'] {
+input[type="range"] {
   -webkit-appearance: none;
   cursor: pointer;
   height: 24px;
@@ -145,7 +145,7 @@ input[type='range'] {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background: url(assets/duck/duck.svg);
+    background: url(@assets/duck/duck.svg);
     background-size: 100%;
   }
   &:disabled {
@@ -170,7 +170,7 @@ input[type='range'] {
   &::-moz-range-thumb {
     height: 100%;
     width: 20px;
-    background: url(assets/duck/duck.svg);
+    background: url(@assets/duck/duck.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import {WaveConfigs, drawWaves, moveItemsAlongWave} from './wave'
+import {WaveConfigs, drawWaves, moveItemsAlongWave} from "./wave"
 
 const itemOffset = 20
 const approxFps = 10, frameInterval = Math.round(1000 / approxFps)
@@ -14,11 +14,11 @@ export const DrawCanvas = ({waveConfigs}: P):
     if (!ref.current) return
     const canvas = ref.current
 
-    const context = canvas.getContext('2d')
+    const context = canvas.getContext("2d")
     if (!context) return
 
     const itemsOnWave =
-      document.body.querySelectorAll('.nav-main') as NodeListOf<HTMLElement>
+      document.body.querySelectorAll(".nav-main") as NodeListOf<HTMLElement>
     let animationFrameId: number
 
     const physics = waveConfigs.current.physics

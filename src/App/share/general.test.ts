@@ -1,8 +1,8 @@
-import * as fc from 'fast-check'
+import * as fc from "fast-check"
 
-import * as g from './general'
+import * as g from "./general"
 
-test('capitalize', () => {
+test("capitalize", () => {
   fc.assert(
     fc.property(fc.char(), fc.string(), (c, s) => {
       expect(g.capitalize(c + s)).toEqual(c.toUpperCase() + s)
@@ -10,7 +10,7 @@ test('capitalize', () => {
   )
 })
 
-test('getRange', () => {
+test("getRange", () => {
   fc.assert(
     fc.property(fc.integer(0, 200), fc.integer(100, 300), (from, to) => {
       const temp = g.getRange(from, to)
