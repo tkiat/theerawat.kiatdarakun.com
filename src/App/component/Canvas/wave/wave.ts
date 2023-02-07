@@ -13,9 +13,11 @@ export type Wave = {points: Point[]}
 export type WaveConfigs = {
   waves: Wave[],
   physics: WavePhysics,
-  colors: string[],
+  colors: (string | null)[],
 }
 export type WavePhysics = {height: number, speed: number, shakiness: number}
+
+export const numWave = 3
 
 const localWavePhysicsKey = {
   h: 'wave-height',

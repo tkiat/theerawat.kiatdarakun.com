@@ -7,7 +7,7 @@ export const drawWaves = (
   ctx: CanvasRenderingContext2D,
   waves: Wave[],
   physics: WavePhysics,
-  colors: string[],
+  colors: (string | null)[],
 ) => {
   if (flag && (physics.speed === 0 && physics.shakiness === 0)) return // first render wave if stopped
   flag = true
@@ -53,11 +53,13 @@ export const getTrajectory = (wave: Wave,
 
 const drawWave = (
   ctx: CanvasRenderingContext2D,
-  color: string,
+  color: string | null,
   curves: Line[],
   lines: Coordinate[]) => {
   ctx.beginPath()
-  ctx.fillStyle = color
+  if (color) {
+    ctx.fillStyle = color
+  }
   ctx.moveTo(curves[0].from.x, curves[0].from.y)
 
   curves.map(curve =>

@@ -1,8 +1,8 @@
 import React from 'react'
 import {Updater, useImmer} from 'use-immer'
 
-import {WaveConfigs} from 'src/App/component/Canvas/wave'
-import {Place, genWaveColors, getPlaceHS, placeList} from 'src/App/share/theme'
+import {WaveConfigs, numWave} from 'src/App/component/Canvas/wave'
+import {Place, genWaveColors, placeList, updateFavicon} from 'src/App/share/theme'
 import {capitalize} from 'src/App/share/general'
 import {appId} from 'src/App/share/elementId'
 
@@ -32,16 +32,19 @@ type Q = {
 }
 const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElement => {
   const title = capitalize(place)
+  const wc = genWaveColors(place, numWave)
   return (
     <button
       className={'theme-picker' + (place === curPlace ? ' theme-picker--active' : '')}
       onClick={() => {
+        if (place === curPlace) return
+
         const app = document.getElementById(appId)
-        if (app) {
-          app.dataset.themeBase = place
-        }
+        if (app) app.dataset.themeBase = place
+
         setCurPlace(place)
-        waveConfigs.current.colors = genWaveColors(place)
+        updateFavicon(place)
+        waveConfigs.current.colors = wc
       }}
       data-theme-base={place}
     >
@@ -54,7 +57,7 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElem
       <div className="theme-picker__nav-main theme-picker__nav-main--l"></div>
       <div className="theme-picker__nav-main theme-picker__nav-main--r"></div>
       <div className="theme-picker__wave theme-picker__wave" style={{
-        background: genWaveColors(place)[0]
+        background: wc[0] ? wc[0] : "black"
       }}></div>
     </button>
   )

@@ -3,6 +3,7 @@ import React from 'react'
 import {useImmer} from 'use-immer'
 
 import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics} from 'src/App/component'
+import {numWave} from 'src/App/component/Canvas/wave'
 import {appId} from 'src/App/share/elementId'
 import {isMobile} from 'src/App/share/general'
 import {hslToString} from 'src/App/share/general'
@@ -13,9 +14,8 @@ import {genWaveColors, initTheme, storeTheme, updateFavicon} from 'src/App/share
 import 'src/App/share/style/main.scss'
 
 const numPointsOnWave = numDucks + 1
-const numWave = 3 // TODO
 
-const { initPlace, initTime } = initTheme()
+const { place: initPlace, time: initTime } = initTheme()
 
 export const App = (): React.ReactElement => {
   const dimension = useViewportDimensions({msDelay: 500})
@@ -34,7 +34,7 @@ export const App = (): React.ReactElement => {
   const waveConfigs = React.useRef<WaveConfigs>({
     waves: mkWaves(numWave, numPointsOnWave, dimension, path.current),
     physics: mkWavePhysics(),
-    colors: genWaveColors(initPlace)
+    colors: genWaveColors(initPlace, numWave)
   })
   React.useEffect(() => {
     waveConfigs.current.waves =
@@ -42,7 +42,7 @@ export const App = (): React.ReactElement => {
   }, [dimension])
 
   React.useLayoutEffect(() => {
-//     updateFavicon(base)
+    updateFavicon(initPlace)
   }, [])
 
 //   const cleanupRef = React.useRef({path: path, theme: theme})
