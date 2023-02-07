@@ -14,8 +14,7 @@
     "paths": {
       "@assets/*": ["src/App/assets/*"],
       "@component/*": ["src/App/component/*"],
-      "@share/*": ["src/App/share/*"],
-      "src/*": ["src/*"]
+      "@share/*": ["src/App/share/*"]
     },
     "resolveJsonModule": true,
     "skipLibCheck": false,

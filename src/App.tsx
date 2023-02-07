@@ -2,8 +2,8 @@ import {Redirect, Router} from "@reach/router"
 import React from "react"
 import {useImmer} from "use-immer"
 
-import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, storeWavePhysics} from "src/App/component"
-import {numWave} from "@component/Canvas/wave"
+import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, numWave, storeWavePhysics} from "./App/component"
+
 import {appId} from "@share/elementId"
 import {hslToString, isMobile} from "@share/general"
 import {useViewportDimensions} from "@share/hook"
