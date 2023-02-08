@@ -1,10 +1,8 @@
 import React from "react"
 import {Updater} from "use-immer"
 
-import {ReactComponent as Terminator} from "@assets/valve/valve-terminator.svg"
-
 import {Path, capitalize, getSubpageIndex, pathObject} from "@app/share"
-
+import {ValveTerminator} from "@assets/valve"
 import {NodeText} from "./NavSubTube/NodeText"
 import {NodeValve} from "./NavSubTube/NodeValve"
 import {moveNode} from "./NavSubTube/moveNode"
@@ -19,7 +17,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
   return (
     <nav className="nav-tube">
       <ul className="nav-tube__list">
-        <Terminator />
+        <ValveTerminator />
         {pathObject[curPage].map((x, i) =>
           <React.Fragment key={x}>
             <li className="nav-tube__item">
@@ -45,7 +43,7 @@ export const NavSubTube = ({path, setPath}: P): React.ReactElement => {
             )}
           </React.Fragment>
         )}
-        <Terminator style={{transform: "scaleX(-1)"}} />
+        <ValveTerminator style={{transform: "scaleX(-1)"}} />
       </ul>
     </nav>
   )

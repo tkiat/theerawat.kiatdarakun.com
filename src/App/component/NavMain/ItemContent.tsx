@@ -2,9 +2,7 @@ import {Link} from "@reach/router"
 import React from "react"
 
 import {MainPath, capitalize} from "@app/share"
-
-import {ReactComponent as DuckAboutMe} from "@assets/duck/aboutme.svg"
-import {ReactComponent as DuckHobby} from "@assets/duck/activity.svg"
+import {DuckAboutMe, DuckActivity} from "@assets/duck"
 
 type P = {isActive: boolean, left: string, onclick: () => void, path: MainPath,
           to: string}
@@ -26,7 +24,7 @@ export const ItemContent = ({isActive, left, onclick, path, to}: P):
       {
         {
           "about": <DuckAboutMe className={"nav-main__svg"} />,
-          "activity": <DuckHobby className={"nav-main__svg"} />,
+          "activity": <DuckActivity className={"nav-main__svg"} />,
         }[path]
       }
     </Link>

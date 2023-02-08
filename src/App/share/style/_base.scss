@@ -145,7 +145,7 @@ input[type="range"] {
     -webkit-appearance: none;
     height: 20px;
     width: 20px;
-    background: url(@assets/duck/duck.svg);
+    background: url(@assets/duck/barebone.svg);
     background-size: 100%;
   }
   &:disabled {
@@ -170,7 +170,7 @@ input[type="range"] {
   &::-moz-range-thumb {
     height: 100%;
     width: 20px;
-    background: url(@assets/duck/duck.svg);
+    background: url(@assets/duck/barebone.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -209,25 +209,25 @@ input[type="range"] {
 }
 
 [data-location="ocean"] {
-  --background-image: url("@assets/background/ocean.svg");
+  --background-image: url("/background/ocean.svg");
   --hue: 210;
   --saturation: 100%;
   @include app-and-selector;
 }
 [data-location="desert"] {
-  --background-image: url("@assets/background/desert.svg");
+  --background-image: url("/background/desert.svg");
   --hue: 30;
   --saturation: 100%;
   @include app-and-selector;
 }
 [data-location="sakura"] {
-  --background-image: url("@assets/background/sakura.svg");
+  --background-image: url("/background/sakura.svg");
   --hue: 330;
   --saturation: 100%;
   @include app-and-selector;
 }
 [data-location="snow"] {
-  --background-image: url("@assets/background/snow.svg");
+  --background-image: url("/background/snow.svg");
   --hue: 0;
   --saturation: 0%;
   @include app-and-selector;

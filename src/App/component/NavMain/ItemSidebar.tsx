@@ -1,7 +1,7 @@
 import React from "react"
 
 import {navMainSidebarId} from "@app/share"
-import {ReactComponent as DuckSidebar} from "@assets/duck/sidebar.svg"
+import {DuckSidebar} from "@assets/duck"
 
 import {toggleSidebar} from "../share"
 

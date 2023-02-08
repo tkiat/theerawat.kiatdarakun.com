@@ -1,7 +1,6 @@
 import React from "react"
 
-import {ReactComponent as ValveBorder} from "@assets/valve/valve-border.svg"
-import {ReactComponent as ValveMask} from "@assets/valve/valve-mask.svg"
+import {ValveBorder, ValveMask} from "@assets/valve"
 
 import {NodeHighlighter} from "./NodeHighlighter"
 
