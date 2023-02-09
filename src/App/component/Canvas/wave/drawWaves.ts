@@ -1,7 +1,8 @@
 import {Coordinate, Dimension, Line} from "@types-basic"
 import {Wave, WavePhysics} from "./wave"
 
-let flag = false
+let didRenderOnStart = false
+let c: (string | null)[]
 
 export const drawWaves = (
   ctx: CanvasRenderingContext2D,
@@ -9,8 +10,11 @@ export const drawWaves = (
   physics: WavePhysics,
   colors: (string | null)[],
 ) => {
-  if (flag && (physics.speed === 0 && physics.shakiness === 0)) return // first render wave if stopped
-  flag = true
+  if (didRenderOnStart && (physics.speed === 0 && physics.shakiness === 0)) {
+    // redraw waves only when theme changes
+    if (c.every((x, i) => x === colors[i])) return
+  }
+  c = colors
 
   const {width, height} = ctx.canvas
   ctx.clearRect(0, 0, width, height)
@@ -19,6 +23,7 @@ export const drawWaves = (
     const {curves, lines} = getTrajectory(w, physics, canvasDim)
     drawWave(ctx, colors[colors.length - 1 - i], curves, lines)
   })
+  didRenderOnStart = true
 }
 
 export const getTrajectory = (wave: Wave,
