@@ -113,22 +113,22 @@ export const Create = (): React.ReactElement => {
   }, [])
 
   return (
-    <div className="split">
-      <div className="split__status">
-        <button className="split__icon" id={`btn-${page}-software`}>
+    <div className="split-status">
+      <div className="split-status__status">
+        <button className="split-status__icon" id={`btn-${page}-software`}>
           <i className="fa-solid fa-code"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-write`}>
+        <button className="split-status__icon" id={`btn-${page}-write`}>
           <i className="fa-solid fa-pen"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-video`}>
+        <button className="split-status__icon" id={`btn-${page}-video`}>
           <i className="fa-solid fa-film"></i>
         </button>
       </div>
 
-      <div className="split__content">
+      <div className="split-status__content">
         <section>
           <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
         </section>

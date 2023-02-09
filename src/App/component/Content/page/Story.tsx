@@ -29,46 +29,46 @@ export const Story = (): React.ReactElement => {
   }, [])
 
   return (
-    <div className="split">
-      <div className="split__status">
-        <button className="split__icon" id={`btn-${page}-00`}>
+    <div className="split-status">
+      <div className="split-status__status">
+        <button className="split-status__icon" id={`btn-${page}-00`}>
           <i className="fa-solid fa-baby"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-01`}>
+        <button className="split-status__icon" id={`btn-${page}-01`}>
           <i className="fa-solid fa-child"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-02`}>
+        <button className="split-status__icon" id={`btn-${page}-02`}>
           <i className="fa-solid fa-graduation-cap"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-03`}>
+        <button className="split-status__icon" id={`btn-${page}-03`}>
           <i className="fa-solid fa-arrows-left-right-to-line"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-04`}>
+        <button className="split-status__icon" id={`btn-${page}-04`}>
           <i className="fa-solid fa-graduation-cap"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-05`}>
+        <button className="split-status__icon" id={`btn-${page}-05`}>
           <i className="fa-solid fa-briefcase"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-06`}>
+        <button className="split-status__icon" id={`btn-${page}-06`}>
           <i className="fa-solid fa-arrow-trend-down"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-07`}>
+        <button className="split-status__icon" id={`btn-${page}-07`}>
           <i className="fa-solid fa-lightbulb"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-08`}>
+        <button className="split-status__icon" id={`btn-${page}-08`}>
           <i className="fa-solid fa-magnifying-glass-dollar"></i>
         </button>
       </div>
 
-      <div className="split__content">
+      <div className="split-status__content">
         <p>I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.</p>
 
         <section id={`section-${page}-00`}>

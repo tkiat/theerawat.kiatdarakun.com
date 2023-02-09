@@ -22,6 +22,9 @@
   .highlight {
     color: var(--highlight-color);
   }
+  .more-line-break {
+    line-height: 1.3;
+  }
 
   .no-split {
     padding: 0 10px;
@@ -29,7 +32,24 @@
     height: 100%;
   }
 
-  .split {
+  .split-half {
+    overflow-y: auto;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    .page-break {
+      display: none;
+    }
+
+    section {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+  .split-status {
     &__status {
       position: fixed;
       height: calc(100% - var(--nav-tube-height) - 140px);
@@ -71,7 +91,13 @@
 
 @media screen and (max-width: 768px) {
   .content {
-    .split {
+    .split-half {
+      flex-direction: column;
+      .page-break {
+        display: block;
+      }
+    }
+    .split-status {
       &__status {
         height: clamp(35px, 3vw, 45px);
         width: 100%;

@@ -2,7 +2,7 @@ import React from "react"
 import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Character = (): React.ReactElement => (
-  <div className="no-split">
+  <div className="split-half">
     <section>
       <h2>Internal</h2>
 
@@ -47,7 +47,6 @@ export const Character = (): React.ReactElement => (
 
       <div>
         <b className="highlight">Hard Skills</b>
-
         &nbsp;—&nbsp;
         <TooltipText text="Language">
           <ul>
@@ -57,37 +56,36 @@ export const Character = (): React.ReactElement => (
           </ul>
         </TooltipText>
         ,&ensp;
-        <TooltipText text="Coding">
-          Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, etc.
-        </TooltipText>
-        ,&ensp;
         <TooltipText text="Computer">
           <ul>
             <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
+            <li>Coding: Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, etc.</li>
             <li>Linux (Debian, Nix, NixOS, QubesOS, etc.)</li>
             <li>Typing speed of 60 WPM</li>
-            <li>Desktop computer assembly</li>
           </ul>
         </TooltipText>
         ,&ensp;
         <TooltipText text="Communications">
           Obtain Bachelor and Master's degrees related to Communications technologies.
         </TooltipText>
-        ,&ensp;
-        <TooltipText text="Low-Impact Living">
+
+        &nbsp;—&nbsp;
+        <b className="highlight">Soft Skills</b>
+        &nbsp;—&nbsp;
+        <TooltipText text="Workplace">
           <ul>
-            <li>Know how to save household electrity/water and avoid using unnecessary disposable products.</li>
-            <li>Always cook simply for myself like boiled/stir fried vegetables and legumes, brown rice, soy milk, roasted sesame, and smoothie. I usually know how to spot non-vegan and fake organic food.</li>
+            <li><b className="highlight">Performance</b>: I am naturally inclined to learn something new, and I possess good quantitative and analytical thinking skills. I believe I can handle most jobs.</li>
+            <li><b className="highlight">Teamwork</b>: As a highly conscientious person, I tend to be disciplined. I have been so far abide by the rules in the earlier workplaces.</li>
+            <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip and backstabbing. However, I possess social withdrawal tendency.</li>
           </ul>
         </TooltipText>
-      </div>
-
-      <br />
-
-      <div>
-        <b className="highlight">Soft Skills</b>
-
-        &nbsp;— I never want to cause unnecessary complications and sufferings to myself and others. Furthermore, I am disciplined and naturally inclined to learn something new. With good quantitative and analytical thinking skills, I believe I can handle most jobs.
+        ,&ensp;
+        <TooltipText text="Personal">
+          <ul>
+            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matter, and align my skills, appearance, preferences, belongings, eating habits, etc., with it.</li>
+            <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply only vegan food, not disturb others, and frequently avoid creating unnecessary wastes.</li>
+          </ul>
+        </TooltipText>
       </div>
 
       <br />
@@ -126,15 +124,17 @@ export const Character = (): React.ReactElement => (
 
         &nbsp;—&nbsp;
         <TooltipText text="Life Purpose">
-          There is no point of my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.
-          <br /><br />
-          Every status is not desirable as everybody has problems. A prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first genuine wisdom I attained. I knew that living by awareness, instead of any made-up purpose, was the only thing that could satisfy me, for it was the truest experience.
+          <p>There is no point of my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
+
+          <p>Every status is not desirable as everybody has problems: a prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first genuine wisdom I attained. I was so satisfied that I decided to live by awareness instead of any made-up life purpose.</p>
         </TooltipText>
       </div>
     </section>
 
-    <br />
-    <hr />
+    <section className="page-break">
+      <br />
+      <hr />
+    </section>
 
     <section>
       <h2>External</h2>
@@ -147,27 +147,27 @@ export const Character = (): React.ReactElement => (
           <ul>
             <li>177 cm</li>
             <li>Ectomorphs</li>
-            <li>Brown Skin</li>
-            <li>Short Black Hair</li>
-            <li>Short Bread and Nails</li>
+            <li>Brown skin</li>
+            <li>Short black hair</li>
+            <li>Short bread and nails</li>
           </ul>
         </TooltipText>
         ,&ensp;
         <TooltipText text="Clothing and Accessories">
           <ul>
-            <li>No Piercings and Tattoos</li>
-            <li>Don't Usually Wear Watch</li>
-            <li>Wear Prescription Glasses</li>
-            <li>Usually Wear Short Pants Without Shirt at Home</li>
+            <li>No piercings and tattoos</li>
+            <li>Don't usually wear watch</li>
+            <li>Wear prescription glasses</li>
+            <li>Usually wear short pants without shirt at home</li>
           </ul>
         </TooltipText>
         ,&ensp;
-        <TooltipTextWithDelay text="Other">
+        <TooltipText text="Other">
           <ul>
             <li>Thai</li>
             <li>Millennials</li>
           </ul>
-        </TooltipTextWithDelay>
+        </TooltipText>
       </div>
 
       <br />
@@ -178,21 +178,27 @@ export const Character = (): React.ReactElement => (
         &nbsp;—&nbsp;
         <TooltipText text="Interaction">
           <ul>
-            <li>Calm and Stable</li>
-            <li>No Insults, Pointless Arguments, and Gossips</li>
-            <li>Quiet and Smile Less (Outside of Work)</li>
-            <li>Never Have Sexual or Romantic Relationship</li>
+            <li>Calm and stable</li>
+            <li>No insults, pointless arguments, and gossips</li>
+            <li>Quiet and smile less (outside of work)</li>
+            <li>Never have sexual or romantic relationship</li>
           </ul>
         </TooltipText>
         ,&ensp;
         <TooltipText text="Routine">
           <ul>
-            <li>Early Bird</li>
-            <li>Bath One or Two Times a Day if I Go Outside</li>
-            <li>Shave in the Morning on Weekdays</li>
-            <li>Clean Weekly</li>
+            <li>Early bird</li>
+            <li>Bath at least once a day if I go outside</li>
+            <li>Shave in the morning before work</li>
+            <li>Clean my home weekly</li>
             <li>Predictable</li>
           </ul>
+        </TooltipText>
+        ,&ensp;
+        <TooltipText text="Sustenance">
+          <p>I always eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
+
+          <p>As for drinks, I usually drink non-chilled plain water, 12 grams of loose leaf tea, and one cup of chilled herbal tea daily.</p>
         </TooltipText>
       </div>
 

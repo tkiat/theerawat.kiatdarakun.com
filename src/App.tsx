@@ -6,6 +6,8 @@ import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, Wave
 import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
 import "@app/share/style/main.scss"
 
+// TODO bug: switch between navsubtube and navsubmobile causes mismatch
+
 const numPointsOnWave = numDucks + 1
 
 const { place: initPlace, time: initTime } = initTheme()
@@ -53,6 +55,7 @@ export const App = (): React.ReactElement => {
   const navSub = isMobile() ?
     <NavSubMobile path={path} setPath={setPath} />
     : <NavSubTube path={path} setPath={setPath} />
+//   const navSub = <NavSub path={path} setPath={setPath} />
   const title = isMobile() && <Title title={path.mapping[path.current]} />
 
   return (

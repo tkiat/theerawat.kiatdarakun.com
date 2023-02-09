@@ -91,30 +91,30 @@ export const Digest = (): React.ReactElement => {
   const categoryIndexes = getRange(0, numCategories - 1)
 
   return (
-    <div className="split">
-      <div className="split__status">
-        <button className="split__icon" id={`btn-${page}-0`}>
+    <div className="split-status">
+      <div className="split-status__status">
+        <button className="split-status__icon" id={`btn-${page}-0`}>
           <i className="fa-solid fa-user"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-1`}>
+        <button className="split-status__icon" id={`btn-${page}-1`}>
           <i className="fa-solid fa-users"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-2`}>
+        <button className="split-status__icon" id={`btn-${page}-2`}>
           <i className="fa-solid fa-earth-americas"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-3`}>
+        <button className="split-status__icon" id={`btn-${page}-3`}>
           <i className="fa-solid fa-plus"></i>
         </button>
 
-        <button className="split__icon" id={`btn-${page}-4`}>
+        <button className="split-status__icon" id={`btn-${page}-4`}>
           <i className="fa-solid fa-wand-magic-sparkles"></i>
         </button>
       </div>
 
-      <div className="split__content">
+      <div className="split-status__content">
         <br />
         Here is the list of pieces of media that align with my&nbsp;
         <TooltipText text="ideals">
