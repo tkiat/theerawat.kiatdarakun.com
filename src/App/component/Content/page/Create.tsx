@@ -73,6 +73,7 @@ export const Create = (): React.ReactElement => {
 
   React.useEffect((): (() => void) => {
     let mounted = true;
+      console.log('enter');
 
     (async () => {
       const [aRes, bRes, vRes] = await Promise.all([
@@ -105,6 +106,7 @@ export const Create = (): React.ReactElement => {
     })()
 
     return () => {
+      console.log('exit')
       mounted = false
       sections?.forEach(section => {
         observer.unobserve(section)

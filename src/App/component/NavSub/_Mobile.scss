@@ -83,3 +83,20 @@
     list-style-type: none;
   }
 }
+
+.title-mobile {
+  position: absolute;
+  display: block;
+
+  top: 15px;
+  right: calc(20px + var(--sidebar-width));
+  font-size: 2.441rem;
+  margin: 0;
+
+  @include m.hsl(color, 0, 0%, f.dayOrDark(25%, 75%));
+  font-weight: bold;
+  text-decoration: underline;
+
+  pointer-events: none;
+  user-select: none;
+}

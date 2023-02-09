@@ -2,14 +2,11 @@ import {Redirect, Router} from "@reach/router"
 import React from "react"
 import {useImmer} from "use-immer"
 
-import {Canvas, Content, NavMain, NavSubMobile, NavSubTube, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, numWave, storeWavePhysics} from "@app/component"
+import {Canvas, Content, NavMain, NavSub, Sidebar, Title, WaveConfigs, mkWavePhysics, mkWaves, numWave, storeWavePhysics} from "@app/component"
 import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
 import "@app/share/style/main.scss"
 
-// TODO bug: switch between navsubtube and navsubmobile causes mismatch
-
 const numPointsOnWave = numDucks + 1
-
 const { place: initPlace, time: initTime } = initTheme()
 
 export const App = (): React.ReactElement => {
@@ -52,16 +49,10 @@ export const App = (): React.ReactElement => {
     document.getElementById("loading")?.remove()
   }, [])
 
-  const navSub = isMobile() ?
-    <NavSubMobile path={path} setPath={setPath} />
-    : <NavSubTube path={path} setPath={setPath} />
-//   const navSub = <NavSub path={path} setPath={setPath} />
-  const title = isMobile() && <Title title={path.mapping[path.current]} />
-
   return (
     <div className="app" data-location={initPlace} data-time={initTime} id={appId}>
       <NavMain path={path} setPath={setPath} />
-      {navSub}
+      <NavSub path={path} setPath={setPath} />
       <main className="app__main">
         <div>
           <Router>
@@ -70,7 +61,7 @@ export const App = (): React.ReactElement => {
               to={path.current + "/" + path.mapping[path.current]}
               noThrow />
           </Router>
-          {title}
+          {/*{title}*/}
           <div id="background"></div>
           <Content />
           <Canvas

@@ -2,7 +2,6 @@ import React from "react"
 import {Updater} from "use-immer"
 
 import {Path, isType, mainPaths, numDucks, pathObject, subPaths} from "@app/share"
-
 import {ItemContent} from "./NavMain/ItemContent"
 import {ItemSidebar} from "./NavMain/ItemSidebar"
 
@@ -21,16 +20,7 @@ export const NavMain = ({path, setPath}: P):
         to={"/" + x + "/" + path.mapping[x]}
         isActive={x === path.current}
         left={left(i)}
-        onclick={() => {
-          setPath(d => {
-            const p = window.location.pathname
-            const curSubpage = p.substring(p.lastIndexOf("/") + 1)
-            if (isType(curSubpage, subPaths)) {
-              d.mapping[d.current] = curSubpage
-            }
-            d.current = x
-          })
-        }}
+        onclick={() => setPath(d => { d.current = x })}
       />
     )}
     <ItemSidebar left={left(numDucks - 1)} />

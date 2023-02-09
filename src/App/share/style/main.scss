@@ -6,15 +6,14 @@
 
 @use "@app/component/Canvas";
 @use "@app/component/NavMain";
-@use "@app/component/NavSubMobile";
-@use "@app/component/NavSubTube";
-@use "@app/component/NavSubTube/NodeHighlighter";
-@use "@app/component/NavSubTube/NodeText";
-@use "@app/component/NavSubTube/NodeValve";
+@use "@app/component/NavSub/Desktop";
+@use "@app/component/NavSub/Desktop/NodeHighlighter";
+@use "@app/component/NavSub/Desktop/NodeText";
+@use "@app/component/NavSub/Desktop/NodeValve";
+@use "@app/component/NavSub/Mobile";
 @use "@app/component/Sidebar";
 @use "@app/component/Sidebar/SidebarToggler";
 @use "@app/component/Sidebar/LocationPicker";
-@use "@app/component/Title";
 
 @use "@app/component/Content";
 @use "@app/component/Content/page/NotFound";
