@@ -36,28 +36,28 @@ export const Hi = (): React.ReactElement => (
       &nbsp;for this website.
     </p>
 
-    <h2 className="highlight">What Truly Matters</h2>
+    <h2 className="highlight">What Can Truly Matter</h2>
 
     <div className="stanzas">
-      <div>Been here for long<br />
+      <div>Been here for long while<br />
       Never know the why<br />
       Water flows and birds fly<br />
-      But what desirable I find none</div>
+      But what desirable I can't find</div>
 
       <div>Look! No matter slave or duchess<br />
-      Be filled with difficulties<br />
       On the sphere of pointlessness<br />
-      Any step is for the silly</div>
+      Be filled with difficulties<br />
+      Any step is illusory</div>
 
-      <div>One day I realize the only<br />
-      Always ignored but truly sensible<br />
-      Like fish just sees water<br />
-      Bird just sees the air<br /></div>
+      <div>One day the epiphany<br />
+      struck me with undeniability.<br />
+      Obscured but true like<br />
+      water to fish; air to flies</div>
 
-      <div>Without any being<br />
-      Saturn curshes Mars into pieces<br />
-      The debris falls into earth's terrain<br />
-      Who who who is gonna complain</div>
+      <div>Without all these beings<br />
+      Senseless stones falling<br />
+      Thud! Bang! Crack! Here debris<br />
+      Complaint? Who is it?</div>
 
       <div>On the path of no belief<br />
       The only thing that can matter<br />
@@ -65,19 +65,9 @@ export const Hi = (): React.ReactElement => (
       Inside sentient beings</div>
 
       <div>May this website be light<br />
-      Reflected from my path<br />
-      On a small string of sensible<br />
-      To remind myself what truly matter</div>
+      Reflected from my flight<br />
+      Everyday. Day and night<br />
+      Along a small string of what is right</div>
     </div>
   </div>
 )
-//     <p className="big-text">
-//       <b className="highlight">Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i></b>. I made a compatible lifestyle and relevant (written) works on both personal and societal scales based on my interpretations of this basic&nbsp;
-//       <TooltipText text="realization">
-//         The only things that <i>can</i> truly matter, to any sentient being, lie within the flows inherent in all sentient beings.
-//       </TooltipText>
-//       &nbsp;my lifelong pursuits. However, I am not planning to monetize them.
-//     </p>
-// 
-//     <p className="big-text">I plan to sustain myself primarily by working full-time in Thailand. Before this, I have been an intern/employee in Germany, a teaching and research assistant in Thailand, and a tutor in some places. I have good knowledge of English, basic (web) programming/Linux, telecommunications, and wholesome lifestyles. My soft skills include quantitative/analytical skills, discipline, self-introspection, and minimalism.
-//     </p>
