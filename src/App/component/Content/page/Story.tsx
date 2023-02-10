@@ -1,5 +1,6 @@
 import React from "react"
 
+import {initInPageNavButtons, initIntObserver} from "@app/share"
 import {Child} from "./Story/00-Child"
 import {Teen} from "./Story/01-Teen"
 import {Bachelor} from "./Story/02-Bachelor"
@@ -9,8 +10,6 @@ import {WorkGermany} from "./Story/05-WorkGermany"
 import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
 import {Realization} from "./Story/07-Realization"
 import {FindWork} from "./Story/08-FindWork"
-
-import {initInPageNavButtons, initIntObserver} from "@app/share"
 
 const page = "about-story"
 

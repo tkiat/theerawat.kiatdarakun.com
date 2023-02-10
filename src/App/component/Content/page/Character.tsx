@@ -76,7 +76,7 @@ export const Character = (): React.ReactElement => (
           <ul>
             <li><b className="highlight">Performance</b>: I am naturally inclined to learn something new, and I possess good quantitative and analytical thinking skills. I believe I can handle most jobs.</li>
             <li><b className="highlight">Teamwork</b>: As a highly conscientious person, I tend to be disciplined. I have been so far abide by the rules in the earlier workplaces.</li>
-            <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip and backstabbing. However, I possess social withdrawal tendency.</li>
+            <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip. However, I have a social withdrawal tendency.</li>
           </ul>
         </TooltipText>
         ,&ensp;
