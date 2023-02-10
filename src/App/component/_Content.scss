@@ -79,12 +79,9 @@
   .stanzas {
     font-size: 1em;
     display: flex;
-    gap: 1em;
+    gap: 2em;
     flex-wrap: wrap;
-    align-items: flex-end;
-    & > * {
-/*       border: 2px solid red; */
-    }
+/*     align-items: flex-end; */
   }
   .notbold{
     font-weight: normal;
