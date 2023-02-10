@@ -5,7 +5,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 export const Hi = (): React.ReactElement => (
   <div className="no-split">
     <p>
-      Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living my life and producing works by, or at least not in the opposite of, <b className="highlight">what truly matters</b>. This website serves as an outlet for who I am and my activities. Here are&nbsp;
+      Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living my life and producing works by, or at least not in the opposite of, <b className="highlight">what can truly matter</b>. This website serves as an outlet for who I am and my activities. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> theerawat@kiatdarakun.com <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -41,33 +41,33 @@ export const Hi = (): React.ReactElement => (
     <div className="stanzas">
       <div>Been here for long while<br />
       Never know the why<br />
-      Water flows and birds fly<br />
-      But what desirable I can't find</div>
+      I know what it means<br />
+      but no sense it seems.</div>
 
       <div>Look! No matter slave or duchess<br />
       On the sphere of pointlessness<br />
       Be filled with difficulties<br />
-      Any step is illusory</div>
+      Any step is illusory.</div>
 
       <div>One day the epiphany<br />
       struck me with undeniability.<br />
       Obscured but true like<br />
-      water to fish; air to flies</div>
+      water to fish; air to flies.</div>
 
       <div>Without all these beings<br />
       Senseless stones falling<br />
       Thud! Bang! Crack! Here debris<br />
       Complaint? Who is it?</div>
 
-      <div>On the path of no belief<br />
-      The only thing that can matter<br />
-      Can be found in the flow<br />
-      Inside sentient beings</div>
+      <div>On the path of no belief,<br />
+      what truly matter indeed<br />
+      can only be the flow<br />
+      of those who may feel low.</div>
 
       <div>May this website be light<br />
-      Reflected from my flight<br />
+      reflected from my flight.<br />
       Everyday. Day and night<br />
-      Along a small string of what is right</div>
+      Along the souls of the wise</div>
     </div>
   </div>
 )
