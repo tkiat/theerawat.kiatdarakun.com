@@ -11,7 +11,7 @@ export const Hi = (): React.ReactElement => (
           <i className="fa-regular fa-envelope"></i> theerawat@kiatdarakun.com <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
         </span>
       </TooltipTextWithDelay>
-      &nbsp;and the&nbsp;
+      , the&nbsp;
       <TooltipTextWithDelay text="credits">
         <span className="notbold">
           <span className="highlight">[Font]</span> &nbsp;
@@ -33,41 +33,51 @@ export const Hi = (): React.ReactElement => (
           <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>
         </span>
       </TooltipTextWithDelay>
+      , and the&nbsp;
+      <TooltipTextWithDelay text="license">
+        <span className="notbold">
+          This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+        </span>
+      </TooltipTextWithDelay>
       &nbsp;for this website.
     </p>
 
     <h2 className="highlight">What Can Truly Matter</h2>
 
     <div className="stanzas">
-      <div>Been here for long while<br />
-      Never know the why<br />
+      <div>For a long while<br />
+      Never know why<br />
       I know what it means<br />
       but no sense it seems.</div>
 
-      <div>Look! No matter slave or duchess<br />
+      <div>No matter slave or duchess<br />
       On the sphere of pointlessness<br />
-      Be filled with difficulties<br />
-      Any step is illusory.</div>
+      Filled with difficulties,<br />
+      any step seems silly.</div>
 
       <div>One day the epiphany<br />
       struck me with undeniability.<br />
-      Obscured but true like<br />
-      water to fish; air to flies.</div>
+      Obscure but true like<br />
+      water to fish, air to flies.</div>
 
-      <div>Without all these beings<br />
-      Senseless stones falling<br />
-      Thud! Bang! Crack! Here debris<br />
+      <div>Without all living things<br />
+      When stones are falling<br />
+      Thud! Bang! Crack! Ah, debris<br />
       Complaint? Who is it?</div>
 
       <div>On the path of no belief,<br />
-      what truly matter indeed<br />
+      what truly matters indeed<br />
       can only be the flow<br />
       of those who may feel low.</div>
 
-      <div>May this website be light<br />
-      reflected from my flight.<br />
-      Everyday. Day and night<br />
-      Along the souls of the wise</div>
+      <div>May this website be the light<br />
+      reflected on my flight<br />
+      along with remnants of wise souls<br />
+      and death that always follows.</div>
+
+      <div>Theerawat<br />2023-02-11</div>
     </div>
   </div>
 )
+//       Everyday. Day and night<br />
+//       Along the souls of the wise</div>

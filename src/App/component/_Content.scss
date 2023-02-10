@@ -81,7 +81,13 @@
     display: flex;
     gap: 2em;
     flex-wrap: wrap;
-/*     align-items: flex-end; */
+/*     counter-reset: list-number; */
+/*     & > * { */
+/*       counter-increment: list-number; */
+/*       &:before { */
+/*         content: counter(list-number) ")"; */
+/*       } */
+/*     } */
   }
   .notbold{
     font-weight: normal;
