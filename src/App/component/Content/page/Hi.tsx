@@ -8,20 +8,19 @@ const ContactAndCredits = (): React.ReactElement =>
 
 export const Hi = (): React.ReactElement => (
   <div className="no-split">
-    <h1 className="highlight">What Truly Matters</h1>
-
-    <div className="stanzas">
-
-      <p>
-        <b className="highlight">
-          <TooltipTextWithDelay text="Contact">
-            <i className="fa-regular fa-envelope"></i> theerawat@kiatdarakun.com &nbsp;
-            <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
-          </TooltipTextWithDelay>
-        </b>
-        &ensp;/&ensp;
-        <b className="highlight">
-          <TooltipTextWithDelay text="Credits">
+    <p>
+      Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living my life and producing works by, or at least not in the opposite of, <b className="highlight">what truly matters</b>. This website serves as an outlet for who I am and my activities. Here are&nbsp;
+      <b>
+        <TooltipTextWithDelay text="my contact">
+          <div className="notbold">
+            <i className="fa-regular fa-envelope"></i> theerawat@kiatdarakun.com <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
+          </div>
+        </TooltipTextWithDelay>
+      </b>
+      &nbsp;and the&nbsp;
+      <b>
+        <TooltipTextWithDelay text="credits">
+          <div className="notbold">
             <span className="highlight">[Font]</span> &nbsp;
             <a href="https://fonts.google.com/specimen/Lato">Lato</a>, &nbsp;
             <a href="https://fonts.google.com/specimen/Raleway">Raleway</a>
@@ -39,9 +38,17 @@ export const Hi = (): React.ReactElement => (
             <a href="https://freesvg.org/sunglasses-black-silhouette">Sunglasses</a>, &nbsp;
             <a href="https://freesvg.org/usb-video-camera-symbol-vector-drawing">Camera</a>, &nbsp;
             <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>
-          </TooltipTextWithDelay>
-        </b>
-      </p>
+          </div>
+        </TooltipTextWithDelay>
+      </b>
+        &nbsp;for this website.
+    </p>
+
+    <hr />
+
+    <h3 className="highlight">What Truly Matters</h3>
+
+    <div className="stanzas">
     </div>
   </div>
 )
