@@ -196,7 +196,7 @@ export const Character = (): React.ReactElement => (
         </TooltipText>
         ,&ensp;
         <TooltipText text="Sustenance">
-          <p>I always eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
+          <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
 
           <p>As for drinks, I usually drink non-chilled plain water, 12 grams of loose leaf tea, and one cup of chilled herbal tea daily.</p>
         </TooltipText>
@@ -213,7 +213,7 @@ export const Character = (): React.ReactElement => (
           <ul>
             <li>Rectangular: Glass (0.45L x 7 / 0.75L x4 / 1.25L x2), Plastic (2.8L)</li>
             <li>Cylindrical: Glass (0.3L x 6 / 0.7L x 5)</li>
-            <li>Jar: Glass (2L x 2 / 4L / TODO x 2)</li>
+            <li>Jar: Glass (2L x 4 / 4L x 3 / TODO x 2)</li>
             <li>Bottle: Glass (1L x 4), Plastic (1.2L x 3), Aluminium 0.75L</li>
             <li>Bowl: Insulated Stainless Steel (Big, Small)</li>
             <li>Glass: Ceramic (360ml), Stainless (TODO x 2)</li>
@@ -309,40 +309,3 @@ export const Character = (): React.ReactElement => (
     </section>
   </div>
 )
-
-//         <li>
-//           <b className="highlight">Chosen Apps/Services</b>
-// 
-//           &nbsp;—&nbsp;
-//           <TooltipText text="OS">
-//             <ul>
-//               <li>Desktop: QubesOS, Debian, NixOS</li>
-//               <li>Mobile: Android (Mainly for Shopping and Banking)</li>
-//             </ul>
-//           </TooltipText>
-//           ,&ensp;
-//           <TooltipText text="Email">
-//             <ul>
-//               <li>One Tutanota domain</li>
-//               <li>One Custom Domain, Hosted on Zoho</li>
-//             </ul>
-//           </TooltipText>
-//         </li>
-
-
-//       <TooltipText text="Computing">
-//         <ul>
-//           <li>DRM in a single-purchased product, unless effective, only punishes customers. DRMs in subscription services, though imperfect, have some merits as it makes products more accessible to poor users.</li>
-//           <li>All operating systems and at least one collection of firmware in all computers should be FOSS because people deserve freedom-friendly choices.</li>
-//         </ul>
-//       </TooltipText>
-
-//       <TooltipText text="Food & Drinks">
-//         <ul>
-//           <li>Least Processed</li>
-//           <li>Cook Myself</li>
-//           <li>Stored in Glass Container</li>
-//           <li>Chilled Water Only to Preserve It</li>
-//           <li>Loose Leaf Tea Over Teabags</li>
-//         </ul>
-//       </TooltipText>

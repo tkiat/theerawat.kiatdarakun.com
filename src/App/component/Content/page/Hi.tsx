@@ -2,7 +2,7 @@ import React from "react"
 
 import {TooltipText, TooltipTextWithDelay} from "../share"
 
-export const Hi = (): React.ReactElement => (
+export const Hi = (): React.ReactElement =>
   <div className="no-split">
     <p>
       Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living my life and producing works by, or at least not in the opposite of, <b className="highlight">what can truly matter</b>. This website serves as an outlet for who I am and my activities. Here are&nbsp;
@@ -39,7 +39,7 @@ export const Hi = (): React.ReactElement => (
           This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
         </span>
       </TooltipTextWithDelay>
-      &nbsp;for this website.
+      &nbsp;of the content on this website.
     </p>
 
     <h2 className="highlight">What Can Truly Matter</h2>
@@ -60,14 +60,14 @@ export const Hi = (): React.ReactElement => (
       Obscure but true like<br />
       water to fish, air to flies.</div>
 
-      <div>Without all living things<br />
+      <div>Without any living thing<br />
       When stones are falling<br />
-      Thud! Bang! Crack! Ah, debris<br />
+      Thud! Crack! Full of debris<br />
       Complaint? Who is it?</div>
 
       <div>On the path of no belief,<br />
       what truly matters indeed<br />
-      can only be the flow<br />
+      can only be the actual flow<br />
       of those who may feel low.</div>
 
       <div>May this website be the light<br />
@@ -75,9 +75,6 @@ export const Hi = (): React.ReactElement => (
       along with remnants of wise souls<br />
       and death that always follows.</div>
 
-      <div>Theerawat<br />2023-02-11</div>
+      <div>Theerawat<br />Created: 2023-02-11</div>
     </div>
   </div>
-)
-//       Everyday. Day and night<br />
-//       Along the souls of the wise</div>
