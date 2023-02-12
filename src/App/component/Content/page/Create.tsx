@@ -19,21 +19,24 @@ type AppProps = [
   }
 ]
 
-type ContentProps = [{
-  group_name: string,
-  group_dscp: string,
-  link: string,
-  abandoned: boolean,
-  items: [
-    {
-      date: string,
-      link: string,
-      title: string,
-    }
-  ]
-}]
+type ContentProps = [
+  {
+    group_name: string,
+    group_dscp: string,
+    link: string,
+    abandoned: boolean,
+    items: [
+      {
+        date: string,
+        link: string,
+        title: string,
+      }
+    ]
+  }
+]
 
-const renderAppItems = (items: AppProps) => items.map((x, i) =>
+const renderAppItems = (items: AppProps) => items &&
+  items.map((x, i) =>
   <section key={i}>
     <h4>{x.group_name}</h4>
 
@@ -49,7 +52,8 @@ const renderAppItems = (items: AppProps) => items.map((x, i) =>
   </section>
 )
 
-const renderContentItems = (items: ContentProps) => items.map((x, i) =>
+const renderContentItems = (items: ContentProps) => items &&
+  items.map((x, i) =>
   <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
     <h4>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h4>
 
@@ -63,98 +67,166 @@ const renderContentItems = (items: ContentProps) => items.map((x, i) =>
   </section>
 )
 
-const page = "activity-create"
-let observer: IntersectionObserver, sections: NodeListOf<Element>
+const resources = [
+  "/create/apps.json",
+  "/create/blog.json",
+  "/create/videos.json",
+] as const
+// Object.keys(itemsInit)
+
+const itemsInit = {
+  [resources[0]]: undefined,
+  [resources[1]]: undefined,
+  [resources[2]]: undefined,
+}
+
+type Items = {
+  "/create/apps.json": AppProps | undefined,
+  "/create/blog.json": ContentProps | undefined,
+  "/create/videos.json": ContentProps | undefined,
+}
+
+// type Resources = (typeof resources)[number]
+
+// type Items = {
+//   [x in Resources]?: string
+// }
+
+// type Items = {
+//   [a: resources[0]]: AppProps | undefined,
+// } & {
+//   [resources[1]]: ContentProps | undefined,
+// }
+
+// type Items = {
+//   [resources[0]]: AppProps | undefined,
+//   [resources[1]]: ContentProps | undefined,
+//   [resources[2]]: ContentProps | undefined,
+// }
 
 export const Create = (): React.ReactElement => {
-  const [apps, setApps] = React.useState()
-  const [blogs, setBlogs] = React.useState()
-  const [videos, setVideos] = React.useState()
+
+  const [items, setItems] = React.useState<Items>(itemsInit
+//     resources.reduce<Items>((acc, x) => ({...acc, [x]: undefined}), {})
+  )
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const [aRes, bRes, vRes] = await Promise.all([
-        fetch("/create/apps.json"),
-        fetch("/create/blog.json"),
-        fetch("/create/videos.json"),
-      ])
+      const res = await Promise.all(resources.map(x => fetch(x)))
 
       if (mounted) {
-        const aResType = aRes.headers.get("content-type");
-        if (aResType && aResType.indexOf("application/json") !== -1) {
-          setApps(await aRes.json())
+        for (const i of [0, 1, 2]) {
+          const type = res[i].headers.get("content-type")
+          if (type && type.indexOf("application/json") !== -1) {
+            const c = await res[i].json()
+            setItems(prev => ({ ...prev, [resources[i]]: c }));
+          }
         }
-
-        const bResType = bRes.headers.get("content-type");
-        if (bResType && bResType.indexOf("application/json") !== -1) {
-          setBlogs(await bRes.json())
-        }
-
-        const vResType = vRes.headers.get("content-type");
-        if (vResType && vResType.indexOf("application/json") !== -1) {
-          setVideos(await vRes.json())
-        }
-
-        initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
-        sections = document.querySelectorAll(`[id^="section-${page}"]`)
-        observer = initIntObserver(sections)
-
       }
     })()
 
+    return () => { mounted = false }
+  }, [])
+
+  const data = {
+    icons: [
+      <i className="fa-solid fa-code"></i>,
+      <i className="fa-solid fa-pen"></i>,
+      <i className="fa-solid fa-film"></i>,
+    ],
+    content: {
+      prelude: <Prelude />,
+      sections: [
+        <Section0 items={items[resources[0]]} />,
+        <Section1 items={items[resources[1]]}/>,
+        <Section2 items={items[resources[2]]}/>,
+      ]
+    }
+  }
+
+  return <SplitContent data={data} page="activity-create" />
+}
+
+type P = {
+  data: {
+    icons: React.ReactElement[],
+    content: {
+      prelude: React.ReactElement,
+      sections: React.ReactElement[],
+    }
+  },
+  page: string,
+}
+
+const SplitContent = ({data, page}: P): React.ReactElement => {
+  let observer: IntersectionObserver, sectionElems: NodeListOf<Element>
+
+  React.useEffect((): (() => void) => {
+    (async () => {
+      initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
+      sectionElems = document.querySelectorAll(`[id^="section-${page}"]`)
+      observer = initIntObserver(sectionElems)
+    })()
+
     return () => {
-      mounted = false
-      sections?.forEach(section => {
-        observer.unobserve(section)
-      })
+      sectionElems?.forEach(section => { observer.unobserve(section) })
     }
   }, [])
 
   return (
     <div className="split-status">
       <div className="split-status__status">
-        <button className="split-status__icon" id={`btn-${page}-software`}>
-          <i className="fa-solid fa-code"></i>
-        </button>
-
-        <button className="split-status__icon" id={`btn-${page}-write`}>
-          <i className="fa-solid fa-pen"></i>
-        </button>
-
-        <button className="split-status__icon" id={`btn-${page}-video`}>
-          <i className="fa-solid fa-film"></i>
-        </button>
+        {
+          data.icons.map((x, i) =>
+            <button key={i} className="split-status__icon" id={`btn-${page}-${i}`}>
+              {x}
+            </button>
+          )
+        }
       </div>
 
       <div className="split-status__content">
         <section>
-          <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
+          {data.content.prelude}
         </section>
 
-        <section id={`section-${page}-software`}>
-          <h2>Software</h2>
-          <h3 className="highlight">Apps</h3>
-          {apps === undefined ? <p>Loading ...</p> : renderAppItems(apps)}
-        </section>
-
-        <hr />
-
-        <section id={`section-${page}-write`}>
-          <h2>Writing</h2>
-          <h3 className="highlight">My Own Blog Site</h3>
-          {blogs === undefined ? <p>Loading ...</p> : renderContentItems(blogs)}
-        </section>
-
-        <hr />
-
-        <section id={`section-${page}-video`}>
-          <h2>Videos</h2>
-          <h3 className="highlight">Channel</h3>
-          {videos === undefined ? <p>Loading ...</p> : renderContentItems(videos)}
-        </section>
+        {
+          data.content.sections.map((x, i) =>
+            <React.Fragment key={i}>
+              <hr />
+              <section id={`section-${page}-${i}`}>
+                {x}
+              </section>
+            </React.Fragment>
+          )
+        }
       </div>
     </div>
   )
 }
+
+const Prelude = (): React.ReactElement =>
+  <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
+
+const Section0 = ({items}: {items: AppProps | undefined}): React.ReactElement =>
+  <>
+    <h2>Software</h2>
+    <h3 className="highlight">Apps</h3>
+    {items === undefined ? <p>Loading ...</p> : renderAppItems(items)}
+  </>
+
+const Section1 = ({items}: {items: ContentProps | undefined}): React.ReactElement =>
+  <>
+    <h2>Writing</h2>
+    <h3 className="highlight">My Own Blog Site</h3>
+    {items === undefined ? <p>Loading ...</p> : renderContentItems(items)}
+  </>
+
+const Section2 = ({items}: {items: ContentProps | undefined}): React.ReactElement =>
+  <>
+    <h2>Videos</h2>
+    <h3 className="highlight">Channel</h3>
+    {items === undefined ? <p>Loading ...</p> : renderContentItems(items)}
+  </>
