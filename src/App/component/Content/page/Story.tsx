@@ -1,7 +1,7 @@
 import React from "react"
 
 import {initInPageNavButtons, initIntObserver} from "@app/share"
-import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
+import {PageWithIconsScrollbar} from "../share"
 import {Child} from "./Story/00-Child"
 import {Teen} from "./Story/01-Teen"
 import {Bachelor} from "./Story/02-Bachelor"

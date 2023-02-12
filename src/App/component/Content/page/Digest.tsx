@@ -1,6 +1,6 @@
 import React from "react"
 
-import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
+import {PageWithIconsScrollbar} from "../share"
 import {TooltipFa, TooltipText} from "../share"
 import {getRange, initInPageNavButtons, initIntObserver} from "@app/share"
 

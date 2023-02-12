@@ -1,6 +1,6 @@
 import React from "react"
 
-import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
+import {PageWithIconsScrollbar} from "../share"
 
 export const Create = (): React.ReactElement => {
 

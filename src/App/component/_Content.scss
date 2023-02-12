@@ -10,6 +10,12 @@
   top: calc(var(--nav-tube-height) + 20px);
   height: calc(100% - var(--nav-tube-height) - 140px);
 
+  .more-space-li {
+    & > li {
+      margin-bottom: 0.75em;
+    }
+  }
+
   li::marker, .highlight {
     color: var(--highlight-color);
   }

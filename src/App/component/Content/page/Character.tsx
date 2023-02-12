@@ -1,12 +1,40 @@
 import React from "react"
+
 import {TooltipText, TooltipTextWithDelay} from "../share"
+import {PageWithIconsScrollbar} from "../share"
 
-export const Character = (): React.ReactElement => (
-  <div className="split-half">
-    <section>
-      <h2>Internal</h2>
+export const Character = (): React.ReactElement => {
+  const data = {
+    icons: [
+      <i className="fa-solid fa-heart"></i>,
+      <i className="fa-solid fa-person"></i>,
+      <i className="fa-solid fa-person-hiking"></i>,
+      <i className="fa-solid fa-suitcase-rolling"></i>,
+    ],
+    content: {
+      prelude: <Prelude />,
+      sections: [
+        <InnerTrait />,
+        <ExternalTrait />,
+        <Hobbies />,
+        <Belongings />,
+      ]
+    }
+  }
+  return <PageWithIconsScrollbar data={data} page="about-character" />
+}
 
-      <div>
+const Prelude = (): React.ReactElement =>
+  <section>
+    todo
+  </section>
+
+const InnerTrait = (): React.ReactElement =>
+  <section>
+    <h2>Internal</h2>
+
+    <ul className="more-space-li">
+      <li>
         <b className="highlight">Personality Test</b>
 
         &nbsp;—&nbsp;
@@ -41,11 +69,8 @@ export const Character = (): React.ReactElement => (
             <li>Phlegmatic: 22</li>
           </ul>
         </TooltipTextWithDelay>
-      </div>
-
-      <br />
-
-      <div>
+      </li>
+      <li>
         <b className="highlight">Hard Skills</b>
         &nbsp;—&nbsp;
         <TooltipText text="Language">
@@ -68,8 +93,8 @@ export const Character = (): React.ReactElement => (
         <TooltipText text="Communications">
           Obtain Bachelor and Master's degrees related to Communications technologies.
         </TooltipText>
-
-        &nbsp;—&nbsp;
+      </li>
+      <li>
         <b className="highlight">Soft Skills</b>
         &nbsp;—&nbsp;
         <TooltipText text="Workplace">
@@ -86,38 +111,8 @@ export const Character = (): React.ReactElement => (
             <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply only vegan food, not disturb others, and frequently avoid creating unnecessary wastes.</li>
           </ul>
         </TooltipText>
-      </div>
-
-      <br />
-
-      <div>
-        <b className="highlight">Hobbies</b>
-
-        &nbsp;—&nbsp;
-        <TooltipText text="Low-Impact Living">
-          My ideal life based on what truly matter is free of greediness, and thus I value minimalism, sustainability, and veganism. It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? That's subjective. Hmm.
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Increase Awareness">
-          I like to consume information to increase my awareness of the world. This should help reinforce my understanding of what truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Philosophy">
-          Knowledge of philosophy should make my works of personal life and society based on what truly matter more accessible and acceptable to the general public. I have yet to read a lot of works but I will deinitely do so in free time.
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="(Free and) Open Source Software">
-          Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey. I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Writing">
-          Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to a reader.
-        </TooltipText>
-      </div>
-
-      <br />
-
-      <div>
+      </li>
+      <li>
         <b className="highlight">Views</b>
 
         &nbsp;—&nbsp;
@@ -126,18 +121,16 @@ export const Character = (): React.ReactElement => (
 
           <p>Every status is not desirable as everybody has problems: a prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first genuine wisdom I attained. I was so satisfied that I decided to live by awareness instead of any made-up life purpose.</p>
         </TooltipText>
-      </div>
-    </section>
+      </li>
+    </ul>
+  </section>
 
-    <section className="page-break">
-      <br />
-      <hr />
-    </section>
+const ExternalTrait = (): React.ReactElement =>
+  <section>
+    <h2>External Traits</h2>
 
-    <section>
-      <h2>External</h2>
-
-      <div>
+    <ul className="more-space-li">
+      <li>
         <b className="highlight">Appearance</b>
 
         &nbsp;—&nbsp;
@@ -166,11 +159,8 @@ export const Character = (): React.ReactElement => (
             <li>Millennials</li>
           </ul>
         </TooltipText>
-      </div>
-
-      <br />
-
-      <div>
+      </li>
+      <li>
         <b className="highlight">Behavior</b>
 
         &nbsp;—&nbsp;
@@ -198,112 +188,126 @@ export const Character = (): React.ReactElement => (
 
           <p>As for drinks, I usually drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>
         </TooltipText>
-      </div>
+      </li>
+    </ul>
+  </section>
 
-      <br />
+const Hobbies = (): React.ReactElement =>
+  <section>
+    <h2>Hobbies</h2>
 
-      <div>
-        <b className="highlight">Belongings</b>
+    <ul className="more-space-li">
+      <li><b className="highlight">Low-Impact Living</b>. My ideal life based on what truly matter is free of greediness, and thus I value minimalism, sustainability, and veganism. It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.</li>
+      <li><b className="highlight">Increase Awareness</b>. I like to consume information to increase my awareness of the world. This should help reinforce my understanding of what truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.</li>
+      <li><b className="highlight">Writing</b>. Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to a reader.</li>
+      <li><b className="highlight">(Free and) Open Source Software</b>. Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey. I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).</li>
+      <li><b className="highlight">Philosophy</b>. Knowledge of philosophy should make my works of personal life and society based on what truly matter more accessible and acceptable to the general public. I have yet to read a lot of works but I will deinitely do so in free time.</li>
+    </ul>
+  </section>
 
-        &nbsp;—&nbsp;
-        Food & Drinks (
-        <TooltipText text="Container">
-          <ul>
-            <li>Rectangular: Glass (0.45L x 7 / 0.75L x4 / 1.25L x2), Plastic (2.8L)</li>
-            <li>Cylindrical: Glass (0.3L x 6 / 0.7L x 5)</li>
-            <li>Jar: Glass (2L x 4 / 4L x 3 / TODO x 2)</li>
-            <li>Bottle: Glass (1L x 4), Plastic (1.2L x 3), Aluminium 0.75L</li>
-            <li>Bowl: Insulated Stainless Steel (Big, Small)</li>
-            <li>Glass: Ceramic (360ml), Stainless (TODO x 2)</li>
-            <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain)</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Processing">
-          <ul>
-            <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
-            <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
-            <li>Accessories: Spatula, Cheesecloth (Big x 2, Medium, Small), Silicone Mat x 4, Thermometer, Weighing Machine (&lt;= 5 kg)</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Consuming">
-          <ul>
-            <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11)</li>
-            <li>Accessories: Bottle Opener, Tea (Wood Clip, Plastic Tray With Wood Top, Aluminium Cup Filter), Wine Opener</li>
-          </ul>
-        </TooltipText>
-        ),&ensp;
-        <TooltipText text="Health">
-          <ul>
-            <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
-            <li>Protection: Earplug Pair, Eye Cover</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Hygiene">
-          Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Clothing & Accessories">
-          <ul>
-            <li>General: Eyeglasses x 2, Handkerchief x 8, Pants (Long, Jeans x 3, Short x 3), Shirt (Jacket x 2, Long x 2, Short x 6), Shoe (Sandals, Sneaker), Sock x 11, Underwear x 6, Wallet, Watches x 2</li>
-            <li>Work: Long Pants, Long Shirt x 2, Necktie, Shoe, Suit x 3</li>
-            <li>Workout: Shirt x 3, Shoe, Shorts, Sock, Underware x 2</li>
-            <li>Very Cold Climate: Leggings, Scarf, Shirt x 6</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Computing">
-          <ul>
-            <li>
-              Computer
-              <ul>
-                <li>Laptop: Thinkpad X260, Thinkpad X200</li>
-                <li>SSD: WD Blue 500GB, Apacer Panther 120GB x 2</li>
-                <li>RAM: DDR4 (16GB, 4GB), DDR3 (2GB x 2, 1GB x 3)</li>
-                <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC, Cable (HDMI, VGA)</li>
-              </ul>
-            </li>
+const Belongings = (): React.ReactElement =>
+  <section>
+    <h2>Belongings</h2>
+    <div>
+      <b className="highlight">Belongings</b>
 
-            <li>
-              Mobile
-              <ul>
-                <li>Phone: Huawei P10, Nokia 2, True Super Hero 4G Entertainment & Plus</li>
-                <li>Internal: Micro SD Card 32GB</li>
-                <li>Accessories: Phone Holder x 2</li>
-              </ul>
-            </li>
+      &nbsp;—&nbsp;
+      Food & Drinks (
+      <TooltipText text="Container">
+        <ul>
+          <li>Rectangular: Glass (0.45L x 7 / 0.75L x4 / 1.25L x2), Plastic (2.8L)</li>
+          <li>Cylindrical: Glass (0.3L x 6 / 0.7L x 5)</li>
+          <li>Jar: Glass (2L x 4 / 4L x 3 / TODO x 2)</li>
+          <li>Bottle: Glass (1L x 4), Plastic (1.2L x 3), Aluminium 0.75L</li>
+          <li>Bowl: Insulated Stainless Steel (Big, Small)</li>
+          <li>Glass: Ceramic (360ml), Stainless (TODO x 2)</li>
+          <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain)</li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Processing">
+        <ul>
+          <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
+          <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
+          <li>Accessories: Spatula, Cheesecloth (Big x 2, Medium, Small), Silicone Mat x 4, Thermometer, Weighing Machine (&lt;= 5 kg)</li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Consuming">
+        <ul>
+          <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11)</li>
+          <li>Accessories: Bottle Opener, Tea (Wood Clip, Plastic Tray With Wood Top, Aluminium Cup Filter), Wine Opener</li>
+        </ul>
+      </TooltipText>
+      ),&ensp;
+      <TooltipText text="Health">
+        <ul>
+          <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
+          <li>Protection: Earplug Pair, Eye Cover</li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Hygiene">
+        Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Clothing & Accessories">
+        <ul>
+          <li>General: Eyeglasses x 2, Handkerchief x 8, Pants (Long, Jeans x 3, Short x 3), Shirt (Jacket x 2, Long x 2, Short x 6), Shoe (Sandals, Sneaker), Sock x 11, Underwear x 6, Wallet, Watches x 2</li>
+          <li>Work: Long Pants, Long Shirt x 2, Necktie, Shoe, Suit x 3</li>
+          <li>Workout: Shirt x 3, Shoe, Shorts, Sock, Underware x 2</li>
+          <li>Very Cold Climate: Leggings, Scarf, Shirt x 6</li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Computing">
+        <ul>
+          <li>
+            Computer
+            <ul>
+              <li>Laptop: Thinkpad X260, Thinkpad X200</li>
+              <li>SSD: WD Blue 500GB, Apacer Panther 120GB x 2</li>
+              <li>RAM: DDR4 (16GB, 4GB), DDR3 (2GB x 2, 1GB x 3)</li>
+              <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC, Cable (HDMI, VGA)</li>
+            </ul>
+          </li>
 
-            <li>
-              Other: Earphone x 2, WiFi Adapter AR9271
-            </li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Travel">
-          <ul>
-            <li>Container: Backpack (Small, Medium), Grocery Bag (Jute Big, Jute Small, Plastic x 2), Luggage (Big x 2)</li>
-            <li>Other: Bicycle (Portable Multitool, Helmet), Power Bank</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Tool">
-          <ul>
-            <li>Measurement: Foldable Ruler (200cm, 50cm), Tape (150cm), Body Weighing Machine</li>
-            <li>Paper: Folder x 2, Pen (Red, Blue), Mechanical Pencil , Stapler</li>
-            <li>General: Scissor, Screwdriver Set (Medium, Small)</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Household">
-          <ul>
-            <li>Container: Plastic (Small), Glass (100ml x 4), Stainless Water Bowl (Big, Small)</li>
-            <li>Electronics: USB Fan, Air Purifier, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
-            <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post x 3, Pillow (and Case)</li>
-          </ul>
-        </TooltipText>
-      </div>
-    </section>
-  </div>
-)
+          <li>
+            Mobile
+            <ul>
+              <li>Phone: Huawei P10, Nokia 2, True Super Hero 4G Entertainment & Plus</li>
+              <li>Internal: Micro SD Card 32GB</li>
+              <li>Accessories: Phone Holder x 2</li>
+            </ul>
+          </li>
+
+          <li>
+            Other: Earphone x 2, WiFi Adapter AR9271
+          </li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Travel">
+        <ul>
+          <li>Container: Backpack (Small, Medium), Grocery Bag (Jute Big, Jute Small, Plastic x 2), Luggage (Big x 2)</li>
+          <li>Other: Bicycle (Portable Multitool, Helmet), Power Bank</li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Tool">
+        <ul>
+          <li>Measurement: Foldable Ruler (200cm, 50cm), Tape (150cm), Body Weighing Machine</li>
+          <li>Paper: Folder x 2, Pen (Red, Blue), Mechanical Pencil , Stapler</li>
+          <li>General: Scissor, Screwdriver Set (Medium, Small)</li>
+        </ul>
+      </TooltipText>
+      ,&ensp;
+      <TooltipText text="Household">
+        <ul>
+          <li>Container: Plastic (Small), Glass (100ml x 4), Stainless Water Bowl (Big, Small)</li>
+          <li>Electronics: USB Fan, Air Purifier, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
+          <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post x 3, Pillow (and Case)</li>
+        </ul>
+      </TooltipText>
+    </div>
+  </section>
