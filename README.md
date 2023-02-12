@@ -17,7 +17,7 @@ The wave represents my journey. This [Youtube video](https://www.youtube.com/wat
 
 ### Navbar Water Flow (Desktop Only)
 
-A letter consists of two SVGs: a display border and a mask to hide water outside the border. For each Raleway letter (from Google font), I import it into Inkscape and generate these 2 SVGs. Two pipes are added to the top and bottom of each letter to make the flow realistic.
+A letter consists of two SVGs: a display border and a mask to hide water outside the border. For each Raleway letter (from Google Fonts), I import it into Inkscape and generate these 2 SVGs. Two pipes are added to the top and bottom of each letter to make the flow realistic.
 
 There was a tiny (around 1px) unknown space between two adjacent SVGs in both Chrome and Firefox so I add extra space at two end of each letter and then use negative margin to remove that. As for the animation, a total of 12 animations are required. Take a look at [this document](doc/water-animation.md) for details.
 
@@ -28,9 +28,6 @@ There was a tiny (around 1px) unknown space between two adjacent SVGs in both Ch
 <!-- ### Potential Improvements -->
 
 <!-- - It is more performant to render canvas not in the main thread to not distract the user. [OffscreenCanvas](https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas) + Web Worker already works fine but OffscreenCanvas is currently an experimental feature so NONONO. -->
-
-
-
 
 <!-- ## Themes -->
 

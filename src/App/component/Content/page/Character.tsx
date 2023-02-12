@@ -50,9 +50,9 @@ export const Character = (): React.ReactElement => (
         &nbsp;—&nbsp;
         <TooltipText text="Language">
           <ul>
-            <li>English (professional, I used English during the internship and full-time work in Germany at ease)</li>
-            <li>German (basic, I could renew documents and shopping using only German)</li>
             <li>Thai (native)</li>
+            <li>English (professional)</li>
+            <li>German (basic, I could renew documents and shopping using only German)</li>
           </ul>
         </TooltipText>
         ,&ensp;
@@ -107,13 +107,11 @@ export const Character = (): React.ReactElement => (
         </TooltipText>
         ,&ensp;
         <TooltipText text="(Free and) Open Source Software">
-          Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey.
-          <br /><br />
-          I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).
+          Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey. I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).
         </TooltipText>
         ,&ensp;
         <TooltipText text="Writing">
-          Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to the reader.
+          Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to a reader.
         </TooltipText>
       </div>
 
@@ -198,7 +196,7 @@ export const Character = (): React.ReactElement => (
         <TooltipText text="Sustenance">
           <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
 
-          <p>As for drinks, I usually drink non-chilled plain water, 12 grams of loose leaf tea, and one cup of chilled herbal tea daily.</p>
+          <p>As for drinks, I usually drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>
         </TooltipText>
       </div>
 
