@@ -6,7 +6,7 @@ type P = {
   data: {
     icons: React.ReactElement[],
     content: {
-      prelude: React.ReactElement,
+      prelude?: React.ReactElement,
       sections: React.ReactElement[],
     }
   },
@@ -40,17 +40,23 @@ export const PageWithIconsScrollbar = ({data, page}: P): React.ReactElement => {
       </div>
 
       <div className="split-status__content">
-        <section>
-          {data.content.prelude}
-        </section>
+        {
+          data.content.prelude &&
+          <>
+            <section>
+              {data.content.prelude}
+            </section>
+            <hr />
+          </>
+        }
 
         {
           data.content.sections.map((x, i) =>
             <React.Fragment key={i}>
-              <hr />
               <section id={`section-${page}-${i}`}>
                 {x}
               </section>
+              {i < data.content.sections.length - 1 && <hr />}
             </React.Fragment>
           )
         }

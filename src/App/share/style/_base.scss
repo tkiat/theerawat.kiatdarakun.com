@@ -200,8 +200,8 @@ input[type="range"] {
 
 @mixin app-and-selector() {
 /*   fields to be shared between the whole app and place selector in the settings menu */
-  @include m.hsl(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%));
-  @include m.hsl(--color, 0, 0%, f.dayOrDark(5%, 95%));
+  @include m.hsla(--highlight-color, 0, 0%, f.dayOrDark(25%, 75%), f.dayOrDark(1, 0.9));
+  @include m.hsla(--color, 0, 0%, f.dayOrDark(5%, 95%), f.dayOrDark(1, 0.9));
 
   @include m.hsl(--duck-body-color, 180, 0%, f.dayOrDark(50%, 40%));
   @include m.hsl(--tube-stroke-color, 0, 0%, f.dayOrDark(25%, 85%));

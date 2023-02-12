@@ -6,16 +6,13 @@ import {PageWithIconsScrollbar} from "../share"
 export const Character = (): React.ReactElement => {
   const data = {
     icons: [
-      <i className="fa-solid fa-heart"></i>,
       <i className="fa-solid fa-person"></i>,
       <i className="fa-solid fa-person-hiking"></i>,
       <i className="fa-solid fa-suitcase-rolling"></i>,
     ],
     content: {
-      prelude: <Prelude />,
       sections: [
-        <InnerTrait />,
-        <ExternalTrait />,
+        <Trait />,
         <Hobbies />,
         <Belongings />,
       ]
@@ -29,9 +26,11 @@ const Prelude = (): React.ReactElement =>
     todo
   </section>
 
-const InnerTrait = (): React.ReactElement =>
+const Trait = (): React.ReactElement =>
   <section>
-    <h2>Internal</h2>
+    <h2>Traits</h2>
+
+    <h3>Internal</h3>
 
     <ul className="more-space-li">
       <li>
@@ -123,11 +122,8 @@ const InnerTrait = (): React.ReactElement =>
         </TooltipText>
       </li>
     </ul>
-  </section>
 
-const ExternalTrait = (): React.ReactElement =>
-  <section>
-    <h2>External Traits</h2>
+    <h3>External</h3>
 
     <ul className="more-space-li">
       <li>
@@ -192,6 +188,10 @@ const ExternalTrait = (): React.ReactElement =>
     </ul>
   </section>
 
+const ExternalTrait = (): React.ReactElement =>
+  <section>
+  </section>
+
 const Hobbies = (): React.ReactElement =>
   <section>
     <h2>Hobbies</h2>
@@ -208,10 +208,13 @@ const Hobbies = (): React.ReactElement =>
 const Belongings = (): React.ReactElement =>
   <section>
     <h2>Belongings</h2>
-    <div>
-      <b className="highlight">Belongings</b>
+    {
+    /*
+     tea set, dried food container set, food container, drinks container
+     */
+    }
 
-      &nbsp;—&nbsp;
+    <div>
       Food & Drinks (
       <TooltipText text="Container">
         <ul>
