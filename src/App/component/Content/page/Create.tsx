@@ -1,6 +1,6 @@
 import React from "react"
 
-import {initInPageNavButtons, initIntObserver} from "@app/share"
+import {SplitContent} from "../share/SplitContent"
 
 type AppProps = [
   {
@@ -35,55 +35,24 @@ type ContentProps = [
   }
 ]
 
-const renderAppItems = (items: AppProps) => items &&
-  items.map((x, i) =>
-  <section key={i}>
-    <h4>{x.group_name}</h4>
-
-    {x.items &&
-      <ul className="ul-more-space">
-        {x.items.map((y, j) =>
-          <li className={y.abandoned ? "abandoned" : ""} aria-hidden={y.abandoned} key={j}>
-            {y.date} — <a href={y.link}>{y.name}</a>&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
-          </li>
-        )}
-      </ul>
-    }
-  </section>
-)
-
-const renderContentItems = (items: ContentProps) => items &&
-  items.map((x, i) =>
-  <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
-    <h4>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h4>
-
-    <p>{x.group_dscp}</p>
-
-    {x.items &&
-      <ul className="ul-more-space">
-        {x.items.map((y, j) => <li key={j}>{y.date} — <a href={y.link}>{y.title}</a></li>)}
-      </ul>
-    }
-  </section>
-)
-
 const resources = [
   "/create/apps.json",
   "/create/blog.json",
   "/create/videos.json",
 ] as const
 // Object.keys(itemsInit)
-
-const itemsInit = {
-  [resources[0]]: undefined,
-  [resources[1]]: undefined,
-  [resources[2]]: undefined,
-}
+// type Resources = keyof typeof Items
 
 type Items = {
   "/create/apps.json": AppProps | undefined,
   "/create/blog.json": ContentProps | undefined,
   "/create/videos.json": ContentProps | undefined,
+}
+
+const itemsInit = {
+  [resources[0]]: undefined,
+  [resources[1]]: undefined,
+  [resources[2]]: undefined,
 }
 
 // type Resources = (typeof resources)[number]
@@ -106,9 +75,8 @@ type Items = {
 
 export const Create = (): React.ReactElement => {
 
-  const [items, setItems] = React.useState<Items>(itemsInit
+  const [items, setItems] = React.useState<Items>(itemsInit)
 //     resources.reduce<Items>((acc, x) => ({...acc, [x]: undefined}), {})
-  )
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -145,66 +113,7 @@ export const Create = (): React.ReactElement => {
       ]
     }
   }
-
   return <SplitContent data={data} page="activity-create" />
-}
-
-type P = {
-  data: {
-    icons: React.ReactElement[],
-    content: {
-      prelude: React.ReactElement,
-      sections: React.ReactElement[],
-    }
-  },
-  page: string,
-}
-
-const SplitContent = ({data, page}: P): React.ReactElement => {
-  let observer: IntersectionObserver, sectionElems: NodeListOf<Element>
-
-  React.useEffect((): (() => void) => {
-    (async () => {
-      initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
-      sectionElems = document.querySelectorAll(`[id^="section-${page}"]`)
-      observer = initIntObserver(sectionElems)
-    })()
-
-    return () => {
-      sectionElems?.forEach(section => { observer.unobserve(section) })
-    }
-  }, [])
-
-  return (
-    <div className="split-status">
-      <div className="split-status__status">
-        {
-          data.icons.map((x, i) =>
-            <button key={i} className="split-status__icon" id={`btn-${page}-${i}`}>
-              {x}
-            </button>
-          )
-        }
-      </div>
-
-      <div className="split-status__content">
-        <section>
-          {data.content.prelude}
-        </section>
-
-        {
-          data.content.sections.map((x, i) =>
-            <React.Fragment key={i}>
-              <hr />
-              <section id={`section-${page}-${i}`}>
-                {x}
-              </section>
-            </React.Fragment>
-          )
-        }
-      </div>
-    </div>
-  )
 }
 
 const Prelude = (): React.ReactElement =>
@@ -230,3 +139,35 @@ const Section2 = ({items}: {items: ContentProps | undefined}): React.ReactElemen
     <h3 className="highlight">Channel</h3>
     {items === undefined ? <p>Loading ...</p> : renderContentItems(items)}
   </>
+
+const renderAppItems = (items: AppProps) => items &&
+  items.map((x, i) =>
+  <section key={i}>
+    <h4>{x.group_name}</h4>
+
+    {x.items &&
+      <ul className="ul-more-space">
+        {x.items.map((y, j) =>
+          <li className={y.abandoned ? "abandoned" : ""} aria-hidden={y.abandoned} key={j}>
+            {y.date} — <a href={y.link}>{y.name}</a>&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
+          </li>
+        )}
+      </ul>
+    }
+  </section>
+)
+
+const renderContentItems = (items: ContentProps) => items &&
+  items.map((x, i) =>
+  <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
+    <h4>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h4>
+
+    <p>{x.group_dscp}</p>
+
+    {x.items &&
+      <ul className="ul-more-space">
+        {x.items.map((y, j) => <li key={j}>{y.date} — <a href={y.link}>{y.title}</a></li>)}
+      </ul>
+    }
+  </section>
+)
