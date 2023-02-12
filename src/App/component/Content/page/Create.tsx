@@ -40,8 +40,6 @@ const resources = [
   "/create/blog.json",
   "/create/videos.json",
 ] as const
-// Object.keys(itemsInit)
-// type Resources = keyof typeof Items
 
 type Items = {
   "/create/apps.json": AppProps | undefined,
@@ -54,24 +52,6 @@ const itemsInit = {
   [resources[1]]: undefined,
   [resources[2]]: undefined,
 }
-
-// type Resources = (typeof resources)[number]
-
-// type Items = {
-//   [x in Resources]?: string
-// }
-
-// type Items = {
-//   [a: resources[0]]: AppProps | undefined,
-// } & {
-//   [resources[1]]: ContentProps | undefined,
-// }
-
-// type Items = {
-//   [resources[0]]: AppProps | undefined,
-//   [resources[1]]: ContentProps | undefined,
-//   [resources[2]]: ContentProps | undefined,
-// }
 
 export const Create = (): React.ReactElement => {
 

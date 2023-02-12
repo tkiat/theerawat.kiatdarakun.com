@@ -58,4 +58,3 @@ export const SplitContent = ({data, page}: P): React.ReactElement => {
     </div>
   )
 }
-
