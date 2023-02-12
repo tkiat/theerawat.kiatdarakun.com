@@ -1,6 +1,6 @@
 import React from "react"
 
-import {SplitContent} from "../share/SplitContent"
+import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
 
 type AppProps = [
   {
@@ -47,15 +47,13 @@ type Items = {
   "/create/videos.json": ContentProps | undefined,
 }
 
-const itemsInit = {
-  [resources[0]]: undefined,
-  [resources[1]]: undefined,
-  [resources[2]]: undefined,
-}
-
 export const Create = (): React.ReactElement => {
 
-  const [items, setItems] = React.useState<Items>(itemsInit)
+  const [items, setItems] = React.useState<Items>({
+    [resources[0]]: undefined,
+    [resources[1]]: undefined,
+    [resources[2]]: undefined,
+  })
 //     resources.reduce<Items>((acc, x) => ({...acc, [x]: undefined}), {})
 
   React.useEffect((): (() => void) => {
@@ -93,7 +91,7 @@ export const Create = (): React.ReactElement => {
       ]
     }
   }
-  return <SplitContent data={data} page="activity-create" />
+  return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
 
 const Prelude = (): React.ReactElement =>

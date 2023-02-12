@@ -1,6 +1,6 @@
 import React from "react"
 
-import {SplitContent} from "../share/SplitContent"
+import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
 import {TooltipFa, TooltipText} from "../share"
 import {getRange, initInPageNavButtons, initIntObserver} from "@app/share"
 
@@ -64,7 +64,7 @@ export const Digest = (): React.ReactElement => {
       ]
     }
   }
-  return <SplitContent data={data} page="activity-digest" />
+  return <PageWithIconsScrollbar data={data} page="activity-digest" />
 }
 
 const Prelude = (): React.ReactElement =>

@@ -12,7 +12,7 @@ type P = {
   },
   page: string,
 }
-export const SplitContent = ({data, page}: P): React.ReactElement => {
+export const PageWithIconsScrollbar = ({data, page}: P): React.ReactElement => {
   let observer: IntersectionObserver, sectionElems: NodeListOf<Element>
 
   React.useEffect((): (() => void) => {
