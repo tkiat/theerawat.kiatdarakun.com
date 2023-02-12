@@ -2,51 +2,6 @@ import React from "react"
 
 import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
 
-type AppProps = [
-  {
-    group_name: string,
-    items: [
-      {
-        name: string,
-        date: string,
-        link: string,
-        dscp: string,
-        type: string,
-        stack: string,
-        abandoned: boolean,
-      }
-    ]
-  }
-]
-
-type ContentProps = [
-  {
-    group_name: string,
-    group_dscp: string,
-    link: string,
-    abandoned: boolean,
-    items: [
-      {
-        date: string,
-        link: string,
-        title: string,
-      }
-    ]
-  }
-]
-
-const resources = [
-  "/create/apps.json",
-  "/create/blog.json",
-  "/create/videos.json",
-] as const
-
-type Items = {
-  "/create/apps.json": AppProps | undefined,
-  "/create/blog.json": ContentProps | undefined,
-  "/create/videos.json": ContentProps | undefined,
-}
-
 export const Create = (): React.ReactElement => {
 
   const [items, setItems] = React.useState<Items>({
@@ -93,6 +48,49 @@ export const Create = (): React.ReactElement => {
   }
   return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
+
+type AppProps = [
+  {
+    group_name: string,
+    items: [
+      {
+        name: string,
+        date: string,
+        link: string,
+        dscp: string,
+        type: string,
+        stack: string,
+        abandoned: boolean,
+      }
+    ]
+  }
+]
+type ContentProps = [
+  {
+    group_name: string,
+    group_dscp: string,
+    link: string,
+    abandoned: boolean,
+    items: [
+      {
+        date: string,
+        link: string,
+        title: string,
+      }
+    ]
+  }
+]
+type Items = {
+  "/create/apps.json": AppProps | undefined,
+  "/create/blog.json": ContentProps | undefined,
+  "/create/videos.json": ContentProps | undefined,
+}
+
+const resources = [
+  "/create/apps.json",
+  "/create/blog.json",
+  "/create/videos.json",
+] as const
 
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>

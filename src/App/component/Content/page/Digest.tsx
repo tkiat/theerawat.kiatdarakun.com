@@ -4,27 +4,6 @@ import {PageWithIconsScrollbar} from "../share/PageWithIconsScrollbar"
 import {TooltipFa, TooltipText} from "../share"
 import {getRange, initInPageNavButtons, initIntObserver} from "@app/share"
 
-type CategoryProps = {
-  header: string,
-  items: [
-    {
-      header: string,
-      items: [
-        {
-          date: string,
-          title: string,
-          format: string,
-          length: string,
-          link: string,
-          review_short: string,
-          review_ext: string,
-        }
-      ]
-    }
-  ]
-}
-type Items = CategoryProps[]
-
 export const Digest = (): React.ReactElement => {
   const [items, setItems] = React.useState<Items>([])
 
@@ -66,6 +45,27 @@ export const Digest = (): React.ReactElement => {
   }
   return <PageWithIconsScrollbar data={data} page="activity-digest" />
 }
+
+type CategoryProps = {
+  header: string,
+  items: [
+    {
+      header: string,
+      items: [
+        {
+          date: string,
+          title: string,
+          format: string,
+          length: string,
+          link: string,
+          review_short: string,
+          review_ext: string,
+        }
+      ]
+    }
+  ]
+}
+type Items = CategoryProps[]
 
 const Prelude = (): React.ReactElement =>
   <>
