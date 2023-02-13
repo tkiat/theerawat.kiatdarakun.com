@@ -213,11 +213,11 @@ const Belongings = (): React.ReactElement =>
      */
     }
 
-    <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" height="192px" width="114px">
+    <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" width="95px">
       Chuangfeng Glass
     </FigureOptionalTooltip>
 
-    <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" height="128px" width="76px" />
+    <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" width="76px" />
 
     <div>
       Food & Drinks (

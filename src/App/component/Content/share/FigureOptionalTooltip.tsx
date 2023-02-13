@@ -1,25 +1,31 @@
 import React from "react"
 import ReactTooltip from "react-tooltip"
-import {TooltipText} from "./Tooltip"
+import {TooltipText, TooltipFa} from "./Tooltip"
 
 type P = {
-  children: string,
   src: string,
-  label: string,
-  height: string,
   width: string,
+  label?: string,
+  children?: string,
 }
-export const FigureOptionalTooltip = (p: P): React.ReactElement => p.children ?
-  <figure className="fig-tooltip">
-    <img width={p.width} height={p.height} src={p.src} alt="broken" />
-    <figcaption className="fig-tooltip__caption">
+export const FigureOptionalTooltip = (p: P): React.ReactElement => {
+  let caption
+  if (p.children) {
+    caption = p.label ?
       <TooltipText text={p.label}>
         {p.children}
       </TooltipText>
-    </figcaption>
-  </figure>
-  :
-  <figure className="fig-tooltip">
-    <img width={p.width} height={p.height} src={p.src} alt="broken" />
-    <figcaption className="fig-tooltip__caption">{p.label}</figcaption>
-  </figure>
+    : <TooltipFa faclass="fa-solid fa-circle-question">
+        {p.children}
+      </TooltipFa>
+  } else {
+    caption = p.label ? <>{p.label}</> : <>&nbsp;</>
+  }
+
+  return (
+    <figure className="fig-tooltip" style={{width: p.width}}>
+      <img src={p.src} alt="broken" />
+      <figcaption className="fig-tooltip__caption">{caption}</figcaption>
+    </figure>
+  )
+}

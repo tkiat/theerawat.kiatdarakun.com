@@ -1,7 +1,19 @@
 .fig-tooltip {
   display: inline-block;
+  width: 100px;
   margin: 0 auto;
   &__caption {
     text-align: center;
+  }
+  & > img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fig-tooltip {
+    & > img {
+      width: 60%;
+    }
   }
 }
