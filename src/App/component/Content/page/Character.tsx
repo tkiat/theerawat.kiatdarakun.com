@@ -1,7 +1,7 @@
 import React from "react"
 
 import {TooltipText, TooltipTextWithDelay} from "../share"
-import {PageWithIconsScrollbar} from "../share"
+import {ImageWithHoverEffect, PageWithIconsScrollbar} from "../share"
 
 export const Character = (): React.ReactElement => {
   const data = {
@@ -213,6 +213,10 @@ const Belongings = (): React.ReactElement =>
      tea set, dried food container set, food container, drinks container
      */
     }
+
+    <ImageWithHoverEffect src="https://picsum.photos/600/400">
+      Chuangfeng Glass
+    </ImageWithHoverEffect>
 
     <div>
       Food & Drinks (
