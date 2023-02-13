@@ -1,7 +1,6 @@
 import React from "react"
 
-import {TooltipText, TooltipTextWithDelay} from "../share"
-import {ImageWithHoverEffect, PageWithIconsScrollbar} from "../share"
+import {FigureOptionalTooltip, PageWithIconsScrollbar, TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Character = (): React.ReactElement => {
   const data = {
@@ -201,7 +200,7 @@ const Hobbies = (): React.ReactElement =>
       <li><b className="highlight">Increase Awareness</b>. I like to consume information to increase my awareness of the world. This should help reinforce my understanding of what truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.</li>
       <li><b className="highlight">Writing</b>. Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to a reader.</li>
       <li><b className="highlight">(Free and) Open Source Software</b>. Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey. I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).</li>
-      <li><b className="highlight">Philosophy</b>. Knowledge of philosophy should make my works of personal life and society based on what truly matter more accessible and acceptable to the general public. I have yet to read a lot of works but I will deinitely do so in free time.</li>
+      <li><b className="highlight">Philosophy</b>. Knowledge of philosophy should make my works of personal life and society based on what truly matter more accessible and acceptable to the general public. I have yet to read a lot of works but I will definitely do so in free time.</li>
     </ul>
   </section>
 
@@ -214,9 +213,11 @@ const Belongings = (): React.ReactElement =>
      */
     }
 
-    <ImageWithHoverEffect src="https://picsum.photos/600/400">
+    <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" height="192px" width="114px">
       Chuangfeng Glass
-    </ImageWithHoverEffect>
+    </FigureOptionalTooltip>
+
+    <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" height="128px" width="76px" />
 
     <div>
       Food & Drinks (
