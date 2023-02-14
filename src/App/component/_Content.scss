@@ -10,8 +10,8 @@
   top: calc(var(--nav-tube-height) + 20px);
   height: calc(100% - var(--nav-tube-height) - 140px);
 
-  .more-space-li {
-    & > li {
+  .more-gap-list {
+    & > li:not(:last-child), & > dd:not(:last-child) {
       margin-bottom: 0.75em;
     }
   }

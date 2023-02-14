@@ -31,7 +31,7 @@ const Trait = (): React.ReactElement =>
 
     <h3>Internal</h3>
 
-    <ul className="more-space-li">
+    <ul className="more-gap-list">
       <li>
         <b className="highlight">Personality Test</b>
 
@@ -99,7 +99,7 @@ const Trait = (): React.ReactElement =>
           <ul>
             <li><b className="highlight">Performance</b>: I am naturally inclined to learn something new, and I possess good quantitative and analytical thinking skills. I believe I can handle most jobs.</li>
             <li><b className="highlight">Teamwork</b>: As a highly conscientious person, I tend to be disciplined. I have been so far abide by the rules in the earlier workplaces.</li>
-            <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip. However, I have a social withdrawal tendency.</li>
+            <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip. However, I have a social withdrawal tendency (outside work).</li>
           </ul>
         </TooltipText>
         ,&ensp;
@@ -124,7 +124,7 @@ const Trait = (): React.ReactElement =>
 
     <h3>External</h3>
 
-    <ul className="more-space-li">
+    <ul className="more-gap-list">
       <li>
         <b className="highlight">Appearance</b>
 
@@ -187,37 +187,65 @@ const Trait = (): React.ReactElement =>
     </ul>
   </section>
 
-const ExternalTrait = (): React.ReactElement =>
-  <section>
-  </section>
-
 const Hobbies = (): React.ReactElement =>
   <section>
     <h2>Hobbies</h2>
 
-    <ul className="more-space-li">
-      <li><b className="highlight">Low-Impact Living</b>. My ideal life based on what truly matter is free of greediness, and thus I value minimalism, sustainability, and veganism. It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.</li>
-      <li><b className="highlight">Increase Awareness</b>. I like to consume information to increase my awareness of the world. This should help reinforce my understanding of what truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.</li>
-      <li><b className="highlight">Writing</b>. Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to a reader.</li>
-      <li><b className="highlight">(Free and) Open Source Software</b>. Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey. I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).</li>
-      <li><b className="highlight">Philosophy</b>. Knowledge of philosophy should make my works of personal life and society based on what truly matter more accessible and acceptable to the general public. I have yet to read a lot of works but I will definitely do so in free time.</li>
-    </ul>
+    <dl className="more-gap-list" title="My hobbies">
+      <dt><b className="highlight">Low-Impact Living</b></dt>
+      <dd>My ideal life based on what truly matter is free of greediness, and thus I value minimalism, sustainability, and veganism. It is a lot of fun and creativity boosting to find a way to make my items (like table, lamp, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to trade my time and convenience for it. How much should I trade? Hmm.</dd>
+
+      <dt><b className="highlight">Increase Awareness</b></dt>
+      <dd>I like to consume information to increase my awareness of the world. This should help reinforce my understanding of what truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.</dd>
+
+      <dt><b className="highlight">Writing</b></dt>
+      <dd>Life is too short to die alone without anything to share with others. Because the storage size of text is the lowest (as compared to another form of medium), writing seems to be the most minimalist way to convey thoughts and leave a lot of room for imagination to a reader.</dd>
+
+      <dt><b className="highlight">(Free and) Open Source Software</b></dt>
+      <dd>Software (for both desktop and web) is crucial to my works as it enables me to create and share my thoughts to the whole world in any creative form that text alone cannot convey. I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment softeware like video games (for the sake of transparency).</dd>
+
+      <dt><b className="highlight">Philosophy</b></dt>
+      <dd>Knowledge of philosophy should make my works of personal life and society based on what truly matter more accessible and acceptable to the general public. I have yet to read a lot of works but I will definitely do so in free time.</dd>
+    </dl>
   </section>
 
 const Belongings = (): React.ReactElement =>
   <section>
     <h2>Belongings</h2>
-    {
-    /*
-     tea set, dried food container set, food container, drinks container
-     */
-    }
 
-    <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" width="95px">
-      Chuangfeng Glass
-    </FigureOptionalTooltip>
+    <section>
+      <h3 className="highlight">Food & Drinks</h3>
 
-    <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" width="76px" />
+      <dl className="more-gap-list" title="My hobbies">
+        <dt><b>Storage &gt; Dried Food</b></dt>
+        <dd>
+          <p>I would</p>
+          <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" width="95px">
+            Chuangfeng Glass
+          </FigureOptionalTooltip>
+
+          <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" width="76px" />
+        </dd>
+
+        <dt><b>Storage &gt; Food</b></dt>
+        <dd>
+        </dd>
+
+        <dt><b>Storage &gt; Drink</b></dt>
+        <dd>
+        </dd>
+
+        <dt><b>Preparation</b></dt>
+        <dd>
+        </dd>
+
+        <dt><b>Consumption</b></dt>
+        <dd>
+Tea Set
+Cutlery
+        </dd>
+      </dl>
+    </section>
 
     <div>
       Food & Drinks (
@@ -244,7 +272,7 @@ const Belongings = (): React.ReactElement =>
       <TooltipText text="Consuming">
         <ul>
           <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11)</li>
-          <li>Accessories: Bottle Opener, Tea (Wood Clip, Plastic Tray With Wood Top, Aluminium Cup Filter), Wine Opener</li>
+          <li>Accessories: Bottle Opener, Tea (Wood Clip, Plastic Tray With Wood Top, Stainless Cup Filter), Wine Opener</li>
         </ul>
       </TooltipText>
       ),&ensp;

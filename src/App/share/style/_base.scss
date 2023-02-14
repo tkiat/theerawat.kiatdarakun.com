@@ -232,3 +232,7 @@ input[type="range"] {
   --saturation: 0%;
   @include app-and-selector;
 }
+
+dt::after {
+  content: ": ";
+}
