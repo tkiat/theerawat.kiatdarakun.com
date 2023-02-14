@@ -234,14 +234,14 @@ const Belongings = (): React.ReactElement =>
         <dt><b>Storage &gt; Dried Food</b></dt>
 
         <dd>
-          <p>I have a strict requirement to see through items in a container to minimize confusion. This gives me two choices: glasses and plastic. While plastic is more convenient, it's not the safest for human consumption. That's why I usually prefer glass. I can easily break a glass container so I usually bring a cooking utensil near it and make a transfer, not the other way around. Since the penetrative light shortens life of consumables therein, I am thinking of buying a cover for them.</p>
+          <p>I have a strict requirement to see through items in a container to minimize confusion. This gives me two main choices: glasses and plastic. While plastic is more convenient, it's not the safest for human consumption. That's why I usually prefer glass. Since it is easily breakable, I usually bring a cooking utensil near it and make a transfer, not the other way around. I am thinking of buying a cover for them because the penetrative light shortens life of consumables therein.</p>
 
           <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" width="95px">
             It's a glassware from China (Chuangfeng Glass). I have seen this one often in a random video on Youtube Shorts when it took place in China. The handle is more firm than expected and the two-layer lid makes it airtight. I find it ideal to store dried food like herbs and legumes. It is available many sizes: 1L, 2L, 3L, 4L, 5L, 8L, etc.
           </FigureOptionalTooltip>
           <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" width="76px" />
 
-          <FigureOptionalTooltip src="/character/jar-TODO.png" label="TODO x 2" width="95px">
+          <FigureOptionalTooltip src="/character/jar-1.2L.png" label="1.2L x 2" width="95px">
             It's a glass jar from MR. D.I.Y. I put baking soda and sugar in it as the lid is wide enough and the size is right.
           </FigureOptionalTooltip>
 
@@ -262,7 +262,7 @@ const Belongings = (): React.ReactElement =>
         <dd>
           <p>Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put in in a freezer with more peace of mind) as compared to a more common soda-lime glass.</p>
           <FigureOptionalTooltip src="/character/rect-glass-1.25L.png" label="1.25L x 2" width="50px">
-            It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of a good quality.
+            It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality.
           </FigureOptionalTooltip>
           <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.75L x 4" width="50px" />
           <FigureOptionalTooltip src="/character/rect-glass-0.45L.png" label="0.45L x 7" width="50px" />
@@ -286,7 +286,6 @@ const Belongings = (): React.ReactElement =>
 
         <dt><b>Preparation</b></dt>
         <dd>
-          <p>TODO</p>
           <ul>
             <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
             <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
@@ -296,31 +295,47 @@ const Belongings = (): React.ReactElement =>
 
         <dt><b>Consumption &gt; Tea Set</b></dt>
         <dd>
-            <li>Tea: Gaiwan 150ml (Porcelain), Cup 90ml x 2 (Porcelain)</li>
- don't have to make fresh it transparent
+          <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="50px">
+            It's a porcelain gaiwan.
+          </FigureOptionalTooltip>
+
+          <FigureOptionalTooltip src="/character/tea-cup.png" label="90ml x 2" width="50px">
+            It's a porcelain tea cup.
+          </FigureOptionalTooltip>
+
+          <FigureOptionalTooltip src="/character/tea-tray.png" width="50px">
+            It's a plastic tray with wood top.
+          </FigureOptionalTooltip>
+
+          <FigureOptionalTooltip src="/character/tea-clip.png" width="50px">
+            It's a wood clip.
+          </FigureOptionalTooltip>
+
+          <FigureOptionalTooltip src="/character/tea-filter.png" width="50px">
+            It's a stainless filter cup from Küchenprofi. I bought it in Germany for a staggering 16 EUR. It's still in an excellent condition after five years of daily use.
+          </FigureOptionalTooltip>
         </dd>
 
         <dt><b>Consumption &gt; Other</b></dt>
         <dd>
 
           <FigureOptionalTooltip src="/character/bowl-big.png" label="TODO" width="50px">
-            TODO
-            Insulated Stainless Steel
+            It's a insulated stainless steel bowl from MR. D.I.Y. I can pour reasonably hot food and take it away immediately.
           </FigureOptionalTooltip>
           <FigureOptionalTooltip src="/character/bowl-small.png" label="TODO" width="50px" />
 
           <FigureOptionalTooltip src="/character/glass-ceramic.png" label="0.36L" width="50px">
-            TODO
+            It's a ceramic cup. It's still OK condition after five years but the outer color at the lip is slightly faded. I hope that isn't lead.
           </FigureOptionalTooltip>
 
           <FigureOptionalTooltip src="/character/glass-stainless.png" label="TODO x 2" width="50px">
-            TODO
+            It's a stainless stell glass from Zebra Head to serve drinks for up to two guests.
           </FigureOptionalTooltip>
 
           <TooltipText text="Other">
             <ul>
-              <li>Cutlery: Spoon (Stainless: Normal x 7, Small x 11)</li>
-              <li>Accessories: Bottle Opener, Tea (Wood Clip, Plastic Tray With Wood Top, Stainless Cup Filter), Wine Opener</li>
+              <li>Spoon (Stainless: Normal x 7, Small x 11)</li>
+              <li>Bottle Opener, Wine Opener</li>
             </ul>
           </TooltipText>
         </dd>
@@ -330,7 +345,6 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Clothing & Accessories</h3>
 
-      <p>TODO</p>
       <ul>
         <li>General: Eyeglasses x 2, Handkerchief x 8, Pants (Long, Jeans x 3, Short x 3), Shirt (Jacket x 2, Long x 2, Short x 6), Shoe (Sandals, Sneaker), Sock x 11, Underwear x 6, Wallet, Watches x 2</li>
         <li>Work: Long Pants, Long Shirt x 2, Necktie, Shoe, Suit x 3</li>
@@ -342,7 +356,6 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Computing</h3>
 
-      <p>TODO</p>
       <ul>
         <li>
           Computer
@@ -372,7 +385,6 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Health</h3>
 
-      <p>TODO</p>
       <ul>
         <li>Exercise: Hand Massager Stick (Wood), Resistance Band</li>
         <li>Protection: Earplug Pair, Eye Cover</li>
@@ -382,14 +394,12 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Hygiene</h3>
 
-      <p>TODO</p>
         Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)
     </section>
 
     <section>
       <h3 className="highlight">Household &amp; Tools</h3>
 
-      <p>TODO</p>
       <div>
         <TooltipText text="Tool">
           <ul>
@@ -412,7 +422,6 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Travel</h3>
 
-      <p>TODO</p>
       <ul>
         <li>Container: Backpack (Small, Medium), Grocery Bag (Jute Big, Jute Small, Plastic x 2), Luggage (Big x 2)</li>
         <li>Other: Bicycle (Portable Multitool, Helmet), Power Bank</li>
