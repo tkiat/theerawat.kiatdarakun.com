@@ -6,6 +6,8 @@ import {Canvas, Content, NavMain, NavSub, Sidebar, WaveConfigs, mkWavePhysics, m
 import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
 import "@app/share/style/main.scss"
 
+// TODO scrollto creates unwanted space at bottom
+
 const numPointsOnWave = numDucks + 1
 const { place: initPlace, time: initTime } = initTheme()
 

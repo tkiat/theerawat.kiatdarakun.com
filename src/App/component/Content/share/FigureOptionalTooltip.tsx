@@ -23,8 +23,10 @@ export const FigureOptionalTooltip = (p: P): React.ReactElement => {
   }
 
   return (
-    <figure className="fig-tooltip" style={{width: p.width}}>
-      <img src={p.src} alt="broken" />
+    <figure className="fig-tooltip">
+      <div className="fig-tooltip__wrapper" style={{width: p.width}}>
+        <img src={p.src} alt="broken" />
+      </div>
       <figcaption className="fig-tooltip__caption">{caption}</figcaption>
     </figure>
   )
