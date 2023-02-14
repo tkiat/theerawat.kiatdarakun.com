@@ -16,7 +16,10 @@ export const isType = <T>(elem: unknown, arr: readonly T[]): elem is T =>
 export const initInPageNavButtons = (buttons: NodeListOf<Element>) => {
   buttons.forEach(e => {
     e.addEventListener("click", () => {
-      document.getElementById("section" + e.id.slice(3))?.scrollIntoView()
+      const s = document.getElementById("section" + e.id.slice(3))
+      if (s && s.parentNode) {
+        (s.parentNode as HTMLElement).scrollTop = s.offsetTop;
+      }
     })
   })
 }

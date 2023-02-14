@@ -63,7 +63,6 @@ export const App = (): React.ReactElement => {
               to={path.current + "/" + path.mapping[path.current]}
               noThrow />
           </Router>
-          {/*{title}*/}
           <div id="background"></div>
           <Content />
           <Canvas

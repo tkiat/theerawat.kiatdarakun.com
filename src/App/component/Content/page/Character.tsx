@@ -314,6 +314,7 @@ const Belongings = (): React.ReactElement =>
           </FigureOptionalTooltip>
 
           <FigureOptionalTooltip src="/character/glass-stainless.png" label="TODO x 2" width="50px">
+            TODO
           </FigureOptionalTooltip>
 
           <TooltipText text="Other">
