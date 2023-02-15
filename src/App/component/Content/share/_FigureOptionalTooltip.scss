@@ -1,8 +1,8 @@
 .fig-tooltip {
   display: inline-block;
-  margin: 0;
-  margin-right: 0.5em;
+  margin: 0.35em 0.7em 0.35em 0;
   &__wrapper {
+    text-align: center;
     margin: 0 auto;
     & > img {
       width: 100%;
@@ -10,13 +10,5 @@
   }
   &__caption {
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .fig-tooltip {
-    & > img {
-      width: 60%;
-    }
   }
 }

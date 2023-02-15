@@ -269,7 +269,7 @@ const Belongings = (): React.ReactElement =>
               <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.75L x 4" width="100px">
                 I usally store boiled vegetables and processed food bought outside (like crispy fried bananas and dessert) in this container.
               </FigureOptionalTooltip>
-              <FigureOptionalTooltip src="/character/rect-glass-0.45L.png" label="0.45L x 7" width="80px">
+              <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.45L x 7" width="80px">
                 I usally store fried peanuts and fried beansprouts/cabbages in this container.
               </FigureOptionalTooltip>
             </li>
@@ -281,7 +281,7 @@ const Belongings = (): React.ReactElement =>
                 It is an unknown brand but any common glass should be food safe. I bought this one due to its shape that acts like an anti-slip handle itself. This should reduce the risk of accidents. The lid is plastic from an unknown brand so I usually set it upright. I usually store plain water, soy milk, and herbal drinks in it.
               </FigureOptionalTooltip>
 
-              <FigureOptionalTooltip src="/character/bottle-plastic-1.2L.png" label="1.2L x 3" width="65px">
+              <FigureOptionalTooltip src="/character/bottle-plastic-1.2L.png" label="1.2L x 3" width="60px">
                 It's a plastic bottle (Double Lock 33140) that allows a tight grip. It's useful to store plain water when I go outside. Yeah, I know a stainless steel or aluminium bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
               </FigureOptionalTooltip>
 
@@ -331,10 +331,10 @@ const Belongings = (): React.ReactElement =>
             <li>
               <p><b className="highlight">Other</b></p>
 
-              <FigureOptionalTooltip src="/character/bowl-big.png" label="TODO" width="50px">
+              <FigureOptionalTooltip src="/character/bowl-big.png" label="0.9L" width="50px">
                 It's a insulated stainless steel bowl from MR. D.I.Y. I can pour reasonably hot food and take it away immediately.
               </FigureOptionalTooltip>
-              <FigureOptionalTooltip src="/character/bowl-small.png" label="TODO" width="50px" />
+              <FigureOptionalTooltip src="/character/bowl-small.png" label="0.35L" width="50px" />
 
               <FigureOptionalTooltip src="/character/glass-ceramic.png" label="0.36L" width="50px">
                 It's a ceramic cup. It's still OK condition after five years but the outer color at the lip is slightly faded. I hope that isn't lead.
@@ -408,7 +408,11 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Hygiene</h3>
 
-        Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)
+        <p>Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)</p>
+
+        <FigureOptionalTooltip src="/character/bottle-glass-100ml.png" label="100ml x 4" width="50px">
+          I store tooth powder, toothpaste tablets, and alum in it.
+        </FigureOptionalTooltip>
     </section>
 
     <section>
@@ -425,7 +429,7 @@ const Belongings = (): React.ReactElement =>
         ,&ensp;
         <TooltipText text="Household">
           <ul>
-            <li>Container: Plastic (Small), Glass (100ml x 4), Stainless Water Bowl (Big, Small)</li>
+            <li>Container: Plastic (Small), Stainless Water Bowl (Big, Small)</li>
             <li>Electronics: USB Fan, Air Purifier, LED (12W, 4W x 4, 1.5W x 4), Power Socket Adapter x 2</li>
             <li>Furniture: Chair (and Lumbar Cushion), Portable Table, Portable Lamp Post x 3, Pillow (and Case)</li>
           </ul>
