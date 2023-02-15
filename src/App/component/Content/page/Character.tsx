@@ -224,7 +224,7 @@ const Belongings = (): React.ReactElement =>
         </ul>
       </li>
       <li>to keep important items (like some documents) and items that I actually use to keep me from being a slave of my belongings</li>
-      <li>items that are safer, more convenient, more durable, smaller, look cheaper (to prevent theft), lighter, more replacable, etc. Of course, some trade-offs have to be made, but I shall use good judgment.</li>
+      <li>items that are safer, more convenient, more durable, smaller, look cheaper (to discourage theft), lighter, more replacable, etc. Of course, some trade-offs have to be made, but I shall use good judgment.</li>
     </ul>
 
     <section>
@@ -248,15 +248,15 @@ const Belongings = (): React.ReactElement =>
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/cylindrical-glass-0.7L.png" label="0.7L x 5" width="50px">
-                I usually put small consumables (like 100g peppers) in it. The stackability makes it an ideal candidate to put in a cabinet.
+                I usually put consumables in small amount (like 200g peppers) in it. It's also stackable!
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/cylindrical-glass-0.3L.png" label="0.3L x 6" width="45px">
-                Unlike it's bigger brother, I usually put it in a fridge (and often grounded seeds and powder) since it's small and stackable.
+                Unlike its bigger brother, I usually put it in a fridge (and often grounded seeds and powder) since it's small and stackable.
               </FigureOptionalTooltip>
 
-              <FigureOptionalTooltip src="/character/plastic-2.8L.png" label="2.8L" width="50px">
-                This spaceful container often finds itself in the fridge and full of unpeeled bananas. This way, I can store bananas for far longer. I know there are better methods but this seems to be the most convenient. On some occasions, I bring this outside to get beansprouts without plastic!
+              <FigureOptionalTooltip src="/character/rect-plastic-2.8L.png" label="2.8L" width="140px">
+                This spaceful plastic container (from Super Lock) often finds itself in the fridge full of unpeeled bananas. This way, I can store bananas for far longer. I know there are better methods but this seems to be the most convenient. On some occasions, I bring this outside to get beansprouts without plastic!
               </FigureOptionalTooltip>
             </li>
 
@@ -278,7 +278,7 @@ const Belongings = (): React.ReactElement =>
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/bottle-plastic-1.2L.png" label="1.2L x 3" width="65px">
-                It's a plastic bottle (Double Lock 33140) that allows a tight grip. It's useful to store plain water when I go outside. Yeah, I know a stainless steel bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
+                It's a plastic bottle (Double Lock 33140) that allows a tight grip. It's useful to store plain water when I go outside. Yeah, I know a stainless steel or aluminium bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/bottle-stainless-0.75L.png" label="0.75L" width="55px">
