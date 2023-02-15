@@ -307,7 +307,7 @@ const Belongings = (): React.ReactElement =>
             <li>
               <p><b className="highlight">Tea Set</b> — What is more classic (and cheaper) than having a small set of tea for a guest. I like young sheng Puer!</p>
 
-              <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="50px">
+              <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="65px">
                 It's a porcelain gaiwan.
               </FigureOptionalTooltip>
 
@@ -315,12 +315,12 @@ const Belongings = (): React.ReactElement =>
                 It's a porcelain tea cup.
               </FigureOptionalTooltip>
 
-              <FigureOptionalTooltip src="/character/tea-tray.png" width="50px">
-                It's a plastic tray with wood top.
+              <FigureOptionalTooltip src="/character/tea-tray.png" width="100px">
+                It's a cheap plastic tray with wood top.
               </FigureOptionalTooltip>
 
-              <FigureOptionalTooltip src="/character/tea-clip.png" width="50px">
-                It's a wood clip.
+              <FigureOptionalTooltip src="/character/tea-clip.png" width="20px">
+                It's a tea clip made of wood.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/tea-filter.png" width="50px">
