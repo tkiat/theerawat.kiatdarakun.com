@@ -331,13 +331,13 @@ const Belongings = (): React.ReactElement =>
             <li>
               <p><b className="highlight">Other</b></p>
 
-              <FigureOptionalTooltip src="/character/bowl-big.png" label="0.9L" width="50px">
-                It's a insulated stainless steel bowl from MR. D.I.Y. I can pour reasonably hot food and take it away immediately.
+              <FigureOptionalTooltip src="/character/bowl-stainless-0.9L.png" label="0.9L" width="90px">
+                It's a stainless steel bowl from MR. D.I.Y. Its two layers allow me to pour hot food and take it away immediately.
               </FigureOptionalTooltip>
-              <FigureOptionalTooltip src="/character/bowl-small.png" label="0.35L" width="50px" />
+              <FigureOptionalTooltip src="/character/bowl-stainless-0.9L.png" label="0.35L" width="70px" />
 
-              <FigureOptionalTooltip src="/character/glass-ceramic.png" label="0.36L" width="50px">
-                It's a ceramic cup. It's still OK condition after five years but the outer color at the lip is slightly faded. I hope that isn't lead.
+              <FigureOptionalTooltip src="/character/mug-ceramic-360ml.png" label="360ml" width="70px">
+                It's a ceramic cup. It's still in a OK condition after five years of daily use but the outer color at the lip is slightly faded. I hope that doesn't contain lead.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/glass-stainless.png" label="TODO x 2" width="50px">
