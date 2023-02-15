@@ -261,13 +261,17 @@ const Belongings = (): React.ReactElement =>
             </li>
 
             <li>
-              <p><b className="highlight">Food</b> — Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put in in a freezer with more peace of mind) as compared to a more common soda-lime glass.</p>
+              <p><b className="highlight">Food</b> — Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put in in a freezer with more peace of mind) as compared to more common soda-lime glasses.</p>
 
-              <FigureOptionalTooltip src="/character/rect-glass-1.25L.png" label="1.25L x 2" width="50px">
-                It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality.
+              <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="1.25L x 2" width="120px">
+                It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality. I usally store boiled vegetables in this container and keep it in the fridge.
               </FigureOptionalTooltip>
-              <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.75L x 4" width="50px" />
-              <FigureOptionalTooltip src="/character/rect-glass-0.45L.png" label="0.45L x 7" width="50px" />
+              <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.75L x 4" width="100px">
+                I usally store boiled vegetables and processed food bought outside (like crispy fried bananas and dessert) in this container.
+              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/rect-glass-0.45L.png" label="0.45L x 7" width="80px">
+                I usally store fried peanuts and fried beansprouts/cabbages in this container.
+              </FigureOptionalTooltip>
             </li>
 
             <li>
