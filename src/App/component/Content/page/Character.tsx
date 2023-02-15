@@ -231,57 +231,61 @@ const Belongings = (): React.ReactElement =>
       <h3 className="highlight">Food & Drinks</h3>
 
       <dl className="more-gap-list">
-        <dt><b>Storage &gt; Dried Food</b></dt>
+        <dt><b>Storage</b></dt>
 
         <dd>
-          <p>I have a strict requirement to see through items in a container to minimize confusion. This gives me two main choices: glasses and plastic. While plastic is more convenient, it's not the safest for human consumption. That's why I usually prefer glass. Since it is easily breakable, I usually bring a cooking utensil near it and make a transfer, not the other way around. I am thinking of buying a cover for them because the penetrative light shortens life of consumables therein.</p>
+          <ul>
+            <li>
+              <p><b className="highlight">Dried Food</b> — I have a strict requirement to see through items in a container to minimize confusion. This gives me two main choices: glasses and plastic. While plastic is more convenient, it's not the safest for human consumption. That's why I usually prefer glass. Since it is easily breakable, I usually bring a cooking utensil near it and make a transfer, not the other way around. I am thinking of buying a cover for them because the penetrative light shortens life of consumables therein.</p>
 
-          <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" width="95px">
-            It's a glassware from China (Chuangfeng Glass). I have seen this one often in a random video on Youtube Shorts when it took place in China. The handle is more firm than expected and the two-layer lid makes it airtight. I find it ideal to store dried food like herbs and legumes. It is available many sizes: 1L, 2L, 3L, 4L, 5L, 8L, etc.
-          </FigureOptionalTooltip>
-          <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" width="76px" />
+              <FigureOptionalTooltip src="/character/jar-2L.png" label="4L x 3" width="95px">
+                It's a glassware from China (Chuangfeng Glass). I have seen this one often in a random video on Youtube Shorts when it took place in China. The handle is more firm than expected and the two-layer lid makes it airtight. I find it ideal to store dried food like herbs and legumes. It is available many sizes: 1L, 2L, 3L, 4L, 5L, 8L, etc.
+              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/jar-2L.png" label="2L x 4" width="76px" />
 
-          <FigureOptionalTooltip src="/character/jar-1.2L.png" label="1.2L x 2" width="95px">
-            It's a glass jar from MR. D.I.Y. I put baking soda and sugar in it as the lid is wide enough and the size is right.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/jar-1.2L.png" label="1.2L x 2" width="95px">
+                It's a glass jar from MR. D.I.Y. I put baking soda and sugar in it as the lid is wide enough and the size is right.
+              </FigureOptionalTooltip>
 
-          <FigureOptionalTooltip src="/character/cylindrical-0.7L.png" label="0.7L x 5" width="50px">
-            I usually put small consumables (like 100g peppers) in it. The stackability makes it an ideal candidate to put in a cabinet.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/cylindrical-0.7L.png" label="0.7L x 5" width="50px">
+                I usually put small consumables (like 100g peppers) in it. The stackability makes it an ideal candidate to put in a cabinet.
+              </FigureOptionalTooltip>
 
-          <FigureOptionalTooltip src="/character/cylindrical-0.3L.png" label="0.3L x 6" width="50px">
-            Unlike it's bigger brother, I usually put it in a fridge (and often grounded seeds and powder) since it's small and stackable.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/cylindrical-0.3L.png" label="0.3L x 6" width="50px">
+                Unlike it's bigger brother, I usually put it in a fridge (and often grounded seeds and powder) since it's small and stackable.
+              </FigureOptionalTooltip>
 
-          <FigureOptionalTooltip src="/character/plastic-2.8L.png" label="2.8L" width="50px">
-            This spaceful container often finds itself in the fridge and full of unpeeled bananas. This way, I can store bananas for far longer. I know there are better methods but this seems to be the most convenient. On some occasions, I bring this outside to get beansprouts without plastic!
-          </FigureOptionalTooltip>
-        </dd>
+              <FigureOptionalTooltip src="/character/plastic-2.8L.png" label="2.8L" width="50px">
+                This spaceful container often finds itself in the fridge and full of unpeeled bananas. This way, I can store bananas for far longer. I know there are better methods but this seems to be the most convenient. On some occasions, I bring this outside to get beansprouts without plastic!
+              </FigureOptionalTooltip>
+            </li>
 
-        <dt><b>Storage &gt; Food</b></dt>
-        <dd>
-          <p>Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put in in a freezer with more peace of mind) as compared to a more common soda-lime glass.</p>
-          <FigureOptionalTooltip src="/character/rect-glass-1.25L.png" label="1.25L x 2" width="50px">
-            It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality.
-          </FigureOptionalTooltip>
-          <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.75L x 4" width="50px" />
-          <FigureOptionalTooltip src="/character/rect-glass-0.45L.png" label="0.45L x 7" width="50px" />
-        </dd>
+            <li>
+              <p><b className="highlight">Food</b> — Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put in in a freezer with more peace of mind) as compared to a more common soda-lime glass.</p>
 
-        <dt><b>Storage &gt; Drink</b></dt>
-        <dd>
-          <p>I prefer anything made with glass except when going outside.</p>
-          <FigureOptionalTooltip src="/character/bottle-glass-1L.png" label="1L x 4" width="76px">
-            It is an unknown brand but any common glass should be food safe. I bought this one due to its shape that acts like an anti-slip handle itself. This should reduce the risk of accidents. The lid is plastic from an unknown brand so I usually set it upright. I usually store plain water, soy milk, and herbal drinks in it.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/rect-glass-1.25L.png" label="1.25L x 2" width="50px">
+                It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality.
+              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="0.75L x 4" width="50px" />
+              <FigureOptionalTooltip src="/character/rect-glass-0.45L.png" label="0.45L x 7" width="50px" />
+            </li>
 
-          <FigureOptionalTooltip src="/character/bottle-plastic-1.2L.png" label="1.2L x 3" width="50px">
-            It's a plastic bottle (Double Lock 33140) that allows a tight grip. It's useful to store plain water when I go outside. Yeah, I know a stainless steel bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
-          </FigureOptionalTooltip>
+            <li>
+              <p><b className="highlight">Drink</b> — I prefer anything made with glass except when going outside.</p>
 
-          <FigureOptionalTooltip src="/character/bottle-stainless-0.75L.png" label="0.75L" width="50px">
-            It's an insulated stainless steel bottle. I only use it for my (vastly simplified) gongfu tea ceremony.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/bottle-glass-1L.png" label="1L x 4" width="70px">
+                It is an unknown brand but any common glass should be food safe. I bought this one due to its shape that acts like an anti-slip handle itself. This should reduce the risk of accidents. The lid is plastic from an unknown brand so I usually set it upright. I usually store plain water, soy milk, and herbal drinks in it.
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/bottle-plastic-1.2L.png" label="1.2L x 3" width="60px">
+                It's a plastic bottle (Double Lock 33140) that allows a tight grip. It's useful to store plain water when I go outside. Yeah, I know a stainless steel bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/bottle-stainless-0.75L.png" label="0.75L" width="50px">
+                It's an insulated stainless steel bottle. I only use it for my (vastly simplified) gongfu tea ceremony.
+              </FigureOptionalTooltip>
+            </li>
+          </ul>
         </dd>
 
         <dt><b>Preparation</b></dt>
@@ -293,51 +297,57 @@ const Belongings = (): React.ReactElement =>
           </ul>
         </dd>
 
-        <dt><b>Consumption &gt; Tea Set</b></dt>
+        <dt><b>Consumption</b></dt>
         <dd>
-          <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="50px">
-            It's a porcelain gaiwan.
-          </FigureOptionalTooltip>
+          <ul>
+            <li>
+              <p><b className="highlight">Tea Set</b> — What is more classic (and cheaper) than having a small set of tea for a guest. I like young sheng Puer!</p>
 
-          <FigureOptionalTooltip src="/character/tea-cup.png" label="90ml x 2" width="50px">
-            It's a porcelain tea cup.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="50px">
+                It's a porcelain gaiwan.
+              </FigureOptionalTooltip>
 
-          <FigureOptionalTooltip src="/character/tea-tray.png" width="50px">
-            It's a plastic tray with wood top.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-cup.png" label="90ml x 2" width="50px">
+                It's a porcelain tea cup.
+              </FigureOptionalTooltip>
 
-          <FigureOptionalTooltip src="/character/tea-clip.png" width="50px">
-            It's a wood clip.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-tray.png" width="50px">
+                It's a plastic tray with wood top.
+              </FigureOptionalTooltip>
 
-          <FigureOptionalTooltip src="/character/tea-filter.png" width="50px">
-            It's a stainless filter cup from Küchenprofi. I bought it in Germany for a staggering 16 EUR. It's still in an excellent condition after five years of daily use.
-          </FigureOptionalTooltip>
-        </dd>
+              <FigureOptionalTooltip src="/character/tea-clip.png" width="50px">
+                It's a wood clip.
+              </FigureOptionalTooltip>
 
-        <dt><b>Consumption &gt; Other</b></dt>
-        <dd>
+              <FigureOptionalTooltip src="/character/tea-filter.png" width="50px">
+                It's a stainless filter cup from Küchenprofi. I bought it in Germany for a staggering 16 EUR. It's still in an excellent condition after five years of daily use.
+              </FigureOptionalTooltip>
+            </li>
 
-          <FigureOptionalTooltip src="/character/bowl-big.png" label="TODO" width="50px">
-            It's a insulated stainless steel bowl from MR. D.I.Y. I can pour reasonably hot food and take it away immediately.
-          </FigureOptionalTooltip>
-          <FigureOptionalTooltip src="/character/bowl-small.png" label="TODO" width="50px" />
+            <li>
+              <p><b className="highlight">Other</b></p>
 
-          <FigureOptionalTooltip src="/character/glass-ceramic.png" label="0.36L" width="50px">
-            It's a ceramic cup. It's still OK condition after five years but the outer color at the lip is slightly faded. I hope that isn't lead.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/bowl-big.png" label="TODO" width="50px">
+                It's a insulated stainless steel bowl from MR. D.I.Y. I can pour reasonably hot food and take it away immediately.
+              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/bowl-small.png" label="TODO" width="50px" />
 
-          <FigureOptionalTooltip src="/character/glass-stainless.png" label="TODO x 2" width="50px">
-            It's a stainless stell glass from Zebra Head to serve drinks for up to two guests.
-          </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/glass-ceramic.png" label="0.36L" width="50px">
+                It's a ceramic cup. It's still OK condition after five years but the outer color at the lip is slightly faded. I hope that isn't lead.
+              </FigureOptionalTooltip>
 
-          <TooltipText text="Other">
-            <ul>
-              <li>Spoon (Stainless: Normal x 7, Small x 11)</li>
-              <li>Bottle Opener, Wine Opener</li>
-            </ul>
-          </TooltipText>
+              <FigureOptionalTooltip src="/character/glass-stainless.png" label="TODO x 2" width="50px">
+                It's a stainless stell glass from Zebra Head to serve drinks for up to two guests.
+              </FigureOptionalTooltip>
+
+              <TooltipText text="Other">
+                <ul>
+                  <li>Spoon (Stainless: Normal x 7, Small x 11)</li>
+                  <li>Bottle Opener, Wine Opener</li>
+                </ul>
+              </TooltipText>
+            </li>
+          </ul>
         </dd>
       </dl>
     </section>

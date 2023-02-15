@@ -18,7 +18,7 @@ export const initInPageNavButtons = (buttons: NodeListOf<Element>) => {
     e.addEventListener("click", () => {
       const s = document.getElementById("section" + e.id.slice(3))
       if (s && s.parentNode) {
-        (s.parentNode as HTMLElement).scrollTop = s.offsetTop;
+        (s.parentNode as HTMLElement).scrollTop = s.offsetTop
       }
     })
   })
