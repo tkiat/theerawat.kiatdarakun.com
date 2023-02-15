@@ -261,7 +261,7 @@ const Belongings = (): React.ReactElement =>
             </li>
 
             <li>
-              <p><b className="highlight">Food</b> — Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put in in a freezer with more peace of mind) as compared to more common soda-lime glasses.</p>
+              <p><b className="highlight">Food</b> — Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put it in a freezer with more peace of mind) as compared to more common soda-lime glasses.</p>
 
               <FigureOptionalTooltip src="/character/rect-glass-0.75L.png" label="1.25L x 2" width="120px">
                 It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality. I usally store boiled vegetables in this container and keep it in the fridge.
@@ -307,23 +307,15 @@ const Belongings = (): React.ReactElement =>
             <li>
               <p><b className="highlight">Tea Set</b> — What is more classic (and cheaper) than having a small set of tea for a guest. I like young sheng Puer!</p>
 
-              <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="65px">
-                It's a porcelain gaiwan.
-              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="65px" />
 
-              <FigureOptionalTooltip src="/character/tea-cup.png" label="90ml x 2" width="50px">
-                It's a porcelain tea cup.
-              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-cup.png" label="90ml x 2" width="50px" />
 
-              <FigureOptionalTooltip src="/character/tea-tray.png" width="100px">
-                It's a cheap plastic tray with wood top.
-              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-tray.png" width="100px" />
 
-              <FigureOptionalTooltip src="/character/tea-clip.png" width="20px">
-                It's a tea clip made of wood.
-              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/tea-clip.png" width="20px" />
 
-              <FigureOptionalTooltip src="/character/tea-filter.png" width="50px">
+              <FigureOptionalTooltip src="/character/tea-filter-cup.png" width="70px">
                 It's a stainless filter cup from Küchenprofi. I bought it in Germany for a staggering 16 EUR. It's still in an excellent condition after five years of daily use.
               </FigureOptionalTooltip>
             </li>
