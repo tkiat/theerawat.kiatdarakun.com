@@ -70,11 +70,17 @@ export const PageWithIconsScrollbar = ({data, page}: P): React.ReactElement => {
 
 const scrollPageLikeVim = (id: string) => (e: KeyboardEvent) => {
     switch (e.key) {
+        case "ArrowDown": case "j":
+          document.getElementById(id)?.scrollBy(0, 30)
+          break
+        case "d":
+          document.getElementById(id)?.scrollBy(0, 300)
+          break
         case "ArrowUp": case "k":
           document.getElementById(id)?.scrollBy(0, -30)
           break
-        case "ArrowDown": case "j":
-          document.getElementById(id)?.scrollBy(0, 30)
+        case "u":
+          document.getElementById(id)?.scrollBy(0, -300)
           break
     }
 }

@@ -217,15 +217,17 @@ const Belongings = (): React.ReactElement =>
 
     <ul>
       <li>vegan and more sustainable items</li>
-      <li>not too large and not too many items so they altogether
+      <li>all items to
         <ul>
-          <li>fit in my car or an average taxi (whatever is smaller) so that I only take one trip when relocating</li>
-          <li>fit in 2 big luggages and a carry-on luggage so that they are carriable on a flight</li>
+          <li>fit in my car or an average taxi (whatever is smaller) so that I only take one trip when relocating. This reduces environmental footprint.</li>
+          <li>fit in 2 big luggages and a carry-on luggage so that they are carriable on a flight. The exceptions are furniture, vehicles, and some containers that can be kept at home.</li>
         </ul>
       </li>
       <li>to keep important items (like some documents) and items that I actually use to keep me from being a slave of my belongings</li>
       <li>items that are safer, more convenient, more durable, smaller, look cheaper (to discourage theft), lighter, more replacable, etc. Of course, some trade-offs have to be made, but I shall use good judgment.</li>
     </ul>
+
+    <p>Below is the list of my belongings. For each item, I begin with the “why” first and then proceed to describe my choice.</p>
 
     <section>
       <h3 className="highlight">Food & Drinks</h3>
@@ -239,24 +241,24 @@ const Belongings = (): React.ReactElement =>
               <p><b className="highlight">Dried Food</b> — I have a strict requirement to see through items in a container to minimize confusion. This gives me two main choices: glasses and plastic. While plastic is more convenient, it's not the safest for human consumption. That's why I usually prefer glass. Since it is easily breakable, I usually bring a cooking utensil near it and make a transfer, not the other way around. I am thinking of buying a cover for them because the penetrative light shortens life of consumables therein.</p>
 
               <FigureOptionalTooltip src="/character/jar-glass-2L.png" label="4L x 3" width="95px">
-                It's a glassware from China (Chuangfeng Glass). I have seen this one often in a random video on Youtube Shorts when it took place in China. The handle is more firm than expected and the two-layer lid makes it airtight. I find it ideal to store dried food like herbs and legumes. It is available many sizes: 1L, 2L, 3L, 4L, 5L, 8L, etc.
+                I love herbs, legumes, and grains, and I need airtight containers for them to prevent ants. I need them at different sizes because I sometimes buy food in bulk. I finally chose a glassware from China (Chuangfeng Glass) that is available in many sizes. The handle is more firm than expected and the two-layer lid makes it airtight. I have seen this one often in a random video on Youtube Shorts when it took place in China.
               </FigureOptionalTooltip>
               <FigureOptionalTooltip src="/character/jar-glass-2L.png" label="2L x 4" width="76px" />
 
               <FigureOptionalTooltip src="/character/jar-glass-1.2L.png" label="1.2L x 2" width="60px">
-                It's a glass jar from MR. D.I.Y. I put baking soda and sugar in it as the lid is wide enough and the size is right (for 500g of those).
+                I find it convenient to have a continer with wide lid to store baking soda (that I use to wash veggies) and probably sugar (although I almost never use it). Because those consumables often come with 0.5 - 1kg in size, a glass jar like this is suitable.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/cylindrical-glass-0.7L.png" label="0.7L x 5" width="50px">
-                I usually put consumables in small amount (like 200g peppers) in it. It's also stackable!
+                I sometimes get dried food in small amount (like 200g). A small glass container like this is not only suitable for this purpose but also stackable!
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/cylindrical-glass-0.3L.png" label="0.3L x 6" width="45px">
-                Unlike its bigger brother, I usually put it in a fridge (and often grounded seeds and powder) since it's small and stackable.
+                Unlike its bigger brother, I usually put it in the fridge. Its small size makes it ideal to store grounded seeds and powder that spoil fast, while its stackability utilizes space.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/rect-plastic-2.8L.png" label="2.8L" width="140px">
-                This spaceful plastic container (from Super Lock) often finds itself in the fridge full of unpeeled bananas. This way, I can store bananas for far longer. I know there are better methods but this seems to be the most convenient. On some occasions, I bring this outside to get beansprouts without plastic!
+                I eat a few bananas daily, and I need to keep it in the fridge to prolong its life. I can use a plastic bag and some other methods but a rectangular container enables me to conveniently stack another container on top of it. That's why I chose this spaceful plastic container (from Super Lock). It's usuaully big enough to store a bunch of bananas. On some occasions, I also bring this container outside to get beansprouts without a plastic bag.
               </FigureOptionalTooltip>
             </li>
 
@@ -278,15 +280,15 @@ const Belongings = (): React.ReactElement =>
               <p><b className="highlight">Drink</b> — I prefer anything made with glass except when going outside.</p>
 
               <FigureOptionalTooltip src="/character/bottle-glass-1L.png" label="1L x 4" width="70px">
-                It is an unknown brand but any common glass should be food safe. I bought this one due to its shape that acts like an anti-slip handle itself. This should reduce the risk of accidents. The lid is plastic from an unknown brand so I usually set it upright. I usually store plain water, soy milk, and herbal drinks in it.
+                I need drink containers made of glass to safely store plain water, soy milk, and herbal drinks for use at home. I ended up with this glass of an unknown brand but any common glass should be food safe. Its shape acts like an anti-slip handle itself, and this should reduce the risk of accidents. The lid is plastic from an unknown brand so I usually set it upright. It's still better to find food-grade replacement and replace it once every 1-2 years or so.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/bottle-plastic-1.2L.png" label="1.2L x 3" width="60px">
-                It's a plastic bottle (Double Lock 33140) that allows a tight grip. It's useful to store plain water when I go outside. Yeah, I know a stainless steel or aluminium bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
+                I needed to find non-glass container for outdoor use, and I finally bought these plastic bottles (Double Lock 33140) that allows a tight grip. Yeah, I know a stainless steel or aluminium bottle is usually considered healthier and more sustainable overall but I already have these bottles. I might replace them in the future.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/bottle-stainless-0.75L.png" label="0.75L" width="55px">
-                It's an insulated stainless steel bottle. I only use it for my (vastly simplified) gongfu tea ceremony.
+                My (vastly simplified) gongfu tea ceremony is only possible with something that can keep hot water for about an hour. This insulated stainless steel bottle from Seagull (with some sort of Japanese technology they say) makes this possible.
               </FigureOptionalTooltip>
             </li>
           </ul>
@@ -295,9 +297,51 @@ const Belongings = (): React.ReactElement =>
         <dt><b>Preparation</b></dt>
         <dd>
           <ul>
-            <li>Appliance: Rice Cooker, Smoothie Blender (and Two Plastic Bottles)</li>
-            <li>Utensil: Pan (Stainless), Pot (Stainless)</li>
-            <li>Accessories: Spatula, Cheesecloth (Big x 2, Medium, Small), Silicone Mat x 4, Thermometer, Weighing Machine (&lt;= 5 kg)</li>
+            <li>
+              <p><b className="highlight">Main Tools</b></p>
+
+              <FigureOptionalTooltip src="/character/rice-cooker.png" label="1L" width="90px">
+                While I can cook rice in a pot, it sticks a lot at bottom (of a stainless stelel pot I have) so I needlessly have to throw it away. Furthermore, it's a waste of time to stay vigilant all the time. That's why I need a non-stick, automatic rice cooker. This one is from Panasonic (SR-JQ105). There is an optional plastic holder for steaming on top. I don't usualy use that since I usually cook the rice full of it and then store it in the fridge.
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/pot-4.5L.png" label="4.5L" width="125px">
+                I almost always cook myself so a pot is essential. Such pot should be designed for induction cooking as well since I can use induction cooker (which is more energy efficient than the electric couterpart) when the gas is depleted. The ideal size should be around 4-5 litres since it is enough to cook once and reasonably fuel me (for half a week). After some research, I ended up with a stainless steel pot from Zebra head (Extra Infinity Plus with 22cm lid).
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/pan.png" width="110px">
+                In addition to a pot, a pan is also essential (e.g., for frying). As with a pot, I wanted it to be compatible to an induction stove. I ended up with a stainless steel pan from Zebra head (IH vitalux with 24cm width).
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/spatula.png" width="30px">
+                Like a wing to a bird, a spatula is essential to a pan. I got a stainless steel one from Zebra head (Image III) as part of a set (that includes a pan and a pot).
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/smoothie-blender.png" width="50px">
+                I don't really need a smoothie blender but I got this one from my mother. While it is true that whole fruits are generally better, a blender is ideal for protein powder. That's why I usually mix some fruits with grounded flaxseed and sesame seeds and vegan protein powder with soy milk I made myself in the morning. By the way, this one is from Gokusen (GTS-300).
+              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/smoothie-bottle-1.png" label="600ml" width="60px">
+                It's a plastic bottle that comes with a smoothie blender.
+              </FigureOptionalTooltip>
+              <FigureOptionalTooltip src="/character/smoothie-bottle-2.png" label="600ml" width="40px">
+                It's another plastic bottle that comes with a smoothie blender.
+              </FigureOptionalTooltip>
+            </li>
+
+            <li>
+              <p><b className="highlight">Accessories</b></p>
+
+              <FigureOptionalTooltip src="/character/weighing-machine-kitchen.png" label="&lt; 5kg" width="80px">
+                I am an avid tea drinker and I often need to weight loose leaf tea. On top of that, I need to weight my ingredients when, for example, following a receipe. This one is from Home & Co. I might replace it with a more famous brand but it works fine for now.
+              </FigureOptionalTooltip>
+
+              <TooltipText text="Other">
+                <ul>
+                  <li>Cheesecloth bags x 4 (to filter, e.g., soy milk and herbs)</li>
+                  <li>Silicone mat x 4 (to place hot items on it)</li>
+                  <li>Thermometer (mainly to practice making tea without a kettle)</li>
+                </ul>
+              </TooltipText>
+            </li>
           </ul>
         </dd>
 
@@ -305,7 +349,7 @@ const Belongings = (): React.ReactElement =>
         <dd>
           <ul>
             <li>
-              <p><b className="highlight">Tea Set</b> — What is more classic (and cheaper) than having a small set of tea for a guest. I like young sheng Puer!</p>
+              <p><b className="highlight">Tea Set</b> — What is more classic (and cheaper) than having a small set of tea for a guest? I like young sheng Puer!</p>
 
               <FigureOptionalTooltip src="/character/tea-gaiwan.png" label="150ml" width="65px" />
 
@@ -314,32 +358,34 @@ const Belongings = (): React.ReactElement =>
               <FigureOptionalTooltip src="/character/tea-tray.png" width="100px" />
 
               <FigureOptionalTooltip src="/character/tea-clip.png" width="20px" />
-
-              <FigureOptionalTooltip src="/character/tea-filter-cup.png" width="70px">
-                It's a stainless filter cup from Küchenprofi. I bought it in Germany for a staggering 16 EUR. It's still in an excellent condition after five years of daily use.
-              </FigureOptionalTooltip>
             </li>
 
             <li>
               <p><b className="highlight">Other</b></p>
 
               <FigureOptionalTooltip src="/character/bowl-stainless-0.9L.png" label="0.9L" width="90px">
-                It's a stainless steel bowl from MR. D.I.Y. Its two layers allow me to pour hot food and take it away immediately.
+                I prefer a two-layer container for my food as it allows me to pour hot food and take it away immediately. I chose a stainless steel bowl from MR. D.I.Y.
               </FigureOptionalTooltip>
-              <FigureOptionalTooltip src="/character/bowl-stainless-0.9L.png" label="0.35L" width="70px" />
-
-              <FigureOptionalTooltip src="/character/mug-ceramic-360ml.png" label="360ml" width="70px">
-                It's a ceramic cup. It's still in a OK condition after five years of daily use but the outer color at the lip is slightly faded. I hope that doesn't contain lead.
+              <FigureOptionalTooltip src="/character/bowl-stainless-0.9L.png" label="0.35L" width="70px">
+                This one takes care of dessert, lightening its big brother's load.
               </FigureOptionalTooltip>
 
-              <FigureOptionalTooltip src="/character/glass-stainless.png" label="TODO x 2" width="50px">
-                It's a stainless stell glass from Zebra Head to serve drinks for up to two guests.
+              <FigureOptionalTooltip src="/character/glass-ceramic-360ml.png" label="360ml" width="70px">
+                It's a ceramic cup. It's still in a OK condition after five years of daily use (mainly with hot tea) but the outer color at the lip is slightly faded. I hope that doesn't contain lead. In fact, I tried to replace it once but it was broken so I keep using this spotty mug. Now it's 5-year-old, I secretly hope that this mug breaks soon (just kidding).
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/tea-filter-cup.png" width="70px">
+                I need a tea filter for daily use. From all the shapes available, I prefer cup-like shape as it is the most convenient: the lid prevents the bottom of the filter from getting dirty, and, while not in use, I put this filter on top of my mug to prevent dust from getting in. I got an expensive stainless filter from Küchenprofi for 16 EUR! It's still in an excellent condition after five years of daily use. You heard it right. Daily use!
+              </FigureOptionalTooltip>
+
+              <FigureOptionalTooltip src="/character/glass-stainless-300ml.png" label="300ml x 2" width="55px">
+                It's a stainless steel glass from Zebra Head to serve drinks for guests.
               </FigureOptionalTooltip>
 
               <TooltipText text="Other">
                 <ul>
-                  <li>Spoon (Stainless: Normal x 7, Small x 11)</li>
-                  <li>Bottle Opener, Wine Opener</li>
+                  <li>Stainless spoon (normal x 7, small x 11)</li>
+                  <li>Bottle opener, wine opener</li>
                 </ul>
               </TooltipText>
             </li>
@@ -350,6 +396,8 @@ const Belongings = (): React.ReactElement =>
 
     <section>
       <h3 className="highlight">Clothing & Accessories</h3>
+
+      <p>I will post pictures like the previous section when I have free time.</p>
 
       <ul>
         <li>General: Eyeglasses x 2, Handkerchief x 8, Pants (Long, Jeans x 3, Short x 3), Shirt (Jacket x 2, Long x 2, Short x 6), Shoe (Sandals, Sneaker), Sock x 11, Underwear x 6, Wallet, Watches x 2</li>
@@ -367,9 +415,7 @@ const Belongings = (): React.ReactElement =>
           Computer
           <ul>
             <li>Laptop: Thinkpad X260, Thinkpad X200</li>
-            <li>SSD: WD Blue 500GB, Apacer Panther 120GB x 2</li>
-            <li>RAM: DDR4 (16GB, 4GB), DDR3 (2GB x 2, 1GB x 3)</li>
-            <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC, Cable (HDMI, VGA)</li>
+            <li>Accessories: Flasher Programmer x 2, Keyboard Brush, USB Flash Drive (32GB, 16GB), Mouse, Camera 720p, Wacom Tablet, AMP/DAC</li>
           </ul>
         </li>
 
@@ -377,7 +423,6 @@ const Belongings = (): React.ReactElement =>
           Mobile
           <ul>
             <li>Phone: Huawei P10, Nokia 2, True Super Hero 4G Entertainment & Plus</li>
-            <li>Internal: Micro SD Card 32GB</li>
             <li>Accessories: Phone Holder x 2</li>
           </ul>
         </li>
