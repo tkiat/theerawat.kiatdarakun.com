@@ -397,12 +397,12 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Clothing & Accessories</h3>
 
-      <p>I will post pictures like the previous section when I have free time.</p>
+      <p>I will probably post pictures like the previous section when I have free time.</p>
 
       <ul>
         <li>General: Eyeglasses x 2, Handkerchief x 8, Pants (Long, Jeans x 3, Short x 3), Shirt (Jacket x 2, Long x 2, Short x 6), Shoe (Sandals, Sneaker), Sock x 11, Underwear x 6, Wallet, Watches x 2</li>
         <li>Work: Long Pants, Long Shirt x 2, Necktie, Shoe, Suit x 3</li>
-        <li>Workout: Shirt x 3, Shoe, Shorts, Sock, Underware x 2</li>
+        <li>Workout: Shirt x 3, Shoe, Shorts, Sock, Underwear x 2</li>
         <li>Very Cold Climate: Leggings, Scarf, Shirt x 6</li>
       </ul>
     </section>
