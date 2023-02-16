@@ -181,7 +181,7 @@ const Trait = (): React.ReactElement =>
         <TooltipText text="Sustenance">
           <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
 
-          <p>As for drinks, I usually drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>
+          <p>As for drinks, I currently drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>
         </TooltipText>
       </li>
     </ul>
@@ -371,7 +371,7 @@ const Belongings = (): React.ReactElement =>
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/glass-ceramic-360ml.png" label="360ml" width="70px">
-                It's a ceramic cup. It's still in a OK condition after five years of daily use (mainly with hot tea) but the outer color at the lip is slightly faded. I hope that doesn't contain lead. In fact, I tried to replace it once but it was broken so I keep using this spotty mug. Now it's 5-year-old, I secretly hope that this mug breaks soon (just kidding).
+                I needed a versatile mug for every drink, and ceramic and glass cups are the equal, top contenders for this (since I don't trust plastic glasses for hot drinks and stainless steel ones aren't good for acidic drinks). I chose this ceramic cup (an ordinary one from Tesco Lotus). It's still in a OK condition after five years of daily use but the outer color at the lip is slightly faded. I hope that doesn't contain lead. Now it's 5-year-old, I wouldn't be unhappy if it breaks!
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/tea-filter-cup.png" width="70px">
@@ -445,11 +445,11 @@ const Belongings = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Hygiene</h3>
 
-        <p>Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)</p>
+      <p>Cleaning Cloth x 5, Grooming (Comb, Nail Cliper, Nose Scissors, Safety Razor, Shavette), Spray Bottle (350ml), Towel (Big, Small)</p>
 
-        <FigureOptionalTooltip src="/character/bottle-glass-100ml.png" label="100ml x 4" width="50px">
-          I store tooth powder, toothpaste tablets, and alum in it.
-        </FigureOptionalTooltip>
+      <FigureOptionalTooltip src="/character/bottle-glass-100ml.png" label="100ml x 4" width="50px">
+        Zero waste (or less waste) consumables need home. I find this tiny pudding jar ideal to store tooth powder, toothpaste tablets, and alum.
+      </FigureOptionalTooltip>
     </section>
 
     <section>
