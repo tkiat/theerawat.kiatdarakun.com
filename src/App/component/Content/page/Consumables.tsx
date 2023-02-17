@@ -1,76 +1,72 @@
 import React from "react"
-import * as jsYaml from 'js-yaml'
-import { Chart, registerables } from 'chart.js'
+import * as jsYaml from "js-yaml"
+import { Chart, registerables } from "chart.js"
 
 Chart.register(...registerables)
 
 const resource = "/character/consumables.yaml"
 
-const gramThbObj = {
-  gram: 0,
-  thb: 0,
-}
-const edibleFields = {
+const sharedFields = {
   thb: 0,
   total_gram: 0,
 
-  vegan: gramThbObj,
-  non_vegan: gramThbObj,
+  vegan: 0,
+  non_vegan: 0,
 
-  unprocessed: gramThbObj,
-  processed: gramThbObj,
-  ultra_processed: gramThbObj,
+  unprocessed: 0,
+  processed: 0,
+  ultra_processed: 0,
 
-  cert_organic: gramThbObj,
-  not_cert_organic: gramThbObj,
+  cert_organic: 0,
+  not_cert_organic: 0,
 
   waste: { plastic: 0, paper: 0, glass: 0, },
 }
 
 const wkSummaryTemplate = {
   km: { car: 0, online: 0, },
-  food: edibleFields,
-  drink: edibleFields,
-  "other edibles": edibleFields,
-  nonedibles: edibleFields,
+  food: sharedFields,
+  drink: sharedFields,
+  "other edibles": sharedFields,
+  nonedibles: sharedFields,
 }
 
-const createSummaryChart = (ctx, summary, mode) => new Chart(ctx, {
+const createSummaryChart = (ctx, summary) => new Chart(ctx, {
   type: "bar",
   data: {
     labels: [
-      'Vegan',
-      'Non-Vegan',
-      '',
-      'Unprocessed',
-      'Processed',
-      'Ultra-Processed',
-      '',
-      'Certified Organic',
-      'Not Certified Organic'
+      "Vegan",
+      "Non-Vegan",
+      "",
+      "Unprocessed",
+      "Processed",
+      "Ultra-Processed",
+      "",
+      "Certified Organic",
+      "Not Certified Organic"
     ],
     datasets: [{
       data: [
-        summary.vegan[mode],
-        summary.non_vegan[mode],
+        summary.vegan,
+        summary.non_vegan,
         0,
-        summary.unprocessed[mode],
-        summary.processed[mode],
-        summary.ultra_processed[mode],
+        summary.unprocessed,
+        summary.processed,
+        summary.ultra_processed,
         0,
-        summary.cert_organic[mode],
-        summary.not_cert_organic[mode],
+        summary.cert_organic,
+        summary.not_cert_organic,
       ],
       borderWidth: 2,
-      borderColor: 'black',
-      backgroundColor: 'lightgray',
+      borderColor: "black",
+      backgroundColor: "lightgray",
     }],
   },
   options: {
     plugins: {
       tooltip:{
         intersect : false,
-        mode:'index',
+        mode:"index",
       },
       legend: {
         display: false,
@@ -113,26 +109,13 @@ const createWeeklySummaries = wks => {
           summary[type].thb += thb
           summary[type].total_gram += gram
 
-          summary[type].vegan.gram += isNaN(v[2]) ? 0 : gram - v[2]
-          summary[type].vegan.thb += isNaN(v[2]) ? 0 : (v[2] === 0 ? thb : 0)
-
-          summary[type].non_vegan.gram += isNaN(v[2]) ? 0 : v[2]
-          summary[type].non_vegan.thb += (isNaN(v[2]) || v[2] === 0) ? 0 : thb
-
-          summary[type].cert_organic.gram += v[3] === 'yes' ? gram : 0
-          summary[type].cert_organic.thb += v[3] === 'yes' ? thb : 0
-
-          summary[type].not_cert_organic.gram += v[3] === 'no' ? gram : 0
-          summary[type].not_cert_organic.thb += v[3] === 'no' ? thb : 0
-
-          summary[type].unprocessed.gram += v[4] === 'no' ? gram : 0
-          summary[type].unprocessed.thb += v[4] === 'no' ? thb : 0
-
-          summary[type].processed.gram += v[4] === 'processed' ? gram : 0
-          summary[type].processed.thb += v[4] === 'processed' ? thb : 0
-
-          summary[type].ultra_processed.gram += v[4] === 'ultra' ? gram : 0
-          summary[type].ultra_processed.thb += v[4] === 'ultra' ? thb : 0
+          summary[type].vegan += isNaN(v[2]) ? 0 : gram - v[2]
+          summary[type].non_vegan += isNaN(v[2]) ? 0 : v[2]
+          summary[type].cert_organic += v[3] === "yes" ? gram : 0
+          summary[type].not_cert_organic += v[3] === "no" ? gram : 0
+          summary[type].unprocessed += v[4] === "no" ? gram : 0
+          summary[type].processed += v[4] === "processed" ? gram : 0
+          summary[type].ultra_processed += v[4] === "ultra" ? gram : 0
 
           summary[type].waste.plastic += isNaN(v[5]) ? 0 : v[5]
           summary[type].waste.paper += isNaN(v[6]) ? 0 : v[6]
@@ -143,24 +126,6 @@ const createWeeklySummaries = wks => {
     result.push({ [date]: summary })
   })
   return result
-}
-const addAtMostThreeLevelNestedObjs = (a, b) => {
-  return Object.keys(a).reduce((acc, j) => {
-    if (isNaN(acc[j])) {
-      Object.keys(acc[j]).forEach(k => {
-        if (isNaN(acc[j][k])) {
-          Object.keys(acc[j][k]).forEach(l => {
-            acc[j][k][l] += b[j][k][l]
-          })
-        } else {
-          acc[j][k] += b[j][k]
-        }
-      })
-    } else {
-      acc[j] += b[j]
-    }
-    return acc
-  }, a)
 }
 const opAtMostThreeLevelNestedObjs = (a, op) => {
   return Object.keys(a).reduce((acc, j) => {
@@ -180,13 +145,32 @@ const opAtMostThreeLevelNestedObjs = (a, op) => {
     return acc
   }, a)
 }
+const addAtMostThreeLevelNestedObjs = (a, b) => {
+  return Object.keys(a).reduce((acc, j) => {
+    if (isNaN(acc[j])) {
+      Object.keys(acc[j]).forEach(k => {
+        if (isNaN(acc[j][k])) {
+          Object.keys(acc[j][k]).forEach(l => {
+            acc[j][k][l] += b[j][k][l]
+          })
+        } else {
+          acc[j][k] += b[j][k]
+        }
+      })
+    } else {
+      acc[j] += b[j]
+    }
+    return acc
+  }, a)
+}
 
-const createWeeklyAvgSummary = (summaries, n) => {
-  const sum = summaries.slice(0, n).reduce((acc, cur) =>
+const createAvgSummary = (summaries, n) => {
+  const sum = summaries.reduce((acc, cur) =>
     addAtMostThreeLevelNestedObjs(acc, Object.values(cur)[0])
   , JSON.parse(JSON.stringify(wkSummaryTemplate)))
 
-  return opAtMostThreeLevelNestedObjs(sum, a => Math.round(a / n))
+  const avg = opAtMostThreeLevelNestedObjs(sum, a => Math.round(a / n))
+  return avg
 }
 
 const createAvgOptions = n => {
@@ -196,7 +180,16 @@ const createAvgOptions = n => {
   else return [4, 12, 52, n]
 }
 
-let avgGramChart, avgOptions, avgSummaries
+const createSelectOptions = (elem, values, prefix, suffix) => {
+  values.forEach(x => {
+    const optionElem = document.createElement('option')
+    optionElem.value = x
+    optionElem.innerText = prefix + x + suffix
+    elem.appendChild(optionElem)
+  })
+}
+
+let avgGramChart, avgOptions, avgSummaries, mode
 
 export const Consumables = (): React.ReactElement => {
   const [item, setItem] = React.useState()
@@ -214,61 +207,88 @@ export const Consumables = (): React.ReactElement => {
           setItem(c)
         }
       }
-//         foodRecord.initialize(
-//           document.getElementById('display-consumables-record_purchase'),
-//           jsYaml.load(resoureces.consumables),
-//         )
     })()
 
     return () => { mounted = false }
   }, [])
 
-  if (item) {
-    const weeks = jsYaml.load(item)
-//     console.log(yaml)
-    avgOptions = createAvgOptions(weeks.length)
-    const weekOptions = Object.values(weeks).map(x => Object.keys(x)[0])
+  React.useEffect((): (() => void) => {
+    if (item) {
+      const weeks = jsYaml.load(item)
 
-    const weeklySummaries = createWeeklySummaries(weeks)
-    avgSummaries = avgOptions.reduce((acc, cur) => {
-      acc[cur] = createWeeklyAvgSummary(weeklySummaries, cur)
-      return acc
-    }, {})
-    const avgSummary = avgSummaries[4].food
-    console.log(avgSummary)
+      avgOptions = createAvgOptions(weeks.length)
+  //     const weekOptions = Object.values(weeks).map(x => Object.keys(x)[0])
 
-    const chartElem = document.getElementById("consumables-chart")
-    if (avgGramChart !== undefined) avgGramChart.destroy()
-    avgGramChart = createSummaryChart(chartElem, avgSummary, 'gram')
-  }
+      const weeklySummaries = createWeeklySummaries(weeks)
+      avgSummaries = avgOptions.reduce((acc, cur) => {
+        acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
+        return acc
+      }, {})
+
+      createSelectOptions(document.getElementById("select-avg"), avgOptions, "Last ", " Weeks")
+
+      const sElem = document.getElementById("select")
+      sElem.dispatchEvent(new Event('change', { bubbles: true }))
+    }
+  }, [item])
 
   return (
     <section>
       <h2>Consumables</h2>
 
-      {
-        avgOptions && avgOptions.map((t, i) =>
-          <div key={i}>
-            <input type="radio" name="avg-options" id={"avg-options-" + t} value={t}
-                   style={{cursor: "pointer"}}
-                   defaultChecked={t === avgOptions[0]}
-                   onClick={() => {
-                     console.log(t)
-                     const chartElem = document.getElementById("consumables-chart")
+      <div id="panel">
+        <label id="consumables-mode" htmlFor="select"></label>
+        <br />
+        <select
+          id="select"
+          onChange={e => {
+            const ind = e.target.selectedIndex
+            const isOptgroupAvg = ind < avgOptions.length
 
-                     if (avgGramChart !== undefined) avgGramChart.destroy()
-                      const avgSummary = avgSummaries[4].food
-                     avgGramChart = createSummaryChart(chartElem, avgSummary, 'gram')
-                   }}
-                   />
-            <span>&nbsp;&nbsp;</span>
-            <label style={{cursor: "pointer"}} htmlFor={"avg-options-" + t}>
-              {t}
-            </label>
-          </div>
-      )}
+            const s = document.getElementById("consumables-mode")
+
+            if (isOptgroupAvg) {
+              s.innerText = 'Weekly Average'
+
+              const numWeeks = avgOptions[ind]
+              const avgSummary = avgSummaries[numWeeks]?.food
+
+              const chartElem = document.getElementById("consumables-chart")
+              if (avgGramChart !== undefined) avgGramChart.destroy()
+              avgGramChart = createSummaryChart(chartElem, avgSummary)
+            } else {
+              s.innerText = 'Specific Week'
+            }
+          }}
+        >
+          <optgroup id="select-avg" label="Weekly Average"></optgroup>
+          <optgroup id="select-week" label="Specific Week"></optgroup>
+        </select>
+
+        <span id="field-selector">
+          <label>
+            <input type="checkbox" value="food" defaultChecked />
+            Food
+          </label>
+
+          <label>
+            <input type="checkbox" value="drink" defaultChecked />
+            Drink
+          </label>
+
+          <label>
+            <input type="checkbox" value="other edibles" defaultChecked />
+            Other Edibles
+          </label>
+
+          <label>
+            <input type="checkbox" value="nonedibles" />
+            Nonedibles
+          </label>
+        </span>
+      </div>
+
       <canvas id="consumables-chart" width="400px" height="400px"></canvas>
-
     </section>
   )
 }

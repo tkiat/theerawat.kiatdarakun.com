@@ -75,16 +75,20 @@ const scrollPageLikeVim = (id: string) => (e: KeyboardEvent) => {
   trottle = false
 
   switch (e.key) {
-    case "ArrowDown": case "j":
+//     case "ArrowDown":
+    case "j":
       document.getElementById(id)?.scrollBy(0, 60)
       break
-    case "d": case "PageDown":
+//     case "PageDown":
+    case "d":
       document.getElementById(id)?.scrollBy(0, 200)
       break
-    case "ArrowUp": case "k":
+//     case "ArrowUp":
+    case "k":
       document.getElementById(id)?.scrollBy(0, -60)
       break
-    case "u": case "PageUp":
+//     case "PageUp":
+    case "u":
       document.getElementById(id)?.scrollBy(0, -200)
       break
   }
