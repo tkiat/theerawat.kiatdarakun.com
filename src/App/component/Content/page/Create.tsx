@@ -1,6 +1,7 @@
 import React from "react"
 
 import {PageWithIconsScrollbar} from "../share"
+import {getRange} from "@app/share"
 
 export const Create = (): React.ReactElement => {
 
@@ -18,7 +19,7 @@ export const Create = (): React.ReactElement => {
       const res = await Promise.all(resources.map(x => fetch(x)))
 
       if (mounted) {
-        for (const i of [0, 1, 2]) {
+        for (const i of getRange(0, resources.length - 1)) {
           const type = res[i].headers.get("content-type")
           if (type && type.indexOf("application/json") !== -1) {
             const c = await res[i].json()
