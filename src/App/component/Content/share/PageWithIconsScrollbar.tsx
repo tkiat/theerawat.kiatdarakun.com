@@ -68,19 +68,25 @@ export const PageWithIconsScrollbar = ({data, page}: P): React.ReactElement => {
   )
 }
 
+let trottle = true
+
 const scrollPageLikeVim = (id: string) => (e: KeyboardEvent) => {
-    switch (e.key) {
-        case "ArrowDown": case "j":
-          document.getElementById(id)?.scrollBy(0, 30)
-          break
-        case "d":
-          document.getElementById(id)?.scrollBy(0, 300)
-          break
-        case "ArrowUp": case "k":
-          document.getElementById(id)?.scrollBy(0, -30)
-          break
-        case "u":
-          document.getElementById(id)?.scrollBy(0, -300)
-          break
-    }
+  if (!trottle) return
+  trottle = false
+
+  switch (e.key) {
+    case "ArrowDown": case "j":
+      document.getElementById(id)?.scrollBy(0, 60)
+      break
+    case "d": case "PageDown":
+      document.getElementById(id)?.scrollBy(0, 200)
+      break
+    case "ArrowUp": case "k":
+      document.getElementById(id)?.scrollBy(0, -60)
+      break
+    case "u": case "PageUp":
+      document.getElementById(id)?.scrollBy(0, -200)
+      break
+  }
+  setTimeout(() => trottle = true, 150)
 }

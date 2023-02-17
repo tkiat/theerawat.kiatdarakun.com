@@ -20,11 +20,6 @@ export const Character = (): React.ReactElement => {
   return <PageWithIconsScrollbar data={data} page="about-character" />
 }
 
-const Prelude = (): React.ReactElement =>
-  <section>
-    todo
-  </section>
-
 const Trait = (): React.ReactElement =>
   <section>
     <h2>Traits</h2>
@@ -277,7 +272,7 @@ const Belongings = (): React.ReactElement =>
             </li>
 
             <li>
-              <p><b className="highlight">Drink</b> — I prefer anything made with glass except when going outside.</p>
+              <p><b className="highlight">Drink</b> — I prefer any container made of glass except when going outside.</p>
 
               <FigureOptionalTooltip src="/character/bottle-glass-1L.png" label="1L x 4" width="70px">
                 I need drink containers made of glass to safely store plain water, soy milk, and herbal drinks for use at home. I ended up with this glass of an unknown brand but any common glass should be food safe. Its shape acts like an anti-slip handle itself, and this should reduce the risk of accidents. The lid is plastic from an unknown brand so I usually set it upright. It's still better to find food-grade replacement and replace it once every 1-2 years or so.
