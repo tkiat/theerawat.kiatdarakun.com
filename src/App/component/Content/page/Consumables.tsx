@@ -369,73 +369,12 @@ export const Consumables = (): React.ReactElement => {
 
 const WeekTable = ({week}): React.ReactElement => {
   const orders = Object.values(week)[0]
-  console.log(orders)
 
-//   orders.forEach(order => {
-//     const tbody = document.createElement("tbody")
-//     tbody.classList.add("table__order")
-// 
-//     const total =
-//       { thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0 }
-//     const num_items = Object.values(order.items).reduce((acc, cur) =>
-//       acc + cur.length, 0)
-//     Object.entries(order.items).forEach(([type, type_items], i) => {
-//       type_items.forEach((item, j) => {
-//         const name = Object.keys(item)[0]
-//         const dscp = Object.values(item)[0]
-//         const tr = document.createElement("tr")
-//         let firstCol = ""
-//         if (i === 0 && j === 0) {
-//           firstCol = `
-//             <td rowspan=${num_items + 1}>
-//             ${order.mode}
-//             ${"km" in order ? "<br>(" + order.km + " km)" : ""}
-//             </td>
-//           `
-//         }
-//         tr.innerHTML = `
-//           ${firstCol}
-//           <td>${name}</td>
-//           <td>${dscp[0]}</td>
-//           <td>${dscp[1]}</td>
-//           <td>${dscp[2]}</td>
-//           <td>${dscp[3]}</td>
-//           <td>${dscp[4]}</td>
-//           <td>${dscp[5]}</td>
-//           <td>${dscp[6]}</td>
-//           <td>${dscp[7]}</td>
-//         `
-//         tbody.appendChild(tr)
-// 
-//         total.thb += isNaN(dscp[0]) ? 0 : dscp[0]
-//         total.gram += isNaN(dscp[1]) ? 0 : dscp[1]
-//         total.nonvegan += isNaN(dscp[2]) ? 0 : dscp[2]
-//         total.plastic += isNaN(dscp[5]) ? 0 : dscp[5]
-//         total.paper += isNaN(dscp[6]) ? 0 : dscp[6]
-//         total.glass += isNaN(dscp[7]) ? 0 : dscp[7]
-//       })
-//     })
-//     const tr = document.createElement("tr")
-//     tr.innerHTML = `
-//       <td><b>Total</b></td>
-//       <td>${total.thb}</td>
-//       <td>${total.gram}</td>
-//       <td>${total.nonvegan}</td>
-//       <td></td>
-//       <td></td>
-//       <td>${total.plastic}</td>
-//       <td>${total.paper}</td>
-//       <td>${total.glass}</td>
-//     `
-//     tr.style.textDecoration = "underline"
-//     tbody.appendChild(tr)
-//     table.appendChild(tbody)
-//   })
 
   return (
-    <table id="table">
-      <colgroup className="table__colgroup" span="7"></colgroup>
-      <colgroup className="table__colgroup" span="3"></colgroup>
+    <table className="consumables-table">
+      <colgroup className="consumables-table__colgroup" span="7"></colgroup>
+      <colgroup className="consumables-table__colgroup" span="3"></colgroup>
       <thead className="table__head">
         <tr>
           <th rowSpan="2">Order</th>
@@ -443,9 +382,9 @@ const WeekTable = ({week}): React.ReactElement => {
           <th rowSpan="2">THB</th>
           <th rowSpan="2">Gram</th>
           <th rowSpan="2">Non-Vegan (g)</th>
-          <th rowSpan="2">Certified\nOrganic</th>
+          <th rowSpan="2">Certified<br />Organic</th>
           <th rowSpan="2">Processed</th>
-          <th className="center" colSpan="3">Packaging Waste (g)</th>
+          <th colSpan="3">Packaging (g)</th>
         </tr>
         <tr>
           <th>Plastic</th>
@@ -453,7 +392,67 @@ const WeekTable = ({week}): React.ReactElement => {
           <th>Glass</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody className="consumables-table__order">
+      {
+        orders.map((order, i) => {
+          const modesInOrder = Object.entries(order.items)
+          const numItems = Object.values(order.items).reduce((acc, cur) =>
+            acc + cur.length, 0)
+          return (
+          <React.Fragment key={i}>
+            {
+              modesInOrder.map(([type, type_items], j) => {
+                return (
+                <React.Fragment key={j}>
+                  {
+                    type_items.map((item, k) => {
+                      const name = Object.keys(item)[0]
+                      const dscp = Object.values(item)[0]
+
+                      let firstCol = undefined
+                      if (j === 0 && k === 0) {
+                        firstCol = `
+                          <td rowspan=${numItems + 1}>
+                          ${order.mode}
+                          ${"km" in order ? "<br />(" + order.km + " km)" : ""}
+                          </td>
+                        `
+                      }
+
+                      const lastIteminOrder = j === modesInOrder.length - 1 &&
+                        k === type_items.length - 1
+                      const className = lastIteminOrder ?
+                        "consumables-table__order-lastrow" : ""
+                      return (
+                        <tr className={className} key={k}>
+                          {
+                            (j === 0 && k === 0) &&
+                            <td rowSpan={numItems}>
+                              {order.mode}
+                              {"km" in order && <><br />{order.km} km</>}
+                            </td>
+                          }
+                          <td>{name}</td>
+                          <td>{dscp[0]}</td>
+                          <td>{dscp[1]}</td>
+                          <td>{dscp[2]}</td>
+                          <td>{dscp[3]}</td>
+                          <td>{dscp[4]}</td>
+                          <td>{dscp[5]}</td>
+                          <td>{dscp[6]}</td>
+                          <td>{dscp[7]}</td>
+                        </tr>
+                      )
+                    })
+                  }
+                </React.Fragment>
+                )
+              })
+            }
+          </React.Fragment>
+          )
+        })
+      }
       </tbody>
     </table>
   )

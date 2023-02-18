@@ -1,0 +1,27 @@
+@use "@app/share/style/functions" as f;
+@use "@app/share/style/mixins" as m;
+
+.consumables-table {
+  border-collapse: collapse;
+  text-align: center;
+  &__colgroup {
+    border: 1px solid var(--highlight-color);
+  }
+  &__order-lastrow {
+    border-bottom: 1px solid var(--highlight-color);
+  }
+  &__order {
+    border: 1px solid var(--highlight-color);
+    td {
+      padding: 0.3em;
+    }
+    tr:nth-child(even) {
+      td:not([rowspan]) {
+        @include m.hsl(background-color, 0, 0%, f.dayOrDark(90%, 10%));
+      }
+    }
+    tr td[rowspan] {
+      border-right: 1px dashed var(--highlight-color);
+    }
+  }
+}
