@@ -363,7 +363,7 @@ const Belongings = (): React.ReactElement =>
               <p><b className="highlight">Other</b></p>
 
               <FigureOptionalTooltip src="/character/belongings/bowl-stainless-0.9L.png" label="0.9L" width="90px">
-                I prefer a two-layer container for my food as it allows me to pour hot food and take it away immediately. I chose a stainless steel bowl from MR. D.I.Y.
+                I sometimes need to eat outside, and I find a two-layer container container as it allows me to pour hot food and take it away immediately. This one is a stainless steel bowl from MR. D.I.Y.
               </FigureOptionalTooltip>
               <FigureOptionalTooltip src="/character/belongings/bowl-stainless-0.9L.png" label="0.35L" width="70px">
                 This one takes care of dessert, lightening its big brother's load.

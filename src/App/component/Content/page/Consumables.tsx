@@ -1,5 +1,6 @@
 import React from "react"
 import * as jsYaml from "js-yaml"
+import {useImmer} from "use-immer"
 import { Chart, registerables } from "chart.js"
 
 Chart.register(...registerables)
@@ -182,7 +183,7 @@ const createAvgOptions = n => {
 
 const createOptionElements = (el, values, prefix, suffix) => {
   values.forEach(x => {
-    const optionElem = document.createElement('option')
+    const optionElem = document.createElement("option")
     optionElem.value = x
     optionElem.innerText = prefix + x + suffix
     el.appendChild(optionElem)
@@ -211,7 +212,12 @@ const combineFields = (summary, fields) =>
   })
 
 export const Consumables = (): React.ReactElement => {
-  const [item, setItem] = React.useState()
+  const [weeks, setWeeks] = React.useState()
+
+  const [cur, setCur] = useImmer({
+    "mode": "avg",
+    "index": 0,
+  })
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -222,8 +228,8 @@ export const Consumables = (): React.ReactElement => {
       if (mounted) {
         const type = res.headers.get("content-type")
         if (type && type.indexOf("text/yaml") !== -1) {
-          const c = await res.text()
-          setItem(c)
+          const yaml = jsYaml.load(await res.text())
+          setWeeks(yaml)
         }
       }
     })()
@@ -232,14 +238,12 @@ export const Consumables = (): React.ReactElement => {
   }, [])
 
   React.useEffect((): (() => void) => {
-    if (!item) return
-
-    const weeks = jsYaml.load(item)
+    if (!weeks) return
 
     const avgOptions = createAvgOptions(weeks.length)
     const avgOptgroupElem = document.getElementById("select-avg")
     avgOptions.forEach(x => {
-      const el = document.createElement('option')
+      const el = document.createElement("option")
       el.value = x
       el.innerText = "Last " + x + " Weeks"
       avgOptgroupElem.appendChild(el)
@@ -248,7 +252,7 @@ export const Consumables = (): React.ReactElement => {
     const weekOptions = Object.values(weeks).map(x => Object.keys(x)[0])
     const weekOptgroupElem = document.getElementById("select-week")
     weekOptions.forEach(x => {
-      const el = document.createElement('option')
+      const el = document.createElement("option")
       el.value = x
       el.innerText = x
       weekOptgroupElem.appendChild(el)
@@ -273,7 +277,7 @@ export const Consumables = (): React.ReactElement => {
       } else {
         fields.delete(e.target.value)
       }
-      selectElem.dispatchEvent(new Event('change'))
+      selectElem.dispatchEvent(new Event("change"))
     }
 
     typeCheckboxes.forEach(el => {
@@ -289,8 +293,13 @@ export const Consumables = (): React.ReactElement => {
 
       const s = document.getElementById("consumables-mode")
 
+      setCur(d => {
+        d.mode = isOptgroupAvg ? "avg" : "specific"
+        d.index = isOptgroupAvg ? ind : ind - avgOptions.length
+      })
+
       if (isOptgroupAvg) {
-        s.innerText = 'Weekly Average'
+        s.innerText = "Weekly Average"
 
         const avgSummary = avgSummaries[e.target.value]
         const avgSummarySelectedFields = combineFields(avgSummary, fields)
@@ -300,11 +309,11 @@ export const Consumables = (): React.ReactElement => {
 
         avgGramChart = createSummaryChart(chartElem, avgSummarySelectedFields)
       } else {
-        s.innerText = 'Specific Week'
+        s.innerText = "Specific Week"
       }
     }
     selectElem.addEventListener("change", onSelectElemChange)
-    selectElem.dispatchEvent(new Event('change', { bubbles: true }))
+    selectElem.dispatchEvent(new Event("change", { bubbles: true }))
 
     return () => {
       selectElem.removeEventListener("change", onSelectElemChange)
@@ -312,7 +321,7 @@ export const Consumables = (): React.ReactElement => {
         el.removeEventListener("change", onCheckboxElemChange)
       )
     }
-  }, [item])
+  }, [weeks])
 
   return (
     <section>
@@ -349,7 +358,103 @@ export const Consumables = (): React.ReactElement => {
         </span>
       </div>
 
-      <canvas id="consumables-chart" width="400px" height="400px"></canvas>
+      {
+        cur.mode === "avg" ?
+          <canvas id="consumables-chart" width="400px" height="400px"></canvas>
+        : <WeekTable week={weeks[cur.index]}/>
+      }
     </section>
+  )
+}
+
+const WeekTable = ({week}): React.ReactElement => {
+  const orders = Object.values(week)[0]
+  console.log(orders)
+
+//   orders.forEach(order => {
+//     const tbody = document.createElement("tbody")
+//     tbody.classList.add("table__order")
+// 
+//     const total =
+//       { thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0 }
+//     const num_items = Object.values(order.items).reduce((acc, cur) =>
+//       acc + cur.length, 0)
+//     Object.entries(order.items).forEach(([type, type_items], i) => {
+//       type_items.forEach((item, j) => {
+//         const name = Object.keys(item)[0]
+//         const dscp = Object.values(item)[0]
+//         const tr = document.createElement("tr")
+//         let firstCol = ""
+//         if (i === 0 && j === 0) {
+//           firstCol = `
+//             <td rowspan=${num_items + 1}>
+//             ${order.mode}
+//             ${"km" in order ? "<br>(" + order.km + " km)" : ""}
+//             </td>
+//           `
+//         }
+//         tr.innerHTML = `
+//           ${firstCol}
+//           <td>${name}</td>
+//           <td>${dscp[0]}</td>
+//           <td>${dscp[1]}</td>
+//           <td>${dscp[2]}</td>
+//           <td>${dscp[3]}</td>
+//           <td>${dscp[4]}</td>
+//           <td>${dscp[5]}</td>
+//           <td>${dscp[6]}</td>
+//           <td>${dscp[7]}</td>
+//         `
+//         tbody.appendChild(tr)
+// 
+//         total.thb += isNaN(dscp[0]) ? 0 : dscp[0]
+//         total.gram += isNaN(dscp[1]) ? 0 : dscp[1]
+//         total.nonvegan += isNaN(dscp[2]) ? 0 : dscp[2]
+//         total.plastic += isNaN(dscp[5]) ? 0 : dscp[5]
+//         total.paper += isNaN(dscp[6]) ? 0 : dscp[6]
+//         total.glass += isNaN(dscp[7]) ? 0 : dscp[7]
+//       })
+//     })
+//     const tr = document.createElement("tr")
+//     tr.innerHTML = `
+//       <td><b>Total</b></td>
+//       <td>${total.thb}</td>
+//       <td>${total.gram}</td>
+//       <td>${total.nonvegan}</td>
+//       <td></td>
+//       <td></td>
+//       <td>${total.plastic}</td>
+//       <td>${total.paper}</td>
+//       <td>${total.glass}</td>
+//     `
+//     tr.style.textDecoration = "underline"
+//     tbody.appendChild(tr)
+//     table.appendChild(tbody)
+//   })
+
+  return (
+    <table id="table">
+      <colgroup className="table__colgroup" span="7"></colgroup>
+      <colgroup className="table__colgroup" span="3"></colgroup>
+      <thead className="table__head">
+        <tr>
+          <th rowSpan="2">Order</th>
+          <th rowSpan="2">Title</th>
+          <th rowSpan="2">THB</th>
+          <th rowSpan="2">Gram</th>
+          <th rowSpan="2">Non-Vegan (g)</th>
+          <th rowSpan="2">Certified\nOrganic</th>
+          <th rowSpan="2">Processed</th>
+          <th className="center" colSpan="3">Packaging Waste (g)</th>
+        </tr>
+        <tr>
+          <th>Plastic</th>
+          <th>Paper</th>
+          <th>Glass</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
   )
 }
