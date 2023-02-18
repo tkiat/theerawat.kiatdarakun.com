@@ -4,24 +4,34 @@
 .consumables-table {
   border-collapse: collapse;
   text-align: center;
-  &__colgroup {
+  font-size: 0.8em;
+  margin-top: 1em;
+
+  colgroup {
     border: 1px solid var(--highlight-color);
   }
-  &__order-lastrow {
-    border-bottom: 1px solid var(--highlight-color);
-  }
-  &__order {
+  tbody {
     border: 1px solid var(--highlight-color);
     td {
-      padding: 0.3em;
+      padding: 0.1em;
     }
-    tr:nth-child(even) {
-      td:not([rowspan]) {
-        @include m.hsl(background-color, 0, 0%, f.dayOrDark(90%, 10%));
+    tr {
+      &:not(:last-child) {
+        &:nth-child(even) {
+          td:not([rowspan]) {
+            @include m.hsl(background-color, 0, 0%, f.dayOrDark(90%, 10%));
+          }
+        }
+      }
+      &:last-child {
+        text-decoration: underline;
+      }
+      td[rowspan] {
+        border-right: 1px dashed var(--highlight-color);
       }
     }
-    tr td[rowspan] {
-      border-right: 1px dashed var(--highlight-color);
+    .last-tr-order {
+      border-bottom: 1px solid var(--highlight-color);
     }
   }
 }

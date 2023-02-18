@@ -1,11 +1,11 @@
 .nav-tube {
   position: absolute;
   display: block;
-  margin: 10px;
+  margin: 5px;
 
   font-size: 2.441rem;
   height: var(--nav-tube-height);
-  width: calc(100% - 20px - var(--sidebar-width));
+  width: calc(100% - 10px - var(--sidebar-width));
   &__item {
     position: relative;
     display: inline-block;

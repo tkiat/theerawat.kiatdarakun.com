@@ -3,6 +3,34 @@ import * as jsYaml from "js-yaml"
 import {useImmer} from "use-immer"
 import { Chart, registerables } from "chart.js"
 
+import { Bar } from 'react-chartjs-2'
+
+const options = {
+  maintainAspectRatio: false,
+  plugins: {
+    tooltip:{
+      intersect : false,
+      mode:"index",
+    },
+    legend: {
+      display: false,
+    },
+    title: {
+      display: false,
+      text: "",
+    },
+  },
+  responsive: false,
+  scales: {
+    y: {
+      title: {
+        display: true,
+        text: "gram",
+      },
+    }
+  }
+}
+
 Chart.register(...registerables)
 
 const resource = "/character/consumables.yaml"
@@ -32,69 +60,9 @@ const wkSummaryTemplate = {
   nonedibles: sharedFields,
 }
 
-const createSummaryChart = (ctx, summary) => new Chart(ctx, {
-  type: "bar",
-  data: {
-    labels: [
-      "Vegan",
-      "Non-Vegan",
-      "",
-      "Unprocessed",
-      "Processed",
-      "Ultra-Processed",
-      "",
-      "Certified Organic",
-      "Not Certified Organic"
-    ],
-    datasets: [{
-      data: [
-        summary.vegan,
-        summary.non_vegan,
-        0,
-        summary.unprocessed,
-        summary.processed,
-        summary.ultra_processed,
-        0,
-        summary.cert_organic,
-        summary.not_cert_organic,
-      ],
-      borderWidth: 2,
-      borderColor: "black",
-      backgroundColor: "lightgray",
-    }],
-  },
-  options: {
-    plugins: {
-      tooltip:{
-        intersect : false,
-        mode:"index",
-      },
-      legend: {
-        display: false,
-      },
-      title: {
-        display: false,
-        text: "",
-      },
-    },
-    responsive: false,
-    scales: {
-      y: {
-        title: {
-          display: true,
-          text: "gram",
-        },
-      }
-    }
-  }
-})
-
 const createWeeklySummaries = wks => {
   const result = []
-  wks.forEach(wk => {
-    const date = Object.keys(wk)[0]
-    const orders = Object.values(wk)[0]
-
+  wks.forEach(([date, orders]) => {
     const summary = JSON.parse(JSON.stringify(wkSummaryTemplate))
     orders.forEach(order => {
       if (order.mode in summary.km && !isNaN(order.km)) {
@@ -214,10 +182,14 @@ const combineFields = (summary, fields) =>
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState()
 
+  const [avgSummaries, setAvgSummaries] = React.useState()
+
   const [cur, setCur] = useImmer({
     "mode": "avg",
-    "index": 0,
+    "value": 4,
   })
+
+  const [fields, setFields] = React.useState(new Set())
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -239,8 +211,9 @@ export const Consumables = (): React.ReactElement => {
 
   React.useEffect((): (() => void) => {
     if (!weeks) return
+    const weekEntries = Object.entries(weeks)
 
-    const avgOptions = createAvgOptions(weeks.length)
+    const avgOptions = createAvgOptions(weekEntries.length)
     const avgOptgroupElem = document.getElementById("select-avg")
     avgOptions.forEach(x => {
       const el = document.createElement("option")
@@ -249,7 +222,7 @@ export const Consumables = (): React.ReactElement => {
       avgOptgroupElem.appendChild(el)
     })
 
-    const weekOptions = Object.values(weeks).map(x => Object.keys(x)[0])
+    const weekOptions = weekEntries.map(([x,]) => x)
     const weekOptgroupElem = document.getElementById("select-week")
     weekOptions.forEach(x => {
       const el = document.createElement("option")
@@ -258,65 +231,29 @@ export const Consumables = (): React.ReactElement => {
       weekOptgroupElem.appendChild(el)
     })
 
-    const weeklySummaries = createWeeklySummaries(weeks)
-    const avgSummaries = avgOptions.reduce((acc, cur) => {
+    const weeklySummaries = createWeeklySummaries(weekEntries)
+    setAvgSummaries(avgOptions.reduce((acc, cur) => {
       acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
       return acc
-    }, {})
+    }, {}))
 
     const selectElem = document.getElementById("select")
 
     const c = document.getElementById("consumables-type-container")
     const typeCheckboxes = c.querySelectorAll("input[type='checkbox']")
 
-    const fields = new Set()
-
     const onCheckboxElemChange = e => {
-      if(e.target.checked) {
-        fields.add(e.target.value)
-      } else {
-        fields.delete(e.target.value)
-      }
-      selectElem.dispatchEvent(new Event("change"))
+      setFields(prev => e.target.checked ?
+          new Set(prev.add(e.target.value))
+        : new Set([...prev].filter(x => x !== e.target.value))
+      )
     }
-
     typeCheckboxes.forEach(el => {
-      if (el.checked) fields.add(el.value)
+      if (el.checked) setFields(prev => new Set(prev.add(el.value)))
       el.addEventListener("change", onCheckboxElemChange)
     })
 
-    let avgGramChart
-
-    const onSelectElemChange = e => {
-      const ind = e.target.selectedIndex
-      const isOptgroupAvg = ind < avgOptions.length
-
-      const s = document.getElementById("consumables-mode")
-
-      setCur(d => {
-        d.mode = isOptgroupAvg ? "avg" : "specific"
-        d.index = isOptgroupAvg ? ind : ind - avgOptions.length
-      })
-
-      if (isOptgroupAvg) {
-        s.innerText = "Weekly Average"
-
-        const avgSummary = avgSummaries[e.target.value]
-        const avgSummarySelectedFields = combineFields(avgSummary, fields)
-
-        const chartElem = document.getElementById("consumables-chart")
-        if (avgGramChart !== undefined) avgGramChart.destroy()
-
-        avgGramChart = createSummaryChart(chartElem, avgSummarySelectedFields)
-      } else {
-        s.innerText = "Specific Week"
-      }
-    }
-    selectElem.addEventListener("change", onSelectElemChange)
-    selectElem.dispatchEvent(new Event("change", { bubbles: true }))
-
     return () => {
-      selectElem.removeEventListener("change", onSelectElemChange)
       typeCheckboxes.forEach(el =>
         el.removeEventListener("change", onCheckboxElemChange)
       )
@@ -328,11 +265,20 @@ export const Consumables = (): React.ReactElement => {
       <h2>Consumables</h2>
 
       <div id="panel">
-        <label id="consumables-mode" htmlFor="select"></label>
+        <label id="consumables-mode" htmlFor="select">
+          {cur.mode === "avg" ? "Weekly Average" : "Specific Week"}
+        </label>
         <br />
-        <select id="select">
-          <optgroup id="select-avg" label="Weekly Average"></optgroup>
-          <optgroup id="select-week" label="Specific Week"></optgroup>
+        <select
+          id="select"
+          onChange={e => {
+            setCur(d => {
+              d.mode = e.target.options[e.target.selectedIndex].parentNode.dataset.mode
+              d.value = e.target.value
+            })
+          }}>
+          <optgroup data-mode="avg" id="select-avg" label="Weekly Average"></optgroup>
+          <optgroup data-mode="specific" id="select-week" label="Specific Week"></optgroup>
         </select>
 
         <span id="consumables-type-container">
@@ -360,30 +306,66 @@ export const Consumables = (): React.ReactElement => {
 
       {
         cur.mode === "avg" ?
-          <canvas id="consumables-chart" width="400px" height="400px"></canvas>
-        : <WeekTable week={weeks[cur.index]}/>
+          (avgSummaries ? <AvgChart avgSummary={avgSummaries[cur.value]} fields={fields} /> : <p>Loading ...</p>)
+        : <WeekTable orders={weeks[cur.value]} fields={fields} />
       }
     </section>
   )
 }
 
-const WeekTable = ({week}): React.ReactElement => {
-  const orders = Object.values(week)[0]
+const AvgChart = ({avgSummary, fields}): React.ReactElement => {
+//   return <canvas id="consumables-chart" width="400px" height="400px"></canvas>
+  const summary = combineFields(avgSummary, fields)
+  const data = {
+    labels: [
+      "Vegan",
+      "Non-Vegan",
+      "",
+      "Unprocessed",
+      "Processed",
+      "Ultra-Processed",
+      "",
+      "Certified Organic",
+      "Not Certified Organic"
+    ],
+    datasets: [{
+      data: [
+        summary.vegan,
+        summary.non_vegan,
+        0,
+        summary.unprocessed,
+        summary.processed,
+        summary.ultra_processed,
+        0,
+        summary.cert_organic,
+        summary.not_cert_organic,
+      ],
+      borderWidth: 2,
+      borderColor: "black",
+      backgroundColor: "lightgray",
+    }],
+  }
 
+  return <Bar width={400} height={400} data={data} options={options} />
+}
+
+const WeekTable = ({fields, orders}): React.ReactElement => {
+  const total =
+    { thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0 }
 
   return (
     <table className="consumables-table">
-      <colgroup className="consumables-table__colgroup" span="7"></colgroup>
-      <colgroup className="consumables-table__colgroup" span="3"></colgroup>
-      <thead className="table__head">
+      <colgroup span="3"></colgroup>
+      <colgroup span="3"></colgroup>
+      <colgroup span="3"></colgroup>
+      <thead>
         <tr>
           <th rowSpan="2">Order</th>
           <th rowSpan="2">Title</th>
           <th rowSpan="2">THB</th>
-          <th rowSpan="2">Gram</th>
-          <th rowSpan="2">Non-Vegan (g)</th>
-          <th rowSpan="2">Certified<br />Organic</th>
-          <th rowSpan="2">Processed</th>
+          <th rowSpan="2">Total<br />(g)</th>
+          <th rowSpan="2">Non-<br />Vegan (g)</th>
+          <th rowSpan="2">Ultra-<br />Processed (g)</th>
           <th colSpan="3">Packaging (g)</th>
         </tr>
         <tr>
@@ -392,7 +374,7 @@ const WeekTable = ({week}): React.ReactElement => {
           <th>Glass</th>
         </tr>
       </thead>
-      <tbody className="consumables-table__order">
+      <tbody>
       {
         orders.map((order, i) => {
           const modesInOrder = Object.entries(order.items)
@@ -402,6 +384,7 @@ const WeekTable = ({week}): React.ReactElement => {
           <React.Fragment key={i}>
             {
               modesInOrder.map(([type, type_items], j) => {
+//                 return fields.has(type) && (
                 return (
                 <React.Fragment key={j}>
                   {
@@ -409,27 +392,23 @@ const WeekTable = ({week}): React.ReactElement => {
                       const name = Object.keys(item)[0]
                       const dscp = Object.values(item)[0]
 
-                      let firstCol = undefined
-                      if (j === 0 && k === 0) {
-                        firstCol = `
-                          <td rowspan=${numItems + 1}>
-                          ${order.mode}
-                          ${"km" in order ? "<br />(" + order.km + " km)" : ""}
-                          </td>
-                        `
-                      }
+                      total.thb += isNaN(dscp[0]) ? 0 : dscp[0]
+                      total.gram += isNaN(dscp[1]) ? 0 : dscp[1]
+                      total.nonvegan += isNaN(dscp[2]) ? 0 : dscp[2]
+                      total.plastic += isNaN(dscp[5]) ? 0 : dscp[5]
+                      total.paper += isNaN(dscp[6]) ? 0 : dscp[6]
+                      total.glass += isNaN(dscp[7]) ? 0 : dscp[7]
 
                       const lastIteminOrder = j === modesInOrder.length - 1 &&
                         k === type_items.length - 1
-                      const className = lastIteminOrder ?
-                        "consumables-table__order-lastrow" : ""
+                      const className = lastIteminOrder ? "last-tr-order" : ""
                       return (
                         <tr className={className} key={k}>
                           {
                             (j === 0 && k === 0) &&
                             <td rowSpan={numItems}>
                               {order.mode}
-                              {"km" in order && <><br />{order.km} km</>}
+                              {"km" in order && <><br />({order.km} km)</>}
                             </td>
                           }
                           <td>{name}</td>
@@ -437,7 +416,6 @@ const WeekTable = ({week}): React.ReactElement => {
                           <td>{dscp[1]}</td>
                           <td>{dscp[2]}</td>
                           <td>{dscp[3]}</td>
-                          <td>{dscp[4]}</td>
                           <td>{dscp[5]}</td>
                           <td>{dscp[6]}</td>
                           <td>{dscp[7]}</td>
@@ -453,6 +431,16 @@ const WeekTable = ({week}): React.ReactElement => {
           )
         })
       }
+        <tr>
+          <td colSpan="2">Total</td>
+          <td>{total.thb}</td>
+          <td>{total.gram}</td>
+          <td>{total.nonvegan}</td>
+          <td>{total.thb}</td>
+          <td>{total.plastic}</td>
+          <td>{total.paper}</td>
+          <td>{total.glass}</td>
+        </tr>
       </tbody>
     </table>
   )

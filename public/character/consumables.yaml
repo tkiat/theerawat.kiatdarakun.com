@@ -1,4 +1,4 @@
-- "2023-02-11":
+"2023-02-11":
   - mode: online
     km: 96
     items:
@@ -29,7 +29,7 @@
         - radish (daikon): [20,611,0,no,no,0,0,0]
       nonedibles:
         - mouthwash: [49,423-TODO,n/a,n/a,n/a,TODO,0,0]
-- "2023-02-04":
+"2023-02-04":
   - mode: online
     km: 32
     items:
@@ -61,7 +61,7 @@
         - potato (sweet): [20,812,0,no,no,2,0,0]
         - radish (daikon): [22,533,0,no,no,0,0,0]
         - wax gourd: [20,814,0,no,no,0,0,0]
-- "2023-01-28":
+"2023-01-28":
   - mode: online
     km: 87
     items:
@@ -94,7 +94,7 @@
         - sugar (crystalline): [20,440,0,no,processed,4,0,0]
         - tomato: [20,532,0,no,no,0,0,0]
         - wax gourd: [23,1067,0,no,no,0,0,0]
-- "2023-01-21":
+"2023-01-21":
   - mode: no fuel
     items:
       drink:
@@ -120,7 +120,7 @@
       drink:
         - butterfly pea flower (dried): [149,500,0,no,no,5,0,0]
         - sappan woord (dried): [75,100,0,no,no,5,0,0]
-- "2023-01-14":
+"2023-01-14":
   - mode: no fuel
     items:
       drink:
@@ -149,7 +149,7 @@
     items:
       drink:
         - bael fruit (dried): [144,1500,0,no,no,21,0,0]
-- "2023-01-07":
+"2023-01-07":
   - mode: no fuel
     items:
       drink:
@@ -184,7 +184,7 @@
         - bael fruit (dried): [80,500,0,no,no,9,0,0]
         - lemongrass and pandan (dried): [100,500,0,no,no,9,0,0]
         - water: [8,12000,0,n/a,no,0,0,0]
-- "2022-12-31":
+"2022-12-31":
   - mode: no fuel
     items:
       drink:
@@ -209,7 +209,7 @@
         - pumpkin: [20,820,0,no,no,1,0,0]
         - radish (daikon): [40,923,0,no,no,0,0,0]
         - strawberry (frozen): [79,800,0,no,processed,13,0,0]
-- "2022-12-24":
+"2022-12-24":
   - mode: no fuel
     items:
       drink:
@@ -235,7 +235,7 @@
     items:
       nonedibles:
         - bar soap (savon de marseille): [129,300,0,n/a,n/a,6,0,0]
-- "2022-12-17":
+"2022-12-17":
   - mode: no fuel
     items:
       drink:
@@ -260,7 +260,7 @@
         - radish (daikon): [25,513,0,no,no,0,0,0]
         - shave ice: [20,420,0,no,processed,0,0,0]
         - wax gourd: [20,846,0,no,no,0,0,0]
-- "2022-12-10":
+"2022-12-10":
   - mode: no fuel
     items:
       drink:
@@ -284,7 +284,7 @@
     items:
       food:
         - peanut: [143,2000,0,no,no,20,0,0]
-- "2022-12-03":
+"2022-12-03":
   - mode: no fuel
     items:
       drink:
@@ -327,7 +327,7 @@
     items:
       other edibles:
         - pea (protein powder): [249,908,0,no,processed,25,0,0]
-- "2022-11-26":
+"2022-11-26":
   - mode: no fuel
     items:
       drink:
@@ -339,7 +339,7 @@
         - papaya: [90,3600,0,no,no,0,0,0]
         - peanut: [120,1500,0,no,no,15,0,0]
         - potato (sweet): [20,812,0,no,no,3,0,0]
-- "2022-11-19":
+"2022-11-19":
   - mode: no fuel
     items:
       drink:
@@ -367,7 +367,7 @@
         - radish (daikon): [20,489,0,no,no,0,0,0]
         - tomato: [8,164,0,no,no,0,0,0]
         - wax gourd: [15,716,0,no,no,0,0,0]
-- "2022-11-12":
+"2022-11-12":
   - mode: no fuel
     items:
       drink:
@@ -390,7 +390,7 @@
         - potato (sweet): [20,812,0,no,no,2,0,0]
         - radish (daikon): [25,674,0,no,no,0,0,0]
         - tomato: [15,327,0,no,no,0,0,0]
-- "2022-11-05":
+"2022-11-05":
   - mode: no fuel
     items:
       drink:
@@ -433,7 +433,7 @@
     items:
       food:
         - rice (brown): [862,40000,0,no,no,328,0,0]
-- "2022-10-29":
+"2022-10-29":
   - mode: no fuel
     items:
       food:
@@ -467,7 +467,7 @@
     items:
       food:
         - broken rice (riceberry): [168,8000,0,no,no,32,0,0]
-- "2022-10-22":
+"2022-10-22":
   - mode: no fuel
     items:
       food:
@@ -499,7 +499,7 @@
     items:
       food:
         - instant noodle: [49,496,0,no,ultra,11,0,0]
-- "2022-10-15":
+"2022-10-15":
   - mode: no fuel
     items:
       drink:
@@ -525,7 +525,7 @@
     items:
       food:
         - coconut (nata de coco): [27,3000,0,no,ultra,45,0,0]
-- "2022-10-08":
+"2022-10-08":
   - mode: no fuel
     items:
       food:
@@ -554,7 +554,7 @@
     items:
       food:
         - bread: [40,417,0,no,processed,4,0,0]
-- "2022-10-01":
+"2022-10-01":
   - mode: car
     km: 4.2
     items:
@@ -605,7 +605,7 @@
     items:
       nonedibles:
         - razor blade (100): [139,n/a,0,n/a,n/a,1,3,0]
-- "2022-09-24":
+"2022-09-24":
   - mode: no fuel
     items:
       food:
@@ -635,7 +635,7 @@
     items:
       food:
         - coconut (cider): [137,490,0,no,processed,2,0,329]
-- "2022-09-17":
+"2022-09-17":
   - mode: no fuel
     items:
       drink:
@@ -666,7 +666,7 @@
     items:
       food:
         - khanom krayasart: [80,500,0,no,processed,5,0,0]
-- "2022-09-10":
+"2022-09-10":
   - mode: no fuel
     items:
       food:
@@ -712,13 +712,13 @@
         - sesame seed: [140,800,0,no,no,14,0,0]
       drink:
         - tea (chinese black): [120,150,0,no,yes,32,0,0]
-- "2022-09-03":
+"2022-09-03":
   - mode: no fuel
     items:
       food:
         - grava: [60,1178,0,no,no,0,0,0]
         - khanom krok: [25,198,0,no,processed,0,0,0]
-- "2022-08-27":
+"2022-08-27":
   - mode: car
     km: 3
     items:
@@ -754,7 +754,7 @@
     items:
       food:
         - flaxseed (brown): [205,900,0,yes,no,12,0,0]
-- "2022-08-20":
+"2022-08-20":
   - mode: no fuel
     items:
       food:
@@ -776,7 +776,7 @@
         - wax gourd: [20,1030,0,no,no,0,0,0]
       drink:
         - water: [10,12000,0,n/a,no,0,0,0]
-- "2022-08-13":
+"2022-08-13":
   - mode: car
     km: 3
     items:
@@ -809,7 +809,7 @@
     items:
       food:
         - tea (puerh, ball): [69,54,0,no,no,0,10,0]
-- "2022-08-06":
+"2022-08-06":
   - mode: no fuel
     items:
       drink:
@@ -828,7 +828,7 @@
         - potato (chips): [60,158,0,no,ultra,12,0,0]
         - radish (daikon): [10,405,0,no,no,0,0,0]
         - wax gourd: [35,1024,0,no,no,0,0,0]
-- "2022-07-30":
+"2022-07-30":
   - mode: car
     km: 3
     items:
@@ -869,7 +869,7 @@
     items:
       food:
         - peanut (raw, with husk): [144,2000,0,no,no,0,0,0]
-- "2022-07-23":
+"2022-07-23":
   - mode: no fuel
     items:
       food:
@@ -902,7 +902,7 @@
         - morning glory: [30,600,0,yes,no,13,0,0]
         - potato (purple sweet lord): [110,1000,0,yes,no,9,0,0]
         - soybean: [690,16000,0,yes,no,200,560,0]
-- "2022-07-16":
+"2022-07-16":
   - mode: car
     km: 3
     items:
@@ -939,7 +939,7 @@
         - tea (riped pu erh, 357 + 100 x 2): [317,557,0,no,no,10,2,0]
         - tea (fruit): [0,100,0,no,no,2,0,0]
         - tea (jasmine green): [0,10,0,no,no,1,0,0]
-- "2022-07-09":
+"2022-07-09":
   - mode: car
     km: 3
     items:
@@ -975,7 +975,7 @@
     items:
       food:
         - broken rice (mix brown jasmine, red jasmine, hom nil): [486,9000,0,yes,no,0,0,0]
-- "2022-07-02":
+"2022-07-02":
   - mode: no fuel
     items:
       food:
@@ -1006,7 +1006,7 @@
         - alum (potassium aluminum sulfate): [45,68,0,n/a,n/a,0,0,0]
         - dish brush (bamboo, for bottle): [105,n/a,0,n/a,n/a,0,0,0]
         - tape (kraft tape, 2inch x 40yd, x2): [84,n/a,0,n/a,n/a,0,0,0]
-- "2022-06-25":
+"2022-06-25":
   - mode: car
     km: 3
     items:
@@ -1046,7 +1046,7 @@
     items:
       drink:
         - tea (green): [120,150,0,yes,no,7,0,0]
-- "2022-06-18":
+"2022-06-18":
   - mode: car
     km: 5.4
     items:
@@ -1084,7 +1084,7 @@
     items:
       nonedibles:
         - toothpaste (tablets x 30, cheww.co): [160,n/a,0,no,no,0,0,0]
-- "2022-06-11":
+"2022-06-11":
   - mode: car
     km: 5
     items:
@@ -1122,7 +1122,7 @@
     items:
       nonedibles:
         - dish brush (bamboo handle, sisal bristle): [118,n/a,0,n/a,n/a,0,0,0]
-- "2022-06-04":
+"2022-06-04":
   - mode: no fuel
     items:
       food:
@@ -1156,7 +1156,7 @@
       nonedibles:
         - bar soap (savon de provence): [63,100,0,n/a,n/a,2,0,0]
         - bar soap (savon de marseille): [125,300,0,n/a,n/a,3,0,0]
-- "2022-05-28":
+"2022-05-28":
   - mode: car
     km: 17
     items:
@@ -1189,7 +1189,7 @@
     items:
       other edibles:
         - pea (protein powder): [226,907,0,no,processed,20,0,0]
-- "2022-05-21":
+"2022-05-21":
   - mode: car
     km: 17
     items:
@@ -1240,7 +1240,7 @@
     items:
       food:
         - rice (brown): [539,12000,0,yes,no,48,0,0]
-- "2022-05-14":
+"2022-05-14":
   - mode: car
     km: 17
     items:

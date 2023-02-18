@@ -53,7 +53,7 @@ h1, h2, h3, a, button, strong, b {
     --dark: 1;
   }
 
-  @include m.fluid-type(--nav-tube-height, 768px, 1920px, 60px, 150px);
+  @include m.fluid-type(--nav-tube-height, 768px, 1920px, 50px, 120px);
 
   @include m.hsl(--background-color, 0, 0%, f.dayOrDark(97%, 3%));
   @include m.hsl(--duck-beak-color, 270, 0%, f.dayOrDark(50%, 40%));
