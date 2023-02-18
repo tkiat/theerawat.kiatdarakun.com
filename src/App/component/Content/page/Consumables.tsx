@@ -81,7 +81,7 @@ const createSummaryChart = (ctx, summary) => new Chart(ctx, {
       y: {
         title: {
           display: true,
-          text: mode,
+          text: "gram",
         },
       }
     }
@@ -180,16 +180,35 @@ const createAvgOptions = n => {
   else return [4, 12, 52, n]
 }
 
-const createSelectOptions = (elem, values, prefix, suffix) => {
+const createOptionElements = (el, values, prefix, suffix) => {
   values.forEach(x => {
     const optionElem = document.createElement('option')
     optionElem.value = x
     optionElem.innerText = prefix + x + suffix
-    elem.appendChild(optionElem)
+    el.appendChild(optionElem)
   })
 }
 
-let avgGramChart, avgOptions, avgSummaries, mode
+const combineFields = (summary, fields) =>
+  [...fields].reduce((acc, cur) => {
+    acc.total_gram += summary[cur].total_gram
+
+    acc.vegan += summary[cur].vegan
+    acc.non_vegan += summary[cur].non_vegan
+    acc.cert_organic += summary[cur].cert_organic
+    acc.not_cert_organic += summary[cur].not_cert_organic
+    acc.unprocessed += summary[cur].unprocessed
+    acc.processed += summary[cur].processed
+    acc.ultra_processed += summary[cur].ultra_processed
+
+    acc.waste.plastic += summary[cur].waste.plastic
+    acc.waste.paper += summary[cur].waste.paper
+    acc.waste.glass += summary[cur].waste.glass
+    return acc
+  }, {
+    ... JSON.parse(JSON.stringify(sharedFields)),
+    km: { car: summary.km.car, online: summary.km.online, },
+  })
 
 export const Consumables = (): React.ReactElement => {
   const [item, setItem] = React.useState()
@@ -213,22 +232,85 @@ export const Consumables = (): React.ReactElement => {
   }, [])
 
   React.useEffect((): (() => void) => {
-    if (item) {
-      const weeks = jsYaml.load(item)
+    if (!item) return
 
-      avgOptions = createAvgOptions(weeks.length)
-  //     const weekOptions = Object.values(weeks).map(x => Object.keys(x)[0])
+    const weeks = jsYaml.load(item)
 
-      const weeklySummaries = createWeeklySummaries(weeks)
-      avgSummaries = avgOptions.reduce((acc, cur) => {
-        acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
-        return acc
-      }, {})
+    const avgOptions = createAvgOptions(weeks.length)
+    const avgOptgroupElem = document.getElementById("select-avg")
+    avgOptions.forEach(x => {
+      const el = document.createElement('option')
+      el.value = x
+      el.innerText = "Last " + x + " Weeks"
+      avgOptgroupElem.appendChild(el)
+    })
 
-      createSelectOptions(document.getElementById("select-avg"), avgOptions, "Last ", " Weeks")
+    const weekOptions = Object.values(weeks).map(x => Object.keys(x)[0])
+    const weekOptgroupElem = document.getElementById("select-week")
+    weekOptions.forEach(x => {
+      const el = document.createElement('option')
+      el.value = x
+      el.innerText = x
+      weekOptgroupElem.appendChild(el)
+    })
 
-      const sElem = document.getElementById("select")
-      sElem.dispatchEvent(new Event('change', { bubbles: true }))
+    const weeklySummaries = createWeeklySummaries(weeks)
+    const avgSummaries = avgOptions.reduce((acc, cur) => {
+      acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
+      return acc
+    }, {})
+
+    const selectElem = document.getElementById("select")
+
+    const c = document.getElementById("consumables-type-container")
+    const typeCheckboxes = c.querySelectorAll("input[type='checkbox']")
+
+    const fields = new Set()
+
+    const onCheckboxElemChange = e => {
+      if(e.target.checked) {
+        fields.add(e.target.value)
+      } else {
+        fields.delete(e.target.value)
+      }
+      selectElem.dispatchEvent(new Event('change'))
+    }
+
+    typeCheckboxes.forEach(el => {
+      if (el.checked) fields.add(el.value)
+      el.addEventListener("change", onCheckboxElemChange)
+    })
+
+    let avgGramChart
+
+    const onSelectElemChange = e => {
+      const ind = e.target.selectedIndex
+      const isOptgroupAvg = ind < avgOptions.length
+
+      const s = document.getElementById("consumables-mode")
+
+      if (isOptgroupAvg) {
+        s.innerText = 'Weekly Average'
+
+        const avgSummary = avgSummaries[e.target.value]
+        const avgSummarySelectedFields = combineFields(avgSummary, fields)
+
+        const chartElem = document.getElementById("consumables-chart")
+        if (avgGramChart !== undefined) avgGramChart.destroy()
+
+        avgGramChart = createSummaryChart(chartElem, avgSummarySelectedFields)
+      } else {
+        s.innerText = 'Specific Week'
+      }
+    }
+    selectElem.addEventListener("change", onSelectElemChange)
+    selectElem.dispatchEvent(new Event('change', { bubbles: true }))
+
+    return () => {
+      selectElem.removeEventListener("change", onSelectElemChange)
+      typeCheckboxes.forEach(el =>
+        el.removeEventListener("change", onCheckboxElemChange)
+      )
     }
   }, [item])
 
@@ -239,40 +321,19 @@ export const Consumables = (): React.ReactElement => {
       <div id="panel">
         <label id="consumables-mode" htmlFor="select"></label>
         <br />
-        <select
-          id="select"
-          onChange={e => {
-            const ind = e.target.selectedIndex
-            const isOptgroupAvg = ind < avgOptions.length
-
-            const s = document.getElementById("consumables-mode")
-
-            if (isOptgroupAvg) {
-              s.innerText = 'Weekly Average'
-
-              const numWeeks = avgOptions[ind]
-              const avgSummary = avgSummaries[numWeeks]?.food
-
-              const chartElem = document.getElementById("consumables-chart")
-              if (avgGramChart !== undefined) avgGramChart.destroy()
-              avgGramChart = createSummaryChart(chartElem, avgSummary)
-            } else {
-              s.innerText = 'Specific Week'
-            }
-          }}
-        >
+        <select id="select">
           <optgroup id="select-avg" label="Weekly Average"></optgroup>
           <optgroup id="select-week" label="Specific Week"></optgroup>
         </select>
 
-        <span id="field-selector">
+        <span id="consumables-type-container">
           <label>
             <input type="checkbox" value="food" defaultChecked />
             Food
           </label>
 
           <label>
-            <input type="checkbox" value="drink" defaultChecked />
+            <input type="checkbox" value="drink" />
             Drink
           </label>
 
