@@ -33,7 +33,7 @@ const options = {
 
 Chart.register(...registerables)
 
-const resource = "/character/consumables.yaml"
+const resource = "/character/consumables/record.yaml"
 
 const sharedFields = {
   thb: 0,
@@ -184,10 +184,7 @@ export const Consumables = (): React.ReactElement => {
 
   const [avgSummaries, setAvgSummaries] = React.useState()
 
-  const [cur, setCur] = useImmer({
-    "mode": "avg",
-    "value": 4,
-  })
+  const [cur, setCur] = useImmer("4")
 
   const [fields, setFields] = React.useState(new Set())
 
@@ -214,22 +211,6 @@ export const Consumables = (): React.ReactElement => {
     const weekEntries = Object.entries(weeks)
 
     const avgOptions = createAvgOptions(weekEntries.length)
-    const avgOptgroupElem = document.getElementById("select-avg")
-    avgOptions.forEach(x => {
-      const el = document.createElement("option")
-      el.value = x
-      el.innerText = "Last " + x + " Weeks"
-      avgOptgroupElem.appendChild(el)
-    })
-
-    const weekOptions = weekEntries.map(([x,]) => x)
-    const weekOptgroupElem = document.getElementById("select-week")
-    weekOptions.forEach(x => {
-      const el = document.createElement("option")
-      el.value = x
-      el.innerText = x
-      weekOptgroupElem.appendChild(el)
-    })
 
     const weeklySummaries = createWeeklySummaries(weekEntries)
     setAvgSummaries(avgOptions.reduce((acc, cur) => {
@@ -237,7 +218,7 @@ export const Consumables = (): React.ReactElement => {
       return acc
     }, {}))
 
-    const selectElem = document.getElementById("select")
+//     const selectElem = document.getElementById("consumables-select")
 
     const c = document.getElementById("consumables-type-container")
     const typeCheckboxes = c.querySelectorAll("input[type='checkbox']")
@@ -264,21 +245,30 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
-      <div id="panel">
-        <label id="consumables-mode" htmlFor="select">
-          {cur.mode === "avg" ? "Weekly Average" : "Specific Week"}
+      <div id="consumables-panel">
+        <label htmlFor="consumables-select">
+          {isNaN(cur) ? "Weekly Average" : "Week"}
         </label>
         <br />
         <select
-          id="select"
-          onChange={e => {
-            setCur(d => {
-              d.mode = e.target.options[e.target.selectedIndex].parentNode.dataset.mode
-              d.value = e.target.value
-            })
-          }}>
-          <optgroup data-mode="avg" id="select-avg" label="Weekly Average"></optgroup>
-          <optgroup data-mode="specific" id="select-week" label="Specific Week"></optgroup>
+          id="consumables-select"
+          key={avgSummaries && weeks ? "not loaded" : "loaded"}
+          onChange={e => setCur(e.target.value)}
+          defaultValue={cur}>
+          <optgroup label="Weekly Average">
+            {
+              avgSummaries && Object.keys(avgSummaries).map((x, i) =>
+                <option key={i} value={x}>Last {x} Weeks</option>
+              )
+            }
+          </optgroup>
+          <optgroup label="Week">
+            {
+              weeks && Object.keys(weeks).map((x, i) =>
+                <option key={i} value={x}>{x}</option>
+              )
+            }
+          </optgroup>
         </select>
 
         <span id="consumables-type-container">
@@ -305,9 +295,17 @@ export const Consumables = (): React.ReactElement => {
       </div>
 
       {
-        cur.mode === "avg" ?
-          (avgSummaries ? <AvgChart avgSummary={avgSummaries[cur.value]} fields={fields} /> : <p>Loading ...</p>)
-        : <WeekTable orders={weeks[cur.value]} fields={fields} />
+        isNaN(cur) ?
+          (
+            weeks ?
+              <WeekTable orders={weeks[cur]} fields={fields} />
+            : <p>Loading ...</p>
+          )
+        : (
+            avgSummaries ?
+              <AvgChart avgSummary={avgSummaries[cur]} fields={fields} />
+            : <p>Loading ...</p>
+          )
       }
     </section>
   )

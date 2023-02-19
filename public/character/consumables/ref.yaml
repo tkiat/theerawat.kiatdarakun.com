@@ -1,0 +1,39 @@
+# format
+- "YYYY-MM-DD":
+  - mode: ["car","online","no fuel"]
+    km: 5 (omit this for 'no fuel' mode) # TODO make no fuel 0 km
+    items:
+      - food/drink/other edibles/nonedibles: ["thb","gram","non_vegan_gram","cert_organic","processed","packaging_plastic","packaging_paper","packaging_glass"]
+
+# possible values
+- thb: [number,n/a]
+- gram: [number,n/a] # e.g. use n/a for razor blade not soap
+- non_vegan_gram: [number]
+- cert-organic: [yes,no,n/a]
+- processed: [no,processed,ultra,n/a]
+- packaging_xxx: [number, n/a]
+
+# note
+- gram:
+  - bag: jute small (70)
+  - double lock (with lid): S (366), M (483), L (690)
+  - plastic: 2.8L (297)
+  - plate (sirarom, flat): 452
+- total gram, sample:
+- gram,container type(p (default),pa,g)-container gram:
+  - snack: lays (15g,2), (158g,12)
+  - coconut (nata de coco): king island (1kg,15)
+  - drink:
+    - soda: coke 375ml g (384), pepsi 1.49L p (1492,44), fanta 1.25L p (1295,37), royal crown 227ml g (232)
+    - syrup: hale's blue boy 710ml (1350,419)
+    - beer (glass): singha 0.6L (622,417), chang 0.62L (624,464), leo 0.62L (625,392)
+  - oil: roi thai 1L coconut (,47), chim rice bran (,51), morakot (,33), yok (937,)
+  - frozen: strawberry (tesco, 13)
+- places (THB, g):
+  - sirarom:
+    - corner shop: rice crispy (5, 36, plastic 2)
+    - mobile grocery (car, at home): corn (20,667,plastic 5), potato sweet (10,406,plastic 1)
+    - mobile grocery (scooter): corn boiled (10,449), potato boiled (10,226)
+    - pruksa banana: banana fried (10,103), khanom khao tom mud (10,134), banana (syrup, coconut milk) (10,189,plastic 6), potato fried (10,167)
+    - before buothong 4: khanom kai nok khata (121)
+    - pruksa before: banana fried (10,157)

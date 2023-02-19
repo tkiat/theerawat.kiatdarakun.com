@@ -1,3 +1,11 @@
+"2023-02-19":
+  - mode: no fuel
+    items:
+      drink:
+        - water: [9,12000,0,n/a,no,0,0,0]
+      food:
+        - banana (fried): [20,210,0,no,processed,0,0,0]
+        - peanut: [88,1000,0,no,no,10,0,0]
 "2023-02-11":
   - mode: online
     km: 96
