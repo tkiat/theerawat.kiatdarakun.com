@@ -2,7 +2,7 @@ import React from "react"
 import * as jsYaml from 'js-yaml'
 
 import {FigureOptionalTooltip, PageWithIconsScrollbar, TooltipText, TooltipTextWithDelay} from "../share"
-import {Consumables} from "./Consumables"
+import {Consumables} from "./Character/Consumables"
 
 export const Character = (): React.ReactElement => {
   const data = {
