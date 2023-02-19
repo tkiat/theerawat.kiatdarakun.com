@@ -1,6 +1,27 @@
 @use "@app/share/style/functions" as f;
 @use "@app/share/style/mixins" as m;
 
+.consumables-panel {
+  font-size: 0.8em;
+}
+
+.consumables-avg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  font-size: 0.8em;
+  & > ul {
+    list-style-position: inside;
+    list-style: none;
+    padding-left: 0;
+    ul {
+      list-style-position: inside;
+      padding-left: 2em;
+    }
+  }
+}
+
 .consumables-table {
   border-collapse: collapse;
   text-align: center;
@@ -35,3 +56,16 @@
     }
   }
 }
+
+/* .consumables-bar { */
+/*   display: inline-block !important; */
+/* } */
+/*  */
+/* .consumables-info { */
+/*   padding: 0; */
+/*   & li { */
+/*   } */
+/* } */
+/* .consumables-info > li { */
+/*     color:red; */
+/* } */

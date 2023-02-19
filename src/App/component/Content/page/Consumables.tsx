@@ -1,9 +1,12 @@
 import React from "react"
 import * as jsYaml from "js-yaml"
 import {useImmer} from "use-immer"
-import { Chart, registerables } from "chart.js"
+import {Chart, registerables} from "chart.js"
+import {Bar} from "react-chartjs-2"
 
-import { Bar } from 'react-chartjs-2'
+import {capitalize} from "@app/share"
+
+Chart.register(...registerables)
 
 const options = {
   maintainAspectRatio: false,
@@ -30,10 +33,6 @@ const options = {
     }
   }
 }
-
-Chart.register(...registerables)
-
-const resource = "/character/consumables/record.yaml"
 
 const sharedFields = {
   thb: 0,
@@ -161,6 +160,7 @@ const createOptionElements = (el, values, prefix, suffix) => {
 const combineFields = (summary, fields) =>
   [...fields].reduce((acc, cur) => {
     acc.total_gram += summary[cur].total_gram
+    acc.thb += summary[cur].thb
 
     acc.vegan += summary[cur].vegan
     acc.non_vegan += summary[cur].non_vegan
@@ -178,6 +178,9 @@ const combineFields = (summary, fields) =>
     ... JSON.parse(JSON.stringify(sharedFields)),
     km: { car: summary.km.car, online: summary.km.online, },
   })
+
+const resource = "/character/consumables/record.yaml"
+const consumableTypes = ["food", "drink", "other edibles", "nonedibles"]
 
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState()
@@ -218,8 +221,6 @@ export const Consumables = (): React.ReactElement => {
       return acc
     }, {}))
 
-//     const selectElem = document.getElementById("consumables-select")
-
     const c = document.getElementById("consumables-type-container")
     const typeCheckboxes = c.querySelectorAll("input[type='checkbox']")
 
@@ -245,13 +246,13 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
-      <div id="consumables-panel">
-        <label htmlFor="consumables-select">
+      <div className="consumables-panel">
+        <label htmlFor="consumables-panel-select">
           {isNaN(cur) ? "Weekly Average" : "Week"}
         </label>
         <br />
         <select
-          id="consumables-select"
+          id="consumables-panel-select"
           key={avgSummaries && weeks ? "not loaded" : "loaded"}
           onChange={e => setCur(e.target.value)}
           defaultValue={cur}>
@@ -272,25 +273,14 @@ export const Consumables = (): React.ReactElement => {
         </select>
 
         <span id="consumables-type-container">
-          <label>
-            <input type="checkbox" value="food" defaultChecked />
-            Food
-          </label>
-
-          <label>
-            <input type="checkbox" value="drink" />
-            Drink
-          </label>
-
-          <label>
-            <input type="checkbox" value="other edibles" defaultChecked />
-            Other Edibles
-          </label>
-
-          <label>
-            <input type="checkbox" value="nonedibles" />
-            Nonedibles
-          </label>
+          {
+           consumableTypes.map((x, i) =>
+             <label key={i}>
+               <input type="checkbox" value={x} defaultChecked />
+               {capitalize(x)}
+             </label>
+           )
+          }
         </span>
       </div>
 
@@ -312,7 +302,6 @@ export const Consumables = (): React.ReactElement => {
 }
 
 const AvgChart = ({avgSummary, fields}): React.ReactElement => {
-//   return <canvas id="consumables-chart" width="400px" height="400px"></canvas>
   const summary = combineFields(avgSummary, fields)
   const data = {
     labels: [
@@ -344,7 +333,29 @@ const AvgChart = ({avgSummary, fields}): React.ReactElement => {
     }],
   }
 
-  return <Bar width={400} height={400} data={data} options={options} />
+  return (
+    <div className="consumables-avg">
+      <ul className="consumables-info">
+        <li>Total Spent: {summary.thb} THB</li>
+        <li>Transportation (km)
+          <ul>
+            <li>My Own Car ({summary.km.car})</li>
+            <li>Online Delivery ({summary.km.online})</li>
+          </ul>
+        </li>
+        <li>Packaging (g)
+          <ul>
+            <li>Plastic ({summary.waste.plastic})</li>
+            <li>Paper ({summary.waste.paper})</li>
+            <li>Glass ({summary.waste.glass})</li>
+          </ul>
+        </li>
+      </ul>
+      <Bar
+        className="consumables-bar"
+        width={400} height={400} data={data} options={options} />
+    </div>
+  )
 }
 
 const WeekTable = ({fields, orders}): React.ReactElement => {
