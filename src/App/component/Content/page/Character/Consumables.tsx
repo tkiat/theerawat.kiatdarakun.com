@@ -10,6 +10,17 @@ import {sharedFields} from "./Consumables/share"
 const resource = "/character/consumables/record.yaml"
 const consumableTypes = ["food", "drink", "other edibles", "nonedibles"]
 
+// type Mode = "car" | "online" | "no fuel"
+// 
+// type Weeks = {
+//   [key: string]: [
+//     {
+//       mode: Mode,
+// 
+//     }
+//   ]
+// }
+
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState()
 
