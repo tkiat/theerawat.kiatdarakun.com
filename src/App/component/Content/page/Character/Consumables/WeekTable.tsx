@@ -5,18 +5,18 @@ export const WeekTable = ({fields, orders}): React.ReactElement => {
 
   return (
     <table className="consumables-table">
-      <colgroup span="3"></colgroup>
-      <colgroup span="3"></colgroup>
-      <colgroup span="3"></colgroup>
+      <colgroup span={3}></colgroup>
+      <colgroup span={3}></colgroup>
+      <colgroup span={3}></colgroup>
       <thead>
         <tr>
-          <th rowSpan="2">Delivery</th>
-          <th rowSpan="2">Title</th>
-          <th rowSpan="2">THB</th>
-          <th rowSpan="2">Total<br />(g)</th>
-          <th rowSpan="2">Non-<br />Vegan (g)</th>
-          <th rowSpan="2">Ultra-<br />Processed (g)</th>
-          <th colSpan="3">Packaging (g)</th>
+          <th rowSpan={2}>Delivery</th>
+          <th rowSpan={2}>Title</th>
+          <th rowSpan={2}>THB</th>
+          <th rowSpan={2}>Total<br />(g)</th>
+          <th rowSpan={2}>Non-<br />Vegan (g)</th>
+          <th rowSpan={2}>Ultra-<br />Processed (g)</th>
+          <th colSpan={3}>Packaging (g)</th>
         </tr>
         <tr>
           <th>Plastic</th>
@@ -86,7 +86,7 @@ export const WeekTable = ({fields, orders}): React.ReactElement => {
         })
       }
         <tr>
-          <td colSpan="2">Total</td>
+          <td colSpan={2}>Total</td>
           <td>{total.thb}</td>
           <td>{total.gram}</td>
           <td>{total.nonvegan}</td>

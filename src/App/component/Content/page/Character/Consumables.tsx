@@ -8,28 +8,46 @@ import {AvgChart} from "./Consumables/AvgChart"
 import {sharedFields} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
-const consumableTypes = ["food", "drink-liquid", "drink-solid", "other-edibles", "nonedibles"]
+const consumableTypes = ["food", "drink-liquid", "drink-solid", "other-edibles", "nonedibles"] as const
 
-// type Mode = "car" | "online" | "no fuel"
-// 
-// type Weeks = {
-//   [key: string]: [
-//     {
-//       mode: Mode,
-// 
-//     }
-//   ]
-// }
+export type ConsumableType = (typeof consumableTypes)[number]
+
+type Delivery = {
+  type: "no fuel"
+} | {
+  type: "public" | "private",
+  km: number
+}
+
+type Weeks = {
+  [key: string]: [
+    {
+      delivery: Delivery,
+      items: {
+        [key in ConsumableType]: [
+          {[key: string]: [any]}
+        ]
+      }
+    }
+  ]
+}
+
+type AvgSummaries = {
+  [key: string]: {
+    [key in ConsumableType | "km"]: any
+  }
+}
 
 export const Consumables = (): React.ReactElement => {
-  const [weeks, setWeeks] = React.useState()
+  const [weeks, setWeeks] = React.useState<Weeks | undefined>(undefined)
 
-  const [avgSummaries, setAvgSummaries] = React.useState()
+  const [avgSummaries, setAvgSummaries] =
+    React.useState<AvgSummaries | undefined>(undefined)
 
-  const [cur, setCur] = useImmer("4")
+  const [cur, setCur] = useImmer<string>("4")
 //   const [cur, setCur] = useImmer("2023-02-11")
 
-  const [fields, setFields] = React.useState(new Set(
+  const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
     [0, 2].map(x => consumableTypes[x])
   ))
 
@@ -43,7 +61,7 @@ export const Consumables = (): React.ReactElement => {
         const type = res.headers.get("content-type")
         if (type && type.indexOf("text/yaml") !== -1) {
           const yaml = jsYaml.load(await res.text())
-          setWeeks(yaml)
+          setWeeks(yaml as Weeks)
         }
       }
     })()
@@ -51,8 +69,9 @@ export const Consumables = (): React.ReactElement => {
     return () => { mounted = false }
   }, [])
 
-  React.useEffect((): (() => void) => {
-    if (!weeks) return
+  React.useEffect((): (() => void) | undefined => {
+    if (weeks === undefined) return
+//     if (Object.keys(weeks).length === 0) return
 
     const weekEntries = Object.entries(weeks)
     const weeklySummaries = createWeeklySummaries(weekEntries)
@@ -68,7 +87,7 @@ export const Consumables = (): React.ReactElement => {
     setAvgSummaries(avgSummaryOptions.reduce((acc, cur) => {
       acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
       return acc
-    }, {}))
+    }, {} as AvgSummaries))
   }, [weeks])
 
   return (
@@ -88,7 +107,7 @@ export const Consumables = (): React.ReactElement => {
         />
       </div>
       {
-        isNaN(cur) ?
+        isNaN(parseInt(cur, 10)) ?
           (
             weeks ?
               <WeekTable orders={weeks[cur]} fields={fields} />
