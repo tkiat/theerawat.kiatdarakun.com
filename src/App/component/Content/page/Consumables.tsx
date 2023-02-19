@@ -187,9 +187,11 @@ export const Consumables = (): React.ReactElement => {
 
   const [avgSummaries, setAvgSummaries] = React.useState()
 
-  const [cur, setCur] = useImmer("4")
+  const [cur, setCur] = useImmer("2023-02-11")
 
-  const [fields, setFields] = React.useState(new Set())
+  const [fields, setFields] = React.useState(new Set(
+    [0, 2].map(x => consumableTypes[x])
+  ))
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -211,35 +213,15 @@ export const Consumables = (): React.ReactElement => {
 
   React.useEffect((): (() => void) => {
     if (!weeks) return
+
     const weekEntries = Object.entries(weeks)
-
-    const avgOptions = createAvgOptions(weekEntries.length)
-
     const weeklySummaries = createWeeklySummaries(weekEntries)
-    setAvgSummaries(avgOptions.reduce((acc, cur) => {
+
+    const avgSummaryOptions = createAvgOptions(weekEntries.length)
+    setAvgSummaries(avgSummaryOptions.reduce((acc, cur) => {
       acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
       return acc
     }, {}))
-
-    const c = document.getElementById("consumables-type-container")
-    const typeCheckboxes = c.querySelectorAll("input[type='checkbox']")
-
-    const onCheckboxElemChange = e => {
-      setFields(prev => e.target.checked ?
-          new Set(prev.add(e.target.value))
-        : new Set([...prev].filter(x => x !== e.target.value))
-      )
-    }
-    typeCheckboxes.forEach(el => {
-      if (el.checked) setFields(prev => new Set(prev.add(el.value)))
-      el.addEventListener("change", onCheckboxElemChange)
-    })
-
-    return () => {
-      typeCheckboxes.forEach(el =>
-        el.removeEventListener("change", onCheckboxElemChange)
-      )
-    }
   }, [weeks])
 
   return (
@@ -248,14 +230,15 @@ export const Consumables = (): React.ReactElement => {
 
       <div className="consumables-panel">
         <label htmlFor="consumables-panel-select">
-          {isNaN(cur) ? "Weekly Average" : "Week"}
+          {isNaN(cur) ? "Week" : "Weekly Average" }
         </label>
         <br />
         <select
           id="consumables-panel-select"
           key={avgSummaries && weeks ? "not loaded" : "loaded"}
           onChange={e => setCur(e.target.value)}
-          defaultValue={cur}>
+          defaultValue={cur}
+        >
           <optgroup label="Weekly Average">
             {
               avgSummaries && Object.keys(avgSummaries).map((x, i) =>
@@ -271,17 +254,24 @@ export const Consumables = (): React.ReactElement => {
             }
           </optgroup>
         </select>
-
-        <span id="consumables-type-container">
-          {
-           consumableTypes.map((x, i) =>
-             <label key={i}>
-               <input type="checkbox" value={x} defaultChecked />
-               {capitalize(x)}
-             </label>
-           )
-          }
-        </span>
+        {
+          consumableTypes.map((x, i) =>
+            <label key={i}>
+              <input
+                type="checkbox"
+                value={x}
+                checked={fields.has(x)}
+                onChange={e => {
+                  setFields(prev => e.target.checked ?
+                      new Set(prev.add(e.target.value))
+                    : new Set([...prev].filter(x => x !== e.target.value))
+                  )
+                }}
+              />
+              {capitalize(x)}
+            </label>
+          )
+        }
       </div>
 
       {
@@ -335,11 +325,11 @@ const AvgChart = ({avgSummary, fields}): React.ReactElement => {
 
   return (
     <div className="consumables-avg">
-      <ul className="consumables-info">
+      <ul>
         <li>Total Spent: {summary.thb} THB</li>
         <li>Transportation (km)
           <ul>
-            <li>My Own Car ({summary.km.car})</li>
+            <li>By Car ({summary.km.car})</li>
             <li>Online Delivery ({summary.km.online})</li>
           </ul>
         </li>
@@ -351,9 +341,7 @@ const AvgChart = ({avgSummary, fields}): React.ReactElement => {
           </ul>
         </li>
       </ul>
-      <Bar
-        className="consumables-bar"
-        width={400} height={400} data={data} options={options} />
+      <Bar width={400} height={400} data={data} options={options} />
     </div>
   )
 }
