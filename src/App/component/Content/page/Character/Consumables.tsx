@@ -8,7 +8,7 @@ import {AvgChart} from "./Consumables/AvgChart"
 import {sharedFields} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
-const consumableTypes = ["food", "drink", "other edibles", "nonedibles"]
+const consumableTypes = ["food", "drink-liquid", "drink-solid", "other-edibles", "nonedibles"]
 
 // type Mode = "car" | "online" | "no fuel"
 // 
@@ -155,14 +155,10 @@ const Checkboxes = ({consumableTypes, fields, setFields}): React.ReactElement =>
     }
   </>
 
-const weeklySummaryTemplate = {
-//   km: { car: 0, online: 0, },
-  km: { public: 0, private: 0, },
-  food: sharedFields,
-  drink: sharedFields,
-  "other edibles": sharedFields,
-  nonedibles: sharedFields,
-}
+const weeklySummaryTemplate = consumableTypes.reduce((acc, cur) => {
+  acc[cur] = sharedFields
+  return acc
+}, {km: { public: 0, private: 0, }})
 
 const createWeeklySummaries = weeks => {
   const summaryAllWeeks = []

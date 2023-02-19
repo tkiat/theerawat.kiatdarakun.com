@@ -9,7 +9,7 @@
   mode: ["car","online","no fuel"]
     km: 5 (omit this for 'no fuel' mode) # TODO make no fuel 0 km
     items:
-      - food/drink/other edibles/nonedibles: ["thb","gram","non_vegan_gram","cert_organic","processed","packaging_plastic","packaging_paper","packaging_glass"]
+      - food/drink-solid/drink-liquid/other-edibles/nonedibles: ["thb","gram","non_vegan_gram","cert_organic","processed","packaging_plastic","packaging_paper","packaging_glass"]
 
 # possible values
 - thb: [number,n/a]

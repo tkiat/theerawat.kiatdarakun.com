@@ -2,7 +2,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [9,12000,0,n/a,no,0,0,0]
       food:
         - banana (fried): [20,210,0,no,processed,0,0,0]
@@ -24,7 +24,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [25,36000,0,n/a,no,0,0,0]
       food:
         - banana: [20,1312,0,no,no,0,0,0]
@@ -48,11 +48,12 @@
     items:
       food:
         - flaxseed: [176,1000,0,no,no,12,0,0]
+      drink-solid:
         - pandan (dried): [35,100,0,no,no,11,0,0]
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [24,36000,0,n/a,no,0,0,0]
       food:
         - bamboo shoots (boiled): [25,459,0,no,processed,4,0,0]
@@ -80,7 +81,7 @@
       type: public
       km: 87
     items:
-      drink:
+      drink-liquid:
         - water: [9,12000,0,n/a,no,0,0,0]
       food:
         - corn: [20,716,0,no,no,4,0,0]
@@ -91,7 +92,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [16,24000,0,n/a,no,0,0,0]
       food:
         - cabbage (chinese): [15,327,0,no,no,0,0,0]
@@ -114,7 +115,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [27,36000,0,n/a,no,0,0,0]
       food:
         - corn: [40,1432,0,no,no,8,0,0]
@@ -130,20 +131,20 @@
       type: public
       km: 820
     items:
-      drink:
+      drink-solid:
         - tea (green): [300,900,0,no,processed,90,0,0]
   - delivery:
       type: public
       km: 460
     items:
-      drink:
+      drink-solid:
         - butterfly pea flower (dried): [149,500,0,no,no,5,0,0]
         - sappan woord (dried): [75,100,0,no,no,5,0,0]
 "2023-01-14":
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [17,24000,0,n/a,no,0,0,0]
       food:
         - bamboo shoots (pickled): [20,411,0,no,processed,5,0,0]
@@ -168,21 +169,21 @@
       type: public
       km: 94
     items:
-      drink:
+      drink-solid:
         - bael fruit (dried): [144,1500,0,no,no,21,0,0]
 "2023-01-07":
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
+        - soda: [8,232,0,no,ultra,0,0,0]
         - water: [16,24000,0,n/a,no,0,0,0]
+      drink-solid:
         - bael fruit (dried): [40,129,0,no,no,4,0,0]
         - lime: [20,1736,0,no,no,0,0,0]
-        - "coriander & scallion": [10,73,0,no,no,0,0,0]
-        - soda: [8,232,0,no,ultra,0,0,0]
       food:
         - agasta: [15,221,0,no,no,8,0,0]
-        - star gooseberry (in syrup): [20,229,0,no,no,2,0,0]
+        - coriander and scallion: [10,73,0,no,no,0,0,0]
         - banana: [40,2683,0,no,no,0,0,0]
         - beer: [65,622,0,no,processed,0,0,417]
         - bitter gourd: [30,559,0,no,no,0,0,0]
@@ -197,24 +198,27 @@
         - radish (daikon): [40,895,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [10,72,0,no,processed,4,0,0]
         - kiwi (frozen): [79,1000,0,no,processed,12,0,0]
+        - star gooseberry (in syrup): [20,229,0,no,no,2,0,0]
         - tofu and beansprout: [30,733,0,no,no,0,0,0]
         - wax gourd: [20,812,0,no,no,0,0,0]
   - delivery:
       type: public
       km: 49
     items:
-      drink:
+      drink-liquid:
+        - water: [8,12000,0,n/a,no,0,0,0]
+      drink-solid:
         - bael fruit (dried): [80,500,0,no,no,9,0,0]
         - lemongrass and pandan (dried): [100,500,0,no,no,9,0,0]
-        - water: [8,12000,0,n/a,no,0,0,0]
 "2022-12-31":
   - delivery:
       type: no fuel
     items:
-      drink:
-        - water: [8,12000,0,n/a,no,0,0,0]
-        - hibiscus leaves (dried): [25,49,0,no,no,5,0,0]
+      drink-liquid:
         - soda: [0,2787,0,no,ultra,81,0,0]
+        - water: [8,12000,0,n/a,no,0,0,0]
+      drink-solid:
+        - hibiscus leaves (dried): [25,49,0,no,no,5,0,0]
       food:
         - banana: [30,1154,0,no,no,0,0,0]
         - banana (fried): [20,234,0,no,processed,0,0,0]
@@ -237,9 +241,9 @@
   - delivery:
       type: no fuel
     items:
-      drink:
-        - water: [11,18000,0,n/a,no,0,0,0]
+      drink-liquid:
         - soda: [12,384,0,no,ultra,0,0,0]
+        - water: [11,18000,0,n/a,no,0,0,0]
       food:
         - banana: [25,1275,0,no,no,0,0,0]
         - beer: [185,1871,0,no,processed,0,0,1273]
@@ -265,9 +269,9 @@
   - delivery:
       type: no fuel
     items:
-      drink:
-        - water: [44,60000,0,n/a,no,0,0,0]
+      drink-liquid:
         - soda: [12,384,0,no,ultra,0,0,0]
+        - water: [44,60000,0,n/a,no,0,0,0]
       food:
         - banana: [75,3303,0,no,no,0,0,0]
         - banana (fried): [20,242,0,no,processed,0,0,0]
@@ -291,7 +295,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [16,24000,0,n/a,no,0,0,0]
       food:
         - banana: [60,2954,0,no,no,0,0,0]
@@ -317,7 +321,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - beer: [65,622,0,no,processed,0,0,417]
         - water: [8,12000,0,n/a,no,0,0,0]
       food:
@@ -341,7 +345,7 @@
       type: public
       km: 820
     items:
-      drink:
+      drink-solid:
         - tea (green): [150,450,0,no,processed,45,0,0]
   - delivery:
       type: public
@@ -359,16 +363,17 @@
       type: public
       km: 424
     items:
-      other edibles:
+      other-edibles:
         - pea (protein powder): [249,908,0,no,processed,25,0,0]
 "2022-11-26":
   - delivery:
       type: no fuel
     items:
-      drink:
-        - water: [16,24000,0,n/a,no,0,0,0]
-        - lime: [30,1353,0,no,no,0,0,0]
+      drink-liquid:
         - soda: [12,384,0,no,ultra,0,0,0]
+        - water: [16,24000,0,n/a,no,0,0,0]
+      drink-solid:
+        - lime: [30,1353,0,no,no,0,0,0]
       food:
         - oil (palm): [50,905,0,no,no,33,0,0]
         - papaya: [90,3600,0,no,no,0,0,0]
@@ -378,10 +383,11 @@
   - delivery:
       type: no fuel
     items:
-      drink:
-        - water: [19,24000,0,n/a,no,0,0,0]
-        - lime: [40,515,0,no,no,0,0,0]
+      drink-liquid:
         - soda: [12,384,0,no,ultra,0,0,0]
+        - water: [19,24000,0,n/a,no,0,0,0]
+      drink-solid:
+        - lime: [40,515,0,no,no,0,0,0]
       food:
         - bamboo shoots (boiled): [20,311,0,no,processed,4,0,0]
         - banana: [25,1234,0,no,no,0,0,0]
@@ -407,8 +413,9 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [23,30000,0,n/a,no,0,0,0]
+      drink-solid:
         - lime: [10,197,0,no,no,0,0,0]
       food:
         - banana: [85,3712,0,no,no,0,0,0]
@@ -431,7 +438,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [16,24000,0,n/a,no,0,0,0]
         - soda: [12,384,0,no,ultra,0,0,0]
       food:
@@ -459,7 +466,7 @@
         - radish (daikon): [10,341,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [5,36,0,no,processed,2,0,0]
         - wax gourd: [20,1037,0,no,no,0,0,0]
-      other edibles:
+      other-edibles:
         - baking soda: [32,1000,0,no,n/a,10,0,0]
   - delivery:
       type: public
@@ -496,7 +503,7 @@
         - rice (jasmine): [158,4000,0,no,no,44,0,0]
         - rice (sweet crispy cracker): [35,243,0,no,processed,14,0,0]
         - water convolvulus: [10,200,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [16,22000,0,n/a,no,0,0,0]
   - delivery:
       type: public
@@ -531,13 +538,13 @@
         - syrup (hale's blue boy): [63,931,0,no,ultra,0,0,419]
         - tomato: [10,269,0,no,no,0,0,0]
         - vegetables mixed: [50,1035,0,no,no,1,0,0]
-      drink:
+      drink-liquid:
         - water: [62,76000,0,n/a,no,0,0,0]
   - delivery:
       type: public
       km: 61
     items:
-      other edibles:
+      other-edibles:
         - baking soda: [39,1000,0,no,n/a,16,0,0]
   - delivery:
       type: public
@@ -549,7 +556,7 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-solid:
         - lime: [40,942,0,no,no,0,0,0]
       food:
         - bamboo shoots (boiled): [20,356,0,no,processed,0,0,0]
@@ -629,7 +636,7 @@
         - radish (daikon): [20,392,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [10,74,0,no,processed,4,0,0]
         - tofu (fried): [20,145,0,no,processed,0,0,0]
-      drink:
+      drink-liquid:
         - water: [24,30000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
@@ -640,7 +647,7 @@
         - peanut (boiled): [20,135,0,no,processed,0,0,0]
         - shave ice: [20,407,0,no,ultra,0,0,0]
         - shave ice: [20,420,0,no,processed,0,0,0]
-      drink:
+      drink-liquid:
         - water: [18,24000,0,n/a,no,0,0,0]
   - delivery:
       type: public
@@ -697,8 +704,9 @@
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [61,66000,0,n/a,no,0,0,0]
+      drink-solid:
         - lime: [20,602,0,no,no,2,0,0]
       food:
         - agasta: [10,224,0,no,no,0,0,0]
@@ -753,7 +761,7 @@
         - sausage (flour): [10,60,0,no,ultra,0,0,0]
         - taro (fried): [10,77,0,no,processed,2,0,0]
         - wax gourd: [22,1256,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [8,12000,0,n/a,no,0,0,0]
   - delivery:
       type: public
@@ -765,7 +773,7 @@
       type: public
       km: 35
     items:
-      drink:
+      drink-solid:
         - tea (lapsang souchong): [0,6,0,no,yes,2,0,0]
         - tea (sensha): [124,500,0,no,yes,34,4,0]
   - delivery:
@@ -774,7 +782,7 @@
     items:
       food:
         - sesame seed: [140,800,0,no,no,14,0,0]
-      drink:
+      drink-solid:
         - tea (chinese black): [120,150,0,no,yes,32,0,0]
 "2022-09-03":
   - delivery:
@@ -798,7 +806,7 @@
         - mushroom (white shimeji): [45,510,0,no,no,12,0,0]
         - morning glory: [20,540,0,no,no,0,0,0]
         - tomato: [15,311,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [40,61000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
@@ -815,7 +823,7 @@
       type: public
       km: 34
     items:
-      drink:
+      drink-solid:
         - tea (puerh): [130,100,0,no,yes,0,0,0]
   - delivery:
       type: public
@@ -844,7 +852,7 @@
         - rice (sweet crispy cracker): [15,110,0,no,processed,4,0,0]
         - shave ice: [20,420,0,no,processed,0,0,0]
         - wax gourd: [20,1030,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [10,12000,0,n/a,no,0,0,0]
 "2022-08-13":
   - delivery:
@@ -863,7 +871,7 @@
         - pineapple: [40,1056,0,no,no,0,0,0]
         - potato: [40,826,0,no,no,0,0,0]
         - radish (daikon): [10,265,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [51,67000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
@@ -881,13 +889,13 @@
       type: public
       km: 34
     items:
-      food:
+      drink-solid:
         - tea (puerh, ball): [69,54,0,no,no,0,10,0]
 "2022-08-06":
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-solid:
         - lime: [10,277,0,no,no,0,0,0]
       food:
         - banana: [30,1808,0,no,no,0,0,0]
@@ -919,7 +927,7 @@
         - pineapple: [20,573,0,no,no,0,0,0]
         - potato: [20,306,0,yes,no,0,0,0]
         - radish (daikon): [20,510,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [28,42000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
@@ -934,14 +942,14 @@
       type: public
       km: 710
     items:
-      drink:
+      drink-solid:
         - tea (white): [35,100,0,no,no,9,0,0]
         - tea (lotus stamen): [55,100,0,no,no,3,0,0]
   - delivery:
       type: public
       km: 40
     items:
-      drink:
+      drink-solid:
         - tea (puerh, ball): [49,100,0,no,no,5,0,0]
   - delivery:
       type: public
@@ -1006,7 +1014,7 @@
         - papaya: [28,1880,0,no,no,0,0,0]
         - potato: [20,406,0,no,no,0,0,0]
         - radish (daikon): [10,299,0,no,no,0,0,0]
-      drink:
+      drink-liquid:
         - water: [28,42000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
@@ -1022,7 +1030,7 @@
       type: public
       km: 34
     items:
-      drink:
+      drink-solid:
         - tea (riped pu erh, 357 + 100 x 2): [317,557,0,no,no,10,2,0]
         - tea (fruit): [0,100,0,no,no,2,0,0]
         - tea (jasmine green): [0,10,0,no,no,1,0,0]
@@ -1031,6 +1039,8 @@
       type: private
       km: 3
     items:
+      drink-liquid:
+        - water: [32,48000,0,n/a,no,0,0,0]
       food:
         - bamboo shoots: [25,730,0,no,no,0,0,0]
         - cabbage (chinese): [15,569,0,no,no,0,0,0]
@@ -1045,13 +1055,12 @@
         - potato (chips): [5,11,0,no,ultra,2,0,0]
         - radish (daikon): [25,597,0,no,no,0,0,0]
         - water convolvulus: [15,570,0,no,no,0,0,0]
-      drink:
-        - water: [32,48000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [8,12000,0,n/a,no,0,0,0]
+      drink-solid:
         - lime: [10,700,0,no,no,0,0,0]
       food:
         - banana: [40,2400,0,no,no,0,0,0]
@@ -1104,13 +1113,14 @@
       type: private
       km: 3
     items:
-      drink:
+      drink-liquid:
         - water: [40,48000,0,n/a,no,0,0,0]
   - delivery:
       type: no fuel
     items:
-      drink:
+      drink-liquid:
         - water: [25,30000,0,n/a,no,0,0,0]
+      drink-solid:
         - hibiscus leaves (dried): [5,90,0,no,processed,0,0,0]
         - lime: [20,1000,0,no,no,0,0,0]
       food:
@@ -1140,16 +1150,17 @@
       type: public
       km: 790
     items:
-      drink:
+      drink-solid:
         - tea (green): [120,150,0,yes,no,7,0,0]
 "2022-06-18":
   - delivery:
       type: private
       km: 5.4
     items:
-      drink:
-        - lime: [10,490,0,no,no,0,0,0]
+      drink-liquid:
         - water: [25,36000,0,n/a,no,0,0,0]
+      drink-solid:
+        - lime: [10,490,0,no,no,0,0,0]
       food:
         - broccoli: [36,415,0,no,no,0,0,0]
         - cabbage (chinese): [25,437,0,no,no,0,0,0]
@@ -1189,8 +1200,9 @@
       type: private
       km: 5
     items:
-      drink:
+      drink-solid:
         - lime: [10,380,0,no,no,4,0,0]
+      drink-liquid:
         - water: [40,55000,0,n/a,no,0,0,0]
       food:
         - apple (fuji): [69,700,0,no,no,3,15,0]
@@ -1269,7 +1281,7 @@
       type: private
       km: 17
     items:
-      drink:
+      drink-solid:
       - lime: [40,760,0,no,no,0,0,0]
       food:
         - agasta: [10,190,0,no,no,0,0,0]
@@ -1298,7 +1310,7 @@
       type: public
       km: 55
     items:
-      other edibles:
+      other-edibles:
         - pea (protein powder): [226,907,0,no,processed,20,0,0]
 "2022-05-21":
   - delivery:
@@ -1332,13 +1344,13 @@
         - potato (chips): [5,13,1,no,ultra,1,0,0]
         - pumpkin seed (roasted): [20,25,0,no,processed,4,0,0]
         - rice (sweet crispy cracker): [10,78,0,no,processed,4,0,0]
-      other edibles:
+      other-edibles:
         - oil (coconut, refined): [198,2000,0,no,processed,47,0,0]
   - delivery:
       type: public
       km: 26
     items:
-      drink:
+      drink-solid:
         - hibiscus leaves (dried): [25,20,0,yes,no,1,3,0]
       food:
         - beans (5 color): [135,1000,0,yes,no,4,0,0]
