@@ -42,13 +42,15 @@ export const AvgChart = ({avgSummary, fields}): React.ReactElement => {
     <div className="consumables-avg">
       <ul>
         <li>Total Spent: {summary.thb} THB</li>
-        <li>Transportation (km)
+        <li>
+          Delivery (km)<br />(for All Consumables)
           <ul>
-            <li>By Car ({summary.km.car})</li>
-            <li>Online Delivery ({summary.km.online})</li>
+            <li>Public ({summary.km.public})</li>
+            <li>Private ({summary.km.private})</li>
           </ul>
         </li>
-        <li>Packaging (g)
+        <li>
+          Packaging (g)
           <ul>
             <li>Plastic ({summary.waste.plastic})</li>
             <li>Paper ({summary.waste.paper})</li>
@@ -106,5 +108,5 @@ const combineFields = (summary, fields) =>
     return acc
   }, {
     ... JSON.parse(JSON.stringify(sharedFields)),
-    km: { car: summary.km.car, online: summary.km.online, },
+    km: { public: summary.km.public, private: summary.km.private, },
   })

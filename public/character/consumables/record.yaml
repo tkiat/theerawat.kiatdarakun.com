@@ -1,5 +1,6 @@
 "2023-02-18":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [9,12000,0,n/a,no,0,0,0]
@@ -7,18 +8,21 @@
         - banana (fried): [20,210,0,no,processed,0,0,0]
         - peanut: [88,1000,0,no,no,10,0,0]
 "2023-02-11":
-  - mode: online
-    km: 96
+  - delivery:
+      type: public
+      km: 96
     items:
       food:
         - broken rice (riceberry): [192,7000,0,no,no,28,0,0]
         - broken rice (red cargo): [2,500,0,no,no,6,0,0]
-  - mode: online
-    km: 38
+  - delivery:
+      type: public
+      km: 38
     items:
       food:
         - textured vegetable protein: [184,1000,0,no,no,33,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [25,36000,0,n/a,no,0,0,0]
@@ -38,13 +42,15 @@
       nonedibles:
         - mouthwash: [49,423-TODO,n/a,n/a,n/a,TODO,0,0]
 "2023-02-04":
-  - mode: online
-    km: 32
+  - delivery:
+      type: public
+      km: 32
     items:
       food:
         - flaxseed: [176,1000,0,no,no,12,0,0]
         - pandan (dried): [35,100,0,no,no,11,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [24,36000,0,n/a,no,0,0,0]
@@ -70,8 +76,9 @@
         - radish (daikon): [22,533,0,no,no,0,0,0]
         - wax gourd: [20,814,0,no,no,0,0,0]
 "2023-01-28":
-  - mode: online
-    km: 87
+  - delivery:
+      type: public
+      km: 87
     items:
       drink:
         - water: [9,12000,0,n/a,no,0,0,0]
@@ -81,7 +88,8 @@
         - potato (chips): [116,519,0,no,ultra,42,0,0]
         - potato (sweet): [20,632,0,no,no,4,0,0]
         - shave ice: [20,420,0,no,processed,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [16,24000,0,n/a,no,0,0,0]
@@ -103,7 +111,8 @@
         - tomato: [20,532,0,no,no,0,0,0]
         - wax gourd: [23,1067,0,no,no,0,0,0]
 "2023-01-21":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [27,36000,0,n/a,no,0,0,0]
@@ -117,19 +126,22 @@
         - pineapple: [90,5430,0,no,no,0,0,0]
         - potato (chips): [10,22,0,no,ultra,8,0,0]
         - beansprout: [10,295,0,no,no,4,0,0]
-  - mode: online
-    km: 820
+  - delivery:
+      type: public
+      km: 820
     items:
       drink:
         - tea (green): [300,900,0,no,processed,90,0,0]
-  - mode: online
-    km: 460
+  - delivery:
+      type: public
+      km: 460
     items:
       drink:
         - butterfly pea flower (dried): [149,500,0,no,no,5,0,0]
         - sappan woord (dried): [75,100,0,no,no,5,0,0]
 "2023-01-14":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [17,24000,0,n/a,no,0,0,0]
@@ -152,13 +164,15 @@
       nonedibles:
         - tape (3 inch x 40 yard): [20,n/a,0,n/a,n/a,1,0,0]
         - steroid cream: [80,5,n/a,n/a,n/a,6,0,0]
-  - mode: online
-    km: 94
+  - delivery:
+      type: public
+      km: 94
     items:
       drink:
         - bael fruit (dried): [144,1500,0,no,no,21,0,0]
 "2023-01-07":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [16,24000,0,n/a,no,0,0,0]
@@ -185,15 +199,17 @@
         - kiwi (frozen): [79,1000,0,no,processed,12,0,0]
         - tofu and beansprout: [30,733,0,no,no,0,0,0]
         - wax gourd: [20,812,0,no,no,0,0,0]
-  - mode: online
-    km: 49
+  - delivery:
+      type: public
+      km: 49
     items:
       drink:
         - bael fruit (dried): [80,500,0,no,no,9,0,0]
         - lemongrass and pandan (dried): [100,500,0,no,no,9,0,0]
         - water: [8,12000,0,n/a,no,0,0,0]
 "2022-12-31":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [8,12000,0,n/a,no,0,0,0]
@@ -218,7 +234,8 @@
         - radish (daikon): [40,923,0,no,no,0,0,0]
         - strawberry (frozen): [79,800,0,no,processed,13,0,0]
 "2022-12-24":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [11,18000,0,n/a,no,0,0,0]
@@ -238,13 +255,15 @@
         - radish (daikon): [40,789,0,no,no,0,0,0]
         - strawberry (frozen): [79,800,0,no,processed,13,0,0]
         - wax gourd: [30,904,0,no,no,0,0,0]
-  - mode: online
-    km: 46
+  - delivery:
+      type: public
+      km: 46
     items:
       nonedibles:
         - bar soap (savon de marseille): [129,300,0,n/a,n/a,6,0,0]
 "2022-12-17":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [44,60000,0,n/a,no,0,0,0]
@@ -269,7 +288,8 @@
         - shave ice: [20,420,0,no,processed,0,0,0]
         - wax gourd: [20,846,0,no,no,0,0,0]
 "2022-12-10":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [16,24000,0,n/a,no,0,0,0]
@@ -287,13 +307,15 @@
         - potato: [25,392,0,no,no,0,0,0]
         - pumpkin: [30,880,0,no,no,0,0,0]
         - radish (daikon): [30,766,0,no,no,0,0,0]
-  - mode: online
-    km: 37
+  - delivery:
+      type: public
+      km: 37
     items:
       food:
         - peanut: [143,2000,0,no,no,20,0,0]
 "2022-12-03":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - beer: [65,622,0,no,processed,0,0,417]
@@ -315,28 +337,33 @@
         - syrup (hale's blue boy): [68,931,0,no,ultra,0,0,419]
         - tomato: [10,251,0,no,no,0,0,0]
         - wax gourd: [20,834,0,no,no,0,0,0]
-  - mode: online
-    km: 820
+  - delivery:
+      type: public
+      km: 820
     items:
       drink:
         - tea (green): [150,450,0,no,processed,45,0,0]
-  - mode: online
-    km: 45
+  - delivery:
+      type: public
+      km: 45
     items:
       food:
         - peanut (fried): [55,500,0,no,processed,5,0,0]
-  - mode: online
-    km: 45
+  - delivery:
+      type: public
+      km: 45
     items:
       food:
         - flaxseed (brown): [205,900,0,yes,no,12,0,0]
-  - mode: online
-    km: 424
+  - delivery:
+      type: public
+      km: 424
     items:
       other edibles:
         - pea (protein powder): [249,908,0,no,processed,25,0,0]
 "2022-11-26":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [16,24000,0,n/a,no,0,0,0]
@@ -348,7 +375,8 @@
         - peanut: [120,1500,0,no,no,15,0,0]
         - potato (sweet): [20,812,0,no,no,3,0,0]
 "2022-11-19":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [19,24000,0,n/a,no,0,0,0]
@@ -376,7 +404,8 @@
         - tomato: [8,164,0,no,no,0,0,0]
         - wax gourd: [15,716,0,no,no,0,0,0]
 "2022-11-12":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [23,30000,0,n/a,no,0,0,0]
@@ -399,7 +428,8 @@
         - radish (daikon): [25,674,0,no,no,0,0,0]
         - tomato: [15,327,0,no,no,0,0,0]
 "2022-11-05":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [16,24000,0,n/a,no,0,0,0]
@@ -431,18 +461,21 @@
         - wax gourd: [20,1037,0,no,no,0,0,0]
       other edibles:
         - baking soda: [32,1000,0,no,n/a,10,0,0]
-  - mode: online
-    km: 34
+  - delivery:
+      type: public
+      km: 34
     items:
       food:
         - sesame (black): [112,1000,0,no,no,10,0,0]
-  - mode: online
-    km: 21
+  - delivery:
+      type: public
+      km: 21
     items:
       food:
         - rice (brown): [862,40000,0,no,no,328,0,0]
 "2022-10-29":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - bamboo shoots (pickled): [20,780,0,no,processed,4,0,0]
@@ -465,18 +498,21 @@
         - water convolvulus: [10,200,0,no,no,0,0,0]
       drink:
         - water: [16,22000,0,n/a,no,0,0,0]
-  - mode: online
-    km: 22
+  - delivery:
+      type: public
+      km: 22
     items:
       food:
         - coconut (nata de coco): [40,5000,0,no,ultra,75,0,0]
-  - mode: online
-    km: 96
+  - delivery:
+      type: public
+      km: 96
     items:
       food:
         - broken rice (riceberry): [168,8000,0,no,no,32,0,0]
 "2022-10-22":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [60,2593,0,no,no,0,0,0]
@@ -497,18 +533,21 @@
         - vegetables mixed: [50,1035,0,no,no,1,0,0]
       drink:
         - water: [62,76000,0,n/a,no,0,0,0]
-  - mode: online
-    km: 61
+  - delivery:
+      type: public
+      km: 61
     items:
       other edibles:
         - baking soda: [39,1000,0,no,n/a,16,0,0]
-  - mode: online
-    km: 35
+  - delivery:
+      type: public
+      km: 35
     items:
       food:
         - instant noodle: [49,496,0,no,ultra,11,0,0]
 "2022-10-15":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - lime: [40,942,0,no,no,0,0,0]
@@ -528,13 +567,15 @@
         - potato (boiled): [20,413,0,no,processed,0,0,0]
         - pumpkin: [20,557,0,no,no,0,0,0]
         - wax gourd: [20,1048,0,no,no,0,0,0]
-  - mode: online
-    km: 22
+  - delivery:
+      type: public
+      km: 22
     items:
       food:
         - coconut (nata de coco): [27,3000,0,no,ultra,45,0,0]
 "2022-10-08":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [75,3337,0,no,no,0,0,0]
@@ -552,19 +593,22 @@
         - pumpkin: [20,469,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [35,268,0,no,processed,12,0,0]
         - wax gourd: [25,1378,0,no,no,0,0,0]
-  - mode: online
-    km: 40
+  - delivery:
+      type: public
+      km: 40
     items:
       food:
         - rice: [3,600,0,no,no,12,0,0]
-  - mode: online
-    km: 26
+  - delivery:
+      type: public
+      km: 26
     items:
       food:
         - bread: [40,417,0,no,processed,4,0,0]
 "2022-10-01":
-  - mode: car
-    km: 4.2
+  - delivery:
+      type: private
+      km: 4.2
     items:
       food:
         - agasta: [5,72,0,no,no,0,0,0]
@@ -587,7 +631,8 @@
         - tofu (fried): [20,145,0,no,processed,0,0,0]
       drink:
         - water: [24,30000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [20,1070,0,no,no,0,0,0]
@@ -597,24 +642,28 @@
         - shave ice: [20,420,0,no,processed,0,0,0]
       drink:
         - water: [18,24000,0,n/a,no,0,0,0]
-  - mode: online
-    km: 26
+  - delivery:
+      type: public
+      km: 26
     items:
       food:
         - bread: [40,417,0,no,processed,4,0,0]
-  - mode: online
-    km: 30
+  - delivery:
+      type: public
+      km: 30
     items:
       food:
         - yam (glass): [45,200,0,no,processed,0,0,144] # alu 11
         - yam (plastic): [135,1000,0,no,processed,42,0,0]
-  - mode: online
-    km: 41
+  - delivery:
+      type: public
+      km: 41
     items:
       nonedibles:
         - razor blade (100): [139,n/a,0,n/a,n/a,1,3,0]
 "2022-09-24":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - bamboo shoots (boiled): [20,317,0,no,processed,0,0,0]
@@ -638,13 +687,15 @@
         - tomato: [10,230,0,no,no,0,0,0]
         - yakisoba: [40,319,0,no,processed,0,0,0]
         - yam: [37,250,0,no,ultra,0,0,113] # aluminium 7
-  - mode: online
-    km: 52
+  - delivery:
+      type: public
+      km: 52
     items:
       food:
         - coconut (cider): [137,490,0,no,processed,2,0,329]
 "2022-09-17":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [61,66000,0,n/a,no,0,0,0]
@@ -669,13 +720,15 @@
         - shave ice: [20,420,0,no,processed,0,0,0]
         - tomato: [10,206,0,no,no,0,0,0]
         - wax gourd: [0,890,0,no,no,0,0,0]
-  - mode: online
-    km: 23
+  - delivery:
+      type: public
+      km: 23
     items:
       food:
         - khanom krayasart: [80,500,0,no,processed,5,0,0]
 "2022-09-10":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [85,3370,0,no,no,0,0,0]
@@ -702,33 +755,38 @@
         - wax gourd: [22,1256,0,no,no,0,0,0]
       drink:
         - water: [8,12000,0,n/a,no,0,0,0]
-  - mode: online
-    km: 21
+  - delivery:
+      type: public
+      km: 21
     items:
       food:
         - rice (brown): [534,20000,0,no,no,164,0,0]
-  - mode: online
-    km: 35
+  - delivery:
+      type: public
+      km: 35
     items:
       drink:
         - tea (lapsang souchong): [0,6,0,no,yes,2,0,0]
         - tea (sensha): [124,500,0,no,yes,34,4,0]
-  - mode: online
-    km: 29
+  - delivery:
+      type: public
+      km: 29
     items:
       food:
         - sesame seed: [140,800,0,no,no,14,0,0]
       drink:
         - tea (chinese black): [120,150,0,no,yes,32,0,0]
 "2022-09-03":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - grava: [60,1178,0,no,no,0,0,0]
         - khanom krok: [25,198,0,no,processed,0,0,0]
 "2022-08-27":
-  - mode: car
-    km: 3
+  - delivery:
+      type: private
+      km: 3
     items:
       food:
         - banana: [0,1181,0,no,no,0,0,0]
@@ -742,7 +800,8 @@
         - tomato: [15,311,0,no,no,0,0,0]
       drink:
         - water: [40,61000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [0,1133,0,no,no,0,0,0]
@@ -752,18 +811,21 @@
         - khanom tua pap: [20,204,0,no,processed,6,0,0]
         - gourd (bitter): [35,699,0,no,no,0,0,0]
         - pomelo: [0,756,0,no,no,0,0,0]
-  - mode: online
-    km: 34
+  - delivery:
+      type: public
+      km: 34
     items:
       drink:
         - tea (puerh): [130,100,0,no,yes,0,0,0]
-  - mode: online
-    km: 68
+  - delivery:
+      type: public
+      km: 68
     items:
       food:
         - flaxseed (brown): [205,900,0,yes,no,12,0,0]
 "2022-08-20":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [70,3650,0,no,no,0,0,0]
@@ -785,8 +847,9 @@
       drink:
         - water: [10,12000,0,n/a,no,0,0,0]
 "2022-08-13":
-  - mode: car
-    km: 3
+  - delivery:
+      type: private
+      km: 3
     items:
       food:
         - banana: [30,1677,0,no,no,0,0,0]
@@ -802,23 +865,27 @@
         - radish (daikon): [10,265,0,no,no,0,0,0]
       drink:
         - water: [51,67000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [25,1500,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [15,121,0,no,processed,4,0,0]
-  - mode: online
-    km: 96
+  - delivery:
+      type: public
+      km: 96
     items:
       food:
         - rice (mixed): [66,2500,0,no,no,16,0,0]
-  - mode: online
-    km: 34
+  - delivery:
+      type: public
+      km: 34
     items:
       food:
         - tea (puerh, ball): [69,54,0,no,no,0,10,0]
 "2022-08-06":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - lime: [10,277,0,no,no,0,0,0]
@@ -837,8 +904,9 @@
         - radish (daikon): [10,405,0,no,no,0,0,0]
         - wax gourd: [35,1024,0,no,no,0,0,0]
 "2022-07-30":
-  - mode: car
-    km: 3
+  - delivery:
+      type: private
+      km: 3
     items:
       food:
         - banana: [25,1135,0,no,no,0,0,0]
@@ -853,7 +921,8 @@
         - radish (daikon): [20,510,0,no,no,0,0,0]
       drink:
         - water: [28,42000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [25,895,0,no,no,0,0,0]
@@ -861,24 +930,28 @@
         - peanut bar: [5,62,0,no,processed,1,0,0]
         - rice (sweet crispy cracker): [30,220,0,no,processed,9,0,0]
         - star gooseberry (in syrup): [20,195,0,no,processed,0,0,0]
-  - mode: online
-    km: 710
+  - delivery:
+      type: public
+      km: 710
     items:
       drink:
         - tea (white): [35,100,0,no,no,9,0,0]
         - tea (lotus stamen): [55,100,0,no,no,3,0,0]
-  - mode: online
-    km: 40
+  - delivery:
+      type: public
+      km: 40
     items:
       drink:
         - tea (puerh, ball): [49,100,0,no,no,5,0,0]
-  - mode: online
-    km: 890
+  - delivery:
+      type: public
+      km: 890
     items:
       food:
         - peanut (raw, with husk): [144,2000,0,no,no,0,0,0]
 "2022-07-23":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [35,2320,0,no,no,0,0,0]
@@ -890,18 +963,21 @@
         - rice (sweet crispy cracker): [15,103,0,no,processed,3,0,0]
         - shave ice: [25,532,0,no,processed,0,0,0]
         - stuffed dough (cococut): [20,154,0,no,no,0,0,0]
-  - mode: online
-    km: 43
+  - delivery:
+      type: public
+      km: 43
     items:
       nonedibles:
         - soap bar (foaming hand soap, marbles care x 3): [149,n/a,0,n/a,n/a,0,2,0]
-  - mode: online
-    km: 100
+  - delivery:
+      type: public
+      km: 100
     items:
       nonedibles:
         - mask (covid, KF94 3D x 60 pieces): [21,n/a,0,n/a,n/a,4,0,0]
-  - mode: online
-    km: 45
+  - delivery:
+      type: public
+      km: 45
     items:
       food:
         - corn (baby): [55,600,0,yes,no,3,0,0]
@@ -911,8 +987,9 @@
         - potato (purple sweet lord): [110,1000,0,yes,no,9,0,0]
         - soybean: [690,16000,0,yes,no,200,560,0]
 "2022-07-16":
-  - mode: car
-    km: 3
+  - delivery:
+      type: private
+      km: 3
     items:
       food:
         - banana (cultivated): [15,675,0,no,no,0,0,0]
@@ -931,7 +1008,8 @@
         - radish (daikon): [10,299,0,no,no,0,0,0]
       drink:
         - water: [28,42000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana (dried, sweeten): [5,32,0,no,processed,5,0,0]
@@ -940,16 +1018,18 @@
         - plant-based meat (2 free 1): [158,550,0,no,ultra,27,0,0]
         - rice (sweet crispy cracker): [5,39,0,no,processed,2,0,0]
         - shave ice: [20,440,0,no,processed,0,0,0]
-  - mode: online
-    km: 34
+  - delivery:
+      type: public
+      km: 34
     items:
       drink:
         - tea (riped pu erh, 357 + 100 x 2): [317,557,0,no,no,10,2,0]
         - tea (fruit): [0,100,0,no,no,2,0,0]
         - tea (jasmine green): [0,10,0,no,no,1,0,0]
 "2022-07-09":
-  - mode: car
-    km: 3
+  - delivery:
+      type: private
+      km: 3
     items:
       food:
         - bamboo shoots: [25,730,0,no,no,0,0,0]
@@ -967,7 +1047,8 @@
         - water convolvulus: [15,570,0,no,no,0,0,0]
       drink:
         - water: [32,48000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [8,12000,0,n/a,no,0,0,0]
@@ -978,13 +1059,15 @@
         - fried banana (fried): [20,217,0,no,processed,0,0,0]
         - muskmelon: [30,1160,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [30,219,0,no,processed,10,0,0]
-  - mode: online
-    km: 28
+  - delivery:
+      type: public
+      km: 28
     items:
       food:
         - broken rice (mix brown jasmine, red jasmine, hom nil): [486,9000,0,yes,no,0,0,0]
 "2022-07-02":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - broccoli: [25,320,0,no,no,0,0,0]
@@ -1000,27 +1083,31 @@
         - potato: [39,699,0,no,no,0,0,0]
         - radish (daikon): [15,328,0,no,no,0,0,0]
         - wax gourd: [28,1420,0,no,no,0,0,0]
-  - mode: online
-    km: 38
+  - delivery:
+      type: public
+      km: 38
     items:
       nonedibles:
         - floss (30m, with bottle): [109,n/a,0,n/a,n/a,0,2,0]
         - floss (30m): [79,n/a,0,n/a,n/a,0,2,0]
         - toothbrush (bamboo, x4): [75,n/a,0,n/a,n/a,0,27,0]
-  - mode: online
-    km: 56
+  - delivery:
+      type: public
+      km: 56
     items:
       nonedibles:
         - alum (potassium aluminum sulfate): [45,68,0,n/a,n/a,0,0,0]
         - dish brush (bamboo, for bottle): [105,n/a,0,n/a,n/a,0,0,0]
         - tape (kraft tape, 2inch x 40yd, x2): [84,n/a,0,n/a,n/a,0,0,0]
 "2022-06-25":
-  - mode: car
-    km: 3
+  - delivery:
+      type: private
+      km: 3
     items:
       drink:
         - water: [40,48000,0,n/a,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       drink:
         - water: [25,30000,0,n/a,no,0,0,0]
@@ -1049,14 +1136,16 @@
         - radish (daikon): [15,388,0,no,no,0,0,0]
         - rice (sweet crispy cracker): [33,180,0,no,processed,6,0,0]
         - yakisoba: [20,200,0,no,processed,0,0,0]
-  - mode: online
-    km: 790
+  - delivery:
+      type: public
+      km: 790
     items:
       drink:
         - tea (green): [120,150,0,yes,no,7,0,0]
 "2022-06-18":
-  - mode: car
-    km: 5.4
+  - delivery:
+      type: private
+      km: 5.4
     items:
       drink:
         - lime: [10,490,0,no,no,0,0,0]
@@ -1075,26 +1164,30 @@
         - pineapple: [40,2240,0,no,no,0,0,0]
         - papaya (holland): [28,810,0,no,no,3,0,0]
         - radish (daikon): [15,427,0,no,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [35,1500,0,no,no,0,0,0]
         - peanuts (fried with flour): [12,68,0,no,processed,0,0,0]
         - dumpling (chinese chive, 3 pieces): [30,334,0,no,processed,0,0,0]
-  - mode: online
-    km: 70
+  - delivery:
+      type: public
+      km: 70
     items:
       nonedibles:
         - toothbrush (bamboo with nylon bristle) x 2: [80,9,0,n/a,n/a,0,5,0]
         - non-applicable (bamboo soap dish and bamboo comb): [n/a,n/a,n/a,n/a,n/a,n/a,n/a,n/a]
-  - mode: online
-    km: 45
+  - delivery:
+      type: public
+      km: 45
     items:
       nonedibles:
         - toothpaste (tablets x 30, cheww.co): [160,n/a,0,no,no,0,0,0]
 "2022-06-11":
-  - mode: car
-    km: 5
+  - delivery:
+      type: private
+      km: 5
     items:
       drink:
         - lime: [10,380,0,no,no,4,0,0]
@@ -1113,25 +1206,29 @@
         - potato: [35,585,0,no,no,0,0,0]
         - radish (daikon): [30,770,0,no,no,0,0,0]
         - wax gourd: [20,960,0,no,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [25,1680,0,no,no,0,0,0]
         - peanuts (fried with flour): [9,51,0,no,processed,0,0,0]
         - chinese chives (fried): [50,360,0,no,processed,0,0,0]
         - rice (sweet crispy cracker): [15,100,0,no,processed,3,0,0]
-  - mode: online
-    km: 68
+  - delivery:
+      type: public
+      km: 68
     items:
       nonedibles:
         - bar soap (savon de marseille): [250,600,0,n/a,n/a,6,0,0]
-  - mode: online
-    km: 155
+  - delivery:
+      type: public
+      km: 155
     items:
       nonedibles:
         - dish brush (bamboo handle, sisal bristle): [118,n/a,0,n/a,n/a,0,0,0]
 "2022-06-04":
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [30,4016,0,no,no,0,9,0]
@@ -1139,16 +1236,18 @@
         - ice-cream: [20,55,0,no,ultra,1,10,0]
         - potato (fried ball): [40,268,0,no,processed,0,2,0]
         - rice (sweet crispy cracker): [5,39,0,no,processed,2,0,0]
-  - mode: online
-    km: 26
+  - delivery:
+      type: public
+      km: 26
     items:
       food:
         - beans (mung): [120,1000,0,yes,no,4,0,0]
         - beans (black): [120,1000,0,yes,no,4,0,0]
         - beans (azuki): [120,1000,0,yes,no,4,0,0]
         - beans (white kidney): [120,1000,0,yes,no,4,0,0]
-  - mode: online
-    km: 45
+  - delivery:
+      type: public
+      km: 45
     items:
       food:
         - cabbage: [50,1000,0,yes,no,16,0,0]
@@ -1158,15 +1257,17 @@
         - mix vegetable: [39,300,0,yes,processed,8,0,0]
         - soybean: [345,8000,0,yes,no,100,280,0]
         - tomato (cherry): [65,1000,0,yes,no,7,0,0]
-  - mode: online
-    km: 68
+  - delivery:
+      type: public
+      km: 68
     items:
       nonedibles:
         - bar soap (savon de provence): [63,100,0,n/a,n/a,2,0,0]
         - bar soap (savon de marseille): [125,300,0,n/a,n/a,3,0,0]
 "2022-05-28":
-  - mode: car
-    km: 17
+  - delivery:
+      type: private
+      km: 17
     items:
       drink:
       - lime: [40,760,0,no,no,0,0,0]
@@ -1185,21 +1286,24 @@
         - morning glory: [10,370,0,no,no,0,0,0]
         - radish (daikon): [10,380,0,no,no,0,0,0]
         - yardlong bean: [10,220,0,no,no,0,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - pumpkin: [0,580,0,no,no,0,0,0]
         - potato: [0,224,0,no,no,0,0,0]
         - potato (chips): [10,26,0,no,ultra,2,0,0]
         - rice (sweet crispy cracker): [10,78,0,no,processed,4,0,0]
-  - mode: online
-    km: 55
+  - delivery:
+      type: public
+      km: 55
     items:
       other edibles:
         - pea (protein powder): [226,907,0,no,processed,20,0,0]
 "2022-05-21":
-  - mode: car
-    km: 17
+  - delivery:
+      type: private
+      km: 17
     items:
       food:
         - apple (granny smith): [159,1750,0,no,no,8,0,0]
@@ -1219,7 +1323,8 @@
         - pumpkin (sliced): [39,500,0,no,no,8,0,0]
         - tofu: [43,300,0,no,processed,4,0,0]
         - tomato (seeda): [11,500,0,no,no,4,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - banana: [35,1000,0,no,no,0,0,0]
@@ -1229,28 +1334,32 @@
         - rice (sweet crispy cracker): [10,78,0,no,processed,4,0,0]
       other edibles:
         - oil (coconut, refined): [198,2000,0,no,processed,47,0,0]
-  - mode: online
-    km: 26
+  - delivery:
+      type: public
+      km: 26
     items:
       drink:
         - hibiscus leaves (dried): [25,20,0,yes,no,1,3,0]
       food:
         - beans (5 color): [135,1000,0,yes,no,4,0,0]
         - sesame seed: [90,1000,0,yes,no,28,0,0]
-  - mode: online
-    km: 32
+  - delivery:
+      type: public
+      km: 32
     items:
       food:
         - rice (brown): [35,500,0,yes,no,4,0,0]
         - soybean: [130,800,0,yes,no,20,0,0]
-  - mode: online
-    km: 140
+  - delivery:
+      type: public
+      km: 140
     items:
       food:
         - rice (brown): [539,12000,0,yes,no,48,0,0]
 "2022-05-14":
-  - mode: car
-    km: 17
+  - delivery:
+      type: private
+      km: 17
     items:
       food:
         - amaranth leaves (red): [39,300,0,yes,no,7,0,0]
@@ -1265,7 +1374,8 @@
         - pineapple (smooth cayenne): [35,1560,0,no,no,1,0,0]
         - radish (daikon): [24,1130,0,no,no,7,0,0]
         - tomato (cherry): [28,548,0,no,no,4,0,0]
-  - mode: no fuel
+  - delivery:
+      type: no fuel
     items:
       food:
         - ice-cream: [20,55,2,no,ultra,1,10,0]

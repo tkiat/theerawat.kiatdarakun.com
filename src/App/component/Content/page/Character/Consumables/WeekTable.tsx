@@ -1,8 +1,7 @@
 import React from "react"
 
 export const WeekTable = ({fields, orders}): React.ReactElement => {
-  const total =
-    { thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0 }
+  const total = {thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0}
 
   return (
     <table className="consumables-table">
@@ -11,7 +10,7 @@ export const WeekTable = ({fields, orders}): React.ReactElement => {
       <colgroup span="3"></colgroup>
       <thead>
         <tr>
-          <th rowSpan="2">Order</th>
+          <th rowSpan="2">Delivery</th>
           <th rowSpan="2">Title</th>
           <th rowSpan="2">THB</th>
           <th rowSpan="2">Total<br />(g)</th>
@@ -59,8 +58,11 @@ export const WeekTable = ({fields, orders}): React.ReactElement => {
                           {
                             (j === 0 && k === 0) &&
                             <td rowSpan={numItems}>
-                              {order.mode}
-                              {"km" in order && <><br />({order.km} km)</>}
+                              {order.delivery.type}
+                              {
+                                order.delivery.type !== "no fuel" &&
+                                <><br />{order.delivery.km} km</>
+                              }
                             </td>
                           }
                           <td>{name}</td>

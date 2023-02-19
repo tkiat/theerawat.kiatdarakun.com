@@ -3,13 +3,8 @@
   - delivery:
       type: no fuel
   - delivery:
-      type: public
-      km: number
-  - delivery:
-      type: private
-      km: number
-      means: car/scooter
-      share: number
+      type: public/private
+      km: number (/shared people first)
 
   mode: ["car","online","no fuel"]
     km: 5 (omit this for 'no fuel' mode) # TODO make no fuel 0 km

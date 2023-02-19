@@ -26,7 +26,8 @@ export const Consumables = (): React.ReactElement => {
 
   const [avgSummaries, setAvgSummaries] = React.useState()
 
-  const [cur, setCur] = useImmer("2023-02-11")
+  const [cur, setCur] = useImmer("4")
+//   const [cur, setCur] = useImmer("2023-02-11")
 
   const [fields, setFields] = React.useState(new Set(
     [0, 2].map(x => consumableTypes[x])
@@ -155,7 +156,8 @@ const Checkboxes = ({consumableTypes, fields, setFields}): React.ReactElement =>
   </>
 
 const weeklySummaryTemplate = {
-  km: { car: 0, online: 0, },
+//   km: { car: 0, online: 0, },
+  km: { public: 0, private: 0, },
   food: sharedFields,
   drink: sharedFields,
   "other edibles": sharedFields,
@@ -168,8 +170,8 @@ const createWeeklySummaries = weeks => {
   weeks.forEach(([date, orders]) => {
     const summaryOneWeek = JSON.parse(JSON.stringify(weeklySummaryTemplate))
     orders.forEach(order => {
-      if (order.mode in summaryOneWeek.km && !isNaN(order.km)) {
-        summaryOneWeek.km[order.mode] += order.km
+      if (order.delivery.type !== "no fuel") {
+        summaryOneWeek.km[order.delivery.type] += order.delivery.km
       }
       Object.entries(order.items).forEach(([type, items]) => {
         items.forEach(item => {
