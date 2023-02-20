@@ -5,12 +5,9 @@ import {useImmer} from "use-immer"
 import {capitalize} from "@app/share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
-import {sharedFields} from "./Consumables/share"
+import {AvgSummaries, ConsumableType, consumableTypes, sharedFields} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
-const consumableTypes = ["food", "drink-liquid", "drink-solid", "other-edibles", "nonedibles"] as const
-
-export type ConsumableType = (typeof consumableTypes)[number]
 
 type Delivery = {
   type: "no fuel"
@@ -32,23 +29,16 @@ type Weeks = {
   ]
 }
 
-type AvgSummaries = {
-  [key: string]: {
-    [key in ConsumableType | "km"]: any
-  }
-}
-
 export const Consumables = (): React.ReactElement => {
-  const [weeks, setWeeks] = React.useState<Weeks | undefined>(undefined)
+  const [weeks, setWeeks] = React.useState<Weeks>({})
 
-  const [avgSummaries, setAvgSummaries] =
-    React.useState<AvgSummaries | undefined>(undefined)
+  const [avgSummaries, setAvgSummaries] = React.useState<AvgSummaries>({})
 
   const [cur, setCur] = useImmer<string>("4")
 //   const [cur, setCur] = useImmer("2023-02-11")
 
   const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
-    [0, 2].map(x => consumableTypes[x])
+    [0, 1].map(x => consumableTypes[x])
   ))
 
   React.useEffect((): (() => void) => {
@@ -70,8 +60,8 @@ export const Consumables = (): React.ReactElement => {
   }, [])
 
   React.useEffect((): (() => void) | undefined => {
-    if (weeks === undefined) return
-//     if (Object.keys(weeks).length === 0) return
+//     if (weeks === undefined) return
+    if (Object.keys(weeks).length === 0) return
 
     const weekEntries = Object.entries(weeks)
     const weeklySummaries = createWeeklySummaries(weekEntries)
@@ -100,30 +90,25 @@ export const Consumables = (): React.ReactElement => {
           avgSummaries={avgSummaries}
           weeks={weeks}
         />
-        <Checkboxes
-          consumableTypes={consumableTypes}
-          fields={fields}
-          setFields={setFields}
-        />
+        <Checkboxes fields={fields} setFields={setFields} />
       </div>
       {
-        isNaN(parseInt(cur, 10)) ?
-          (
-            weeks ?
-              <WeekTable orders={weeks[cur]} fields={fields} />
-            : <p>Loading ...</p>
-          )
-        : (
-            avgSummaries ?
-              <AvgChart avgSummary={avgSummaries[cur]} fields={fields} />
-            : <p>Loading ...</p>
-          )
+        isNaN(Number(cur)) ?
+          <WeekTable cur={cur} fields={fields} weeks={weeks} />
+        : <AvgChart cur={cur} fields={fields} avgSummaries={avgSummaries} />
       }
     </section>
   )
 }
 
-const Select = ({cur, setCur, avgSummaries, weeks}): React.ReactElement =>
+type SelectInp = {
+  cur: string,
+  setCur: React.Dispatch<React.SetStateAction<string>>,
+  avgSummaries: AvgSummaries,
+  weeks: Weeks,
+}
+const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
+  React.ReactElement =>
   <>
     <label htmlFor="consumables-panel-select">
       {isNaN(cur) ? "Week" : "Weekly Average" }
@@ -137,14 +122,14 @@ const Select = ({cur, setCur, avgSummaries, weeks}): React.ReactElement =>
     >
       <optgroup label="Weekly Average">
         {
-          avgSummaries && Object.keys(avgSummaries).map((x, i) =>
+          Object.keys(avgSummaries).map((x, i) =>
             <option key={i} value={x}>Last {x} Weeks</option>
           )
         }
       </optgroup>
       <optgroup label="Week">
         {
-          weeks && Object.keys(weeks).map((x, i) =>
+          Object.keys(weeks).map((x, i) =>
             <option key={i} value={x}>{x}</option>
           )
         }
@@ -152,7 +137,11 @@ const Select = ({cur, setCur, avgSummaries, weeks}): React.ReactElement =>
     </select>
   </>
 
-const Checkboxes = ({consumableTypes, fields, setFields}): React.ReactElement =>
+type CheckboxInp = {
+  fields: Set<ConsumableType>,
+  setFields: React.Dispatch<React.SetStateAction<Set<ConsumableType>>>,
+}
+const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
   <>
     {
       consumableTypes.map((x, i) =>

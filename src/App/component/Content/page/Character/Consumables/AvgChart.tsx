@@ -2,12 +2,20 @@ import React from "react"
 import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
-import {sharedFields} from "./share"
+import {AvgSummaries, ConsumableType, sharedFields} from "./share"
 
 Chart.register(...registerables)
 
-export const AvgChart = ({avgSummary, fields}): React.ReactElement => {
-  const summary = combineFields(avgSummary, fields)
+type AvgChartInp = {
+  cur: string,
+  avgSummaries: AvgSummaries,
+  fields: Set<ConsumableType>,
+}
+export const AvgChart = ({cur, fields, avgSummaries}: AvgChartInp):
+  React.ReactElement => {
+
+  if(!(cur in avgSummaries)) return <p>Loading ...</p>
+  const summary = combineFields(avgSummaries[cur], fields)
   const data = {
     labels: [
       "Vegan",

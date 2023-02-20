@@ -1,6 +1,8 @@
 import React from "react"
 
-export const WeekTable = ({fields, orders}): React.ReactElement => {
+export const WeekTable = ({cur, fields, weeks}): React.ReactElement => {
+  if(!(cur in weeks)) return <p>Loading ...</p>
+
   const total = {thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0}
 
   return (
@@ -26,7 +28,7 @@ export const WeekTable = ({fields, orders}): React.ReactElement => {
       </thead>
       <tbody>
       {
-        orders.map((order, i) => {
+        weeks[cur].map((order, i) => {
           const itemsInOrder = Object.entries(order.items)
             .filter(([x, y]) => fields.has(x))
           const numItems = itemsInOrder.reduce((acc, cur) => {
