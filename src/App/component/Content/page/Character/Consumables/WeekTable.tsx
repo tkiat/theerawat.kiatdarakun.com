@@ -1,6 +1,13 @@
 import React from "react"
 
-export const WeekTable = ({cur, fields, weeks}): React.ReactElement => {
+import {ConsumableType, Item, Weeks} from "./share"
+
+type I = {
+  cur: string,
+  fields: Set<ConsumableType>,
+  weeks: Weeks,
+}
+export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
   if(!(cur in weeks)) return <p>Loading ...</p>
 
   const total = {thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0}
@@ -29,31 +36,34 @@ export const WeekTable = ({cur, fields, weeks}): React.ReactElement => {
       <tbody>
       {
         weeks[cur].map((order, i) => {
-          const itemsInOrder = Object.entries(order.items)
-            .filter(([x, y]) => fields.has(x))
-          const numItems = itemsInOrder.reduce((acc, cur) => {
-            return acc + cur[1].length
+//           const types = Object.entries(order.types)
+//             .filter(([x, y]) => fields.has(x))
+          const types = order.types.filter(
+            x => fields.has(x.name)
+          )
+          const numItems = types.reduce((acc, cur) => {
+            return acc + cur.items.length
           }, 0)
           return (
           <React.Fragment key={i}>
             {
-              itemsInOrder.map(([, items], j) => {
+              types.map((type, j) => {
                 return (
                 <React.Fragment key={j}>
                   {
-                    items.map((item, k) => {
-                      const name = Object.keys(item)[0]
-                      const dscp = Object.values(item)[0]
+                    type.items.map((item, k) => {
+                      const title = Object.keys(item)[0]
+                      const v = Object.values(item)[0] as Item
 
-                      total.thb += isNaN(dscp[0]) ? 0 : dscp[0]
-                      total.gram += isNaN(dscp[1]) ? 0 : dscp[1]
-                      total.nonvegan += isNaN(dscp[2]) ? 0 : dscp[2]
-                      total.plastic += isNaN(dscp[5]) ? 0 : dscp[5]
-                      total.paper += isNaN(dscp[6]) ? 0 : dscp[6]
-                      total.glass += isNaN(dscp[7]) ? 0 : dscp[7]
+                      total.thb += isNaN(Number(v[0])) ? 0 : v[0]
+                      total.gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
+                      total.nonvegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
+                      total.plastic += isNaN(Number(v[5])) ? 0 : v[5]
+                      total.paper += isNaN(Number(v[6])) ? 0 : v[6]
+                      total.glass += isNaN(Number(v[7])) ? 0 : v[7]
 
-                      const lastIteminOrder = j === itemsInOrder.length - 1 &&
-                        k === items.length - 1
+                      const lastIteminOrder = j === types.length - 1 &&
+                        k === type.items.length - 1
                       const className = lastIteminOrder ? "last-tr-order" : ""
                       return (
                         <tr className={className} key={k}>
@@ -67,14 +77,14 @@ export const WeekTable = ({cur, fields, weeks}): React.ReactElement => {
                               }
                             </td>
                           }
-                          <td>{name}</td>
-                          <td>{dscp[0]}</td>
-                          <td>{dscp[1]}</td>
-                          <td>{dscp[2]}</td>
-                          <td>{dscp[3]}</td>
-                          <td>{dscp[5]}</td>
-                          <td>{dscp[6]}</td>
-                          <td>{dscp[7]}</td>
+                          <td>{title}</td>
+                          <td>{v[0]}</td>
+                          <td>{v[1]}</td>
+                          <td>{v[2]}</td>
+                          <td>{v[3]}</td>
+                          <td>{v[5]}</td>
+                          <td>{v[6]}</td>
+                          <td>{v[7]}</td>
                         </tr>
                       )
                     })

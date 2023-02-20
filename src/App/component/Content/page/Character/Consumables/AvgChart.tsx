@@ -6,12 +6,12 @@ import {AvgSummaries, ConsumableType, sharedFields} from "./share"
 
 Chart.register(...registerables)
 
-type AvgChartInp = {
+type I = {
   cur: string,
   avgSummaries: AvgSummaries,
   fields: Set<ConsumableType>,
 }
-export const AvgChart = ({cur, fields, avgSummaries}: AvgChartInp):
+export const AvgChart = ({cur, fields, avgSummaries}: I):
   React.ReactElement => {
 
   if(!(cur in avgSummaries)) return <p>Loading ...</p>

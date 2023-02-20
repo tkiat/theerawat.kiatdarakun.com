@@ -41,6 +41,29 @@ export type WeeklySummary = {
   "km": { public: 0, private: 0 }
 }
 
+
 export type AvgSummaries = {
   [key: string]: WeeklySummary
+}
+
+export type ItemValue = [number, number | string, number | string, string, string, number, number, number]
+type Item = {[key: string]: ItemValue}
+
+type Type = {
+  name: ConsumableType,
+  items: Item[]
+}
+type Delivery = {
+  type: "no fuel"
+} | {
+  type: "public" | "private",
+  km: number
+}
+
+type Order = {
+  delivery: Delivery,
+  types: Type[]
+}
+export type Weeks = {
+  [key: string]: [Order]
 }

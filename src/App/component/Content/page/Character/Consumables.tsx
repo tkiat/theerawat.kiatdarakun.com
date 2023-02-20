@@ -5,40 +5,17 @@ import {useImmer} from "use-immer"
 import {capitalize, isType} from "@app/share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
-import {AvgSummaries, ConsumableType, WeeklySummary, consumableTypes, sharedFields} from "./Consumables/share"
+import {AvgSummaries, ConsumableType, Item, Weekentry, WeeklySummary, Weeeks, consumableTypes, sharedFields} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
-
-type Delivery = {
-  type: "no fuel"
-} | {
-  type: "public" | "private",
-  km: number
-}
-
-type Item = [number, number | string, number | string, string, string, number, number, number]
-type OrderEntry = {
-  delivery: Delivery,
-  items: {
-    [key in ConsumableType]: [
-      {[key: string]: Item}
-    ]
-  }
-}
-
-type WeekEntry = [OrderEntry]
-
-type Weeks = {
-  [key: string]: WeekEntry
-}
 
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
 
   const [avgSummaries, setAvgSummaries] = React.useState<AvgSummaries>({})
 
-  const [cur, setCur] = useImmer<string>("4")
-//   const [cur, setCur] = useImmer("2023-02-11")
+//   const [cur, setCur] = useImmer<string>("4")
+  const [cur, setCur] = useImmer("2023-02-11")
 
   const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
     [0, 1].map(x => consumableTypes[x])
@@ -186,26 +163,29 @@ const createWeeklySummaries =
       if (order.delivery.type !== "no fuel") {
         summaryOneWeek.km[order.delivery.type] += order.delivery.km
       }
-      Object.entries(order.items).forEach(([type, items]) => {
-        items.forEach(item => {
+      order.types.forEach(type => {
+        const n = type.name
+        type.items.forEach(item => {
           const v = Object.values(item)[0] as Item
+
           const thb = isNaN(Number(v[0])) ? 0 : v[0]
-          const gram = isNaN(Number(v[1])) ? 0 : v[1]
+          const gram = isNaN(Number(v[1])) ? 0 : Number(v[1])
 
-          summaryOneWeek[type].thb += thb
-          summaryOneWeek[type].total_gram += gram
+          summaryOneWeek[n].thb += thb
+          summaryOneWeek[n].total_gram += gram
 
-          summaryOneWeek[type].vegan += isNaN(Number(v[2])) ? 0 : gram - v[2]
-          summaryOneWeek[type].non_vegan += isNaN(Number(v[2])) ? 0 : v[2]
-          summaryOneWeek[type].cert_organic += v[3] === "yes" ? gram : 0
-          summaryOneWeek[type].not_cert_organic += v[3] === "no" ? gram : 0
-          summaryOneWeek[type].unprocessed += v[4] === "no" ? gram : 0
-          summaryOneWeek[type].processed += v[4] === "processed" ? gram : 0
-          summaryOneWeek[type].ultra_processed += v[4] === "ultra" ? gram : 0
+          summaryOneWeek[n].vegan +=
+            isNaN(Number(v[2])) ? 0 : gram - Number(v[2])
+          summaryOneWeek[n].non_vegan += isNaN(Number(v[2])) ? 0 : v[2]
+          summaryOneWeek[n].cert_organic += v[3] === "yes" ? gram : 0
+          summaryOneWeek[n].not_cert_organic += v[3] === "no" ? gram : 0
+          summaryOneWeek[n].unprocessed += v[4] === "no" ? gram : 0
+          summaryOneWeek[n].processed += v[4] === "processed" ? gram : 0
+          summaryOneWeek[n].ultra_processed += v[4] === "ultra" ? gram : 0
 
-          summaryOneWeek[type].waste.plastic += isNaN(Number(v[5])) ? 0 : v[5]
-          summaryOneWeek[type].waste.paper += isNaN(Number(v[6])) ? 0 : v[6]
-          summaryOneWeek[type].waste.glass += isNaN(Number(v[7])) ? 0 : v[7]
+          summaryOneWeek[n].waste.plastic += isNaN(Number(v[5])) ? 0 : v[5]
+          summaryOneWeek[n].waste.paper += isNaN(Number(v[6])) ? 0 : v[6]
+          summaryOneWeek[n].waste.glass += isNaN(Number(v[7])) ? 0 : v[7]
         })
       })
     })
@@ -214,7 +194,9 @@ const createWeeklySummaries =
   return summaryAllWeeks
 }
 
-const createAvgSummary = (summaries, n) => {
+const createAvgSummary =
+  (summaries: {[key: string]: WeeklySummary}[], n: number) => {
+
   const sum = summaries.reduce((acc, cur) =>
     addAtMostThreeLevelNestedObjs(acc, Object.values(cur)[0])
   , JSON.parse(JSON.stringify(weeklySummaryTemplate)))
