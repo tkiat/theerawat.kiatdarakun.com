@@ -2,10 +2,10 @@ import React from "react"
 import * as jsYaml from "js-yaml"
 import {useImmer} from "use-immer"
 
-import {capitalize} from "@app/share"
+import {capitalize, isType} from "@app/share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
-import {AvgSummaries, ConsumableType, consumableTypes, sharedFields} from "./Consumables/share"
+import {AvgSummaries, ConsumableType, WeeklySummary, consumableTypes, sharedFields} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
 
@@ -16,17 +16,20 @@ type Delivery = {
   km: number
 }
 
+type Item = [number, number | string, number | string, string, string, number, number, number]
+type OrderEntry = {
+  delivery: Delivery,
+  items: {
+    [key in ConsumableType]: [
+      {[key: string]: Item}
+    ]
+  }
+}
+
+type WeekEntry = [OrderEntry]
+
 type Weeks = {
-  [key: string]: [
-    {
-      delivery: Delivery,
-      items: {
-        [key in ConsumableType]: [
-          {[key: string]: [any]}
-        ]
-      }
-    }
-  ]
+  [key: string]: WeekEntry
 }
 
 export const Consumables = (): React.ReactElement => {
@@ -111,12 +114,13 @@ const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
   React.ReactElement =>
   <>
     <label htmlFor="consumables-panel-select">
-      {isNaN(cur) ? "Week" : "Weekly Average" }
+      {isNaN(Number(cur)) ? "Week" : "Weekly Average" }
     </label>
     <br />
     <select
       id="consumables-panel-select"
-      key={avgSummaries && weeks ? "not loaded" : "loaded"}
+      key={Object.keys(avgSummaries).length && Object.keys(weeks).length ?
+        "not loaded" : "loaded"}
       onChange={e => setCur(e.target.value)}
       defaultValue={cur}
     >
@@ -151,10 +155,13 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
             value={x}
             checked={fields.has(x)}
             onChange={e => {
-              setFields(prev => e.target.checked ?
-                  new Set(prev.add(e.target.value))
-                : new Set([...prev].filter(x => x !== e.target.value))
-              )
+              const v = e.target.value
+              if(isType(v, consumableTypes)) {
+                setFields(prev => e.target.checked ?
+                    new Set(prev.add(v))
+                  : new Set([...prev].filter(x => x !== v))
+                )
+              }
             }}
           />
           {capitalize(x)}
@@ -166,12 +173,14 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
 const weeklySummaryTemplate = consumableTypes.reduce((acc, cur) => {
   acc[cur] = sharedFields
   return acc
-}, {km: { public: 0, private: 0, }})
+}, {km: { public: 0, private: 0, }} as WeeklySummary)
 
-const createWeeklySummaries = weeks => {
-  const summaryAllWeeks = []
+const createWeeklySummaries =
+  (entries: [string, WeekEntry][]): {[key: string]: WeeklySummary}[] => {
 
-  weeks.forEach(([date, orders]) => {
+  const summaryAllWeeks = [] as {[key: string]: WeeklySummary}[]
+
+  entries.forEach(([date, orders]) => {
     const summaryOneWeek = JSON.parse(JSON.stringify(weeklySummaryTemplate))
     orders.forEach(order => {
       if (order.delivery.type !== "no fuel") {
@@ -179,24 +188,24 @@ const createWeeklySummaries = weeks => {
       }
       Object.entries(order.items).forEach(([type, items]) => {
         items.forEach(item => {
-          const v = Object.values(item)[0]
-          const thb = isNaN(v[0]) ? 0 : v[0]
-          const gram = isNaN(v[1]) ? 0 : v[1]
+          const v = Object.values(item)[0] as Item
+          const thb = isNaN(Number(v[0])) ? 0 : v[0]
+          const gram = isNaN(Number(v[1])) ? 0 : v[1]
 
           summaryOneWeek[type].thb += thb
           summaryOneWeek[type].total_gram += gram
 
-          summaryOneWeek[type].vegan += isNaN(v[2]) ? 0 : gram - v[2]
-          summaryOneWeek[type].non_vegan += isNaN(v[2]) ? 0 : v[2]
+          summaryOneWeek[type].vegan += isNaN(Number(v[2])) ? 0 : gram - v[2]
+          summaryOneWeek[type].non_vegan += isNaN(Number(v[2])) ? 0 : v[2]
           summaryOneWeek[type].cert_organic += v[3] === "yes" ? gram : 0
           summaryOneWeek[type].not_cert_organic += v[3] === "no" ? gram : 0
           summaryOneWeek[type].unprocessed += v[4] === "no" ? gram : 0
           summaryOneWeek[type].processed += v[4] === "processed" ? gram : 0
           summaryOneWeek[type].ultra_processed += v[4] === "ultra" ? gram : 0
 
-          summaryOneWeek[type].waste.plastic += isNaN(v[5]) ? 0 : v[5]
-          summaryOneWeek[type].waste.paper += isNaN(v[6]) ? 0 : v[6]
-          summaryOneWeek[type].waste.glass += isNaN(v[7]) ? 0 : v[7]
+          summaryOneWeek[type].waste.plastic += isNaN(Number(v[5])) ? 0 : v[5]
+          summaryOneWeek[type].waste.paper += isNaN(Number(v[6])) ? 0 : v[6]
+          summaryOneWeek[type].waste.glass += isNaN(Number(v[7])) ? 0 : v[7]
         })
       })
     })

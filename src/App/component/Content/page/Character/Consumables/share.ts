@@ -35,8 +35,12 @@ export const sharedFields = {
   waste: { plastic: 0, paper: 0, glass: 0, },
 }
 
-type AvgSummaries = {
-  [key: string]: {
-    [key in ConsumableType | "km"]: any
-  }
+export type WeeklySummary = {
+  [key in ConsumableType]: SharedFields
+} & {
+  "km": { public: 0, private: 0 }
+}
+
+export type AvgSummaries = {
+  [key: string]: WeeklySummary
 }

@@ -12,12 +12,12 @@
       - food/drink-solid/drink-liquid/other-edibles/nonedibles: ["thb","gram","non_vegan_gram","cert_organic","processed","packaging_plastic","packaging_paper","packaging_glass"]
 
 # possible values
-- thb: [number,n/a]
+- thb: [number]
 - gram: [number,n/a] # e.g. use n/a for razor blade not soap
-- non_vegan_gram: [number]
+- non_vegan_gram: [number,n/a]
 - cert-organic: [yes,no,n/a]
 - processed: [no,processed,ultra,n/a]
-- packaging_xxx: [number, n/a]
+- packaging_xxx: [number]
 
 # note
 - gram:
