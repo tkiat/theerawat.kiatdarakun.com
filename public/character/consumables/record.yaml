@@ -4,7 +4,7 @@
     types:
       - name: drink-liquid
         items:
-        - water: [9,12000,0,n/a,no,0,0,0]
+        - water: [17,24000,0,n/a,no,0,0,0]
       - name: food
         items:
         - banana (fried): [20,210,0,no,processed,0,0,0]

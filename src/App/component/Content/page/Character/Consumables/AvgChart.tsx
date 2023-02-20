@@ -2,13 +2,13 @@ import React from "react"
 import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
-import {AvgSummaries, ConsumableType, sharedFields} from "./share"
+import {WeeklySummary, ConsumableType, WeeklySummaryValue, sharedFields} from "./share"
 
 Chart.register(...registerables)
 
 type I = {
   cur: string,
-  avgSummaries: AvgSummaries,
+  avgSummaries: WeeklySummary,
   fields: Set<ConsumableType>,
 }
 export const AvgChart = ({cur, fields, avgSummaries}: I):
@@ -97,7 +97,7 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
   )
 }
 
-const combineFields = (summary, fields) =>
+const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>) =>
   [...fields].reduce((acc, cur) => {
     acc.total_gram += summary[cur].total_gram
     acc.thb += summary[cur].thb

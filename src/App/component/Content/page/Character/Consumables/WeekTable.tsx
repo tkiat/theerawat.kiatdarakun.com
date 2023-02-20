@@ -1,6 +1,6 @@
 import React from "react"
 
-import {ConsumableType, Item, Weeks} from "./share"
+import {ConsumableType, ItemValue, Weeks} from "./share"
 
 type I = {
   cur: string,
@@ -36,8 +36,6 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
       <tbody>
       {
         weeks[cur].map((order, i) => {
-//           const types = Object.entries(order.types)
-//             .filter(([x, y]) => fields.has(x))
           const types = order.types.filter(
             x => fields.has(x.name)
           )
@@ -53,7 +51,7 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                   {
                     type.items.map((item, k) => {
                       const title = Object.keys(item)[0]
-                      const v = Object.values(item)[0] as Item
+                      const v = Object.values(item)[0] as ItemValue
 
                       total.thb += isNaN(Number(v[0])) ? 0 : v[0]
                       total.gram += isNaN(Number(v[1])) ? 0 : Number(v[1])

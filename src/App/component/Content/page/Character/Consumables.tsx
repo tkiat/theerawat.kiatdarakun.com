@@ -5,17 +5,17 @@ import {useImmer} from "use-immer"
 import {capitalize, isType} from "@app/share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
-import {AvgSummaries, ConsumableType, Item, Weekentry, WeeklySummary, Weeeks, consumableTypes, sharedFields} from "./Consumables/share"
+import {ConsumableType, ItemValue, SharedFields, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, sharedFields} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
 
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
 
-  const [avgSummaries, setAvgSummaries] = React.useState<AvgSummaries>({})
+  const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
 
-//   const [cur, setCur] = useImmer<string>("4")
-  const [cur, setCur] = useImmer("2023-02-11")
+  const [cur, setCur] = useImmer<string>("4")
+//   const [cur, setCur] = useImmer("2023-02-11")
 
   const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
     [0, 1].map(x => consumableTypes[x])
@@ -40,10 +40,9 @@ export const Consumables = (): React.ReactElement => {
   }, [])
 
   React.useEffect((): (() => void) | undefined => {
-//     if (weeks === undefined) return
     if (Object.keys(weeks).length === 0) return
 
-    const weekEntries = Object.entries(weeks)
+    const weekEntries = Object.entries(weeks) as [string, Week][]
     const weeklySummaries = createWeeklySummaries(weekEntries)
 
     const numWeeks = weekEntries.length
@@ -55,9 +54,9 @@ export const Consumables = (): React.ReactElement => {
     avgSummaryOptions.push(numWeeks)
 
     setAvgSummaries(avgSummaryOptions.reduce((acc, cur) => {
-      acc[cur] = createAvgSummary(weeklySummaries.slice(0, cur), cur)
+      acc[cur] = createAvgWeeklySummary(weeklySummaries.slice(0, cur), cur)
       return acc
-    }, {} as AvgSummaries))
+    }, {} as WeeklySummary))
   }, [weeks])
 
   return (
@@ -84,7 +83,7 @@ export const Consumables = (): React.ReactElement => {
 type SelectInp = {
   cur: string,
   setCur: React.Dispatch<React.SetStateAction<string>>,
-  avgSummaries: AvgSummaries,
+  avgSummaries: WeeklySummary,
   weeks: Weeks,
 }
 const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
@@ -150,12 +149,12 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
 const weeklySummaryTemplate = consumableTypes.reduce((acc, cur) => {
   acc[cur] = sharedFields
   return acc
-}, {km: { public: 0, private: 0, }} as WeeklySummary)
+}, {km: { public: 0, private: 0, }} as WeeklySummaryValue)
 
 const createWeeklySummaries =
-  (entries: [string, WeekEntry][]): {[key: string]: WeeklySummary}[] => {
+  (entries: [string, Week][]): WeeklySummary[] => {
 
-  const summaryAllWeeks = [] as {[key: string]: WeeklySummary}[]
+  const summaryAllWeeks = [] as WeeklySummary[]
 
   entries.forEach(([date, orders]) => {
     const summaryOneWeek = JSON.parse(JSON.stringify(weeklySummaryTemplate))
@@ -166,7 +165,7 @@ const createWeeklySummaries =
       order.types.forEach(type => {
         const n = type.name
         type.items.forEach(item => {
-          const v = Object.values(item)[0] as Item
+          const v = Object.values(item)[0] as ItemValue
 
           const thb = isNaN(Number(v[0])) ? 0 : v[0]
           const gram = isNaN(Number(v[1])) ? 0 : Number(v[1])
@@ -189,54 +188,68 @@ const createWeeklySummaries =
         })
       })
     })
-    summaryAllWeeks.push({ [date]: summaryOneWeek })
+    summaryAllWeeks.push({[date]: summaryOneWeek})
   })
   return summaryAllWeeks
 }
 
-const createAvgSummary =
-  (summaries: {[key: string]: WeeklySummary}[], n: number) => {
-
-  const sum = summaries.reduce((acc, cur) =>
-    addAtMostThreeLevelNestedObjs(acc, Object.values(cur)[0])
-  , JSON.parse(JSON.stringify(weeklySummaryTemplate)))
-
-  const avg = opAtMostThreeLevelNestedObjs(sum, a => Math.round(a / n))
-  return avg
+const createAvgWeeklySummary = (ws: WeeklySummary[], n: number) => {
+  const sum = ws.map(x => Object.values(x)[0]).reduce((acc, cur) =>
+    combineWeeklySummaryValues(acc, cur)
+  )
+  return avgWeeklySummaryValue(sum, n)
 }
-const opAtMostThreeLevelNestedObjs = (a, op) => {
-  return Object.keys(a).reduce((acc, j) => {
-    if (isNaN(acc[j])) {
-      Object.keys(acc[j]).forEach(k => {
-        if (isNaN(acc[j][k])) {
-          Object.keys(acc[j][k]).forEach(l => {
-            acc[j][k][l] = op(acc[j][k][l])
-          })
-        } else {
-          acc[j][k] = op(acc[j][k])
-        }
-      })
-    } else {
-      acc[j] = op(acc[j])
+
+const combineWeeklySummaryValues =
+  (a: WeeklySummaryValue, b: WeeklySummaryValue) =>
+
+  consumableTypes.reduce((acc, cur) => {
+    acc[cur] = {
+      thb: a[cur].thb + b[cur].thb,
+      total_gram: a[cur].total_gram + b[cur].total_gram,
+      vegan: a[cur].vegan + b[cur].vegan,
+      non_vegan: a[cur].non_vegan + b[cur].non_vegan,
+      unprocessed: a[cur].unprocessed + b[cur].unprocessed,
+      processed: a[cur].processed + b[cur].processed,
+      ultra_processed: a[cur].ultra_processed + b[cur].ultra_processed,
+      cert_organic: a[cur].cert_organic + b[cur].cert_organic,
+      not_cert_organic: a[cur].not_cert_organic + b[cur].not_cert_organic,
+      waste: {
+        plastic: a[cur].waste.plastic + b[cur].waste.plastic,
+        paper: a[cur].waste.paper + b[cur].waste.paper,
+        glass: a[cur].waste.glass + b[cur].waste.glass,
+      },
     }
     return acc
-  }, a)
-}
-const addAtMostThreeLevelNestedObjs = (a, b) => {
-  return Object.keys(a).reduce((acc, j) => {
-    if (isNaN(acc[j])) {
-      Object.keys(acc[j]).forEach(k => {
-        if (isNaN(acc[j][k])) {
-          Object.keys(acc[j][k]).forEach(l => {
-            acc[j][k][l] += b[j][k][l]
-          })
-        } else {
-          acc[j][k] += b[j][k]
-        }
-      })
-    } else {
-      acc[j] += b[j]
+  }, {
+    km: {
+      public: a.km.public + b.km.public,
+      private: a.km.private + b.km.private,
+    }
+  } as WeeklySummaryValue)
+
+const avgWeeklySummaryValue = (x: WeeklySummaryValue, n: number) =>
+  consumableTypes.reduce((acc, cur) => {
+    acc[cur] = {
+      thb: Math.round(x[cur].thb / n),
+      total_gram: Math.round(x[cur].total_gram / n),
+      vegan: Math.round(x[cur].vegan / n),
+      non_vegan: Math.round(x[cur].non_vegan / n),
+      unprocessed: Math.round(x[cur].unprocessed / n),
+      processed: Math.round(x[cur].processed / n),
+      ultra_processed: Math.round(x[cur].ultra_processed / n),
+      cert_organic: Math.round(x[cur].cert_organic / n),
+      not_cert_organic: Math.round(x[cur].not_cert_organic / n),
+      waste: {
+        plastic: Math.round(x[cur].waste.plastic / n),
+        paper: Math.round(x[cur].waste.paper / n),
+        glass: Math.round(x[cur].waste.glass / n),
+      },
     }
     return acc
-  }, a)
-}
+  }, {
+    km: {
+      public: Math.round(x.km.public / n),
+      private: Math.round(x.km.private / n),
+    }
+  } as WeeklySummaryValue)

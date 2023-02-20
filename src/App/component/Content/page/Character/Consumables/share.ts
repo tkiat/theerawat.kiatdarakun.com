@@ -1,23 +1,6 @@
 export const consumableTypes = ["food", "drink-solid", "drink-liquid", "other-edibles", "nonedibles"] as const
 export type ConsumableType = (typeof consumableTypes)[number]
 
-export type SharedFields = {
-  thb: number,
-  total_gram: number,
-
-  vegan: number,
-  non_vegan: number,
-
-  unprocessed: number,
-  processed: number,
-  ultra_processed: number,
-
-  cert_organic: number,
-  not_cert_organic: number,
-
-  waste: {plastic: number, paper: number, glass: number}
-}
-
 export const sharedFields = {
   thb: 0,
   total_gram: 0,
@@ -35,16 +18,14 @@ export const sharedFields = {
   waste: { plastic: 0, paper: 0, glass: 0, },
 }
 
-export type WeeklySummary = {
+export type SharedFields = typeof sharedFields
+
+export type WeeklySummaryValue = {
   [key in ConsumableType]: SharedFields
 } & {
   "km": { public: 0, private: 0 }
 }
-
-
-export type AvgSummaries = {
-  [key: string]: WeeklySummary
-}
+export type WeeklySummary = {[key: string]: WeeklySummaryValue}
 
 export type ItemValue = [number, number | string, number | string, string, string, number, number, number]
 type Item = {[key: string]: ItemValue}
@@ -64,6 +45,7 @@ type Order = {
   delivery: Delivery,
   types: Type[]
 }
+export type Week = [Order]
 export type Weeks = {
-  [key: string]: [Order]
+  [key: string]: Week
 }
