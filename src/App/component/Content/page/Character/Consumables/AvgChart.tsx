@@ -2,7 +2,7 @@ import React from "react"
 import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
-import {WeeklySummary, ConsumableType, WeeklySummaryValue, sharedFields} from "./share"
+import {WeeklySummary, ConsumableType, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
 
 Chart.register(...registerables)
 
@@ -66,7 +66,7 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
           </ul>
         </li>
       </ul>
-      <Bar width={400} height={400} data={data}
+      <Bar className="consumables-avg__bar" width={400} height={400} data={data}
         options={{
           maintainAspectRatio: false,
           plugins: {
@@ -115,6 +115,6 @@ const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>)
     acc.waste.glass += summary[cur].waste.glass
     return acc
   }, {
-    ... JSON.parse(JSON.stringify(sharedFields)),
+    ... JSON.parse(JSON.stringify(consumableTypeSummaryTemplate)),
     km: { public: summary.km.public, private: summary.km.private, },
   })

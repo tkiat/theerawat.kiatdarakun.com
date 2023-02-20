@@ -5,17 +5,15 @@ import {useImmer} from "use-immer"
 import {capitalize, isType} from "@app/share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
-import {ConsumableType, ItemValue, SharedFields, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, sharedFields} from "./Consumables/share"
+import {ConsumableType, ItemValue, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, consumableTypeSummaryTemplate} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
 
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
-
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
 
   const [cur, setCur] = useImmer<string>("4")
-//   const [cur, setCur] = useImmer("2023-02-11")
 
   const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
     [0, 1].map(x => consumableTypes[x])
@@ -125,7 +123,7 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
   <>
     {
       consumableTypes.map((x, i) =>
-        <label key={i}>
+        <label className="consumables-panel__checkbox" key={i}>
           <input
             type="checkbox"
             value={x}
@@ -147,7 +145,7 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
   </>
 
 const weeklySummaryTemplate = consumableTypes.reduce((acc, cur) => {
-  acc[cur] = sharedFields
+  acc[cur] = consumableTypeSummaryTemplate
   return acc
 }, {km: { public: 0, private: 0, }} as WeeklySummaryValue)
 

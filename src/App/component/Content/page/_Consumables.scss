@@ -4,6 +4,12 @@
 .consumables-panel {
   font-size: 0.8em;
   user-select: none;
+  &__checkbox {
+    margin-left: 0.5em;
+    input {
+      margin-right: 0.3em;
+    }
+  }
 }
 
 .consumables-avg {
@@ -12,6 +18,10 @@
   gap: 20px;
 
   font-size: 0.8em;
+  &__bar {
+    width: 250px !important;
+    height: 250px !important;
+  }
   & > ul {
     list-style-position: inside;
     list-style: none;
