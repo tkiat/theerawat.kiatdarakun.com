@@ -40,7 +40,6 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
 
   return (
     <div className="consumables-avg">
-      <p className="info-line"><b>All Consumables</b>: Delivery (Public {summary.km.public}km, Private {summary.km.private}km) <b> — Selected Consumables</b>: Spending ({summary.thb} THB), Packaging (Plastic {summary.waste.plastic}g, Paper {summary.waste.paper}g, Glass {summary.waste.glass}g)</p>
       <ul className="info-side">
         <li>
           Delivery
@@ -92,18 +91,14 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
     </div>
   )
 }
-//       <p>{summary.thb} THB — Delivery (for All Consumables): Public {summary.km.public}km, Private {summary.km.private}km — Packaging: Plastic {summary.waste.plastic}g, Paper {summary.waste.paper}g, Glass {summary.waste.glass}g</p>
 
 const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>) =>
   [...fields].reduce((acc, cur) => {
-    acc.total_gram += summary[cur].total_gram
     acc.thb += summary[cur].thb
+    acc.total_gram += summary[cur].total_gram
 
-    acc.vegan += summary[cur].vegan
     acc.non_vegan += summary[cur].non_vegan
     acc.cert_organic += summary[cur].cert_organic
-    acc.not_cert_organic += summary[cur].not_cert_organic
-    acc.unprocessed += summary[cur].unprocessed
     acc.processed += summary[cur].processed
     acc.ultra_processed += summary[cur].ultra_processed
 

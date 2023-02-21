@@ -4,12 +4,12 @@
     types:
       - name: drink-liquid
         items:
-        - water: [17,24000,0,n/a,no,0,0,0]
+        - water: [17,24000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - banana (fried): [20,210,0,no,processed,0,0,0]
-        - jackfruit: [0,1000,0,no,no,10,0,0]
-        - peanut: [88,1000,0,no,no,10,0,0]
+        - banana (fried): [20,210,0,0,210,0,0,0,0]
+        - jackfruit: [0,1000,0,0,0,0,10,0,0]
+        - peanut: [88,1000,0,0,0,0,10,0,0]
 "2023-02-11":
   - delivery:
       type: public
@@ -17,38 +17,39 @@
     types:
       - name: food
         items:
-        - broken rice (riceberry): [192,7000,0,no,no,28,0,0]
-        - broken rice (red cargo): [2,500,0,no,no,6,0,0]
+        - broken rice (riceberry): [192,7000,0,0,0,0,28,0,0]
+        - broken rice (red cargo): [2,500,0,0,0,0,6,0,0]
   - delivery:
       type: public
       km: 38
     types:
       - name: food
         items:
-        - textured vegetable protein: [184,1000,0,no,no,33,0,0]
+        - textured vegetable protein: [184,1000,0,0,1000,0,33,0,0]
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [25,36000,0,n/a,no,0,0,0]
+        - water: [25,36000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - banana: [20,1312,0,no,no,0,0,0]
-        - beansprout: [15,512,0,no,no,4,0,0]
-        - bitter gourd: [15,323,0,no,no,0,0,0]
-        - broccoli: [24,273,0,no,no,6,0,0]
-        - carrot: [20,398,0,no,no,0,0,0]
-        - corn (boiled): [20,611,0,no,processed,0,0,0]
-        - false pakchoi: [10,413,0,no,no,0,0,0]
-        - kale: [10,242,0,no,no,0,0,0]
-        - mango: [20,1280,0,no,no,0,0,0]
-        - mushroom (king oyster): [32,500,0,no,no,5,0,0]
-        - pineapple: [118,4459,0,no,no,2,0,0]
-        - radish (daikon): [20,611,0,no,no,0,0,0]
-      - name: nonedibles
-        items:
-        - mouthwash: [49,423-TODO,n/a,n/a,n/a,TODO,0,0]
+        - banana: [20,1312,0,0,0,0,0,0,0]
+        - beansprout: [15,512,0,0,0,0,4,0,0]
+        - bitter gourd: [15,323,0,0,0,0,0,0,0]
+        - broccoli: [24,273,0,0,0,0,6,0,0]
+        - carrot: [20,398,0,0,0,0,0,0,0]
+        - corn (boiled): [20,611,0,0,611,0,0,0,0]
+        - false pakchoi: [10,413,0,0,0,0,0,0,0]
+        - kale: [10,242,0,0,0,0,0,0,0]
+        - mango: [20,1280,0,0,0,0,0,0,0]
+        - mushroom (king oyster): [32,500,0,0,0,0,5,0,0]
+        - oil (palm): [46,905,0,0,905,0,33,0,0]
+        - pineapple: [118,4459,0,0,0,0,2,0,0]
+        - radish (daikon): [20,611,0,0,0,0,0,0,0]
+#       - name: nonedibles
+#         items:
+#         - mouthwash: [49,423-TODO,n/a,n/a,n/a,n/a,TODO,0,0]
 "2023-02-04":
   - delivery:
       type: public
@@ -56,38 +57,38 @@
     types:
       - name: food
         items:
-        - flaxseed: [176,1000,0,no,no,12,0,0]
+        - flaxseed: [176,1000,0,0,0,0,12,0,0]
       - name: drink-solid
         items:
-        - pandan (dried): [35,100,0,no,no,11,0,0]
+        - pandan (dried): [35,100,0,0,0,0,11,0,0]
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [24,36000,0,n/a,no,0,0,0]
+        - water: [24,36000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - bamboo shoots (boiled): [25,459,0,no,processed,4,0,0]
-        - banana: [60,2501,0,no,no,0,0,0]
-        - beansprout: [15,512,0,no,no,0,0,0]
-        - bitter gourd: [22,437,0,no,no,0,0,0]
-        - cabbage (chinese): [28,467,0,no,no,3,0,0]
-        - carrot: [30,737,0,no,no,0,0,0]
-        - corn: [85,3379,0,no,no,5,0,0]
-        - false pakchoi: [10,365,0,no,no,0,0,0]
-        - "ginger & mushroom (wood ear)": [25,169,0,no,no,2,0,0]
-        - kale: [10,367,0,no,no,0,0,0]
-        - khanom khao tom mud: [10,134,0,no,processed,0,0,0]
-        - mixed veggies: [25,300,0,no,no,5,0,0]
-        - morning glory: [20,359,0,no,no,0,0,0]
-        - morning glory (chinese): [10,234,0,yes,no,0,0,0]
-        - mushroom (tremella): [15,42,0,no,no,2,0,0]
-        - muskmelon: [35,1162,0,no,no,0,0,0]
-        - pineapple: [60,2204,0,no,no,0,0,0]
-        - potato (sweet): [20,812,0,no,no,2,0,0]
-        - radish (daikon): [22,533,0,no,no,0,0,0]
-        - wax gourd: [20,814,0,no,no,0,0,0]
+        - bamboo shoots (boiled): [25,459,0,0,459,0,4,0,0]
+        - banana: [60,2501,0,0,0,0,0,0,0]
+        - beansprout: [15,512,0,0,0,0,0,0,0]
+        - bitter gourd: [22,437,0,0,0,0,0,0,0]
+        - cabbage (chinese): [28,467,0,0,0,0,3,0,0]
+        - carrot: [30,737,0,0,0,0,0,0,0]
+        - corn: [85,3379,0,0,0,0,5,0,0]
+        - false pakchoi: [10,365,0,0,0,0,0,0,0]
+        - "ginger & mushroom (wood ear)": [25,169,0,0,0,0,2,0,0]
+        - kale: [10,367,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [10,134,0,0,134,0,0,0,0]
+        - mixed veggies: [25,300,0,0,0,0,5,0,0]
+        - morning glory: [20,359,0,0,0,0,0,0,0]
+        - morning glory (chinese): [10,234,0,234,0,0,0,0,0]
+        - mushroom (tremella): [15,42,0,0,0,0,2,0,0]
+        - muskmelon: [35,1162,0,0,0,0,0,0,0]
+        - pineapple: [60,2204,0,0,0,0,0,0,0]
+        - potato (sweet): [20,812,0,0,0,0,2,0,0]
+        - radish (daikon): [22,533,0,0,0,0,0,0,0]
+        - wax gourd: [20,814,0,0,0,0,0,0,0]
 "2023-01-28":
   - delivery:
       type: public
@@ -95,597 +96,597 @@
     types:
       - name: drink-liquid
         items:
-        - water: [9,12000,0,n/a,no,0,0,0]
+        - water: [9,12000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - corn: [20,716,0,no,no,4,0,0]
-        - peanut: [88,1000,0,no,no,10,0,0]
-        - potato (chips): [116,519,0,no,ultra,42,0,0]
-        - potato (sweet): [20,632,0,no,no,4,0,0]
-        - shave ice: [20,420,0,no,processed,0,0,0]
+        - corn: [20,716,0,0,0,0,4,0,0]
+        - peanut: [88,1000,0,0,0,0,10,0,0]
+        - potato (chips): [116,519,0,0,0,519,42,0,0]
+        - potato (sweet): [20,632,0,0,0,0,4,0,0]
+        - shave ice: [20,420,0,0,420,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [16,24000,0,n/a,no,0,0,0]
+        - water: [16,24000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - cabbage (chinese): [15,327,0,no,no,0,0,0]
-        - carrot: [30,625,0,no,no,0,0,0]
-        - corn: [20,716,0,no,no,4,0,0]
-        - cucumber (long): [20,605,0,no,no,0,0,0]
-        - false pakchoi: [8,203,0,no,no,0,0,0]
-        - kale: [8,177,0,no,no,0,0,0]
-        - mango: [30,1000,0,no,no,0,0,0]
-        - morning glory: [8,191,0,no,no,0,0,0]
-        - mushroom (oyster): [20,141,0,no,no,4,0,0]
-        - mushroom (tremella): [15,33,0,no,no,2,0,0]
-        - peanut (fried): [5,17,0,no,processed,1,0,0]
-        - radish (daikon): [40,1005,0,no,no,0,0,0]
-        - strawberry (frozen): [80,800,0,no,processed,13,0,0]
-        - sugar (crystalline): [20,440,0,no,processed,4,0,0]
-        - tomato: [20,532,0,no,no,0,0,0]
-        - wax gourd: [23,1067,0,no,no,0,0,0]
+        - cabbage (chinese): [15,327,0,0,0,0,0,0,0]
+        - carrot: [30,625,0,0,0,0,0,0,0]
+        - corn: [20,716,0,0,0,0,4,0,0]
+        - cucumber (long): [20,605,0,0,0,0,0,0,0]
+        - false pakchoi: [8,203,0,0,0,0,0,0,0]
+        - kale: [8,177,0,0,0,0,0,0,0]
+        - mango: [30,1000,0,0,0,0,0,0,0]
+        - morning glory: [8,191,0,0,0,0,0,0,0]
+        - mushroom (oyster): [20,141,0,0,0,0,4,0,0]
+        - mushroom (tremella): [15,33,0,0,0,0,2,0,0]
+        - peanut (fried): [5,17,0,0,17,0,1,0,0]
+        - radish (daikon): [40,1005,0,0,0,0,0,0,0]
+        - strawberry (frozen): [80,800,0,0,800,0,13,0,0]
+        - sugar (crystalline): [20,440,0,0,440,0,4,0,0]
+        - tomato: [20,532,0,0,0,0,0,0,0]
+        - wax gourd: [23,1067,0,0,0,0,0,0,0]
 "2023-01-21":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [27,36000,0,n/a,no,0,0,0]
+        - water: [27,36000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - corn: [40,1432,0,no,no,8,0,0]
-        - banana: [30,1788,0,no,no,0,0,0]
-        - banana (fried): [10,143,0,no,processed,0,0,0]
-        - ginger (shredded): [10,102,0,no,no,3,0,0]
-        - khanom kheng: [0,284,0,no,no,0,0,0]
-        - oil (palm): [55,905,0,no,no,33,0,0]
-        - pineapple: [90,5430,0,no,no,0,0,0]
-        - potato (chips): [10,22,0,no,ultra,8,0,0]
-        - beansprout: [10,295,0,no,no,4,0,0]
+        - corn: [40,1432,0,0,0,0,8,0,0]
+        - banana: [30,1788,0,0,0,0,0,0,0]
+        - banana (fried): [10,143,0,0,143,0,0,0,0]
+        - ginger (shredded): [10,102,0,0,0,0,3,0,0]
+        - khanom kheng: [0,284,0,0,0,0,0,0,0]
+        - oil (palm): [55,905,0,0,905,0,33,0,0]
+        - pineapple: [90,5430,0,0,0,0,0,0,0]
+        - potato (chips): [10,22,0,0,0,22,8,0,0]
+        - beansprout: [10,295,0,0,0,0,4,0,0]
   - delivery:
       type: public
       km: 820
     types:
       - name: drink-solid
         items:
-        - tea (green): [300,900,0,no,processed,90,0,0]
+        - tea (green): [300,900,0,0,900,0,90,0,0]
   - delivery:
       type: public
       km: 460
     types:
       - name: drink-solid
         items:
-        - butterfly pea flower (dried): [149,500,0,no,no,5,0,0]
-        - sappan woord (dried): [75,100,0,no,no,5,0,0]
+        - butterfly pea flower (dried): [149,500,0,0,0,0,5,0,0]
+        - sappan woord (dried): [75,100,0,0,0,0,5,0,0]
 "2023-01-14":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [17,24000,0,n/a,no,0,0,0]
+        - water: [17,24000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - bamboo shoots (pickled): [20,411,0,no,processed,5,0,0]
-        - banana (fried): [20,238,0,no,processed,0,0,0]
-        - bitter gourd: [20,432,0,no,no,0,0,0]
-        - broccoli: [30,183,0,no,no,6,0,0]
-        - carrot: [15,341,0,no,no,0,0,0]
-        - corn: [20,836,0,no,no,4,0,0]
-        - corn (boiled): [10,449,0,no,no,0,0,0]
-        - false pakchoi: [10,203,0,no,no,0,0,0]
-        - kale: [20,632,0,no,no,12,0,0]
-        - khanom kluay: [20,347,0,no,no,0,0,0]
-        - khanom kluay (no filling): [20,152,0,no,no,0,0,0]
-        - pineapple: [40,2000,0,no,no,0,0,0]
-        - potato (sweet): [20,632,0,no,no,4,0,0]
-        - pumpkin: [30,313,0,no,no,8,0,0]
-        - radish (daikon): [30,644,0,no,no,0,0,0]
+        - bamboo shoots (pickled): [20,411,0,0,411,0,5,0,0]
+        - banana (fried): [20,238,0,0,238,0,0,0,0]
+        - bitter gourd: [20,432,0,0,0,0,0,0,0]
+        - broccoli: [30,183,0,0,0,0,6,0,0]
+        - carrot: [15,341,0,0,0,0,0,0,0]
+        - corn: [20,836,0,0,0,0,4,0,0]
+        - corn (boiled): [10,449,0,0,0,0,0,0,0]
+        - false pakchoi: [10,203,0,0,0,0,0,0,0]
+        - kale: [20,632,0,0,0,0,12,0,0]
+        - khanom kluay: [20,347,0,0,0,0,0,0,0]
+        - khanom kluay (no filling): [20,152,0,0,0,0,0,0,0]
+        - pineapple: [40,2000,0,0,0,0,0,0,0]
+        - potato (sweet): [20,632,0,0,0,0,4,0,0]
+        - pumpkin: [30,313,0,0,0,0,8,0,0]
+        - radish (daikon): [30,644,0,0,0,0,0,0,0]
       - name: nonedibles
         items:
-        - tape (3 inch x 40 yard): [20,n/a,0,n/a,n/a,1,0,0]
-        - steroid cream: [80,5,n/a,n/a,n/a,6,0,0]
+        - tape (3 inch x 40 yard): [20,n/a,0,n/a,n/a,n/a,1,0,0]
+        - steroid cream: [80,5,n/a,n/a,n/a,n/a,6,0,0]
   - delivery:
       type: public
       km: 94
     types:
       - name: drink-solid
         items:
-        - bael fruit (dried): [144,1500,0,no,no,21,0,0]
+        - bael fruit (dried): [144,1500,0,0,0,0,21,0,0]
 "2023-01-07":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - soda: [8,232,0,no,ultra,0,0,0]
-        - water: [16,24000,0,n/a,no,0,0,0]
+        - soda: [8,232,0,0,0,232,0,0,0]
+        - water: [16,24000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - bael fruit (dried): [40,129,0,no,no,4,0,0]
-        - lime: [20,1736,0,no,no,0,0,0]
+        - bael fruit (dried): [40,129,0,0,0,0,4,0,0]
+        - lime: [20,1736,0,0,0,0,0,0,0]
       - name: food
         items:
-        - agasta: [15,221,0,no,no,8,0,0]
-        - coriander and scallion: [10,73,0,no,no,0,0,0]
-        - banana: [40,2683,0,no,no,0,0,0]
-        - beer: [65,622,0,no,processed,0,0,417]
-        - bitter gourd: [30,559,0,no,no,0,0,0]
-        - cabbage (chinese): [17,362,0,no,no,0,0,0]
-        - carrot: [27,506,0,no,no,0,0,0]
-        - false pakchoi: [20,406,0,no,no,0,0,0]
-        - grass jelly: [20,1000,0,no,processed,4,0,0]
-        - kale: [10,163,0,no,no,12,0,0]
-        - mango: [20,5236,0,no,no,0,0,0]
-        - mushroom (straw): [30,158,0,no,no,0,0,0]
-        - peanut: [195,2500,0,no,no,25,0,0]
-        - radish (daikon): [40,895,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [10,72,0,no,processed,4,0,0]
-        - kiwi (frozen): [79,1000,0,no,processed,12,0,0]
-        - star gooseberry (in syrup): [20,229,0,no,no,2,0,0]
-        - tofu and beansprout: [30,733,0,no,no,0,0,0]
-        - wax gourd: [20,812,0,no,no,0,0,0]
+        - agasta: [15,221,0,0,0,0,8,0,0]
+        - coriander and scallion: [10,73,0,0,0,0,0,0,0]
+        - banana: [40,2683,0,0,0,0,0,0,0]
+        - beer: [65,622,0,0,622,0,0,0,417]
+        - bitter gourd: [30,559,0,0,0,0,0,0,0]
+        - cabbage (chinese): [17,362,0,0,0,0,0,0,0]
+        - carrot: [27,506,0,0,0,0,0,0,0]
+        - false pakchoi: [20,406,0,0,0,0,0,0,0]
+        - grass jelly: [20,1000,0,0,1000,0,4,0,0]
+        - kale: [10,163,0,0,0,0,12,0,0]
+        - mango: [20,5236,0,0,0,0,0,0,0]
+        - mushroom (straw): [30,158,0,0,0,0,0,0,0]
+        - peanut: [195,2500,0,0,0,0,25,0,0]
+        - radish (daikon): [40,895,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [10,72,0,0,72,0,4,0,0]
+        - kiwi (frozen): [79,1000,0,0,1000,0,12,0,0]
+        - star gooseberry (in syrup): [20,229,0,0,0,0,2,0,0]
+        - tofu and beansprout: [30,733,0,0,0,0,0,0,0]
+        - wax gourd: [20,812,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 49
     types:
       - name: drink-liquid
         items:
-        - water: [8,12000,0,n/a,no,0,0,0]
+        - water: [8,12000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - bael fruit (dried): [80,500,0,no,no,9,0,0]
-        - lemongrass and pandan (dried): [100,500,0,no,no,9,0,0]
+        - bael fruit (dried): [80,500,0,0,0,0,9,0,0]
+        - lemongrass and pandan (dried): [100,500,0,0,0,0,9,0,0]
 "2022-12-31":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - soda: [0,2787,0,no,ultra,81,0,0]
-        - water: [8,12000,0,n/a,no,0,0,0]
+        - soda: [0,2787,0,0,0,2787,81,0,0]
+        - water: [8,12000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - hibiscus leaves (dried): [25,49,0,no,no,5,0,0]
+        - hibiscus leaves (dried): [25,49,0,0,0,0,5,0,0]
       - name: food
         items:
-        - banana: [30,1154,0,no,no,0,0,0]
-        - banana (fried): [20,234,0,no,processed,0,0,0]
-        - bitter gourd: [30,433,0,no,no,0,0,0]
-        - carrot: [15,287,0,no,no,1,0,0]
-        - cauliflower: [15,180,0,no,no,4,0,0]
-        - corn: [20,667,0,no,no,5,0,0]
-        - frozen meal: [98,690,0,no,ultra,81,0,0]
-        - ginger (shredded): [10,155,0,no,no,3,0,0]
-        - kale: [50,585,0,no,no,12,0,0]
-        - khanom khao tom mud: [10,134,0,no,processed,0,0,0]
-        - morning glory: [10,155,0,no,no,4,0,0]
-        - mushroom (king oyster): [32,500,0,no,no,5,0,0]
-        - peanut: [0,80,0,no,ultra,7,0,0]
-        - pineapple: [60,2329,0,no,no,1,0,0]
-        - pumpkin: [20,820,0,no,no,1,0,0]
-        - radish (daikon): [40,923,0,no,no,0,0,0]
-        - strawberry (frozen): [79,800,0,no,processed,13,0,0]
+        - banana: [30,1154,0,0,0,0,0,0,0]
+        - banana (fried): [20,234,0,0,234,0,0,0,0]
+        - bitter gourd: [30,433,0,0,0,0,0,0,0]
+        - carrot: [15,287,0,0,0,0,1,0,0]
+        - cauliflower: [15,180,0,0,0,0,4,0,0]
+        - corn: [20,667,0,0,0,0,5,0,0]
+        - frozen meal: [98,690,0,0,0,690,81,0,0]
+        - ginger (shredded): [10,155,0,0,0,0,3,0,0]
+        - kale: [50,585,0,0,0,0,12,0,0]
+        - khanom khao tom mud: [10,134,0,0,134,0,0,0,0]
+        - morning glory: [10,155,0,0,0,0,4,0,0]
+        - mushroom (king oyster): [32,500,0,0,0,0,5,0,0]
+        - peanut: [0,80,0,0,0,80,7,0,0]
+        - pineapple: [60,2329,0,0,0,0,1,0,0]
+        - pumpkin: [20,820,0,0,0,0,1,0,0]
+        - radish (daikon): [40,923,0,0,0,0,0,0,0]
+        - strawberry (frozen): [79,800,0,0,800,0,13,0,0]
 "2022-12-24":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - soda: [12,384,0,no,ultra,0,0,0]
-        - water: [11,18000,0,n/a,no,0,0,0]
+        - soda: [12,384,0,0,0,384,0,0,0]
+        - water: [11,18000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - banana: [25,1275,0,no,no,0,0,0]
-        - beer: [185,1871,0,no,processed,0,0,1273]
-        - bitter gourd: [25,471,0,no,no,0,0,0]
-        - cabbage (chinese): [40,739,0,no,no,0,0,0]
-        - carrot: [20,352,0,no,no,0,0,0]
-        - ginger (shredded): [10,155,0,no,no,3,0,0]
-        - kale: [20,353,0,no,no,0,0,0]
-        - khanom khai hong: [10,92,0,no,processed,0,0,0]
-        - khanom khai nok krata: [10,60,0,no,processed,0,0,0]
-        - mushroom (wood ear): [40,512,0,no,no,0,0,0]
-        - pineapple: [60,2329,0,no,no,1,0,0]
-        - radish (daikon): [40,789,0,no,no,0,0,0]
-        - strawberry (frozen): [79,800,0,no,processed,13,0,0]
-        - wax gourd: [30,904,0,no,no,0,0,0]
+        - banana: [25,1275,0,0,0,0,0,0,0]
+        - beer: [185,1871,0,0,1871,0,0,0,1273]
+        - bitter gourd: [25,471,0,0,0,0,0,0,0]
+        - cabbage (chinese): [40,739,0,0,0,0,0,0,0]
+        - carrot: [20,352,0,0,0,0,0,0,0]
+        - ginger (shredded): [10,155,0,0,0,0,3,0,0]
+        - kale: [20,353,0,0,0,0,0,0,0]
+        - khanom khai hong: [10,92,0,0,92,0,0,0,0]
+        - khanom khai nok krata: [10,60,0,0,60,0,0,0,0]
+        - mushroom (wood ear): [40,512,0,0,0,0,0,0,0]
+        - pineapple: [60,2329,0,0,0,0,1,0,0]
+        - radish (daikon): [40,789,0,0,0,0,0,0,0]
+        - strawberry (frozen): [79,800,0,0,800,0,13,0,0]
+        - wax gourd: [30,904,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 46
     types:
       - name: nonedibles
         items:
-        - bar soap (savon de marseille): [129,300,0,n/a,n/a,6,0,0]
+        - bar soap (savon de marseille): [129,300,0,n/a,n/a,n/a,6,0,0]
 "2022-12-17":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - soda: [12,384,0,no,ultra,0,0,0]
-        - water: [44,60000,0,n/a,no,0,0,0]
+        - soda: [12,384,0,0,0,384,0,0,0]
+        - water: [44,60000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - banana: [75,3303,0,no,no,0,0,0]
-        - banana (fried): [20,242,0,no,processed,0,0,0]
-        - bitter gourd: [45,789,0,no,no,0,0,0]
-        - cabbage (chinese): [10,236,0,no,no,0,0,0]
-        - cabbage (pickled): [20,663,0,no,processed,0,4,0]
-        - carrot: [20,886,0,no,no,7,0,0]
-        - ginger (shredded): [10,155,0,no,no,3,0,0]
-        - melon (sunlady): [35,1098,0,no,no,1,0,0]
-        - kale: [20,253,0,no,no,0,0,0]
-        - khanom khao tom mud: [20,268,0,no,processed,0,0,0]
-        - morning glory: [15,196,0,no,no,0,0,0]
-        - muskmelon: [30,983,0,no,no,0,0,0]
-        - peanut (boiled): [10,68,0,no,processed,0,0,0]
-        - pineapple: [35,1050,0,no,no,1,0,0]
-        - potato (sweet): [50,1703,0,no,no,3,0,0]
-        - radish (daikon): [25,513,0,no,no,0,0,0]
-        - shave ice: [20,420,0,no,processed,0,0,0]
-        - wax gourd: [20,846,0,no,no,0,0,0]
+        - banana: [75,3303,0,0,0,0,0,0,0]
+        - banana (fried): [20,242,0,0,242,0,0,0,0]
+        - bitter gourd: [45,789,0,0,0,0,0,0,0]
+        - cabbage (chinese): [10,236,0,0,0,0,0,0,0]
+        - cabbage (pickled): [20,663,0,0,663,0,0,4,0]
+        - carrot: [20,886,0,0,0,0,7,0,0]
+        - ginger (shredded): [10,155,0,0,0,0,3,0,0]
+        - melon (sunlady): [35,1098,0,0,0,0,1,0,0]
+        - kale: [20,253,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [20,268,0,0,268,0,0,0,0]
+        - morning glory: [15,196,0,0,0,0,0,0,0]
+        - muskmelon: [30,983,0,0,0,0,0,0,0]
+        - peanut (boiled): [10,68,0,0,68,0,0,0,0]
+        - pineapple: [35,1050,0,0,0,0,1,0,0]
+        - potato (sweet): [50,1703,0,0,0,0,3,0,0]
+        - radish (daikon): [25,513,0,0,0,0,0,0,0]
+        - shave ice: [20,420,0,0,420,0,0,0,0]
+        - wax gourd: [20,846,0,0,0,0,0,0,0]
 "2022-12-10":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [16,24000,0,n/a,no,0,0,0]
+        - water: [16,24000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - banana: [60,2954,0,no,no,0,0,0]
-        - bitter gourd: [30,585,0,no,no,0,0,0]
-        - cabbage (chinese): [25,484,0,no,no,0,0,0]
-        - guava: [22,900,0,no,no,0,0,0]
-        - kale: [28,481,0,no,no,8,0,0]
-        - khanom khao tom mud: [30,395,0,no,processed,0,0,0]
-        - mango: [40,2150,0,no,no,8,0,0]
-        - morning glory: [10,191,0,no,no,0,0,0]
-        - mushroom (king oyster): [30,500,0,no,no,4,0,0]
-        - pak choi: [15,151,0,no,no,3,0,0]
-        - potato: [25,392,0,no,no,0,0,0]
-        - pumpkin: [30,880,0,no,no,0,0,0]
-        - radish (daikon): [30,766,0,no,no,0,0,0]
+        - banana: [60,2954,0,0,0,0,0,0,0]
+        - bitter gourd: [30,585,0,0,0,0,0,0,0]
+        - cabbage (chinese): [25,484,0,0,0,0,0,0,0]
+        - guava: [22,900,0,0,0,0,0,0,0]
+        - kale: [28,481,0,0,0,0,8,0,0]
+        - khanom khao tom mud: [30,395,0,0,395,0,0,0,0]
+        - mango: [40,2150,0,0,0,0,8,0,0]
+        - morning glory: [10,191,0,0,0,0,0,0,0]
+        - mushroom (king oyster): [30,500,0,0,0,0,4,0,0]
+        - pak choi: [15,151,0,0,0,0,3,0,0]
+        - potato: [25,392,0,0,0,0,0,0,0]
+        - pumpkin: [30,880,0,0,0,0,0,0,0]
+        - radish (daikon): [30,766,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 37
     types:
       - name: food
         items:
-        - peanut: [143,2000,0,no,no,20,0,0]
+        - peanut: [143,2000,0,0,0,0,20,0,0]
 "2022-12-03":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - beer: [65,622,0,no,processed,0,0,417]
-        - water: [8,12000,0,n/a,no,0,0,0]
+        - beer: [65,622,0,0,622,0,0,0,417]
+        - water: [8,12000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - banana: [60,2861,0,no,no,0,0,0]
-        - broccoli: [25,376,0,no,no,0,0,0]
-        - carrot: [20,511,0,no,no,0,0,0]
-        - cucumber: [10,564,0,no,no,0,0,0]
-        - ginger (shredded): [10,160,0,no,no,3,0,0]
-        - kale: [20,442,0,no,no,0,0,0]
-        - khanom khai nok krata: [20,121,0,no,processed,0,0,0]
-        - mango (turmeric): [8,428,0,no,no,1,0,0]
-        - morning glory: [20,435,0,no,no,0,0,0]
-        - mushroom (king oyster): [20,231,0,no,no,4,0,0]
-        - potato (sweet): [20,812,0,no,no,3,0,0]
-        - pumpkin: [25,541,0,no,no,0,0,0]
-        - radish (daikon): [20,569,0,no,no,0,0,0]
-        - syrup (hale's blue boy): [68,931,0,no,ultra,0,0,419]
-        - tomato: [10,251,0,no,no,0,0,0]
-        - wax gourd: [20,834,0,no,no,0,0,0]
+        - banana: [60,2861,0,0,0,0,0,0,0]
+        - broccoli: [25,376,0,0,0,0,0,0,0]
+        - carrot: [20,511,0,0,0,0,0,0,0]
+        - cucumber: [10,564,0,0,0,0,0,0,0]
+        - ginger (shredded): [10,160,0,0,0,0,3,0,0]
+        - kale: [20,442,0,0,0,0,0,0,0]
+        - khanom khai nok krata: [20,121,0,0,121,0,0,0,0]
+        - mango (turmeric): [8,428,0,0,0,0,1,0,0]
+        - morning glory: [20,435,0,0,0,0,0,0,0]
+        - mushroom (king oyster): [20,231,0,0,0,0,4,0,0]
+        - potato (sweet): [20,812,0,0,0,0,3,0,0]
+        - pumpkin: [25,541,0,0,0,0,0,0,0]
+        - radish (daikon): [20,569,0,0,0,0,0,0,0]
+        - syrup (hale's blue boy): [68,931,0,0,0,931,0,0,419]
+        - tomato: [10,251,0,0,0,0,0,0,0]
+        - wax gourd: [20,834,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 820
     types:
       - name: drink-solid
         items:
-        - tea (green): [150,450,0,no,processed,45,0,0]
+        - tea (green): [150,450,0,0,450,0,45,0,0]
   - delivery:
       type: public
       km: 45
     types:
       - name: food
         items:
-        - peanut (fried): [55,500,0,no,processed,5,0,0]
+        - peanut (fried): [55,500,0,0,500,0,5,0,0]
   - delivery:
       type: public
       km: 45
     types:
       - name: food
         items:
-        - flaxseed (brown): [205,900,0,yes,no,12,0,0]
+        - flaxseed (brown): [205,900,0,900,0,0,12,0,0]
   - delivery:
       type: public
       km: 424
     types:
       - name: other-edibles
         items:
-        - pea (protein powder): [249,908,0,no,processed,25,0,0]
+        - pea (protein powder): [249,908,0,0,908,0,25,0,0]
 "2022-11-26":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - soda: [12,384,0,no,ultra,0,0,0]
-        - water: [16,24000,0,n/a,no,0,0,0]
+        - soda: [12,384,0,0,0,384,0,0,0]
+        - water: [16,24000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - lime: [30,1353,0,no,no,0,0,0]
+        - lime: [30,1353,0,0,0,0,0,0,0]
       - name: food
         items:
-        - oil (palm): [50,905,0,no,no,33,0,0]
-        - papaya: [90,3600,0,no,no,0,0,0]
-        - peanut: [120,1500,0,no,no,15,0,0]
-        - potato (sweet): [20,812,0,no,no,3,0,0]
+        - oil (palm): [50,905,0,0,905,0,33,0,0]
+        - papaya: [90,3600,0,0,0,0,0,0,0]
+        - peanut: [120,1500,0,0,0,0,15,0,0]
+        - potato (sweet): [20,812,0,0,0,0,3,0,0]
 "2022-11-19":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - soda: [12,384,0,no,ultra,0,0,0]
-        - water: [19,24000,0,n/a,no,0,0,0]
+        - soda: [12,384,0,0,0,384,0,0,0]
+        - water: [19,24000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - lime: [40,515,0,no,no,0,0,0]
+        - lime: [40,515,0,0,0,0,0,0,0]
       - name: food
         items:
-        - bamboo shoots (boiled): [20,311,0,no,processed,4,0,0]
-        - banana: [25,1234,0,no,no,0,0,0]
-        - banana (fried): [20,260,0,no,processed,0,0,0]
-        - bitter gourd: [15,327,0,no,no,0,0,0]
-        - cabbage (chinese): [20,395,0,no,no,0,0,0]
-        - carrot: [42,760,0,no,no,1,0,0]
-        - corn: [20,643,0,no,no,8,0,0]
-        - cucumber: [15,328,0,no,no,0,0,0]
-        - false pakchoi: [10,170,0,no,no,0,0,0]
-        - ginger (shredded): [10,182,0,no,no,3,0,0]
-        - guava: [20,890,0,no,no,3,0,0]
-        - kale: [30,525,0,no,no,0,0,0]
-        - khanom babin: [0,308,0,no,processed,0,10,0]
-        - khanom khao tom mud: [40,436,0,no,processed,0,0,0]
-        - mango: [40,579,0,no,no,0,0,0]
-        - pineapple: [64,4695,0,no,no,1,0,0]
-        - potato (sweet): [20,599,0,no,no,3,0,0]
-        - radish (daikon): [20,489,0,no,no,0,0,0]
-        - tomato: [8,164,0,no,no,0,0,0]
-        - wax gourd: [15,716,0,no,no,0,0,0]
+        - bamboo shoots (boiled): [20,311,0,0,311,0,4,0,0]
+        - banana: [25,1234,0,0,0,0,0,0,0]
+        - banana (fried): [20,260,0,0,260,0,0,0,0]
+        - bitter gourd: [15,327,0,0,0,0,0,0,0]
+        - cabbage (chinese): [20,395,0,0,0,0,0,0,0]
+        - carrot: [42,760,0,0,0,0,1,0,0]
+        - corn: [20,643,0,0,0,0,8,0,0]
+        - cucumber: [15,328,0,0,0,0,0,0,0]
+        - false pakchoi: [10,170,0,0,0,0,0,0,0]
+        - ginger (shredded): [10,182,0,0,0,0,3,0,0]
+        - guava: [20,890,0,0,0,0,3,0,0]
+        - kale: [30,525,0,0,0,0,0,0,0]
+        - khanom babin: [0,308,0,0,308,0,0,10,0]
+        - khanom khao tom mud: [40,436,0,0,436,0,0,0,0]
+        - mango: [40,579,0,0,0,0,0,0,0]
+        - pineapple: [64,4695,0,0,0,0,1,0,0]
+        - potato (sweet): [20,599,0,0,0,0,3,0,0]
+        - radish (daikon): [20,489,0,0,0,0,0,0,0]
+        - tomato: [8,164,0,0,0,0,0,0,0]
+        - wax gourd: [15,716,0,0,0,0,0,0,0]
 "2022-11-12":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [23,30000,0,n/a,no,0,0,0]
+        - water: [23,30000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - lime: [10,197,0,no,no,0,0,0]
+        - lime: [10,197,0,0,0,0,0,0,0]
       - name: food
         items:
-        - banana: [85,3712,0,no,no,0,0,0]
-        - banana (fried): [20,196,0,no,processed,0,0,0]
-        - bitter gourd: [25,584,0,no,no,0,0,0]
-        - cabbage (chinese): [20,450,0,no,no,0,0,0]
-        - carrot: [45,834,0,no,no,1,0,0]
-        - cucumber: [15,372,0,no,no,0,0,0]
-        - false pakchoi: [10,178,0,no,no,0,0,0]
-        - grava: [20,427,0,no,no,1,0,0]
-        - pineapple: [35,1042,0,no,no,0,0,0]
-        - kale: [10,175,0,no,no,0,0,0]
-        - khanom khao tom mud: [30,402,0,no,processed,0,0,0]
-        - potato (boiled): [20,374,0,no,processed,0,0,0]
-        - potato (fried): [10,167,0,no,processed,0,0,0]
-        - potato (sweet): [20,812,0,no,no,2,0,0]
-        - radish (daikon): [25,674,0,no,no,0,0,0]
-        - tomato: [15,327,0,no,no,0,0,0]
+        - banana: [85,3712,0,0,0,0,0,0,0]
+        - banana (fried): [20,196,0,0,196,0,0,0,0]
+        - bitter gourd: [25,584,0,0,0,0,0,0,0]
+        - cabbage (chinese): [20,450,0,0,0,0,0,0,0]
+        - carrot: [45,834,0,0,0,0,1,0,0]
+        - cucumber: [15,372,0,0,0,0,0,0,0]
+        - false pakchoi: [10,178,0,0,0,0,0,0,0]
+        - grava: [20,427,0,0,0,0,1,0,0]
+        - pineapple: [35,1042,0,0,0,0,0,0,0]
+        - kale: [10,175,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [30,402,0,0,402,0,0,0,0]
+        - potato (boiled): [20,374,0,0,374,0,0,0,0]
+        - potato (fried): [10,167,0,0,167,0,0,0,0]
+        - potato (sweet): [20,812,0,0,0,0,2,0,0]
+        - radish (daikon): [25,674,0,0,0,0,0,0,0]
+        - tomato: [15,327,0,0,0,0,0,0,0]
 "2022-11-05":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [16,24000,0,n/a,no,0,0,0]
-        - soda: [12,384,0,no,ultra,0,0,0]
+        - water: [16,24000,0,n/a,0,0,0,0,0]
+        - soda: [12,384,0,0,0,384,0,0,0]
       - name: food
         items:
-        - agasta: [10,178,0,no,no,0,0,0]
-        - banana (syrup, coconut milk): [10,189,0,no,processed,6,0,0]
-        - bitter gourd: [25,575,0,no,no,0,0,0]
-        - cabbage (chinese): [30,539,0,no,no,0,0,0]
-        - carrot: [20,483,0,no,no,1,0,0]
-        - corn: [20,667,0,no,no,5,0,0]
-        - corn (boiled): [10,449,0,no,processed,0,0,0]
-        - cucumber: [10,231,0,no,no,0,0,0]
-        - false pakchoi: [20,356,0,no,no,0,0,0]
-        - guava: [35,1000,0,no,no,0,0,0]
-        - kale: [20,351,0,no,no,0,0,0]
-        - khanom khao tom mud: [30,402,0,no,processed,0,0,0]
-        - khanom tom: [0,202,0,no,processed,7,0,0]
-        - khanom mansampalang: [0,236,0,no,processed,7,0,0]
-        - muskmelon: [30,1191,0,no,no,0,0,0]
-        - papaya: [40,752,0,no,no,3,0,0]
-        - peanut: [80,1000,0,no,no,10,0,0]
-        - pineapple: [70,2508,0,no,no,0,0,0]
-        - potato (sweet): [10,469,0,no,no,1,0,0]
-        - potato (boiled): [20,452,0,no,processed,0,0,0]
-        - pumpkin: [20,485,0,no,no,0,0,0]
-        - radish (daikon): [10,341,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [5,36,0,no,processed,2,0,0]
-        - wax gourd: [20,1037,0,no,no,0,0,0]
+        - agasta: [10,178,0,0,0,0,0,0,0]
+        - banana (syrup, coconut milk): [10,189,0,0,189,0,6,0,0]
+        - bitter gourd: [25,575,0,0,0,0,0,0,0]
+        - cabbage (chinese): [30,539,0,0,0,0,0,0,0]
+        - carrot: [20,483,0,0,0,0,1,0,0]
+        - corn: [20,667,0,0,0,0,5,0,0]
+        - corn (boiled): [10,449,0,0,449,0,0,0,0]
+        - cucumber: [10,231,0,0,0,0,0,0,0]
+        - false pakchoi: [20,356,0,0,0,0,0,0,0]
+        - guava: [35,1000,0,0,0,0,0,0,0]
+        - kale: [20,351,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [30,402,0,0,402,0,0,0,0]
+        - khanom tom: [0,202,0,0,202,0,7,0,0]
+        - khanom mansampalang: [0,236,0,0,236,0,7,0,0]
+        - muskmelon: [30,1191,0,0,0,0,0,0,0]
+        - papaya: [40,752,0,0,0,0,3,0,0]
+        - peanut: [80,1000,0,0,0,0,10,0,0]
+        - pineapple: [70,2508,0,0,0,0,0,0,0]
+        - potato (sweet): [10,469,0,0,0,0,1,0,0]
+        - potato (boiled): [20,452,0,0,452,0,0,0,0]
+        - pumpkin: [20,485,0,0,0,0,0,0,0]
+        - radish (daikon): [10,341,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [5,36,0,0,36,0,2,0,0]
+        - wax gourd: [20,1037,0,0,0,0,0,0,0]
       - name: other-edibles
         items:
-        - baking soda: [32,1000,0,no,n/a,10,0,0]
+        - baking soda: [32,1000,0,0,n/a,n/a,10,0,0]
   - delivery:
       type: public
       km: 34
     types:
       - name: food
         items:
-        - sesame (black): [112,1000,0,no,no,10,0,0]
+        - sesame (black): [112,1000,0,0,0,0,10,0,0]
   - delivery:
       type: public
       km: 21
     types:
       - name: food
         items:
-        - rice (brown): [862,40000,0,no,no,328,0,0]
+        - rice (brown): [862,40000,0,0,0,0,328,0,0]
 "2022-10-29":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - bamboo shoots (pickled): [20,780,0,no,processed,4,0,0]
-        - banana (fried): [40,439,0,no,processed,0,0,0]
-        - broccoli: [25,380,0,no,no,0,0,0]
-        - carrot: [30,687,0,no,no,1,0,0]
-        - corn (boiled): [10,449,0,no,processed,0,0,0]
-        - false pakchoi: [10,191,0,no,no,0,0,0]
-        - kale: [20,366,0,no,no,0,0,0]
-        - khanom khao tom mud: [20,268,0,no,processed,0,0,0]
-        - khanom tao tud: [5,37,0,no,processed,1,0,0]
-        - mushroom (shimeji): [15,131,0,no,no,9,0,0]
-        - peanut: [120,2000,0,no,no,20,0,0]
-        - pineapple: [60,2176,0,no,no,0,0,0]
-        - potato: [10,182,0,no,no,0,0,0]
-        - potato (boiled): [10,226,0,no,processed,0,0,0]
-        - radish (daikon): [20,622,0,no,no,0,0,0]
-        - rice (jasmine): [158,4000,0,no,no,44,0,0]
-        - rice (sweet crispy cracker): [35,243,0,no,processed,14,0,0]
-        - water convolvulus: [10,200,0,no,no,0,0,0]
+        - bamboo shoots (pickled): [20,780,0,0,780,0,4,0,0]
+        - banana (fried): [40,439,0,0,439,0,0,0,0]
+        - broccoli: [25,380,0,0,0,0,0,0,0]
+        - carrot: [30,687,0,0,0,0,1,0,0]
+        - corn (boiled): [10,449,0,0,449,0,0,0,0]
+        - false pakchoi: [10,191,0,0,0,0,0,0,0]
+        - kale: [20,366,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [20,268,0,0,268,0,0,0,0]
+        - khanom tao tud: [5,37,0,0,37,0,1,0,0]
+        - mushroom (shimeji): [15,131,0,0,0,0,9,0,0]
+        - peanut: [120,2000,0,0,0,0,20,0,0]
+        - pineapple: [60,2176,0,0,0,0,0,0,0]
+        - potato: [10,182,0,0,0,0,0,0,0]
+        - potato (boiled): [10,226,0,0,226,0,0,0,0]
+        - radish (daikon): [20,622,0,0,0,0,0,0,0]
+        - rice (jasmine): [158,4000,0,0,0,0,44,0,0]
+        - rice (sweet crispy cracker): [35,243,0,0,243,0,14,0,0]
+        - water convolvulus: [10,200,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [16,22000,0,n/a,no,0,0,0]
+        - water: [16,22000,0,n/a,0,0,0,0,0]
   - delivery:
       type: public
       km: 22
     types:
       - name: food
         items:
-        - coconut (nata de coco): [40,5000,0,no,ultra,75,0,0]
+        - coconut (nata de coco): [40,5000,0,0,0,5000,75,0,0]
   - delivery:
       type: public
       km: 96
     types:
       - name: food
         items:
-        - broken rice (riceberry): [168,8000,0,no,no,32,0,0]
+        - broken rice (riceberry): [168,8000,0,0,0,0,32,0,0]
 "2022-10-22":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [60,2593,0,no,no,0,0,0]
-        - banana (fried): [20,291,0,no,processed,0,0,0]
-        - beans (green): [90,1500,0,no,no,12,0,0]
-        - beans (kidney): [35,500,0,no,no,4,0,0]
-        - bitter gourd: [25,365,0,no,no,0,0,0]
-        - cabbage (chinese): [35,557,0,no,no,0,0,0]
-        - cabbage (pickled): [20,700,0,no,processed,0,4,0]
-        - false pakchoi: [10,191,0,no,no,0,0,0]
-        - guava: [50,3420,0,no,no,0,0,0]
-        - kale: [10,183,0,no,no,0,0,0]
-        - khanom khao tom mud: [20,290,0,no,processed,0,0,0]
-        - morning glory: [10,142,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [10,76,0,no,processed,4,0,0]
-        - syrup (hale's blue boy): [63,931,0,no,ultra,0,0,419]
-        - tomato: [10,269,0,no,no,0,0,0]
-        - vegetables mixed: [50,1035,0,no,no,1,0,0]
+        - banana: [60,2593,0,0,0,0,0,0,0]
+        - banana (fried): [20,291,0,0,291,0,0,0,0]
+        - beans (green): [90,1500,0,0,0,0,12,0,0]
+        - beans (kidney): [35,500,0,0,0,0,4,0,0]
+        - bitter gourd: [25,365,0,0,0,0,0,0,0]
+        - cabbage (chinese): [35,557,0,0,0,0,0,0,0]
+        - cabbage (pickled): [20,700,0,0,700,0,0,4,0]
+        - false pakchoi: [10,191,0,0,0,0,0,0,0]
+        - guava: [50,3420,0,0,0,0,0,0,0]
+        - kale: [10,183,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [20,290,0,0,290,0,0,0,0]
+        - morning glory: [10,142,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [10,76,0,0,76,0,4,0,0]
+        - syrup (hale's blue boy): [63,931,0,0,0,931,0,0,419]
+        - tomato: [10,269,0,0,0,0,0,0,0]
+        - vegetables mixed: [50,1035,0,0,0,0,1,0,0]
       - name: drink-liquid
         items:
-        - water: [62,76000,0,n/a,no,0,0,0]
+        - water: [62,76000,0,n/a,0,0,0,0,0]
   - delivery:
       type: public
       km: 61
     types:
       - name: other-edibles
         items:
-        - baking soda: [39,1000,0,no,n/a,16,0,0]
+        - baking soda: [39,1000,0,0,n/a,n/a,16,0,0]
   - delivery:
       type: public
       km: 35
     types:
       - name: food
         items:
-        - instant noodle: [49,496,0,no,ultra,11,0,0]
+        - instant noodle: [49,496,0,0,0,496,11,0,0]
 "2022-10-15":
   - delivery:
       type: no fuel
     types:
       - name: drink-solid
         items:
-        - lime: [40,942,0,no,no,0,0,0]
+        - lime: [40,942,0,0,0,0,0,0,0]
       - name: food
         items:
-        - bamboo shoots (boiled): [20,356,0,no,processed,0,0,0]
-        - banana: [55,2712,0,no,no,0,0,0]
-        - banana (fried): [10,155,0,no,processed,0,0,0]
-        - bitter gourd: [20,546,0,no,no,0,0,0]
-        - cabbage (chinese): [20,410,0,no,no,0,0,0]
-        - false pakchoi: [30,468,0,no,no,0,0,0]
-        - guava: [30,640,0,no,no,0,0,0]
-        - jelly: [5,125,0,no,ultra,5,0,0]
-        - khanom kluay: [10,201,0,no,processed,0,0,0]
-        - khanom krayasart: [20,131,0,no,processed,2,0,0]
-        - mushroom (king oyster): [20,213,0,no,no,0,0,0]
-        - pineapple: [50,2510,0,no,no,0,0,0]
-        - potato (boiled): [20,413,0,no,processed,0,0,0]
-        - pumpkin: [20,557,0,no,no,0,0,0]
-        - wax gourd: [20,1048,0,no,no,0,0,0]
+        - bamboo shoots (boiled): [20,356,0,0,356,0,0,0,0]
+        - banana: [55,2712,0,0,0,0,0,0,0]
+        - banana (fried): [10,155,0,0,155,0,0,0,0]
+        - bitter gourd: [20,546,0,0,0,0,0,0,0]
+        - cabbage (chinese): [20,410,0,0,0,0,0,0,0]
+        - false pakchoi: [30,468,0,0,0,0,0,0,0]
+        - guava: [30,640,0,0,0,0,0,0,0]
+        - jelly: [5,125,0,0,0,125,5,0,0]
+        - khanom kluay: [10,201,0,0,201,0,0,0,0]
+        - khanom krayasart: [20,131,0,0,131,0,2,0,0]
+        - mushroom (king oyster): [20,213,0,0,0,0,0,0,0]
+        - pineapple: [50,2510,0,0,0,0,0,0,0]
+        - potato (boiled): [20,413,0,0,413,0,0,0,0]
+        - pumpkin: [20,557,0,0,0,0,0,0,0]
+        - wax gourd: [20,1048,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 22
     types:
       - name: food
         items:
-        - coconut (nata de coco): [27,3000,0,no,ultra,45,0,0]
+        - coconut (nata de coco): [27,3000,0,0,0,3000,45,0,0]
 "2022-10-08":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [75,3337,0,no,no,0,0,0]
-        - bitter gourd: [20,461,0,no,no,0,0,0]
-        - carrot: [20,351,0,no,no,1,0,0]
-        - cucumber: [16,354,0,no,no,0,0,0]
-        - dragon fruit: [55,1580,0,no,no,0,0,0]
-        - false pakchoi: [10,116,0,no,no,0,0,0]
-        - guava: [31,652,0,no,no,6,1,0]
-        - kale: [20,312,0,no,no,0,0,0]
-        - khanom khai nok krata: [20,126,0,no,processed,0,0,0]
-        - morning glory: [10,492,0,no,no,0,0,0]
-        - orange peels (dried): [5,50,0,no,processed,1,0,0]
-        - potato (boiled): [20,413,0,no,processed,0,0,0]
-        - pumpkin: [20,469,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [35,268,0,no,processed,12,0,0]
-        - wax gourd: [25,1378,0,no,no,0,0,0]
+        - banana: [75,3337,0,0,0,0,0,0,0]
+        - bitter gourd: [20,461,0,0,0,0,0,0,0]
+        - carrot: [20,351,0,0,0,0,1,0,0]
+        - cucumber: [16,354,0,0,0,0,0,0,0]
+        - dragon fruit: [55,1580,0,0,0,0,0,0,0]
+        - false pakchoi: [10,116,0,0,0,0,0,0,0]
+        - guava: [31,652,0,0,0,0,6,1,0]
+        - kale: [20,312,0,0,0,0,0,0,0]
+        - khanom khai nok krata: [20,126,0,0,126,0,0,0,0]
+        - morning glory: [10,492,0,0,0,0,0,0,0]
+        - orange peels (dried): [5,50,0,0,50,0,1,0,0]
+        - potato (boiled): [20,413,0,0,413,0,0,0,0]
+        - pumpkin: [20,469,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [35,268,0,0,268,0,12,0,0]
+        - wax gourd: [25,1378,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 40
     types:
       - name: food
         items:
-        - rice: [3,600,0,no,no,12,0,0]
+        - rice: [3,600,0,0,0,0,12,0,0]
   - delivery:
       type: public
       km: 26
     types:
       - name: food
         items:
-        - bread: [40,417,0,no,processed,4,0,0]
+        - bread: [40,417,0,0,417,0,4,0,0]
 "2022-10-01":
   - delivery:
       type: private
@@ -693,198 +694,198 @@
     types:
       - name: food
         items:
-        - agasta: [5,72,0,no,no,0,0,0]
-        - bamboo shoots (boiled): [24,414,0,no,processed,0,0,0]
-        - bitter gourd: [25,506,0,no,no,0,0,0]
-        - bread: [25,250,0,no,ultra,5,0,0]
-        - broccoli: [45,492,0,no,no,0,0,0]
-        - cabbage (chinese): [15,248,0,no,no,0,0,0]
-        - carrot: [30,580,0,no,no,0,0,0]
-        - cucumber: [10,203,0,no,no,0,0,0]
-        - curry (ginger, mushroom, tofu): [40,261,0,no,processed,0,0,0]
-        - false pakchoi: [10,159,0,no,no,0,0,0]
-        - guava: [36,720,0,no,no,4,2,0]
-        - kale: [20,330,0,no,no,0,0,0]
-        - khanom tarn: [35,220,0,no,processed,0,0,0]
-        - muskmelon: [30,1083,0,no,no,0,0,0]
-        - pineapple: [30,912,0,no,no,0,0,0]
-        - radish (daikon): [20,392,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [10,74,0,no,processed,4,0,0]
-        - tofu (fried): [20,145,0,no,processed,0,0,0]
+        - agasta: [5,72,0,0,0,0,0,0,0]
+        - bamboo shoots (boiled): [24,414,0,0,414,0,0,0,0]
+        - bitter gourd: [25,506,0,0,0,0,0,0,0]
+        - bread: [25,250,0,0,0,250,5,0,0]
+        - broccoli: [45,492,0,0,0,0,0,0,0]
+        - cabbage (chinese): [15,248,0,0,0,0,0,0,0]
+        - carrot: [30,580,0,0,0,0,0,0,0]
+        - cucumber: [10,203,0,0,0,0,0,0,0]
+        - curry (ginger, mushroom, tofu): [40,261,0,0,261,0,0,0,0]
+        - false pakchoi: [10,159,0,0,0,0,0,0,0]
+        - guava: [36,720,0,0,0,0,4,2,0]
+        - kale: [20,330,0,0,0,0,0,0,0]
+        - khanom tarn: [35,220,0,0,220,0,0,0,0]
+        - muskmelon: [30,1083,0,0,0,0,0,0,0]
+        - pineapple: [30,912,0,0,0,0,0,0,0]
+        - radish (daikon): [20,392,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [10,74,0,0,74,0,4,0,0]
+        - tofu (fried): [20,145,0,0,145,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [24,30000,0,n/a,no,0,0,0]
+        - water: [24,30000,0,n/a,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [20,1070,0,no,no,0,0,0]
-        - bread: [22,250,0,no,ultra,5,0,0]
-        - peanut (boiled): [20,135,0,no,processed,0,0,0]
-        - shave ice: [20,407,0,no,ultra,0,0,0]
-        - shave ice: [20,420,0,no,processed,0,0,0]
+        - banana: [20,1070,0,0,0,0,0,0,0]
+        - bread: [22,250,0,0,0,250,5,0,0]
+        - peanut (boiled): [20,135,0,0,135,0,0,0,0]
+        - shave ice: [20,407,0,0,0,407,0,0,0]
+        - shave ice: [20,420,0,0,420,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [18,24000,0,n/a,no,0,0,0]
+        - water: [18,24000,0,n/a,0,0,0,0,0]
   - delivery:
       type: public
       km: 26
     types:
       - name: food
         items:
-        - bread: [40,417,0,no,processed,4,0,0]
+        - bread: [40,417,0,0,417,0,4,0,0]
   - delivery:
       type: public
       km: 30
     types:
       - name: food
         items:
-        - yam (glass): [45,200,0,no,processed,0,0,144] # alu 11
-        - yam (plastic): [135,1000,0,no,processed,42,0,0]
+        - yam (glass): [45,200,0,0,200,0,0,0,144] # alu 11
+        - yam (plastic): [135,1000,0,0,1000,0,42,0,0]
   - delivery:
       type: public
       km: 41
     types:
       - name: nonedibles
         items:
-        - razor blade (100): [139,n/a,0,n/a,n/a,1,3,0]
+        - razor blade (100): [139,n/a,0,n/a,n/a,n/a,1,3,0]
 "2022-09-24":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - bamboo shoots (boiled): [20,317,0,no,processed,0,0,0]
-        - banana: [100,4171,0,no,no,0,0,0]
-        - banana (fried): [30,326,0,no,processed,0,0,0]
-        - bread: [50,500,0,no,ultra,10,0,0]
-        - bun (black bean): [10,90,0,no,processed,0,1,0]
-        - bun (vetagables): [19,102,0,no,ultra,0,1,0]
-        - cabbage (chinese): [28,426,0,no,no,0,0,0]
-        - carrot: [10,225,0,no,no,0,0,0]
-        - false pakchoi: [10,334,0,no,no,0,0,0]
-        - morning glory: [10,143,0,no,no,0,0,0]
-        - mushroom (shiitake): [20,85,0,no,no,0,0,0]
-        - parsley: [5,30,0,no,no,0,0,0]
-        - peanut (boiled): [30,223,0,no,processed,0,0,0]
-        - pineapple: [80,3030,0,no,no,0,0,0]
-        - potato: [55,1072,0,no,no,0,0,0]
-        - radish (daikon): [18,449,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [15,200,0,no,processed,7,0,0]
-        - stir fried (angled gourd with mushroom): [40,392,0,no,processed,0,0,0]
-        - tomato: [10,230,0,no,no,0,0,0]
-        - yakisoba: [40,319,0,no,processed,0,0,0]
-        - yam: [37,250,0,no,ultra,0,0,113] # aluminium 7
+        - bamboo shoots (boiled): [20,317,0,0,317,0,0,0,0]
+        - banana: [100,4171,0,0,0,0,0,0,0]
+        - banana (fried): [30,326,0,0,326,0,0,0,0]
+        - bread: [50,500,0,0,0,500,10,0,0]
+        - bun (black bean): [10,90,0,0,90,0,0,1,0]
+        - bun (vetagables): [19,102,0,0,0,102,0,1,0]
+        - cabbage (chinese): [28,426,0,0,0,0,0,0,0]
+        - carrot: [10,225,0,0,0,0,0,0,0]
+        - false pakchoi: [10,334,0,0,0,0,0,0,0]
+        - morning glory: [10,143,0,0,0,0,0,0,0]
+        - mushroom (shiitake): [20,85,0,0,0,0,0,0,0]
+        - parsley: [5,30,0,0,0,0,0,0,0]
+        - peanut (boiled): [30,223,0,0,223,0,0,0,0]
+        - pineapple: [80,3030,0,0,0,0,0,0,0]
+        - potato: [55,1072,0,0,0,0,0,0,0]
+        - radish (daikon): [18,449,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [15,200,0,0,200,0,7,0,0]
+        - stir fried (angled gourd with mushroom): [40,392,0,0,392,0,0,0,0]
+        - tomato: [10,230,0,0,0,0,0,0,0]
+        - yakisoba: [40,319,0,0,319,0,0,0,0]
+        - yam: [37,250,0,0,0,250,0,0,113] # aluminium 7
   - delivery:
       type: public
       km: 52
     types:
       - name: food
         items:
-        - coconut (cider): [137,490,0,no,processed,2,0,329]
+        - coconut (cider): [137,490,0,0,490,0,2,0,329]
 "2022-09-17":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [61,66000,0,n/a,no,0,0,0]
+        - water: [61,66000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - lime: [20,602,0,no,no,2,0,0]
+        - lime: [20,602,0,0,0,0,2,0,0]
       - name: food
         items:
-        - agasta: [10,224,0,no,no,0,0,0]
-        - banana: [55,2665,0,no,no,0,0,0]
-        - banana (fried): [15,65,0,no,processed,6,0,0]
-        - beansprout: [20,368,0,no,no,2,0,0]
-        - bitter gourd: [25,474,0,no,no,0,0,0]
-        - bun (black bean): [10,90,0,no,processed,0,1,0]
-        - carrot: [20,429,0,no,no,2,1,0]
-        - guava: [15,770,0,no,no,0,0,0]
-        - kale: [20,340,0,no,no,0,0,0]
-        - khanom krayasart: [20,99,0,no,processed,2,1,0]
-        - morning glory: [30,686,0,no,no,0,0,0]
-        - peanut (boiled): [20,138,0,no,processed,0,0,0]
-        - pineapple: [80,3003,0,no,no,0,0,0]
-        - potato (fried): [15,98,0,no,processed,5,0,0]
-        - radish (daikon): [23,556,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [42,278,0,no,processed,8,0,0]
-        - shave ice: [20,420,0,no,processed,0,0,0]
-        - tomato: [10,206,0,no,no,0,0,0]
-        - wax gourd: [0,890,0,no,no,0,0,0]
+        - agasta: [10,224,0,0,0,0,0,0,0]
+        - banana: [55,2665,0,0,0,0,0,0,0]
+        - banana (fried): [15,65,0,0,65,0,6,0,0]
+        - beansprout: [20,368,0,0,0,0,2,0,0]
+        - bitter gourd: [25,474,0,0,0,0,0,0,0]
+        - bun (black bean): [10,90,0,0,90,0,0,1,0]
+        - carrot: [20,429,0,0,0,0,2,1,0]
+        - guava: [15,770,0,0,0,0,0,0,0]
+        - kale: [20,340,0,0,0,0,0,0,0]
+        - khanom krayasart: [20,99,0,0,99,0,2,1,0]
+        - morning glory: [30,686,0,0,0,0,0,0,0]
+        - peanut (boiled): [20,138,0,0,138,0,0,0,0]
+        - pineapple: [80,3003,0,0,0,0,0,0,0]
+        - potato (fried): [15,98,0,0,98,0,5,0,0]
+        - radish (daikon): [23,556,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [42,278,0,0,278,0,8,0,0]
+        - shave ice: [20,420,0,0,420,0,0,0,0]
+        - tomato: [10,206,0,0,0,0,0,0,0]
+        - wax gourd: [0,890,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 23
     types:
       - name: food
         items:
-        - khanom krayasart: [80,500,0,no,processed,5,0,0]
+        - khanom krayasart: [80,500,0,0,500,0,5,0,0]
 "2022-09-10":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [85,3370,0,no,no,0,0,0]
-        - banana (fried): [10,78,0,no,processed,2,0,0]
-        - beans (mung): [70,1000,0,no,no,4,0,0]
-        - beans (red kidney): [35,500,0,no,no,4,0,0]
-        - beans (white kidney): [35,500,0,no,no,4,0,0]
-        - cabbage (chinese): [33,242,0,no,no,0,0,0]
-        - carrot: [22,363,0,no,no,0,0,0]
-        - cucumber: [17,538,0,no,no,0,0,0]
-        - khanom gui chai: [30,334,0,no,processed,0,0,0]
-        - gourd (bitter): [15,356,0,no,no,0,0,0]
-        - guava: [75,1703,0,no,no,0,0,0]
-        - khanom khao tom mud: [10,93,0,no,processed,0,0,0]
-        - khanom krok: [25,198,0,no,processed,0,0,0]
-        - morning glory: [20,564,0,no,no,0,0,0]
-        - peanut: [40,500,0,no,no,4,0,0]
-        - peanut (fried) : [10,96,0,no,processed,2,0,0]
-        - pineapple: [40,1088,0,no,no,0,0,0]
-        - potato (dessert, with coconut milk): [20,420,0,no,processed,0,0,0]
-        - radish (daikon): [10,355,0,no,no,0,0,0]
-        - sausage (flour): [10,60,0,no,ultra,0,0,0]
-        - taro (fried): [10,77,0,no,processed,2,0,0]
-        - wax gourd: [22,1256,0,no,no,0,0,0]
+        - banana: [85,3370,0,0,0,0,0,0,0]
+        - banana (fried): [10,78,0,0,78,0,2,0,0]
+        - beans (mung): [70,1000,0,0,0,0,4,0,0]
+        - beans (red kidney): [35,500,0,0,0,0,4,0,0]
+        - beans (white kidney): [35,500,0,0,0,0,4,0,0]
+        - cabbage (chinese): [33,242,0,0,0,0,0,0,0]
+        - carrot: [22,363,0,0,0,0,0,0,0]
+        - cucumber: [17,538,0,0,0,0,0,0,0]
+        - khanom gui chai: [30,334,0,0,334,0,0,0,0]
+        - gourd (bitter): [15,356,0,0,0,0,0,0,0]
+        - guava: [75,1703,0,0,0,0,0,0,0]
+        - khanom khao tom mud: [10,93,0,0,93,0,0,0,0]
+        - khanom krok: [25,198,0,0,198,0,0,0,0]
+        - morning glory: [20,564,0,0,0,0,0,0,0]
+        - peanut: [40,500,0,0,0,0,4,0,0]
+        - peanut (fried) : [10,96,0,0,96,0,2,0,0]
+        - pineapple: [40,1088,0,0,0,0,0,0,0]
+        - potato (dessert, with coconut milk): [20,420,0,0,420,0,0,0,0]
+        - radish (daikon): [10,355,0,0,0,0,0,0,0]
+        - sausage (flour): [10,60,0,0,0,60,0,0,0]
+        - taro (fried): [10,77,0,0,77,0,2,0,0]
+        - wax gourd: [22,1256,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [8,12000,0,n/a,no,0,0,0]
+        - water: [8,12000,0,n/a,0,0,0,0,0]
   - delivery:
       type: public
       km: 21
     types:
       - name: food
         items:
-        - rice (brown): [534,20000,0,no,no,164,0,0]
+        - rice (brown): [534,20000,0,0,0,0,164,0,0]
   - delivery:
       type: public
       km: 35
     types:
       - name: drink-solid
         items:
-        - tea (lapsang souchong): [0,6,0,no,yes,2,0,0]
-        - tea (sensha): [124,500,0,no,yes,34,4,0]
+        - tea (lapsang souchong): [0,6,0,0,0,0,2,0,0]
+        - tea (sensha): [124,500,0,0,0,0,34,4,0]
   - delivery:
       type: public
       km: 29
     types:
       - name: food
         items:
-        - sesame seed: [140,800,0,no,no,14,0,0]
+        - sesame seed: [140,800,0,0,0,0,14,0,0]
       - name: drink-solid
         items:
-        - tea (chinese black): [120,150,0,no,yes,32,0,0]
+        - tea (chinese black): [120,150,0,0,0,0,32,0,0]
 "2022-09-03":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - grava: [60,1178,0,no,no,0,0,0]
-        - khanom krok: [25,198,0,no,processed,0,0,0]
+        - grava: [60,1178,0,0,0,0,0,0,0]
+        - khanom krok: [25,198,0,0,198,0,0,0,0]
 "2022-08-27":
   - delivery:
       type: private
@@ -892,69 +893,69 @@
     types:
       - name: food
         items:
-        - banana: [0,1181,0,no,no,0,0,0]
-        - carrot : [30,635,0,no,no,1,0,0]
-        - gourd (bitter): [20,326,0,no,no,0,0,0]
-        - jujube (paste) : [30,283,0,no,yes,3,0,0]
-        - kanom khai nok knata (sweet potato ball): [20,126,0,no,yes,2,0,0]
-        - kanom tarn: [35,226,0,no,yes,5,0,0]
-        - mushroom (white shimeji): [45,510,0,no,no,12,0,0]
-        - morning glory: [20,540,0,no,no,0,0,0]
-        - tomato: [15,311,0,no,no,0,0,0]
+        - banana: [0,1181,0,0,0,0,0,0,0]
+        - carrot : [30,635,0,0,0,0,1,0,0]
+        - gourd (bitter): [20,326,0,0,0,0,0,0,0]
+        - jujube (paste) : [30,283,0,0,0,0,3,0,0]
+        - kanom khai nok knata (sweet potato ball): [20,126,0,0,126,0,2,0,0]
+        - kanom tarn: [35,226,0,0,226,0,5,0,0]
+        - mushroom (white shimeji): [45,510,0,0,0,0,12,0,0]
+        - morning glory: [20,540,0,0,0,0,0,0,0]
+        - tomato: [15,311,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [40,61000,0,n/a,no,0,0,0]
+        - water: [40,61000,0,n/a,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [0,1133,0,no,no,0,0,0]
-        - cabbage (chinese, pickled): [20,410,0,no,processed,0,0,0]
-        - chinese steamed rice noodle rolls: [40,200,0,no,processed,12,0,0]
-        - khanom khao tom mud: [20,132,0,no,processed,0,0,0]
-        - khanom tua pap: [20,204,0,no,processed,6,0,0]
-        - gourd (bitter): [35,699,0,no,no,0,0,0]
-        - pomelo: [0,756,0,no,no,0,0,0]
+        - banana: [0,1133,0,0,0,0,0,0,0]
+        - cabbage (chinese, pickled): [20,410,0,0,410,0,0,0,0]
+        - chinese steamed rice noodle rolls: [40,200,0,0,200,0,12,0,0]
+        - khanom khao tom mud: [20,132,0,0,132,0,0,0,0]
+        - khanom tua pap: [20,204,0,0,204,0,6,0,0]
+        - gourd (bitter): [35,699,0,0,0,0,0,0,0]
+        - pomelo: [0,756,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 34
     types:
       - name: drink-solid
         items:
-        - tea (puerh): [130,100,0,no,yes,0,0,0]
+        - tea (puerh): [130,100,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 68
     types:
       - name: food
         items:
-        - flaxseed (brown): [205,900,0,yes,no,12,0,0]
+        - flaxseed (brown): [205,900,0,900,0,0,12,0,0]
 "2022-08-20":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [70,3650,0,no,no,0,0,0]
-        - bun (black bean): [10,90,0,no,processed,0,1,0]
-        - cabbage (chinese): [10,242,0,no,no,0,0,0]
-        - carrot: [30,592,0,no,no,0,0,0]
-        - dragon fruit: [15,455,0,no,no,0,0,0]
-        - guava: [24,624,0,no,no,4,0,0]
-        - kale: [20,367,0,no,no,0,0,0]
-        - morning glory: [10,183,0,no,no,0,0,0]
-        - mushroom (oyster): [20,170,0,no,no,0,0,0]
-        - papaya: [54,1300,0,no,no,2,0,0]
-        - peanuts (fried with flour): [5,30,0,no,processed,1,0,0]
-        - potato: [40,768,0,no,no,0,0,0]
-        - pumpkin: [20,582,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [15,110,0,no,processed,4,0,0]
-        - shave ice: [20,420,0,no,processed,0,0,0]
-        - wax gourd: [20,1030,0,no,no,0,0,0]
+        - banana: [70,3650,0,0,0,0,0,0,0]
+        - bun (black bean): [10,90,0,0,90,0,0,1,0]
+        - cabbage (chinese): [10,242,0,0,0,0,0,0,0]
+        - carrot: [30,592,0,0,0,0,0,0,0]
+        - dragon fruit: [15,455,0,0,0,0,0,0,0]
+        - guava: [24,624,0,0,0,0,4,0,0]
+        - kale: [20,367,0,0,0,0,0,0,0]
+        - morning glory: [10,183,0,0,0,0,0,0,0]
+        - mushroom (oyster): [20,170,0,0,0,0,0,0,0]
+        - papaya: [54,1300,0,0,0,0,2,0,0]
+        - peanuts (fried with flour): [5,30,0,0,30,0,1,0,0]
+        - potato: [40,768,0,0,0,0,0,0,0]
+        - pumpkin: [20,582,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [15,110,0,0,110,0,4,0,0]
+        - shave ice: [20,420,0,0,420,0,0,0,0]
+        - wax gourd: [20,1030,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [10,12000,0,n/a,no,0,0,0]
+        - water: [10,12000,0,n/a,0,0,0,0,0]
 "2022-08-13":
   - delivery:
       type: private
@@ -962,63 +963,63 @@
     types:
       - name: food
         items:
-        - banana: [30,1677,0,no,no,0,0,0]
-        - banana (chips): [45,228,0,no,no,14,1,0]
-        - cabbage (chinese): [30,290,0,no,no,0,0,0]
-        - carrot: [30,637,0,no,no,5,0,0]
-        - corn: [20,1000,0,no,no,0,0,0]
-        - gourd (bitter): [25,527,0,no,no,0,0,0]
-        - kale: [20,367,0,no,no,0,0,0]
-        - morning glory: [20,367,0,no,no,0,0,0]
-        - pineapple: [40,1056,0,no,no,0,0,0]
-        - potato: [40,826,0,no,no,0,0,0]
-        - radish (daikon): [10,265,0,no,no,0,0,0]
+        - banana: [30,1677,0,0,0,0,0,0,0]
+        - banana (chips): [45,228,0,0,0,0,14,1,0]
+        - cabbage (chinese): [30,290,0,0,0,0,0,0,0]
+        - carrot: [30,637,0,0,0,0,5,0,0]
+        - corn: [20,1000,0,0,0,0,0,0,0]
+        - gourd (bitter): [25,527,0,0,0,0,0,0,0]
+        - kale: [20,367,0,0,0,0,0,0,0]
+        - morning glory: [20,367,0,0,0,0,0,0,0]
+        - pineapple: [40,1056,0,0,0,0,0,0,0]
+        - potato: [40,826,0,0,0,0,0,0,0]
+        - radish (daikon): [10,265,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [51,67000,0,n/a,no,0,0,0]
+        - water: [51,67000,0,n/a,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [25,1500,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [15,121,0,no,processed,4,0,0]
+        - banana: [25,1500,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [15,121,0,0,121,0,4,0,0]
   - delivery:
       type: public
       km: 96
     types:
       - name: food
         items:
-        - rice (mixed): [66,2500,0,no,no,16,0,0]
+        - rice (mixed): [66,2500,0,0,0,0,16,0,0]
   - delivery:
       type: public
       km: 34
     types:
       - name: drink-solid
         items:
-        - tea (puerh, ball): [69,54,0,no,no,0,10,0]
+        - tea (puerh, ball): [69,54,0,0,0,0,0,10,0]
 "2022-08-06":
   - delivery:
       type: no fuel
     types:
       - name: drink-solid
         items:
-        - lime: [10,277,0,no,no,0,0,0]
+        - lime: [10,277,0,0,0,0,0,0,0]
       - name: food
         items:
-        - banana: [30,1808,0,no,no,0,0,0]
-        - cabbage (chinese): [20,422,0,no,no,0,0,0]
-        - corn (sweet): [25,811,0,no,no,6,0,0]
-        - dragon fruit: [45,3108,0,no,no,0,0,0]
-        - gourd (bitter): [20,416,0,no,no,0,0,0]
-        - guava: [5,282,0,no,no,0,0,0]
-        - khanom keng (sticky rice cake): [0,192,0,no,no,0,0,0]
-        - morning glory: [15,470,0,no,no,0,0,0]
-        - yakisoba: [0,1063,0,no,no,25,0,0]
-        - pineapple: [30,805,0,no,no,0,0,0]
-        - potato (chips): [60,158,0,no,ultra,12,0,0]
-        - radish (daikon): [10,405,0,no,no,0,0,0]
-        - wax gourd: [35,1024,0,no,no,0,0,0]
+        - banana: [30,1808,0,0,0,0,0,0,0]
+        - cabbage (chinese): [20,422,0,0,0,0,0,0,0]
+        - corn (sweet): [25,811,0,0,0,0,6,0,0]
+        - dragon fruit: [45,3108,0,0,0,0,0,0,0]
+        - gourd (bitter): [20,416,0,0,0,0,0,0,0]
+        - guava: [5,282,0,0,0,0,0,0,0]
+        - khanom keng (sticky rice cake): [0,192,0,0,0,0,0,0,0]
+        - morning glory: [15,470,0,0,0,0,0,0,0]
+        - yakisoba: [0,1063,0,0,0,0,25,0,0]
+        - pineapple: [30,805,0,0,0,0,0,0,0]
+        - potato (chips): [60,158,0,0,0,158,12,0,0]
+        - radish (daikon): [10,405,0,0,0,0,0,0,0]
+        - wax gourd: [35,1024,0,0,0,0,0,0,0]
 "2022-07-30":
   - delivery:
       type: private
@@ -1026,92 +1027,92 @@
     types:
       - name: food
         items:
-        - banana: [25,1135,0,no,no,0,0,0]
-        - cabbage (chinese): [20,400,0,no,no,0,0,0]
-        - false pakchoi: [20,440,0,no,no,0,0,0]
-        - gourd (bitter): [20,469,0,no,no,0,0,0]
-        - guava: [20,671,0,no,no,0,2,0]
-        - mango: [24,573,0,no,no,0,0,0]
-        - peanuts (boiled): [40,500,0,no,processed,0,0,0]
-        - pineapple: [20,573,0,no,no,0,0,0]
-        - potato: [20,306,0,yes,no,0,0,0]
-        - radish (daikon): [20,510,0,no,no,0,0,0]
+        - banana: [25,1135,0,0,0,0,0,0,0]
+        - cabbage (chinese): [20,400,0,0,0,0,0,0,0]
+        - false pakchoi: [20,440,0,0,0,0,0,0,0]
+        - gourd (bitter): [20,469,0,0,0,0,0,0,0]
+        - guava: [20,671,0,0,0,0,0,2,0]
+        - mango: [24,573,0,0,0,0,0,0,0]
+        - peanuts (boiled): [40,500,0,0,500,0,0,0,0]
+        - pineapple: [20,573,0,0,0,0,0,0,0]
+        - potato: [20,306,0,0,0,0,0,0,0]
+        - radish (daikon): [20,510,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [28,42000,0,n/a,no,0,0,0]
+        - water: [28,42000,0,n/a,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [25,895,0,no,no,0,0,0]
-        - bun (black bean): [10,90,0,no,processed,0,1,0]
-        - peanut bar: [5,62,0,no,processed,1,0,0]
-        - rice (sweet crispy cracker): [30,220,0,no,processed,9,0,0]
-        - star gooseberry (in syrup): [20,195,0,no,processed,0,0,0]
+        - banana: [25,895,0,0,0,0,0,0,0]
+        - bun (black bean): [10,90,0,0,90,0,0,1,0]
+        - peanut bar: [5,62,0,0,62,0,1,0,0]
+        - rice (sweet crispy cracker): [30,220,0,0,220,0,9,0,0]
+        - star gooseberry (in syrup): [20,195,0,0,195,0,0,0,0]
   - delivery:
       type: public
       km: 710
     types:
       - name: drink-solid
         items:
-        - tea (white): [35,100,0,no,no,9,0,0]
-        - tea (lotus stamen): [55,100,0,no,no,3,0,0]
+        - tea (white): [35,100,0,0,0,0,9,0,0]
+        - tea (lotus stamen): [55,100,0,0,0,0,3,0,0]
   - delivery:
       type: public
       km: 40
     types:
       - name: drink-solid
         items:
-        - tea (puerh, ball): [49,100,0,no,no,5,0,0]
+        - tea (puerh, ball): [49,100,0,0,0,0,5,0,0]
   - delivery:
       type: public
       km: 890
     types:
       - name: food
         items:
-        - peanut (raw, with husk): [144,2000,0,no,no,0,0,0]
+        - peanut (raw, with husk): [144,2000,0,0,0,0,0,0,0]
 "2022-07-23":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [35,2320,0,no,no,0,0,0]
-        - dragon fruit: [9,355,0,no,no,0,0,0]
-        - dumpling (chinese chive, 3 pieces): [30,334,0,no,processed,0,0,0]
-        - guava: [14,428,0,no,no,0,0,0]
-        - pineapple: [35,1006,0,no,no,0,0,0]
-        - pineapple (cracker): [20,150,0,no,processed,0,2,0]
-        - rice (sweet crispy cracker): [15,103,0,no,processed,3,0,0]
-        - shave ice: [25,532,0,no,processed,0,0,0]
-        - stuffed dough (cococut): [20,154,0,no,no,0,0,0]
+        - banana: [35,2320,0,0,0,0,0,0,0]
+        - dragon fruit: [9,355,0,0,0,0,0,0,0]
+        - dumpling (chinese chive, 3 pieces): [30,334,0,0,334,0,0,0,0]
+        - guava: [14,428,0,0,0,0,0,0,0]
+        - pineapple: [35,1006,0,0,0,0,0,0,0]
+        - pineapple (cracker): [20,150,0,0,150,0,0,2,0]
+        - rice (sweet crispy cracker): [15,103,0,0,103,0,3,0,0]
+        - shave ice: [25,532,0,0,532,0,0,0,0]
+        - stuffed dough (cococut): [20,154,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 43
     types:
       - name: nonedibles
         items:
-        - soap bar (foaming hand soap, marbles care x 3): [149,n/a,0,n/a,n/a,0,2,0]
+        - hand soap (marbles care x 3): [149,n/a,0,n/a,n/a,n/a,0,102,0]
   - delivery:
       type: public
       km: 100
     types:
       - name: nonedibles
         items:
-        - mask (covid, KF94 3D x 60 pieces): [21,n/a,0,n/a,n/a,4,0,0]
+        - mask (covid, KF94 3D x 60 pieces): [21,n/a,0,n/a,n/a,n/a,4,0,0]
   - delivery:
       type: public
       km: 45
     types:
       - name: food
         items:
-        - corn (baby): [55,600,0,yes,no,3,0,0]
-        - corn (sweet): [110,4000,0,yes,no,8,0,0]
-        - kale: [50,600,0,yes,no,9,0,0]
-        - morning glory: [30,600,0,yes,no,13,0,0]
-        - potato (purple sweet lord): [110,1000,0,yes,no,9,0,0]
-        - soybean: [690,16000,0,yes,no,200,560,0]
+        - corn (baby): [55,600,0,600,0,0,3,0,0]
+        - corn (sweet): [110,4000,0,4000,0,0,8,0,0]
+        - kale: [50,600,0,600,0,0,9,0,0]
+        - morning glory: [30,600,0,600,0,0,13,0,0]
+        - potato (purple sweet lord): [110,1000,0,1000,0,0,9,0,0]
+        - soybean: [690,16000,0,16000,0,0,200,560,0]
 "2022-07-16":
   - delivery:
       type: private
@@ -1119,43 +1120,43 @@
     types:
       - name: food
         items:
-        - banana (cultivated): [15,675,0,no,no,0,0,0]
-        - banana (lady finger): [60,2200,0,no,no,0,0,0]
-        - banana (fried): [20,233,0,no,processed,0,0,0]
-        - broccoli: [40,462,0,no,no,0,0,0]
-        - bun (black bean): [10,90,0,no,processed,0,1,0]
-        - cabbage (chinese): [25,468,0,no,no,0,0,0]
-        - carrot: [30,642,0,no,no,0,0,0]
-        - dragon fruit: [20,691,0,no,no,0,0,0]
-        - gourd (bitter): [25,467,0,no,no,0,0,0]
-        - gourd (lvy): [15,260,0,no,no,0,0,0]
-        - morning glory (swamp): [10,228,0,no,no,1,0,0]
-        - papaya: [28,1880,0,no,no,0,0,0]
-        - potato: [20,406,0,no,no,0,0,0]
-        - radish (daikon): [10,299,0,no,no,0,0,0]
+        - banana (cultivated): [15,675,0,0,0,0,0,0,0]
+        - banana (lady finger): [60,2200,0,0,0,0,0,0,0]
+        - banana (fried): [20,233,0,0,233,0,0,0,0]
+        - broccoli: [40,462,0,0,0,0,0,0,0]
+        - bun (black bean): [10,90,0,0,90,0,0,1,0]
+        - cabbage (chinese): [25,468,0,0,0,0,0,0,0]
+        - carrot: [30,642,0,0,0,0,0,0,0]
+        - dragon fruit: [20,691,0,0,0,0,0,0,0]
+        - gourd (bitter): [25,467,0,0,0,0,0,0,0]
+        - gourd (lvy): [15,260,0,0,0,0,0,0,0]
+        - morning glory (swamp): [10,228,0,0,0,0,1,0,0]
+        - papaya: [28,1880,0,0,0,0,0,0,0]
+        - potato: [20,406,0,0,0,0,0,0,0]
+        - radish (daikon): [10,299,0,0,0,0,0,0,0]
       - name: drink-liquid
         items:
-        - water: [28,42000,0,n/a,no,0,0,0]
+        - water: [28,42000,0,n/a,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana (dried, sweeten): [5,32,0,no,processed,5,0,0]
-        - mango (pickled): [5,45,0,no,processed,1,0,0]
-        - peanuts (fried with flour): [6,34,0,no,processed,0,0,0]
-        - plant-based meat (2 free 1): [158,550,0,no,ultra,27,0,0]
-        - rice (sweet crispy cracker): [5,39,0,no,processed,2,0,0]
-        - shave ice: [20,440,0,no,processed,0,0,0]
+        - banana (dried, sweeten): [5,32,0,0,32,0,5,0,0]
+        - mango (pickled): [5,45,0,0,45,0,1,0,0]
+        - peanuts (fried with flour): [6,34,0,0,34,0,0,0,0]
+        - plant-based meat (2 free 1): [158,550,0,0,0,550,27,0,0]
+        - rice (sweet crispy cracker): [5,39,0,0,39,0,2,0,0]
+        - shave ice: [20,440,0,0,440,0,0,0,0]
   - delivery:
       type: public
       km: 34
     types:
       - name: drink-solid
         items:
-        - tea (riped pu erh, 357 + 100 x 2): [317,557,0,no,no,10,2,0]
-        - tea (fruit): [0,100,0,no,no,2,0,0]
-        - tea (jasmine green): [0,10,0,no,no,1,0,0]
+        - tea (riped pu erh): [317,557,0,0,0,0,10,2,0]
+        - tea (fruit): [0,100,0,0,0,0,2,0,0]
+        - tea (jasmine green): [0,10,0,0,0,0,1,0,0]
 "2022-07-09":
   - delivery:
       type: private
@@ -1163,82 +1164,82 @@
     types:
       - name: drink-liquid
         items:
-        - water: [32,48000,0,n/a,no,0,0,0]
+        - water: [32,48000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - bamboo shoots: [25,730,0,no,no,0,0,0]
-        - cabbage (chinese): [15,569,0,no,no,0,0,0]
-        - donut: [10,94,0,no,processed,4,0,0]
-        - kale: [10,171,0,no,no,0,0,0]
-        - false pakchoi: [10,232,0,no,no,0,0,0]
-        - papaya (holland): [45,1138,0,no,no,3,0,0]
-        - peanuts (boiled): [35,500,0,no,processed,0,0,0]
-        - pineapple: [25,937,0,no,no,0,0,0]
-        - potato: [33,470,0,no,no,0,0,0]
-        - potato and flour (fried ball): [10,85,0,no,processed,0,0,0]
-        - potato (chips): [5,11,0,no,ultra,2,0,0]
-        - radish (daikon): [25,597,0,no,no,0,0,0]
-        - water convolvulus: [15,570,0,no,no,0,0,0]
+        - bamboo shoots: [25,730,0,0,0,0,0,0,0]
+        - cabbage (chinese): [15,569,0,0,0,0,0,0,0]
+        - donut: [10,94,0,0,94,0,4,0,0]
+        - kale: [10,171,0,0,0,0,0,0,0]
+        - false pakchoi: [10,232,0,0,0,0,0,0,0]
+        - papaya (holland): [45,1138,0,0,0,0,3,0,0]
+        - peanuts (boiled): [35,500,0,0,500,0,0,0,0]
+        - pineapple: [25,937,0,0,0,0,0,0,0]
+        - potato: [33,470,0,0,0,0,0,0,0]
+        - potato and flour (fried ball): [10,85,0,0,85,0,0,0,0]
+        - potato (chips): [5,11,0,0,0,11,2,0,0]
+        - radish (daikon): [25,597,0,0,0,0,0,0,0]
+        - water convolvulus: [15,570,0,0,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [8,12000,0,n/a,no,0,0,0]
+        - water: [8,12000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - lime: [10,700,0,no,no,0,0,0]
+        - lime: [10,700,0,0,0,0,0,0,0]
       - name: food
         items:
-        - banana: [40,2400,0,no,no,0,0,0]
-        - cabbage (pickled): [20,700,0,no,no,0,4,0]
-        - fried banana (fried): [20,217,0,no,processed,0,0,0]
-        - muskmelon: [30,1160,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [30,219,0,no,processed,10,0,0]
+        - banana: [40,2400,0,0,0,0,0,0,0]
+        - cabbage (pickled): [20,700,0,0,0,0,0,4,0]
+        - fried banana (fried): [20,217,0,0,217,0,0,0,0]
+        - muskmelon: [30,1160,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [30,219,0,0,219,0,10,0,0]
   - delivery:
       type: public
       km: 28
     types:
       - name: food
         items:
-        - broken rice (mix brown jasmine, red jasmine, hom nil): [486,9000,0,yes,no,0,0,0]
+        - broken rice (mix brown jasmine, red jasmine, hom nil): [486,9000,0,9000,0,0,0,0,0]
 "2022-07-02":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - broccoli: [25,320,0,no,no,0,0,0]
-        - banana: [40,1690,0,no,no,0,0,0]
-        - cabbage (chinese): [35,746,0,no,no,0,0,0]
-        - chinese chives (fried): [25,180,0,no,processed,0,0,0]
-        - dumpling (chinese chive, 4 pieces): [30,340,0,no,processed,0,0,0]
-        - false pakchoi: [20,500,0,no,no,0,0,0]
-        - gourd (bitter): [25,471,0,no,no,0,0,0]
-        - kale: [10,187,0,no,no,0,0,0]
-        - papaya (holland): [56,1350,0,no,no,3,0,0]
-        - pineapple: [65,2629,0,no,no,0,0,0]
-        - potato: [39,699,0,no,no,0,0,0]
-        - radish (daikon): [15,328,0,no,no,0,0,0]
-        - wax gourd: [28,1420,0,no,no,0,0,0]
+        - broccoli: [25,320,0,0,0,0,0,0,0]
+        - banana: [40,1690,0,0,0,0,0,0,0]
+        - cabbage (chinese): [35,746,0,0,0,0,0,0,0]
+        - chinese chives (fried): [25,180,0,0,180,0,0,0,0]
+        - dumpling (chinese chive, 4 pieces): [30,340,0,0,340,0,0,0,0]
+        - false pakchoi: [20,500,0,0,0,0,0,0,0]
+        - gourd (bitter): [25,471,0,0,0,0,0,0,0]
+        - kale: [10,187,0,0,0,0,0,0,0]
+        - papaya (holland): [56,1350,0,0,0,0,3,0,0]
+        - pineapple: [65,2629,0,0,0,0,0,0,0]
+        - potato: [39,699,0,0,0,0,0,0,0]
+        - radish (daikon): [15,328,0,0,0,0,0,0,0]
+        - wax gourd: [28,1420,0,0,0,0,0,0,0]
   - delivery:
       type: public
       km: 38
     types:
       - name: nonedibles
         items:
-        - floss (30m, with bottle): [109,n/a,0,n/a,n/a,0,2,0]
-        - floss (30m): [79,n/a,0,n/a,n/a,0,2,0]
-        - toothbrush (bamboo, x4): [75,n/a,0,n/a,n/a,0,27,0]
+        - floss (30m, with bottle): [109,n/a,0,n/a,n/a,n/a,0,2,0]
+        - floss (30m): [79,n/a,0,n/a,n/a,n/a,0,2,0]
+        - toothbrush (bamboo, x4): [75,n/a,0,n/a,n/a,n/a,0,27,0]
   - delivery:
       type: public
       km: 56
     types:
       - name: nonedibles
         items:
-        - alum (potassium aluminum sulfate): [45,68,0,n/a,n/a,0,0,0]
-        - dish brush (bamboo, for bottle): [105,n/a,0,n/a,n/a,0,0,0]
-        - tape (kraft tape, 2inch x 40yd, x2): [84,n/a,0,n/a,n/a,0,0,0]
+        - alum (potassium aluminum sulfate): [45,68,0,n/a,n/a,n/a,0,0,0]
+        - dish brush (bamboo, for bottle): [105,n/a,0,n/a,n/a,n/a,0,0,0]
+        - tape (kraft tape, 2inch x 40yd, x2): [84,n/a,0,n/a,n/a,n/a,0,0,0]
 "2022-06-25":
   - delivery:
       type: private
@@ -1246,48 +1247,48 @@
     types:
       - name: drink-liquid
         items:
-        - water: [40,48000,0,n/a,no,0,0,0]
+        - water: [40,48000,0,n/a,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - water: [25,30000,0,n/a,no,0,0,0]
+        - water: [25,30000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - hibiscus leaves (dried): [5,90,0,no,processed,0,0,0]
-        - lime: [20,1000,0,no,no,0,0,0]
+        - hibiscus leaves (dried): [5,90,0,0,90,0,0,0,0]
+        - lime: [20,1000,0,0,0,0,0,0,0]
       - name: food
         items:
-        - bamboo shoots (boiled): [17,260,0,no,processed,3,0,0]
-        - banana: [70,4410,0,no,no,0,0,0]
-        - peanuts (fried with flour): [6,34,0,no,processed,0,0,0]
-        - broccoli: [20,322,0,no,no,0,0,0]
-        - cabbage (chinese): [25,627,0,no,no,0,0,0]
-        - carrot: [17,475,0,no,no,0,0,0]
-        - chinese chives (fried): [25,180,0,no,processed,0,0,0]
-        - coconut: [50,2950,0,no,no,0,0,0]
-        - coconut pancake (ba bin tip): [5,60,0,no,processed,1,1,0]
-        - corn (baby): [34,677,0,no,no,0,0,0]
-        - gourd (bitter): [20,457,0,no,no,0,0,0]
-        - kale: [20,419,0,no,no,4,0,0]
-        - mango: [35,2400,0,no,no,0,0,0]
-        - morning glory (swamp): [15,238,0,no,no,1,0,0]
-        - peanut bar: [5,62,0,no,processed,1,0,0]
-        - pineapple: [15,860,0,no,no,0,0,0]
-        - potato: [34,716,0,no,no,0,0,0]
-        - potato (chips): [5,11,0,no,ultra,2,0,0]
-        - potato (fried ball): [10,67,0,no,processed,0,0,0]
-        - radish (daikon): [15,388,0,no,no,0,0,0]
-        - rice (sweet crispy cracker): [33,180,0,no,processed,6,0,0]
-        - yakisoba: [20,200,0,no,processed,0,0,0]
+        - bamboo shoots (boiled): [17,260,0,0,260,0,3,0,0]
+        - banana: [70,4410,0,0,0,0,0,0,0]
+        - peanuts (fried with flour): [6,34,0,0,34,0,0,0,0]
+        - broccoli: [20,322,0,0,0,0,0,0,0]
+        - cabbage (chinese): [25,627,0,0,0,0,0,0,0]
+        - carrot: [17,475,0,0,0,0,0,0,0]
+        - chinese chives (fried): [25,180,0,0,180,0,0,0,0]
+        - coconut: [50,2950,0,0,0,0,0,0,0]
+        - coconut pancake (ba bin tip): [5,60,0,0,60,0,1,1,0]
+        - corn (baby): [34,677,0,0,0,0,0,0,0]
+        - gourd (bitter): [20,457,0,0,0,0,0,0,0]
+        - kale: [20,419,0,0,0,0,4,0,0]
+        - mango: [35,2400,0,0,0,0,0,0,0]
+        - morning glory (swamp): [15,238,0,0,0,0,1,0,0]
+        - peanut bar: [5,62,0,0,62,0,1,0,0]
+        - pineapple: [15,860,0,0,0,0,0,0,0]
+        - potato: [34,716,0,0,0,0,0,0,0]
+        - potato (chips): [5,11,0,0,0,11,2,0,0]
+        - potato (fried ball): [10,67,0,0,67,0,0,0,0]
+        - radish (daikon): [15,388,0,0,0,0,0,0,0]
+        - rice (sweet crispy cracker): [33,180,0,0,180,0,6,0,0]
+        - yakisoba: [20,200,0,0,200,0,0,0,0]
   - delivery:
       type: public
       km: 790
     types:
       - name: drink-solid
         items:
-        - tea (green): [120,150,0,yes,no,7,0,0]
+        - tea (green): [120,150,0,150,0,0,7,0,0]
 "2022-06-18":
   - delivery:
       type: private
@@ -1295,47 +1296,47 @@
     types:
       - name: drink-liquid
         items:
-        - water: [25,36000,0,n/a,no,0,0,0]
+        - water: [25,36000,0,n/a,0,0,0,0,0]
       - name: drink-solid
         items:
-        - lime: [10,490,0,no,no,0,0,0]
+        - lime: [10,490,0,0,0,0,0,0,0]
       - name: food
         items:
-        - broccoli: [36,415,0,no,no,0,0,0]
-        - cabbage (chinese): [25,437,0,no,no,0,0,0]
-        - carrot: [40,844,0,no,no,0,0,0]
-        - corn (with husk): [20,930,0,no,no,0,0,0]
-        - onion flower stem: [15,200,0,no,no,0,0,0]
-        - fried potato ball + fried banana: [20,220,0,no,processed,0,2,0]
-        - gourd (bitter): [32,565,0,no,no,0,0,0]
-        - kale: [20,400,0,no,no,0,0,0]
-        - mantao (chinese steamed bun): [12,73,0,no,processed,0,4,0]
-        - okra (chinese): [12,288,0,no,no,0,0,0]
-        - pineapple: [40,2240,0,no,no,0,0,0]
-        - papaya (holland): [28,810,0,no,no,3,0,0]
-        - radish (daikon): [15,427,0,no,no,0,0,0]
+        - broccoli: [36,415,0,0,0,0,0,0,0]
+        - cabbage (chinese): [25,437,0,0,0,0,0,0,0]
+        - carrot: [40,844,0,0,0,0,0,0,0]
+        - corn (with husk): [20,930,0,0,0,0,0,0,0]
+        - onion flower stem: [15,200,0,0,0,0,0,0,0]
+        - fried potato ball + fried banana: [20,220,0,0,220,0,0,2,0]
+        - gourd (bitter): [32,565,0,0,0,0,0,0,0]
+        - kale: [20,400,0,0,0,0,0,0,0]
+        - mantao (chinese steamed bun): [12,73,0,0,73,0,0,4,0]
+        - okra (chinese): [12,288,0,0,0,0,0,0,0]
+        - pineapple: [40,2240,0,0,0,0,0,0,0]
+        - papaya (holland): [28,810,0,0,0,0,3,0,0]
+        - radish (daikon): [15,427,0,0,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [35,1500,0,no,no,0,0,0]
-        - peanuts (fried with flour): [12,68,0,no,processed,0,0,0]
-        - dumpling (chinese chive, 3 pieces): [30,334,0,no,processed,0,0,0]
+        - banana: [35,1500,0,0,0,0,0,0,0]
+        - peanuts (fried with flour): [12,68,0,0,68,0,0,0,0]
+        - dumpling (chinese chive, 3 pieces): [30,334,0,0,334,0,0,0,0]
   - delivery:
       type: public
       km: 70
     types:
       - name: nonedibles
         items:
-        - toothbrush (bamboo with nylon bristle) x 2: [80,9,0,n/a,n/a,0,5,0]
+        - toothbrush (bamboo with nylon bristle) x 2: [80,9,0,n/a,n/a,n/a,0,5,0]
   - delivery:
       type: public
       km: 45
     types:
       - name: nonedibles
         items:
-        - toothpaste (tablets x 30, cheww.co): [160,n/a,0,no,no,0,0,0]
+        - toothpaste (tablets x 30, cheww.co): [160,n/a,0,0,0,0,0,0,0]
 "2022-06-11":
   - delivery:
       type: private
@@ -1343,90 +1344,90 @@
     types:
       - name: drink-solid
         items:
-        - lime: [10,380,0,no,no,4,0,0]
+        - lime: [10,380,0,0,0,0,4,0,0]
       - name: drink-liquid
         items:
-        - water: [40,55000,0,n/a,no,0,0,0]
+        - water: [40,55000,0,n/a,0,0,0,0,0]
       - name: food
         items:
-        - apple (fuji): [69,700,0,no,no,3,15,0]
-        - bean sprout: [10,340,0,no,no,8,0,0]
-        - cabbage (chinese): [35,750,0,no,no,0,0,0]
-        - carrot: [30,580,0,no,no,6,0,0]
-        - cucumber: [73,1260,0,no,no,6,0,0]
-        - false pakchoi: [10,300,0,no,no,0,0,0]
-        - kale: [10,250,0,no,no,0,0,0]
-        - morning glory: [10,300,0,no,no,0,0,0]
-        - mushroom (king oyster): [55,500,0,no,no,4,0,0]
-        - peanut bar: [5,62,0,no,processed,1,0,0]
-        - potato: [35,585,0,no,no,0,0,0]
-        - radish (daikon): [30,770,0,no,no,0,0,0]
-        - wax gourd: [20,960,0,no,no,0,0,0]
+        - apple (fuji): [69,700,0,0,0,0,3,15,0]
+        - bean sprout: [10,340,0,0,0,0,8,0,0]
+        - cabbage (chinese): [35,750,0,0,0,0,0,0,0]
+        - carrot: [30,580,0,0,0,0,6,0,0]
+        - cucumber: [73,1260,0,0,0,0,6,0,0]
+        - false pakchoi: [10,300,0,0,0,0,0,0,0]
+        - kale: [10,250,0,0,0,0,0,0,0]
+        - morning glory: [10,300,0,0,0,0,0,0,0]
+        - mushroom (king oyster): [55,500,0,0,0,0,4,0,0]
+        - peanut bar: [5,62,0,0,62,0,1,0,0]
+        - potato: [35,585,0,0,0,0,0,0,0]
+        - radish (daikon): [30,770,0,0,0,0,0,0,0]
+        - wax gourd: [20,960,0,0,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [25,1680,0,no,no,0,0,0]
-        - peanuts (fried with flour): [9,51,0,no,processed,0,0,0]
-        - chinese chives (fried): [50,360,0,no,processed,0,0,0]
-        - rice (sweet crispy cracker): [15,100,0,no,processed,3,0,0]
+        - banana: [25,1680,0,0,0,0,0,0,0]
+        - peanuts (fried with flour): [9,51,0,0,51,0,0,0,0]
+        - chinese chives (fried): [50,360,0,0,360,0,0,0,0]
+        - rice (sweet crispy cracker): [15,100,0,0,100,0,3,0,0]
   - delivery:
       type: public
       km: 68
     types:
       - name: nonedibles
         items:
-        - bar soap (savon de marseille): [250,600,0,n/a,n/a,6,0,0]
+        - bar soap (savon de marseille): [250,600,0,n/a,n/a,n/a,6,0,0]
   - delivery:
       type: public
       km: 155
     types:
       - name: nonedibles
         items:
-        - dish brush (bamboo handle, sisal bristle): [118,n/a,0,n/a,n/a,0,0,0]
+        - dish brush (bamboo handle, sisal bristle): [118,n/a,0,n/a,n/a,n/a,0,0,0]
 "2022-06-04":
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [30,4016,0,no,no,0,9,0]
-        - khanom khao tom mud: [10,120,0,no,processed,0,0,0]
-        - ice-cream: [20,55,0,no,ultra,1,10,0]
-        - potato (fried ball): [40,268,0,no,processed,0,2,0]
-        - rice (sweet crispy cracker): [5,39,0,no,processed,2,0,0]
+        - banana: [30,4016,0,0,0,0,0,9,0]
+        - khanom khao tom mud: [10,120,0,0,120,0,0,0,0]
+        - ice-cream: [20,55,0,0,0,55,1,10,0]
+        - potato (fried ball): [40,268,0,0,268,0,0,2,0]
+        - rice (sweet crispy cracker): [5,39,0,0,39,0,2,0,0]
   - delivery:
       type: public
       km: 26
     types:
       - name: food
         items:
-        - beans (mung): [120,1000,0,yes,no,4,0,0]
-        - beans (black): [120,1000,0,yes,no,4,0,0]
-        - beans (azuki): [120,1000,0,yes,no,4,0,0]
-        - beans (white kidney): [120,1000,0,yes,no,4,0,0]
+        - beans (mung): [120,1000,0,1000,0,0,4,0,0]
+        - beans (black): [120,1000,0,1000,0,0,4,0,0]
+        - beans (azuki): [120,1000,0,1000,0,0,4,0,0]
+        - beans (white kidney): [120,1000,0,1000,0,0,4,0,0]
   - delivery:
       type: public
       km: 45
     types:
       - name: food
         items:
-        - cabbage: [50,1000,0,yes,no,16,0,0]
-        - cabbage (chinese): [55,1000,0,yes,no,16,0,0]
-        - lettuce garnish: [100,3000,0,yes,no,48,0,0]
-        - mango (rainbow): [70,2000,0,yes,no,32,0,0]
-        - mix vegetable: [39,300,0,yes,processed,8,0,0]
-        - soybean: [345,8000,0,yes,no,100,280,0]
-        - tomato (cherry): [65,1000,0,yes,no,7,0,0]
+        - cabbage: [50,1000,0,1000,0,0,16,0,0]
+        - cabbage (chinese): [55,1000,0,1000,0,0,16,0,0]
+        - lettuce garnish: [100,3000,0,3000,0,0,48,0,0]
+        - mango (rainbow): [70,2000,0,2000,0,0,32,0,0]
+        - mix vegetable: [39,300,0,300,300,0,8,0,0]
+        - soybean: [345,8000,0,8000,0,0,100,280,0]
+        - tomato (cherry): [65,1000,0,1000,0,0,7,0,0]
   - delivery:
       type: public
       km: 68
     types:
       - name: nonedibles
         items:
-        - bar soap (savon de provence): [63,100,0,n/a,n/a,2,0,0]
-        - bar soap (savon de marseille): [125,300,0,n/a,n/a,3,0,0]
+        - bar soap (savon de provence): [63,100,0,n/a,n/a,n/a,2,0,0]
+        - bar soap (savon de marseille): [125,300,0,n/a,n/a,n/a,3,0,0]
 "2022-05-28":
   - delivery:
       type: private
@@ -1434,39 +1435,39 @@
     types:
       - name: drink-solid
         items:
-        - lime: [40,760,0,no,no,0,0,0]
+        - lime: [40,760,0,0,0,0,0,0,0]
       - name: food
         items:
-        - agasta: [10,190,0,no,no,0,0,0]
-        - banana: [17,2300,0,no,no,0,0,0]
-        - banana (crispy fried): [30,400,0,no,processed,0,0,0]
-        - carrot: [15,238,0,no,no,0,0,0]
-        - dumpling (chinese chive, 4 pieces): [30,340,0,no,processed,0,0,0]
-        - eggplant: [10,313,0,no,no,0,0,0]
-        - galangal: [0,143,0,no,no,0,0,0]
-        - gourd (bitter): [25,355,0,no,no,0,0,0]
-        - holy basil: [5,100,0,no,no,0,0,0]
-        - kale: [20,540,0,no,no,0,0,0]
-        - lettuce: [25,460,0,no,no,5,0,0]
-        - morning glory: [10,370,0,no,no,0,0,0]
-        - radish (daikon): [10,380,0,no,no,0,0,0]
-        - yardlong bean: [10,220,0,no,no,0,0,0]
+        - agasta: [10,190,0,0,0,0,0,0,0]
+        - banana: [17,2300,0,0,0,0,0,0,0]
+        - banana (crispy fried): [30,400,0,0,400,0,0,0,0]
+        - carrot: [15,238,0,0,0,0,0,0,0]
+        - dumpling (chinese chive, 4 pieces): [30,340,0,0,340,0,0,0,0]
+        - eggplant: [10,313,0,0,0,0,0,0,0]
+        - galangal: [0,143,0,0,0,0,0,0,0]
+        - gourd (bitter): [25,355,0,0,0,0,0,0,0]
+        - holy basil: [5,100,0,0,0,0,0,0,0]
+        - kale: [20,540,0,0,0,0,0,0,0]
+        - lettuce: [25,460,0,0,0,0,5,0,0]
+        - morning glory: [10,370,0,0,0,0,0,0,0]
+        - radish (daikon): [10,380,0,0,0,0,0,0,0]
+        - yardlong bean: [10,220,0,0,0,0,0,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - pumpkin: [0,580,0,no,no,0,0,0]
-        - potato: [0,224,0,no,no,0,0,0]
-        - potato (chips): [10,26,0,no,ultra,2,0,0]
-        - rice (sweet crispy cracker): [10,78,0,no,processed,4,0,0]
+        - pumpkin: [0,580,0,0,0,0,0,0,0]
+        - potato: [0,224,0,0,0,0,0,0,0]
+        - potato (chips): [10,26,0,0,0,26,2,0,0]
+        - rice (sweet crispy cracker): [10,78,0,0,78,0,4,0,0]
   - delivery:
       type: public
       km: 55
     types:
       - name: other-edibles
         items:
-        - pea (protein powder): [226,907,0,no,processed,20,0,0]
+        - pea (protein powder): [226,907,0,0,907,0,20,0,0]
 "2022-05-21":
   - delivery:
       type: private
@@ -1474,62 +1475,62 @@
     types:
       - name: food
         items:
-        - apple (granny smith): [159,1750,0,no,no,8,0,0]
-        - bean sprout: [12,500,0,no,no,4,0,0]
-        - cabbage: [39,550,0,yes,no,8,0,0]
-        - carrot (sliced): [29,500,0,no,no,8,0,0]
-        - chayote leaves: [39,300,0,yes,no,7,0,0]
-        - morning glory (chinese): [29,340,0,yes,no,7,0,0]
-        - corn (baby): [32,300,0,yes,no,5,0,0]
-        - corn (sweet): [32,1450,0,no,no,7,0,0]
-        - cucumber: [19,500,0,no,no,3,0,0]
-        - grass jelly: [35,1000,0,no,processed,4,0,0]
-        - ladies' finger: [29,300,0,yes,no,4,0,0]
-        - mushroom (buna-shimeji): [39,500,0,no,no,4,0,0]
-        - pineapple (smooth cayenne): [35,1680,0,no,no,1,0,0]
-        - potato (sweet): [30,1020,0,no,no,7,0,0]
-        - pumpkin (sliced): [39,500,0,no,no,8,0,0]
-        - tofu: [43,300,0,no,processed,4,0,0]
-        - tomato (seeda): [11,500,0,no,no,4,0,0]
+        - apple (granny smith): [159,1750,0,0,0,0,8,0,0]
+        - bean sprout: [12,500,0,0,0,0,4,0,0]
+        - cabbage: [39,550,0,550,0,0,8,0,0]
+        - carrot (sliced): [29,500,0,0,0,0,8,0,0]
+        - chayote leaves: [39,300,0,300,0,0,7,0,0]
+        - morning glory (chinese): [29,340,0,340,0,0,7,0,0]
+        - corn (baby): [32,300,0,300,0,0,5,0,0]
+        - corn (sweet): [32,1450,0,0,0,0,7,0,0]
+        - cucumber: [19,500,0,0,0,0,3,0,0]
+        - grass jelly: [35,1000,0,0,1000,0,4,0,0]
+        - ladies' finger: [29,300,0,300,0,0,4,0,0]
+        - mushroom (buna-shimeji): [39,500,0,0,0,0,4,0,0]
+        - pineapple (smooth cayenne): [35,1680,0,0,0,0,1,0,0]
+        - potato (sweet): [30,1020,0,0,0,0,7,0,0]
+        - pumpkin (sliced): [39,500,0,0,0,0,8,0,0]
+        - tofu: [43,300,0,0,300,0,4,0,0]
+        - tomato (seeda): [11,500,0,0,0,0,4,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - banana: [35,1000,0,no,no,0,0,0]
-        - ice-cream: [20,55,0,no,ultra,1,10,0]
-        - potato (chips): [5,13,1,no,ultra,1,0,0]
-        - pumpkin seed (roasted): [20,25,0,no,processed,4,0,0]
-        - rice (sweet crispy cracker): [10,78,0,no,processed,4,0,0]
+        - banana: [35,1000,0,0,0,0,0,0,0]
+        - ice-cream: [20,55,0,0,0,55,1,10,0]
+        - potato (chips): [5,13,1,0,0,13,1,0,0]
+        - pumpkin seed (roasted): [20,25,0,0,25,0,4,0,0]
+        - rice (sweet crispy cracker): [10,78,0,0,78,0,4,0,0]
       - name: other-edibles
         items:
-        - oil (coconut, refined): [198,2000,0,no,processed,47,0,0]
+        - oil (coconut, refined): [198,2000,0,0,2000,0,47,0,0]
   - delivery:
       type: public
       km: 26
     types:
       - name: drink-solid
         items:
-        - hibiscus leaves (dried): [25,20,0,yes,no,1,3,0]
+        - hibiscus leaves (dried): [25,20,0,20,0,0,1,3,0]
       - name: food
         items:
-        - beans (5 color): [135,1000,0,yes,no,4,0,0]
-        - sesame seed: [90,1000,0,yes,no,28,0,0]
+        - beans (5 color): [135,1000,0,1000,0,0,4,0,0]
+        - sesame seed: [90,1000,0,1000,0,0,28,0,0]
   - delivery:
       type: public
       km: 32
     types:
       - name: food
         items:
-        - rice (brown): [35,500,0,yes,no,4,0,0]
-        - soybean: [130,800,0,yes,no,20,0,0]
+        - rice (brown): [35,500,0,500,0,0,4,0,0]
+        - soybean: [130,800,0,800,0,0,20,0,0]
   - delivery:
       type: public
       km: 140
     types:
       - name: food
         items:
-        - rice (brown): [539,12000,0,yes,no,48,0,0]
+        - rice (brown): [539,12000,0,12000,0,0,48,0,0]
 "2022-05-14":
   - delivery:
       type: private
@@ -1537,21 +1538,21 @@
     types:
       - name: food
         items:
-        - amaranth leaves (red): [39,300,0,yes,no,7,0,0]
-        - apricot (frozen): [59,1000,0,no,no,7,0,0]
-        - beans (5 color): [42,500,0,no,no,4,0,0]
-        - banana: [69,2000,0,no,no,1,0,0]
-        - cabbage: [117,1500,0,yes,no,12,0,0]
-        - carrot (baby): [35,300,0,yes,no,5,0,0]
-        - corn (baby): [32,300,0,yes,no,5,0,0]
-        - cucumber: [19,500,0,no,no,3,0,0]
-        - false pakchoi: [29,300,0,yes,no,5,0,0]
-        - pineapple (smooth cayenne): [35,1560,0,no,no,1,0,0]
-        - radish (daikon): [24,1130,0,no,no,7,0,0]
-        - tomato (cherry): [28,548,0,no,no,4,0,0]
+        - amaranth leaves (red): [39,300,0,300,0,0,7,0,0]
+        - apricot (frozen): [59,1000,0,0,0,0,7,0,0]
+        - beans (5 color): [42,500,0,0,0,0,4,0,0]
+        - banana: [69,2000,0,0,0,0,1,0,0]
+        - cabbage: [117,1500,0,1500,0,0,12,0,0]
+        - carrot (baby): [35,300,0,300,0,0,5,0,0]
+        - corn (baby): [32,300,0,300,0,0,5,0,0]
+        - cucumber: [19,500,0,0,0,0,3,0,0]
+        - false pakchoi: [29,300,0,300,0,0,5,0,0]
+        - pineapple (smooth cayenne): [35,1560,0,0,0,0,1,0,0]
+        - radish (daikon): [24,1130,0,0,0,0,7,0,0]
+        - tomato (cherry): [28,548,0,0,0,0,4,0,0]
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - ice-cream: [20,55,2,no,ultra,1,10,0]
+        - ice-cream: [20,55,2,0,0,55,1,10,0]

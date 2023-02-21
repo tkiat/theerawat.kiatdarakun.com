@@ -1,6 +1,6 @@
 import React from "react"
 
-import {ConsumableType, ItemValue, Weeks} from "./share"
+import {ConsumableType, ItemValue, Weeks, consumableTypeSummaryTemplate} from "./share"
 import {TooltipText} from "../../../share"
 
 type I = {
@@ -11,14 +11,11 @@ type I = {
 export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
   if(!(cur in weeks)) return <p>Loading ...</p>
 
-  const total = {thb: 0, gram: 0, nonvegan: 0, plastic: 0, paper: 0, glass: 0}
+  const total = JSON.parse(JSON.stringify(consumableTypeSummaryTemplate))
 
   return (
     <div className="consumables-table-wrapper">
       <table className="consumables-table">
-        <colgroup span={3}></colgroup>
-        <colgroup span={3}></colgroup>
-        <colgroup span={3}></colgroup>
         <thead>
           <tr>
             <th rowSpan={1}>Delivery</th>
@@ -58,12 +55,15 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                         const title = Object.keys(item)[0]
                         const v = Object.values(item)[0] as ItemValue
 
-                        total.thb += isNaN(Number(v[0])) ? 0 : v[0]
-                        total.gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
-                        total.nonvegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
-                        total.plastic += isNaN(Number(v[5])) ? 0 : v[5]
-                        total.paper += isNaN(Number(v[6])) ? 0 : v[6]
-                        total.glass += isNaN(Number(v[7])) ? 0 : v[7]
+                        total.thb += v[0]
+                        total.total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
+                        total.non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
+                        total.cert_organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
+                        total.processed += isNaN(Number(v[4])) ? 0 : Number(v[4])
+                        total.ultra_processed += isNaN(Number(v[5])) ? 0 : Number(v[5])
+                        total.waste.plastic += v[6]
+                        total.waste.paper += v[7]
+                        total.waste.glass += v[8]
 
                         const lastIteminOrder = j === types.length - 1 &&
                           k === type.items.length - 1
@@ -84,10 +84,10 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                             <td>{v[0]}</td>
                             <td>{v[1]}</td>
                             <td>{v[2]}</td>
-                            <td>{v[4]}</td>
-                            <td>{v[5]}</td>
+                            <td>{v[4]}/{v[5]}</td>
                             <td>{v[6]}</td>
                             <td>{v[7]}</td>
+                            <td>{v[8]}</td>
                           </tr>
                         )
                       })
@@ -103,12 +103,12 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
           <tr>
             <td colSpan={2}>Total</td>
             <td>{total.thb}</td>
-            <td>{total.gram}</td>
-            <td>{total.nonvegan}</td>
-            <td>{total.thb}</td>
-            <td>{total.plastic}</td>
-            <td>{total.paper}</td>
-            <td>{total.glass}</td>
+            <td>{total.total_gram}</td>
+            <td>{total.non_vegan}</td>
+            <td>{total.processed}/{total.ultra_processed}</td>
+            <td>{total.waste.plastic}</td>
+            <td>{total.waste.paper}</td>
+            <td>{total.waste.glass}</td>
           </tr>
         </tbody>
       </table>
