@@ -36,8 +36,9 @@ export const consumableTypeSummaryTemplate = {
 type ConsumableTypeSummary = typeof consumableTypeSummaryTemplate
 
 export type WeeklySummaryValue = {
-  [key in ConsumableType]: ConsumableTypeSummary // TODO put types as 1st level key
-} & {
-  "km": { public: 0, private: 0 }
+  types: {
+    [key in ConsumableType]: ConsumableTypeSummary
+  },
+  "km": { public: 0, private: 0 },
 }
 export type WeeklySummary = {[key: string]: WeeklySummaryValue}

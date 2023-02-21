@@ -8,6 +8,7 @@
     margin-left: 0.5em;
     input {
       margin-right: 0.3em;
+      accent-color: var(--highlight-color);
     }
   }
 }
@@ -49,17 +50,15 @@
     border-spacing: 0;
     border: 1px solid var(--highlight-color);
     border-top: none;
-    th {
-      background: white;
+    thead tr th {
+      position: sticky;
+      top: 0;
+
+      @include m.hsl(background, 0, 0%, f.dayOrDark(90%, 10%));
       padding: 0.25em;
       border-top: 1px solid var(--highlight-color);
       border-bottom: 1px solid var(--highlight-color);
     }
-    thead tr th {
-      position: sticky;
-      top: 0;
-    }
-
     tbody {
       td {
         padding: 0.1em;

@@ -94,17 +94,17 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
 
 const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>) =>
   [...fields].reduce((acc, cur) => {
-    acc.thb += summary[cur].thb
-    acc.total_gram += summary[cur].total_gram
+    acc.thb += summary.types[cur].thb
+    acc.total_gram += summary.types[cur].total_gram
 
-    acc.non_vegan += summary[cur].non_vegan
-    acc.cert_organic += summary[cur].cert_organic
-    acc.processed += summary[cur].processed
-    acc.ultra_processed += summary[cur].ultra_processed
+    acc.non_vegan += summary.types[cur].non_vegan
+    acc.cert_organic += summary.types[cur].cert_organic
+    acc.processed += summary.types[cur].processed
+    acc.ultra_processed += summary.types[cur].ultra_processed
 
-    acc.waste.plastic += summary[cur].waste.plastic
-    acc.waste.paper += summary[cur].waste.paper
-    acc.waste.glass += summary[cur].waste.glass
+    acc.waste.plastic += summary.types[cur].waste.plastic
+    acc.waste.paper += summary.types[cur].waste.paper
+    acc.waste.glass += summary.types[cur].waste.glass
     return acc
   }, {
     ... JSON.parse(JSON.stringify(consumableTypeSummaryTemplate)),

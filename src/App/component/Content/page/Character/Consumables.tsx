@@ -58,8 +58,6 @@ export const Consumables = (): React.ReactElement => {
     }, {} as WeeklySummary))
   }, [weeks])
 
-  console.log(avgSummaries)
-
   return (
     <section>
       <h2>Consumables</h2>
@@ -148,43 +146,40 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
   </>
 
 const weeklySummaryTemplate = consumableTypes.reduce((acc, cur) => {
-  acc[cur] = consumableTypeSummaryTemplate
+  acc.types[cur] = consumableTypeSummaryTemplate
   return acc
-}, {km: { public: 0, private: 0, }} as WeeklySummaryValue)
+}, {types: {}, km: { public: 0, private: 0, }} as WeeklySummaryValue)
 
-const createWeeklySummaries =
-  (entries: [string, Week][]): WeeklySummary[] => {
-
-  const summaryAllWeeks = [] as WeeklySummary[]
+const createWeeklySummaries = (entries: [string, Week][]): WeeklySummary[] => {
+  const weeklySummaries = [] as WeeklySummary[]
 
   entries.forEach(([date, orders]) => {
-    const summaryOneWeek = JSON.parse(JSON.stringify(weeklySummaryTemplate))
+    const s = JSON.parse(JSON.stringify(weeklySummaryTemplate))
     orders.forEach(order => {
       if (order.delivery.type !== "no fuel") {
-        summaryOneWeek.km[order.delivery.type] += order.delivery.km
+        s.km[order.delivery.type] += order.delivery.km
       }
       order.types.forEach(type => {
         const n = type.name
         type.items.forEach(item => {
           const v = Object.values(item)[0] as ItemValue
 
-          summaryOneWeek[n].thb += v[0]
-          summaryOneWeek[n].total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
+          s.types[n].thb += v[0]
+          s.types[n].total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
+          s.types[n].non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
+          s.types[n].cert_organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
+          s.types[n].processed += isNaN(Number(v[4])) ? 0 : Number(v[4])
+          s.types[n].ultra_processed += isNaN(Number(v[5])) ? 0 : Number(v[5])
 
-          summaryOneWeek[n].non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
-          summaryOneWeek[n].cert_organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
-          summaryOneWeek[n].processed += isNaN(Number(v[4])) ? 0 : Number(v[4])
-          summaryOneWeek[n].ultra_processed += isNaN(Number(v[5])) ? 0 : Number(v[5])
-
-          summaryOneWeek[n].waste.plastic += v[6]
-          summaryOneWeek[n].waste.paper += v[7]
-          summaryOneWeek[n].waste.glass += v[8]
+          s.types[n].waste.plastic += v[6]
+          s.types[n].waste.paper += v[7]
+          s.types[n].waste.glass += v[8]
         })
       })
     })
-    summaryAllWeeks.push({[date]: summaryOneWeek})
+    weeklySummaries.push({[date]: s})
   })
-  return summaryAllWeeks
+  return weeklySummaries
 }
 
 const createAvgWeeklySummary = (ws: WeeklySummary[], n: number) => {
@@ -198,21 +193,22 @@ const combineWeeklySummaryValues =
   (a: WeeklySummaryValue, b: WeeklySummaryValue) =>
 
   consumableTypes.reduce((acc, cur) => {
-    acc[cur] = {
-      thb: a[cur].thb + b[cur].thb,
-      total_gram: a[cur].total_gram + b[cur].total_gram,
-      non_vegan: a[cur].non_vegan + b[cur].non_vegan,
-      processed: a[cur].processed + b[cur].processed,
-      ultra_processed: a[cur].ultra_processed + b[cur].ultra_processed,
-      cert_organic: a[cur].cert_organic + b[cur].cert_organic,
+    acc.types[cur] = {
+      thb: a.types[cur].thb + b.types[cur].thb,
+      total_gram: a.types[cur].total_gram + b.types[cur].total_gram,
+      non_vegan: a.types[cur].non_vegan + b.types[cur].non_vegan,
+      processed: a.types[cur].processed + b.types[cur].processed,
+      ultra_processed: a.types[cur].ultra_processed + b.types[cur].ultra_processed,
+      cert_organic: a.types[cur].cert_organic + b.types[cur].cert_organic,
       waste: {
-        plastic: a[cur].waste.plastic + b[cur].waste.plastic,
-        paper: a[cur].waste.paper + b[cur].waste.paper,
-        glass: a[cur].waste.glass + b[cur].waste.glass,
+        plastic: a.types[cur].waste.plastic + b.types[cur].waste.plastic,
+        paper: a.types[cur].waste.paper + b.types[cur].waste.paper,
+        glass: a.types[cur].waste.glass + b.types[cur].waste.glass,
       },
     }
     return acc
   }, {
+    types: {},
     km: {
       public: a.km.public + b.km.public,
       private: a.km.private + b.km.private,
@@ -221,21 +217,22 @@ const combineWeeklySummaryValues =
 
 const avgWeeklySummaryValue = (x: WeeklySummaryValue, n: number) =>
   consumableTypes.reduce((acc, cur) => {
-    acc[cur] = {
-      thb: Math.round(x[cur].thb / n),
-      total_gram: Math.round(x[cur].total_gram / n),
-      non_vegan: Math.round(x[cur].non_vegan / n),
-      processed: Math.round(x[cur].processed / n),
-      ultra_processed: Math.round(x[cur].ultra_processed / n),
-      cert_organic: Math.round(x[cur].cert_organic / n),
+    acc.types[cur] = {
+      thb: Math.round(x.types[cur].thb / n),
+      total_gram: Math.round(x.types[cur].total_gram / n),
+      non_vegan: Math.round(x.types[cur].non_vegan / n),
+      processed: Math.round(x.types[cur].processed / n),
+      ultra_processed: Math.round(x.types[cur].ultra_processed / n),
+      cert_organic: Math.round(x.types[cur].cert_organic / n),
       waste: {
-        plastic: Math.round(x[cur].waste.plastic / n),
-        paper: Math.round(x[cur].waste.paper / n),
-        glass: Math.round(x[cur].waste.glass / n),
+        plastic: Math.round(x.types[cur].waste.plastic / n),
+        paper: Math.round(x.types[cur].waste.paper / n),
+        glass: Math.round(x.types[cur].waste.glass / n),
       },
     }
     return acc
   }, {
+    types: {},
     km: {
       public: Math.round(x.km.public / n),
       private: Math.round(x.km.private / n),

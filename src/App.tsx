@@ -6,8 +6,6 @@ import {Canvas, Content, NavMain, NavSub, Sidebar, WaveConfigs, mkWavePhysics, m
 import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
 import "@app/share/style/main.scss"
 
-// TODO change consumables ultra to gram
-
 const numPointsOnWave = numDucks + 1
 const { place: initPlace, time: initTime } = initTheme()
 
