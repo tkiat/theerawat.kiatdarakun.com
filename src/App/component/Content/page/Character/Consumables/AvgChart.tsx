@@ -48,54 +48,69 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
 
   return (
     <div className="consumables-avg">
-      <ul>
-        <li>Total Spent: {summary.thb} THB</li>
+      <ul className="info-side">
         <li>
-          Delivery (km)<br />(for All Consumables)
+          <b>All Consumables</b>
           <ul>
-            <li>Public ({summary.km.public})</li>
-            <li>Private ({summary.km.private})</li>
+            <li>
+              Delivery
+              <ul>
+                <li>Public ({summary.km.public}km)</li>
+                <li>Private ({summary.km.private}km)</li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li>
-          Packaging (g)
+          <b>Selected Consumables</b>
           <ul>
-            <li>Plastic ({summary.waste.plastic})</li>
-            <li>Paper ({summary.waste.paper})</li>
-            <li>Glass ({summary.waste.glass})</li>
+            <li>Spending: {summary.thb} THB</li>
+            <li>
+              Packaging
+              <ul>
+                <li>Plastic ({summary.waste.plastic}g)</li>
+                <li>Paper ({summary.waste.paper}g)</li>
+                <li>Glass ({summary.waste.glass}g)</li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
-      <Bar className="consumables-avg__bar" width={400} height={400} data={data}
-        options={{
-          maintainAspectRatio: false,
-          plugins: {
-            tooltip:{
-              intersect : false,
-              mode:"index",
-            },
-            legend: {
-              display: false,
-            },
-            title: {
-              display: false,
-              text: "",
-            },
-          },
-          responsive: false,
-          scales: {
-            y: {
-              title: {
-                display: true,
-                text: "gram",
+      <div className="consumables-avg__bar-container">
+        <Bar
+          data={data}
+          options={{
+            maintainAspectRatio: false,
+            plugins: {
+              tooltip:{
+                intersect : false,
+                mode:"index",
               },
+              legend: {
+                display: false,
+              },
+              title: {
+                display: false,
+                text: "",
+              },
+            },
+            responsive: true,
+            scales: {
+              y: {
+                title: {
+                  display: true,
+                  text: "gram",
+                },
+              }
             }
-          }
-        }}
-      />
+          }}
+        />
+      </div>
+      <p className="info-line"><b>All Consumables</b>: Delivery (Public {summary.km.public}km, Private {summary.km.private}km) <b> — Selected Consumables</b>: Spending ({summary.thb} THB), Packaging (Plastic {summary.waste.plastic}g, Paper {summary.waste.paper}g, Glass {summary.waste.glass}g)</p>
     </div>
   )
 }
+//       <p>{summary.thb} THB — Delivery (for All Consumables): Public {summary.km.public}km, Private {summary.km.private}km — Packaging: Plastic {summary.waste.plastic}g, Paper {summary.waste.paper}g, Glass {summary.waste.glass}g</p>
 
 const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>) =>
   [...fields].reduce((acc, cur) => {

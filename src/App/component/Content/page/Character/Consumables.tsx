@@ -61,6 +61,9 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
       <div className="consumables-panel">
+        <label htmlFor="consumables-panel-select">
+          {isNaN(Number(cur)) ? "Week" : "Weekly Average" }
+        </label>&ensp;
         <Select
           cur={cur}
           setCur={setCur}
@@ -68,6 +71,7 @@ export const Consumables = (): React.ReactElement => {
           weeks={weeks}
         />
         <Checkboxes fields={fields} setFields={setFields} />
+        <hr />
       </div>
       {
         isNaN(Number(cur)) ?
@@ -87,10 +91,6 @@ type SelectInp = {
 const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
   React.ReactElement =>
   <>
-    <label htmlFor="consumables-panel-select">
-      {isNaN(Number(cur)) ? "Week" : "Weekly Average" }
-    </label>
-    <br />
     <select
       id="consumables-panel-select"
       key={Object.keys(avgSummaries).length && Object.keys(weeks).length ?
