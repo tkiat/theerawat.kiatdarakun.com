@@ -20,17 +20,17 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
     labels: [
       "Total",
       "Non-Vegan",
-      "Processed",
-      "Ultra-Processed",
+      "Probably Unhealthy",
+      "Unhealthy",
       "Certified Organic",
     ],
     datasets: [{
       data: [
         summary.total_gram,
         summary.non_vegan,
-        summary.processed,
-        summary.ultra_processed,
-        summary.cert_organic,
+        summary.may_unhealthy,
+        summary.unhealthy,
+        summary.organic,
       ],
       borderWidth: 2,
       borderColor: "black",
@@ -52,9 +52,9 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
         <li>
           Packaging
           <ul>
-            <li>Plastic ({summary.waste.plastic}g)</li>
-            <li>Paper ({summary.waste.paper}g)</li>
-            <li>Glass ({summary.waste.glass}g)</li>
+            <li>Plastic ({summary.pkg.plastic}g)</li>
+            <li>Paper ({summary.pkg.paper}g)</li>
+            <li>Glass ({summary.pkg.glass}g)</li>
           </ul>
         </li>
       </ul>
@@ -98,13 +98,13 @@ const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>)
     acc.total_gram += summary.types[cur].total_gram
 
     acc.non_vegan += summary.types[cur].non_vegan
-    acc.cert_organic += summary.types[cur].cert_organic
-    acc.processed += summary.types[cur].processed
-    acc.ultra_processed += summary.types[cur].ultra_processed
+    acc.organic += summary.types[cur].organic
+    acc.may_unhealthy += summary.types[cur].may_unhealthy
+    acc.unhealthy += summary.types[cur].unhealthy
 
-    acc.waste.plastic += summary.types[cur].waste.plastic
-    acc.waste.paper += summary.types[cur].waste.paper
-    acc.waste.glass += summary.types[cur].waste.glass
+    acc.pkg.plastic += summary.types[cur].pkg.plastic
+    acc.pkg.paper += summary.types[cur].pkg.paper
+    acc.pkg.glass += summary.types[cur].pkg.glass
     return acc
   }, {
     ... JSON.parse(JSON.stringify(consumableTypeSummaryTemplate)),

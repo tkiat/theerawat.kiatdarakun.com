@@ -24,9 +24,9 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
             <th rowSpan={1}>Gram</th>
             <th rowSpan={1}>Non-Vegan (g)</th>
             <th rowSpan={1}>
-              <TooltipText text="Processed">
+              <TooltipText text="Health">
                 <span className="notbold">
-                  Processed (g) / Ultra-processed (g)
+                  Probably Unhealthy (g) / Unhealthy (g)
                 </span>
               </TooltipText>
             </th>
@@ -58,12 +58,12 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                         total.thb += v[0]
                         total.total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
                         total.non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
-                        total.cert_organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
-                        total.processed += isNaN(Number(v[4])) ? 0 : Number(v[4])
-                        total.ultra_processed += isNaN(Number(v[5])) ? 0 : Number(v[5])
-                        total.waste.plastic += v[6]
-                        total.waste.paper += v[7]
-                        total.waste.glass += v[8]
+//                         total.organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
+                        total.may_unhealthy += isNaN(Number(v[4])) ? 0 : Number(v[4])
+                        total.unhealthy += isNaN(Number(v[5])) ? 0 : Number(v[5])
+                        total.pkg.plastic += v[6]
+                        total.pkg.paper += v[7]
+                        total.pkg.glass += v[8]
 
                         const lastIteminOrder = j === types.length - 1 &&
                           k === type.items.length - 1
@@ -105,10 +105,10 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
             <td>{total.thb}</td>
             <td>{total.total_gram}</td>
             <td>{total.non_vegan}</td>
-            <td>{total.processed}/{total.ultra_processed}</td>
-            <td>{total.waste.plastic}</td>
-            <td>{total.waste.paper}</td>
-            <td>{total.waste.glass}</td>
+            <td>{total.may_unhealthy}/{total.unhealthy}</td>
+            <td>{total.pkg.plastic}</td>
+            <td>{total.pkg.paper}</td>
+            <td>{total.pkg.glass}</td>
           </tr>
         </tbody>
       </table>

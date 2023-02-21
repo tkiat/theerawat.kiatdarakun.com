@@ -27,11 +27,11 @@ export const consumableTypeSummaryTemplate = {
   total_gram: 0,
 
   non_vegan: 0,
-  cert_organic: 0,
-  processed: 0,
-  ultra_processed: 0,
+  organic: 0,
+  may_unhealthy: 0,
+  unhealthy: 0,
 
-  waste: { plastic: 0, paper: 0, glass: 0, },
+  pkg: { plastic: 0, paper: 0, glass: 0, },
 }
 type ConsumableTypeSummary = typeof consumableTypeSummaryTemplate
 

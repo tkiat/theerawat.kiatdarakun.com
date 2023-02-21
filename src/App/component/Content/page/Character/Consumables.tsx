@@ -167,13 +167,13 @@ const createWeeklySummaries = (entries: [string, Week][]): WeeklySummary[] => {
           s.types[n].thb += v[0]
           s.types[n].total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
           s.types[n].non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
-          s.types[n].cert_organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
-          s.types[n].processed += isNaN(Number(v[4])) ? 0 : Number(v[4])
-          s.types[n].ultra_processed += isNaN(Number(v[5])) ? 0 : Number(v[5])
+          s.types[n].organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
+          s.types[n].may_unhealthy += isNaN(Number(v[4])) ? 0 : Number(v[4])
+          s.types[n].unhealthy += isNaN(Number(v[5])) ? 0 : Number(v[5])
 
-          s.types[n].waste.plastic += v[6]
-          s.types[n].waste.paper += v[7]
-          s.types[n].waste.glass += v[8]
+          s.types[n].pkg.plastic += v[6]
+          s.types[n].pkg.paper += v[7]
+          s.types[n].pkg.glass += v[8]
         })
       })
     })
@@ -197,13 +197,13 @@ const combineWeeklySummaryValues =
       thb: a.types[cur].thb + b.types[cur].thb,
       total_gram: a.types[cur].total_gram + b.types[cur].total_gram,
       non_vegan: a.types[cur].non_vegan + b.types[cur].non_vegan,
-      processed: a.types[cur].processed + b.types[cur].processed,
-      ultra_processed: a.types[cur].ultra_processed + b.types[cur].ultra_processed,
-      cert_organic: a.types[cur].cert_organic + b.types[cur].cert_organic,
-      waste: {
-        plastic: a.types[cur].waste.plastic + b.types[cur].waste.plastic,
-        paper: a.types[cur].waste.paper + b.types[cur].waste.paper,
-        glass: a.types[cur].waste.glass + b.types[cur].waste.glass,
+      may_unhealthy: a.types[cur].may_unhealthy + b.types[cur].may_unhealthy,
+      unhealthy: a.types[cur].unhealthy + b.types[cur].unhealthy,
+      organic: a.types[cur].organic + b.types[cur].organic,
+      pkg: {
+        plastic: a.types[cur].pkg.plastic + b.types[cur].pkg.plastic,
+        paper: a.types[cur].pkg.paper + b.types[cur].pkg.paper,
+        glass: a.types[cur].pkg.glass + b.types[cur].pkg.glass,
       },
     }
     return acc
@@ -221,13 +221,13 @@ const avgWeeklySummaryValue = (x: WeeklySummaryValue, n: number) =>
       thb: Math.round(x.types[cur].thb / n),
       total_gram: Math.round(x.types[cur].total_gram / n),
       non_vegan: Math.round(x.types[cur].non_vegan / n),
-      processed: Math.round(x.types[cur].processed / n),
-      ultra_processed: Math.round(x.types[cur].ultra_processed / n),
-      cert_organic: Math.round(x.types[cur].cert_organic / n),
-      waste: {
-        plastic: Math.round(x.types[cur].waste.plastic / n),
-        paper: Math.round(x.types[cur].waste.paper / n),
-        glass: Math.round(x.types[cur].waste.glass / n),
+      may_unhealthy: Math.round(x.types[cur].may_unhealthy / n),
+      unhealthy: Math.round(x.types[cur].unhealthy / n),
+      organic: Math.round(x.types[cur].organic / n),
+      pkg: {
+        plastic: Math.round(x.types[cur].pkg.plastic / n),
+        paper: Math.round(x.types[cur].pkg.paper / n),
+        glass: Math.round(x.types[cur].pkg.glass / n),
       },
     }
     return acc
