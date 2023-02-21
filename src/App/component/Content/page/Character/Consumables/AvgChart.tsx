@@ -18,27 +18,19 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
   const summary = combineFields(avgSummaries[cur], fields)
   const data = {
     labels: [
-      "Vegan",
+      "Total",
       "Non-Vegan",
-      "",
-      "Unprocessed",
       "Processed",
       "Ultra-Processed",
-      "",
       "Certified Organic",
-      "Not Certified Organic"
     ],
     datasets: [{
       data: [
-        summary.vegan,
+        summary.total_gram,
         summary.non_vegan,
-        0,
-        summary.unprocessed,
         summary.processed,
         summary.ultra_processed,
-        0,
         summary.cert_organic,
-        summary.not_cert_organic,
       ],
       borderWidth: 2,
       borderColor: "black",
@@ -48,31 +40,22 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
 
   return (
     <div className="consumables-avg">
+      <p className="info-line"><b>All Consumables</b>: Delivery (Public {summary.km.public}km, Private {summary.km.private}km) <b> — Selected Consumables</b>: Spending ({summary.thb} THB), Packaging (Plastic {summary.waste.plastic}g, Paper {summary.waste.paper}g, Glass {summary.waste.glass}g)</p>
       <ul className="info-side">
         <li>
-          <b>All Consumables</b>
+          Delivery
           <ul>
-            <li>
-              Delivery
-              <ul>
-                <li>Public ({summary.km.public}km)</li>
-                <li>Private ({summary.km.private}km)</li>
-              </ul>
-            </li>
+            <li>Public ({summary.km.public}km)</li>
+            <li>Private ({summary.km.private}km)</li>
           </ul>
         </li>
+        <li>Spending: {summary.thb} THB</li>
         <li>
-          <b>Selected Consumables</b>
+          Packaging
           <ul>
-            <li>Spending: {summary.thb} THB</li>
-            <li>
-              Packaging
-              <ul>
-                <li>Plastic ({summary.waste.plastic}g)</li>
-                <li>Paper ({summary.waste.paper}g)</li>
-                <li>Glass ({summary.waste.glass}g)</li>
-              </ul>
-            </li>
+            <li>Plastic ({summary.waste.plastic}g)</li>
+            <li>Paper ({summary.waste.paper}g)</li>
+            <li>Glass ({summary.waste.glass}g)</li>
           </ul>
         </li>
       </ul>
@@ -106,7 +89,6 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
           }}
         />
       </div>
-      <p className="info-line"><b>All Consumables</b>: Delivery (Public {summary.km.public}km, Private {summary.km.private}km) <b> — Selected Consumables</b>: Spending ({summary.thb} THB), Packaging (Plastic {summary.waste.plastic}g, Paper {summary.waste.paper}g, Glass {summary.waste.glass}g)</p>
     </div>
   )
 }
