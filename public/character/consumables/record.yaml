@@ -8,6 +8,7 @@
       - name: food
         items:
         - banana (fried): [20,210,0,no,processed,0,0,0]
+        - jackfruit: [0,1000,0,no,no,10,0,0]
         - peanut: [88,1000,0,no,no,10,0,0]
 "2023-02-11":
   - delivery:

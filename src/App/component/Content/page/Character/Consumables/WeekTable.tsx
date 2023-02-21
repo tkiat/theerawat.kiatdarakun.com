@@ -25,14 +25,14 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
             <th rowSpan={1}>Title</th>
             <th rowSpan={1}>THB</th>
             <th rowSpan={1}>Gram</th>
+            <th rowSpan={1}>Non-Vegan (g)</th>
             <th rowSpan={1}>
-              <TooltipText text="TODO">
+              <TooltipText text="Processed">
                 <span className="notbold">
-                  Non-vegan (g) / Process (g) / Ultra-processed (g)
+                  Processed (g) / Ultra-processed (g)
                 </span>
               </TooltipText>
             </th>
-            <th rowSpan={1}>Ultra-Processed (g)</th>
             <th rowSpan={1}>Plastic</th>
             <th rowSpan={1}>Paper</th>
             <th rowSpan={1}>Glass</th>
