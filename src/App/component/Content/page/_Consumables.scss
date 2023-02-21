@@ -57,12 +57,14 @@
     font-size: 0.8em;
     border-spacing: 0;
     border: 1px solid var(--highlight-color);
+    border-top: none;
     colgroup {
 /*       border: 1px solid var(--highlight-color); */
     }
     th {
       background: white;
       padding: 0.25em;
+      border-top: 1px solid var(--highlight-color);
       border-bottom: 1px solid var(--highlight-color);
     }
     thead tr th {
