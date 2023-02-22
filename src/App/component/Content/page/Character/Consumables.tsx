@@ -12,6 +12,7 @@ const resource = "/character/consumables/record.yaml"
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
+  console.log(weeks)
 
   const [cur, setCur] = useImmer<string>("4")
 //   const [cur, setCur] = useImmer<string>("2023-02-11")

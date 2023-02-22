@@ -3,6 +3,7 @@ import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
 import {WeeklySummary, ConsumableType, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
+import {TooltipFa} from "../../../share"
 
 Chart.register(...registerables)
 
@@ -40,24 +41,29 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
 
   return (
     <div className="consumables-avg">
-      <ul className="info-side">
-        <li>
-          Delivery
-          <ul>
-            <li>Public ({summary.km.public}km)</li>
-            <li>Private ({summary.km.private}km)</li>
-          </ul>
-        </li>
-        <li>Spending: {summary.thb} THB</li>
-        <li>
-          Packaging
-          <ul>
-            <li>Plastic ({summary.pkg.plastic}g)</li>
-            <li>Paper ({summary.pkg.paper}g)</li>
-            <li>Glass ({summary.pkg.glass}g)</li>
-          </ul>
-        </li>
-      </ul>
+      <div className="info-side">
+        <ul>
+          <li>
+            Delivery
+            <ul>
+              <li>Public ({summary.km.public}km)</li>
+              <li>Private ({summary.km.private}km)</li>
+            </ul>
+          </li>
+          <li>Spending: {summary.thb} THB</li>
+          <li>
+            Packaging
+            <ul>
+              <li>Plastic ({summary.pkg.plastic}g)</li>
+              <li>Paper ({summary.pkg.paper}g)</li>
+              <li>Glass ({summary.pkg.glass}g)</li>
+            </ul>
+          </li>
+        </ul>
+        <TooltipFa faclass="fa-solid fa-circle-question">
+          <p>TODO</p>
+        </TooltipFa>
+      </div>
       <div className="consumables-avg__bar-container">
         <Bar
           data={data}
