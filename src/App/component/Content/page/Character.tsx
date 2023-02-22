@@ -14,10 +14,10 @@ export const Character = (): React.ReactElement => {
     ],
     content: {
       sections: [
-        <Consumables />,
         <Trait />,
         <Hobbies />,
         <Belongings />,
+        <Consumables />,
       ]
     }
   }

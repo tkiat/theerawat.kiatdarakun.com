@@ -3,6 +3,7 @@ import * as jsYaml from "js-yaml"
 import {useImmer} from "use-immer"
 
 import {capitalize, isType} from "@app/share"
+import {TooltipFa} from "../../share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
 import {ConsumableType, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, consumableTypeSummaryTemplate} from "./Consumables/share"
@@ -62,9 +63,10 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
       <div className="consumables-panel">
-        <label htmlFor="consumables-panel-select">
-          {isNaN(Number(cur)) ? "Week" : "Weekly Average" }
-        </label>&ensp;
+        <label className="consumables-panel__label" htmlFor="consumables-panel-select">
+          {isNaN(Number(cur)) ? "Specific Week" : "Weekly Average" }
+        </label>
+        <Info />&ensp;
         <Select
           cur={cur}
           setCur={setCur}
@@ -74,14 +76,27 @@ export const Consumables = (): React.ReactElement => {
         <Checkboxes fields={fields} setFields={setFields} />
         <hr />
       </div>
-      {
-        isNaN(Number(cur)) ?
-          <WeekTable cur={cur} fields={fields} weeks={weeks} />
-        : <AvgChart cur={cur} fields={fields} avgSummaries={avgSummaries} />
-      }
+      <div className="consumables-display-container">
+        {
+          isNaN(Number(cur)) ?
+            <WeekTable cur={cur} fields={fields} weeks={weeks} />
+          : <AvgChart cur={cur} fields={fields} avgSummaries={avgSummaries} />
+        }
+      </div>
     </section>
   )
 }
+
+const Info = (): React.ReactElement =>
+  <TooltipFa faclass="fa-solid fa-circle-question">
+    <ul>
+      <li>I mostly record only consumables I bought and exclude the delivery price (to make it more universal to the reader), so the actual spending is higher.</li>
+      <li><b className="highlight">Non-vegan</b>: I always buy vegan food for myself, but I sometimes consume it when I think I should do so (like when it actually helps animals or in some social settings). I don't usually record those exceptions.</li>
+      <li><b className="highlight">Delivery</b>: I regard any delivery to multiple recipients at a time (like any delivery service) as <i>public</i>, and everything else as <i>private</i>. I divide the share accordingly, for example, I record half of the actual distance when I order the same thing along with another person in one order.</li>
+      <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like ultra-processed food). When I am not sure about that, like processed food in a shop that I don't know the ingredients or what happens behind the scenes, I regard it as <i>probably unhealthy</i>.</li>
+      <li><b className="highlight">Packaging</b>: I only record the package that coems with consumables. This excludes, for example, a cardboard box that is a part of a delivery service.</li>
+    </ul>
+  </TooltipFa>
 
 type SelectInp = {
   cur: string,

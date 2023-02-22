@@ -4,6 +4,10 @@
 .consumables-panel {
   font-size: 0.8em;
   user-select: none;
+  &__label {
+    display: inline-block;
+    width: 8em;
+  }
   &__checkbox {
     margin-left: 0.5em;
     input {
@@ -12,75 +16,87 @@
     }
   }
 }
+.consumables-display-container {
+  height: 15em;
+  overflow: auto;
 
-.consumables-avg {
-  display: flex;
-  font-size: 0.8em;
-  .info-side {
-    display: inline-block;
-    margin: 0;
-    width: 10em;
-    & > ul {
+  .consumables-avg {
+    display: flex;
+    .info-side {
+      display: inline-block;
+      margin: 0;
+      width: 10em;
+      font-size: 0.8em;
+
       list-style-position: inside;
       list-style: none;
       padding-left: 0;
+      line-height: 1.2;
       ul {
         list-style-position: inside;
-        padding-left: 1em;
+        list-style: none;
+        padding-left: 0.5em;
+        li:before {
+          content: "- ";
+        }
       }
     }
-  }
-  &__bar-container {
-    position: relative;
-    height: 15em;
-    width: max(40%, 20em);
-  }
-}
-
-.consumables-table-wrapper {
-  max-height: 300px;
-  overflow: auto;
-  display: inline-block;
-
-  table {
-    table-layout: fixed;
-    border-collapse: separate;
-    text-align: center;
-    font-size: 0.8em;
-    border-spacing: 0;
-    border: 1px solid var(--highlight-color);
-    border-top: none;
-    thead tr th {
-      position: sticky;
-      top: 0;
-
-      @include m.hsl(background, 0, 0%, f.dayOrDark(90%, 10%));
-      padding: 0.25em;
-      border-top: 1px solid var(--highlight-color);
-      border-bottom: 1px solid var(--highlight-color);
+    &__bar-container {
+      position: relative;
+      height: 15em;
+      width: max(40%, 20em);
     }
-    tbody {
-      td {
-        padding: 0.1em;
+    &__bar {
+/*       background-color: red; */
+/*       border-color: red; */
+    }
+  }
+
+  .consumables-table-wrapper {
+    max-height: 300px;
+    overflow: auto;
+    display: inline-block;
+
+    table {
+      table-layout: fixed;
+      border-collapse: separate;
+      text-align: center;
+      font-size: 0.8em;
+      border-spacing: 0;
+      border: 1px solid var(--highlight-color);
+      border-top: none;
+      thead tr th {
+        position: sticky;
+        top: 0;
+
+        @include m.hsl(background, 0, 0%, f.dayOrDark(90%, 10%));
+        padding: 0.25em;
+        border-top: 1px solid var(--highlight-color);
+        border-bottom: 1px solid var(--highlight-color);
       }
-      tr {
-        &:not(:last-child) {
-          &:nth-child(even) {
-            td:not([rowspan]) {
-              @include m.hsl(background-color, 0, 0%, f.dayOrDark(90%, 10%));
+      tbody {
+        td {
+          padding: 0.1em;
+        }
+        tr {
+          &:not(:last-child) {
+            &:nth-child(even) {
+              td:not([rowspan]) {
+                @include m.hsl(background-color, 0, 0%, f.dayOrDark(90%, 10%));
+              }
             }
           }
+          &:last-child {
+            text-decoration: underline;
+          }
+          td[rowspan] {
+            border-right: 1px dashed var(--highlight-color);
+            border-bottom: 1px solid var(--highlight-color);
+          }
         }
-        &:last-child {
-          text-decoration: underline;
-        }
-        td[rowspan] {
-          border-right: 1px dashed var(--highlight-color);
+        .last-tr-order td {
           border-bottom: 1px solid var(--highlight-color);
         }
-      }
-      .last-tr-order td {
-        border-bottom: 1px solid var(--highlight-color);
       }
     }
   }
