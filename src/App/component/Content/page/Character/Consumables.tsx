@@ -13,8 +13,8 @@ export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
 
-//   const [cur, setCur] = useImmer<string>("4")
-  const [cur, setCur] = useImmer<string>("2023-02-11")
+  const [cur, setCur] = useImmer<string>("4")
+//   const [cur, setCur] = useImmer<string>("2023-02-11")
 
   const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
     [0, 1].map(x => consumableTypes[x])
