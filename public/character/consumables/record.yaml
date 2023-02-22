@@ -121,7 +121,7 @@
         - {t: "potato (sweet)",thb: 20,g: 632,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 40,g: 1005,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "strawberry (frozen)",thb: 80,g: 800,nv: 0,oc: 0,mu: 800,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "strawberry (frozen)",thb: 80,g: 800,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
         - {t: "sugar (crystalline)",thb: 20,g: 440,nv: 0,oc: 0,mu: 440,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "tomato",thb: 20,g: 532,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 23,g: 1067,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -149,7 +149,7 @@
     types:
       - name: drink-solid
         items:
-        - {t: "tea (green)",thb: 300,g: 900,nv: 0,oc: 0,mu: 900,u: 0,p: 90,pa: 0,gl: 0}
+        - {t: "tea (green)",thb: 300,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 90,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 460
@@ -222,7 +222,7 @@
         - {t: "peanut",thb: 195,g: 2500,nv: 0,oc: 0,mu: 0,u: 0,p: 25,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 40,g: 895,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "rice (sweet crispy cracker)",thb: 10,g: 72,nv: 0,oc: 0,mu: 72,u: 0,p: 4,pa: 0,gl: 0}
-        - {t: "kiwi (frozen)",thb: 79,g: 1000,nv: 0,oc: 0,mu: 1000,u: 0,p: 12,pa: 0,gl: 0}
+        - {t: "kiwi (frozen)",thb: 79,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "star gooseberry (in syrup)",thb: 20,g: 229,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tofu and beansprout",thb: 30,g: 733,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 20,g: 812,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -263,7 +263,7 @@
         - {t: "pineapple",thb: 60,g: 2329,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 20,g: 820,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 40,g: 923,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "strawberry (frozen)",thb: 79,g: 800,nv: 0,oc: 0,mu: 800,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "strawberry (frozen)",thb: 79,g: 800,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
 "2022-12-24":
   - delivery:
       type: no fuel
@@ -286,7 +286,7 @@
         - {t: "mushroom (wood ear)",thb: 40,g: 512,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 60,g: 2329,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 40,g: 789,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "strawberry (frozen)",thb: 79,g: 800,nv: 0,oc: 0,mu: 800,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "strawberry (frozen)",thb: 79,g: 800,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 30,g: 904,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
   - delivery:
       type: public
@@ -309,7 +309,7 @@
         - {t: "banana (fried)",thb: 20,g: 242,nv: 0,oc: 0,mu: 242,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 45,g: 789,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 10,g: 236,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "cabbage (pickled)",thb: 20,g: 663,nv: 0,oc: 0,mu: 663,u: 0,p: 0,pa: 4,gl: 0}
+        - {t: "cabbage (pickled)",thb: 20,g: 663,nv: 0,oc: 0,mu: 663,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 886,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
         - {t: "ginger (shredded)",thb: 10,g: 155,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "melon (sunlady)",thb: 35,g: 1098,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
@@ -384,7 +384,7 @@
     types:
       - name: drink-solid
         items:
-        - {t: "tea (green)",thb: 150,g: 450,nv: 0,oc: 0,mu: 450,u: 0,p: 45,pa: 0,gl: 0}
+        - {t: "tea (green)",thb: 150,g: 450,nv: 0,oc: 0,mu: 0,u: 0,p: 45,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 45
@@ -405,7 +405,7 @@
     types:
       - name: other-edibles
         items:
-        - {t: "pea (protein powder)",thb: 249,g: 908,nv: 0,oc: 0,mu: 908,u: 0,p: 25,pa: 0,gl: 0}
+        - {t: "pea (protein powder)",thb: 249,g: 908,nv: 0,oc: 0,mu: 0,u: 908,p: 25,pa: 0,gl: 0}
 "2022-11-26":
   - delivery:
       type: no fuel
@@ -588,7 +588,7 @@
         - {t: "beans (kidney)",thb: 35,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 25,g: 365,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 35,g: 557,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "cabbage (pickled)",thb: 20,g: 700,nv: 0,oc: 0,mu: 700,u: 0,p: 0,pa: 4,gl: 0}
+        - {t: "cabbage (pickled)",thb: 20,g: 700,nv: 0,oc: 0,mu: 700,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "false pakchoi",thb: 10,g: 191,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 50,g: 3420,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 183,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -680,7 +680,7 @@
     types:
       - name: food
         items:
-        - {t: "bread",thb: 40,g: 417,nv: 0,oc: 0,mu: 417,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "bread",thb: 40,g: 417,nv: 0,oc: 0,mu: 0,u: 417,p: 4,pa: 0,gl: 0}
 "2022-10-01":
   - delivery:
       type: private
@@ -717,7 +717,7 @@
         - {t: "banana",thb: 20,g: 1070,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bread",thb: 22,g: 250,nv: 0,oc: 0,mu: 0,u: 250,p: 5,pa: 0,gl: 0}
         - {t: "peanut (boiled)",thb: 20,g: 135,nv: 0,oc: 0,mu: 135,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "shave ice",thb: 20,g: 407,nv: 0,oc: 0,mu: 0,u: 407,p: 0,pa: 0,gl: 0}
+        - {t: "shave ice",thb: 20,g: 407,nv: 0,oc: 0,mu: 401,u: 6,p: 0,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-liquid
         items:
@@ -728,7 +728,7 @@
     types:
       - name: food
         items:
-        - {t: "bread",thb: 40,g: 417,nv: 0,oc: 0,mu: 417,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "bread",thb: 40,g: 417,nv: 0,oc: 0,mu: 0,u: 417,p: 4,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 30
@@ -834,14 +834,14 @@
         - {t: "gourd (bitter)",thb: 15,g: 356,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 75,g: 1703,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 10,g: 93,nv: 0,oc: 0,mu: 93,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "khanom krok",thb: 25,g: 198,nv: 0,oc: 0,mu: 198,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom krok",thb: 25,g: 198,nv: 10,oc: 0,mu: 198,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 20,g: 564,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "peanut",thb: 40,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "peanut (fried) ",thb: 10,g: 96,nv: 0,oc: 0,mu: 96,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "pineapple",thb: 40,g: 1088,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (dessert, with coconut milk)",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 10,g: 355,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "sausage (flour)",thb: 10,g: 60,nv: 0,oc: 0,mu: 0,u: 60,p: 0,pa: 0,gl: 0}
+        - {t: "sausage",thb: 10,g: 60,nv: 5,oc: 0,mu: 0,u: 60,p: 0,pa: 0,gl: 0}
         - {t: "taro (fried)",thb: 10,g: 77,nv: 0,oc: 0,mu: 77,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 22,g: 1256,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-liquid
@@ -879,7 +879,7 @@
       - name: food
         items:
         - {t: "grava",thb: 60,g: 1178,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "khanom krok",thb: 25,g: 198,nv: 0,oc: 0,mu: 198,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom krok",thb: 25,g: 198,nv: 10,oc: 0,mu: 198,u: 0,p: 0,pa: 0,gl: 0}
 "2022-08-27":
   - delivery:
       type: private
@@ -905,7 +905,7 @@
       - name: food
         items:
         - {t: "banana",thb: 0,g: 1133,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "cabbage (chinese, pickled)",thb: 20,g: 410,nv: 0,oc: 0,mu: 410,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "cabbage (chinese, pickled)",thb: 20,g: 410,nv: 0,oc: 0,mu: 410,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "chinese steamed rice noodle rolls",thb: 40,g: 200,nv: 0,oc: 0,mu: 200,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 20,g: 132,nv: 0,oc: 0,mu: 132,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom tua pap",thb: 20,g: 204,nv: 0,oc: 0,mu: 204,u: 0,p: 6,pa: 0,gl: 0}
@@ -1043,7 +1043,7 @@
         - {t: "bun (black bean)",thb: 10,g: 90,nv: 0,oc: 0,mu: 90,u: 0,p: 0,pa: 1,gl: 0}
         - {t: "peanut bar",thb: 5,g: 62,nv: 0,oc: 0,mu: 62,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "rice (sweet crispy cracker)",thb: 30,g: 220,nv: 0,oc: 0,mu: 220,u: 0,p: 9,pa: 0,gl: 0}
-        - {t: "star gooseberry (in syrup)",thb: 20,g: 195,nv: 0,oc: 0,mu: 195,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "star gooseberry (in syrup)",thb: 20,g: 195,nv: 0,oc: 0,mu: 195,u: 0,p: 3,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 710
@@ -1077,7 +1077,7 @@
         - {t: "dumpling (chinese chive, 3 pieces)",thb: 30,g: 334,nv: 0,oc: 0,mu: 334,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 14,g: 428,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 35,g: 1006,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "pineapple (cracker)",thb: 20,g: 150,nv: 0,oc: 0,mu: 150,u: 0,p: 0,pa: 2,gl: 0}
+        - {t: "pineapple (cracker)",thb: 20,g: 150,nv: 10,oc: 0,mu: 150,u: 0,p: 0,pa: 2,gl: 0}
         - {t: "rice (sweet crispy cracker)",thb: 15,g: 103,nv: 0,oc: 0,mu: 103,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "shave ice",thb: 25,g: 532,nv: 0,oc: 0,mu: 532,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "stuffed dough (cococut)",thb: 20,g: 154,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -1139,7 +1139,7 @@
         - {t: "banana (dried, sweeten)",thb: 5,g: 32,nv: 0,oc: 0,mu: 32,u: 0,p: 5,pa: 0,gl: 0}
         - {t: "mango (pickled)",thb: 5,g: 45,nv: 0,oc: 0,mu: 45,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "peanuts (fried with flour)",thb: 6,g: 34,nv: 0,oc: 0,mu: 34,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "plant-based meat (2 free 1)",thb: 158,g: 550,nv: 0,oc: 0,mu: 0,u: 550,p: 27,pa: 0,gl: 0}
+        - {t: "plant-based meat",thb: 158,g: 550,nv: 0,oc: 0,mu: 0,u: 550,p: 27,pa: 0,gl: 0}
         - {t: "rice (sweet crispy cracker)",thb: 5,g: 39,nv: 0,oc: 0,mu: 39,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 440,nv: 0,oc: 0,mu: 440,u: 0,p: 0,pa: 0,gl: 0}
   - delivery:
@@ -1187,7 +1187,7 @@
         items:
         - {t: "banana",thb: 40,g: 2400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (pickled)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 4,gl: 0}
-        - {t: "fried banana (fried)",thb: 20,g: 217,nv: 0,oc: 0,mu: 217,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "banana (fried)",thb: 20,g: 217,nv: 0,oc: 0,mu: 217,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "muskmelon",thb: 30,g: 1160,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "rice (sweet crispy cracker)",thb: 30,g: 219,nv: 0,oc: 0,mu: 219,u: 0,p: 10,pa: 0,gl: 0}
   - delivery:
@@ -1250,7 +1250,7 @@
         - {t: "water",thb: 25,g: 30000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-solid
         items:
-        - {t: "hibiscus leaves (dried)",thb: 5,g: 90,nv: 0,oc: 0,mu: 90,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "hibiscus leaves (dried)",thb: 5,g: 90,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "lime",thb: 20,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
@@ -1262,7 +1262,7 @@
         - {t: "carrot",thb: 17,g: 475,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "chinese chives (fried)",thb: 25,g: 180,nv: 0,oc: 0,mu: 180,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "coconut",thb: 50,g: 2950,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "coconut pancake (ba bin tip)",thb: 5,g: 60,nv: 0,oc: 0,mu: 60,u: 0,p: 1,pa: 1,gl: 0}
+        - {t: "coconut pancake (ba bin tip)",thb: 5,g: 60,nv: 5,oc: 0,mu: 60,u: 0,p: 1,pa: 1,gl: 0}
         - {t: "corn (baby)",thb: 34,g: 677,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "gourd (bitter)",thb: 20,g: 457,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 419,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
@@ -1411,7 +1411,7 @@
         - {t: "cabbage (chinese)",thb: 55,g: 1000,nv: 0,oc: 1000,mu: 0,u: 0,p: 16,pa: 0,gl: 0}
         - {t: "lettuce garnish",thb: 100,g: 3000,nv: 0,oc: 3000,mu: 0,u: 0,p: 48,pa: 0,gl: 0}
         - {t: "mango (rainbow)",thb: 70,g: 2000,nv: 0,oc: 2000,mu: 0,u: 0,p: 32,pa: 0,gl: 0}
-        - {t: "mix vegetable",thb: 39,g: 300,nv: 0,oc: 300,mu: 300,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "mix vegetable",thb: 39,g: 300,nv: 0,oc: 300,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "soybean",thb: 345,g: 8000,nv: 0,oc: 8000,mu: 0,u: 0,p: 100,pa: 280,gl: 0}
         - {t: "tomato (cherry)",thb: 65,g: 1000,nv: 0,oc: 1000,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
   - delivery:
@@ -1461,7 +1461,7 @@
     types:
       - name: other-edibles
         items:
-        - {t: "pea (protein powder)",thb: 226,g: 907,nv: 0,oc: 0,mu: 907,u: 0,p: 20,pa: 0,gl: 0}
+        - {t: "pea (protein powder)",thb: 226,g: 907,nv: 0,oc: 0,mu: 0,u: 907,p: 20,pa: 0,gl: 0}
 "2022-05-21":
   - delivery:
       type: private

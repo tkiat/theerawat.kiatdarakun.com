@@ -65,7 +65,7 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
             <li>I mostly record only consumables I bought and exclude the delivery price (to make it more universal to the reader), so the actual spending is higher.</li>
             <li><b className="highlight">Non-vegan</b>: I always buy vegan food for myself, but I sometimes consume it when I think I should do so (like when it actually helps animals or in some social settings). I don't usually record those exceptions.</li>
             <li><b className="highlight">Delivery</b>: I regard any delivery to multiple recipients at a time (like any delivery service) as <i>public</i>, and everything else as <i>private</i>. I divide the share accordingly, for example, I record half of the actual distance when I order the same thing along with another person in one order.</li>
-            <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i>. When I am not sure about that, like processed food in a shop that I don't know the ingredients or what happens behind the scenes, I regard it as <i>probably unhealthy</i>.</li>
+            <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like ultra-processed food). When I am not sure about that, like processed food in a shop that I don't know the ingredients or what happens behind the scenes, I regard it as <i>probably unhealthy</i>.</li>
             <li><b className="highlight">Packaging</b>: I only record the package that coems with consumables. This excludes, for example, a cardboard box that is a part of a delivery service.</li>
           </ul>
         </TooltipFa>
