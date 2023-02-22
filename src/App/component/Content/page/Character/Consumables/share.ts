@@ -1,7 +1,18 @@
 export const consumableTypes = ["food", "drink-solid", "drink-liquid", "other-edibles", "nonedibles"] as const
 export type ConsumableType = (typeof consumableTypes)[number]
 
-export type ItemValue = [number, number | string, number | string, number | string, number | string, number | string, number, number, number]
+type ItemValue = {
+  t: string,
+  thb: number | string,
+  g: number | string,
+  nv: number | string,
+  oc: number | string,
+  mu: number | string,
+  u: number | string,
+  p: number,
+  pa: number,
+  gl: number | string
+}
 type Item = {[key: string]: ItemValue}
 
 type Type = {

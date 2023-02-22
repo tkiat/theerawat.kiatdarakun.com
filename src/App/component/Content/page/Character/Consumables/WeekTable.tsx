@@ -1,6 +1,6 @@
 import React from "react"
 
-import {ConsumableType, ItemValue, Weeks, consumableTypeSummaryTemplate} from "./share"
+import {ConsumableType, Weeks, consumableTypeSummaryTemplate} from "./share"
 import {TooltipText} from "../../../share"
 
 type I = {
@@ -86,8 +86,8 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                             <td>{v.thb}</td>
                             <td>{v.g}</td>
                             <td>{v.nv}</td>
-                            <td>{v.mu}/{v.u}</td>
-                            <td>{v.p}/{v.pa}/{v.gl}</td>
+                            <td>{v.mu}-{v.u}</td>
+                            <td>{v.p}-{v.pa}-{v.gl}</td>
                           </tr>
                         )
                       })
@@ -105,7 +105,7 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
             <td>{total.thb}</td>
             <td>{total.total_gram}</td>
             <td>{total.non_vegan}</td>
-            <td>{total.may_unhealthy}/{total.unhealthy}</td>
+            <td>{total.may_unhealthy}-{total.unhealthy}</td>
             <td>{total.pkg.plastic}-{total.pkg.paper}-{total.pkg.glass}</td>
           </tr>
         </tbody>

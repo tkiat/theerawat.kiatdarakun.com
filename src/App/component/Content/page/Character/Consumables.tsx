@@ -5,7 +5,7 @@ import {useImmer} from "use-immer"
 import {capitalize, isType} from "@app/share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
-import {ConsumableType, ItemValue, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, consumableTypeSummaryTemplate} from "./Consumables/share"
+import {ConsumableType, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, consumableTypeSummaryTemplate} from "./Consumables/share"
 
 const resource = "/character/consumables/record.yaml"
 
