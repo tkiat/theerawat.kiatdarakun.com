@@ -10,6 +10,7 @@
         - {t: "banana (fried)",thb: 20,g: 210,nv: 0,oc: 0,mu: 210,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "jackfruit",thb: 0,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 45,g: 1236,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-02-11":
   - delivery:
       type: public
