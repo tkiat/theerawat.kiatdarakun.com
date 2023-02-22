@@ -26,13 +26,17 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
             <th rowSpan={1}>
               <TooltipText text="Health">
                 <span className="notbold">
-                  Probably Unhealthy (g) / Unhealthy (g)
+                  Probably Unhealthy (g)-Unhealthy (g)
                 </span>
               </TooltipText>
             </th>
-            <th rowSpan={1}>Plastic</th>
-            <th rowSpan={1}>Paper</th>
-            <th rowSpan={1}>Glass</th>
+            <th rowSpan={1}>
+              <TooltipText text="Waste">
+                <span className="notbold">
+                  Plastic (g)-Paper (g)-Glass (g)
+                </span>
+              </TooltipText>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -51,19 +55,17 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                   return (
                   <React.Fragment key={j}>
                     {
-                      type.items.map((item, k) => {
-                        const title = Object.keys(item)[0]
-                        const v = Object.values(item)[0] as ItemValue
+                      type.items.map((v, k) => {
+                        total.thb += v.thb
+                        total.total_gram += isNaN(Number(v.g)) ? 0 : Number(v.g)
+                        total.non_vegan += isNaN(Number(v.nv)) ? 0 : Number(v.nv)
+//                         total.organic += isNaN(Number(v.oc)) ? 0 : Number(v.oc)
+                        total.may_unhealthy += isNaN(Number(v.mu)) ? 0 : Number(v.mu)
+                        total.unhealthy += isNaN(Number(v.u)) ? 0 : Number(v.u)
 
-                        total.thb += v[0]
-                        total.total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
-                        total.non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
-//                         total.organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
-                        total.may_unhealthy += isNaN(Number(v[4])) ? 0 : Number(v[4])
-                        total.unhealthy += isNaN(Number(v[5])) ? 0 : Number(v[5])
-                        total.pkg.plastic += v[6]
-                        total.pkg.paper += v[7]
-                        total.pkg.glass += v[8]
+                        total.pkg.plastic += v.p
+                        total.pkg.paper += v.pa
+                        total.pkg.glass += v.gl
 
                         const lastIteminOrder = j === types.length - 1 &&
                           k === type.items.length - 1
@@ -80,14 +82,12 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
                                 }
                               </td>
                             }
-                            <td>{title}</td>
-                            <td>{v[0]}</td>
-                            <td>{v[1]}</td>
-                            <td>{v[2]}</td>
-                            <td>{v[4]}/{v[5]}</td>
-                            <td>{v[6]}</td>
-                            <td>{v[7]}</td>
-                            <td>{v[8]}</td>
+                            <td>{v.t}</td>
+                            <td>{v.thb}</td>
+                            <td>{v.g}</td>
+                            <td>{v.nv}</td>
+                            <td>{v.mu}/{v.u}</td>
+                            <td>{v.p}/{v.pa}/{v.gl}</td>
                           </tr>
                         )
                       })
@@ -106,9 +106,7 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
             <td>{total.total_gram}</td>
             <td>{total.non_vegan}</td>
             <td>{total.may_unhealthy}/{total.unhealthy}</td>
-            <td>{total.pkg.plastic}</td>
-            <td>{total.pkg.paper}</td>
-            <td>{total.pkg.glass}</td>
+            <td>{total.pkg.plastic}-{total.pkg.paper}-{total.pkg.glass}</td>
           </tr>
         </tbody>
       </table>

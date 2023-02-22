@@ -12,10 +12,9 @@ const resource = "/character/consumables/record.yaml"
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
-  console.log(weeks)
 
-  const [cur, setCur] = useImmer<string>("4")
-//   const [cur, setCur] = useImmer<string>("2023-02-11")
+//   const [cur, setCur] = useImmer<string>("4")
+  const [cur, setCur] = useImmer<string>("2023-02-11")
 
   const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
     [0, 1].map(x => consumableTypes[x])
@@ -162,19 +161,17 @@ const createWeeklySummaries = (entries: [string, Week][]): WeeklySummary[] => {
       }
       order.types.forEach(type => {
         const n = type.name
-        type.items.forEach(item => {
-          const v = Object.values(item)[0] as ItemValue
+        type.items.forEach(v => {
+          s.types[n].thb += v.thb
+          s.types[n].total_gram += isNaN(Number(v.g)) ? 0 : Number(v.g)
+          s.types[n].non_vegan += isNaN(Number(v.nv)) ? 0 : Number(v.nv)
+          s.types[n].organic += isNaN(Number(v.oc)) ? 0 : Number(v.oc)
+          s.types[n].may_unhealthy += isNaN(Number(v.mu)) ? 0 : Number(v.mu)
+          s.types[n].unhealthy += isNaN(Number(v.u)) ? 0 : Number(v.u)
 
-          s.types[n].thb += v[0]
-          s.types[n].total_gram += isNaN(Number(v[1])) ? 0 : Number(v[1])
-          s.types[n].non_vegan += isNaN(Number(v[2])) ? 0 : Number(v[2])
-          s.types[n].organic += isNaN(Number(v[3])) ? 0 : Number(v[3])
-          s.types[n].may_unhealthy += isNaN(Number(v[4])) ? 0 : Number(v[4])
-          s.types[n].unhealthy += isNaN(Number(v[5])) ? 0 : Number(v[5])
-
-          s.types[n].pkg.plastic += v[6]
-          s.types[n].pkg.paper += v[7]
-          s.types[n].pkg.glass += v[8]
+          s.types[n].pkg.plastic += v.p
+          s.types[n].pkg.paper += v.pa
+          s.types[n].pkg.glass += v.gl
         })
       })
     })
