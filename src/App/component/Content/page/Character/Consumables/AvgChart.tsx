@@ -40,7 +40,6 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
 
       <div className="consumables-avg__bar-container">
         <Bar
-//           className="consumables-avg__bar"
           data={{
             labels: [
               "Total",
