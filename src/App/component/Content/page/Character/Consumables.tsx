@@ -64,7 +64,7 @@ export const Consumables = (): React.ReactElement => {
       <h2>Consumables</h2>
       <div className="consumables-panel">
         <label className="consumables-panel__label" htmlFor="consumables-panel-select">
-          {isNaN(Number(cur)) ? "Specific Week" : "Weekly Average" }
+          {isNaN(Number(cur)) ? "Single Week" : "Weekly Avg." }
         </label>
         <Info />&ensp;
         <Select
@@ -121,7 +121,7 @@ const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
           )
         }
       </optgroup>
-      <optgroup label="Week">
+      <optgroup label="Single Week">
         {
           Object.keys(weeks).map((x, i) =>
             <option key={i} value={x}>{x}</option>

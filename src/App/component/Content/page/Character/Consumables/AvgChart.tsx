@@ -2,9 +2,16 @@ import React from "react"
 import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
+import {appId} from "@app/share"
 import {WeeklySummary, ConsumableType, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
 
 Chart.register(...registerables)
+
+const getHighlightColor = () => {
+  const app = document.getElementById(appId)
+  return app ? getComputedStyle(app).getPropertyValue("--highlight-color")
+    : "white"
+}
 
 type I = {
   cur: string,
@@ -13,6 +20,12 @@ type I = {
 }
 export const AvgChart = ({cur, fields, avgSummaries}: I):
   React.ReactElement => {
+
+  const [color, setColor] = React.useState(getHighlightColor())
+
+  React.useEffect(() => {
+    setColor(getHighlightColor())
+  }, [])
 
   if(!(cur in avgSummaries)) return <p>Loading ...</p>
   const summary = combineFields(avgSummaries[cur], fields)
@@ -39,6 +52,11 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
       </ul>
 
       <div className="consumables-avg__bar-container">
+        <button
+          id="consumables-barchart-trigger"
+          onClick={() => { setColor(getHighlightColor()) }}
+        >
+        </button>
         <Bar
           data={{
             labels: [
@@ -57,8 +75,8 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
                 summary.organic,
               ],
               borderWidth: 2,
-              borderColor: "black",
-              backgroundColor: "lightgray",
+              borderColor: color,
+              backgroundColor: color.replace(/,[^,]*$/g, ', 0.2)'),
             }],
           }}
           options={{
@@ -70,6 +88,8 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
               },
               legend: {
                 display: false,
+                labels: {
+                }
               },
               title: {
                 display: false,
@@ -79,11 +99,26 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
             responsive: true,
             scales: {
               y: {
+                grid: {
+                  color: color.replace(/,[^,]*$/g, ', 0.2)'),
+                },
                 title: {
                   display: true,
                   text: "gram",
+                  color: color,
                 },
-              }
+                ticks: {
+                  color: color,
+                }
+              },
+              x: {
+                grid: {
+                  color: color.replace(/,[^,]*$/g, ', 0.2)'),
+                },
+                ticks: {
+                  color: color,
+                }
+              },
             }
           }}
         />

@@ -6,7 +6,7 @@
   user-select: none;
   &__label {
     display: inline-block;
-    width: 8em;
+    width: 6em;
   }
   &__checkbox {
     margin-left: 0.5em;
@@ -18,7 +18,7 @@
 }
 .consumables-display-container {
   height: 15em;
-  overflow: auto;
+  font-size: 0.8em;
 
   .consumables-avg {
     display: flex;
@@ -26,7 +26,6 @@
       display: inline-block;
       margin: 0;
       width: 10em;
-      font-size: 0.8em;
 
       list-style-position: inside;
       list-style: none;
@@ -41,15 +40,22 @@
         }
       }
     }
+    #consumables-barchart-trigger {
+      display: none;
+    }
     &__bar-container {
       position: relative;
       height: 15em;
       width: max(40%, 20em);
     }
+    &__bar {
+      background-color: white;
+    }
   }
 
   .consumables-table-wrapper {
-    max-height: 300px;
+    height: 15em;
+/*     max-height: 300px; */
     overflow: auto;
     display: inline-block;
 
@@ -57,7 +63,6 @@
       table-layout: fixed;
       border-collapse: separate;
       text-align: center;
-      font-size: 0.8em;
       border-spacing: 0;
       border: 1px solid var(--highlight-color);
       border-top: none;

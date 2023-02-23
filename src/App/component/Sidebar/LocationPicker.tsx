@@ -41,6 +41,8 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElem
         const app = document.getElementById(appId)
         if (app) app.dataset.location = place
 
+        document.getElementById("consumables-barchart-trigger")?.click()
+
         setCurPlace(place)
         updateFavicon(place)
         waveConfigs.current.colors = wc

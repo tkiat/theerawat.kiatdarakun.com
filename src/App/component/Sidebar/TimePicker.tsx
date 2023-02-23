@@ -8,9 +8,9 @@ export const TimePicker = ({initTime}: P): React.ReactElement =>
     className="sidebar__time"
     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
       const app = document.getElementById(appId)
-      if (app) {
-        app.dataset.time = e.target.value
-      }
+      if (app) app.dataset.time = e.target.value
+
+      document.getElementById("consumables-barchart-trigger")?.click()
     }}
   >
   {
