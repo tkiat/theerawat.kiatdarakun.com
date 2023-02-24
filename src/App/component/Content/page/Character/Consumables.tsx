@@ -3,7 +3,7 @@ import * as jsYaml from "js-yaml"
 import {useImmer} from "use-immer"
 
 import {capitalize, isType} from "@app/share"
-import {TooltipFa} from "../../share"
+import {TooltipFa, TooltipText} from "../../share"
 import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
 import {ConsumableType, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, consumableTypeSummaryTemplate} from "./Consumables/share"
@@ -63,10 +63,11 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
       <div className="consumables-panel">
+        <Why />&ensp;
+        <How /> —&nbsp;
         <label className="consumables-panel__label" htmlFor="consumables-panel-select">
           {isNaN(Number(cur)) ? "Single Week" : "Weekly Avg." }
         </label>
-        <Info />&ensp;
         <Select
           cur={cur}
           setCur={setCur}
@@ -87,16 +88,21 @@ export const Consumables = (): React.ReactElement => {
   )
 }
 
-const Info = (): React.ReactElement =>
-  <TooltipFa faclass="fa-solid fa-circle-question">
+const Why = (): React.ReactElement =>
+  <TooltipText text="Why?">
+    <p>I live my life according to the realization that what truly matter cannot be beyond the flow inherent to sentient beings, and I subjectively prioritize my flow first. This results in me giving the following priorities: non-processed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, and no fuel &gt; shorter delivery &gt; longer delivery and minimizing unnecessary impact to the environment and suffering upon other sentient beings. Trade-offs exist but I shall use good judgment.</p>
+
+    <p>This recording serves as one practical example (among many possibilities) of what can truly matter. It should not only remind me this realization but also support the relevant philosophical works (that I am working on).</p>
+  </TooltipText>
+
+const How = (): React.ReactElement =>
+  <TooltipText text="How?">
     <ul>
-      <li>I mostly record only consumables I bought and exclude the delivery price (to make it more universal to the reader), so the actual spending is higher.</li>
-      <li><b className="highlight">Non-vegan</b>: I always buy vegan food for myself, but I sometimes consume it when I think I should do so (like when it actually helps animals or in some social settings). I don't usually record those exceptions.</li>
-      <li><b className="highlight">Delivery</b>: I regard any delivery to multiple recipients at a time (like any delivery service) as <i>public</i>, and everything else as <i>private</i>. I divide the share accordingly, for example, I record half of the actual distance when I order the same thing along with another person in one order.</li>
-      <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like ultra-processed food). When I am not sure about that, like processed food in a shop that I don't know the ingredients or what happens behind the scenes, I regard it as <i>probably unhealthy</i>.</li>
-      <li><b className="highlight">Packaging</b>: I only record the package that coems with consumables. This excludes, for example, a cardboard box that is a part of a delivery service.</li>
+      <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I actually want to minimize unnecessary suffering in my own terms. This means I sometimes consume animal products in some social settings or when it may actually help animals. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan exceptions here.</li>
+      <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know what happens behind the scenes).</li>
+      <li><b className="highlight">Delivery</b>: I exclude the delivery price and packaging waste to make it more universal to the reader. Unlike <i>private</i> delivery, <i>public</i> delivery targets multiple destinations per trip. I divide the share accordingly, like half the actual distance when I share half the order with another person.</li>
     </ul>
-  </TooltipFa>
+  </TooltipText>
 
 type SelectInp = {
   cur: string,
