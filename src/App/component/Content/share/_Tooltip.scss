@@ -5,7 +5,8 @@
   color: var(--color) !important;
   border: 1px dotted var(--highlight-color) !important;
   opacity: 1 !important;
-  ul {
+  padding: 0.5em 1em !important;
+  ul, ol {
     padding-left: 1em;
   }
   li {

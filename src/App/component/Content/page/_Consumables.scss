@@ -15,6 +15,9 @@
       accent-color: var(--highlight-color);
     }
   }
+  .tooltip {
+    font-size: unset !important;
+  }
 }
 .consumables-display-container {
   height: 15em;

@@ -61,7 +61,8 @@ export const Consumables = (): React.ReactElement => {
 
   return (
     <section>
-      <h2>Consumables</h2>
+      <h2>Consumables Record</h2>
+
       <div className="consumables-panel">
         <Why />&ensp;
         <How /> —&nbsp;
@@ -77,6 +78,7 @@ export const Consumables = (): React.ReactElement => {
         <Checkboxes fields={fields} setFields={setFields} />
         <hr />
       </div>
+
       <div className="consumables-display-container">
         {
           isNaN(Number(cur)) ?
@@ -90,15 +92,16 @@ export const Consumables = (): React.ReactElement => {
 
 const Why = (): React.ReactElement =>
   <TooltipText text="Why?">
-    <p>I live my life according to the realization that what truly matter cannot be beyond the flow inherent to sentient beings, and I subjectively prioritize my flow first. This results in me giving the following priorities: non-processed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, and no fuel &gt; shorter delivery &gt; longer delivery and minimizing unnecessary impact to the environment and suffering upon other sentient beings. Trade-offs exist but I shall use good judgment.</p>
+    <p>I live my life according to the realization that what truly matter cannot go beyond the flow inherent to sentient beings, and I subjectively prioritize my flow first. This results in me giving the following priorities: nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, and no fuel &gt; shorter delivery &gt; longer delivery and minimizing unnecessary impact to the environment and suffering upon other sentient beings. Trade-offs may exist but I shall use good judgment.</p>
 
     <p>This recording serves as one practical example (among many possibilities) of what can truly matter. It should not only remind me this realization but also support the relevant philosophical works (that I am working on).</p>
   </TooltipText>
 
 const How = (): React.ReactElement =>
   <TooltipText text="How?">
+    <p>I just weigh and record almost all consumables I bought. I often reuse numbers though.</p>
     <ul>
-      <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I actually want to minimize unnecessary suffering in my own terms. This means I sometimes consume animal products in some social settings or when it may actually help animals. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan exceptions here.</li>
+      <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I actually want to minimize unnecessary suffering in my own terms, which means I still consume animal products in some occasions. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan products in those occasions here.</li>
       <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know what happens behind the scenes).</li>
       <li><b className="highlight">Delivery</b>: I exclude the delivery price and packaging waste to make it more universal to the reader. Unlike <i>private</i> delivery, <i>public</i> delivery targets multiple destinations per trip. I divide the share accordingly, like half the actual distance when I share half the order with another person.</li>
     </ul>
