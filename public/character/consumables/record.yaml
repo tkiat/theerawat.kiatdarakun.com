@@ -6,11 +6,16 @@
       - name: food
         items:
         - {t: "sesame (black)",thb: 116,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
-#   - delivery:
-#       type: no fuel
-#     types:
-#       - name: food
-#         items:
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "mango",thb: 20,g: 1040,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "papaya",thb: 500,g: 1970,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-02-18":
   - delivery:
       type: no fuel
