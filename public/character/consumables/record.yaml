@@ -1,4 +1,11 @@
-# "2023-02-25":
+"2023-02-25":
+  - delivery:
+      type: public
+      km: 34
+    types:
+      - name: food
+        items:
+        - {t: "sesame (black)",thb: 116,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
 #   - delivery:
 #       type: no fuel
 #     types:
