@@ -14,6 +14,7 @@
       - name: food
         items:
         - {t: "banana (fried)",thb: 20,g: 210,nv: 0,oc: 0,mu: 210,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "beansprout",thb: 15,g: 512,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 31,g: 622,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 15,g: 302,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 18,g: 519,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
@@ -27,6 +28,7 @@
         - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "pineapple",thb: 45,g: 1236,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 512,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "scallion",thb: 5,g: 37,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "tomato",thb: 11,g: 278,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-02-11":
   - delivery:
