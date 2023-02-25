@@ -11,13 +11,17 @@ export const ThingsIOwn = (): React.ReactElement =>
     <section>
       <h3 className="highlight">Food & Drinks</h3>
 
+      <p>I need everything for three purposes: storage, preparation, and consumption.</p>
+
       <dl className="more-gap-list">
         <dt><b>Storage</b></dt>
 
         <dd>
           <ul>
             <li>
-              <p><b className="highlight">Dried Food</b> — I have a strict requirement to see through items in a container to minimize confusion. This gives me two main choices: glasses and plastic. While plastic is more convenient, it's not the safest for human consumption. That's why I usually prefer glass. Since it is easily breakable, I usually bring a cooking utensil near it and make a transfer, not the other way around. I am thinking of buying a cover for them because the penetrative light shortens life of consumables therein.</p>
+              <p><b className="highlight">Dried Food</b> — The ideal containers for typical dried food is airtight, opaque, and they should be place in a cool enough place without moisture. However, I have my own preference to see through items in a container to minimize confusion, and this gives me two main choices: glasses and food-grade plastic.</p>
+
+              <p>While both are safe for cool, dried food, I prefer glass anyway since it is recyclable, nonporous, and easy to clean. Since it is easily breakable, I usually bring a cooking utensil near it and make a transfer, not the other way around. I am thinking of buying a cover for them to protect food therein from the penetrative light.</p>
 
               <FigureOptionalTooltip src="/character/belongings/jar-glass-2L.png" label="4L x 3" width="95px">
                 I love herbs, legumes, and grains, and I need airtight containers for them to prevent ants. I need them at different sizes because I sometimes buy food in bulk. I finally chose a glassware from China (Chuangfeng Glass) that is available in many sizes. The handle is more firm than expected and the two-layer lid makes it airtight. I have seen this one often in a random video on Youtube Shorts when it took place in China.
@@ -45,10 +49,10 @@ export const ThingsIOwn = (): React.ReactElement =>
               <p><b className="highlight">Food</b> — Unlike dried food, I prefer borosilicate glasses as they can withstand more heat (up to 400 Celcius) and coldness (I can put it in a freezer with more peace of mind) as compared to more common soda-lime glasses.</p>
 
               <FigureOptionalTooltip src="/character/belongings/rect-glass-0.75L.png" label="1.25L x 2" width="120px">
-                It's an airtight borosilicate glass from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality. I usally store boiled vegetables in this container and keep it in the fridge.
+                It's an airtight borosilicate glassware from Double Lock. I choose it as the lid comes with a thick silicone and it's of good quality. I usally store boiled vegetables in this container and keep it in the fridge.
               </FigureOptionalTooltip>
               <FigureOptionalTooltip src="/character/belongings/rect-glass-0.75L.png" label="0.75L x 4" width="100px">
-                I usally store boiled vegetables and processed food bought outside (like crispy fried bananas and dessert) in this container.
+                I usally store boiled vegetables and processed food bought outside (like fried bananas and dessert) in this container.
               </FigureOptionalTooltip>
               <FigureOptionalTooltip src="/character/belongings/rect-glass-0.75L.png" label="0.45L x 7" width="80px">
                 I usally store fried peanuts and fried beansprouts/cabbages in this container.
@@ -80,11 +84,11 @@ export const ThingsIOwn = (): React.ReactElement =>
               <p><b className="highlight">Main Tools</b></p>
 
               <FigureOptionalTooltip src="/character/belongings/rice-cooker.png" label="1L" width="90px">
-                While I can cook rice in a pot, it sticks a lot at bottom (of a stainless stelel pot I have) so I needlessly have to throw it away. Furthermore, it's a waste of time to stay vigilant all the time. That's why I need a non-stick, automatic rice cooker. This one is from Panasonic (SR-JQ105). There is an optional plastic holder for steaming on top. I don't usualy use that since I usually cook the rice full of it and then store it in the fridge.
+                While I can cook rice in a stainless steel pot, it sticks a lot at bottom so I needlessly have to throw it away. Furthermore, it's a waste of time to stay vigilant all the time and rice is staple for my diet. That's why I need a non-stick, automatic rice cooker. This one is from Panasonic (SR-JQ105) with an optional plastic layer for steaming on top. I don't usualy use that since I usually cook the rice full of it and then store it in the fridge.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/belongings/pot-4.5L.png" label="4.5L" width="125px">
-                I almost always cook myself so a pot is essential. Such pot should be designed for induction cooking as well since I can use induction cooker (which is more energy efficient than the electric couterpart) when the gas is depleted. The ideal size should be around 4-5 litres since it is enough to cook once and reasonably fuel me (for half a week). After some research, I ended up with a stainless steel pot from Zebra head (Extra Infinity Plus with 22cm lid).
+                I almost always cook myself so a pot is essential. Such pot should be designed for induction cooking as well since I can use induction cooker (which is more energy efficient than the electrical couterpart) when the gas is depleted. The ideal size should be around 4-5 litres since it is enough to cook once and reasonably fuel me (for half a week). After some research, I ended up with a stainless steel pot from Zebra head (Extra Infinity Plus with 22cm lid).
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/belongings/pan.png" width="110px">
@@ -150,7 +154,7 @@ export const ThingsIOwn = (): React.ReactElement =>
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/belongings/glass-ceramic-360ml.png" label="360ml" width="70px">
-                I needed a versatile mug for every drink, and ceramic and glass cups are the equal, top contenders for this (since I don't trust plastic glasses for hot drinks and stainless steel ones aren't good for acidic drinks). I chose this ceramic cup (an ordinary one from Tesco Lotus). It's still in a OK condition after five years of daily use but the outer color at the lip is slightly faded. I hope that doesn't contain lead. Now it's 5-year-old, I wouldn't be unhappy if it breaks!
+                I needed a versatile mug for every drink, and ceramic and glass cups are the equal, top contenders for this (since I don't trust plastic glasses for hot drinks and stainless steel ones aren't good for acidic drinks). I chose this ceramic cup (an ordinary one from Tesco Lotus). It's still in a OK condition after five years of daily use but the outer color at the lip is slightly faded. I hope that doesn't contain lead. I think it's time to find a new one.
               </FigureOptionalTooltip>
 
               <FigureOptionalTooltip src="/character/belongings/tea-filter-cup.png" width="70px">
@@ -267,13 +271,13 @@ const Why = (): React.ReactElement =>
   <TooltipText text="Why">
     <p>I live my life according to the realization that what truly matter cannot be beyond the flow inherent to sentient beings. As I subjectively prioritize my flow first, I should begin to pick each item based on my need then try to make a thoughtful judgment if trade-offs (against other sentient beings and the environment) exist.</p>
 
-    <p>This recording serves as one practical example (among many possibilities) of what can truly matter. It should not only remind me this realization but also support the relevant philosophical works (that I am working on).</p>
+    <p>This recording should not only remind me this realization but also serve as a practical example of a possile lifestyle based on this realization. This will also support the relevant works (that I am working on).</p>
   </TooltipText>
 
 const How = (): React.ReactElement =>
   <TooltipText text="How">
     <ol>
-      <li>Begin with my need. For example, I need to drink hot tea.</li>
+      <li>Begin with my need. For example, I need to drink hot tea. This can also be “want” given that it is not particularly harmful.</li>
       <li>Imagine the ideal item that serves that need (in terms of health, convenience, durability, size, portability, cost, weight, replacability of internal parts, etc.). For size, I wish all items (except unavoidably big ones) fit an average taxi and the essential ones to be carriable on a flight.</li>
       <li>Find the closest item to that ideal. If trade-offs against the environment or other senient beings exist, try to prioritize sustainable and vegan products.</li>
       <li>Get rid of items I no longer want according to these priorities: selling &gt; donating/gifting &gt; throwing it responsibly.</li>

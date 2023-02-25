@@ -1,3 +1,9 @@
+# "2023-02-25":
+#   - delivery:
+#       type: no fuel
+#     types:
+#       - name: food
+#         items:
 "2023-02-18":
   - delivery:
       type: no fuel
