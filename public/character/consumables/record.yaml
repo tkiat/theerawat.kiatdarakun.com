@@ -171,7 +171,7 @@
       - name: drink-solid
         items:
         - {t: "butterfly pea flower (dried)",thb: 149,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
-        - {t: "sappan woord (dried)",thb: 75,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "sappan wood (dried)",thb: 75,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
