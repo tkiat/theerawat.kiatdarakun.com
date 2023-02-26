@@ -5,7 +5,7 @@ import {TooltipFa, TooltipText} from "../share"
 import {getRange, initInPageNavButtons, initIntObserver} from "@app/share"
 
 export const Digest = (): React.ReactElement => {
-  const [items, setItems] = React.useState<Items>([])
+  const [source, setSource] = React.useState<Source>([])
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -16,7 +16,7 @@ export const Digest = (): React.ReactElement => {
       if (mounted) {
         const contentType = res.headers.get("content-type");
         if (contentType && contentType.indexOf("application/json") !== -1) {
-           setItems(await res.json())
+           setSource(await res.json())
         }
       }
     })()
@@ -35,37 +35,40 @@ export const Digest = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        renderSection(items[0]),
-        renderSection(items[1]),
-        renderSection(items[2]),
-        renderSection(items[3]),
-        renderSection(items[4]),
+        renderCategoryTwoLevels(source[0]),
+        renderCategoryTwoLevels(source[1]),
+        renderCategoryTwoLevels(source[2]),
+        renderCategoryTwoLevels(source[3]),
+        renderCategoryOneLevel(source[4]),
       ]
     }
   }
   return <PageWithIconsScrollbar data={data} page="activity-digest" />
 }
 
-type CategoryProps = {
-  header: string,
-  items: [
-    {
-      header: string,
-      items: [
-        {
-          date: string,
-          title: string,
-          format: string,
-          length: string,
-          link: string,
-          review_short: string,
-          review_ext: string,
-        }
-      ]
-    }
-  ]
+type Item = {
+  date: string,
+  title: string,
+  format: string,
+  length: string,
+  link: string,
+  review_short: string,
+  review_ext: string,
 }
-type Items = CategoryProps[]
+
+type CategoryOneLevel = {
+  header: string,
+  items: [Item]
+}
+type CategoryTwoLevels = {
+  header: string,
+  items: [{
+    header: string,
+    items: [Item]
+  }]
+}
+
+type Source = (CategoryOneLevel | CategoryTwoLevels | undefined)[]
 
 const Prelude = (): React.ReactElement =>
   <>
@@ -76,27 +79,40 @@ const Prelude = (): React.ReactElement =>
         <li>Available digitally</li>
         <li>Available DRM-free or free of charge</li>
         <li>Can be consumed on FOSS operating systems (like Linux)</li>
+        <li>Video games have to be open-source</li>
       </ul>
     </TooltipText>.
   </>
 
-const renderSection = (cat: CategoryProps | undefined) => cat === undefined ?
-  <>Loading ...</> :
-  <>
-    <h2>{cat.header}</h2>
-    {
-      cat.items.map((sub, j) =>
-        <section key={j}>
-          <h3 className="highlight">{sub.header}</h3>
-          {
-            sub.items.map((y, k) =>
-              <p key={k}>{y.date} — {y.link ? <a href={y.link}>{y.title}</a> : <>{y.title}</>} — {getFormatIcon(y.format)}{y.length && <>&ensp;{y.length}</>}{y.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{y.review_short}</TooltipFa></>}{y.review_ext && <>&ensp;<a href={y.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>
-            )
-          }
-        </section>
-      )
-    }
-  </>
+const renderItem = (x: Item, i: number = 0) =>
+  <p key={i}>{x.date} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {getFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>
+
+const renderCategoryOneLevel = (c: CategoryOneLevel | undefined) =>
+  c === undefined ?
+    <>Loading ...</>
+  : <>
+      <h2>{c.header}</h2>
+      {
+        c.items.map((s, i) => renderItem(s, i))
+      }
+    </>
+
+const renderCategoryTwoLevels = (c: CategoryTwoLevels | undefined) =>
+  c === undefined ?
+    <>Loading ...</>
+  : <>
+      <h2>{c.header}</h2>
+      {
+        c.items.map((s, i) =>
+          <section key={i}>
+            <h3 className="highlight">{s.header}</h3>
+            {
+              s.items.map((x, j) => renderItem(x, j))
+            }
+          </section>
+        )
+      }
+    </>
 
 const getFormatIcon = (f: string) => {
   switch(f) {

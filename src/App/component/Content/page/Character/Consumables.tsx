@@ -147,8 +147,6 @@ export const Consumables = (): React.ReactElement => {
             </TooltipText>
           </li>
         </ul>
-
-        <p>TODO</p>
       </section>
     </section>
   )

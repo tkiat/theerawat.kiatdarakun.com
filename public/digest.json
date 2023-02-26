@@ -174,38 +174,28 @@
     "header": "Fiction",
     "items": [
       {
-        "header": "Fiction",
-        "items": [
-          {
-            "date": "2022",
-            "title": "Incognegro: A Graphic Mystery",
-            "format": "image",
-            "length": "136 pages",
-            "link": "https://www.goodreads.com/book/show/35798022-incognegro",
-            "review_short": "It is a graphic novel in a 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past."
-          }
-        ]
+        "date": "2022",
+        "title": "Incognegro: A Graphic Mystery",
+        "format": "image",
+        "length": "136 pages",
+        "link": "https://www.goodreads.com/book/show/35798022-incognegro",
+        "review_short": "It is a graphic novel in a 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past."
       },
       {
-        "header": "Fantasy",
-        "items": [
-          {
-            "date": "2021",
-            "title": "The Walking Dead",
-            "format": "image",
-            "link": "https://en.wikipedia.org/wiki/The_Walking_Dead_(comic_book)",
-            "length": "193 issues",
-            "review_short": "I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation."
-          },
-          {
-            "date": "2020",
-            "title": "The Last Unicorn",
-            "format": "image",
-            "length": "167 pages",
-            "link": "https://www.goodreads.com/book/show/8890606-the-last-unicorn",
-            "review_short": "It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something."
-          }
-        ]
+        "date": "2021",
+        "title": "The Walking Dead",
+        "format": "image",
+        "link": "https://en.wikipedia.org/wiki/The_Walking_Dead_(comic_book)",
+        "length": "193 issues",
+        "review_short": "I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation."
+      },
+      {
+        "date": "2020",
+        "title": "The Last Unicorn",
+        "format": "image",
+        "length": "167 pages",
+        "link": "https://www.goodreads.com/book/show/8890606-the-last-unicorn",
+        "review_short": "It cost me 5$ on comiXology. Too bad, it is not available DRM-free anymore due to the policy change. It is a graphic novel based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. My key takeaway from the story is that you have to go out of your comfort zone if you want something."
       }
     ]
   }
