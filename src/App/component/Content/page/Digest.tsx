@@ -35,11 +35,11 @@ export const Digest = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        renderCategoryTwoLevels(source[0]),
-        renderCategoryTwoLevels(source[1]),
-        renderCategoryTwoLevels(source[2]),
-        renderCategoryTwoLevels(source[3]),
-        renderCategoryOneLevel(source[4]),
+        renderCategory(source[0]),
+        renderCategory(source[1]),
+        renderCategory(source[2]),
+        renderCategory(source[3]),
+        renderCategory(source[4]),
       ]
     }
   }
@@ -52,8 +52,8 @@ type Item = {
   format: string,
   length: string,
   link: string,
-  review_short: string,
-  review_ext: string,
+  review_short?: string,
+  review_ext?: string,
 }
 
 type CategoryOneLevel = {
@@ -62,10 +62,7 @@ type CategoryOneLevel = {
 }
 type CategoryTwoLevels = {
   header: string,
-  items: [{
-    header: string,
-    items: [Item]
-  }]
+  items: [CategoryOneLevel]
 }
 
 type Source = (CategoryOneLevel | CategoryTwoLevels | undefined)[]
@@ -87,32 +84,64 @@ const Prelude = (): React.ReactElement =>
 const renderItem = (x: Item, i: number = 0) =>
   <p key={i}>{x.date} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {getFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>
 
-const renderCategoryOneLevel = (c: CategoryOneLevel | undefined) =>
-  c === undefined ?
-    <>Loading ...</>
-  : <>
-      <h2>{c.header}</h2>
-      {
-        c.items.map((s, i) => renderItem(s, i))
-      }
-    </>
+const renderCategory = (c: unknown) => {
+  if (!c) {
+    return <>Loading ...</>
+  } else if (isCategoryOneLevel(c)) {
+    return renderCategoryOneLevel(c)
+  } else if (isCategoryTwoLevels(c)) {
+    return renderCategoryTwoLevels(c)
+  } else {
+    console.error("digest.json: wrong format")
+    return <>Wrong format ...</>
+  }
+}
 
-const renderCategoryTwoLevels = (c: CategoryTwoLevels | undefined) =>
-  c === undefined ?
-    <>Loading ...</>
-  : <>
-      <h2>{c.header}</h2>
-      {
-        c.items.map((s, i) =>
-          <section key={i}>
-            <h3 className="highlight">{s.header}</h3>
-            {
-              s.items.map((x, j) => renderItem(x, j))
-            }
-          </section>
-        )
-      }
-    </>
+const isCategoryOneLevel = (x: unknown): x is CategoryOneLevel =>
+  typeof x === "object" && x !== null &&
+  "header" in x && typeof x.header === "string" &&
+  "items" in x && Array.isArray(x.items) && x.items.every(y => isItem(y))
+
+const isCategoryTwoLevels = (x: unknown): x is CategoryTwoLevels =>
+  typeof x === "object" && x !== null &&
+  "header" in x && typeof x.header === "string" &&
+  "items" in x && Array.isArray(x.items) && x.items.every(
+    y => isCategoryOneLevel(y)
+  )
+
+const isItem = (x: unknown): x is Item =>
+  typeof x === "object" && x !== null &&
+  "date" in x && typeof x.date ==="string" &&
+  "title" in x && typeof x.title  ==="string" &&
+  "format" in x && typeof x.format ==="string" &&
+  "length" in x && typeof x.length ==="string" &&
+  "link" in x && typeof x.link ==="string" && (
+    "review_short" in x && typeof x.review_short === "string" ||
+    "review_ext" in x && typeof x.review_ext ==="string"
+  )
+
+const renderCategoryOneLevel = (c: CategoryOneLevel) =>
+  <>
+    <h2>{c.header}</h2>
+    {
+      c.items.map((s, i) => renderItem(s, i))
+    }
+  </>
+
+const renderCategoryTwoLevels = (c: CategoryTwoLevels) =>
+  <>
+    <h2>{c.header}</h2>
+    {
+      c.items.map((s, i) =>
+        <section key={i}>
+          <h3 className="highlight">{s.header}</h3>
+          {
+            s.items.map((x, j) => renderItem(x, j))
+          }
+        </section>
+      )
+    }
+  </>
 
 const getFormatIcon = (f: string) => {
   switch(f) {

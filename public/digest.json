@@ -124,6 +124,7 @@
             "date": "2021",
             "title": "CIS194: Introduction to Haskell",
             "format": "course",
+            "length": "4 hours",
             "link": "https://www.seas.upenn.edu/~cis1940/spring13/lectures.html",
             "review_short": "I read Learn You a Haskell book before but I couldn't quite get much of it. I then stumbled across the best free introduction Haskell course according to somewhere on the internet so I took it. The instructor explains not very in details (based on reading only), which I found it sufficient. I gained much more understandings especially Monad. However, I didn't do any exercise since that seemed to take much time. You may request the solution from this GitHub link: https://github.com/byorgey/haskell-course."
           },
@@ -148,6 +149,7 @@
             "title": "freeCodeCamp",
             "format": "course",
             "length": "2 months",
+            "link": "https://www.freecodecamp.org/",
             "review_short": "I became aware that the web knowledge offers me significant freedom so I took some 5 web-related courses here. The courses are about basics HTML/CSS/JS, fornt-end/back-end coding, React.js, and a few other libraries. I deleted my account there so the certificate links are gone."
           },
           {
