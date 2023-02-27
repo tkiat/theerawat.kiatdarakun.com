@@ -2,10 +2,9 @@ import React from "react"
 import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../share"
-import {findObjValRecursive, getRange} from "@app/share"
+import {findObjValRecursive} from "@app/share"
 
 export const Create = (): React.ReactElement => {
-
   const [source, setSource] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {
@@ -15,10 +14,9 @@ export const Create = (): React.ReactElement => {
       const res = await fetch("/create.yaml")
 
       if (mounted) {
-        const contentType = res.headers.get("content-type");
-        if (contentType && contentType.indexOf("text/yaml") !== -1) {
-          const c = jsYaml.load(await res.text())
-          setSource(c)
+        const t = res.headers.get("content-type");
+        if (t && t.indexOf("text/yaml") !== -1) {
+          setSource(jsYaml.load(await res.text()))
         }
       }
     })()
@@ -152,9 +150,9 @@ const renderItems = (source: unknown, keys: string[]) => {
                   </li>
                 )
               } else {
-                console.error("Wrong format", x)
+                console.error("wrong format", x)
                 return (
-                  <li key={i}>Content not found</li>
+                  <li key={i}>&lt;wrong format&gt;</li>
                 )
               }
             })
@@ -167,7 +165,7 @@ const renderItems = (source: unknown, keys: string[]) => {
       }, "")
 
       console.error("property " + props + " in", source, "must be an array")
-      return <p>&lt;Wrong format&gt;</p>
+      return <p>&lt;wrong format&gt;</p>
     }
   }
 }

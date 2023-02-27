@@ -1,22 +1,22 @@
 import React from "react"
+import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar} from "../share"
-import {TooltipFa, TooltipText} from "../share"
-import {getRange, initInPageNavButtons, initIntObserver} from "@app/share"
+import {PageWithIconsScrollbar, TooltipFa, TooltipText} from "../share"
+import {findObjValRecursive} from "@app/share"
 
 export const Digest = (): React.ReactElement => {
-  const [source, setSource] = React.useState<Source>([])
+  const [source, setSource] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const res = await fetch("/digest.json")
+      const res = await fetch("/digest.yaml")
 
       if (mounted) {
-        const contentType = res.headers.get("content-type");
-        if (contentType && contentType.indexOf("application/json") !== -1) {
-           setSource(await res.json())
+        const t = res.headers.get("content-type");
+        if (t && t.indexOf("text/yaml") !== -1) {
+          setSource(jsYaml.load(await res.text()))
         }
       }
     })()
@@ -35,11 +35,11 @@ export const Digest = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        renderCategory(source[0]),
-        renderCategory(source[1]),
-        renderCategory(source[2]),
-        renderCategory(source[3]),
-        renderCategory(source[4]),
+        <Section0 source={source} />,
+        <Section1 source={source} />,
+        <Section2 source={source} />,
+        <Section3 source={source} />,
+        <Section4 source={source} />,
       ]
     }
   }
@@ -55,17 +55,6 @@ type Item = {
   review_short?: string,
   review_ext?: string,
 }
-
-type CategoryOneLevel = {
-  header: string,
-  items: [Item]
-}
-type CategoryTwoLevels = {
-  header: string,
-  items: [CategoryOneLevel]
-}
-
-type Source = (CategoryOneLevel | CategoryTwoLevels | undefined)[]
 
 const Prelude = (): React.ReactElement =>
   <>
@@ -84,31 +73,6 @@ const Prelude = (): React.ReactElement =>
 const renderItem = (x: Item, i: number = 0) =>
   <p key={i}>{x.date} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {getFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>
 
-const renderCategory = (c: unknown) => {
-  if (!c) {
-    return <>Loading ...</>
-  } else if (isCategoryOneLevel(c)) {
-    return renderCategoryOneLevel(c)
-  } else if (isCategoryTwoLevels(c)) {
-    return renderCategoryTwoLevels(c)
-  } else {
-    console.error("wrong format", c)
-    return <>&lt;Content not found&gt;</>
-  }
-}
-
-const isCategoryOneLevel = (x: unknown): x is CategoryOneLevel =>
-  typeof x === "object" && x !== null &&
-  "header" in x && typeof x.header === "string" &&
-  "items" in x && Array.isArray(x.items) && x.items.every(y => isItem(y))
-
-const isCategoryTwoLevels = (x: unknown): x is CategoryTwoLevels =>
-  typeof x === "object" && x !== null &&
-  "header" in x && typeof x.header === "string" &&
-  "items" in x && Array.isArray(x.items) && x.items.every(
-    y => isCategoryOneLevel(y)
-  )
-
 const isItem = (x: unknown): x is Item =>
   typeof x === "object" && x !== null &&
   "date" in x && typeof x.date ==="string" &&
@@ -119,29 +83,6 @@ const isItem = (x: unknown): x is Item =>
     "review_short" in x && typeof x.review_short === "string" ||
     "review_ext" in x && typeof x.review_ext ==="string"
   )
-
-const renderCategoryOneLevel = (c: CategoryOneLevel) =>
-  <>
-    <h2>{c.header}</h2>
-    {
-      c.items.map((s, i) => renderItem(s, i))
-    }
-  </>
-
-const renderCategoryTwoLevels = (c: CategoryTwoLevels) =>
-  <>
-    <h2>{c.header}</h2>
-    {
-      c.items.map((s, i) =>
-        <section key={i}>
-          <h3 className="highlight">{s.header}</h3>
-          {
-            s.items.map((x, j) => renderItem(x, j))
-          }
-        </section>
-      )
-    }
-  </>
 
 const getFormatIcon = (f: string) => {
   switch(f) {
@@ -157,3 +98,82 @@ const getFormatIcon = (f: string) => {
       return <></>
   }
 }
+
+const renderItems = (source: unknown, keys: string[]) => {
+  const arr = findObjValRecursive(source, keys)
+
+  if (arr === undefined) {
+    return <p>Loading ...</p>
+  } else if (arr === null) {
+    const props = keys.reduce((acc, cur) => {
+      return acc + "[\"" + cur + "\"]"
+    }, "")
+
+    console.error("property " + props + " not found in", source)
+    return <p>&lt;Content not found&gt;</p>
+  } else {
+    if (Array.isArray(arr)) {
+      return (
+        <>
+          {
+            arr.map((x, i) => {
+              if (isItem(x)) {
+                return renderItem(x, i)
+              } else {
+                console.error("wrong format", x)
+                return <p key={i}>&lt;wrong format&gt;</p>
+              }
+            })
+          }
+        </>
+      )
+    } else {
+      const props = keys.reduce((acc, cur) => {
+        return acc + "[\"" + cur + "\"]"
+      }, "")
+
+      console.error("property " + props + " in", source, "must be an array")
+      return <p>&lt;Wrong format&gt;</p>
+    }
+  }
+}
+
+const Section0 = ({source}: {source: unknown}): React.ReactElement =>
+  <>
+    <h2>Individual</h2>
+    {renderItems(source, ["individual"])}
+  </>
+
+const Section1 = ({source}: {source: unknown}): React.ReactElement =>
+  <>
+    <h2>Human Society</h2>
+
+    <section>
+      <h3 className="highlight">Religion</h3>
+      {renderItems(source, ["human society", "religion"])}
+    </section>
+  </>
+
+const Section2 = ({source}: {source: unknown}): React.ReactElement =>
+  <>
+    <h2>Nonhumans and the Earth</h2>
+
+    {renderItems(source, ["nonhumans and the earth"])}
+  </>
+
+const Section3 = ({source}: {source: unknown}): React.ReactElement =>
+  <>
+    <h2>Other Nonfiction</h2>
+
+    <section>
+      <h3 className="highlight">Software</h3>
+      {renderItems(source, ["other nonfiction", "software"])}
+    </section>
+  </>
+
+const Section4 = ({source}: {source: unknown}): React.ReactElement =>
+  <>
+    <h2>Fiction</h2>
+
+    {renderItems(source, ["fiction"])}
+  </>
