@@ -1,6 +1,20 @@
 export const capitalize = (s: string) =>
   s ? s[0].toUpperCase() + s.slice(1) : ""
 
+export const hasOwnPropertyTS = <Y extends PropertyKey>(obj: object, prop: Y):
+  obj is Record<Y, unknown> => obj.hasOwnProperty(prop)
+
+export const findObjValRecursive = (o: unknown, keys: string[]): (undefined | null | unknown) => {
+  const k = keys[0]
+  if (o === undefined) {
+    return undefined
+  } else if (o !== null && hasOwnPropertyTS(o, k)) {
+    return keys.length === 1 ? o[k] : findObjValRecursive(o[k], keys.slice(1))
+  } else {
+    return null
+  }
+}
+
 export const getRange = (from: number, to: number) =>
   (from <= to ? [...Array(to - from + 1).keys()].map(i => i + from) : [])
 

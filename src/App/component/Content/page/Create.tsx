@@ -2,14 +2,11 @@ import React from "react"
 import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../share"
-import {getRange} from "@app/share"
+import {findObjValRecursive, getRange} from "@app/share"
 
 export const Create = (): React.ReactElement => {
 
-  const [source, setSource] = React.useState<Source>({
-    "app": undefined,
-    "video": undefined,
-  })
+  const [source, setSource] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -21,7 +18,7 @@ export const Create = (): React.ReactElement => {
         const contentType = res.headers.get("content-type");
         if (contentType && contentType.indexOf("text/yaml") !== -1) {
           const c = jsYaml.load(await res.text())
-          if (isSource(c)) setSource(c)
+          setSource(c)
         }
       }
     })()
@@ -54,32 +51,18 @@ type AppItem = {
   dscp: string,
   type: string,
   stack: string,
-  abandoned: boolean,
+  abandoned?: boolean,
 }
 type ContentItem = {
   date: string,
   title: string,
   link: string,
 }
-type Item = AppItem | ContentItem
-
-type CategoryValue = {
-  [k: string]: Item[]
-}
-const categoryKeys = ["app", "video"] as const
-export type CategoryKey = (typeof categoryKeys)[number]
-
-type Source = {
-  [k in CategoryKey]: unknown
-}
-
-const isSource = (x: unknown): x is Source =>
-  typeof x === "object" && x !== null && categoryKeys.every(y => y in x)
 
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
-const Section0 = ({source}: {source: unknown | undefined}): React.ReactElement =>
+const Section0 = ({source}: {source: unknown}): React.ReactElement =>
   <>
     <h2>Software</h2>
     <h3 className="highlight">Apps</h3>
@@ -118,7 +101,7 @@ const Section1 = (): React.ReactElement =>
     </section>
   </>
 
-const Section2 = ({source}: {source: unknown | undefined}): React.ReactElement =>
+const Section2 = ({source}: {source: unknown}): React.ReactElement =>
   <>
     <h2>Videos</h2>
     <h3 className="highlight">Channel</h3>
@@ -138,22 +121,19 @@ const Section2 = ({source}: {source: unknown | undefined}): React.ReactElement =
     </section>
   </>
 
-const fibo = (o: object, keys: string[]) => {
-//   console.log(o, keys)
-  const k = keys[0]
-  if (typeof o === "object" && o !== null && k in o) {
-    return keys.length === 1 ? o[k] : fibo(o[k], keys.slice(1))
-  } else {
-    return undefined
-  }
-}
-
 const renderItems = (source: unknown, keys: string[]) => {
-  if (source === undefined) {
+  const arr = findObjValRecursive(source, keys)
+
+  if (arr === undefined) {
     return <p>Loading ...</p>
+  } else if (arr === null) {
+    const props = keys.reduce((acc, cur) => {
+      return acc + "[\"" + cur + "\"]"
+    }, "")
+
+    console.error("property " + props + " not found in", source)
+    return <p>&lt;Content not found&gt;</p>
   } else {
-    const arr = fibo(source, keys)
-    console.log(arr)
     if (Array.isArray(arr)) {
       return (
         <ul className="ul-more-space">
@@ -182,55 +162,24 @@ const renderItems = (source: unknown, keys: string[]) => {
         </ul>
       )
     } else {
-      return <p>Loading ...</p>
+      const props = keys.reduce((acc, cur) => {
+        return acc + "[\"" + cur + "\"]"
+      }, "")
+
+      console.error("property " + props + " in", source, "must be an array")
+      return <p>&lt;Wrong format&gt;</p>
     }
   }
 }
 
-// const renderCategoryItems = (source: unknown, key: string) => {
-//   if (source === undefined) {
-//     return <p>Loading ...</p>
-//   } else if (typeof source === "object" && source !== null && typeof key === "string" && key in source && Array.isArray(source[key])) {
-//     return (
-//       <ul className="ul-more-space">
-//         {
-//           source[key].map((x, i) => {
-//             if (isContentItem(x)) {
-//               return (
-//                 <li key={i}>
-//                   {x.date} — <a href={x.link}>{x.title}</a>
-//                 </li>
-//               )
-//             } else if (isAppItem(x)) {
-//               return (
-//                 <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>
-//                   {x.date} — <a href={x.link}>{x.title}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
-//                 </li>
-//               )
-//             } else {
-//               console.error("Wrong format", x)
-//               return (
-//                 <li key={i}>Content not found</li>
-//               )
-//             }
-//           })
-//         }
-//       </ul>
-//     )
-//   } else {
-//     console.error("property " + key + " not found in", source)
-//     return <p>&lt;Content not found&gt;</p>
-//   }
-// }
-
-const isContentItem = (x: Item): x is ContentItem =>
+const isContentItem = (x: unknown): x is ContentItem =>
   typeof x === "object" && x !== null &&
   "date" in x && typeof x.date === "string" &&
   "title" in x && typeof x.title  === "string" &&
   "link" in x && typeof x.link === "string" &&
   !("stack" in x)
 
-const isAppItem = (x: Item): x is AppItem =>
+const isAppItem = (x: unknown): x is AppItem =>
   typeof x === "object" && x !== null &&
   "date" in x && typeof x.date === "string" &&
   "link" in x && typeof x.link === "string" &&
