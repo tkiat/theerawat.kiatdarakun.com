@@ -29,7 +29,8 @@ export const Digest = (): React.ReactElement => {
       <i className="fa-solid fa-user"></i>,
       <i className="fa-solid fa-users"></i>,
       <i className="fa-solid fa-earth-americas"></i>,
-      <i className="fa-solid fa-plus"></i>,
+//       <i className="fa-solid fa-plus"></i>,
+      <i className="fa-solid fa-ellipsis-vertical"></i>,
       <i className="fa-solid fa-wand-magic-sparkles"></i>,
     ],
     content: {

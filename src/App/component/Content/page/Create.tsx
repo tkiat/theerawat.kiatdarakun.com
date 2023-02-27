@@ -26,13 +26,16 @@ export const Create = (): React.ReactElement => {
 
   const data = {
     icons: [
+      <i className="fa-solid fa-star"></i>,
       <i className="fa-solid fa-code"></i>,
       <i className="fa-solid fa-pen"></i>,
-      <i className="fa-solid fa-film"></i>,
+//       <i className="fa-solid fa-film"></i>,
+      <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],
     content: {
       prelude: <Prelude />,
       sections: [
+        <Section9 />,
         <Section0 source={source} />,
         <Section1 />,
         <Section2 source={source}/>,
@@ -45,29 +48,49 @@ export const Create = (): React.ReactElement => {
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
+const Section9 = ({source}: {source: unknown}): React.ReactElement =>
+  <>
+    <h2>TODO</h2>
+  </>
+
 const Section0 = ({source}: {source: unknown}): React.ReactElement =>
   <>
     <h2>Software</h2>
-    <h3 className="highlight">Apps</h3>
 
     <section>
-      <h4>&gt; a Month</h4>
-      {renderItems(source, ["app", "more-than-a-month"])}
+      <h3 className="highlight">App</h3>
+
+      <section>
+        <h4>&gt; a Month</h4>
+        {renderItems(source, ["software", "app", "> month"])}
+      </section>
+
+      <section>
+        <h4>&gt; a Week</h4>
+        {renderItems(source, ["software", "app", "> week"])}
+      </section>
+
+      <section>
+        <h4>&gt; a Day</h4>
+        {renderItems(source, ["software", "app", "> day"])}
+      </section>
+
+      <section>
+        <h4>&lt; a Day</h4>
+        {renderItems(source, ["software", "app", "< day"])}
+      </section>
     </section>
 
     <section>
-      <h4>&gt; a Week</h4>
-      {renderItems(source, ["app", "more-than-a-week"])}
-    </section>
+      <h3 className="highlight">Video</h3>
 
-    <section>
-      <h4>&gt; a Day</h4>
-      {renderItems(source, ["app", "more-than-a-day"])}
-    </section>
+      <section>
+        <h4>Channel: Freedom in Computing</h4>
 
-    <section>
-      <h4>&lt; a Day</h4>
-      {renderItems(source, ["app", "less-than-a-day"])}
+        <p>TODO diff openness purposes I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
+
+        {renderItems(source, ["software", "video", "freedom-in-computing"])}
+      </section>
     </section>
   </>
 
@@ -86,21 +109,16 @@ const Section1 = (): React.ReactElement =>
 
 const Section2 = ({source}: {source: unknown}): React.ReactElement =>
   <>
-    <h2>Videos</h2>
-    <h3 className="highlight">Channel</h3>
+    <h2>Misc.</h2>
 
     <section>
-      <h4>Freedom in Computing</h4>
+      <h3 className="highlight">Video</h3>
 
-      <p>I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
+      <section className="abandoned">
+        <h4>Channel: Short Games Only</h4>
 
-      {renderItems(source, ["video", "freedom-in-computing"])}
-    </section>
-
-    <section className="abandoned">
-      <h4>Short Games Only</h4>
-
-      <p>This <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains just replays of two games without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
+        <p>This <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains just replays of two games without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
+      </section>
     </section>
   </>
 

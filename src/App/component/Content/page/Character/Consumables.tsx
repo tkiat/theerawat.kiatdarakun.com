@@ -8,8 +8,6 @@ import {WeekTable} from "./Consumables/WeekTable"
 import {AvgChart} from "./Consumables/AvgChart"
 import {ConsumableType, WeeklySummary, WeeklySummaryValue, Week, Weeks, consumableTypes, consumableTypeSummaryTemplate} from "./Consumables/share"
 
-const resource = "/character/consumables/record.yaml"
-
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
@@ -25,11 +23,11 @@ export const Consumables = (): React.ReactElement => {
     let mounted = true;
 
     (async () => {
-      const res = await fetch(resource)
+      const res = await fetch("/character/consumables/record.yaml")
 
       if (mounted) {
-        const type = res.headers.get("content-type")
-        if (type && type.indexOf("text/yaml") !== -1) {
+        const t = res.headers.get("content-type")
+        if (t && t.indexOf("text/yaml") !== -1) {
           const yaml = jsYaml.load(await res.text())
           setWeeks(yaml as Weeks)
         }
