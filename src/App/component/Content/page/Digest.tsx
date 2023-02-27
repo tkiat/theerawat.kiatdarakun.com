@@ -76,7 +76,7 @@ const Prelude = (): React.ReactElement =>
         <li>Available digitally</li>
         <li>Available DRM-free or free of charge</li>
         <li>Can be consumed on FOSS operating systems (like Linux)</li>
-        <li>Video games have to be open-source</li>
+        <li>For video games, they have to be open-source</li>
       </ul>
     </TooltipText>.
   </>
@@ -93,7 +93,7 @@ const renderCategory = (c: unknown) => {
     return renderCategoryTwoLevels(c)
   } else {
     console.error("digest.json: wrong format")
-    return <>Wrong format ...</>
+    return <>&lt;digest.json: wrong format&gt;</>
   }
 }
 

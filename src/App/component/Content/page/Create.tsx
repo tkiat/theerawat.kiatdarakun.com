@@ -1,29 +1,40 @@
 import React from "react"
+import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../share"
 import {getRange} from "@app/share"
 
+const files = [
+  "/create/apps.json",
+  "/create/blog.json",
+  "/create/videos.yaml",
+] as const
+
 export const Create = (): React.ReactElement => {
 
-  const [items, setItems] = React.useState<Items>({
-    [resources[0]]: undefined,
-    [resources[1]]: undefined,
-    [resources[2]]: undefined,
+  const [sources, setSources] = React.useState<Sources>({
+    [files[0]]: undefined,
+    [files[1]]: undefined,
+    [files[2]]: undefined,
   })
-//     resources.reduce<Items>((acc, x) => ({...acc, [x]: undefined}), {})
+//     files.reduce<Sources>((acc, x) => ({...acc, [x]: undefined}), {})
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const res = await Promise.all(resources.map(x => fetch(x)))
+      const res = await Promise.all(files.map(x => fetch(x)))
 
       if (mounted) {
-        for (const i of getRange(0, resources.length - 1)) {
+        for (const i of getRange(0, files.length - 1)) {
           const type = res[i].headers.get("content-type")
+
           if (type && type.indexOf("application/json") !== -1) {
             const c = await res[i].json()
-            setItems(prev => ({ ...prev, [resources[i]]: c }));
+            setSources(prev => ({ ...prev, [files[i]]: c }));
+          } else if (type && type.indexOf("text/yaml") !== -1) {
+            const c = jsYaml.load(await res[i].text())
+            setSources(prev => ({ ...prev, [files[i]]: c }));
           }
         }
       }
@@ -34,20 +45,30 @@ export const Create = (): React.ReactElement => {
 
   const data = {
     icons: [
-      <i className="fa-solid fa-code"></i>,
-      <i className="fa-solid fa-pen"></i>,
+//       <i className="fa-solid fa-code"></i>,
+//       <i className="fa-solid fa-pen"></i>,
       <i className="fa-solid fa-film"></i>,
     ],
     content: {
       prelude: <Prelude />,
       sections: [
-        <Section0 items={items[resources[0]]} />,
-        <Section1 items={items[resources[1]]}/>,
-        <Section2 items={items[resources[2]]}/>,
+//         <Section0 items={sources[files[0]]} />,
+//         <Section1 items={sources[files[1]]}/>,
+        <Section2 source={sources[files[2]]}/>,
       ]
     }
   }
   return <PageWithIconsScrollbar data={data} page="activity-create" />
+}
+
+type ContentItemValue = {
+  date: string,
+  link: string,
+  title: string,
+}
+
+type Content = {
+  [k: string]: ContentItemValue[]
 }
 
 type AppProps = [
@@ -81,17 +102,11 @@ type ContentProps = [
     ]
   }
 ]
-type Items = {
+type Sources = {
   "/create/apps.json": AppProps | undefined,
   "/create/blog.json": ContentProps | undefined,
-  "/create/videos.json": ContentProps | undefined,
+  "/create/videos.yaml": Content | undefined,
 }
-
-const resources = [
-  "/create/apps.json",
-  "/create/blog.json",
-  "/create/videos.json",
-] as const
 
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
@@ -107,15 +122,46 @@ const Section1 = ({items}: {items: ContentProps | undefined}): React.ReactElemen
   <>
     <h2>Writing</h2>
     <h3 className="highlight">My Own Blog Site</h3>
-    {items === undefined ? <p>Loading ...</p> : renderContentItems(items)}
+    {items === undefined ? <p>Loading ...</p> : renderContentItemsTODO(items)}
   </>
 
-const Section2 = ({items}: {items: ContentProps | undefined}): React.ReactElement =>
+const Section2 = ({source}: {source: Content | undefined}): React.ReactElement =>
   <>
     <h2>Videos</h2>
     <h3 className="highlight">Channel</h3>
-    {items === undefined ? <p>Loading ...</p> : renderContentItems(items)}
+
+    <section>
+      <h4>Freedom in Computing</h4>
+
+      <p>I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
+
+      {renderContentItems(source, "freedom-in-computing")}
+    </section>
+
+    <section className="abandoned">
+      <h4>Short Games Only</h4>
+
+      <p>This <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains just replays of two games without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
+    </section>
   </>
+
+const renderContentItems = (source: Content | undefined, key: string) => {
+  if (source === undefined) {
+    return <p>Loading ...</p>
+  } else if (key in source) {
+    return (
+      <ul className="ul-more-space">
+        {
+          source[key].map((x, i) =>
+            <li key={i}>{x.date} — <a href={x.link}>{x.title}</a></li>)
+        }
+      </ul>
+    )
+  } else {
+    console.error("property " + key + " not found in the source file")
+    return <p>&lt;Content not found&gt;</p>
+  }
+}
 
 const renderAppItems = (items: AppProps) => items &&
   items.map((x, i) =>
@@ -134,7 +180,7 @@ const renderAppItems = (items: AppProps) => items &&
   </section>
 )
 
-const renderContentItems = (items: ContentProps) => items &&
+const renderContentItemsTODO = (items: ContentProps) => items &&
   items.map((x, i) =>
   <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
     <h4>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h4>

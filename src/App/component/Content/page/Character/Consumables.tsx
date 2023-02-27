@@ -143,7 +143,7 @@ export const Consumables = (): React.ReactElement => {
             <b className="highlight">Teas</b>:&nbsp;
 
             <TooltipText text="Thai Assam Green">
-              <span className="highlight">Recipe</span>: 6g loose leaves, 350ml water — <span className="highlight">Steps</span>: Rinse the leaves quickly one or two time and then steep it in 90&#8451; water for a minute (first time) and 2 minutes (second time).
+              <span className="highlight">Recipe</span>: 6g loose leaves, 350ml water — <span className="highlight">Steps</span>: Rinse the leaves quickly one or two time and then steep it in 90&#8451; water for a minute (first time) and three minutes (second time).
             </TooltipText>
           </li>
         </ul>
