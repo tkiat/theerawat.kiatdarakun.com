@@ -1,0 +1,30 @@
+const [sources, setSources] = React.useState<Sources>({
+  [files[0]]: undefined,
+  [files[1]]: undefined,
+  [files[2]]: undefined,
+})
+//     files.reduce<Sources>((acc, x) => ({...acc, [x]: undefined}), {})
+
+React.useEffect((): (() => void) => {
+  let mounted = true;
+
+  (async () => {
+    const res = await Promise.all(files.map(x => fetch(x)))
+
+    if (mounted) {
+      for (const i of getRange(0, files.length - 1)) {
+        const type = res[i].headers.get("content-type")
+
+        if (type && type.indexOf("application/json") !== -1) {
+          const c = await res[i].json()
+          setSources(prev => ({ ...prev, [files[i]]: c }));
+        } else if (type && type.indexOf("text/yaml") !== -1) {
+          const c = jsYaml.load(await res[i].text())
+          setSources(prev => ({ ...prev, [files[i]]: c }));
+        }
+      }
+    }
+  })()
+
+  return () => { mounted = false }
+}, [])

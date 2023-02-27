@@ -12,30 +12,19 @@ const files = [
 
 export const Create = (): React.ReactElement => {
 
-  const [sources, setSources] = React.useState<Sources>({
-    [files[0]]: undefined,
-    [files[1]]: undefined,
-    [files[2]]: undefined,
-  })
-//     files.reduce<Sources>((acc, x) => ({...acc, [x]: undefined}), {})
+  const [source, setSource] = React.useState<Source>({})
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const res = await Promise.all(files.map(x => fetch(x)))
+      const res = await fetch("/create.yaml")
 
       if (mounted) {
-        for (const i of getRange(0, files.length - 1)) {
-          const type = res[i].headers.get("content-type")
-
-          if (type && type.indexOf("application/json") !== -1) {
-            const c = await res[i].json()
-            setSources(prev => ({ ...prev, [files[i]]: c }));
-          } else if (type && type.indexOf("text/yaml") !== -1) {
-            const c = jsYaml.load(await res[i].text())
-            setSources(prev => ({ ...prev, [files[i]]: c }));
-          }
+        const contentType = res.headers.get("content-type");
+        if (contentType && contentType.indexOf("text/yaml") !== -1) {
+          const c = jsYaml.load(await res.text())
+          setSource(c)
         }
       }
     })()
@@ -45,31 +34,45 @@ export const Create = (): React.ReactElement => {
 
   const data = {
     icons: [
-//       <i className="fa-solid fa-code"></i>,
-//       <i className="fa-solid fa-pen"></i>,
+      <i className="fa-solid fa-code"></i>,
+      <i className="fa-solid fa-pen"></i>,
       <i className="fa-solid fa-film"></i>,
     ],
     content: {
       prelude: <Prelude />,
       sections: [
-//         <Section0 items={sources[files[0]]} />,
-//         <Section1 items={sources[files[1]]}/>,
-        <Section2 source={sources[files[2]]}/>,
+        <Section0 source={source["app"]} />,
+        <Section1 />,
+        <Section2 source={source["video"]}/>,
       ]
     }
   }
   return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
 
-type ContentItemValue = {
+type AppItem = {
   date: string,
-  link: string,
   title: string,
+  link: string,
+  dscp: string,
+  type: string,
+  stack: string,
+  abandoned: boolean,
 }
+type ContentItem = {
+  date: string,
+  title: string,
+  link: string,
+}
+type Item = AppItem | ContentItem
 
-type Content = {
-  [k: string]: ContentItemValue[]
+type CategoryValue = {
+  [k: string]: Item[]
 }
+type Source = {
+  [k in string]: CategoryValue
+}
+// const categoryKeys = ["app", "video"] as const
 
 type AppProps = [
   {
@@ -102,30 +105,35 @@ type ContentProps = [
     ]
   }
 ]
-type Sources = {
-  "/create/apps.json": AppProps | undefined,
-  "/create/blog.json": ContentProps | undefined,
-  "/create/videos.yaml": Content | undefined,
-}
 
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
-const Section0 = ({items}: {items: AppProps | undefined}): React.ReactElement =>
+const Section0 = ({source}: {source: CategoryValue | undefined}): React.ReactElement =>
   <>
     <h2>Software</h2>
     <h3 className="highlight">Apps</h3>
-    {items === undefined ? <p>Loading ...</p> : renderAppItems(items)}
+
+    <section>
+      <h4>&gt; a Month</h4>
+      {renderCategoryItems(source, "more-than-a-month")}
+    </section>
   </>
 
-const Section1 = ({items}: {items: ContentProps | undefined}): React.ReactElement =>
+const Section1 = (): React.ReactElement =>
   <>
     <h2>Writing</h2>
+
     <h3 className="highlight">My Own Blog Site</h3>
-    {items === undefined ? <p>Loading ...</p> : renderContentItemsTODO(items)}
+
+    <section className="abandoned">
+      <h4>A Freedom Blog</h4>
+
+      <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the philosophical work of what truly matter.</p>
+    </section>
   </>
 
-const Section2 = ({source}: {source: Content | undefined}): React.ReactElement =>
+const Section2 = ({source}: {source: CategoryValue | undefined}): React.ReactElement =>
   <>
     <h2>Videos</h2>
     <h3 className="highlight">Channel</h3>
@@ -135,7 +143,7 @@ const Section2 = ({source}: {source: Content | undefined}): React.ReactElement =
 
       <p>I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
 
-      {renderContentItems(source, "freedom-in-computing")}
+      {renderCategoryItems(source, "freedom-in-computing")}
     </section>
 
     <section className="abandoned">
@@ -145,15 +153,34 @@ const Section2 = ({source}: {source: Content | undefined}): React.ReactElement =
     </section>
   </>
 
-const renderContentItems = (source: Content | undefined, key: string) => {
+const renderCategoryItems = (source: CategoryValue | undefined, key: string) => {
   if (source === undefined) {
     return <p>Loading ...</p>
   } else if (key in source) {
+    console.log(source[key])
     return (
       <ul className="ul-more-space">
         {
-          source[key].map((x, i) =>
-            <li key={i}>{x.date} — <a href={x.link}>{x.title}</a></li>)
+          source[key].map((x, i) => {
+            if (isContentItem(x)) {
+              return (
+                <li key={i}>
+                  {x.date} — <a href={x.link}>{x.title}</a>
+                </li>
+              )
+            } else if (isAppItem(x)) {
+              return (
+                <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>
+                  {x.date} — <a href={x.link}>{x.name}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
+                </li>
+              )
+            } else {
+              console.error("wrong format", x)
+              return (
+                <li key={i}>Wrong Format</li>
+              )
+            }
+          })
         }
       </ul>
     )
@@ -163,34 +190,21 @@ const renderContentItems = (source: Content | undefined, key: string) => {
   }
 }
 
-const renderAppItems = (items: AppProps) => items &&
-  items.map((x, i) =>
-  <section key={i}>
-    <h4>{x.group_name}</h4>
+const isContentItem = (x: Item): x is ContentItem =>
+  typeof x === "object" && x !== null &&
+  "date" in x && typeof x.date === "string" &&
+  "title" in x && typeof x.title  === "string" &&
+  "link" in x && typeof x.link === "string" &&
+  !("stack" in x)
 
-    {x.items &&
-      <ul className="ul-more-space">
-        {x.items.map((y, j) =>
-          <li className={y.abandoned ? "abandoned" : ""} aria-hidden={y.abandoned} key={j}>
-            {y.date} — <a href={y.link}>{y.name}</a>&ensp;<i className={y.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {y.dscp} — <span className="highlight">{y.stack}</span>
-          </li>
-        )}
-      </ul>
-    }
-  </section>
-)
-
-const renderContentItemsTODO = (items: ContentProps) => items &&
-  items.map((x, i) =>
-  <section className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned} key={i}>
-    <h4>{x.link ? <a href={x.link}>{x.group_name}</a> : <>{x.group_name}</>}</h4>
-
-    <p>{x.group_dscp}</p>
-
-    {x.items &&
-      <ul className="ul-more-space">
-        {x.items.map((y, j) => <li key={j}>{y.date} — <a href={y.link}>{y.title}</a></li>)}
-      </ul>
-    }
-  </section>
-)
+const isAppItem = (x: Item): x is AppItem =>
+  typeof x === "object" && x !== null &&
+  "date" in x && typeof x.date === "string" &&
+  "link" in x && typeof x.link === "string" &&
+  "title" in x && typeof x.title  === "string" &&
+  "dscp" in x && typeof x.dscp === "string" &&
+  "type" in x && typeof x.type === "string" &&
+  "stack" in x && typeof x.stack === "string" && (
+    !("abandoned" in x) ||
+    "abandoned" in x && typeof x.abandoned === "boolean"
+  )
