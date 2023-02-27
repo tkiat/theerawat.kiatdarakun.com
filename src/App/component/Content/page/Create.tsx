@@ -4,15 +4,12 @@ import * as jsYaml from 'js-yaml'
 import {PageWithIconsScrollbar} from "../share"
 import {getRange} from "@app/share"
 
-const files = [
-  "/create/apps.json",
-  "/create/blog.json",
-  "/create/videos.yaml",
-] as const
-
 export const Create = (): React.ReactElement => {
 
-  const [source, setSource] = React.useState<Source>({})
+  const [source, setSource] = React.useState<Source>({
+    "app": undefined,
+    "video": undefined,
+  })
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -24,7 +21,7 @@ export const Create = (): React.ReactElement => {
         const contentType = res.headers.get("content-type");
         if (contentType && contentType.indexOf("text/yaml") !== -1) {
           const c = jsYaml.load(await res.text())
-          setSource(c)
+          if (isSource(c)) setSource(c)
         }
       }
     })()
@@ -41,9 +38,9 @@ export const Create = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        <Section0 source={source["app"]} />,
+        <Section0 source={source} />,
         <Section1 />,
-        <Section2 source={source["video"]}/>,
+        <Section2 source={source}/>,
       ]
     }
   }
@@ -69,54 +66,42 @@ type Item = AppItem | ContentItem
 type CategoryValue = {
   [k: string]: Item[]
 }
-type Source = {
-  [k in string]: CategoryValue
-}
-// const categoryKeys = ["app", "video"] as const
+const categoryKeys = ["app", "video"] as const
+export type CategoryKey = (typeof categoryKeys)[number]
 
-type AppProps = [
-  {
-    group_name: string,
-    items: [
-      {
-        name: string,
-        date: string,
-        link: string,
-        dscp: string,
-        type: string,
-        stack: string,
-        abandoned: boolean,
-      }
-    ]
-  }
-]
-type ContentProps = [
-  {
-    group_name: string,
-    group_dscp: string,
-    link: string,
-    abandoned: boolean,
-    items: [
-      {
-        date: string,
-        link: string,
-        title: string,
-      }
-    ]
-  }
-]
+type Source = {
+  [k in CategoryKey]: unknown
+}
+
+const isSource = (x: unknown): x is Source =>
+  typeof x === "object" && x !== null && categoryKeys.every(y => y in x)
 
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
-const Section0 = ({source}: {source: CategoryValue | undefined}): React.ReactElement =>
+const Section0 = ({source}: {source: unknown | undefined}): React.ReactElement =>
   <>
     <h2>Software</h2>
     <h3 className="highlight">Apps</h3>
 
     <section>
       <h4>&gt; a Month</h4>
-      {renderCategoryItems(source, "more-than-a-month")}
+      {renderItems(source, ["app", "more-than-a-month"])}
+    </section>
+
+    <section>
+      <h4>&gt; a Week</h4>
+      {renderItems(source, ["app", "more-than-a-week"])}
+    </section>
+
+    <section>
+      <h4>&gt; a Day</h4>
+      {renderItems(source, ["app", "more-than-a-day"])}
+    </section>
+
+    <section>
+      <h4>&lt; a Day</h4>
+      {renderItems(source, ["app", "less-than-a-day"])}
     </section>
   </>
 
@@ -133,7 +118,7 @@ const Section1 = (): React.ReactElement =>
     </section>
   </>
 
-const Section2 = ({source}: {source: CategoryValue | undefined}): React.ReactElement =>
+const Section2 = ({source}: {source: unknown | undefined}): React.ReactElement =>
   <>
     <h2>Videos</h2>
     <h3 className="highlight">Channel</h3>
@@ -143,7 +128,7 @@ const Section2 = ({source}: {source: CategoryValue | undefined}): React.ReactEle
 
       <p>I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
 
-      {renderCategoryItems(source, "freedom-in-computing")}
+      {renderItems(source, ["video", "freedom-in-computing"])}
     </section>
 
     <section className="abandoned">
@@ -153,42 +138,90 @@ const Section2 = ({source}: {source: CategoryValue | undefined}): React.ReactEle
     </section>
   </>
 
-const renderCategoryItems = (source: CategoryValue | undefined, key: string) => {
-  if (source === undefined) {
-    return <p>Loading ...</p>
-  } else if (key in source) {
-    console.log(source[key])
-    return (
-      <ul className="ul-more-space">
-        {
-          source[key].map((x, i) => {
-            if (isContentItem(x)) {
-              return (
-                <li key={i}>
-                  {x.date} — <a href={x.link}>{x.title}</a>
-                </li>
-              )
-            } else if (isAppItem(x)) {
-              return (
-                <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>
-                  {x.date} — <a href={x.link}>{x.name}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
-                </li>
-              )
-            } else {
-              console.error("wrong format", x)
-              return (
-                <li key={i}>Wrong Format</li>
-              )
-            }
-          })
-        }
-      </ul>
-    )
+const fibo = (o: object, keys: string[]) => {
+//   console.log(o, keys)
+  const k = keys[0]
+  if (typeof o === "object" && o !== null && k in o) {
+    return keys.length === 1 ? o[k] : fibo(o[k], keys.slice(1))
   } else {
-    console.error("property " + key + " not found in the source file")
-    return <p>&lt;Content not found&gt;</p>
+    return undefined
   }
 }
+
+const renderItems = (source: unknown, keys: string[]) => {
+  if (source === undefined) {
+    return <p>Loading ...</p>
+  } else {
+    const arr = fibo(source, keys)
+    console.log(arr)
+    if (Array.isArray(arr)) {
+      return (
+        <ul className="ul-more-space">
+          {
+            arr.map((x, i) => {
+              if (isContentItem(x)) {
+                return (
+                  <li key={i}>
+                    {x.date} — <a href={x.link}>{x.title}</a>
+                  </li>
+                )
+              } else if (isAppItem(x)) {
+                return (
+                  <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>
+                    {x.date} — <a href={x.link}>{x.title}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
+                  </li>
+                )
+              } else {
+                console.error("Wrong format", x)
+                return (
+                  <li key={i}>Content not found</li>
+                )
+              }
+            })
+          }
+        </ul>
+      )
+    } else {
+      return <p>Loading ...</p>
+    }
+  }
+}
+
+// const renderCategoryItems = (source: unknown, key: string) => {
+//   if (source === undefined) {
+//     return <p>Loading ...</p>
+//   } else if (typeof source === "object" && source !== null && typeof key === "string" && key in source && Array.isArray(source[key])) {
+//     return (
+//       <ul className="ul-more-space">
+//         {
+//           source[key].map((x, i) => {
+//             if (isContentItem(x)) {
+//               return (
+//                 <li key={i}>
+//                   {x.date} — <a href={x.link}>{x.title}</a>
+//                 </li>
+//               )
+//             } else if (isAppItem(x)) {
+//               return (
+//                 <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>
+//                   {x.date} — <a href={x.link}>{x.title}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
+//                 </li>
+//               )
+//             } else {
+//               console.error("Wrong format", x)
+//               return (
+//                 <li key={i}>Content not found</li>
+//               )
+//             }
+//           })
+//         }
+//       </ul>
+//     )
+//   } else {
+//     console.error("property " + key + " not found in", source)
+//     return <p>&lt;Content not found&gt;</p>
+//   }
+// }
 
 const isContentItem = (x: Item): x is ContentItem =>
   typeof x === "object" && x !== null &&

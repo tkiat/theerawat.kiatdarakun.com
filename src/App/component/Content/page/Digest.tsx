@@ -92,8 +92,8 @@ const renderCategory = (c: unknown) => {
   } else if (isCategoryTwoLevels(c)) {
     return renderCategoryTwoLevels(c)
   } else {
-    console.error("digest.json: wrong format")
-    return <>&lt;digest.json: wrong format&gt;</>
+    console.error("wrong format", c)
+    return <>&lt;Content not found&gt;</>
   }
 }
 
