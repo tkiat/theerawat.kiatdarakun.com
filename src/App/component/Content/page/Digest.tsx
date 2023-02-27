@@ -46,16 +46,6 @@ export const Digest = (): React.ReactElement => {
   return <PageWithIconsScrollbar data={data} page="activity-digest" />
 }
 
-type Item = {
-  date: string,
-  title: string,
-  format: string,
-  length: string,
-  link: string,
-  review_short?: string,
-  review_ext?: string,
-}
-
 const Prelude = (): React.ReactElement =>
   <>
     <br />
@@ -69,74 +59,6 @@ const Prelude = (): React.ReactElement =>
       </ul>
     </TooltipText>.
   </>
-
-const renderItem = (x: Item, i: number = 0) =>
-  <p key={i}>{x.date} — {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} — {getFormatIcon(x.format)}{x.length && <>&ensp;{x.length}</>}{x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}{x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}</p>
-
-const isItem = (x: unknown): x is Item =>
-  typeof x === "object" && x !== null &&
-  "date" in x && typeof x.date ==="string" &&
-  "title" in x && typeof x.title  ==="string" &&
-  "format" in x && typeof x.format ==="string" &&
-  "length" in x && typeof x.length ==="string" &&
-  "link" in x && typeof x.link ==="string" && (
-    "review_short" in x && typeof x.review_short === "string" ||
-    "review_ext" in x && typeof x.review_ext ==="string"
-  )
-
-const getFormatIcon = (f: string) => {
-  switch(f) {
-    case "book":
-      return <i className="fa-solid fa-book"></i>
-    case "video":
-      return <i className="fa-solid fa-film"></i>
-    case "course":
-      return <i className="fa-solid fa-graduation-cap"></i>
-    case "image":
-      return <i className="fa-regular fa-image"></i>
-    default:
-      return <></>
-  }
-}
-
-const renderItems = (source: unknown, keys: string[]) => {
-  const arr = findObjValRecursive(source, keys)
-
-  if (arr === undefined) {
-    return <p>Loading ...</p>
-  } else if (arr === null) {
-    const props = keys.reduce((acc, cur) => {
-      return acc + "[\"" + cur + "\"]"
-    }, "")
-
-    console.error("property " + props + " not found in", source)
-    return <p>&lt;Content not found&gt;</p>
-  } else {
-    if (Array.isArray(arr)) {
-      return (
-        <>
-          {
-            arr.map((x, i) => {
-              if (isItem(x)) {
-                return renderItem(x, i)
-              } else {
-                console.error("wrong format", x)
-                return <p key={i}>&lt;wrong format&gt;</p>
-              }
-            })
-          }
-        </>
-      )
-    } else {
-      const props = keys.reduce((acc, cur) => {
-        return acc + "[\"" + cur + "\"]"
-      }, "")
-
-      console.error("property " + props + " in", source, "must be an array")
-      return <p>&lt;Wrong format&gt;</p>
-    }
-  }
-}
 
 const Section0 = ({source}: {source: unknown}): React.ReactElement =>
   <>
@@ -177,3 +99,88 @@ const Section4 = ({source}: {source: unknown}): React.ReactElement =>
 
     {renderItems(source, ["fiction"])}
   </>
+
+const getFormatIcon = (f: string) => {
+  switch(f) {
+    case "book":
+      return <i className="fa-solid fa-book"></i>
+    case "video":
+      return <i className="fa-solid fa-film"></i>
+    case "course":
+      return <i className="fa-solid fa-graduation-cap"></i>
+    case "image":
+      return <i className="fa-regular fa-image"></i>
+    default:
+      return <></>
+  }
+}
+
+type Item = {
+  date: string,
+  title: string,
+  format: string,
+  length: string,
+  link: string,
+  review_short?: string,
+  review_ext?: string,
+}
+
+const isItem = (x: unknown): x is Item =>
+  typeof x === "object" && x !== null &&
+  "date" in x && typeof x.date ==="string" &&
+  "title" in x && typeof x.title  ==="string" &&
+  "format" in x && typeof x.format ==="string" &&
+  "length" in x && typeof x.length ==="string" &&
+  "link" in x && typeof x.link ==="string" && (
+    "review_short" in x && typeof x.review_short === "string" ||
+    "review_ext" in x && typeof x.review_ext ==="string"
+  )
+
+const renderItem = (x: Item, i: number = 0) =>
+  <p key={i}>
+    {x.date} —&nbsp;
+    {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} —&nbsp;
+    {getFormatIcon(x.format)}
+    {x.length && <>&ensp;{x.length}</>}
+    {x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}
+    {x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}
+  </p>
+
+const renderItems = (source: unknown, keys: string[]) => {
+  const arr = findObjValRecursive(source, keys)
+
+  if (arr === undefined) {
+    return <p>Loading ...</p>
+  } else if (arr === null) {
+    const props = keys.reduce((acc, cur) => {
+      return acc + "[\"" + cur + "\"]"
+    }, "")
+
+    console.error("property " + props + " not found in", source)
+    return <p>&lt;Content not found&gt;</p>
+  } else {
+    if (Array.isArray(arr)) {
+      return (
+        <>
+          {
+            arr.map((x, i) => {
+              if (isItem(x)) {
+                return renderItem(x, i)
+              } else {
+                console.error("wrong format", x)
+                return <p key={i}>&lt;wrong format&gt;</p>
+              }
+            })
+          }
+        </>
+      )
+    } else {
+      const props = keys.reduce((acc, cur) => {
+        return acc + "[\"" + cur + "\"]"
+      }, "")
+
+      console.error("property " + props + " in", source, "must be an array")
+      return <p>&lt;Wrong format&gt;</p>
+    }
+  }
+}

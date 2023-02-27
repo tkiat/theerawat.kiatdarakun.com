@@ -42,21 +42,6 @@ export const Create = (): React.ReactElement => {
   return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
 
-type AppItem = {
-  date: string,
-  title: string,
-  link: string,
-  dscp: string,
-  type: string,
-  stack: string,
-  abandoned?: boolean,
-}
-type ContentItem = {
-  date: string,
-  title: string,
-  link: string,
-}
-
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
@@ -119,55 +104,19 @@ const Section2 = ({source}: {source: unknown}): React.ReactElement =>
     </section>
   </>
 
-const renderItems = (source: unknown, keys: string[]) => {
-  const arr = findObjValRecursive(source, keys)
-
-  if (arr === undefined) {
-    return <p>Loading ...</p>
-  } else if (arr === null) {
-    const props = keys.reduce((acc, cur) => {
-      return acc + "[\"" + cur + "\"]"
-    }, "")
-
-    console.error("property " + props + " not found in", source)
-    return <p>&lt;Content not found&gt;</p>
-  } else {
-    if (Array.isArray(arr)) {
-      return (
-        <ul className="ul-more-space">
-          {
-            arr.map((x, i) => {
-              if (isContentItem(x)) {
-                return (
-                  <li key={i}>
-                    {x.date} — <a href={x.link}>{x.title}</a>
-                  </li>
-                )
-              } else if (isAppItem(x)) {
-                return (
-                  <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>
-                    {x.date} — <a href={x.link}>{x.title}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span>
-                  </li>
-                )
-              } else {
-                console.error("wrong format", x)
-                return (
-                  <li key={i}>&lt;wrong format&gt;</li>
-                )
-              }
-            })
-          }
-        </ul>
-      )
-    } else {
-      const props = keys.reduce((acc, cur) => {
-        return acc + "[\"" + cur + "\"]"
-      }, "")
-
-      console.error("property " + props + " in", source, "must be an array")
-      return <p>&lt;wrong format&gt;</p>
-    }
-  }
+type AppItem = {
+  date: string,
+  title: string,
+  link: string,
+  dscp: string,
+  type: string,
+  stack: string,
+  abandoned?: boolean,
+}
+type ContentItem = {
+  date: string,
+  title: string,
+  link: string,
 }
 
 const isContentItem = (x: unknown): x is ContentItem =>
@@ -188,3 +137,47 @@ const isAppItem = (x: unknown): x is AppItem =>
     !("abandoned" in x) ||
     "abandoned" in x && typeof x.abandoned === "boolean"
   )
+
+const renderItems = (source: unknown, keys: string[]) => {
+  const arr = findObjValRecursive(source, keys)
+
+  if (arr === undefined) {
+    return <p>Loading ...</p>
+  } else if (arr === null) {
+    const props = keys.reduce((acc, cur) => {
+      return acc + "[\"" + cur + "\"]"
+    }, "")
+
+    console.error("property " + props + " not found in", source)
+    return <p>&lt;Content not found&gt;</p>
+  } else {
+    if (Array.isArray(arr)) {
+      return (
+        <ul className="ul-more-space">
+          {
+            arr.map((x, i) => {
+              let content
+
+              if (isContentItem(x)) {
+                content = <>{x.date} — <a href={x.link}>{x.title}</a></>
+              } else if (isAppItem(x)) {
+                content = <>{x.date} — <a href={x.link}>{x.title}</a>&ensp;<i className={x.type === "web" ? "fa-solid fa-globe" : "fa-solid fa-display"}></i> — {x.dscp} — <span className="highlight">{x.stack}</span></>
+              } else {
+                console.error("wrong format", x)
+                content = <>&lt;wrong format&gt;</>
+              }
+              return <li key={i} className={x.abandoned ? "abandoned" : ""} aria-hidden={x.abandoned}>{content}</li>
+            })
+          }
+        </ul>
+      )
+    } else {
+      const props = keys.reduce((acc, cur) => {
+        return acc + "[\"" + cur + "\"]"
+      }, "")
+
+      console.error("property " + props + " in", source, "must be an array")
+      return <p>&lt;wrong format&gt;</p>
+    }
+  }
+}
