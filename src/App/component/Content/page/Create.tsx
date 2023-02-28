@@ -30,19 +30,17 @@ export const Create = (): React.ReactElement => {
 
   const data = {
     icons: [
-      <i className="fa-solid fa-star"></i>,
+      <i className="fa-solid fa-flag"></i>,
+//       <i className="fa-solid fa-star"></i>,
       <i className="fa-solid fa-code"></i>,
-      <i className="fa-solid fa-pen"></i>,
-//       <i className="fa-solid fa-film"></i>,
       <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],
     content: {
       prelude: <Prelude />,
       sections: [
-        <Section0 />,
-        <Section1 content={content} />,
-        <Section2 />,
-        <Section3 content={content}/>,
+        <WhatMatter />,
+        <Software content={content} />,
+        <Misc content={content}/>,
       ]
     }
   }
@@ -52,12 +50,45 @@ export const Create = (): React.ReactElement => {
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
-const Section0 = (): React.ReactElement =>
+const WhatMatter = (): React.ReactElement =>
   <>
-    <h2>TODO</h2>
+    <h2>What Can Truly Matter</h2>
+
+    <p>Regardless of the actual reality (be it only mental construct, only material objects, both, or none), what can truly matter cannot be beyond the flow inside sentient beings. However, truths are required to know what those flows are. There are many scopes of truths. 
+
+    Since my perception is limited, I have no choice but to interpret this realization base on two scope of truth: with and without beliefs.</p>
+
+    <ul className="more-gap-list">
+      <li>
+        <b className="highlight">Explanation of this realization</b>. Beginning from my journey to this realiztion will begin from my jouey
+      </li>
+      <li>
+        <p><b className="highlight">Interpretation in two scopes of truth</b></p>
+        <ol>
+          <li>
+            <b className="highlight">Direct senses only</b>. First, I will list the possible interpretations for an individual, then I will extend the scope to the whole society.
+          </li>
+          <li>
+            <b className="highlight">Direct senses and beliefs</b>. Beliefs are anything beyond direct senses. They can be religious beliefs (most notably those of Buddhism, Christianity, Islam, and Hinduism) or beliefs in secondary sources (like news, spoken words, and citations).
+          </li>
+        </ol>
+      </li>
+    </ul>
+
+    <p>I have limited perceptions (and I believe this is true for all other people).  two scope of truths that encompass what truly matters.</p>
+
+    <section>
+      <h3 className="highlight">Six senses and beliefs</h3>
+
+      <p>This is when the beliefs (). They cannot reject senses, for    .</p>
+
+      <p>When the beliefs and senses are in conflict, one may either prioritize beliefs or senses. I plan to work on belief-first approach as it is the way .
+
+      </p>
+    </section>
   </>
 
-const Section1 = ({content}: {content: unknown}): React.ReactElement =>
+const Software = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Software</h2>
 
@@ -86,42 +117,47 @@ const Section1 = ({content}: {content: unknown}): React.ReactElement =>
     </section>
 
     <section>
-      <h3 className="highlight">Video</h3>
+      <h3 className="highlight">Content</h3>
 
       <section>
         <h4>Channel: Freedom in Computing</h4>
 
-        <p>TODO diff openness purposes I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
+        <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
+
+        <p>I created this channel out of the wish to get us closer to that ideal society. I plan to add more videos down the road.</p>
 
         {renderItems(content, ["software", "video", "freedom-in-computing"])}
       </section>
     </section>
   </>
 
-const Section2 = (): React.ReactElement =>
-  <>
-    <h2>Writing</h2>
-
-    <h3 className="highlight">My Own Blog Site</h3>
-
-    <section className="abandoned">
-      <h4>A Freedom Blog</h4>
-
-      <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the philosophical work of what truly matter.</p>
-    </section>
-  </>
-
-const Section3 = ({content}: {content: unknown}): React.ReactElement =>
+const Misc = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Misc.</h2>
 
     <section>
-      <h3 className="highlight">Video</h3>
+      <h3 className="highlight">Academic Publication</h3>
+
+      TODO
+    </section>
+
+    <section>
+      <h3 className="highlight">Video Games</h3>
 
       <section className="abandoned">
-        <h4>Channel: Short Games Only</h4>
+        <h4>Short Games Only</h4>
 
-        <p>This <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains just replays of two games without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
+        <p>This video games <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains just five videos showing replays of two games (Clash Royale and Cryptark) without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
+      </section>
+    </section>
+
+    <section>
+      <h3 className="highlight">Other</h3>
+
+      <section className="abandoned">
+        <h4>A Freedom Blog</h4>
+
+        <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the philosophical work of what can truly matter.</p>
       </section>
     </section>
   </>

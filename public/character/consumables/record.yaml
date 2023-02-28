@@ -11,6 +11,7 @@
     types:
       - name: drink-liquid
         items:
+        - {t: "beer",thb: 60,g: 625,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 392}
         - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
@@ -240,6 +241,7 @@
     types:
       - name: drink-liquid
         items:
+        - {t: "beer",thb: 65,g: 622,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 417}
         - {t: "soda",thb: 8,g: 232,nv: 0,oc: 0,mu: 0,u: 232,p: 0,pa: 0,gl: 0}
         - {t: "water",thb: 24,g: 36000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-solid
@@ -251,7 +253,6 @@
         - {t: "agasta",thb: 15,g: 221,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "coriander and scallion",thb: 10,g: 73,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "banana",thb: 40,g: 2683,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "beer",thb: 65,g: 622,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 417}
         - {t: "bitter gourd",thb: 30,g: 559,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 17,g: 362,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 27,g: 506,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -310,12 +311,12 @@
     types:
       - name: drink-liquid
         items:
+        - {t: "beer",thb: 185,g: 1871,nv: 0,oc: 0,mu: 1871,u: 0,p: 0,pa: 0,gl: 1273}
         - {t: "soda",thb: 12,g: 384,nv: 0,oc: 0,mu: 0,u: 384,p: 0,pa: 0,gl: 0}
         - {t: "water",thb: 11,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana",thb: 25,g: 1275,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "beer",thb: 185,g: 1871,nv: 0,oc: 0,mu: 1871,u: 0,p: 0,pa: 0,gl: 1273}
         - {t: "bitter gourd",thb: 25,g: 471,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 40,g: 739,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 352,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
