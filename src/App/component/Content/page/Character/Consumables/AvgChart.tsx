@@ -3,7 +3,7 @@ import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
 import {appId} from "@app/share"
-import {ConsumableType, WeeklySummary, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
+import {ConsumableType, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
 
 Chart.register(...registerables)
 
@@ -14,11 +14,10 @@ const getHighlightColor = () => {
 }
 
 type I = {
-  cur: string,
-  avgSummaries: WeeklySummary,
+  avgSummary: WeeklySummaryValue,
   fields: Set<ConsumableType>,
 }
-export const AvgChart = ({cur, fields, avgSummaries}: I):
+export const AvgChart = ({avgSummary, fields}: I):
   React.ReactElement => {
 
   const [color, setColor] = React.useState(getHighlightColor())
@@ -27,8 +26,8 @@ export const AvgChart = ({cur, fields, avgSummaries}: I):
     setColor(getHighlightColor())
   }, [])
 
-  if(!(cur in avgSummaries)) return <p>Loading ...</p>
-  const summary = combineFields(avgSummaries[cur], fields)
+  if(avgSummary === undefined) return <p>Loading ...</p>
+  const summary = combineFields(avgSummary, fields)
 
   return (
     <div className="consumables-avg">

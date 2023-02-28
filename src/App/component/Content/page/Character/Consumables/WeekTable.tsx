@@ -1,15 +1,14 @@
 import React from "react"
 
-import {ConsumableType, Weeks, consumableTypeSummaryTemplate} from "./share"
+import {ConsumableType, Week, consumableTypeSummaryTemplate} from "./share"
 import {TooltipText} from "../../../share"
 
 type I = {
-  cur: string,
   fields: Set<ConsumableType>,
-  weeks: Weeks,
+  week: Week | undefined,
 }
-export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
-  if(!(cur in weeks)) return <p>Loading ...</p>
+export const WeekTable = ({fields, week}: I): React.ReactElement => {
+  if(week === undefined) return <p>Loading ...</p>
 
   const total = JSON.parse(JSON.stringify(consumableTypeSummaryTemplate))
 
@@ -41,7 +40,7 @@ export const WeekTable = ({cur, fields, weeks}: I): React.ReactElement => {
         </thead>
         <tbody>
         {
-          weeks[cur].map((order, i) => {
+          week.map((order, i) => {
             const types = order.types.filter(
               x => fields.has(x.name)
             )

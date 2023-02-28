@@ -29,7 +29,7 @@ type Order = {
   delivery: Delivery,
   types: Type[]
 }
-type Week = [Order]
+export type Week = [Order]
 export type Weeks = {
   [key: string]: Week
 }
