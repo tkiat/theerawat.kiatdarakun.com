@@ -4,19 +4,23 @@ import * as jsYaml from 'js-yaml'
 import {PageWithIconsScrollbar, TooltipFa, TooltipText} from "../share"
 import {findObjValRecursive} from "@app/share"
 
+const source = "/digest.yaml"
+
 export const Digest = (): React.ReactElement => {
-  const [source, setSource] = React.useState<unknown>()
+  const [content, setContent] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const res = await fetch("/digest.yaml")
+      const res = await fetch(source)
 
       if (mounted) {
         const t = res.headers.get("content-type");
         if (t && t.indexOf("text/yaml") !== -1) {
-          setSource(jsYaml.load(await res.text()))
+          setContent(jsYaml.load(await res.text()))
+        } else {
+          console.error("the content-type of file " + source + " is not yaml")
         }
       }
     })()
@@ -35,11 +39,11 @@ export const Digest = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        <Section0 source={source} />,
-        <Section1 source={source} />,
-        <Section2 source={source} />,
-        <Section3 source={source} />,
-        <Section4 source={source} />,
+        <Section0 content={content} />,
+        <Section1 content={content} />,
+        <Section2 content={content} />,
+        <Section3 content={content} />,
+        <Section4 content={content} />,
       ]
     }
   }
@@ -60,44 +64,44 @@ const Prelude = (): React.ReactElement =>
     </TooltipText>.
   </>
 
-const Section0 = ({source}: {source: unknown}): React.ReactElement =>
+const Section0 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Individual</h2>
-    {renderItems(source, ["individual"])}
+    {renderItems(content, ["individual"])}
   </>
 
-const Section1 = ({source}: {source: unknown}): React.ReactElement =>
+const Section1 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Human Society</h2>
 
     <section>
       <h3 className="highlight">Religion</h3>
-      {renderItems(source, ["human society", "religion"])}
+      {renderItems(content, ["human society", "religion"])}
     </section>
   </>
 
-const Section2 = ({source}: {source: unknown}): React.ReactElement =>
+const Section2 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Nonhumans and the Earth</h2>
 
-    {renderItems(source, ["nonhumans and the earth"])}
+    {renderItems(content, ["nonhumans and the earth"])}
   </>
 
-const Section3 = ({source}: {source: unknown}): React.ReactElement =>
+const Section3 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Other Nonfiction</h2>
 
     <section>
       <h3 className="highlight">Software</h3>
-      {renderItems(source, ["other nonfiction", "software"])}
+      {renderItems(content, ["other nonfiction", "software"])}
     </section>
   </>
 
-const Section4 = ({source}: {source: unknown}): React.ReactElement =>
+const Section4 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Fiction</h2>
 
-    {renderItems(source, ["fiction"])}
+    {renderItems(content, ["fiction"])}
   </>
 
 const getFormatIcon = (f: string) => {
@@ -146,8 +150,8 @@ const renderItem = (x: Item) =>
     {x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}
   </>
 
-const renderItems = (source: unknown, keys: string[]) => {
-  const arr = findObjValRecursive(source, keys)
+const renderItems = (content: unknown, keys: string[]) => {
+  const arr = findObjValRecursive(content, keys)
 
   if (arr === undefined) {
     return <p>Loading ...</p>
@@ -156,7 +160,7 @@ const renderItems = (source: unknown, keys: string[]) => {
       return acc + "[\"" + cur + "\"]"
     }, "")
 
-    console.error("property " + props + " not found in", source)
+    console.error("property " + props + " not found in", content)
     return <p>&lt;Content not found&gt;</p>
   } else {
     if (Array.isArray(arr)) {
@@ -179,7 +183,7 @@ const renderItems = (source: unknown, keys: string[]) => {
         return acc + "[\"" + cur + "\"]"
       }, "")
 
-      console.error("property " + props + " in", source, "must be an array")
+      console.error("property " + props + " in", content, "must be an array")
       return <p>&lt;Wrong format&gt;</p>
     }
   }

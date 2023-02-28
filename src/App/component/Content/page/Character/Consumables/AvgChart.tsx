@@ -3,7 +3,7 @@ import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
 import {appId} from "@app/share"
-import {WeeklySummary, ConsumableType, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
+import {ConsumableType, WeeklySummary, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
 
 Chart.register(...registerables)
 

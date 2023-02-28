@@ -17,9 +17,9 @@ export const Character = (): React.ReactElement => {
     ],
     content: {
       sections: [
+        <Consumables />,
         <Trait />,
         <Hobbies />,
-        <Consumables />,
         <ThingsIOwn />,
       ]
     }

@@ -17,6 +17,7 @@
         - {t: "corn",thb: 25,g: 1050,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
         - {t: "mango",thb: 20,g: 1040,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "papaya",thb: 500,g: 1970,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 20,g: 644,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
 "2023-02-18":
   - delivery:
       type: no fuel

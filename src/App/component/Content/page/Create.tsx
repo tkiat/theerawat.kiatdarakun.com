@@ -4,19 +4,23 @@ import * as jsYaml from 'js-yaml'
 import {PageWithIconsScrollbar} from "../share"
 import {findObjValRecursive} from "@app/share"
 
+const source = "/create.yaml"
+
 export const Create = (): React.ReactElement => {
-  const [source, setSource] = React.useState<unknown>()
+  const [content, setContent] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {
     let mounted = true;
 
     (async () => {
-      const res = await fetch("/create.yaml")
+      const res = await fetch(source)
 
       if (mounted) {
         const t = res.headers.get("content-type");
         if (t && t.indexOf("text/yaml") !== -1) {
-          setSource(jsYaml.load(await res.text()))
+          setContent(jsYaml.load(await res.text()))
+        } else {
+          console.error("the content-type of file " + source + " is not yaml")
         }
       }
     })()
@@ -36,9 +40,9 @@ export const Create = (): React.ReactElement => {
       prelude: <Prelude />,
       sections: [
         <Section0 />,
-        <Section1 source={source} />,
+        <Section1 content={content} />,
         <Section2 />,
-        <Section3 source={source}/>,
+        <Section3 content={content}/>,
       ]
     }
   }
@@ -53,7 +57,7 @@ const Section0 = (): React.ReactElement =>
     <h2>TODO</h2>
   </>
 
-const Section1 = ({source}: {source: unknown}): React.ReactElement =>
+const Section1 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Software</h2>
 
@@ -62,22 +66,22 @@ const Section1 = ({source}: {source: unknown}): React.ReactElement =>
 
       <section>
         <h4>&gt; a Month</h4>
-        {renderItems(source, ["software", "app", "> month"])}
+        {renderItems(content, ["software", "app", "> month"])}
       </section>
 
       <section>
         <h4>&gt; a Week</h4>
-        {renderItems(source, ["software", "app", "> week"])}
+        {renderItems(content, ["software", "app", "> week"])}
       </section>
 
       <section>
         <h4>&gt; a Day</h4>
-        {renderItems(source, ["software", "app", "> day"])}
+        {renderItems(content, ["software", "app", "> day"])}
       </section>
 
       <section>
         <h4>&lt; a Day</h4>
-        {renderItems(source, ["software", "app", "< day"])}
+        {renderItems(content, ["software", "app", "< day"])}
       </section>
     </section>
 
@@ -89,7 +93,7 @@ const Section1 = ({source}: {source: unknown}): React.ReactElement =>
 
         <p>TODO diff openness purposes I advocate FOSS operating systems (since they are very fundamental), the availability of FOSS application software alternatives (for accessibility to the poor), and OSS for entertainment software like video games (for the sake of transparency). I create this channel out of the wish to enhance freedom in the world of computing. I plan to add more videos down the road.</p>
 
-        {renderItems(source, ["software", "video", "freedom-in-computing"])}
+        {renderItems(content, ["software", "video", "freedom-in-computing"])}
       </section>
     </section>
   </>
@@ -107,7 +111,7 @@ const Section2 = (): React.ReactElement =>
     </section>
   </>
 
-const Section3 = ({source}: {source: unknown}): React.ReactElement =>
+const Section3 = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Misc.</h2>
 
@@ -156,8 +160,8 @@ const isAppItem = (x: unknown): x is AppItem =>
     "abandoned" in x && typeof x.abandoned === "boolean"
   )
 
-const renderItems = (source: unknown, keys: string[]) => {
-  const arr = findObjValRecursive(source, keys)
+const renderItems = (content: unknown, keys: string[]) => {
+  const arr = findObjValRecursive(content, keys)
 
   if (arr === undefined) {
     return <p>Loading ...</p>
@@ -166,7 +170,7 @@ const renderItems = (source: unknown, keys: string[]) => {
       return acc + "[\"" + cur + "\"]"
     }, "")
 
-    console.error("property " + props + " not found in", source)
+    console.error("property " + props + " not found in", content)
     return <p>&lt;Content not found&gt;</p>
   } else {
     if (Array.isArray(arr)) {
@@ -194,7 +198,7 @@ const renderItems = (source: unknown, keys: string[]) => {
         return acc + "[\"" + cur + "\"]"
       }, "")
 
-      console.error("property " + props + " in", source, "must be an array")
+      console.error("property " + props + " in", content, "must be an array")
       return <p>&lt;wrong format&gt;</p>
     }
   }
