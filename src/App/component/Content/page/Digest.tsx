@@ -29,7 +29,6 @@ export const Digest = (): React.ReactElement => {
       <i className="fa-solid fa-user"></i>,
       <i className="fa-solid fa-users"></i>,
       <i className="fa-solid fa-earth-americas"></i>,
-//       <i className="fa-solid fa-plus"></i>,
       <i className="fa-solid fa-ellipsis-vertical"></i>,
       <i className="fa-solid fa-wand-magic-sparkles"></i>,
     ],
@@ -137,15 +136,15 @@ const isItem = (x: unknown): x is Item =>
     "review_ext" in x && typeof x.review_ext ==="string"
   )
 
-const renderItem = (x: Item, i: number = 0) =>
-  <p key={i}>
+const renderItem = (x: Item) =>
+  <>
     {x.date} —&nbsp;
     {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} —&nbsp;
     {getFormatIcon(x.format)}
     {x.length && <>&ensp;{x.length}</>}
     {x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}
     {x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}
-  </p>
+  </>
 
 const renderItems = (source: unknown, keys: string[]) => {
   const arr = findObjValRecursive(source, keys)
@@ -166,7 +165,7 @@ const renderItems = (source: unknown, keys: string[]) => {
           {
             arr.map((x, i) => {
               if (isItem(x)) {
-                return renderItem(x, i)
+                return <p key={i}>{renderItem(x)}</p>
               } else {
                 console.error("wrong format", x)
                 return <p key={i}>&lt;wrong format&gt;</p>

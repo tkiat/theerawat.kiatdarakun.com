@@ -35,10 +35,10 @@ export const Create = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        <Section9 />,
-        <Section0 source={source} />,
-        <Section1 />,
-        <Section2 source={source}/>,
+        <Section0 />,
+        <Section1 source={source} />,
+        <Section2 />,
+        <Section3 source={source}/>,
       ]
     }
   }
@@ -48,12 +48,12 @@ export const Create = (): React.ReactElement => {
 const Prelude = (): React.ReactElement =>
   <p>I list both <span>active items</span> and <span className="abandoned">abandoned items</span>.</p>
 
-const Section9 = ({source}: {source: unknown}): React.ReactElement =>
+const Section0 = (): React.ReactElement =>
   <>
     <h2>TODO</h2>
   </>
 
-const Section0 = ({source}: {source: unknown}): React.ReactElement =>
+const Section1 = ({source}: {source: unknown}): React.ReactElement =>
   <>
     <h2>Software</h2>
 
@@ -94,7 +94,7 @@ const Section0 = ({source}: {source: unknown}): React.ReactElement =>
     </section>
   </>
 
-const Section1 = (): React.ReactElement =>
+const Section2 = (): React.ReactElement =>
   <>
     <h2>Writing</h2>
 
@@ -107,7 +107,7 @@ const Section1 = (): React.ReactElement =>
     </section>
   </>
 
-const Section2 = ({source}: {source: unknown}): React.ReactElement =>
+const Section3 = ({source}: {source: unknown}): React.ReactElement =>
   <>
     <h2>Misc.</h2>
 
