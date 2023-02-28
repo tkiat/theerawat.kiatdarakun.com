@@ -7,7 +7,7 @@ import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath,
 import "@app/share/style/main.scss"
 
 const numPointsOnWave = numDucks + 1
-const { place: initPlace, time: initTime } = initTheme()
+const {place: initPlace, time: initTime} = initTheme()
 
 export const App = (): React.ReactElement => {
   const dimension = useViewportDimensions({msDelay: 500})

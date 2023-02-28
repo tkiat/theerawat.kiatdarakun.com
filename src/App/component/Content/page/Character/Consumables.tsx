@@ -1,27 +1,33 @@
 import React from "react"
 import * as jsYaml from "js-yaml"
-import {useImmer} from "use-immer"
+import {Updater, useImmer} from "use-immer"
 
 import {capitalize, isType} from "@app/share"
+
 import {TooltipText} from "../../share"
 import {AvgChart} from "./Consumables/AvgChart"
 import {Cooking} from "./Consumables/Cooking"
 import {WeekTable} from "./Consumables/WeekTable"
-import {ConsumableType, WeeklySummary, Weeks, consumableTypes, createAvgWeeklySummary, createWeeklySummaries, isWeeks} from "./Consumables/share"
+import {WeeklySummary, createAvgWeeklySummary, createWeeklySummaries} from "./Consumables/share"
+import {Weeks, ConsumableType, consumableTypes, isWeeks} from "./Consumables/week"
 
 const source = "/character/consumables/record.yaml"
 const avgSummaryDefaultOptions = [4, 12, 52]
+
+type Cur = {
+  display: string,
+  consumables: Set<ConsumableType>,
+}
 
 export const Consumables = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
 
-  const [cur, setCur] = useImmer<string>(avgSummaryDefaultOptions[0] + "")
-//   const [cur, setCur] = useImmer<string>("2023-02-11")
-
-  const [fields, setFields] = React.useState<Set<ConsumableType>>(new Set(
-    [0, 1].map(x => consumableTypes[x])
-  ))
+  const [cur, setCur] = useImmer<Cur>({
+    display: avgSummaryDefaultOptions[0] + "",
+//     display: "2023-02-11"
+    consumables: new Set([0, 1].map(x => consumableTypes[x])),
+  })
 
   React.useEffect((): (() => void) => {
     let mounted = true;
@@ -73,23 +79,23 @@ export const Consumables = (): React.ReactElement => {
           <Why />&ensp;
           <How /> —&nbsp;
           <label className="consumables-panel__label" htmlFor="consumables-panel-select">
-            {isNaN(Number(cur)) ? "Single Week" : "Weekly Avg." }
+            {cur.display in avgSummaries ? "Single Week" : "Weekly Avg." }
           </label>
           <Select
-            cur={cur}
+            cur={cur.display}
             setCur={setCur}
-            avgSummaries={avgSummaries}
-            weeks={weeks}
+            entriesGroup1={Object.keys(avgSummaries)}
+            entriesGroup2={Object.keys(weeks)}
           />
-          <Checkboxes fields={fields} setFields={setFields} />
+          <Checkboxes cur={cur.consumables} setCur={setCur} />
           <hr />
         </div>
 
         <div className="consumables-display-container">
           {
-            cur in avgSummaries ?
-              <AvgChart fields={fields} avgSummary={avgSummaries[cur]} />
-            : <WeekTable fields={fields} week={weeks[cur]} />
+            cur.display in avgSummaries ?
+              <AvgChart consumables={cur.consumables} avgSummary={avgSummaries[cur.display]} />
+            : <WeekTable consumables={cur.consumables} week={weeks[cur.display]} />
           }
         </div>
       </section>
@@ -103,30 +109,30 @@ export const Consumables = (): React.ReactElement => {
 
 type SelectInp = {
   cur: string,
-  setCur: React.Dispatch<React.SetStateAction<string>>,
-  avgSummaries: WeeklySummary,
-  weeks: Weeks,
+  setCur: Updater<Cur>,
+  entriesGroup1: string[],
+  entriesGroup2: string[],
 }
-const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
+const Select = ({cur, setCur, entriesGroup1, entriesGroup2}: SelectInp):
   React.ReactElement =>
   <>
     <select
       id="consumables-panel-select"
-      key={Object.keys(avgSummaries).length && Object.keys(weeks).length ?
+      key={entriesGroup1.length && entriesGroup2.length ?
         "not loaded" : "loaded"}
-      onChange={e => setCur(e.target.value)}
+      onChange={e => setCur(d => {d.display = e.target.value})}
       defaultValue={cur}
     >
       <optgroup label="Weekly Average">
         {
-          Object.keys(avgSummaries).map((x, i) =>
+          entriesGroup1.map((x, i) =>
             <option key={i} value={x}>Last {x} Weeks</option>
           )
         }
       </optgroup>
       <optgroup label="Single Week">
         {
-          Object.keys(weeks).map((x, i) =>
+          entriesGroup2.map((x, i) =>
             <option key={i} value={x}>{x}</option>
           )
         }
@@ -135,10 +141,10 @@ const Select = ({cur, setCur, avgSummaries, weeks}: SelectInp):
   </>
 
 type CheckboxInp = {
-  fields: Set<ConsumableType>,
-  setFields: React.Dispatch<React.SetStateAction<Set<ConsumableType>>>,
+  cur: Set<ConsumableType>,
+  setCur: Updater<Cur>,
 }
-const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
+const Checkboxes = ({cur, setCur}: CheckboxInp): React.ReactElement =>
   <>
     {
       consumableTypes.map((x, i) =>
@@ -146,14 +152,15 @@ const Checkboxes = ({fields, setFields}: CheckboxInp): React.ReactElement =>
           <input
             type="checkbox"
             value={x}
-            checked={fields.has(x)}
+            checked={cur.has(x)}
             onChange={e => {
               const v = e.target.value
               if(isType(v, consumableTypes)) {
-                setFields(prev => e.target.checked ?
-                    new Set(prev.add(v))
-                  : new Set([...prev].filter(x => x !== v))
-                )
+                setCur(d => {
+                  e.target.checked ?
+                    d.consumables = new Set(d.consumables.add(v))
+                  : d.consumables = new Set([...d.consumables].filter(x => x !== v))
+                })
               }
             }}
           />

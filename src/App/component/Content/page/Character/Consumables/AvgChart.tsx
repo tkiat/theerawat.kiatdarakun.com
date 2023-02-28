@@ -3,7 +3,8 @@ import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
 import {appId} from "@app/share"
-import {ConsumableType, WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
+import {WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
+import {ConsumableType} from "./week"
 
 Chart.register(...registerables)
 
@@ -15,9 +16,9 @@ const getHighlightColor = () => {
 
 type I = {
   avgSummary: WeeklySummaryValue,
-  fields: Set<ConsumableType>,
+  consumables: Set<ConsumableType>,
 }
-export const AvgChart = ({avgSummary, fields}: I):
+export const AvgChart = ({avgSummary, consumables}: I):
   React.ReactElement => {
 
   const [color, setColor] = React.useState(getHighlightColor())
@@ -27,7 +28,7 @@ export const AvgChart = ({avgSummary, fields}: I):
   }, [])
 
   if(avgSummary === undefined) return <p>Loading ...</p>
-  const summary = combineFields(avgSummary, fields)
+  const summary = combineFields(avgSummary, consumables)
 
   return (
     <div className="consumables-avg">
@@ -126,8 +127,8 @@ export const AvgChart = ({avgSummary, fields}: I):
   )
 }
 
-const combineFields = (summary: WeeklySummaryValue, fields: Set<ConsumableType>) =>
-  [...fields].reduce((acc, cur) => {
+const combineFields = (summary: WeeklySummaryValue, consumables: Set<ConsumableType>) =>
+  [...consumables].reduce((acc, cur) => {
     acc.thb += summary.types[cur].thb
     acc.total_gram += summary.types[cur].total_gram
 

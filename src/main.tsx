@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import {enableMapSet} from "immer"
 
 import "./main.css"
 
@@ -11,6 +12,8 @@ const willShowSafariWarning = (): boolean => {
   const isSafari = u.indexOf("Safari") > -1 && u.indexOf("Chrome") === -1
   return isSafari && localStorage.getItem(storageSafariBypassKey) !== "true"
 }
+
+enableMapSet()
 
 ReactDOM.render(
   <React.StrictMode>

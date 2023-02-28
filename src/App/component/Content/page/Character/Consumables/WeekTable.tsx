@@ -1,13 +1,14 @@
 import React from "react"
 
-import {ConsumableType, Week, consumableTypeSummaryTemplate} from "./share"
+import {consumableTypeSummaryTemplate} from "./share"
+import {Week, ConsumableType} from "./week"
 import {TooltipText} from "../../../share"
 
 type I = {
-  fields: Set<ConsumableType>,
+  consumables: Set<ConsumableType>,
   week: Week | undefined,
 }
-export const WeekTable = ({fields, week}: I): React.ReactElement => {
+export const WeekTable = ({consumables, week}: I): React.ReactElement => {
   if(week === undefined) return <p>Loading ...</p>
 
   const total = JSON.parse(JSON.stringify(consumableTypeSummaryTemplate))
@@ -42,7 +43,7 @@ export const WeekTable = ({fields, week}: I): React.ReactElement => {
         {
           week.map((order, i) => {
             const types = order.types.filter(
-              x => fields.has(x.name)
+              x => consumables.has(x.name)
             )
             const numItems = types.reduce((acc, cur) => {
               return acc + cur.items.length
