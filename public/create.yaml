@@ -64,7 +64,14 @@
       - date: "2021-02-06"
         link: "https://www.youtube.com/watch?v=1XVm_dLN5Zo"
         title: "SuperTux All Secrets (World 1-2)"
-"video":
+"misc":
+  "academic-publication":
+    - date: "2013"
+      link: "https://ieeexplore.ieee.org/document/6645830"
+      title: "3-D localization algorithm using double-planar passive RFID arrays"
+    - date: "2012"
+      link: "https://ieeexplore.ieee.org/document/6215415"
+      title: "Entropy rate of Thai text and testing author authenticity using character combination distribution"
   "short-games-only":
     - date: "2020-06-01"
       link: "https://youtu.be/NemKpZkV8yY"

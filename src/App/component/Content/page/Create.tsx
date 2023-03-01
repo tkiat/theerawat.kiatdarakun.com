@@ -54,30 +54,26 @@ const WhatMatter = (): React.ReactElement =>
   <>
     <h2>What Can Truly Matter</h2>
 
-    <p>My contemplative journey to find the meaning of life has culminated in the realization that regardless of the actual reality (be it only mental construct, only material objects, both, or none), what can truly matter cannot go beyond the flow inside sentient beings. Now, I have two more journeys to take: to find truths about such flows and gain the good judgment about how to apply these truths in my life, others' lives, and the society.</p>
+    <p>My contemplative journey to find the meaning of life has culminated in the realization that regardless of the actual reality (be it only mental construct, only material objects, both, or none), what can truly matter cannot go beyond the flow inside sentient beings. The next journey is then to find truths about such flows and gain the good judgment about how to apply these truths in my life, others' lives, and the society.</p>
 
     <p>However, my perception is limited, and I don't know all absolute truths about all such flows. The best I can do is to enable readers to make good judgment in life based on what can truly matter and their ideas of truths. Even if these works don't attract many readers, I am going to finish them anyway since they are what can truly matter. To sum up, I am doing the following works.</p>
 
     <ul className="more-gap-list">
       <li>
-        <p><b className="highlight">What can truly matter</b>. I will begin with my journey until the realization of what can truly matter then validate it.</p>
+        <p><b className="highlight">What can truly matter</b>. I will write about not only what can truly matter (the flow inside sentient beings) but also what cannot truly matter (like illusory minds and purposes).</p>
       </li>
 
       <li>
-        <p><b className="highlight">On judgment based on what can truly matter and truths</b>. I don't know all absolute truths, and therefore I select a few common scopes of truths that I believe most people take, namely direct senses, some scientific research, and a few common beliefs. These works should enable readers to focus on what can truly matter instead of some illusory pursuits, which will lead to the wise way of life.</p>
-
-        <p>Below are my selection of the scopes of truths. For each item, I am going to determine such judgment in both individual and societal levels.</p>
+        <p><b className="highlight">On judgment based on what can truly matter and truths</b>. I don't know all absolute truths, and therefore I select a few common scopes of truths that I believe most people take to make it applicable to most readers. This work should enable readers to focus on what can truly matter instead of some illusory pursuits, which will lead to a wise way of life. Below are my selection of the scopes of truths. For each scope, I am going to determine such judgment in both individual and societal levels.</p>
         <ol>
           <li>
-            <p><b className="highlight">Direct senses and widely accepted scientific research</b>. Direct senses are six senses (taste, smell, vision, hearing, touch, and proprioception); however, they are not enough to many. We cannot see and understand all inner workings of our complex bodies, and many of us take suggestions from experts. Therefore, I also add widely accepted scientific research as truths.</p>
-
-            <p>Since my knowledge is limited, I cannot usually know what truth wins when they are in conflict. I will let science win just because I believe that is what most people do.</p>
+            <p><b className="highlight">Direct senses and widely accepted scientific research</b>. Direct senses are six senses (taste, smell, vision, hearing, touch, and proprioception); however, they don't seem enough to many. We cannot, for example, always use our senses to determine what is healthy. Therefore, I also add widely accepted scientific research as truths. When both truths are in conflict, I let science win because I believe it sympathizes with most people's ideas of truths.</p>
           </li>
 
           <li>
             <p><b className="highlight">Direct senses, widely accepted scientific research, and beliefs</b>. Beliefs are anything beyond direct senses and science. They can be religious beliefs (most notably those of Buddhism, Christianity, Islam, and Hinduism). It probably takes too much time for me to study all of them so I will begin with Buddhism first.</p>
 
-            <p>When these truths are in conflict, I will give the following priorities: beliefs &gt; science &gt; direct senses because I believe that is what most people who hold such beliefs do. What's interesting is that both science and direct senses that are not in conflict with beliefs are shared by all people. This is a good (and wise) way to achieve world peace.</p>
+            <p>When these truths are in conflict, I will give the following priorities: beliefs &gt; science &gt; direct senses because I believe that is what most people who hold such beliefs do. What's interesting is that both science and direct senses that are not in conflict with beliefs are shared by all people. Both truths are therefore perfect underlying foundations of world peace.</p>
           </li>
         </ol>
       </li>
@@ -87,7 +83,7 @@ const WhatMatter = (): React.ReactElement =>
       </li>
     </ul>
 
-    <p>It will take a long time to complete these works. They are still in progress.</p>
+    <p>All works are still in progress.</p>
   </>
 
 const Software = ({content}: {content: unknown}): React.ReactElement =>
@@ -126,7 +122,7 @@ const Software = ({content}: {content: unknown}): React.ReactElement =>
 
         <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
 
-        <p>I created this channel out of the wish to get us closer to that ideal society. I plan to add more videos down the road.</p>
+        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now only have only one upload but I plan to add more videos down the road.</p>
 
         {renderItems(content, ["software", "video", "freedom-in-computing"])}
       </section>
@@ -140,7 +136,9 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
     <section>
       <h3 className="highlight">Academic Publication</h3>
 
-      TODO
+      <p>I have published two papers in communication technology around the end of my undergraduate studies.</p>
+
+      {renderItems(content, ["misc", "academic-publication"])}
     </section>
 
     <section>
