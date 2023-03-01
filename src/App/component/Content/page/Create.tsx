@@ -54,38 +54,40 @@ const WhatMatter = (): React.ReactElement =>
   <>
     <h2>What Can Truly Matter</h2>
 
-    <p>Regardless of the actual reality (be it only mental construct, only material objects, both, or none), what can truly matter cannot be beyond the flow inside sentient beings. However, truths are required to know what those flows are. There are many scopes of truths. 
+    <p>My contemplative journey to find the meaning of life has culminated in the realization that regardless of the actual reality (be it only mental construct, only material objects, both, or none), what can truly matter cannot go beyond the flow inside sentient beings. Now, I have two more journeys to take: to find truths about such flows and gain the good judgment about how to apply these truths in my life, others' lives, and the society.</p>
 
-    Since my perception is limited, I have no choice but to interpret this realization base on two scope of truth: with and without beliefs.</p>
+    <p>However, my perception is limited, and I don't know all absolute truths about all such flows. The best I can do is to enable readers to make good judgment in life based on what can truly matter and their ideas of truths. Even if these works don't attract many readers, I am going to finish them anyway since they are what can truly matter. To sum up, I am doing the following works.</p>
 
     <ul className="more-gap-list">
       <li>
-        <b className="highlight">Explanation of this realization</b>. Beginning from my journey to this realiztion will begin from my jouey
+        <p><b className="highlight">What can truly matter</b>. I will begin with my journey until the realization of what can truly matter then validate it.</p>
       </li>
+
       <li>
-        <p><b className="highlight">Interpretation in two scopes of truth</b></p>
+        <p><b className="highlight">On judgment based on what can truly matter and truths</b>. I don't know all absolute truths, and therefore I select a few common scopes of truths that I believe most people take, namely direct senses, some scientific research, and a few common beliefs. These works should enable readers to focus on what can truly matter instead of some illusory pursuits, which will lead to the wise way of life.</p>
+
+        <p>Below are my selection of the scopes of truths. For each item, I am going to determine such judgment in both individual and societal levels.</p>
         <ol>
           <li>
-            <b className="highlight">Direct senses only</b>. First, I will list the possible interpretations for an individual, then I will extend the scope to the whole society.
+            <p><b className="highlight">Direct senses and widely accepted scientific research</b>. Direct senses are six senses (taste, smell, vision, hearing, touch, and proprioception); however, they are not enough to many. We cannot see and understand all inner workings of our complex bodies, and many of us take suggestions from experts. Therefore, I also add widely accepted scientific research as truths.</p>
+
+            <p>Since my knowledge is limited, I cannot usually know what truth wins when they are in conflict. I will let science win just because I believe that is what most people do.</p>
           </li>
+
           <li>
-            <b className="highlight">Direct senses and beliefs</b>. Beliefs are anything beyond direct senses. They can be religious beliefs (most notably those of Buddhism, Christianity, Islam, and Hinduism) or beliefs in secondary sources (like news, spoken words, and citations).
+            <p><b className="highlight">Direct senses, widely accepted scientific research, and beliefs</b>. Beliefs are anything beyond direct senses and science. They can be religious beliefs (most notably those of Buddhism, Christianity, Islam, and Hinduism). It probably takes too much time for me to study all of them so I will begin with Buddhism first.</p>
+
+            <p>When these truths are in conflict, I will give the following priorities: beliefs &gt; science &gt; direct senses because I believe that is what most people who hold such beliefs do. What's interesting is that both science and direct senses that are not in conflict with beliefs are shared by all people. This is a good (and wise) way to achieve world peace.</p>
           </li>
         </ol>
       </li>
+
+      <li>
+        <p><b className="highlight">The exemplary record of my life</b>. I decided to live by what can truly matter based on my idea of truths (direct senses and widely accepted scientific research). I have recorded my consumables, my belongings, my routines, etc., and I will explain the underlying reasons behind each choice. This wish has changed my life completely and driven me to stay healthy and active.</p>
+      </li>
     </ul>
 
-    <p>I have limited perceptions (and I believe this is true for all other people).  two scope of truths that encompass what truly matters.</p>
-
-    <section>
-      <h3 className="highlight">Six senses and beliefs</h3>
-
-      <p>This is when the beliefs (). They cannot reject senses, for    .</p>
-
-      <p>When the beliefs and senses are in conflict, one may either prioritize beliefs or senses. I plan to work on belief-first approach as it is the way .
-
-      </p>
-    </section>
+    <p>It will take a long time to complete these works. They are still in progress.</p>
   </>
 
 const Software = ({content}: {content: unknown}): React.ReactElement =>
