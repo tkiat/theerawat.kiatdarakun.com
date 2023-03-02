@@ -20,10 +20,10 @@ export const Cooking = (): React.ReactElement =>
 
     <ul className="more-gap-list">
       <li>
-        <b className="highlight">Milk</b>:&nbsp;
+        <b className="highlight">Teas</b>:&nbsp;
 
-        <TooltipText text="Soy Milk">
-          I usually use soy milk for my smoothie — <span className="highlight">Recipe</span>: 300-400g soybeans (preferably non-GMO due to excessive glyphosate) and 2.5L water — <span className="highlight">Steps</span>: Wash soybeans, use blender and filter to get the milk, then use medium heat until some bubbles appear, and finally simmer it for 15 minutes.
+        <TooltipText text="Thai Assam Green">
+          <span className="highlight">Recipe</span>: 6g loose leaves, 350ml water — <span className="highlight">Steps</span>: Rinse the leaves quickly one or two time and then steep it in 90&#8451; water for a minute (first time) and three minutes (second time).
         </TooltipText>
       </li>
 
@@ -52,11 +52,14 @@ export const Cooking = (): React.ReactElement =>
       </li>
 
       <li>
-        <b className="highlight">Teas</b>:&nbsp;
+        <b className="highlight">Other</b>:&nbsp;
 
-        <TooltipText text="Thai Assam Green">
-          <span className="highlight">Recipe</span>: 6g loose leaves, 350ml water — <span className="highlight">Steps</span>: Rinse the leaves quickly one or two time and then steep it in 90&#8451; water for a minute (first time) and three minutes (second time).
+        <TooltipText text="Soy Milk">
+          I usually use soy milk for my smoothie — <span className="highlight">Recipe</span>: 300-400g soybeans (preferably non-GMO due to excessive glyphosate) and 2.5L water — <span className="highlight">Steps</span>: Wash soybeans, use blender and filter to get the milk, then use medium heat until some bubbles appear, and finally simmer it for 15 minutes.
         </TooltipText>
       </li>
     </ul>
   </>
+//      TODO     <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
+// 
+//           <p>As for drinks, I currently drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>

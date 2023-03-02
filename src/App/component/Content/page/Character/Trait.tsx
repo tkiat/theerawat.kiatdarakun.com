@@ -144,22 +144,6 @@ export const Trait = (): React.ReactElement =>
             <li>Never have sexual or romantic relationship</li>
           </ul>
         </TooltipText>
-        ,&ensp;
-        <TooltipText text="Routine">
-          <ul>
-            <li>Early bird</li>
-            <li>Bath at least once a day if I go outside</li>
-            <li>Shave in the morning before work</li>
-            <li>Clean my home weekly</li>
-            <li>Predictable</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Sustenance">
-          <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
-
-          <p>As for drinks, I currently drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>
-        </TooltipText>
       </li>
     </ul>
   </section>
