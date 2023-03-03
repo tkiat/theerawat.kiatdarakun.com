@@ -6,7 +6,7 @@ import {capitalize, isType} from "@app/share"
 
 import {TooltipFa, TooltipText} from "../../share"
 import {AvgChart} from "./Consumables/AvgChart"
-import {Cooking} from "./Consumables/Cooking"
+import {Making} from "./Consumables/Making"
 import {WeekTable} from "./Consumables/WeekTable"
 import {WeeklySummary, createAvgWeeklySummary, createWeeklySummaries} from "./Consumables/share"
 import {Weeks, ConsumableType, consumableTypes, isWeeks} from "./Consumables/week"
@@ -102,7 +102,7 @@ export const Consumables = (): React.ReactElement => {
       </section>
 
       <section>
-        <Cooking />
+        <Making />
       </section>
     </section>
   )

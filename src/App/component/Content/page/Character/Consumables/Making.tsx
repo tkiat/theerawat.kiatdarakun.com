@@ -2,28 +2,31 @@ import React from "react"
 
 import {TooltipFa, TooltipText} from "../../../share"
 
-//      TODO     <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
-export const Cooking = (): React.ReactElement =>
+export const Making = (): React.ReactElement =>
   <>
-    <h3 className="highlight">Cooking</h3>
+    <h3 className="highlight">Making</h3>
 
     <h4>Food</h4>
 
     <ul className="more-gap-list">
       <li>
-        <b className="highlight">Meal</b>:&nbsp;
+        <b className="highlight">Main Dish</b>:&nbsp;
 
         <TooltipText text="Boiled mixed vegetables">
           This is my staple diet (I always eat with rice and often with fried peanuts). — <span className="highlight">Recipe</span>: Mixed vegetables of many kinds (roots, stems, leaves, flowers, fruit, etc.) and many colors (green, yellow, white, orange, etc.), baking soda, water — <span className="highlight">Steps</span>: Cut and wash all vegetables thoroughly (with baking soda), boil until it reachs the boiling point, then simmer for 30 minutes, done.
         </TooltipText>
-
+        ,&nbsp;
         <TooltipText text="Rice">
-          I usually have brown/riceberry rice mixed with broken ones. I usually cook once and store it in the fridge for several days — <span className="highlight">Recipe</span>: 5 cups brown/riceberry rice, 1 cup broken rice, and TODO litre of water — <span className="highlight">Steps</span>: Rinse rice 2-3 times, then (optional but recommended) soak rice overnight or a few hours, put it in a ricecooker, done.
+          I usually have brown/riceberry rice mixed with broken ones. I usually cook once and store it in the fridge for several days — <span className="highlight">Recipe</span>: 5 cups brown/riceberry rice, 1 cup broken rice, and some water — <span className="highlight">Steps</span>: Rinse rice 2-3 times, then (optional but recommended) soak rice overnight or a few hours, make sure the water level is suitable (1.75 index finger joints or 1.5 if soaked for some hours), finally put it in a rice cooker
         </TooltipText>
       </li>
 
       <li>
-        <b className="highlight">Side dish</b>:&nbsp;
+        <b className="highlight">Side Dish</b>:&nbsp;
+
+        <TooltipText text="Stir fry vegetables with some protein">
+          I make this to gain some fat and protein that my staple diet lacks. The vegetable part is usually beansprouts or cabbages while the protein part is usually tofu dice or textured vegetable protein
+        </TooltipText>
       </li>
 
       <li>
@@ -31,6 +34,10 @@ export const Cooking = (): React.ReactElement =>
 
         <TooltipText text="Fried peanuts">
           My staple diet lacks fat and protein and fried peanuts fill the gaps (partly). I really like it since it doesn't spoil for at least a few weeks so I can cook a lot at a time — <span className="highlight">Recipe</span>: 1kg peanuts, 1 teaspoon salt, and 250ml (palm or coconut) oil — <span className="highlight">Steps</span>: Rinse peanuts, wait until it dries, then fried it with low heat, wait until it changes color to light brown, put it to your container, then fry another batch of peanuts until everything is done.
+        </TooltipText>
+        ,&nbsp;
+        <TooltipText text="Boiled vegetable or grains">
+          I eat these as snack between meals. The vegetable is usually corn and sweet potato; the grain is usually legume like green/red/kidney beans — <span className="highlight">Recipe</span>: Any of these and water — <span className="highlight">Steps</span>: Rinse, boil, simmer, done
         </TooltipText>
       </li>
     </ul>
@@ -74,7 +81,11 @@ export const Cooking = (): React.ReactElement =>
         <b className="highlight">Other</b>:&nbsp;
 
         <TooltipText text="Soy Milk">
-          I usually use soy milk for my smoothie — <span className="highlight">Recipe</span>: 300-400g soybeans (preferably non-GMO due to excessive glyphosate) and 2.5L water — <span className="highlight">Steps</span>: Wash soybeans, use blender and filter to get the milk, then use medium heat until some bubbles appear, and finally simmer it for 15 minutes.
+          I usually use soy milk for my smoothie — <span className="highlight">Recipe</span>: 300-400g soybeans (preferably non-GMO) and 2.5L water — <span className="highlight">Steps</span>: Wash soybeans, use blender and filter to get the milk, then use medium heat until some bubbles appear, and finally simmer it for 15 minutes.
+        </TooltipText>
+        ,&nbsp;
+        <TooltipText text="Smoothie">
+          I sometimes make smoothie with protein powder to prevent protein deficiency — <span className="highlight">Recipe</span>: fruits (my favourites are pineapple, papaya, frozen strawberry, mango, banana, grava, and muskmelon), soy milk, vegan protein powder, chia seeds and/or ground flaxseeds, ground sesame seeds, and (optional) drinking water — <span className="highlight">Steps</span>: Cut, mix, and blend, done
         </TooltipText>
       </li>
     </ul>
