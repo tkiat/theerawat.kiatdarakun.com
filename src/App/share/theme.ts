@@ -1,4 +1,3 @@
-import {appId} from "./elementId"
 import {getRange, isType, hslToString} from "./general"
 
 type HS = {h: number, s: number}
@@ -24,7 +23,7 @@ export const initTheme = (): Theme => {
 }
 
 export const storeTheme = () => {
-  const app = document.getElementById(appId)
+  const app = document.getElementById(import.meta.env.VITE_APPID)
   const p = app?.dataset.location
   const t = app?.dataset.time
 

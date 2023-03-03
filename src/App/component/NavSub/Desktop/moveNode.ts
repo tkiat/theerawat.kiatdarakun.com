@@ -1,5 +1,3 @@
-import {appId} from "@app/share"
-
 import {moveWater} from "./moveWater"
 
 const isPositionValid = (x: number): boolean => x >= 0 && x % 2 === 0
@@ -10,7 +8,7 @@ export const moveNode = (
   stepMs: number,
   callback: Function
 ): void => {
-  const m = document.getElementById(appId)
+  const app = document.getElementById(import.meta.env.VITE_APPID)
 
   new Promise<void>((resolve, reject) => {
     if (from === to) return {then: function() {}} // break promise chain
@@ -26,11 +24,11 @@ export const moveNode = (
     }
   }).then(() =>
     new Promise<void>((resolve, reject) => {
-      if (!m) {
+      if (!app) {
         callback()
-        reject("moveNode.ts: element of id “main” not found")
+        reject(`moveNode.ts: element of id ${import.meta.env.VITE_APPID} not found`)
       } else {
-        m.classList.toggle("waiting")
+        app.classList.toggle("waiting")
         resolve()
       }
     })
@@ -39,7 +37,7 @@ export const moveNode = (
   ).then(delay => new Promise(resolve => {setTimeout(resolve, delay)})
   ).then(() => {
     callback()
-    m?.classList.toggle("waiting")
+    app?.classList.toggle("waiting")
   })
   .catch(msg => console.error(msg))
 }

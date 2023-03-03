@@ -31,7 +31,7 @@ export const WeekTable = ({consumables, week}: I): React.ReactElement => {
               </TooltipText>
             </th>
             <th rowSpan={1}>
-              <TooltipText text="Waste">
+              <TooltipText text="Packaging">
                 <span className="notbold">
                   Plastic (g)-Paper (g)-Glass (g)
                 </span>

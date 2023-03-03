@@ -1,7 +1,7 @@
 import React from "react"
 import {Updater, useImmer} from "use-immer"
 
-import {Place, appId, capitalize, genWaveColors, placeList, updateFavicon} from "@app/share"
+import {Place, capitalize, genWaveColors, placeList, updateFavicon} from "@app/share"
 
 import {WaveConfigs, numWave} from "../Canvas/wave"
 
@@ -38,7 +38,7 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElem
       onClick={() => {
         if (place === curPlace) return
 
-        const app = document.getElementById(appId)
+        const app = document.getElementById(import.meta.env.VITE_APPID)
         if (app) app.dataset.location = place
 
         document.getElementById("consumables-barchart-trigger")?.click()

@@ -1,13 +1,13 @@
 import React from "react"
 
-import {appId, capitalize, timeList} from "@app/share"
+import {capitalize, timeList} from "@app/share"
 
 type P = {initTime: string}
 export const TimePicker = ({initTime}: P): React.ReactElement =>
   <div
     className="sidebar__time"
     onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-      const app = document.getElementById(appId)
+      const app = document.getElementById(import.meta.env.VITE_APPID)
       if (app) app.dataset.time = e.target.value
 
       document.getElementById("consumables-barchart-trigger")?.click()

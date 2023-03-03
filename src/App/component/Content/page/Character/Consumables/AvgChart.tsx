@@ -2,14 +2,13 @@ import React from "react"
 import {Bar} from "react-chartjs-2"
 import {Chart, registerables} from "chart.js"
 
-import {appId} from "@app/share"
 import {WeeklySummaryValue, consumableTypeSummaryTemplate} from "./share"
 import {ConsumableType} from "./week"
 
 Chart.register(...registerables)
 
 const getHighlightColor = () => {
-  const app = document.getElementById(appId)
+  const app = document.getElementById(import.meta.env.VITE_APPID)
   return app ? getComputedStyle(app).getPropertyValue("--highlight-color")
     : "white"
 }

@@ -84,8 +84,8 @@ export const Consumables = (): React.ReactElement => {
           <Select
             cur={cur.display}
             setCur={setCur}
-            entriesGroup1={Object.keys(avgSummaries)}
-            entriesGroup2={Object.keys(weeks)}
+            optGroup1={Object.keys(avgSummaries)}
+            optGroup2={Object.keys(weeks)}
           />
           <Checkboxes cur={cur.consumables} setCur={setCur} />
           <hr />
@@ -110,29 +110,29 @@ export const Consumables = (): React.ReactElement => {
 type SelectInp = {
   cur: string,
   setCur: Updater<Cur>,
-  entriesGroup1: string[],
-  entriesGroup2: string[],
+  optGroup1: string[],
+  optGroup2: string[],
 }
-const Select = ({cur, setCur, entriesGroup1, entriesGroup2}: SelectInp):
+const Select = ({cur, setCur, optGroup1, optGroup2}: SelectInp):
   React.ReactElement =>
   <>
     <select
       id="consumables-panel-select"
-      key={entriesGroup1.length && entriesGroup2.length ?
+      key={optGroup1.length && optGroup2.length ?
         "not loaded" : "loaded"}
       onChange={e => setCur(d => {d.display = e.target.value})}
       defaultValue={cur}
     >
       <optgroup label="Weekly Average">
         {
-          entriesGroup1.map((x, i) =>
+          optGroup1.map((x, i) =>
             <option key={i} value={x}>Last {x} Weeks</option>
           )
         }
       </optgroup>
       <optgroup label="Single Week">
         {
-          entriesGroup2.map((x, i) =>
+          optGroup2.map((x, i) =>
             <option key={i} value={x}>{x}</option>
           )
         }
@@ -172,7 +172,11 @@ const Checkboxes = ({cur, setCur}: CheckboxInp): React.ReactElement =>
 
 const Why = (): React.ReactElement =>
   <TooltipText text="Why?">
-    <p>I live my life according to the realization that what truly matter cannot go beyond the flow inherent to sentient beings, and I subjectively prioritize my flow first. This results in me giving the following priorities: nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, and no fuel &gt; shorter delivery &gt; longer delivery and minimizing unnecessary impact to the environment and suffering upon other sentient beings. Trade-offs may exist but I shall use good judgment.</p>
+    <p>This record is a part of the exemplary record of my life on what can truly matter.
+
+TODO
+
+    I live my life according to the realization that what truly matter cannot go beyond the flow inherent to sentient beings, and I subjectively prioritize my flow first. This results in me giving the following priorities: nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, and no fuel &gt; shorter delivery &gt; longer delivery and minimizing unnecessary impact to the environment and suffering upon other sentient beings. Trade-offs may exist but I shall use good judgment.</p>
 
     <p>This recording should not only remind me this realization but also serve as one practical example of a possible lifestyle based on this realization. This will also support the relevant works (that I am working on).</p>
   </TooltipText>

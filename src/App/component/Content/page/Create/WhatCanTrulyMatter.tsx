@@ -24,7 +24,7 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
           </li>
         </ol>
 
-        <p>The truths about that can truly matters can even be extended by pure transformations, namely memory, denotations, and logic. I will explore this in detail. Lastly, I am going to extend the scope to the societal level. The <i>ideal</i> society satisfies what can truly matter and mediate conflicts (of what can truly matter).</p>
+        <p>The truths about that can truly matters can be extended by pure transformations, namely memory, denotations, and logic. I will explore this in detail. Lastly, I am going to extend the scope to the societal level. The <i>ideal</i> society satisfies what can truly matter and mediate conflicts (of what can truly matter).</p>
       </li>
 
       <li>

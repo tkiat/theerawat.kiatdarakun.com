@@ -3,7 +3,7 @@ import React from "react"
 import {useImmer} from "use-immer"
 
 import {Canvas, Content, NavMain, NavSub, Sidebar, WaveConfigs, mkWavePhysics, mkWaves, numWave, storeWavePhysics} from "@app/component"
-import {Path, adaptPathToUrl, appId, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
+import {Path, adaptPathToUrl, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
 import "@app/share/style/main.scss"
 
 const numPointsOnWave = numDucks + 1
@@ -50,7 +50,7 @@ export const App = (): React.ReactElement => {
   }, [])
 
   return (
-    <div className="app" data-location={initPlace} data-time={initTime} id={appId}>
+    <div className="app" data-location={initPlace} data-time={initTime} id={import.meta.env.VITE_APPID}>
       <NavMain path={path} setPath={setPath} />
       <NavSub path={path} setPath={setPath} />
       <main className="app__main">
