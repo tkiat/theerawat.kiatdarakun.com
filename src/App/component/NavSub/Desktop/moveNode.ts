@@ -8,7 +8,7 @@ export const moveNode = (
   stepMs: number,
   callback: Function
 ): void => {
-  const app = document.getElementById(import.meta.env.VITE_APPID)
+  const app = document.getElementById(import.meta.env.VITE_ID_APP)
 
   new Promise<void>((resolve, reject) => {
     if (from === to) return {then: function() {}} // break promise chain
@@ -26,7 +26,7 @@ export const moveNode = (
     new Promise<void>((resolve, reject) => {
       if (!app) {
         callback()
-        reject(`moveNode.ts: element of id ${import.meta.env.VITE_APPID} not found`)
+        reject(`moveNode.ts: element of id ${import.meta.env.VITE_ID_APP} not found`)
       } else {
         app.classList.toggle("waiting")
         resolve()

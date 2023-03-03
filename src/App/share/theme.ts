@@ -23,7 +23,7 @@ export const initTheme = (): Theme => {
 }
 
 export const storeTheme = () => {
-  const app = document.getElementById(import.meta.env.VITE_APPID)
+  const app = document.getElementById(import.meta.env.VITE_ID_APP)
   const p = app?.dataset.location
   const t = app?.dataset.time
 

@@ -38,7 +38,7 @@ const Picker = ({curPlace, place, setCurPlace, waveConfigs}: Q): React.ReactElem
       onClick={() => {
         if (place === curPlace) return
 
-        const app = document.getElementById(import.meta.env.VITE_APPID)
+        const app = document.getElementById(import.meta.env.VITE_ID_APP)
         if (app) app.dataset.location = place
 
         document.getElementById("consumables-barchart-trigger")?.click()

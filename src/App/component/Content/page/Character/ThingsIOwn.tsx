@@ -269,17 +269,17 @@ export const ThingsIOwn = (): React.ReactElement =>
 
 const Why = (): React.ReactElement =>
   <TooltipText text="Why">
-    <p>I live my life according to the realization that what truly matter cannot be beyond the flow inherent to sentient beings. As I subjectively prioritize my flow first, I should begin to pick each item based on my need then try to make a thoughtful judgment if trade-offs (against other sentient beings and the environment) exist.</p>
+    <p>This record is a part of my work, namely one interpretation of truths about what can truly matter, which cannot go beyond the flows inherent to sentient beings. I cannot give the URL to the detailed explanation since the work is still in progress. I can only say that, to fulfill the goal of this work, I have to minimize unnecessary impact to the environment and unnecessary suffering upon sentient beings (but I prioritize myself).</p>
 
-    <p>This recording should not only remind me this realization but also serve as a practical example of a possile lifestyle based on this realization. This will also support the relevant works (that I am working on).</p>
+    <p>In other words, I begin to pick each item based on the flows inherent to me then try to make a thoughtful judgment if trade-offs (against other sentient beings and the environment) exist.</p>
   </TooltipText>
 
 const How = (): React.ReactElement =>
   <TooltipText text="How">
     <ol>
-      <li>Begin with my need. For example, I need to drink hot tea. This can also be “want” given that it is not particularly harmful.</li>
-      <li>Imagine the ideal item that serves that need (in terms of health, convenience, durability, size, portability, cost, weight, replacability of internal parts, etc.). For size, I wish all items (except unavoidably big ones) fit an average taxi and the essential ones to be carriable on a flight.</li>
-      <li>Find the closest item to that ideal. If trade-offs against the environment or other senient beings exist, try to prioritize sustainable and vegan products.</li>
-      <li>Get rid of items I no longer want according to these priorities: selling &gt; donating/gifting &gt; throwing it responsibly.</li>
+      <li>I search for an item that supports the flows inherent to me that I am yet to have. For example, hot tea is good for my body's survival, so I look for a tea cup.</li>
+      <li>Imagine the ideal qualities of that item (that best supports such flows, e.g., no leakage of lead, high durability, and not too bulkly).</li>
+      <li>Find the closest item with those ideal qualities. If trade-offs against the environment or other senient beings exist, try to prioritize products with the least impact on environment and sentient beings.</li>
+      <li>Get rid of items I no longer want according to these priorities: give to somebody whom I am sure will make use of it &gt; same but I am unsure about it &gt; throwing it responsibly &gt; throwing it irresponsibly.</li>
     </ol>
   </TooltipText>

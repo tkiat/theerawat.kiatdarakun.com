@@ -7,7 +7,7 @@ import {toggleSidebar} from "../share"
 type P = {left: string}
 export const ItemSidebar = ({left}: P): React.ReactElement =>
   <button
-    id={import.meta.env.VITE_NAVMAINSIDEBARID}
+    id={import.meta.env.VITE_ID_NAVMAINSIDEBAR}
     className="nav-main nav-main--sidebar"
     aria-label="Settings"
     style={{left: left}}

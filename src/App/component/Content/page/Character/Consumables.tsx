@@ -4,7 +4,7 @@ import {Updater, useImmer} from "use-immer"
 
 import {capitalize, isType} from "@app/share"
 
-import {TooltipText} from "../../share"
+import {TooltipFa, TooltipText} from "../../share"
 import {AvgChart} from "./Consumables/AvgChart"
 import {Cooking} from "./Consumables/Cooking"
 import {WeekTable} from "./Consumables/WeekTable"
@@ -72,11 +72,12 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
+      <p>Read this first about <Why />.</p>
+
       <section>
-        <h3 className="highlight">Record</h3>
+        <h3 className="highlight">Spendings</h3>
 
         <div className="consumables-panel">
-          <Why />&ensp;
           <How /> —&nbsp;
           <label className="consumables-panel__label" htmlFor="consumables-panel-select">
             {cur.display in avgSummaries ? "Single Week" : "Weekly Avg." }
@@ -171,23 +172,20 @@ const Checkboxes = ({cur, setCur}: CheckboxInp): React.ReactElement =>
   </>
 
 const Why = (): React.ReactElement =>
-  <TooltipText text="Why?">
-    <p>This record is a part of the exemplary record of my life on what can truly matter.
+  <TooltipText text="Why">
+    <p>These records is a part of my work, namely one interpretation of truths about what can truly matter, which cannot go beyond the flows inherent to sentient beings. I cannot give the URL to the detailed explanation since the work is still in progress. I can only say that, to fulfill the goal of this work, I have to minimize unnecessary impact to the environment and unnecessary suffering upon sentient beings (but I prioritize myself).</p>
 
-TODO
+    <p>In other words, I give the following priorities: nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, no fuel &gt; shorter delivery &gt; longer delivery, less unnecessary suffering &gt; more unnecessary suffering. Trade-offs may exist but I shall use good judgment.</p>
 
-    I live my life according to the realization that what truly matter cannot go beyond the flow inherent to sentient beings, and I subjectively prioritize my flow first. This results in me giving the following priorities: nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, and no fuel &gt; shorter delivery &gt; longer delivery and minimizing unnecessary impact to the environment and suffering upon other sentient beings. Trade-offs may exist but I shall use good judgment.</p>
-
-    <p>This recording should not only remind me this realization but also serve as one practical example of a possible lifestyle based on this realization. This will also support the relevant works (that I am working on).</p>
   </TooltipText>
 
 const How = (): React.ReactElement =>
-  <TooltipText text="How?">
-    <p>I just weigh and record almost all consumables I bought. While it sounds tedious, I often reuse numbers.</p>
+  <TooltipFa faclass="fa-solid fa-circle-question">
+    <p>I just weigh and record almost all consumables I bought. While it sounds tedious, I often reuse numbers. Below are the explanation of some entries.</p>
 
     <ul>
       <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I actually want to minimize unnecessary suffering in my own terms, which means I still consume animal products in some occasions. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan products in those occasions here.</li>
-      <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like typical ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know what happens behind the scenes).</li>
+      <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like typical ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know how it is made).</li>
       <li><b className="highlight">Delivery</b>: I exclude the delivery price and packaging waste to make it more universal to the reader. Unlike <i>private</i> delivery, <i>public</i> delivery targets multiple destinations per trip. I divide the share accordingly, like half the actual distance when I share half the order with another person.</li>
     </ul>
-  </TooltipText>
+  </TooltipFa>

@@ -50,7 +50,7 @@ export const App = (): React.ReactElement => {
   }, [])
 
   return (
-    <div className="app" data-location={initPlace} data-time={initTime} id={import.meta.env.VITE_APPID}>
+    <div className="app" data-location={initPlace} data-time={initTime} id={import.meta.env.VITE_ID_APP}>
       <NavMain path={path} setPath={setPath} />
       <NavSub path={path} setPath={setPath} />
       <main className="app__main">

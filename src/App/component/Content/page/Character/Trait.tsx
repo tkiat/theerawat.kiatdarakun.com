@@ -82,7 +82,7 @@ export const Trait = (): React.ReactElement =>
         ,&ensp;
         <TooltipText text="Personal">
           <ul>
-            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matter, and align my skills, appearance, preferences, belongings, eating habits, etc., with it.</li>
+            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matters to me, and align my skills, appearance, preferences, belongings, eating habits, etc., with it.</li>
             <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply only vegan food, not disturb others, and frequently avoid creating unnecessary wastes.</li>
           </ul>
         </TooltipText>
@@ -92,9 +92,9 @@ export const Trait = (): React.ReactElement =>
 
         &nbsp;—&nbsp;
         <TooltipText text="Life Purpose">
-          <p>There is no point of my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
+          <p>There is objectively no point of my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. However, this realization cannot be applied to low-level creatures fully, for it cannot reason. Since I share many instincts with those creatures, it cannot be fully applied to me as well. Therefore, my only hope is my subjective self.</p>
 
-          <p>Every status is not desirable as everybody has problems: a prime minister faces a prime minister's problems; a civil servant faces a civil servant's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first genuine wisdom I attained. I was so satisfied that I decided to live by awareness instead of any made-up life purpose.</p>
+          <p>Every status is not desirable as everybody has problems without any objective reward: a nobleman faces a nobleman's problems; a poor faces a poor's problems. As a result, I tried to do nothing. However, I had to breathe after a few seconds and that was the first genuine wisdom I attained. I then realized that my subjective self preferred truths (this became direct senses and widely accepted scientific research) to any made-up purpose. I then built my life around such truths. Such life is an end in itself.</p>
         </TooltipText>
       </li>
     </ul>

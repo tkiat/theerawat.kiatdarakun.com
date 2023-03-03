@@ -18,7 +18,7 @@ export const Sidebar = ({initPlace, initTime, waveConfigs}: P):
   <>
     <SidebarToggler />
 
-    <div className="sidebar" id={import.meta.env.VITE_SIDEBARID}>
+    <div className="sidebar" id={import.meta.env.VITE_ID_SIDEBAR}>
       <section className="sidebar__section">
         <div className="sidebar__header">Wave</div>
         <WavePhysicsSettings waveConfigs={waveConfigs} />
