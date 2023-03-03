@@ -1,6 +1,5 @@
 import React from "react"
 
-import {navMainSidebarId} from "@app/share"
 import {DuckSidebar} from "@assets/duck"
 
 import {toggleSidebar} from "../share"
@@ -8,7 +7,7 @@ import {toggleSidebar} from "../share"
 type P = {left: string}
 export const ItemSidebar = ({left}: P): React.ReactElement =>
   <button
-    id={navMainSidebarId}
+    id={import.meta.env.VITE_NAVMAINSIDEBARID}
     className="nav-main nav-main--sidebar"
     aria-label="Settings"
     style={{left: left}}

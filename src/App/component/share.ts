@@ -1,10 +1,8 @@
-import {navMainSidebarId, sidebarId, sidebarTogglerId} from "@app/share"
-
 export const toggleSidebar = () => {
   document.getElementById("root")?.classList?.toggle("move")
-  document.getElementById(navMainSidebarId)?.classList?.
+  document.getElementById(import.meta.env.VITE_NAVMAINSIDEBARID)?.classList?.
     toggle("nav-main--active")
-  document.getElementById(sidebarTogglerId)?.classList?.
+  document.getElementById(import.meta.env.VITE_SIDEBARTOGGLERID)?.classList?.
     toggle("sidebar-toggler--appear")
-  document.getElementById(sidebarId)?.classList?.toggle("sidebar--appear")
+  document.getElementById(import.meta.env.VITE_SIDEBARID)?.classList?.toggle("sidebar--appear")
 }

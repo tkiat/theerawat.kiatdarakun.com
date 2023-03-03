@@ -1,6 +1,6 @@
 import React from "react"
 
-import {isMobile, sidebarId} from "@app/share"
+import {isMobile} from "@app/share"
 
 import {WaveConfigs} from "./Canvas/wave"
 import {SidebarToggler} from "./Sidebar/SidebarToggler"
@@ -18,7 +18,7 @@ export const Sidebar = ({initPlace, initTime, waveConfigs}: P):
   <>
     <SidebarToggler />
 
-    <div className="sidebar" id={sidebarId}>
+    <div className="sidebar" id={import.meta.env.VITE_SIDEBARID}>
       <section className="sidebar__section">
         <div className="sidebar__header">Wave</div>
         <WavePhysicsSettings waveConfigs={waveConfigs} />

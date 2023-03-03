@@ -1,4 +1,3 @@
-export {navMainSidebarId, sidebarId, sidebarTogglerId} from "./share/elementId"
 export {capitalize, findObjValRecursive, getRange, hasOwnPropertyTS, hslToString, initInPageNavButtons, initIntObserver, isMobile, isType} from "./share/general"
 export {useViewportDimensions} from "./share/hook"
 export {adaptPathToUrl, getSubpageIndex, mainPaths, mkPath, numDucks, pathObject, storePath, subPaths} from "./share/path"
