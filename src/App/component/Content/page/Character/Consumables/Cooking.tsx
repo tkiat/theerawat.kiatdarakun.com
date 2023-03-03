@@ -2,6 +2,7 @@ import React from "react"
 
 import {TooltipFa, TooltipText} from "../../../share"
 
+//      TODO     <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
 export const Cooking = (): React.ReactElement =>
   <>
     <h3 className="highlight">Cooking</h3>
@@ -12,7 +13,25 @@ export const Cooking = (): React.ReactElement =>
       <li>
         <b className="highlight">Meal</b>:&nbsp;
 
-        TODO
+        <TooltipText text="Boiled mixed vegetables">
+          This is my staple diet (I always eat with rice and often with fried peanuts). — <span className="highlight">Recipe</span>: Mixed vegetables of many kinds (roots, stems, leaves, flowers, fruit, etc.) and many colors (green, yellow, white, orange, etc.), baking soda, water — <span className="highlight">Steps</span>: Cut and wash all vegetables thoroughly (with baking soda), boil until it reachs the boiling point, then simmer for 30 minutes, done.
+        </TooltipText>
+
+        <TooltipText text="Rice">
+          I usually have brown/riceberry rice mixed with broken ones. I usually cook once and store it in the fridge for several days — <span className="highlight">Recipe</span>: 5 cups brown/riceberry rice, 1 cup broken rice, and TODO litre of water — <span className="highlight">Steps</span>: Rinse rice 2-3 times, then (optional but recommended) soak rice overnight or a few hours, put it in a ricecooker, done.
+        </TooltipText>
+      </li>
+
+      <li>
+        <b className="highlight">Side dish</b>:&nbsp;
+      </li>
+
+      <li>
+        <b className="highlight">Snack</b>:&nbsp;
+
+        <TooltipText text="Fried peanuts">
+          My staple diet lacks fat and protein and fried peanuts fill the gaps (partly). I really like it since it doesn't spoil for at least a few weeks so I can cook a lot at a time — <span className="highlight">Recipe</span>: 1kg peanuts, 1 teaspoon salt, and 250ml (palm or coconut) oil — <span className="highlight">Steps</span>: Rinse peanuts, wait until it dries, then fried it with low heat, wait until it changes color to light brown, put it to your container, then fry another batch of peanuts until everything is done.
+        </TooltipText>
       </li>
     </ul>
 
@@ -60,6 +79,3 @@ export const Cooking = (): React.ReactElement =>
       </li>
     </ul>
   </>
-//      TODO     <p>I usually eat bananas with other fruits (raw or smoothie with vegan protein powder) for breakfast. My lunch and dinner are usually boiled, mixed vegetables with brown rice and fried peanuts/tofu. I usually eat fruits, corns, fried peanuts, sweet potatoes, as snacks between meals.</p>
-// 
-//           <p>As for drinks, I currently drink non-chilled plain water, 12 grams of loose leaf tea, and a glass of chilled herbal tea daily.</p>
