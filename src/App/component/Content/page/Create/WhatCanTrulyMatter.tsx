@@ -10,19 +10,19 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
 
     <ul className="more-gap-list">
       <li>
-        <p><b className="highlight">Examine the meaning of life from what can truly matter</b>. There are many perspectives about the meaning of life, but all of them seem baseless. To escape from this pitfall is to begin with what can truly matter and examine the meaning of life from there. I will first work examine the abstract ideas of what can truly matter.</p>
+        <p><b className="highlight">Find the meaning of life from what can truly matter</b>. There are many perspectives about the meaning of life, but all of them seem baseless. To escape from this pitfall is to begin with what can truly matter and find the meaning of life from there. First, I will determine the abstract ideas of what can truly matter.</p>
 
         <p>However, the abtract ideas are useless without truths. My perception is limited, and I don't know all truths. To make my work applicable to most readers, I have to follow their ideas of truths, two scopes of which will be selected (direct senses and widely accepted scientific research, with and without religious beliefs).</p>
 
-        <p>The truths about what can truly matters can be extended by pure transformations, namely memory, denotations, and logic. I will explore this in detail. Next, I will write about the judgment about how to apply such truths in an individual's life. Finally, I will examine the meaning of life based on what I have done so far.</p>
+        <p>The truths about what can truly matters can be extended by pure transformations, namely memory, denotations, and logic. I will explore this in detail. Next, I will write about the judgment about how to apply such truths in an individual's life. Finally, I will find the meaning of life from what I have done so far.</p>
       </li>
 
       <li>
-        <p><b className="highlight">Create my life from what can truly matter</b>. The previous work deals with life in a general sense. This work is, however, my specific interpretion of my idea of truths (namely direct senses and widely accepted scientific research) about what can truly matter. I have recorded my consumables, my belongings, my routines, etc., and I will explain the underlying reasons behind each choice.</p>
+        <p><b className="highlight">Create my life from what can truly matter</b>. This will serve as one practical example of how to live life by what can truly matter. I will apply my idea of truths (namely direct senses and widely accepted scientific research) about what can truly matter to my life. I have recorded my consumables, my belongings, my routines, etc., and I will explain the underlying reasons behind each choice.</p>
       </li>
 
       <li>
-        <p><b className="highlight">Create the society from what can truly matter</b>. First, I find truths about what can truly matter within a selected scope of society. Next, I will examine the <i>ideal</i> society, which satisfies such truths and mediate possible conflicts (of such truths). For now, I will consider only one possible scope of society, i.e., all sentient beings. I might consider other scopes, e.g., a muslim society and humanity, if time permits.</p>
+        <p><b className="highlight">Find the ideal society from what can truly matter</b>. This can be done by examining the qualities of the society that can satisfy the truths about what can truly matter within a selected scope. A possible scope can be, e.g., a muslim society, humanity, or all sentient beings on earth. I will begin with the all sentient beings and, if time permits, some other scopes as well.</p>
       </li>
     </ul>
 
