@@ -6,7 +6,17 @@ export const ThingsIOwn = (): React.ReactElement =>
   <section>
     <h2>Things I Own</h2>
 
-    <span>For each item, to align with the <Why />, I follow the steps of the <How />.</span>
+    <p>This record of my life are a part of my work about what can truly matter, which is still in progress. I can now only say that, to fulfill the goal of this work, I have to follow the&nbsp;
+
+    <TooltipText text="steps">
+      <ol>
+        <li>I search for an item that supports the flows inherent to me that I am yet to have. For example, hot tea supports the flow of my body to survive, so I look for a tea cup.</li>
+        <li>Imagine the ideal qualities of that item (that best supports such flows, e.g., no leakage of lead, high durability, and not too bulkly).</li>
+        <li>Find the closest item with those ideal qualities. If trade-offs against the environment or other sentient beings exist, try to prioritize products with the least impact on them.</li>
+        <li>Get rid of items I no longer want according to these priorities: give to somebody whom I am sure will make use of it &gt; same but I am unsure about it &gt; throwing it responsibly &gt; throwing it irresponsibly.</li>
+      </ol>
+    </TooltipText>
+    .</p>
 
     <section>
       <h3 className="highlight">Food & Drinks</h3>
@@ -266,20 +276,3 @@ export const ThingsIOwn = (): React.ReactElement =>
       </ul>
     </section>
   </section>
-
-const Why = (): React.ReactElement =>
-  <TooltipText text="Why">
-    <p>This record is a part of my work, namely one interpretation of truths about what can truly matter, which cannot go beyond the flows inherent to sentient beings. I cannot give the URL to the detailed explanation since the work is still in progress. I can only say that, to fulfill the goal of this work, I have to minimize unnecessary impact to the environment and unnecessary suffering upon sentient beings (but I prioritize myself).</p>
-
-    <p>In other words, I begin to pick each item based on the flows inherent to me then try to make a thoughtful judgment if trade-offs (against other sentient beings and the environment) exist.</p>
-  </TooltipText>
-
-const How = (): React.ReactElement =>
-  <TooltipText text="How">
-    <ol>
-      <li>I search for an item that supports the flows inherent to me that I am yet to have. For example, hot tea is good for my body's survival, so I look for a tea cup.</li>
-      <li>Imagine the ideal qualities of that item (that best supports such flows, e.g., no leakage of lead, high durability, and not too bulkly).</li>
-      <li>Find the closest item with those ideal qualities. If trade-offs against the environment or other senient beings exist, try to prioritize products with the least impact on environment and sentient beings.</li>
-      <li>Get rid of items I no longer want according to these priorities: give to somebody whom I am sure will make use of it &gt; same but I am unsure about it &gt; throwing it responsibly &gt; throwing it irresponsibly.</li>
-    </ol>
-  </TooltipText>

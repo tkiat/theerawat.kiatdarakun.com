@@ -72,7 +72,11 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
-      <p>Read this first about <Why />.</p>
+      <p>These records of my life are a part of my work about what can truly matter, which is still in progress. I can now only say that, to fulfill the goal of this work, I have to minimize unnecessary impact to the environment and unnecessary suffering upon sentient beings (but I prioritize myself). In other words, I give the following&nbsp;
+      <TooltipText text="priorities">
+        Nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, no fuel &gt; shorter delivery &gt; longer delivery, less unnecessary suffering &gt; more unnecessary suffering
+      </TooltipText>
+      . Trade-offs sometimes exist but I shall use good judgment.</p>
 
       <section>
         <h3 className="highlight">Spendings</h3>
@@ -170,14 +174,6 @@ const Checkboxes = ({cur, setCur}: CheckboxInp): React.ReactElement =>
       )
     }
   </>
-
-const Why = (): React.ReactElement =>
-  <TooltipText text="Why">
-    <p>These records is a part of my work, namely one interpretation of truths about what can truly matter, which cannot go beyond the flows inherent to sentient beings. I cannot give the URL to the detailed explanation since the work is still in progress. I can only say that, to fulfill the goal of this work, I have to minimize unnecessary impact to the environment and unnecessary suffering upon sentient beings (but I prioritize myself).</p>
-
-    <p>In other words, I give the following priorities: nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, no fuel &gt; shorter delivery &gt; longer delivery, less unnecessary suffering &gt; more unnecessary suffering. Trade-offs may exist but I shall use good judgment.</p>
-
-  </TooltipText>
 
 const How = (): React.ReactElement =>
   <TooltipFa faclass="fa-solid fa-circle-question">
