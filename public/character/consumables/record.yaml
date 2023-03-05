@@ -11,6 +11,7 @@
         - {t: "bitter gourd",thb: 40,g: 670,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 32,g: 686,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 19,g: 549,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "guava",thb: 25,g: 2410,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 552,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 155,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "oil (palm)",thb: 132,g: 2718,nv: 0,oc: 0,mu: 2718,u: 0,p: 99,pa: 0,gl: 0}
@@ -537,7 +538,7 @@
         - {t: "carrot",thb: 45,g: 834,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "cucumber",thb: 15,g: 372,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "false pakchoi",thb: 10,g: 178,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "grava",thb: 20,g: 427,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "guava",thb: 20,g: 427,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "pineapple",thb: 35,g: 1042,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 175,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 30,g: 402,nv: 0,oc: 0,mu: 402,u: 0,p: 0,pa: 0,gl: 0}
@@ -940,7 +941,7 @@
     types:
       - name: food
         items:
-        - {t: "grava",thb: 60,g: 1178,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "guava",thb: 60,g: 1178,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom krok",thb: 25,g: 198,nv: 10,oc: 0,mu: 198,u: 0,p: 0,pa: 0,gl: 0}
 "2022-08-27":
   - delivery:
