@@ -4,7 +4,7 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
   <>
     <h2>What Can Truly Matter</h2>
 
-    <p>My abstract, contemplative journey to find the meaning of life has culminated in the realization that all meanings are baseless unless it is derived from what can truly matter, which cannot go beyond the flows inside sentient beings regardless of the actual nature of reality. I regard the wisest ways of life as the ones derived from no more than such flows, and I am doing the following works to enable the readers to focus on what can truly matter instead of illusory pursuits.</p>
+    <p>My abstract, contemplative journey to find the meaning of life has culminated in the realization that all meanings are baseless unless it is derived from what can truly matter, which cannot go beyond the flows inside sentient beings regardless of the actual nature of reality. Next, I am going to finish the following works to enable the readers to focus on what can truly matter instead of illusory pursuits.</p>
 
     <p><b className="highlight">What can truly matter?</b> I will begin with the empty universe where nothing matters and gradually adds lives into the picture to find the abstract description of what can truly matter, which will become the foundations of the following aspirations.</p>
 

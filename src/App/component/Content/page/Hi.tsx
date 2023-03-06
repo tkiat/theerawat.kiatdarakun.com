@@ -8,7 +8,7 @@ export const Hi = (): React.ReactElement =>
       Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living my life and producing works by, or at least not in the opposite of, <b className="highlight">what can truly matter</b>. This website serves as an outlet for who I am and my activities. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
-          <i className="fa-regular fa-envelope"></i> theerawat@kiatdarakun.com <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
+          <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
         </span>
       </TooltipTextWithDelay>
       , the&nbsp;
