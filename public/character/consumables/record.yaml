@@ -2,6 +2,9 @@
   - delivery:
       type: no fuel
     types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "bamboo shoots (boiled)",thb: 30,g: 486,nv: 0,oc: 0,mu: 486,u: 0,p: 4,pa: 0,gl: 0}
@@ -13,9 +16,12 @@
         - {t: "carrot",thb: 19,g: 549,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "guava",thb: 25,g: 2410,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 552,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "lime",thb: 40,g: 442,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 155,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "oil (palm)",thb: 132,g: 2718,nv: 0,oc: 0,mu: 2718,u: 0,p: 99,pa: 0,gl: 0}
         - {t: "peanut",thb: 120,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 15,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 30,g: 1250,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 14,g: 368,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 30,g: 1275,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-02-25":
