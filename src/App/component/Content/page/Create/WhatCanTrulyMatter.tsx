@@ -11,26 +11,25 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
     <div>
       Only <b className="highlight">What Can Truly Matter</b>&nbsp;
       <TooltipFa faclass="fa-solid fa-circle-info">
-        <p>The most fundamental question about meaning (of life or whatever) is not about truths but it is “what can matter?”, for we should stop asking if nothing can matter. The question becomes “What can truly matter” out of my subjective wish to search for truths, which will become the basis of my subsequent works. In this work, I will begin with the empty universe where nothing can matter and gradually adds lives into the picture to find the abstract description of what can truly matter.</p>
+        <p>The most basic entities that constitute any meaning (of life or whatever) are things that can matter, and therefore we need to seek them first before finding any meaning. Out of my subjective wish to search for truths, what I seek becomes “what can truly matter”, which will become the basis of my subsequent works. In this work, I will begin with the empty universe where nothing can matter and gradually adds lives into the picture to find the abstract description of what can truly matter.</p>
       </TooltipFa>
     </div>
 
     <div>
       Can Lead to <b className="highlight">True Meaning of Life</b>&nbsp;
       <TooltipFa faclass="fa-solid fa-circle-info">
-        <p>This work is built on top of the previous work, namely the abstract description of what can truly matter. However, every abstract thing is useless without truths. My capabilities are limited, and I don't know every truth. To make my work applicable to most readers, I have to follow their common sources of truths, i.e., direct senses, widely accepted scientific research, religious beliefs.</p>
+        <p>The previous work, namely the abstract description of what can truly matter, is useless without concrete truths. My capabilities are limited, and I don't know every truth. To make my work applicable to most readers, I have to follow their common sources of truths, i.e., some of direct senses, widely accepted scientific research, and religious beliefs.</p>
 
-        <p>The truths about what can truly matter can then be extended by pure transformations, namely memory, denotations, and logic. I will use the extended truths, along with the judgment about them, in an attempt to find the meaning of life.</p>
+        <p>The concrete truths about what can truly matter can then be extended by pure transformations, namely memory, denotations, and logic. I will use these extended truths, along with the judgment about them, in an attempt to find the meaning of life.</p>
 
-        <p>Finally, I will proide the record of my choices (e.g., consumables, belongings, routines) and the underlying reason for them, which is the result of my judgments and interpretations of two sources of truths of my choice (namely direct senses and widely accepted scientific research) about what can truly matter. This record will ultimately serve as one practical example of the life with constant, authentic pursuits of true meaning.</p>
+        <p>Finally, I will provide the record of my choices (e.g., consumables, belongings, routines) and the underlying reason for them, which is the result of my judgments and interpretations of two sources of concrete truths of my choice (namely direct senses and widely accepted scientific research) about what can truly matter. This record will ultimately serve as one practical example of the life with constant, authentic pursuits of true meaning.</p>
       </TooltipFa>
     </div>
 
     <div>
       And <b className="highlight">The Society That Truly Serves Members</b>&nbsp;
-      TODO
       <TooltipFa faclass="fa-solid fa-circle-info">
-        <p>This can be done by examining the qualities of the society that can satisfy the truths about what can truly matter within the members of society. I will begin with the biggest possible scope of society (i.e., all sentient beings) and, if time permits, I will do some other scopes as well (e.g., Muslim society and humanity).</p>
+        <p>Such society satisfies the truths about what can truly matter within its members. I will examine the qualities of such society, beginning from one possible scope of society (i.e., all human beings). Then, I will examine how such society tackles common issues such as media, food &amp; drinks, techonology, human rights, etc. If time permits, I will do some other scopes as well (e.g., Muslim society and Thai people).</p>
       </TooltipFa>
     </div>
 
