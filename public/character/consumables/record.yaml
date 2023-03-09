@@ -11,18 +11,21 @@
         - {t: "banana",thb: 30,g: 1555,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "banana (fried)",thb: 20,g: 210,nv: 0,oc: 0,mu: 210,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "beans (mung)",thb: 60,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "beansprout",thb: 15,g: 512,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 40,g: 670,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 32,g: 686,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 19,g: 549,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "guava",thb: 25,g: 2410,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 552,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "lime",thb: 40,g: 442,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mango",thb: 30,g: 1.5,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 155,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "oil (palm)",thb: 132,g: 2718,nv: 0,oc: 0,mu: 2718,u: 0,p: 99,pa: 0,gl: 0}
         - {t: "peanut",thb: 120,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 15,pa: 0,gl: 0}
-        - {t: "pineapple",thb: 30,g: 1250,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 65,g: 2280,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 14,g: 368,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "scallion",thb: 5,g: 37,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 30,g: 1275,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-02-25":
   - delivery:
