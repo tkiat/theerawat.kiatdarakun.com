@@ -26,6 +26,7 @@
         - {t: "potato (sweet)",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 14,g: 368,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "scallion",thb: 5,g: 37,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "shave ice",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 30,g: 1275,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-02-25":
   - delivery:
