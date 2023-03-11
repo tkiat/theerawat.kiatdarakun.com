@@ -4,8 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>
-      Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living my life and producing works by, or at least not in the opposite of, <b className="highlight">what can truly matter</b>. This website serves as an outlet for who I am and my activities. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living by my interpretations of <b className="highlight">what can truly matter</b>, and I am producing works in the areas of sustainability, software, and philosophy that reflect these interpretations. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -33,48 +32,23 @@ export const Hi = (): React.ReactElement =>
           <a href="https://freesvg.org/vector-drawing-of-cogwheel-gear">Cogwheel</a>
         </span>
       </TooltipTextWithDelay>
-      , and the&nbsp;
+      &nbsp;for assets on this website, and the&nbsp;
       <TooltipTextWithDelay text="license">
         <span className="notbold">
           This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
         </span>
       </TooltipTextWithDelay>
-      &nbsp;of the content on this website.
+      &nbsp;of the content here.
     </p>
 
-    <h2 className="highlight">What Can Truly Matter</h2>
+    <h3 className="highlight">What Can Truly Matter</h3>
 
-    <div className="stanzas">
-      <div>For a long while<br />
-      Never know why<br />
-      I know what it means<br />
-      but no sense it seems.</div>
+    <ol>
+      <li>Without sentience, nothing can matter.</li>
+      <li>Therefore, what can matter lies within sentience.</li>
+      <li>What is true cannot be created out of thin air.</li>
+      <li>Therefore, what can truly matter lies within sentience not created out of thin air.</li>
+    </ol>
 
-      <div>No matter slave or duchess<br />
-      On the sphere of pointlessness<br />
-      Filled with difficulties,<br />
-      any step seems silly.</div>
-
-      <div>One day the epiphany<br />
-      struck me with undeniability.<br />
-      Obscure but true like<br />
-      water to fish, air to flies.</div>
-
-      <div>Without any living thing<br />
-      When stones are falling<br />
-      Thud! Crack! Full of debris<br />
-      Complaint? Who is it?</div>
-
-      <div>On the path of no belief,<br />
-      what truly matters indeed<br />
-      can only be the actual flow<br />
-      of those who may feel low.</div>
-
-      <div>May this website be the light<br />
-      reflected on my flight<br />
-      along with remnants of wise souls<br />
-      and death that always follows.</div>
-
-      <div>Theerawat<br />Created: 2023-02-11</div>
-    </div>
+    <p>It is the most fundamental element that can make up the life of true meaning, the life I (subjectively) want.</p>
   </div>

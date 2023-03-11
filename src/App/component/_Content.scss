@@ -83,19 +83,6 @@
       }
     }
   }
-  .stanzas {
-    font-size: 1em;
-    display: flex;
-    gap: 2em;
-    flex-wrap: wrap;
-/*     counter-reset: list-number; */
-/*     & > * { */
-/*       counter-increment: list-number; */
-/*       &:before { */
-/*         content: counter(list-number) ")"; */
-/*       } */
-/*     } */
-  }
   .notbold{
     font-weight: normal;
   }

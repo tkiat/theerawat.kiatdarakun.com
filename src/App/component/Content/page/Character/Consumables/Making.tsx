@@ -99,13 +99,9 @@ export const Making = (): React.ReactElement =>
         <TooltipTextWithDelay text="Laundry">
           <ul>
             <li>
-              Savon de Marseille — <span className="highlight">Recipe</span>: 60g soap chips, 2L water, 2 Tsp baking soda (optional), 20 drops essential oil (optional) — <span className="highlight">Steps</span>: mix soap chips with 1L boiling water, stop boiling water and stir until it is diluted, then leave for 24 hours, finally add another 1L cold water, baking soda, and essential oils and stir the mixture until blended — <span className="highlight">Usage</span>: 100ml per machine
-            </li>
-            <li>
               Savon de Marseille (<a href="https://www.savon-de-marseille.com/en/content/49-my-homemade-laundry-with-marseille-soap">source</a>) — <span className="highlight">Recipe</span>: 20g soap chips, 1L boiling water, 20g baking soda, 7g soda crystal — <span className="highlight">Steps</span>: mix them, done — <span className="highlight">Usage</span>: 100ml per machine
             </li>
           </ul>
-
         </TooltipTextWithDelay>
       </li>
     </ul>
