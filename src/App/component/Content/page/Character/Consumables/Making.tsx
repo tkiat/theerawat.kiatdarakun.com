@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipFa, TooltipText} from "../../../share"
+import {TooltipFa, TooltipText, TooltipTextWithDelay} from "../../../share"
 
 export const Making = (): React.ReactElement =>
   <>
@@ -87,6 +87,26 @@ export const Making = (): React.ReactElement =>
         <TooltipText text="Smoothie">
           I sometimes make smoothie with protein powder to prevent protein deficiency — <span className="highlight">Recipe</span>: fruits (my favourites are pineapple, papaya, frozen strawberry, mango, banana, grava, and muskmelon), soy milk, vegan protein powder, chia seeds and/or ground flaxseeds, ground sesame seeds, and (optional) drinking water — <span className="highlight">Steps</span>: Cut, mix, and blend, done
         </TooltipText>
+      </li>
+    </ul>
+
+    <h4>Nonedibles</h4>
+
+    <ul className="more-gap-list">
+      <li>
+        <b className="highlight">Detergent</b>:&nbsp;
+
+        <TooltipTextWithDelay text="Laundry">
+          <ul>
+            <li>
+              Savon de Marseille — <span className="highlight">Recipe</span>: 60g soap chips, 2L water, 2 Tsp baking soda (optional), 20 drops essential oil (optional) — <span className="highlight">Steps</span>: mix soap chips with 1L boiling water, stop boiling water and stir until it is diluted, then leave for 24 hours, finally add another 1L cold water, baking soda, and essential oils and stir the mixture until blended — <span className="highlight">Usage</span>: 100ml per machine
+            </li>
+            <li>
+              Savon de Marseille (<a href="https://www.savon-de-marseille.com/en/content/49-my-homemade-laundry-with-marseille-soap">source</a>) — <span className="highlight">Recipe</span>: 20g soap chips, 1L boiling water, 20g baking soda, 7g soda crystal — <span className="highlight">Steps</span>: mix them, done — <span className="highlight">Usage</span>: 100ml per machine
+            </li>
+          </ul>
+
+        </TooltipTextWithDelay>
       </li>
     </ul>
   </>
