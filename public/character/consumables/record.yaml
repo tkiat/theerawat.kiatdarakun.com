@@ -1,3 +1,11 @@
+"2023-03-11":
+  - delivery:
+      type: private
+      km: 0.3
+    types:
+      - name: food
+        items:
+        - {t: "khanom nang led",thb: 25,g: 183,nv: 0,oc: 0,mu: 183,u: 0,p: 5,pa: 0,gl: 0}
 "2023-03-04":
   - delivery:
       type: no fuel
