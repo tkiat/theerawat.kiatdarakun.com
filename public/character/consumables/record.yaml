@@ -306,11 +306,11 @@
         - {t: "false pakchoi",thb: 20,g: 406,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "grass jelly",thb: 20,g: 1000,nv: 0,oc: 0,mu: 1000,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 163,nv: 0,oc: 0,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 72,nv: 0,oc: 0,mu: 72,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "mango",thb: 20,g: 5236,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (straw)",thb: 30,g: 158,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "peanut",thb: 195,g: 2500,nv: 0,oc: 0,mu: 0,u: 0,p: 25,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 40,g: 895,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 10,g: 72,nv: 0,oc: 0,mu: 72,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "kiwi (frozen)",thb: 79,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "star gooseberry (in syrup)",thb: 20,g: 229,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tofu and beansprout",thb: 30,g: 733,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -603,6 +603,7 @@
         - {t: "khanom khao tom mud",thb: 30,g: 402,nv: 0,oc: 0,mu: 402,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom tom",thb: 0,g: 202,nv: 0,oc: 0,mu: 202,u: 0,p: 7,pa: 0,gl: 0}
         - {t: "khanom mansampalang",thb: 0,g: 236,nv: 0,oc: 0,mu: 236,u: 0,p: 7,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 5,g: 36,nv: 0,oc: 0,mu: 36,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "muskmelon",thb: 30,g: 1191,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "papaya",thb: 40,g: 752,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "peanut",thb: 80,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
@@ -611,7 +612,6 @@
         - {t: "potato (boiled)",thb: 20,g: 452,nv: 0,oc: 0,mu: 452,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 20,g: 485,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 10,g: 341,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 5,g: 36,nv: 0,oc: 0,mu: 36,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 20,g: 1037,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: other-edibles
         items:
@@ -644,6 +644,7 @@
         - {t: "false pakchoi",thb: 10,g: 191,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 366,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 20,g: 268,nv: 0,oc: 0,mu: 268,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 35,g: 243,nv: 0,oc: 0,mu: 243,u: 0,p: 14,pa: 0,gl: 0}
         - {t: "khanom tao tud",thb: 5,g: 37,nv: 0,oc: 0,mu: 37,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "mushroom (shimeji)",thb: 15,g: 131,nv: 0,oc: 0,mu: 0,u: 0,p: 9,pa: 0,gl: 0}
         - {t: "peanut",thb: 120,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 20,pa: 0,gl: 0}
@@ -652,7 +653,6 @@
         - {t: "potato (boiled)",thb: 10,g: 226,nv: 0,oc: 0,mu: 226,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 622,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "rice (jasmine)",thb: 158,g: 4000,nv: 0,oc: 0,mu: 0,u: 0,p: 44,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 35,g: 243,nv: 0,oc: 0,mu: 243,u: 0,p: 14,pa: 0,gl: 0}
         - {t: "water convolvulus",thb: 10,g: 200,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-liquid
         items:
@@ -688,8 +688,8 @@
         - {t: "guava",thb: 50,g: 3420,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 183,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 20,g: 290,nv: 0,oc: 0,mu: 290,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 76,nv: 0,oc: 0,mu: 76,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 142,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 10,g: 76,nv: 0,oc: 0,mu: 76,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "syrup (hale's blue boy)",thb: 63,g: 931,nv: 0,oc: 0,mu: 0,u: 931,p: 0,pa: 0,gl: 419}
         - {t: "tomato",thb: 10,g: 269,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "vegetables mixed",thb: 50,g: 1035,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
@@ -756,11 +756,11 @@
         - {t: "guava",thb: 31,g: 652,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 1,gl: 0}
         - {t: "kale",thb: 20,g: 312,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom khai nok krata",thb: 20,g: 126,nv: 0,oc: 0,mu: 126,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 35,g: 268,nv: 0,oc: 0,mu: 268,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 492,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "orange peels (dried)",thb: 5,g: 50,nv: 0,oc: 0,mu: 50,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "potato (boiled)",thb: 20,g: 413,nv: 0,oc: 0,mu: 413,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 20,g: 469,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 35,g: 268,nv: 0,oc: 0,mu: 268,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 25,g: 1378,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2022-10-01":
   - delivery:
@@ -781,11 +781,11 @@
         - {t: "false pakchoi",thb: 10,g: 159,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 36,g: 720,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 2,gl: 0}
         - {t: "kale",thb: 20,g: 330,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 74,nv: 0,oc: 0,mu: 74,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "khanom tarn",thb: 35,g: 220,nv: 0,oc: 0,mu: 220,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "muskmelon",thb: 30,g: 1083,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 30,g: 912,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 392,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 10,g: 74,nv: 0,oc: 0,mu: 74,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "tofu (fried)",thb: 20,g: 145,nv: 0,oc: 0,mu: 145,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-liquid
         items:
@@ -847,6 +847,7 @@
         - {t: "cabbage (chinese)",thb: 28,g: 426,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 10,g: 225,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "false pakchoi",thb: 10,g: 334,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 200,nv: 0,oc: 0,mu: 200,u: 0,p: 7,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 143,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (shiitake)",thb: 20,g: 85,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "parsley",thb: 5,g: 30,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -854,7 +855,6 @@
         - {t: "pineapple",thb: 80,g: 3030,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato",thb: 55,g: 1072,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 18,g: 449,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 15,g: 200,nv: 0,oc: 0,mu: 200,u: 0,p: 7,pa: 0,gl: 0}
         - {t: "stir fried (angled gourd with mushroom)",thb: 40,g: 392,nv: 0,oc: 0,mu: 392,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "tomato",thb: 10,g: 230,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "yakisoba",thb: 40,g: 319,nv: 0,oc: 0,mu: 319,u: 0,p: 0,pa: 0,gl: 0}
@@ -888,12 +888,12 @@
         - {t: "guava",thb: 15,g: 770,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 340,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom krayasart",thb: 20,g: 99,nv: 0,oc: 0,mu: 99,u: 0,p: 2,pa: 1,gl: 0}
+        - {t: "khanom nang led",thb: 42,g: 278,nv: 0,oc: 0,mu: 278,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "morning glory",thb: 30,g: 686,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "peanut (boiled)",thb: 20,g: 138,nv: 0,oc: 0,mu: 138,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 80,g: 3003,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (fried)",thb: 15,g: 98,nv: 0,oc: 0,mu: 98,u: 0,p: 5,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 23,g: 556,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 42,g: 278,nv: 0,oc: 0,mu: 278,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "tomato",thb: 10,g: 206,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 0,g: 890,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -1019,13 +1019,13 @@
         - {t: "dragon fruit",thb: 15,g: 455,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 24,g: 624,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 367,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 110,nv: 0,oc: 0,mu: 110,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 183,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (oyster)",thb: 20,g: 170,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "papaya",thb: 54,g: 1300,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "peanuts (fried with flour)",thb: 5,g: 30,nv: 0,oc: 0,mu: 30,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "potato",thb: 40,g: 768,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 20,g: 582,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 15,g: 110,nv: 0,oc: 0,mu: 110,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 20,g: 1030,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-liquid
@@ -1072,7 +1072,7 @@
       - name: food
         items:
         - {t: "banana",thb: 25,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 15,g: 121,nv: 0,oc: 0,mu: 121,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 121,nv: 0,oc: 0,mu: 121,u: 0,p: 4,pa: 0,gl: 0}
 "2022-08-06":
   - delivery:
       type: no fuel
@@ -1144,8 +1144,8 @@
         items:
         - {t: "banana",thb: 25,g: 895,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bun (black bean)",thb: 10,g: 90,nv: 0,oc: 0,mu: 90,u: 0,p: 0,pa: 1,gl: 0}
+        - {t: "khanom nang led",thb: 30,g: 220,nv: 0,oc: 0,mu: 220,u: 0,p: 9,pa: 0,gl: 0}
         - {t: "peanut bar",thb: 5,g: 62,nv: 0,oc: 0,mu: 62,u: 0,p: 1,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 30,g: 220,nv: 0,oc: 0,mu: 220,u: 0,p: 9,pa: 0,gl: 0}
         - {t: "star gooseberry (in syrup)",thb: 20,g: 195,nv: 0,oc: 0,mu: 195,u: 0,p: 3,pa: 0,gl: 0}
 "2022-07-23":
   - delivery:
@@ -1183,9 +1183,9 @@
         - {t: "dragon fruit",thb: 9,g: 355,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "dumpling (chinese chive, 3 pieces)",thb: 30,g: 334,nv: 0,oc: 0,mu: 334,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 14,g: 428,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 103,nv: 0,oc: 0,mu: 103,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "pineapple",thb: 35,g: 1006,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple (cracker)",thb: 20,g: 150,nv: 10,oc: 0,mu: 150,u: 0,p: 0,pa: 2,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 15,g: 103,nv: 0,oc: 0,mu: 103,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "shave ice",thb: 25,g: 532,nv: 0,oc: 0,mu: 532,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "stuffed dough (cococut)",thb: 20,g: 154,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2022-07-16":
@@ -1227,10 +1227,10 @@
       - name: food
         items:
         - {t: "banana (dried, sweeten)",thb: 5,g: 32,nv: 0,oc: 0,mu: 32,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 5,g: 39,nv: 0,oc: 0,mu: 39,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "mango (pickled)",thb: 5,g: 45,nv: 0,oc: 0,mu: 45,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "peanuts (fried with flour)",thb: 6,g: 34,nv: 0,oc: 0,mu: 34,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "plant-based meat",thb: 158,g: 550,nv: 0,oc: 0,mu: 0,u: 550,p: 27,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 5,g: 39,nv: 0,oc: 0,mu: 39,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 440,nv: 0,oc: 0,mu: 440,u: 0,p: 0,pa: 0,gl: 0}
 "2022-07-09":
   - delivery:
@@ -1276,8 +1276,8 @@
         - {t: "banana",thb: 40,g: 2400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (pickled)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 4,gl: 0}
         - {t: "banana (fried)",thb: 20,g: 217,nv: 0,oc: 0,mu: 217,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 30,g: 219,nv: 0,oc: 0,mu: 219,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "muskmelon",thb: 30,g: 1160,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 30,g: 219,nv: 0,oc: 0,mu: 219,u: 0,p: 10,pa: 0,gl: 0}
 "2022-07-02":
   - delivery:
       type: public
@@ -1354,6 +1354,7 @@
         - {t: "corn (baby)",thb: 34,g: 677,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "gourd (bitter)",thb: 20,g: 457,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 419,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 33,g: 180,nv: 0,oc: 0,mu: 180,u: 0,p: 6,pa: 0,gl: 0}
         - {t: "mango",thb: 35,g: 2400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory (swamp)",thb: 15,g: 238,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "peanut bar",thb: 5,g: 62,nv: 0,oc: 0,mu: 62,u: 0,p: 1,pa: 0,gl: 0}
@@ -1362,7 +1363,6 @@
         - {t: "potato (chips)",thb: 5,g: 11,nv: 0,oc: 0,mu: 0,u: 11,p: 2,pa: 0,gl: 0}
         - {t: "potato (fried ball)",thb: 10,g: 67,nv: 0,oc: 0,mu: 67,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 388,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 33,g: 180,nv: 0,oc: 0,mu: 180,u: 0,p: 6,pa: 0,gl: 0}
         - {t: "yakisoba",thb: 20,g: 200,nv: 0,oc: 0,mu: 200,u: 0,p: 0,pa: 0,gl: 0}
 "2022-06-18":
   - delivery:
@@ -1458,9 +1458,9 @@
       - name: food
         items:
         - {t: "banana",thb: 25,g: 1680,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "peanuts (fried with flour)",thb: 9,g: 51,nv: 0,oc: 0,mu: 51,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "chinese chives (fried)",thb: 50,g: 360,nv: 0,oc: 0,mu: 360,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 15,g: 100,nv: 0,oc: 0,mu: 100,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 100,nv: 0,oc: 0,mu: 100,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "peanuts (fried with flour)",thb: 9,g: 51,nv: 0,oc: 0,mu: 51,u: 0,p: 0,pa: 0,gl: 0}
 "2022-06-04":
   - delivery:
       type: public
@@ -1499,10 +1499,10 @@
       - name: food
         items:
         - {t: "banana",thb: 30,g: 4016,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 9,gl: 0}
-        - {t: "khanom khao tom mud",thb: 10,g: 120,nv: 0,oc: 0,mu: 120,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "ice-cream",thb: 20,g: 55,nv: 0,oc: 0,mu: 0,u: 55,p: 1,pa: 10,gl: 0}
+        - {t: "khanom khao tom mud",thb: 10,g: 120,nv: 0,oc: 0,mu: 120,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 5,g: 39,nv: 0,oc: 0,mu: 39,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "potato (fried ball)",thb: 40,g: 268,nv: 0,oc: 0,mu: 268,u: 0,p: 0,pa: 2,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 5,g: 39,nv: 0,oc: 0,mu: 39,u: 0,p: 2,pa: 0,gl: 0}
 "2022-05-28":
   - delivery:
       type: private
@@ -1539,10 +1539,10 @@
     types:
       - name: food
         items:
+        - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 78,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 0,g: 580,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato",thb: 0,g: 224,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (chips)",thb: 10,g: 26,nv: 0,oc: 0,mu: 0,u: 26,p: 2,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 10,g: 78,nv: 0,oc: 0,mu: 78,u: 0,p: 4,pa: 0,gl: 0}
 "2022-05-21":
   - delivery:
       type: private
@@ -1600,9 +1600,9 @@
         items:
         - {t: "banana",thb: 35,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "ice-cream",thb: 20,g: 55,nv: 0,oc: 0,mu: 0,u: 55,p: 1,pa: 10,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 78,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "potato (chips)",thb: 5,g: 13,nv: 1,oc: 0,mu: 0,u: 13,p: 1,pa: 0,gl: 0}
         - {t: "pumpkin seed (roasted)",thb: 20,g: 25,nv: 0,oc: 0,mu: 25,u: 0,p: 4,pa: 0,gl: 0}
-        - {t: "rice (sweet crispy cracker)",thb: 10,g: 78,nv: 0,oc: 0,mu: 78,u: 0,p: 4,pa: 0,gl: 0}
       - name: other-edibles
         items:
         - {t: "oil (coconut, refined)",thb: 198,g: 2000,nv: 0,oc: 0,mu: 2000,u: 0,p: 47,pa: 0,gl: 0}

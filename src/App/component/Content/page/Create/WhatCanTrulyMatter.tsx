@@ -6,12 +6,12 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
   <>
     <h2>What Can Truly Matter</h2>
 
-    <p>My abstract, contemplative journey to find the true meaning of life has culminated in the realization that any meaning is made-up unless it is derived from what can truly matter, which cannot go beyond sentience that is not created out of thin air regardless of the actual nature of reality. I subjectively aspire for true meaning, and therefore I am going to finish (and live by the results of) the following works instead of illusory pursuits.</p>
+    <p>The passage of time had forced me to either commit suicide or choose a way of life, and my subjective self inspired me to seek the life of true meaning. Then, my abstract, contemplative journey to find the true meaning of life culminated in the realization that any meaning is made-up unless it is derived from what can truly matter, which cannot go beyond sentience (including the prerequisites for it) that is not created out of thin air. I am going to finish (and live by) the following works.</p>
 
     <div>
       Only <b className="highlight">Concrete Truths About What Can Truly Matter</b>&nbsp;
       <TooltipFa faclass="fa-solid fa-circle-info">
-        <p>In this work, I make arguments for what should be considered as the abstract description of what can truly matter. However, it is useless in real life without concrete truths. My capabilities are limited, and I don't know every truth. Therefore, I will follow some common sources of truth, e.g., the six senses, scientific research, and religious beliefs. These truths, along with pure transformations (namely denotation, memory, and logic), will become the basis of my subsequent works.</p>
+        <p>In this work, I make arguments for what should be considered as the abstract description of what can truly matter. However, it is useless in real life without concrete truths. My capabilities are limited, and I don't know every truth. Therefore, I will follow some common sources of truth, e.g., the six senses, scientific research, and religious beliefs. These truths, along with pure transformations of them (namely denotation, memory, and logic), will become the basis of my subsequent works.</p>
       </TooltipFa>
     </div>
 

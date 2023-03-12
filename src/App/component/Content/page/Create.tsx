@@ -87,7 +87,7 @@ const Software = ({content}: {content: unknown}): React.ReactElement =>
 
         <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
 
-        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now only have only one upload but I plan to add more videos down the road.</p>
+        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now only have only one trivial upload but I plan to add more videos down the road.</p>
 
         {renderItems(content, ["software", "video", "freedom-in-computing"])}
       </section>
@@ -122,7 +122,7 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
       <section className="abandoned">
         <h4>A Freedom Blog</h4>
 
-        <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the philosophical work of what can truly matter.</p>
+        <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the works of what can truly matter.</p>
       </section>
     </section>
   </>
