@@ -1,5 +1,18 @@
 "2023-03-11":
   - delivery:
+      type: no fuel
+        - {t: "bamboo shoots (boiled)",thb: 25,g: 502,nv: 0,oc: 0,mu: 502,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "carrot",thb: 20,g: 401,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "cucumber (long)",thb: 20,g: 551,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "false pakchoi",thb: 10,g: 327,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "ivy gourd",thb: 20,g: 279,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 390,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mushroom (tremella)",thb: 15,g: 34,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 30,g: 1322,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 35,g: 709,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 19,g: 552,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "tomato",thb: 20,g: 365,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+  - delivery:
       type: private
       km: 0.3
     types:

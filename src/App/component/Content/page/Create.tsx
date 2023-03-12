@@ -31,8 +31,7 @@ export const Create = (): React.ReactElement => {
 
   const data = {
     icons: [
-      <i className="fa-solid fa-flag"></i>,
-//       <i className="fa-solid fa-star"></i>,
+      <i className="fa-regular fa-square-check"></i>,
       <i className="fa-solid fa-code"></i>,
       <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],

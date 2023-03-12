@@ -6,7 +6,7 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
   <>
     <h2>What Can Truly Matter</h2>
 
-    <p>The passage of time had forced me to either commit suicide or choose a way of life, and my subjective self inspired me to seek the life of true meaning. Then, my abstract, contemplative journey to find the true meaning of life culminated in the realization that any meaning is made-up unless it is derived from what can truly matter, which cannot go beyond sentience (including the prerequisites for it) that is not created out of thin air. I am going to finish (and live by) the following works.</p>
+    <p>The passage of time forced me to either commit suicide or choose a way of life, and my subjective self inspired me to live by true meaning. Later, my abstract, contemplative journey to find the true meaning culminated in the realization that any meaning is true if an only if it is derived from what can truly matter, which cannot go beyond sentience (including the prerequisites for it) that is not created out of thin air. I am going to finish (and live by) the following works.</p>
 
     <div>
       Only <b className="highlight">Concrete Truths About What Can Truly Matter</b>&nbsp;

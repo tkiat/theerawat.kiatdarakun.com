@@ -50,5 +50,5 @@ export const Hi = (): React.ReactElement =>
       <li>Therefore, what can truly matter on its own lies within sentience not created out of thin air.</li>
     </ol>
 
-    <p>What can truly matter on its own, along with the prerequisites for it, constitute what can truly matter, which is a fundamental element that <i>can</i> make up the life of true meaning.</p>
+    <p>What can truly matter on its own, along with the prerequisites for it, constitute what can truly matter, which is a fundamental element that <i>can</i> make up the true meaning of life.</p>
   </div>
