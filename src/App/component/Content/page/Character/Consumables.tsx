@@ -72,11 +72,7 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
-      <p>These records of my life are a part of my work about what can truly matter, which is still in progress. I can now only say that, to fulfill the goal of this work, I have to minimize unnecessary impact to the environment and unnecessary suffering upon sentient beings (but I prioritize myself). In other words, I give the following&nbsp;
-      <TooltipText text="priorities">
-        Nonprocessed &gt; minimally processed &gt; processed &gt; ultra-processed, no waste &gt; more waste, no fuel &gt; shorter delivery &gt; longer delivery, less unnecessary suffering &gt; more unnecessary suffering
-      </TooltipText>
-      . Trade-offs sometimes exist but I shall use good judgment.</p>
+      <p>These personal records are a part of my work in progress about what can truly matter. For consumables, the <i>current</i> ideal choice maxmimizes my health benefits and convenience while minimizing unnecessary impact to the environment and suffering upon sentient beings.</p>
 
       <section>
         <h3 className="highlight">Spendings</h3>

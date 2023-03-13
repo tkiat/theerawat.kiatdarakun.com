@@ -46,9 +46,8 @@ export const Hi = (): React.ReactElement =>
     <ol>
       <li>Without sentience, nothing can matter on its own.</li>
       <li>Therefore, what can matter on its own lies within sentience.</li>
-      <li>What is true cannot be created out of thin air.</li>
-      <li>Therefore, what can truly matter on its own lies within sentience not created out of thin air.</li>
+      <li>And what can truly matter on its own lies within sentience that reflects truth.</li>
     </ol>
 
-    <p>What can truly matter on its own, along with the prerequisites for it, constitute what can truly matter, which is a fundamental element that <i>can</i> make up the true meaning of life.</p>
+    <p>What can truly matter on its own, along with things that support or oppose it, constitute what can truly matter, which is a fundamental element that <i>can</i> make up the true meaning of life.</p>
   </div>

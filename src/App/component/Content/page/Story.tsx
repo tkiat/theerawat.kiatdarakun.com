@@ -44,5 +44,5 @@ export const Story = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <p>
-    I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.
+    It's not that interesting and I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.
   </p>

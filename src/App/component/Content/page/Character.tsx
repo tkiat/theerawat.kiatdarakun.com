@@ -13,14 +13,14 @@ export const Character = (): React.ReactElement => {
       <i className="fa-solid fa-person"></i>,
       <i className="fa-solid fa-person-hiking"></i>,
       <i className="fa-solid fa-cart-shopping"></i>,
-      <i className="fa-solid fa-suitcase-rolling"></i>,
+//       <i className="fa-solid fa-suitcase-rolling"></i>,
     ],
     content: {
       sections: [
         <Trait />,
         <Hobbies />,
         <Consumables />,
-        <ThingsIOwn />,
+//         <ThingsIOwn />,
       ]
     }
   }

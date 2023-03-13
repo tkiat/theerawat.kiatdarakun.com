@@ -13,7 +13,7 @@ export const Making = (): React.ReactElement =>
         <b className="highlight">Main Dish</b>:&nbsp;
 
         <TooltipText text="Boiled mixed vegetables">
-          This is my staple diet (I always eat with rice and often with side dishes). — <span className="highlight">Recipe</span>: Mixed vegetables of many kinds (roots, stems, leaves, flowers, fruit, etc.) and many colors (green, yellow, white, orange, etc.), baking soda, water — <span className="highlight">Steps</span>: Cut and wash all vegetables thoroughly (with baking soda), boil until it reachs the boiling point, then simmer for 30 minutes, done.
+          This is my staple diet (I always eat with rice and often with side dishes). — <span className="highlight">Recipe</span>: Mixed vegetables of many kinds (roots, stems, leaves, flowers, fruit, etc.) and many colors (green, yellow, white, orange, etc.), baking soda, water — <span className="highlight">Steps</span>: Cut and wash all vegetables thoroughly (with baking soda), boil until it reachs the boiling point, then simmer it for 30 minutes, done.
         </TooltipText>
         ,&nbsp;
         <TooltipText text="Rice">

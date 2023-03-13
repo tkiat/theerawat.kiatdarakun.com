@@ -1,6 +1,16 @@
 "2023-03-11":
+#   - delivery:
+#       type: public
+#       km: TODO
+#     types:
+#       - name: food
+#         items:
+#         - {t: "popcorn",thb: 60,g: TODO,nv: 0,oc: 0,mu: 0,u: TODO,p: TODO,pa: 0,gl: 0}
   - delivery:
       type: no fuel
+    types:
+      - name: food
+        items:
         - {t: "bamboo shoots (boiled)",thb: 25,g: 502,nv: 0,oc: 0,mu: 502,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 401,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cucumber (long)",thb: 20,g: 551,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
