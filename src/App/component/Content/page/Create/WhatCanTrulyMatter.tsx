@@ -6,7 +6,7 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
   <>
     <h2>What Can Truly Matter</h2>
 
-    <p>The passage of time forced me to either commit suicide or choose a way of life, and my subjective self inspired me to live by true meaning. Later, my abstract, contemplative journey to find the true meaning culminated in the realization that any meaning is true if an only if it is derived from what can truly matter, which cannot go beyond sentience (including the prerequisites for it) that is not created out of thin air. I am going to finish (and live by) the following works.</p>
+    <p>The passage of time forced me to either commit suicide or choose a way of life, and my subjective self inspired me to live by true meaning. Later, my abstract, contemplative journey to find the true meaning culminated in the realization that any meaning is true if and only if it is derived from what can truly matter, which cannot go beyond sentience that is not created out of thin air, including things that support or oppose it. I am going to finish (and live by) the following works.</p>
 
     <div>
       Only <b className="highlight">Concrete Truths About What Can Truly Matter</b>&nbsp;
@@ -20,7 +20,7 @@ export const WhatCanTrulyMatter = (): React.ReactElement =>
       <TooltipFa faclass="fa-solid fa-circle-info">
         <p>I will make judgments on truths about what can truly matter from the earlier work. When I cannot extend such truths anymore, it is then time to examine the possibilities of what can be the true meaning of life. I will also compare them with existing literature.</p>
 
-        <p>Additionally, I will provide a record of my life that serves as one practical example of life with constant, authentic pursuits of true meaning. This record contains my choices (e.g., consumables, belongings, routines) and the underlying reason for them, which is the result of my judgments and interpretations of my ideas of concrete truths about what can truly matter.</p>
+        <p>Additionally, I will provide a record of my life that serves as one practical example of life with constant, authentic pursuits of true meaning. This record contains my choices (e.g., consumables, belongings, and routines) and the underlying reason for them, which is the result of my judgments and interpretations of my ideas of concrete truths about what can truly matter.</p>
       </TooltipFa>
     </div>
 

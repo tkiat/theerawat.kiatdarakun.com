@@ -14,7 +14,8 @@ export const Trait = (): React.ReactElement =>
 
         &nbsp;—&nbsp;
         <TooltipTextWithDelay text="MBTI">
-          <span>Taken on 31 Mar 2021 <a href="https://www.16personalities.com/">here</a></span>
+          <div>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></div>
+          <br />
           <ul>
             <li>(I)ntroverted (79%) - (E)xtraverted</li>
             <li>I(N)tuitive (52%) - Ob(S)ervant</li>
@@ -25,7 +26,8 @@ export const Trait = (): React.ReactElement =>
         </TooltipTextWithDelay>
         ,&ensp;
         <TooltipTextWithDelay text="Big 5">
-          <span>Taken on 31 Mar 2021 <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></span>
+          <div>Taken on 31 Mar 2021 <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></div>
+          <br />
           <ul>
             <li>Extroversion: 11 (percentile)</li>
             <li>Emotional Stability: 57</li>
@@ -36,9 +38,10 @@ export const Trait = (): React.ReactElement =>
         </TooltipTextWithDelay>
         ,&ensp;
         <TooltipTextWithDelay text="Four Temperaments">
-          <span>Taken on 31 Mar 2021 <a href="http://openpsychometrics.org/tests/O4TS/">here</a></span>
+          <div>Taken on 31 Mar 2021 <a href="http://openpsychometrics.org/tests/O4TS/">here</a></div>
+          <br />
           <ul>
-            <li>Choleric: 12,</li>
+            <li>Choleric: 12</li>
             <li>Melancholic: 12</li>
             <li>Sanguine: 5</li>
             <li>Phlegmatic: 22</li>
@@ -52,7 +55,7 @@ export const Trait = (): React.ReactElement =>
           <ul>
             <li>Thai (native)</li>
             <li>English (professional)</li>
-            <li>German (basic, I could renew documents and shopping using only German)</li>
+            <li>German (basic)</li>
           </ul>
         </TooltipText>
         ,&ensp;
@@ -75,15 +78,15 @@ export const Trait = (): React.ReactElement =>
         <TooltipText text="Workplace">
           <ul>
             <li><b className="highlight">Performance</b>: I am naturally inclined to learn something new, and I possess good quantitative and analytical thinking skills. I believe I can handle most jobs.</li>
-            <li><b className="highlight">Teamwork</b>: As a highly conscientious person, I tend to be disciplined. I have been so far abide by the rules in the earlier workplaces.</li>
+            <li><b className="highlight">Teamwork</b>: As a highly conscientious person, I tend to be disciplined. I have so far abided by the rules in the workplaces.</li>
             <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip. However, I have a social withdrawal tendency (outside work).</li>
           </ul>
         </TooltipText>
         ,&ensp;
         <TooltipText text="Personal">
           <ul>
-            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matters to me, and align my skills, appearance, preferences, belongings, eating habits, etc., with it.</li>
-            <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply only vegan food, not disturb others, and frequently avoid creating unnecessary wastes.</li>
+            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matters to me, and align my life to it.</li>
+            <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply, not disturb others, and frequently avoid creating unnecessary wastes.</li>
           </ul>
         </TooltipText>
       </li>
@@ -92,9 +95,9 @@ export const Trait = (): React.ReactElement =>
 
         &nbsp;—&nbsp;
         <TooltipText text="Life Purpose">
-          <p>Life with purpose is an end in itself. However, there is objectively no point of my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. Since this realization cannot be applied to low-level creatures fully, for it cannot reason, it cannot be fully applied to me as well as I share many instincts with those creatures. Therefore, my only hope to find any purpose lies within my subjective self.</p>
+          <p>Life with purpose is an end in itself. However, there is objectively no point of my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. Since this realization cannot be applied to low-level creatures fully, for it cannot reason, it cannot be fully applied to me as well because I share many instincts with those creatures. Therefore, my only hope to find any purpose lies within my subjective self.</p>
 
-          <p>I can either commit suicide or live. If I decide to live, I can only follow either true or made-up meaning of life, both of them, or neither of them. Made-up meaning is strightforward (e.g., someone makes music as his life purpose), but true meaning cannot go beyond sentience that reflects truth. The definition of truth depends on one's beliefs and interpretations.</p>
+          <p>I can either commit suicide or live. If I decide to live, I can only follow either true or made-up meaning of life, both of them, or neither of them. Made-up meaning is strightforward (e.g., someone makes music as his life purpose), but true meaning cannot go beyond sentience that reflects truth. My survival instinct nudged me not to commit suicide, and my innate curiosity drove me to live by true meaning. What is truth then? Its definition depends on one's beliefs and interpretations.</p>
 
           <p></p>
         </TooltipText>
@@ -123,7 +126,7 @@ export const Trait = (): React.ReactElement =>
             <li>No piercings and tattoos</li>
             <li>Don't usually wear watch</li>
             <li>Wear prescription glasses</li>
-            <li>Usually wear short pants without shirt at home</li>
+            <li>Usually wear only a short pant without underware at home</li>
           </ul>
         </TooltipText>
         ,&ensp;
@@ -142,7 +145,6 @@ export const Trait = (): React.ReactElement =>
           <ul>
             <li>Calm and stable</li>
             <li>No insults, pointless arguments, and gossips</li>
-            <li>Quiet and smile less (outside of work)</li>
             <li>Never have sexual or romantic relationship</li>
           </ul>
         </TooltipText>

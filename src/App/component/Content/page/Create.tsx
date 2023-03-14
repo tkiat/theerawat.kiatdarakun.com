@@ -86,7 +86,7 @@ const Software = ({content}: {content: unknown}): React.ReactElement =>
 
         <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
 
-        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now only have only one trivial upload but I plan to add more videos down the road.</p>
+        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now have only one upload but I plan to add more videos down the road.</p>
 
         {renderItems(content, ["software", "video", "freedom-in-computing"])}
       </section>
