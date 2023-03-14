@@ -5,26 +5,22 @@ import {TooltipText} from "../../share"
 export const Realization = (): React.ReactElement =>
   <>
     <p>
-      <b className="big-text highlight">32 Years Old (Satisfactory Realization)</b> — After a while, I realized that truths alone cannot guide me to the resolution of&nbsp;
+      <b className="big-text highlight">32 Years Old (Satisfactory Realization)</b> — After a while, I realized that awareness alone cannot guide me how to deal with&nbsp;
       <TooltipText text="inevitable conflicts">
         Sure, it tells me to change my position when I ache, but what about eating? I currently need to harm other sentient beings for food (even vegan food due to insects), which is a conflict since my awareness tells me that all beings want to survive (as, e.g., their bodies heals themselves). Should I commit suicide or continue living?
       </TooltipText>
-      . In fact, a degree of subjectiveness has to be added on top of the truths in order to resolve such conflicts. This is not unwise, for I have to choose. This changed the question from “what are truths?” to “what truly matter?”. After the&nbsp;
-      <TooltipText text="first">
-        Everything that truly matters lies within sentient beings. Why? Without sentient beings, who's gonna complain after Saturn crashes with a moon right?
-      </TooltipText>
-      ,&nbsp;
-      <TooltipText text="second">
-        Everything that truly matters is limited to existing qualities or flows inside sentient beings. Why? “Truly” in “truly matters” means something that is not made-up. For example, I would think a computer that I are seeing is “true”, unlike a computer in a fairy tale. Anything that is not made-up can only be discovered through six senses, not anything in the mind. Though, I can use memory and denotation, for example, to refer to past perceptions. They are still truths, for they don't change anything.
-      </TooltipText>
-      , then&nbsp;
-      <TooltipText text="third">
-        Everything that truly matters is limited to existing flows, not qualities, inside sentient beings. Why? Existing qualities within a sentient being themselves (like hands, white skin, etc.) are just mere states and cannot be reversed, and thus they cannot matter. On the other hand, existing flows can be reversed, and thus they can “matter”.
-      </TooltipText>
-      &nbsp;considerations, I concluded that <strong>the only things that <i>can</i> truly matter, to any sentient being, lie within the flows inherent in all sentient beings</strong>.
-    </p>
+      . I then decided to begin from scratch once again. I can either commit suicide or live. If I decide to live, I can only follow either the true or made-up meaning of life, both, or neither of them. My survival instinct nudged me not to commit suicide, and my innate curiosity drove me to live by true meaning. Made-up meaning is straightforward (e.g., music, better life, fame, money), but what about true meaning?</p>
 
-    <p>
-       Since the word “can” and “matter” are of subjective kinds, I can only create possible, non-judgmental interpretations from this realization, all of which are equally valid as they all stem from what truly matters. I became free from all dogmas, beliefs, religions, spiritual practices, etc. Many of them may offer wisdom (like the elimination of ego and greed), but none actually focused on what truly matters. Some people are unaware to this basic realization, and I shall live by and create works upon what <i>can</i> truly matters for the benefits of beings.
-    </p>
+    <p>True meaning is vague, so I focused on the most fundamental element of it, namely “a thing that can matter”. After this&nbsp;
+    <TooltipText text="examination">
+      <ol>
+        <li>Without sentience, nothing can matter on its own.</li>
+        <li>Therefore, things that can matter on its own lies within sentience.</li>
+        <li>And things that can truly matter on its own lies within sentience that reflects truth.</li>
+        <li>Things that can truly matter on its own are not separable with things that can support or oppose it. Together, they are “things that can truly matter”.</li>
+      </ol>
+    </TooltipText>
+    , I concluded that <b>things that can truly matter lies within sentience that reflects truth, along with things that can support or oppose it</b>. This is a fundamental element that <i>can</i> lead to true meaning of life. What is the truth then? I don't know exact truths because of my limited capabilities. Therefore, its definition depends on one's beliefs and interpretations.</p>
+
+    <p>I then became free from all dogmas, spiritual thoughts, etc. Many of them may offer wisdom (like the elimination of ego), but none actually focused on things that can truly matter. I want to live by this realization and produce works about it. Since the word “true” and “matter” are in the eye of the beholder, I can only assume the common definitions that I believe most people hold in my works.</p>
   </>

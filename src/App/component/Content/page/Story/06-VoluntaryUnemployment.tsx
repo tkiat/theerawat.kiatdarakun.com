@@ -47,7 +47,7 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
       </TooltipText>
       . However, it is the&nbsp;
       <TooltipText text="wisest">
-        Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life. I am calling what I am aware of “truth”.
+        Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life. I called what I am aware of “truth”.
       </TooltipText>
       &nbsp;to use the awareness to guide my life. I long for truths, and this seemed to be the answer I have been searching for.
     </p>
