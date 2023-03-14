@@ -84,7 +84,7 @@ const Software = ({content}: {content: unknown}): React.ReactElement =>
       <section>
         <h4>Channel: Freedom in Computing</h4>
 
-        <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
+        <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open-source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
 
         <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now have only one upload but I plan to add more videos down the road.</p>
 
@@ -100,7 +100,7 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
     <section>
       <h3 className="highlight">Academic Publication</h3>
 
-      <p>I have published two papers in communication technology around the end of my undergraduate studies.</p>
+      <p>I published two papers in communication technology around the end of my undergraduate studies.</p>
 
       {renderItems(content, ["misc", "academic-publication"])}
     </section>
@@ -111,7 +111,7 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
       <section className="abandoned">
         <h4>Short Games Only</h4>
 
-        <p>This video games <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains just five videos showing replays of two games (Clash Royale and Cryptark) without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
+        <p>This video games <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains five videos showing replays of two games (Clash Royale and Cryptark) without commentaries. I have abandoned it since 2020-06-01 in favor of open-source video games.</p>
       </section>
     </section>
 
@@ -121,7 +121,7 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
       <section className="abandoned">
         <h4>A Freedom Blog</h4>
 
-        <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is oriented toward the freedom-friendly stuff of mixed qualities on many topics. I abandoned it since 2021-12-02 to focus my lifelong efforts on the works of what can truly matter.</p>
+        <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12-02 to focus my lifelong efforts on the works of what can truly matter.</p>
       </section>
     </section>
   </>

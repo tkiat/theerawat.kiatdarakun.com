@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living by my judgments and interpretations of <b className="highlight">what can truly matter</b>, and I am producing works in the areas of sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living by my judgments and interpretations of <b className="highlight">things that can truly matter</b>, and I am producing works in the areas of sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -41,13 +41,13 @@ export const Hi = (): React.ReactElement =>
       &nbsp;of the content here.
     </p>
 
-    <h3 className="highlight">What Can Truly Matter</h3>
+    <h3 className="highlight">Things That Can Truly Matter</h3>
 
     <ol>
       <li>Without sentience, nothing can matter on its own.</li>
-      <li>Therefore, what can matter on its own lies within sentience.</li>
-      <li>And what can truly matter on its own lies within sentience that reflects truth.</li>
+      <li>Therefore, things that can matter on its own lies within sentience.</li>
+      <li>And things that can truly matter on its own lies within sentience that reflects truth.</li>
     </ol>
 
-    <p>What can truly matter on its own, along with things that support or oppose it, constitute what can truly matter, a fundamental element that <i>can</i> make up the true meaning of life.</p>
+    <p>Things that can truly matter on its own, along with things that support or oppose it, constitute things that can truly matter, a fundamental element that <i>can</i> make up the true meaning of life.</p>
   </div>
