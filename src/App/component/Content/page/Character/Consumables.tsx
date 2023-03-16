@@ -72,7 +72,7 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
-      <p>These personal records are a part of my work in progress about things that can truly matter. For consumables, the <i>current</i> ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
+      <p>These personal records are a part of my work in progress about the true meaning of life. For consumables, the <i>current</i> ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
 
       <section>
         <h3 className="highlight">Spendings</h3>
