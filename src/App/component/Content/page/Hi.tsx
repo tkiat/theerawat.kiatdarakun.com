@@ -41,15 +41,15 @@ export const Hi = (): React.ReactElement =>
       &nbsp;of the content here.
     </p>
 
-    <h3 className="highlight">The True Meaning</h3>
+    <h3 className="highlight">True Meaning</h3>
 
     <ol>
       <li>Without sentience, nothing can matter on its own.</li>
-      <li>Therefore, only sentience can matter on its own.</li>
+      <li>Therefore, things that can matter on their own lie within sentience.</li>
       <li>Things that can matter are things that can matter on their own, plus things that cannot matter on their own.</li>
-      <li>Therefore, things that can matter are sentience, plus things that can support or oppose it.</li>
-      <li>And things that can truly matter are sentience that reflects truth, plus things that can support or oppose it.</li>
+      <li>Therefore, things that can matter lie within sentience, plus things that can support or oppose it.</li>
+      <li>And things that can truly matter lie within sentience that reflects truth, plus things that can support or oppose it.</li>
     </ol>
 
-    <p>Things that can truly matter constitute the true meaning. What is the truth? The truth is in the eye of the beholder, except the omniscient one of course.</p>
+    <p>Things that can truly matter constitute true meaning. What is the truth? The truth is in the eye of the beholder unless one is omniscient of course.</p>
   </div>
