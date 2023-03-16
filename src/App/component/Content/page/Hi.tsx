@@ -51,5 +51,5 @@ export const Hi = (): React.ReactElement =>
       <li>And things that can truly matter lie within consciousness that reflects truth, plus things that can support or oppose it.</li>
     </ol>
 
-    <p>Things that can truly matter constitute true meaning. What is the truth? The truth is in the eye of the beholder unless one is omniscient of course.</p>
+    <p>Only things that can truly matter constitute true meaning. What is the truth? The truth is in the eye of the beholder unless one is omniscient.</p>
   </div>
