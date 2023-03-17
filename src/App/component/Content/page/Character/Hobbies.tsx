@@ -18,6 +18,6 @@ export const Hobbies = (): React.ReactElement =>
       <dd>Software enables me to create and share my thoughts with the whole world beyond what text alone can convey. I advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open-source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</dd>
 
       <dt><b className="highlight">Philosophy</b></dt>
-      <dd>Knowledge of philosophy should make my works (about things that can truly matter) more accessible and acceptable to the general public. I have yet to digest a lot of works but I will do so in my free time.</dd>
+      <dd>Knowledge of philosophy should make my works (about the true meaning of life) more accessible and acceptable to the general public. I have yet to digest a lot of works but I will do so in my free time.</dd>
     </dl>
   </section>
