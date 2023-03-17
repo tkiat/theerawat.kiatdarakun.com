@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living by my judgments and interpretations of <b className="highlight">the true meaning</b>, and I am producing works in the areas of sustainability, software, and philosophy that reflect it. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living by my judgments and interpretations of <b className="highlight">the true meaning of life</b>, and I am producing works in the areas of sustainability, software, and philosophy that reflect it. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -41,15 +41,15 @@ export const Hi = (): React.ReactElement =>
       &nbsp;of the content here.
     </p>
 
-    <h3 className="highlight">The True Meaning</h3>
+    <h3 className="highlight">The True Meaning of Life</h3>
 
     <ol>
-      <li>Without consciousness, nothing can matter on its own.</li>
-      <li>Therefore, things that can matter on their own lie within consciousness.</li>
-      <li>Things that can matter are things that can matter on their own, plus things that cannot matter on their own.</li>
-      <li>Therefore, things that can matter lie within consciousness, plus things that can support or oppose it.</li>
-      <li>And things that can truly matter lie within consciousness that reflects truth, plus things that can support or oppose it.</li>
+      <li>Without consciousness, nothing may matter on its own.</li>
+      <li>Therefore, only consciousness <i>may</i> matter on its own.</li>
+      <li>And only consciousness, together with things that can support or oppose it, may matter.</li>
+      <li>Only things that truly matter constitute the true meaning of life.</li>
+      <li>Therefore, only consciousness that matters and reflects truths, together with things that can support or oppose it, constitutes the true meaning of life.</li>
     </ol>
 
-    <p>Only things that can truly matter constitute true meaning. What is the truth? The truth is in the eye of the beholder unless one is omniscient.</p>
+    <p>People may have different opinions about truths and what kind of consciousness matters. I regard truths as my sensory perception and widely accepted scientific research and consciousness that matters as the one that can arise on its own.</p>
   </div>

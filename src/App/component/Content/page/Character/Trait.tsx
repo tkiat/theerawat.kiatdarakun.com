@@ -95,9 +95,9 @@ export const Trait = (): React.ReactElement =>
 
         &nbsp;—&nbsp;
         <TooltipText text="Life Purpose">
-          <p>Life with purpose is an end in itself. However, there is objectively no point in my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. Since this realization cannot be applied to low-level creatures fully, for it cannot reason, it cannot be fully applied to me as well because I share many instincts with those creatures. Therefore, my only hope to find any purpose lies within my subjective self.</p>
+          <p>Life with purpose is an end in itself. However, there is objectively no point in my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. Since this realization cannot be applied to low-level creatures fully, for it cannot reason, it cannot be fully applied to me as well because I am also not a perfectly reasonable creature. Therefore, my only hope to find any purpose lies within my subjective self.</p>
 
-          <p>I can either commit suicide or live. If I decide to live, I can only follow either the true or made-up meaning of life, both, or neither of them. Made-up meaning is straightforward (e.g., music, better life, fame, money), but true meaning cannot go beyond consciousness that reflects truths, plus things that can support or oppose it. My survival instinct nudged me not to commit suicide, and my innate curiosity drove me to live by true meaning.</p>
+          <p>I can either commit suicide or live, but my survival instinct nudged me not to commit suicide. There are many ways to live, but my (seemingly innate) curiosity drove me to live by true meaning. Unlike made-up meaning (i.e., set music, better life, fame, money, etc., as goals out of thin air), true meaning cannot go beyond consciousness that reflects truths, plus things that can support or oppose it.</p>
         </TooltipText>
       </li>
     </ul>
