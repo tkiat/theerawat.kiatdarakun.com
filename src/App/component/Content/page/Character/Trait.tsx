@@ -95,9 +95,9 @@ export const Trait = (): React.ReactElement =>
 
         &nbsp;—&nbsp;
         <TooltipText text="Life Purpose">
-          <p>Life with purpose is an end in itself. However, there is objectively no point in my existence since, without any sentient being in the universe, “goodness”, “badness”, and any purpose don't exist. Since this realization cannot be applied to low-level creatures fully, for it cannot reason, it cannot be fully applied to me as well because I am also not a perfectly reasonable creature. Therefore, my only hope to find any purpose lies within my subjective self.</p>
+          <p>Life with purpose is an end in itself. However, only my subjective self constitutes my life purpose for two reasons. First, any purpose cannot exist in the universe without any conscious being, and therefore any purpose lies within conscious beings. Second, an objective purpose cannot inhere a conscious being since any purpose cannot exist without any important thing, and it requires subjectiveness to regard something as important.</p>
 
-          <p>I can either commit suicide or live, but my survival instinct nudged me not to commit suicide. There are many ways to live, but my (seemingly innate) curiosity drove me to live by true meaning. Unlike made-up meaning (i.e., set music, better life, fame, money, etc., as goals out of thin air), true meaning cannot go beyond consciousness that reflects truths, plus things that can support or oppose it.</p>
+          <p>After this realization, I began with the most basic actions I can take: commit suicide or live. My survival instinct nudged me to live, and my (seemingly innate) curiosity drove me to live by true meaning. Unlike made-up meaning (like music, fame, money, etc.), true meaning cannot go beyond consciousness that matters and reflects truths, plus things that can support or oppose it.</p>
         </TooltipText>
       </li>
     </ul>
@@ -124,7 +124,7 @@ export const Trait = (): React.ReactElement =>
             <li>No piercings and tattoos</li>
             <li>Don't usually wear watch</li>
             <li>Wear prescription glasses</li>
-            <li>Usually wear only a short pant without underware at home</li>
+            <li>Usually wear only a short pant without underwear at home</li>
           </ul>
         </TooltipText>
         ,&ensp;

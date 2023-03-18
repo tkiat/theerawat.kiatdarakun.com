@@ -44,12 +44,11 @@ export const Hi = (): React.ReactElement =>
     <h3 className="highlight">The True Meaning of Life</h3>
 
     <ol>
-      <li>Without consciousness, nothing may matter on its own.</li>
-      <li>Therefore, only consciousness <i>may</i> matter on its own.</li>
-      <li>And only consciousness, together with things that can support or oppose it, may matter.</li>
-      <li>Only things that truly matter constitute the true meaning of life.</li>
-      <li>Therefore, only consciousness that matters and reflects truths, together with things that can support or oppose it, constitutes the true meaning of life.</li>
+      <li>Without consciousness, nothing may matter on its own. Therefore, only consciousness <i>may</i> matter on its own.</li>
+      <li>It is always subjective to regard something as important. Therefore, only subjective consciousness <i>may</i> matter on its own.</li>
+      <li>And only subjective consciousness, together with things that can support or oppose it, may matter.</li>
+      <li>Only things that truly matter constitute the true meaning of life. Therefore, only subjective consciousness that matters and reflects truths, together with things that can support or oppose it, constitutes the true meaning of life.</li>
     </ol>
 
-    <p>People may have different opinions about truths and what kind of consciousness matters. I regard truths as my sensory perception and widely accepted scientific research and consciousness that matters as the one that can arise on its own.</p>
+    <p>People may have different opinions about truths and what kind of subjective consciousness matters. I regard truths as my sensory perception and widely accepted scientific research and subjective consciousness that matters as the one that can arise on its own.</p>
   </div>

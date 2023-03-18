@@ -1,3 +1,12 @@
+"2023-03-18":
+  - delivery:
+      type: public
+      km: 33
+    types:
+      - name: nonedibles
+        items:
+        - {t: "baking soda",thb: 55,g: 1000,nv: 0,oc: 0,mu: n/a,u: n/a,p: 10,pa: 0,gl: 0}
+        - {t: "soda ash",thb: 45,g: 1000,nv: 0,oc: 0,mu: n/a,u: n/a,p: 10,pa: 0,gl: 0}
 "2023-03-11":
   - delivery:
       type: public

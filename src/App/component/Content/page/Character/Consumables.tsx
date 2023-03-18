@@ -72,13 +72,13 @@ export const Consumables = (): React.ReactElement => {
     <section>
       <h2>Consumables</h2>
 
-      <p>These personal records are a part of my work in progress about the true meaning of life. For consumables, the <i>current</i> ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
+      <p>These personal records are a part of my work in progress about the true meaning of life. For consumables, the current ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
 
       <section>
         <h3 className="highlight">Spendings</h3>
 
         <div className="consumables-panel">
-          <How /> —&nbsp;
+          <How />&ensp;
           <label className="consumables-panel__label" htmlFor="consumables-panel-select">
             {cur.display in avgSummaries ? "Single Week" : "Weekly Avg." }
           </label>
@@ -176,8 +176,8 @@ const How = (): React.ReactElement =>
     <p>I just weigh and record almost all consumables I bought. While it sounds tedious, I often reuse numbers. Below are the explanation of some entries.</p>
 
     <ul>
-      <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I actually want to minimize unnecessary suffering in my own terms, which means I still consume animal products in some occasions. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan products in those occasions here.</li>
-      <li><b className="highlight">Health</b>: I regard consumables that are harmful for health regardless of the amount as <i>unhealthy</i> (like typical ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know how it is made).</li>
+      <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I want to minimize unnecessary suffering on my own terms. This means I still consume animal products on some occasions. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan products on those occasions here.</li>
+      <li><b className="highlight">Health</b>: I regard consumables that are harmful to health even if it is a small amount as <i>unhealthy</i> (like typical ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know how it is made).</li>
       <li><b className="highlight">Delivery</b>: I exclude the delivery price and packaging waste to make it more universal to the reader. Unlike <i>private</i> delivery, <i>public</i> delivery targets multiple destinations per trip. I divide the share accordingly, like half the actual distance when I share half the order with another person.</li>
     </ul>
   </TooltipFa>
