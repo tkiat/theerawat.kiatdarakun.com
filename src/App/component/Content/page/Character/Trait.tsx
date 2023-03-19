@@ -90,16 +90,6 @@ export const Trait = (): React.ReactElement =>
           </ul>
         </TooltipText>
       </li>
-      <li>
-        <b className="highlight">Views</b>
-
-        &nbsp;—&nbsp;
-        <TooltipText text="Life Purpose">
-          <p>Life with purpose is an end in itself. However, only my subjective self constitutes my life purpose for two reasons. First, any purpose cannot exist in the universe without any conscious being, and therefore any purpose lies within conscious beings. Second, an objective purpose cannot inhere a conscious being since any purpose cannot exist without any important thing, and it requires subjectiveness to regard something as important.</p>
-
-          <p>After this realization, I began with the most basic actions I can take: commit suicide or live. My survival instinct nudged me to live, and my (seemingly innate) curiosity drove me to live by true meaning. Unlike made-up meaning (like music, fame, money, etc.), true meaning cannot go beyond consciousness that matters and reflects truths, plus things that can support or oppose it.</p>
-        </TooltipText>
-      </li>
     </ul>
 
     <h3>External</h3>
@@ -149,3 +139,13 @@ export const Trait = (): React.ReactElement =>
       </li>
     </ul>
   </section>
+//       <li>
+//         <b className="highlight">Views</b>
+// 
+//         &nbsp;—&nbsp;
+//         <TooltipText text="Life Purpose">
+//           <p>Life with purpose is an end in itself. Only my subjective self constitutes my life purpose since only things that I regard as important constitute my life purpose and it requires my subjective self to regard so.</p>
+// 
+//           <p>After this realization, I began with the most basic actions I can take: commit suicide or live. My survival instinct nudged me to live, and my (seemingly innate) curiosity drove me to live by true meaning. Unlike made-up meaning (like music, fame, money, etc.), true meaning cannot go beyond consciousness that matters and reflects truths, plus things that can support or oppose it.</p>
+//         </TooltipText>
+//       </li>

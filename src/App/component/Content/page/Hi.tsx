@@ -41,14 +41,14 @@ export const Hi = (): React.ReactElement =>
       &nbsp;of the content here.
     </p>
 
-    <h3 className="highlight">The True Meaning of Life</h3>
+    <h3 className="highlight">The True Meaning</h3>
 
-    <ol>
-      <li>Without consciousness, nothing may matter on its own. Therefore, only consciousness <i>may</i> matter on its own.</li>
-      <li>It is always subjective to regard something as important. Therefore, only subjective consciousness <i>may</i> matter on its own.</li>
-      <li>And only subjective consciousness, together with things that can support or oppose it, may matter.</li>
-      <li>Only things that truly matter constitute the true meaning of life. Therefore, only subjective consciousness that matters and reflects truths, together with things that can support or oppose it, constitutes the true meaning of life.</li>
-    </ol>
+    <p>I aspire to live by the true meaning, but I don't know any of the absolute truths. Therefore, the best I can do is to live the least illusory path where I minimize everything that is certainly illusory, namely made-up things without any basis. The true meaning requires truths and meaning (i.e., importance), and it takes the following definitions to live the least illusory path.</p>
 
-    <p>People may have different opinions about truths and what kind of subjective consciousness matters. I regard truths as my sensory perception and widely accepted scientific research and subjective consciousness that matters as the one that can arise on its own.</p>
+    <ul>
+      <li><b className="highlight">Truths</b>. Truths are in the eye of the beholder, but one cannot, on the least illusory path, regards things that are made-up as truths. A theist who has Christian faith may regard bible as a source of truth, while some atheists may regard bible as made-up texts, hence not a source of truth. Some common sources of truths that many people hold are sensory perception and widely-accepted scientific research.</li>
+      <li><b className="highlight">Importance</b>. Importance is in the eye of the beholder, but one cannot, on the least illusory path, regards things that are either made-up or without any basis as important. This means only subjective consciousness that can arise on its own may be important.</li>
+    </ul>
+
+    <p>One may extend truths by means of pure transformations (like denotation and logic) and importance by discovering things that can support or oppose the original important things, i.e., subjective consciousness that can arise on its own. The true meaning of life cannot go beyond such extensions.</p>
   </div>
