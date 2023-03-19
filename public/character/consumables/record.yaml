@@ -7,6 +7,16 @@
         items:
         - {t: "baking soda",thb: 55,g: 1000,nv: 0,oc: 0,mu: n/a,u: n/a,p: 10,pa: 0,gl: 0}
         - {t: "soda ash",thb: 45,g: 1000,nv: 0,oc: 0,mu: n/a,u: n/a,p: 10,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 1,g: 1000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "peanut",thb: 80,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "raisin",thb: 20,g: 70,nv: 0,oc: 0,mu: 70,u: 0,p: 8,pa: 0,gl: 0}
 "2023-03-11":
   - delivery:
       type: public
@@ -14,6 +24,7 @@
     types:
       - name: food
         items:
+        - {t: "papaya",thb: 40,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "popcorn",thb: 60,g: 270,nv: 0,oc: 0,mu: 0,u: 270,p: 21,pa: 0,gl: 0}
   - delivery:
       type: no fuel

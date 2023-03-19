@@ -3,7 +3,7 @@ import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../share"
 import {findObjValRecursive} from "@app/share"
-import {WhatCanTrulyMatter} from "./Create/WhatCanTrulyMatter"
+import {TrueMeaning} from "./Create/TrueMeaning"
 
 const source = "/create.yaml"
 
@@ -38,7 +38,7 @@ export const Create = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        <WhatCanTrulyMatter />,
+        <TrueMeaning />,
         <Software content={content} />,
         <Misc content={content}/>,
       ]

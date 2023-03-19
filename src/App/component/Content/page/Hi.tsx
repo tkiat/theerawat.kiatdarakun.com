@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am living by my judgments and interpretations of <b className="highlight">the true meaning of life</b>, and I am producing works in the areas of sustainability, software, and philosophy that reflect it. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">the true meaning</b>. I am producing works on sustainability, software, and philosophy that reflect it. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -38,17 +38,20 @@ export const Hi = (): React.ReactElement =>
           This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
         </span>
       </TooltipTextWithDelay>
-      &nbsp;of the content here.
+      &nbsp;for content here.
     </p>
 
     <h3 className="highlight">The True Meaning</h3>
 
-    <p>I aspire to live by the true meaning, but I don't know any of the absolute truths. Therefore, the best I can do is to live the least illusory path where I minimize everything that is certainly illusory, namely made-up things without any basis. The true meaning requires truths and meaning (i.e., importance), and it takes the following definitions to live the least illusory path.</p>
+    <div>
+      I aspire to live by the true meaning, and I don't know any absolute truth. Therefore, I can only live the least illusory path where I minimize certainly illusory things, i.e., made-up things without any basis. True meaning requires truths and meaning (i.e., importance). Both of them are in the eye of the beholder. However, the least illusory path requires these&nbsp;
+      <TooltipText text="definitions">
+        <ul>
+          <li><b className="highlight">Truths</b>. Truths are everything that is not made up. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.</li>
+          <li><b className="highlight">Importance</b>. Important things are everything that is neither made up nor without any basis, and only subjective consciousness that can arise on its own can satisfy these criteria.</li>
+        </ul>
+      </TooltipText>.
+    </div>
 
-    <ul>
-      <li><b className="highlight">Truths</b>. Truths are in the eye of the beholder, but one cannot, on the least illusory path, regards things that are made-up as truths. A theist who has Christian faith may regard bible as a source of truth, while some atheists may regard bible as made-up texts, hence not a source of truth. Some common sources of truths that many people hold are sensory perception and widely-accepted scientific research.</li>
-      <li><b className="highlight">Importance</b>. Importance is in the eye of the beholder, but one cannot, on the least illusory path, regards things that are either made-up or without any basis as important. This means only subjective consciousness that can arise on its own may be important.</li>
-    </ul>
-
-    <p>One may extend truths by means of pure transformations (like denotation and logic) and importance by discovering things that can support or oppose the original important things, i.e., subjective consciousness that can arise on its own. The true meaning of life cannot go beyond such extensions.</p>
+    <p>One may extend truths through pure transformations (like denotation and logic) and importance by discovering what can support or oppose important things. The true meaning of life cannot go beyond such extensions.</p>
   </div>

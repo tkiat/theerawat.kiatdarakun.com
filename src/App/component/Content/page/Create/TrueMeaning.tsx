@@ -1,12 +1,31 @@
 import React from "react"
 
-import {TooltipFa} from "../../share"
+import {TooltipFa, TooltipText} from "../../share"
 
-export const WhatCanTrulyMatter = (): React.ReactElement =>
+export const TrueMeaning = (): React.ReactElement =>
   <>
-    <h2>Things That Can Truly Matter</h2>
+    <h2>The True Meaning</h2>
 
-    <p>The passage of time forced me to either commit suicide or choose a way of life, and my subjective self inspired me to live by true meaning. Later, my abstract, contemplative journey to find the true meaning culminated in the realization that any meaning is true if and only if it is derived from things that can truly matter, which cannot go beyond sentience that is not created out of thin air, including things that support or oppose it. I am going to finish (and live by) the following works.</p>
+    <p>The passage of time forced me to either commit suicide or live and decide how to live, and my subjective self inspired me to live by true meaning.
+
+    Later, my abstract, contemplative journey to find the true meaning culminated in the realization that any meaning is true if and only if it is derived from things that can truly matter, which cannot go beyond sentience that is not created out of thin air, including things that support or oppose it. I am going to finish (and live by) the following works.</p>
+
+    <div>
+      I aspire to live by the true meaning, and I don't know any absolute truth. Therefore, I can only live the least illusory path where I minimize certainly illusory things, i.e., made-up things without any basis. True meaning requires truths and meaning (i.e., importance). Both of them are in the eye of the beholder. However, the least illusory path requires these&nbsp;
+      <TooltipText text="definitions">
+        <ul>
+          <li><b className="highlight">Truths</b>. Truths are everything that is not made up. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.</li>
+          <li><b className="highlight">Importance</b>. Important things are everything that is neither made up nor without any basis, and only subjective consciousness that can arise on its own can satisfy these criteria.</li>
+        </ul>
+      </TooltipText>.
+    </div>
+
+    <p>One may extend truths through pure transformations (like denotation and logic) and importance by discovering what can support or oppose important things. The true meaning of life cannot go beyond such extensions.</p>
+
+
+
+
+
 
     <div>
       Only <b className="highlight">Concrete Truths About Things That Can Truly Matter</b>&nbsp;
