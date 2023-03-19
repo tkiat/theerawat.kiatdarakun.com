@@ -44,10 +44,10 @@ export const Hi = (): React.ReactElement =>
     <h3 className="highlight">The True Meaning</h3>
 
     <div>
-      I aspire to live by the true meaning, and I don't know any absolute truth. Therefore, I can only live the least illusory path where I minimize certainly illusory things, i.e., made-up things without any basis. True meaning requires truths and meaning, and both of them are in the eye of the beholder. However, the least illusory path requires these&nbsp;
+      I aspire to live by the true meaning, and I don't know any absolute truth. Therefore, I can only live the least illusory path, which minimizes certainly illusory things, i.e., made-up things without any basis. True meaning requires truths and meaning, which are in the eye of the beholder. However, the least illusory path requires these&nbsp;
       <TooltipText text="definitions">
         <ul>
-          <li><b className="highlight">Truths</b>. Truths are everything that is not made up. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.</li>
+          <li><b className="highlight">Truths</b>. Truths are everything that is not made up, and people may have different opinions about them. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.</li>
           <li><b className="highlight">Meaning (i.e., importance)</b>. Important things are everything that is neither made up nor without any basis, and only subjective consciousness that can arise on its own can satisfy these criteria.</li>
         </ul>
       </TooltipText>.
