@@ -21,7 +21,7 @@ export const Realization = (): React.ReactElement =>
       <TooltipText text="meaning">
         <p>Only subjective consciousness may have meaning (i.e., a sense of importance) because it is the only prerequisite for any entity to consider anything of importance. Meaning in anything (like iPhone, love, and cats) is only due to subjective consciousness in relation to that entity, not that entity itself.</p>
 
-        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, pleasure from eating (it is natural but the action is deliberate) and pain from deliberate self-harm <i>cannot</i> have meaning.</p>
+        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, subjective consciousness from deliberate actions (like pleasure from eating and pain from self-harm) <i>cannot</i> have meaning.</p>
       </TooltipText>. One may extend truths through pure transformations (like denotation and logic) and meaning by discovering what can support or oppose meaningful things. The true meaning of life cannot go beyond such extensions.
     </div>
 

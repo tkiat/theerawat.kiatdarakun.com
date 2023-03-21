@@ -19,11 +19,11 @@ export const TrueMeaning = (): React.ReactElement =>
       <TooltipText text="meaning">
         <p>Only subjective consciousness may have meaning (i.e., a sense of importance) because it is the only prerequisite for any entity to consider anything of importance. Meaning in anything (like iPhone, love, and cats) is only due to subjective consciousness in relation to that entity, not that entity itself.</p>
 
-        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, pleasure from eating (it is natural but the action is deliberate) and pain from deliberate self-harm <i>cannot</i> have meaning.</p>
+        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, subjective consciousness from deliberate actions (like pleasure from eating and pain from self-harm) <i>cannot</i> have meaning.</p>
       </TooltipText>.
     </div>
 
-    <p>In this work, I will first describe truths and meaning in abstract ways. Then, I will do the same in concrete ways. Next, I will extend truths and meaning, followed by my judgments about these extensions. Finally, I will examine the possibilities of the true meaning of life and compare them with existing literature. Additionally, I will provide a record of my choices (e.g., consumables and belongings) and the underlying reasons for them. It is a practical example of life with constant pursuits of true meaning.</p>
+    <p>In this work, I will first describe truths and meaning abstractly and then concretely. Next, I will extend truths and meaning, followed by my judgments about these extensions. Finally, I will examine the possibilities of the true meaning of life and compare them with existing literature. Additionally, I will provide a record of my choices (e.g., consumables and belongings) and the underlying reasons for them. It is a practical example of life with constant pursuits of true meaning.</p>
 
     <h3 className="highlight">Society That Truly Serves Member</h3>
 
