@@ -160,6 +160,7 @@ const isAppItem = (x: unknown): x is AppItem =>
     "abandoned" in x && typeof x.abandoned === "boolean"
   )
 
+// TODO separate renderAppItems/ContentItems
 const renderItems = (content: unknown, keys: string[]) => {
   const arr = findObjValRecursive(content, keys)
 

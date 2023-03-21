@@ -13,13 +13,16 @@ export const Realization = (): React.ReactElement =>
     </p>
 
     <div>
-      I aspire to live by the true meaning, and I don't know any absolute truth. Therefore, I can only live the least illusory path, which minimizes certainly illusory things, i.e., made-up things without any basis. True meaning requires truths and meaning, which are in the eye of the beholder. However, the least illusory path requires these&nbsp;
-      <TooltipText text="definitions">
-        <ul>
-          <li><b className="highlight">Truths</b>. Truths are everything that is not made up, and people may have different opinions about them. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.</li>
-          <li><b className="highlight">Meaning (i.e., importance)</b>. Important things are everything that is neither made up nor without any basis, and only subjective consciousness that can arise on its own can satisfy these criteria.</li>
-        </ul>
-      </TooltipText>. One may extend truths through pure transformations (like denotation and logic) and importance by discovering what can support or oppose important things. The true meaning of life cannot go beyond such extensions.
+      I don't know any absolute truth, but I am certain of some illusions. Therefore, instead of the path of absolute truths, I live the least illusory path, which minimizes the only illusions I know, i.e., made-up things. True meaning requires truths and meaning, which are in the eye of the beholder. However, the least illusory path requires the narrowest definitions of&nbsp;
+      <TooltipText text="truths">
+        Truths are everything that is not made up, and people may have different opinions about them. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.
+      </TooltipText>
+      &nbsp;and&nbsp;
+      <TooltipText text="meaning">
+        <p>Only subjective consciousness may have meaning (i.e., a sense of importance) because it is the only prerequisite for any entity to consider anything of importance. Meaning in anything (like iPhone, love, and cats) is only due to subjective consciousness in relation to that entity, not that entity itself.</p>
+
+        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, pleasure from eating (it is natural but the action is deliberate) and pain from deliberate self-harm <i>cannot</i> have meaning.</p>
+      </TooltipText>. One may extend truths through pure transformations (like denotation and logic) and meaning by discovering what can support or oppose meaningful things. The true meaning of life cannot go beyond such extensions.
     </div>
 
     <p>I was finally satisfied with my abstract journey since I had gained a bird's eye view of my existence. Next, I wanted to live by my interpretations and judgments about this realization and produce works about it.</p>
