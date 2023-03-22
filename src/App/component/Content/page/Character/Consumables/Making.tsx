@@ -42,6 +42,7 @@ export const Making = (): React.ReactElement =>
       </li>
     </ul>
 
+    {/*
     <h4>Drinks</h4>
 
     <ul className="more-gap-list">
@@ -105,4 +106,5 @@ export const Making = (): React.ReactElement =>
         </TooltipTextWithDelay>
       </li>
     </ul>
+    */}
   </>
