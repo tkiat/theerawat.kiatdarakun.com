@@ -25,6 +25,7 @@
         - {t: "banana",thb: 30,g: 4650,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 25,g: 466,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 28,g: 620,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "coconut milk",thb: 75,g: 759,nv: 0,oc: 0,mu: 759,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "cucumber (long)",thb: 16,g: 414,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 21,g: 627,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "false pakchoi",thb: 10,g: 327,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
