@@ -1,11 +1,11 @@
 "2023-03-18":
-#   - delivery:
-#       type: public
-#       km: TODO
-#     types:
-#       - name: nonedibles
-#         items:
-#         - {t: "toothbrush (bamboo, x2)",thb: 121,g: n/a,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 0,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 52
+    types:
+      - name: nonedibles
+        items:
+        - {t: "toothbrush (bamboo, x2)",thb: 121,g: n/a,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 0,pa: 4,gl: 0}
   - delivery:
       type: public
       km: 33
@@ -25,6 +25,7 @@
         - {t: "banana",thb: 30,g: 4650,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 25,g: 466,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage (chinese)",thb: 28,g: 620,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "coconut",thb: 20,g: 2200,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "coconut milk",thb: 75,g: 759,nv: 0,oc: 0,mu: 759,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "cucumber (long)",thb: 16,g: 414,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 21,g: 627,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
