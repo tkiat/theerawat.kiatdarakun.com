@@ -31,9 +31,7 @@ export const Digest = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-user"></i>,
-      <i className="fa-solid fa-users"></i>,
-      <i className="fa-solid fa-earth-americas"></i>,
-      <i className="fa-solid fa-ellipsis-vertical"></i>,
+      <i className="fa-solid fa-mountain-sun"></i>,
       <i className="fa-solid fa-wand-magic-sparkles"></i>,
     ],
     content: {
@@ -42,8 +40,6 @@ export const Digest = (): React.ReactElement => {
         <Section0 content={content} />,
         <Section1 content={content} />,
         <Section2 content={content} />,
-        <Section3 content={content} />,
-        <Section4 content={content} />,
       ]
     }
   }
@@ -53,55 +49,63 @@ export const Digest = (): React.ReactElement => {
 const Prelude = (): React.ReactElement =>
   <>
     <br />
-    Here is the list of pieces of media that align with my&nbsp;
+    I can retain memory better by writing a (very concise) summary of any piece of media. I divide all pieces of media into three parts: the ones relevant to the true meaning and everything else (further divided into nonfiction and fiction). All items here align with my&nbsp;
     <TooltipText text="ideals">
       <ul>
-        <li>Available digitally</li>
-        <li>Available DRM-free or free of charge</li>
-        <li>Can be consumed on FOSS operating systems (like Linux)</li>
-        <li>For video games, they have to be open-source</li>
+        <li>Available free of charge, DRM-free, or as part of an affordable subscription</li>
+        <li>Available digitally and can be consumed on FOSS operating systems (like Linux)</li>
+        <li>Open-source (for video games only)</li>
       </ul>
     </TooltipText>.
   </>
 
 const Section0 = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h2>Individual</h2>
-    {renderItems(content, ["individual"])}
+    <h2>True Meaning</h2>
+
+    <section>
+      <h3 className="highlight">Myself</h3>
+      {renderItems(content, ["true meaning", "being", "myself"])}
+    </section>
+
+    <section>
+      <h3 className="highlight">Human</h3>
+      {renderItems(content, ["true meaning", "being", "human"])}
+    </section>
+
+    <section>
+      <h3 className="highlight">Nonhuman</h3>
+      {renderItems(content, ["true meaning", "being", "nonhuman"])}
+    </section>
+
+    <section>
+      <h3 className="highlight">Society</h3>
+
+      <section>
+        <h4>Religion</h4>
+        {renderItems(content, ["true meaning", "society", "religion"])}
+      </section>
+    </section>
   </>
 
 const Section1 = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h2>Human Society</h2>
+    <h2>Nonfiction</h2>
 
     <section>
-      <h3 className="highlight">Religion</h3>
-      {renderItems(content, ["human society", "religion"])}
+      <h3 className="highlight">Software</h3>
+      {renderItems(content, ["unrelated", "nonfiction", "software"])}
     </section>
   </>
 
 const Section2 = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h2>Nonhumans and the Earth</h2>
-
-    {renderItems(content, ["nonhumans and the earth"])}
-  </>
-
-const Section3 = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h2>Other Nonfiction</h2>
-
-    <section>
-      <h3 className="highlight">Software</h3>
-      {renderItems(content, ["other nonfiction", "software"])}
-    </section>
-  </>
-
-const Section4 = ({content}: {content: unknown}): React.ReactElement =>
-  <>
     <h2>Fiction</h2>
 
-    {renderItems(content, ["fiction"])}
+    <section>
+      <h3 className="highlight">Comics</h3>
+      {renderItems(content, ["unrelated", "fiction", "comics"])}
+    </section>
   </>
 
 const getFormatIcon = (f: string) => {

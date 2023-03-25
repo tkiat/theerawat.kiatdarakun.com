@@ -1,5 +1,12 @@
 "2023-03-18":
   - delivery:
+      type: private
+      km: 3
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 28,g: 28000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+  - delivery:
       type: public
       km: 52
     types:
