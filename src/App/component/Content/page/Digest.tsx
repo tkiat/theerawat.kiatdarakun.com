@@ -30,8 +30,8 @@ export const Digest = (): React.ReactElement => {
 
   const data = {
     icons: [
-      <i className="fa-solid fa-user"></i>,
-      <i className="fa-solid fa-mountain-sun"></i>,
+      <i className="fa-regular fa-square-check"></i>,
+      <i className="fa-solid fa-hammer"></i>,
       <i className="fa-solid fa-wand-magic-sparkles"></i>,
     ],
     content: {
@@ -49,7 +49,11 @@ export const Digest = (): React.ReactElement => {
 const Prelude = (): React.ReactElement =>
   <>
     <br />
-    I can retain memory better by writing a (very concise) summary of any piece of media. I divide all pieces of media into three parts: the ones relevant to the true meaning and everything else (further divided into nonfiction and fiction). All items here align with my&nbsp;
+    I can retain memory better by writing a (very concise) summary of pieces of media that interest me. Here, all items are divided into three parts: the ones relevant to the&nbsp;
+    <TooltipText text="true meaning">
+      It supports my works on true meaning (in short, true meaning lies within subjective consciousness that can arise on its own) so it deserves a special attention here.
+    </TooltipText>
+    &nbsp;and everything else (further divided into nonfiction and fiction), and they must align with my&nbsp;
     <TooltipText text="ideals">
       <ul>
         <li>Available free of charge, DRM-free, or as part of an affordable subscription</li>
@@ -74,17 +78,17 @@ const Section0 = ({content}: {content: unknown}): React.ReactElement =>
     </section>
 
     <section>
-      <h3 className="highlight">Nonhuman</h3>
-      {renderItems(content, ["true meaning", "being", "nonhuman"])}
-    </section>
-
-    <section>
-      <h3 className="highlight">Society</h3>
+      <h3 className="highlight">Human Society</h3>
 
       <section>
         <h4>Religion</h4>
-        {renderItems(content, ["true meaning", "society", "religion"])}
+        {renderItems(content, ["true meaning", "human society", "religion"])}
       </section>
+    </section>
+
+    <section>
+      <h3 className="highlight">Nonhuman</h3>
+      {renderItems(content, ["true meaning", "being", "nonhuman"])}
     </section>
   </>
 

@@ -23,7 +23,7 @@ export const TrueMeaning = (): React.ReactElement =>
       </TooltipText>.
     </div>
 
-    <p>In this work, I will first describe truths and meaning abstractly and then concretely. Next, I will extend truths and meaning, followed by my judgments about these extensions. Finally, I will examine the possibilities of the true meaning of life and compare them with existing literature. Additionally, I will provide a record of my choices (e.g., consumables and belongings) and the underlying reasons for them. It is a practical example of life with constant pursuits of true meaning.</p>
+    <p>In this work, I will first describe truths and meaning abstractly and then concretely. Next, I will extend truths and meaning, followed by my judgments about these extensions. Finally, I will examine the possibilities of the true meaning of life and compare them with existing literature. Additionally, I will provide a practical example of life with constant pursuits of true meaning, i.e., a record of my choices (e.g., consumables and belongings) and the underlying reasons for them.</p>
 
     <h3 className="highlight">Society That Truly Serves Member</h3>
 
