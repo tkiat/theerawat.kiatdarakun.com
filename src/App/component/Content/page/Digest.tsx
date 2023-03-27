@@ -97,6 +97,11 @@ const Section1 = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Nonfiction</h2>
 
     <section>
+      <h3 className="highlight">Self-Help</h3>
+      {renderItems(content, ["unrelated", "nonfiction", "self-help"])}
+    </section>
+
+    <section>
       <h3 className="highlight">Software</h3>
       {renderItems(content, ["unrelated", "nonfiction", "software"])}
     </section>

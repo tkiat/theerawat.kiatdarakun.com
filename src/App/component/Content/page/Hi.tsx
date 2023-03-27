@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">the true meaning</b>. I am producing works on sustainability, software, and philosophy that reflect it. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">true meaning</b>, and I am producing works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -41,20 +41,21 @@ export const Hi = (): React.ReactElement =>
       &nbsp;for content here.
     </p>
 
-    <h3 className="highlight">The True Meaning</h3>
+    <h3 className="highlight">True Meaning</h3>
 
     <div>
-      I don't know any absolute truth, but I am certain of some illusions. Therefore, instead of the path of absolute truths, I live the least illusory path, which minimizes the only illusions I know, i.e., made-up things. True meaning requires truths and meaning, which are in the eye of the beholder. However, the least illusory path requires the narrowest definitions of&nbsp;
+      The definitions of&nbsp;
       <TooltipText text="truths">
-        Truths are everything that is not made up, and people may have different opinions about them. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.
+        One can be at least certain that anything made up out of thin air by oneself is not truth. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">
-        <p>Only subjective consciousness may have meaning (i.e., a sense of importance) because it is the only prerequisite for any entity to consider anything of importance. Meaning in anything (like iPhone, love, and cats) is only due to subjective consciousness in relation to that entity, not that entity itself.</p>
-
-        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, subjective consciousness from deliberate actions (like pleasure from eating and pain from self-harm) <i>cannot</i> have meaning.</p>
-      </TooltipText>.
+        Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, subjective consciousness, together with things that can support or oppose it, may have meaning.
+      </TooltipText>
+      &nbsp;can be very broad. However, when combined, the&nbsp;
+      <TooltipText text="broadest definition">
+        One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that can arise on its own (i.e., not made up out of thin air), together with things that can support or oppose it, may have true meaning. It includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
+      </TooltipText>
+      &nbsp;of true meaning seems manageable. The true meaning of life cannot go beyond one's interpretations of true meaning.
     </div>
-
-    <p>One may extend truths through pure transformations (like denotation and logic) and meaning by discovering what can support or oppose meaningful things. The true meaning of life cannot go beyond such extensions.</p>
   </div>
