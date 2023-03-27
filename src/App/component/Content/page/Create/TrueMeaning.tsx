@@ -11,19 +11,21 @@ export const TrueMeaning = (): React.ReactElement =>
     <h3 className="highlight">The True Meaning of Life</h3>
 
     <div>
-      True meaning requires truths and meaning, which are in the eye of the beholder. Stumbling upon the vagueness of the terms, I started my abstract, contemplative journey to find a more specific explanation. This journey culminated in the realization that I don't know any absolute truth but I am certain of some illusions. Therefore, instead of the path of absolute truths, I can live the least illusory path, which minimizes the only illusions I know, i.e., made-up things. This path requires the narrowest definitions of&nbsp;
+      The definitions of&nbsp;
       <TooltipText text="truths">
-        Truths are everything that is not made up, and people may have different opinions about them. A theist who has Christian faith may regard the bible as a source of truth, while some atheists may regard it as made-up texts, hence not a source of truth. Common sources of truth that many people hold include sensory perception and widely-accepted scientific research.
+        One can be at least certain that anything made up out of thin air by oneself is not truth. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by him/herself. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">
-        <p>Only subjective consciousness may have meaning (i.e., a sense of importance) because it is the only prerequisite for any entity to consider anything of importance. Meaning in anything (like iPhone, love, and cats) is only due to subjective consciousness in relation to that entity, not that entity itself.</p>
-
-        <p>Being bounded by truths, meaning has to arise on its own (since it cannot be made up). In other words, only subjective consciousness that can arise on its own may have meaning. Pain from hunger (that arises from existing bodily functions) and a mother's instinctual compassion for her kids <i>may</i> have meaning. However, subjective consciousness from deliberate actions (like pleasure from eating and pain from self-harm) <i>cannot</i> have meaning.</p>
-      </TooltipText>.
+        Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, subjective consciousness, together with things that can support or oppose it, may have meaning.
+      </TooltipText>
+      &nbsp;can be very broad. However, when combined, the&nbsp;
+      <TooltipText text="broadest definition">
+        One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that can arise on its own (i.e., not made up out of thin air), together with things that can support or oppose it, may have true meaning. It includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
+      </TooltipText>
+      &nbsp;of true meaning seems manageable. In this work, after describing true meaning in the broadest sense, I will explore the possible interpretations of the true meaning of life (which constitutes only true meaning) and then compare them with existing thoughts. Additionally, I will provide a record (of, e.g., the underlying reasons for consumables and belongings of my choice) that serves as a practical example of the pursuit of true meaning.
     </div>
 
-    <p>In this work, I will first describe truths and meaning abstractly and then concretely. Next, I will extend truths and meaning, followed by my judgments about these extensions. Finally, I will examine the possibilities of the true meaning of life and compare them with existing literature. Additionally, I will provide a practical example of life with constant pursuits of true meaning, i.e., a record of my choices (e.g., consumables and belongings) and the underlying reasons for them.</p>
 
     <h3 className="highlight">Society That Truly Serves Member</h3>
 
