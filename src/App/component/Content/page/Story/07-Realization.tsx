@@ -25,5 +25,5 @@ export const Realization = (): React.ReactElement =>
       <TooltipText text="broadest definition">
         One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that can arise on its own (i.e., not made up out of thin air), together with things that can support or oppose it, may have true meaning. It includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
       </TooltipText>
-      &nbsp;of true meaning seems manageable. Realizing that the true meaning of life cannot go beyond one's interpretations of true meaning, I was finally satisfied with my abstract journey since I saw the possible path out of the darkness. I wanted to live by my interpretations and judgments about this realization and produce works about it.</p>
+      &nbsp;of true meaning seems manageable. Realizing that the true meaning of life constitutes (one's judgments and interpretations of) true meaning, I finally saw the possible path out of the darkness of ignorance. I wanted to live by my interpretations and judgments about this realization and produce works about it.</p>
   </>

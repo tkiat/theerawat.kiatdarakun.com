@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">true meaning</b>, and I am producing works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">true meaning</b> and produce works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -38,7 +38,7 @@ export const Hi = (): React.ReactElement =>
           This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
         </span>
       </TooltipTextWithDelay>
-      &nbsp;for content here.
+      &nbsp;for the content here.
     </p>
 
     <h3 className="highlight">True Meaning</h3>
@@ -56,6 +56,6 @@ export const Hi = (): React.ReactElement =>
       <TooltipText text="broadest definition">
         One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that can arise on its own (i.e., not made up out of thin air), together with things that can support or oppose it, may have true meaning. It includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
       </TooltipText>
-      &nbsp;of true meaning seems manageable. The true meaning of life cannot go beyond one's interpretations of true meaning.
+      &nbsp;of true meaning seems manageable. The true meaning of life constitutes (one's judgments and interpretations of) true meaning.
     </div>
   </div>

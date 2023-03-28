@@ -1,3 +1,10 @@
+"2023-03-25":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "guava",thb: 20,g: 928,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-03-18":
   - delivery:
       type: private

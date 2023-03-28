@@ -48,6 +48,7 @@ export const Trait = (): React.ReactElement =>
           </ul>
         </TooltipTextWithDelay>
       </li>
+
       <li>
         <b className="highlight">Hard Skills</b>
         &nbsp;—&nbsp;
@@ -72,6 +73,7 @@ export const Trait = (): React.ReactElement =>
           Obtain Bachelor and Master's degrees related to Communications technologies.
         </TooltipText>
       </li>
+
       <li>
         <b className="highlight">Soft Skills</b>
         &nbsp;—&nbsp;
@@ -85,7 +87,7 @@ export const Trait = (): React.ReactElement =>
         ,&ensp;
         <TooltipText text="Personal">
           <ul>
-            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matters to me, and align my life to it.</li>
+            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matters to me and align my life to it.</li>
             <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply, not disturb others, and frequently avoid creating unnecessary wastes.</li>
           </ul>
         </TooltipText>
