@@ -15,7 +15,7 @@ export const Realization = (): React.ReactElement =>
     <p>
       The definitions of&nbsp;
       <TooltipText text="truths">
-        People may have different opinions about truths; however, one can be at least certain that anything made up out of thin air by oneself is not true. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
+        People may have different (and unproven) opinions about truths; however, one can be at least certain that anything made up out of thin air by oneself is not true. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">
@@ -23,7 +23,7 @@ export const Realization = (): React.ReactElement =>
       </TooltipText>
       &nbsp;can be very broad. However, when combined, the&nbsp;
       <TooltipText text="broadest definition">
-        One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that can arise on its own (i.e., not made up out of thin air), together with things that can support or oppose it, may have true meaning. It includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
+        One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that is not made up out of thin air, together with things that can support or oppose it, may have true meaning. Such subjective consciousness includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
       </TooltipText>
-      &nbsp;of true meaning seems manageable. Realizing that the true meaning of life constitutes (one's judgments and interpretations of) true meaning, I finally saw the possible path out of the darkness of ignorance. I wanted to live by my interpretations and judgments about this realization and produce works about it.</p>
+      &nbsp;of true meaning seems manageable. Realizing that the true meaning of life constitutes (one's judgments and interpretations of) true meaning, I finally saw possible paths out of the darkness of ignorance. I wanted to live by my interpretations and judgments about this realization and produce works about it.</p>
   </>
