@@ -15,7 +15,7 @@ export const Realization = (): React.ReactElement =>
     <p>
       The definitions of&nbsp;
       <TooltipText text="truths">
-        One can be at least certain that anything made up out of thin air by oneself is not truth. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
+        People may have different opinions about truths; however, one can be at least certain that anything made up out of thin air by oneself is not true. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">

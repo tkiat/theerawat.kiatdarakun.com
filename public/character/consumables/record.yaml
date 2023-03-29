@@ -2,9 +2,28 @@
   - delivery:
       type: no fuel
     types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 9,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
+        - {t: "agasta",thb: 15,g: 221,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "bamboo shoots (boiled)",thb: 25,g: 335,nv: 0,oc: 0,mu: 335,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "bitter gourd",thb: 15,g: 511,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "cabbage (chinese)",thb: 20,g: 634,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "carrot",thb: 15,g: 388,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "celery",thb: 10,g: 140,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "guava",thb: 20,g: 928,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 257,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "mushroom (oyster)",thb: 20,g: 151,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+#         - {t: "oil (coconut) TODO 500ml naturel",thb: 53,g: 499-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "pepper",thb: 49,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 10,g: 457,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 10,g: 458,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 10,g: 507,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "tomato",thb: 10,g: 263,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-03-18":
   - delivery:
       type: private
