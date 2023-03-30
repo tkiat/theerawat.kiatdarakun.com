@@ -1,5 +1,19 @@
 "2023-03-25":
   - delivery:
+      type: private
+      km: 4
+    types:
+      - name: food
+        items:
+        - {t: "mango",thb: 40,g: 1398,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 39,g: 1745,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+#       - name: other-edibles
+#         items:
+#         - {t: "vinegar",thb: 61,g: 3316-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
+#       - name: nonedibles
+#         items:
+#         - {t: "fabric softener",thb: 137,g: 1551-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: drink-liquid
