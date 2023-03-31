@@ -14,6 +14,23 @@
 #         items:
 #         - {t: "fabric softener",thb: 137,g: 1551-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
   - delivery:
+      type: public
+      km: 170
+    types:
+      - name: other-edibles
+        items:
+        - {t: "ascorbic acid",thb: 49,g: 100,nv: 0,oc: 0,mu: 100,u: 0,p: 4,pa: 0,gl: 0}
+      - name: nonedibles
+        items:
+        - {t: "essential oil",thb: 35,g: 25,nv: 0,oc: 0,mu: 100,u: 0,p: 0,pa: 0,gl: 51}
+  - delivery:
+      type: public
+      km: 38
+    types:
+      - name: food
+        items:
+        - {t: "textured vegetable protein",thb: 195,g: 1000,nv: 0,oc: 0,mu: 1000,u: 0,p: 33,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: drink-liquid
