@@ -46,7 +46,7 @@ export const Hi = (): React.ReactElement =>
     <div>
       The definitions of&nbsp;
       <TooltipText text="truths">
-        People may have different (and unproven) opinions about truths; however, one can be at least certain that anything made up out of thin air by oneself is not true. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
+        Something is true when it conforms to reality. The only true thing I know is my capability to be conscious, while the only untrue thing I know is truth modified by my subjective consciousness since truth cannot be changed.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">
@@ -54,7 +54,7 @@ export const Hi = (): React.ReactElement =>
       </TooltipText>
       &nbsp;can be very broad; however, when combined, the&nbsp;
       <TooltipText text="broadest definition">
-        One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that is not made up out of thin air, together with things that can support or oppose it, may have true meaning. Such subjective consciousness includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
+        One may think of true meaning as meaning bounded by truths. Therefore, in the broadest sense, only subjective consciousness that is not modified by another subjective consciousness, together with things that can support or oppose such non-modified subjective consciousness, may have true meaning. For example, hunger pains and instinctual feelings may have true meaning but not with attachments on top of them.
       </TooltipText>
       &nbsp;of true meaning seems manageable. The true meaning of life constitutes (one's judgments and interpretations of) true meaning.
     </div>

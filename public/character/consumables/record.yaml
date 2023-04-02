@@ -1,3 +1,10 @@
+"2023-04-01":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "potato (sweet)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
 "2023-03-25":
   - delivery:
       type: private
