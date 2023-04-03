@@ -15,7 +15,7 @@ export const Realization = (): React.ReactElement =>
     <p>
       The definitions of&nbsp;
       <TooltipText text="truths">
-        People may have different (and unproven) opinions about truths; however, one can be at least certain that anything made up out of thin air by oneself is not true. Therefore, the broadest definition of truth, for a person, is every fact or belief except those made up out of thin air by that person. In this regard, one may consider the existence or the absence of God as truth (since one doesn't make either fact true by oneself), but one may not consider an object in one's imagination as truth.
+        While the truth is a complex topic for many, if not all, one can at least be certain that modified truth is false unless it yields another truth.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">
@@ -23,7 +23,9 @@ export const Realization = (): React.ReactElement =>
       </TooltipText>
       &nbsp;can be very broad. However, when combined, the&nbsp;
       <TooltipText text="broadest definition">
-        One may think of true meaning as meaning bounded by truths. In the broadest sense, only subjective consciousness that is not made up out of thin air, together with things that can support or oppose it, may have true meaning. Such subjective consciousness includes hunger pains and instinctual feelings but not imaginary objects and attachment to sensory pleasures.
+        <div>Subjectively modified sensory perception cannot yield another sensory perception. The same applies to feeling, emotion, and memory. However, subjectively modified thoughts can yield another thought. Therefore, given that all these kinds of subjective consciousness are true, the modified versions of them are not true except for thoughts.</div>
+        <br />
+        <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only non-modified subjective consciousness and modified thoughts, together with things that can support or oppose it, may have true meaning.</div>
       </TooltipText>
       &nbsp;of true meaning seems manageable. Realizing that the true meaning of life constitutes (one's judgments and interpretations of) true meaning, I finally saw possible paths out of the darkness of ignorance. I wanted to live by my interpretations and judgments about this realization and produce works about it.</p>
   </>
