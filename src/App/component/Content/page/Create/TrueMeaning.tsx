@@ -18,7 +18,7 @@ export const TrueMeaning = (): React.ReactElement =>
       <TooltipText text="broadest definition">
         <div>Subjectively modified sensory perception cannot yield another sensory perception. The same applies to feeling, emotion, and memory. However, subjectively modified thoughts can yield another thought. Therefore, given that all these kinds of subjective consciousness are true, the modified versions of them are not true except for thoughts.</div>
         <br />
-        <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only non-modified subjective consciousness and modified thoughts, together with things that can support or oppose it, may have true meaning.</div>
+        <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only thoughts and non-modified subjective consciousness, together with things that can support or oppose it, may have true meaning.</div>
       </TooltipText>
       &nbsp;of true meaning seems manageable. I wish to produce works about the true meaning on both individual and societal scales. These works are still in progress.</p>
 
