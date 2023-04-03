@@ -46,7 +46,7 @@ export const Hi = (): React.ReactElement =>
     <div>
       The definitions of&nbsp;
       <TooltipText text="truths">
-        Something is true when it conforms to reality. The only true thing I know is my capability to be conscious, while the only untrue thing I know is truth modified by my subjective consciousness since truth cannot be changed.
+        While the truth is a complex topic for many, if not all, one can at least be certain that modified truth is false unless it yields another truth.
       </TooltipText>
       &nbsp;and&nbsp;
       <TooltipText text="meaning">
@@ -54,7 +54,9 @@ export const Hi = (): React.ReactElement =>
       </TooltipText>
       &nbsp;can be very broad; however, when combined, the&nbsp;
       <TooltipText text="broadest definition">
-        One may think of true meaning as meaning bounded by truths. Therefore, in the broadest sense, only subjective consciousness that is not modified by another subjective consciousness, together with things that can support or oppose such non-modified subjective consciousness, may have true meaning. For example, hunger pains and instinctual feelings may have true meaning but not with attachments on top of them.
+        <div>Subjectively modified sensory perception cannot yield another sensory perception. The same applies to feeling, emotion, and memory. However, subjectively modified thoughts can yield another thought. Therefore, given that all these kinds of subjective consciousness are true, the modified versions of them are not true with the except for thoughts.</div>
+        <br />
+        <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only non-modified subjective consciousness (except thoughts), together with things that can support or oppose it, may have true meaning.</div>
       </TooltipText>
       &nbsp;of true meaning seems manageable. The true meaning of life constitutes (one's judgments and interpretations of) true meaning.
     </div>

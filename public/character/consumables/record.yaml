@@ -4,6 +4,7 @@
     types:
       - name: food
         items:
+        - {t: "guava",thb: 25,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
 "2023-03-25":
   - delivery:
@@ -32,7 +33,7 @@
         - {t: "essential oil",thb: 35,g: 25,nv: 0,oc: 0,mu: 100,u: 0,p: 0,pa: 0,gl: 51}
   - delivery:
       type: public
-      km: 38
+      km: 35
     types:
       - name: food
         items:
