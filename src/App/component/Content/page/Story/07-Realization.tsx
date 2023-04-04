@@ -21,5 +21,5 @@ export const Realization = (): React.ReactElement =>
       <TooltipText text="true meaning">
         True meaning is meaning bounded by truths. In the broadest sense, subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning. What are truths? While one may know nothing (other than one's untainted conscious experience), one can be at least certain that it is false to mistake a conscious experience for another, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception.
       </TooltipText>
-      &nbsp;constitutes his/her true meaning of life, I finally saw possible paths out of the darkness of ignorance. I wanted to live by my interpretations and judgments about true meaning and produce relevant works.</p>
+      &nbsp;constitute one's true meaning of life, I finally saw possible paths out of the darkness of ignorance. I wanted to live by my interpretations and judgments about true meaning and produce relevant works.</p>
   </>

@@ -19,7 +19,7 @@ export const TrueMeaning = (): React.ReactElement =>
     <h3 className="highlight">The True Meaning of Life</h3>
 
     <div>
-      One's judgments and interpretations of true meaning constitutes his/her true meaning of life. This work (
+      One's judgments and interpretations of true meaning constitute one's true meaning of life. This work (
       <TooltipText text="outline">
         <ol>
           <li>Introduction</li>

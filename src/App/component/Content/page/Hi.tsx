@@ -52,8 +52,8 @@ export const Hi = (): React.ReactElement =>
       <TooltipText text="true meaning">
         <div>True meaning is meaning bounded by truths. In the broadest sense, only subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning.</div>
         <br />
-        <div>What are truths? I can only be certain of the existence of my conscious experience exists but not the truth of any object of such experience. Therefore, the only false thing I know is equating two different conscious experiences, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception.</div>
+        <div>What are truths? I can only be certain of the existence of my conscious experience, not the truth of the object of such experience. Therefore, the only false thing I know is equating two different conscious experiences, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception (like jealousy).</div>
       </TooltipText>
-      &nbsp;constitutes his/her true meaning of life.
+      &nbsp;constitute one's true meaning of life.
     </p>
   </div>
