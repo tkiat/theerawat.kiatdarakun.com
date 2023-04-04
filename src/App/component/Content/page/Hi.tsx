@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../share"
 
 export const Hi = (): React.ReactElement =>
   <div className="no-split">
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">true meaning</b> and produce works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">the true meaning of life</b> and produce works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>
@@ -41,24 +41,19 @@ export const Hi = (): React.ReactElement =>
       &nbsp;for the content here.
     </p>
 
-    <h3 className="highlight">True Meaning</h3>
+    <h3 className="highlight">The True Meaning of Life</h3>
 
-    <div>
-      The definitions of&nbsp;
-      <TooltipText text="truths">
-        While the truth is a complex topic for many, if not all, one can at least be certain that modified truth is false unless it yields another truth.
-      </TooltipText>
-      &nbsp;and&nbsp;
+    <p>
+      Based on the broadest definition of&nbsp;
       <TooltipText text="meaning">
-        Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, subjective consciousness, together with things that can support or oppose it, may have meaning.
+        Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, only subjective consciousness, together with things that can support or oppose it, may have meaning.
       </TooltipText>
-      &nbsp;can be very broad; however, when combined, the&nbsp;
-      <TooltipText text="broadest definition">
-        <div>Subjectively modified sensory perception cannot yield another sensory perception. The same applies to feeling, emotion, and memory. However, subjectively modified thoughts can yield another thought. Therefore, given that all these kinds of subjective consciousness are true, the modified versions of them are not true except for thoughts.</div>
+      , one's judgments and interpretations of&nbsp;
+      <TooltipText text="true meaning">
+        <div>True meaning is meaning bounded by truths. In the broadest sense, only subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning.</div>
         <br />
-        <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only thoughts and non-modified subjective consciousness, together with things that can support or oppose it, may have true meaning.</div>
+        <div>What are truths? I can only be certain of the existence of my conscious experience exists but not the truth of any object of such experience. Therefore, the only false thing I know is equating two different conscious experiences, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception.</div>
       </TooltipText>
-      &nbsp;of true meaning seems manageable. The true meaning of life constitutes (one's judgments and interpretations of) true meaning.
-//       One who live by true meaning does not follow subjective consciousness that doesn't reflect truths.
-    </div>
+      &nbsp;constitutes his/her true meaning of life.
+    </p>
   </div>

@@ -6,21 +6,21 @@ export const TrueMeaning = (): React.ReactElement =>
   <>
     <h2>The True Meaning</h2>
 
-    <p>The passage of time forced me to either commit suicide or live (and optionally decide how to live), and my subjective self inspired me to live by true meaning. Followed by the broadest definitions of&nbsp;
+    <p>The passage of time forced me to either commit suicide or live (and optionally decide how to live), and my subjective self inspired me to live by true meaning. Based on the broadest definition of&nbsp;
       <TooltipText text="meaning">
         Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, subjective consciousness, together with things that can support or oppose it, may have meaning.
       </TooltipText>
-      &nbsp;and&nbsp;
+      , I wish to produce works about the&nbsp;
       <TooltipText text="true meaning">
-        <div>True meaning is meaning bounded by truths. In the broadest sense, subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning. While one may not be certain of every truth (other than one's conscious experience), one can be at least certain that mistaking something as something else is false, e.g., sensory perception plus thought as another sensory perception, imagination as a physical quality, and memory as feeling.</div>
+        True meaning is meaning bounded by truths. In the broadest sense, subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning. What are truths? While one may know nothing (other than one's untainted conscious experience), one can be at least certain that it is false to mistake a conscious experience for another, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception.
       </TooltipText>
-      , I wish to produce works about the true meaning on both individual and societal scales. These works are still in progress.</p>
+      &nbsp;on both individual and societal scales. These works are still in progress.</p>
 
     <h3 className="highlight">The True Meaning of Life</h3>
 
     <div>
-      The true meaning of life constitutes (one's judgments and interpretations of) true meaning. This work has three main goals: explore some ways of life that align with true meaning, compare them with existing literature, and provide my record that serves as a practical example of the pursuit of the true meaning. &nbsp;
-      <TooltipText text="Outline">
+      One's judgments and interpretations of true meaning constitutes his/her true meaning of life. This work (
+      <TooltipText text="outline">
         <ol>
           <li>Introduction</li>
 
@@ -62,7 +62,7 @@ export const TrueMeaning = (): React.ReactElement =>
           </li>
         </ol>
       </TooltipText>
-      &nbsp;(subject to change)
+      ) has three main goals: determine the narrowest definition of true meaning, explore some ways of life that align with true meaning and then compare them with existing literature, and provide my record that serves as a practical example of the pursuit of the true meaning.
     </div>
 
     <h3 className="highlight">Society That Truly Serves Member</h3>
