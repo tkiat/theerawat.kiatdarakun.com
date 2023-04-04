@@ -8,6 +8,10 @@ export const TrueMeaning = (): React.ReactElement =>
 
     <p>The passage of time forced me to either commit suicide or live (and optionally decide how to live), and my subjective self inspired me to live by true meaning. The definitions of&nbsp;
       <TooltipText text="truths">
+        While one may not know every truth
+
+        kinds of subjective consciousness are true, one can reject some of them that are certainly false, then use his/her interpretation and judgment to either find true meaning or not find it at all.
+
         While the truth is a complex topic for many, if not all, one can at least be certain that modified truth is false unless it yields another truth.
       </TooltipText>
       &nbsp;and&nbsp;
@@ -16,9 +20,9 @@ export const TrueMeaning = (): React.ReactElement =>
       </TooltipText>
       &nbsp;can be very broad; however, when combined, the&nbsp;
       <TooltipText text="broadest definition">
-        <div>Subjectively modified sensory perception cannot yield another sensory perception. The same applies to feeling, emotion, and memory. However, subjectively modified thoughts can yield another thought. Therefore, given that all these kinds of subjective consciousness are true, the modified versions of them are not true except for thoughts.</div>
+        <div>True meaning is meaning bounded by truths; in other words, it is subjective consciousness that reflects truths. While one may not be certain of any true subjective consciousness, one can be at least certain that mistaking something as something else is false. For example, sensory perception plus thought as another sensory perception, imagination as physical quality, and memory as feeling.</div>
         <br />
-        <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only thoughts and non-modified subjective consciousness, together with things that can support or oppose it, may have true meaning.</div>
+        <div>Rejecting all such illusions get him/her closer to true meaning, and applying truths (in one's knowledge and beliefs) after that get him/her closest to true meaning. In the broadest sense, only non-illusory subjective consciousness, together with things that can support or oppose it, may have true meaning.</div>
       </TooltipText>
       &nbsp;of true meaning seems manageable. I wish to produce works about the true meaning on both individual and societal scales. These works are still in progress.</p>
 
