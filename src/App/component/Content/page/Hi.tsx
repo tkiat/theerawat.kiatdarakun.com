@@ -59,5 +59,6 @@ export const Hi = (): React.ReactElement =>
         <div>One who does not know the absolute truths cannot certainly consider any subjective consciousness as truth. Therefore, in the broadest and most general sense, only thoughts and non-modified subjective consciousness, together with things that can support or oppose it, may have true meaning.</div>
       </TooltipText>
       &nbsp;of true meaning seems manageable. The true meaning of life constitutes (one's judgments and interpretations of) true meaning.
+//       One who live by true meaning does not follow subjective consciousness that doesn't reflect truths.
     </div>
   </div>
