@@ -44,16 +44,17 @@ export const Hi = (): React.ReactElement =>
     <h3 className="highlight">The True Meaning of Life</h3>
 
     <p>
-      Based on the broadest definition of&nbsp;
-      <TooltipText text="meaning">
-        Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, only subjective consciousness, together with things that can support or oppose it, may have meaning.
+      This is the summary of my view on&ensp;
+      <TooltipText text="Meaning">
+        Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. It seems only emotions, sensory experiences, and thoughts can create meaning.
       </TooltipText>
-      , one's judgments and interpretations of&nbsp;
-      <TooltipText text="true meaning">
-        <div>True meaning is meaning bounded by truths. In the broadest sense, only subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning.</div>
-        <br />
-        <div>What are truths? I can only be certain of the existence of my conscious experience, not the truth of the object of such experience. Therefore, the only false thing I know is equating two different conscious experiences, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception (like jealousy).</div>
+      &ensp;-&gt;&ensp;
+      <TooltipText text="Meaning of life">
+        Meaning of life is a sense of importance created by life itself and/or one or more external entities. The definitions of life and such external entities depend on knowledge and beliefs: some believe in souls; some believe in God; some believe only in what they can perceive; some believe that only their consciousness exists.
       </TooltipText>
-      &nbsp;constitute one's true meaning of life.
+      &ensp;-&gt;&ensp;
+      <TooltipText text="The true meaning of life">
+        The true meaning of life is meaning of life that reflects truths, i.e., it has to stem from the essence of life itself. For this reason, the importance created by emotions and sensory experiences is always true, while the importance created by thoughts may be untrue.
+      </TooltipText>
     </p>
   </div>
