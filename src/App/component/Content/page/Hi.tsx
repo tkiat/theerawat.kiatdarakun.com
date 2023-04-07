@@ -49,12 +49,12 @@ export const Hi = (): React.ReactElement =>
         Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. It seems only emotions, sensory experiences, and thoughts can create meaning.
       </TooltipText>
       &ensp;-&gt;&ensp;
-      <TooltipText text="Meaning of life">
-        Meaning of life is a sense of importance created by life itself and/or one or more external entities. The definitions of life and such external entities depend on knowledge and beliefs: some believe in souls; some believe in God; some believe only in what they can perceive; some believe that only their consciousness exists.
+      <TooltipText text="Meaning of Life">
+        Meaning of life is a sense of importance associated with life, which may be perceived by any capable entity (this can be that life itself or one or more other entities). The definitions of life and other entities depend on knowledge and beliefs: some believe in souls; some believe in God; some believe only in their ideas of the physical world; some believe that only their consciousness exists.
       </TooltipText>
       &ensp;-&gt;&ensp;
-      <TooltipText text="The true meaning of life">
-        The true meaning of life is meaning of life that reflects truths, i.e., it has to stem from the essence of life itself. For this reason, the importance created by emotions and sensory experiences is always true, while the importance created by thoughts may be untrue.
+      <TooltipText text="The True Meaning of Life">
+        Imagine I create a unique, blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it but that quality is not true. The same applies to the true meaning of life, which is the meaning associated with the essence of life itself, no matter if life is fictional or not. Therefore, to me, meaning created by my emotions or my sensory experiences is always true, while meaning created by my thoughts alone is always untrue.
       </TooltipText>
     </p>
   </div>
