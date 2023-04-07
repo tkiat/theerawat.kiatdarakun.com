@@ -1,12 +1,32 @@
 "2023-04-01":
   - delivery:
+      type: private
+      km: 4.5
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 40,g: 60000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "asparagus",thb: 10,g: 103,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "banana",thb: 20,g: 1900,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "banana (fried)",thb: 20,g: 210,nv: 0,oc: 0,mu: 210,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "cabbage (pickled)",thb: 25,g: 678,nv: 0,oc: 0,mu: 678,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "carrot",thb: 25,g: 638,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "celery",thb: 10,g: 20,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 15,g: 385,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "bitter gourd",thb: 15,g: 496,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 26,g: 1065,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: food
         items:
         - {t: "guava",thb: 25,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "jackfruit",thb: 0,g: 880,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "mango",thb: 0,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "tangerine",thb: 0,g: 212,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-03-25":
   - delivery:
       type: private
