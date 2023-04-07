@@ -25,6 +25,8 @@
         - {t: "guava",thb: 25,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "jackfruit",thb: 0,g: 880,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "mango",thb: 0,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mushroom (mixed)",thb: 20,g: 160,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 10,g: 334,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "tangerine",thb: 0,g: 212,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-03-25":
