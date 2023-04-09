@@ -6,7 +6,7 @@ export const TrueMeaning = (): React.ReactElement =>
   <>
     <h2>The True Meaning</h2>
 
-    <p>The passage of time forced me to either commit suicide or live (and optionally decide how to live), and my subjective self inspired me to live by true meaning. Based on the definitions of&nbsp;
+    <div>The passage of time forced me to either commit suicide or live (and optionally decide how to live), and my subjective self inspired me to live by true meaning. Based on the definitions of&nbsp;
       <TooltipText text="meaning">
         Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. It seems only emotions, sensory experiences, and thoughts can create meaning.
       </TooltipText>
@@ -16,9 +16,14 @@ export const TrueMeaning = (): React.ReactElement =>
       </TooltipText>
       , I wish to produce works about&nbsp;
       <TooltipText text="the true meaning of life">
-        Imagine I create a unique, blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it but that quality is not true. The same applies to the true meaning of life, which is the meaning associated with the essence of life itself, no matter if life is fictional or not. Therefore, to me, meaning created by my emotions or my sensory experiences is always true, while meaning created by my thoughts alone is always untrue.
+        <div>Imagine I create a unique blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it, but that quality is not true. The same applies to the true meaning of life. It is the meaning associated with the essence of life itself, no matter if life is fictional or not.</div>
+
+        <br />
+
+        <div>Things that can create meaning, namely emotions, sensory experiences, and thoughts, are parts of life; however, thoughts alone are very short-lived and thus they cannot associate with the essence of life at a later stage. For this reason, living by true meaning is to follow emotions and sensory experiences but not thoughts (or emotions created by thoughts) alone.</div>
       </TooltipText>
-      &nbsp;on both individual and societal scales. These works are still in progress.</p>
+      &nbsp;on both individual and societal scales. These works are still in progress.
+    </div>
 
     <h3 className="highlight">The True Meaning of Life</h3>
 

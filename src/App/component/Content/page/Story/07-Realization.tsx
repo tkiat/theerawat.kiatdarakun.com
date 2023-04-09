@@ -13,13 +13,21 @@ export const Realization = (): React.ReactElement =>
     </p>
 
     <p>
-      Realizing that, based on the broadest definition of&nbsp;
+      Based on these definitions of&nbsp;
       <TooltipText text="meaning">
-        Only subjective consciousness may have meaning (i.e., a sense of importance) <i>on its own</i> as the universe without such cannot have any meaning. Therefore, in the broadest sense, subjective consciousness, together with things that can support or oppose it, may have meaning.
+        Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. It seems only emotions, sensory experiences, and thoughts can create meaning.
       </TooltipText>
-      , one's judgments and interpretations of&nbsp;
-      <TooltipText text="true meaning">
-        True meaning is meaning bounded by truths. In the broadest sense, subjective consciousness that reflects truths, together with things that can support or oppose it, may have true meaning. What are truths? While one may know nothing (other than one's untainted conscious experience), one can be at least certain that it is false to mistake a conscious experience for another, e.g., imagination as a physical quality, memory as feeling, and sensory perception plus thought as another sensory perception.
+      &nbsp;and&nbsp;
+      <TooltipText text="meaning of life">
+        Meaning of life is a sense of importance associated with life, which may be perceived by any capable entity (this can be that life itself or one or more other entities). The definitions of life and other entities depend on knowledge and beliefs: some believe in souls; some believe in God; some believe only in their ideas of the physical world; some believe that only their consciousness exists.
       </TooltipText>
-      &nbsp;constitute one's true meaning of life, I finally saw possible paths out of the darkness of ignorance. I wanted to live by my interpretations and judgments about true meaning and produce relevant works.</p>
+      , I realized that&nbsp;
+      <TooltipText text="the true meaning of life">
+        <div>Imagine I create a unique blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it, but that quality is not true. The same applies to the true meaning of life. It is the meaning associated with the essence of life itself, no matter if life is fictional or not.</div>
+
+        <br />
+
+        <div>Things that can create meaning, namely emotions, sensory experiences, and thoughts, are parts of life; however, thoughts alone are very short-lived and thus they cannot associate with the essence of life at a later stage. For this reason, living by true meaning is to follow emotions and sensory experiences but not thoughts (or emotions created by thoughts) alone.</div>
+      </TooltipText>
+      &nbsp;can take me out of the darkness of ignorance. I wanted to live by my interpretations and judgments about true meaning of life and produce relevant works.</p>
   </>

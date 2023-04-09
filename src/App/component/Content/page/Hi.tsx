@@ -43,7 +43,7 @@ export const Hi = (): React.ReactElement =>
 
     <h3 className="highlight">The True Meaning of Life</h3>
 
-    <p>
+    <div>
       This is the summary of my view on&ensp;
       <TooltipText text="Meaning">
         Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. It seems only emotions, sensory experiences, and thoughts can create meaning.
@@ -54,7 +54,11 @@ export const Hi = (): React.ReactElement =>
       </TooltipText>
       &ensp;-&gt;&ensp;
       <TooltipText text="The True Meaning of Life">
-        Imagine I create a unique, blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it but that quality is not true. The same applies to the true meaning of life, which is the meaning associated with the essence of life itself, no matter if life is fictional or not. Therefore, to me, meaning created by my emotions or my sensory experiences is always true, while meaning created by my thoughts alone is always untrue.
+        <div>Imagine I create a unique blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it, but that quality is not true. The same applies to the true meaning of life. It is the meaning associated with the essence of life itself, no matter if life is fictional or not.</div>
+
+        <br />
+
+        <div>Things that can create meaning, namely emotions, sensory experiences, and thoughts, are parts of life; however, thoughts alone are very short-lived and thus they cannot associate with the essence of life at a later stage. For this reason, living by true meaning is to follow emotions and sensory experiences but not thoughts (or emotions created by thoughts) alone.</div>
       </TooltipText>
-    </p>
+    </div>
   </div>
