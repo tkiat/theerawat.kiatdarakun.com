@@ -54,11 +54,11 @@ export const Hi = (): React.ReactElement =>
       </TooltipText>
       &ensp;-&gt;&ensp;
       <TooltipText text="The True Meaning of Life">
-        <div>Imagine I create a unique blue unicorn named Bob. Even though Bob is fictional, its true color is blue. Painting it using a different color other than blue makes that a quality of it, but that quality is not true. The same applies to the true meaning of life. It is the meaning associated with the essence of life itself, no matter if life is fictional or not.</div>
+        <div>Imagine I create a unique unicorn with five legs. Even though it is fictional, its true number of legs are five. Drawing it with four legs makes that a quality of it, but that quality is not true. The same applies to the true meaning of life. It is the meaning associated with the essence of life itself, no matter if life is fictional or not.</div>
 
         <br />
 
-        <div>Things that can create meaning, namely emotions, sensory experiences, and thoughts, are parts of life; however, thoughts alone are very short-lived and thus they cannot associate with the essence of life at a later stage. For this reason, living by true meaning is to follow emotions and sensory experiences but not thoughts (or emotions created by thoughts) alone.</div>
+        <div>Since the essence of life changes continuously, one who lives by true meaning must keep aligning his actions with his ever-changing self. Out of parts of life that can create meaning: instinctual emotions, sensory capabilities, and thoughts, only the first twos are not short-lived (and may even last until death). Therefore, one who lives by true meaning follow meanings created by his instinctual emotions and sensory capabilities rather than his short-lived mind.</div>
       </TooltipText>
     </div>
   </div>
