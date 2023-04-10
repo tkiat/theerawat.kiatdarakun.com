@@ -1,5 +1,16 @@
 "2023-04-01":
   - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "guava",thb: 20,g: 600,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+      - name: drink-liquid
+        items:
+        - {t: "beer (leo)",thb: 60,g: 625,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 392}
+        - {t: "water",thb: 13,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+"2023-04-01":
+  - delivery:
       type: private
       km: 4.5
     types:

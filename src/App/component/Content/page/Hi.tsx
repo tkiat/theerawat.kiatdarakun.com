@@ -46,19 +46,19 @@ export const Hi = (): React.ReactElement =>
     <div>
       This is the summary of my view on&ensp;
       <TooltipText text="Meaning">
-        Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. It seems only emotions, sensory experiences, and thoughts can create meaning.
+        Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. To my knowledge, only instinctual emotions, sensory perceptions, and thoughts can create meaning.
       </TooltipText>
       &ensp;-&gt;&ensp;
-      <TooltipText text="Meaning of Life">
-        Meaning of life is a sense of importance associated with life, which may be perceived by any capable entity (this can be that life itself or one or more other entities). The definitions of life and other entities depend on knowledge and beliefs: some believe in souls; some believe in God; some believe only in their ideas of the physical world; some believe that only their consciousness exists.
+      <TooltipText text="The meaning of Life">
+        The meaning of life is a sense of importance that emerges from life, and any capable entity may perceive it. The definition of such an entity depends on knowledge and beliefs. Some believe in souls and/or God; some believe only in their ideas of the physical world; some believe that only their consciousness exists.
       </TooltipText>
       &ensp;-&gt;&ensp;
       <TooltipText text="The True Meaning of Life">
-        <div>Imagine I create a unique unicorn with five legs. Even though it is fictional, its true number of legs are five. Drawing it with four legs makes that a quality of it, but that quality is not true. The same applies to the true meaning of life. It is the meaning associated with the essence of life itself, no matter if life is fictional or not.</div>
+        <div>Having five legs is a true property of a five-leg unicorn, even though it is fictional. Likewise, the true meaning of life is a sense of importance emerging from the inherent properties of life (whether or not life is fictional), and any capable entity may perceive it.</div>
 
         <br />
 
-        <div>Since the essence of life changes continuously, one who lives by true meaning must keep aligning his actions with his ever-changing self. Out of parts of life that can create meaning: instinctual emotions, sensory capabilities, and thoughts, only the first twos are not short-lived (and may even last until death). Therefore, one who lives by true meaning follow meanings created by his instinctual emotions and sensory capabilities rather than his short-lived mind.</div>
+        <div>To my knowledge, only instinctual emotions, sensory experiences, and thoughts can create meaning, out of which only the first two are the inherent qualities of life since thoughts alone are arbitrary. Based on emotions and sensory perceptions, one may use memories and thoughts to align actions and possessions with meanings emerging from them. Such action, though probably imperfect, is always a manifestation of one's pursuit of true meaning.</div>
       </TooltipText>
     </div>
   </div>
