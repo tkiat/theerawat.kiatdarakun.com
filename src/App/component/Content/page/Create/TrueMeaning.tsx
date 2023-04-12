@@ -42,9 +42,9 @@ export const TrueMeaning = (): React.ReactElement =>
           <li>
             The Concrete Examination of the True Meaning of Life
             <ol>
-              <li>Meaning Through Sensory Perceptions</li>
-              <li>Meaning Through Emotions</li>
-              <li>Meaning Through Beliefs</li>
+              <li>Meaning from Sensory Perceptions</li>
+              <li>Meaning from Instinctual Emotions</li>
+              <li>Meaning from Beliefs</li>
             </ol>
           </li>
 
@@ -52,7 +52,7 @@ export const TrueMeaning = (): React.ReactElement =>
             The True Meaning of Life
             <ol>
               <li>Judgments About True Meaning</li>
-              <li>The Wisest Way of Life</li>
+              <li>The Wisest Way of Life</li> {/* that  */}
               <li>Some Other Ways of Life</li>
               <li>Comparison With Existing Literature</li>
             </ol>

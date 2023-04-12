@@ -1,10 +1,18 @@
-"2023-04-01":
+"2023-04-07":
+  - delivery:
+      type: public
+      km: 38
+    types:
+      - name: nonedibles
+        items:
+        - {t: "loofah",thb: 70,g: 20,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 0,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
       - name: food
         items:
-        - {t: "guava",thb: 20,g: 600,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "guava",thb: 60,g: 2175,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "rose apple",thb: 20,g: 635,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
       - name: drink-liquid
         items:
         - {t: "beer (leo)",thb: 60,g: 625,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 392}
