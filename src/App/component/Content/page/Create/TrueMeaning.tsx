@@ -28,7 +28,7 @@ export const TrueMeaning = (): React.ReactElement =>
     <h3 className="highlight">The True Meaning of Life</h3>
 
     <div>
-      This work has three main goals: determine the abstract definition of the true meaning of life, explore concretely some ways of life that align with true meaning and compare them with existing literature, and provide some records of my life that serve as a practical example of the pursuit of the true meaning.&nbsp;
+      This work has four main goals: to determine the abstract definition of the true meaning of life, explore concretely a few different pursuits of true meaning, examine existing literature through the lens of true meaning, and provide some records that reflect my pursuit of true meaning.&nbsp;
       <TooltipText text="Outline">
         <ol>
           <li>
@@ -52,18 +52,16 @@ export const TrueMeaning = (): React.ReactElement =>
             The True Meaning of Life
             <ol>
               <li>Judgments About True Meaning</li>
-              <li>The Wisest Way of Life</li> {/* that  */}
-              <li>Some Other Ways of Life</li>
-              <li>Comparison With Existing Literature</li>
+              <li>Different Pursuits of True Meaning</li>
+              <li>Examining the Existing Literature Through the Lens of True Meaning</li>
             </ol>
           </li>
 
           <li>
             My Personal Record
             <ol>
-              <li>Personal Judgments About True Meaning</li>
-              <li>My Choices</li>
-              <li>My Record</li>
+              <li>My Choices</li> {/* include Personal Judgments About True Meaning therein*/}
+              <li>My Records</li>
             </ol>
           </li>
         </ol>
