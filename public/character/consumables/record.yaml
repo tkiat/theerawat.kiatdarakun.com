@@ -1,3 +1,28 @@
+"2023-04-14":
+#   - delivery:
+#       type: public
+#       km: TODO
+#     types:
+#       - name: nonedibles
+#         items:
+#         - {t: "toothpast",thb: 79,g: TODO,nv: 0,oc: n/a,mu: n/a,u: n/a,p: TODO,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "bitter gourd",thb: 15,g: 305,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "carrot",thb: 20,g: 549,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "celery",thb: 10,g: 20,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "cucumber (long)",thb: 33,g: 822,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "false pakchoi",thb: 10,g: 327,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 390,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 20,g: 420,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 24,g: 594,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "tomato",thb: 20,g: 386,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 20,g: 30000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-04-07":
   - delivery:
       type: public
