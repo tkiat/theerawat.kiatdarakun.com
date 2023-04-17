@@ -53,7 +53,7 @@ export const TrueMeaning = (): React.ReactElement =>
             <ol>
               <li>Judgments About True Meaning</li>
               <li>Different Pursuits of True Meaning</li>
-              <li>Examining the Existing Literature Through the Lens of True Meaning</li>
+              <li>Existing Literature Through the Lens of True Meaning</li>
             </ol>
           </li>
 
