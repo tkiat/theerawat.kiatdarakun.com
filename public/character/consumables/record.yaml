@@ -19,6 +19,7 @@
         - {t: "false pakchoi",thb: 10,g: 327,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 390,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 20,g: 420,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (chips)",thb: 30,g: 71,nv: 0,oc: 0,mu: 0,u: 71,p: 7,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 24,g: 594,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "soda",thb: 12,g: 384,nv: 0,oc: 0,mu: 0,u: 384,p: 0,pa: 0,gl: 0}
         - {t: "tomato",thb: 20,g: 386,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
