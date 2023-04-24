@@ -1,3 +1,34 @@
+"2023-04-21":
+  - delivery:
+      type: private
+      km: TODO
+    types:
+      - name: food
+        items:
+        - {t: "beans (black)",thb: 40,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "beans (mung)",thb: 32,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "bitter gourd",thb: 22,g: 386,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "cabbage",thb: 120,g: 910,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "carrot",thb: 17,g: 660,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "celery and coriander",thb: 27,g: 150,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "corn",thb: 40,g: 1606,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "kale",thb: 29,g: 527,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "mango",thb: 50,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mushroom (king oyster)",thb: 35,g: 204,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "mushroom (oyster, dried)",thb: 95,g: 200,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 55,g: 1688,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 18,g: 555,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 26,g: 637,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "textured vegetable protein",thb: 35,g: 100,nv: 0,oc: 0,mu: 100,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "tomato",thb: 48,g: 350,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 15,g: 776,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+#   - delivery:
+#       type: public
+#       km: TODO
+#     types:
+#       - name: nonedibles
+#         items:
+#         - {t: "moisturizer (aloe vera)",thb: 178,g: 560,nv: 0,oc: n/a,mu: n/a,u: n/a,p: TODO,pa: 0,gl: 0}
 "2023-04-14":
 #   - delivery:
 #       type: public
