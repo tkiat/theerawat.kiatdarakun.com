@@ -1,3 +1,13 @@
+"2023-04-28":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "khanom jak",thb: 0,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "papaya",thb: 30,g: 1826,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 69,g: 3500,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 0,g: 498,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-04-21":
   - delivery:
       type: private
