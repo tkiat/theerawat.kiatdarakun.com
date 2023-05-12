@@ -4,9 +4,16 @@
     types:
       - name: food
         items:
+        - {t: "bitter gourd",thb: 0,g: 206,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "bun (sang kaya)",thb: 20,g: 186,nv: 0,oc: 0,mu: 186,u: 0,p: 0,pa: 1,gl: 0}
+        - {t: "carrot (baby)",thb: 30,g: 210,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "corn",thb: 40,g: 1850,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "cowa leaf",thb: 0,g: 10,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "eggplant (green)",thb: 0,g: 330,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "ivy gourd",thb: 0,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 67,g: 382,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
         - {t: "mushroom (shiitake, dried)",thb: 0,g: 200,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 37,g: 430,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 0,g: 400,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 0.5,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "yardlong bean",thb: 0,g: 220,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -16,6 +23,7 @@
     types:
       - name: food
         items:
+        - {t: "bun (sang kaya)",thb: 20,g: 186,nv: 0,oc: 0,mu: 186,u: 0,p: 0,pa: 1,gl: 0}
         - {t: "khanom jak",thb: 0,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "papaya",thb: 30,g: 1826,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 69,g: 3500,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
@@ -28,13 +36,13 @@
       - name: food
         items:
         - {t: "textured vegetable protein",thb: 195,g: 1000,nv: 0,oc: 0,mu: 1000,u: 0,p: 33,pa: 0,gl: 0}
-#   - delivery:
-#       type: public
-#       km: 900
-#     types:
-#       - name: nonedibles
-#         items:
-#         - {t: "moisturizer (aloe vera)",thb: 178,g: 610-TODO*2,nv: 0,oc: n/a,mu: n/a,u: n/a,p: TODO*2,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 900
+    types:
+      - name: nonedibles
+        items:
+        - {t: "moisturizer (aloe vera)",thb: 178,g: 580,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 30,pa: 0,gl: 0}
   - delivery:
       type: private
       km: 7
