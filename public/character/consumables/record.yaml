@@ -1,3 +1,16 @@
+"2023-05-12":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        - {t: "bitter gourd",thb: 33,g: 474,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "cabbage",thb: 24,g: 398,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "kale",thb: 39,g: 354,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 9,g: 160,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "pad thai",thb: 45,g: 250,nv: 0,oc: 0,mu: 250,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato",thb: 62,g: 1028,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 27,g: 706,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "tomato",thb: 16,g: 322,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
 "2023-05-05":
   - delivery:
       type: no fuel
@@ -15,7 +28,7 @@
         - {t: "mushroom (shiitake, dried)",thb: 0,g: 200,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 37,g: 430,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 0,g: 400,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
-        - {t: "radish (daikon)",thb: 20,g: 0.5,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 20,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "yardlong bean",thb: 0,g: 220,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-04-28":
   - delivery:
