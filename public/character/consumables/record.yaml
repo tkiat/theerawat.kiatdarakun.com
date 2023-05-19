@@ -3,9 +3,20 @@
       type: no fuel
     types:
       - name: food
+        - {t: "corn",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "mango",thb: 20,g: 1098,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+"2023-05-12":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 45,g: 60000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
         - {t: "bitter gourd",thb: 33,g: 474,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "cabbage",thb: 24,g: 398,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "kale",thb: 39,g: 354,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "khanom gui chai",thb: 20,g: 170,nv: 0,oc: 0,mu: 170,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 9,g: 160,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "pad thai",thb: 45,g: 250,nv: 0,oc: 0,mu: 250,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato",thb: 62,g: 1028,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
