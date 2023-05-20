@@ -1,10 +1,11 @@
-"2023-05-12":
+"2023-05-19":
   - delivery:
       type: no fuel
     types:
       - name: food
         - {t: "corn",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
-        - {t: "mango",thb: 20,g: 1098,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "mango",thb: 73,g: 2598,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "papaya",thb: 42,g: 1530,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-05-12":
   - delivery:
       type: no fuel
@@ -19,7 +20,9 @@
         - {t: "khanom gui chai",thb: 20,g: 170,nv: 0,oc: 0,mu: 170,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 9,g: 160,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "pad thai",thb: 45,g: 250,nv: 0,oc: 0,mu: 250,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 96,g: 5000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato",thb: 62,g: 1028,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "salacca",thb: 100,g: 1300,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 27,g: 706,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tomato",thb: 16,g: 322,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
 "2023-05-05":
