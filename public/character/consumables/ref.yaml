@@ -33,4 +33,4 @@
     types:
       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
         items:
-          - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), processed (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+          - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]

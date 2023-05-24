@@ -3,9 +3,13 @@
       type: no fuel
     types:
       - name: food
+        - {t: "coconut milk",thb: 100,g: 1018,nv: 0,oc: 0,mu: 0,u: 0,p: 46,pa: 24,gl: 0}
         - {t: "corn",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "longan (dried)",thb: 0,g: 50,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
         - {t: "mango",thb: 73,g: 2598,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "pandan leaves",thb: 10,g: 150,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "papaya",thb: 42,g: 1530,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 40,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-05-12":
   - delivery:
       type: no fuel
@@ -14,6 +18,7 @@
         items:
         - {t: "water",thb: 45,g: 60000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
+        - {t: "banana",thb: 0,g: 4000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 33,g: 474,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "cabbage",thb: 24,g: 398,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "kale",thb: 39,g: 354,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
