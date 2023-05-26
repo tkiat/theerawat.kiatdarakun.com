@@ -1,3 +1,19 @@
+"2023-05-26":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 18,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        - {t: "bitter gourd",thb: 24,g: 377,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 20,g: 344,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "holy basil",thb: 5,g: 71,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "muskmelon",thb: 27,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 45,g: 1350,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 20,g: 358,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "spinach",thb: 10,g: 221,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 40,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-05-19":
   - delivery:
       type: no fuel
