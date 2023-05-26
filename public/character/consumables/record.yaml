@@ -6,6 +6,7 @@
         items:
         - {t: "water",thb: 18,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
+        - {t: "beans (mung)",thb: 70,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 24,g: 377,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 20,g: 344,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "holy basil",thb: 5,g: 71,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
