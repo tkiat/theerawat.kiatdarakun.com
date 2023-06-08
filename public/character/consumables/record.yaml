@@ -12,10 +12,12 @@
         - {t: "cantaloupe",thb: 60,g: 1800,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 30,g: 617,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "ivy gourd",thb: 20,g: 279,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom krayasart",thb: 0,g: 482,nv: 0,oc: 0,mu: 482,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "mango",thb: 30,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 20,g: 344,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 10,g: 244,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "sweet basil",thb: 10,g: 142,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "watermelon",thb: 30,g: 1800,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-05-26":
   - delivery:
       type: no fuel
@@ -66,6 +68,7 @@
       - name: food
         - {t: "coconut milk",thb: 100,g: 1018,nv: 0,oc: 0,mu: 0,u: 0,p: 46,pa: 24,gl: 0}
         - {t: "corn",thb: 20,g: 730,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom krayasart",thb: 0,g: 482,nv: 0,oc: 0,mu: 482,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "longan (dried)",thb: 0,g: 50,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
         - {t: "mango",thb: 73,g: 2598,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pandan leaves",thb: 10,g: 150,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
