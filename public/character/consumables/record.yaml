@@ -1,6 +1,13 @@
 "2023-06-10":
   - delivery:
       type: public
+      km: 63
+    types:
+      - name: food
+        items:
+        - {t: "sunflower seed",thb: 160,g: 800,nv: 0,oc: 800,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
+  - delivery:
+      type: public
       km: 30
     types:
       - name: food
@@ -276,7 +283,7 @@
         - {t: "guava",thb: 25,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "jackfruit",thb: 0,g: 880,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "mango",thb: 0,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-#         - {t: "mango (dried paste)",thb: 0,g: 430-TODO * 3,nv: 0,oc: 0,mu: TODO,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mango (dried paste)",thb: 0,g: 300,nv: 0,oc: 0,mu: 300,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (mixed)",thb: 20,g: 160,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 10,g: 334,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 700,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
@@ -294,9 +301,9 @@
 #       - name: other-edibles
 #         items:
 #         - {t: "vinegar",thb: 61,g: 3316-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
-#       - name: nonedibles
-#         items:
-#         - {t: "fabric softener",thb: 137,g: 1551-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
+      - name: nonedibles
+        items:
+        - {t: "fabric softener",thb: 137,g: 1476,nv: 0,oc: 0,mu: 0,u: 0,p: 75,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 170
