@@ -1,3 +1,18 @@
+"2023-06-17":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        - {t: "bitter gourd",thb: 28,g: 396,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "false pakchoi",thb: 10,g: 246,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 149,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "mango",thb: 40,g: 1350,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 380,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 40,g: 1286,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 10,g: 273,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mixed veggies (frozen)",thb: 49,g: 800,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "watermelon",thb: 40,g: 2162,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 20,g: 842,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-06-10":
   - delivery:
       type: public
@@ -25,7 +40,7 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 51,g: 72000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 59,g: 84000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         - {t: "banana",thb: 30,g: 2603,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 20,g: 397,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}

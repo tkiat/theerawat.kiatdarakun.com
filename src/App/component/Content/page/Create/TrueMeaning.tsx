@@ -40,16 +40,20 @@ export const TrueMeaning = (): React.ReactElement =>
           </li>
 
           <li>
-            The Concrete Examination of the True Meaning of Life
+            True Meaning of My Life
             <ol>
+              <li>... of My Life</li>
+
               <li>Meaning from Sensory Perceptions</li>
               <li>Meaning from Instinctual Emotions</li>
               <li>Meaning from Beliefs</li>
+
+              <li>... of Some Other Beings</li>
             </ol>
           </li>
 
           <li>
-            The True Meaning of Life
+            Judgments About True Meaning
             <ol>
               <li>Judgments About True Meaning</li>
               <li>Different Pursuits of True Meaning</li>
