@@ -1,5 +1,15 @@
 "2023-06-17":
   - delivery:
+      type: public
+      km: 40
+    types:
+      - name: food
+        items:
+        - {t: "pumpkin seed",thb: 27,g: 150,nv: 0,oc: 0,mu: 0,u: 0,p: 9,pa: 0,gl: 0}
+        - {t: "raisin (black)",thb: 49,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
+        - {t: "raisin (brown)",thb: 69,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
+        - {t: "walnut",thb: 30,g: 70,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: food
