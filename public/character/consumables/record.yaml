@@ -1,6 +1,14 @@
 "2023-06-17":
   - delivery:
       type: public
+      km: 860
+    types:
+      - name: food
+        items:
+        - {t: "banana",thb: 0,g: 6400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 0,g: 476,nv: 0,oc: 0,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
+  - delivery:
+      type: public
       km: 40
     types:
       - name: food
@@ -19,7 +27,7 @@
         - {t: "kale",thb: 10,g: 149,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
         - {t: "mango",thb: 40,g: 1350,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 380,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "pineapple",thb: 40,g: 1286,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 80,g: 3100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 17,g: 594,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 10,g: 273,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mixed veggies (frozen)",thb: 49,g: 800,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
