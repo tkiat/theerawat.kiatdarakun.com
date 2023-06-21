@@ -35,36 +35,60 @@ export const TrueMeaning = (): React.ReactElement =>
             Introduction
             <ol>
               <li>Background</li>
-              <li>The Abstract Examination of the True Meaning of Life</li>
             </ol>
           </li>
 
           <li>
-            True Meaning of My Life
+            The Abstract Examination of True Meaning
             <ol>
-              <li>... of My Life</li>
-
-              <li>Meaning from Sensory Perceptions</li>
-              <li>Meaning from Instinctual Emotions</li>
-              <li>Meaning from Beliefs</li>
-
-              <li>... of Some Other Beings</li>
+              <li>Truth and Meaning</li>
+              <li>True Meaning</li>
+              <li>The Examination of Existing Literature Through the Lens of True Meaning</li>
             </ol>
           </li>
 
           <li>
-            Judgments About True Meaning
+            The Concrete, Non-Judgmental Examination of True Meaning
             <ol>
-              <li>Judgments About True Meaning</li>
-              <li>Different Pursuits of True Meaning</li>
-              <li>Existing Literature Through the Lens of True Meaning</li>
+              <li>
+                True Meaning of Both Non-Believers and Believers
+                <ol>
+                  <li>Meaning from Sensory Perceptions</li>
+                  <li>Meaning from Instinctual Emotions</li>
+                </ol>
+              </li>
+
+              <li>
+                True Meaning of Only Believers
+                <ol>
+                  <li>Christianity</li>
+                </ol>
+              </li>
+
+              <li>
+                True Meaning of Nonhumans
+                <ol>
+                  <li>Humanity</li>
+                  <li>Sentient Animals</li>
+                  <li>Non-Sentient Beings</li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+
+          <li>
+            The Concrete, Judgmental Examination of True Meaning
+            <ol>
+              <li>The Need of Judgments</li>
+              <li>Example #1: True Meaning of a Psychopath</li>
+              <li>Example #2: True Meaning of a Buddhist Monk</li>
             </ol>
           </li>
 
           <li>
             My Personal Record
             <ol>
-              <li>My Choices</li> {/* include Personal Judgments About True Meaning therein*/}
+              <li>My Choices</li>
               <li>My Records</li>
             </ol>
           </li>
