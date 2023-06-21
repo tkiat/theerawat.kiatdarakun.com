@@ -62,14 +62,14 @@ export const TrueMeaning = (): React.ReactElement =>
                 True Meaning of Only Believers
                 <ol>
                   <li>Christianity</li>
+                  <li>...</li>
                 </ol>
               </li>
 
               <li>
                 True Meaning of Nonhumans
                 <ol>
-                  <li>Humanity</li>
-                  <li>Sentient Animals</li>
+                  <li>Sentient Beings</li>
                   <li>Non-Sentient Beings</li>
                 </ol>
               </li>
@@ -79,17 +79,28 @@ export const TrueMeaning = (): React.ReactElement =>
           <li>
             The Concrete, Judgmental Examination of True Meaning
             <ol>
-              <li>The Need of Judgments</li>
-              <li>Example #1: True Meaning of a Psychopath</li>
-              <li>Example #2: True Meaning of a Buddhist Monk</li>
-            </ol>
-          </li>
+              <li>
+                Humanity
+                <ol>
+                  <li>Judgments of a Psychopath</li>
+                  <li>Judgments of an Empath</li>
+                </ol>
+              </li>
 
-          <li>
-            My Personal Record
-            <ol>
-              <li>My Choices</li>
-              <li>My Records</li>
+              <li>
+                Nonhuman Sentient Beings
+                <ol>
+                  <li>Judgments of a Tiger</li>
+                </ol>
+              </li>
+
+              <li>
+                Myself
+                <ol>
+                  <li>My Choices</li>
+                  <li>My Records</li>
+                </ol>
+              </li>
             </ol>
           </li>
         </ol>
