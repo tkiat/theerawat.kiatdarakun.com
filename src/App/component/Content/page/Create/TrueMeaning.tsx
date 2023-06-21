@@ -41,9 +41,20 @@ export const TrueMeaning = (): React.ReactElement =>
           <li>
             The Abstract Examination of True Meaning
             <ol>
-              <li>Truth and Meaning</li>
+              <li>
+                Truth
+                <ol>
+                  <li>The Extension of Truth</li>
+                </ol>
+              </li>
+              <li>
+                Meaning
+                <ol>
+                  <li>The Extension of Meaning</li>
+                </ol>
+              </li>
               <li>True Meaning</li>
-              <li>The Examination of Existing Literature Through the Lens of True Meaning</li>
+              <li>Existing Literature Through the Lens of True Meaning</li>
             </ol>
           </li>
 
@@ -83,7 +94,7 @@ export const TrueMeaning = (): React.ReactElement =>
                 Humanity
                 <ol>
                   <li>Judgments of a Psychopath</li>
-                  <li>Judgments of an Empath</li>
+                  <li>Judgments of a Non-Psychopath</li>
                 </ol>
               </li>
 
