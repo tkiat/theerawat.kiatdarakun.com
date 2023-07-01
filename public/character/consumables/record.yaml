@@ -1,3 +1,23 @@
+"2023-07-01":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 26,g: 36000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        - {t: "agasta",thb: 10,g: 80,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "bitter gourd",thb: 20,g: 383,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "carrot",thb: 20,g: 383,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "corn",thb: 20,g: 876,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "holy basil",thb: 5,g: 71,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mango",thb: 30,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 380,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "mushroom (oyster)",thb: 30,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "papaya",thb: 56,g: 1400,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 35,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 10,g: 527,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-06-24":
   - delivery:
       type: public
@@ -5,8 +25,8 @@
     types:
       - name: food
         items:
-        - {t: "sunflower seeds",thb: 114,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-        - {t: "sesame seeds",thb: 161,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "sunflower seeds (roasted)",thb: 114,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "sesame seeds (roasted)",thb: 161,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
