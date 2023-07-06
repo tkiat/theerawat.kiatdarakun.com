@@ -9,7 +9,7 @@
         - {t: "agasta",thb: 10,g: 80,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 20,g: 383,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 383,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "corn",thb: 20,g: 876,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "corn",thb: 40,g: 1752,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "guava",thb: 15,g: 480,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "holy basil",thb: 5,g: 71,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mango",thb: 55,g: 1643,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -17,7 +17,8 @@
         - {t: "mushroom (oyster)",thb: 30,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "papaya",thb: 56,g: 1400,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
-        - {t: "pineapple",thb: 35,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 65,g: 2010,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 10,g: 560,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 0,g: 740,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 10,g: 527,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-06-24":
