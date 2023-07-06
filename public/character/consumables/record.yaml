@@ -12,6 +12,7 @@
         - {t: "corn",thb: 40,g: 1752,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "guava",thb: 15,g: 480,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "holy basil",thb: 5,g: 71,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 0,u: 78,p: 4,pa: 0,gl: 0}
         - {t: "mango",thb: 55,g: 1643,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 380,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (oyster)",thb: 30,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
