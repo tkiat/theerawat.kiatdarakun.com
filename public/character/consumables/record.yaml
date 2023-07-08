@@ -1,3 +1,26 @@
+"2023-07-08":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        - {t: "banana",thb: 25,g: 1233,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "cantaloupe",thb: 35,g: 1280,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "celery",thb: 16,g: 125,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "corn",thb: 20,g: 876,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "false pakchoi",thb: 10,g: 441,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "ginger (shredded)",thb: 10,g: 94,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "guava",thb: 66,g: 2200,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "mushroom (straw)",thb: 20,g: 102,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "peanut",thb: 44,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "peanut (boiled)",thb: 20,g: 122,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 0,g: 740,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 15,g: 447,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "tomato",thb: 10,g: 193,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-07-01":
   - delivery:
       type: no fuel
@@ -20,7 +43,6 @@
         - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "pineapple",thb: 65,g: 2010,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 10,g: 560,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
-        - {t: "pumpkin",thb: 0,g: 740,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 10,g: 527,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-06-24":
   - delivery:
@@ -296,7 +318,7 @@
         - {t: "mango",thb: 50,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (king oyster)",thb: 35,g: 204,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
         - {t: "mushroom (oyster, dried)",thb: 95,g: 200,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
-        - {t: "peanut (boiled)",thb: 0,g: 152,nv: 0,oc: 0,mu: 152,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "peanut (boiled)",thb: 0,g: 152,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 55,g: 1688,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 18,g: 555,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 26,g: 637,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
@@ -920,7 +942,7 @@
         - {t: "khanom khao tom mud",thb: 20,g: 268,nv: 0,oc: 0,mu: 268,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 15,g: 196,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "muskmelon",thb: 30,g: 983,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "peanut (boiled)",thb: 10,g: 68,nv: 0,oc: 0,mu: 68,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "peanut (boiled)",thb: 10,g: 68,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 35,g: 1050,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 50,g: 1703,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 25,g: 513,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -1341,7 +1363,7 @@
         items:
         - {t: "banana",thb: 20,g: 1070,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bread",thb: 22,g: 250,nv: 0,oc: 0,mu: 0,u: 250,p: 5,pa: 0,gl: 0}
-        - {t: "peanut (boiled)",thb: 20,g: 135,nv: 0,oc: 0,mu: 135,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "peanut (boiled)",thb: 20,g: 135,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 407,nv: 0,oc: 0,mu: 401,u: 6,p: 0,pa: 0,gl: 0}
         - {t: "shave ice",thb: 20,g: 420,nv: 0,oc: 0,mu: 420,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-liquid
@@ -1373,7 +1395,7 @@
         - {t: "morning glory",thb: 10,g: 143,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (shiitake)",thb: 20,g: 85,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "parsley",thb: 5,g: 30,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "peanut (boiled)",thb: 30,g: 223,nv: 0,oc: 0,mu: 223,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "peanut (boiled)",thb: 30,g: 223,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 80,g: 3030,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato",thb: 55,g: 1072,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 18,g: 449,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -1412,7 +1434,7 @@
         - {t: "khanom krayasart",thb: 20,g: 99,nv: 0,oc: 0,mu: 99,u: 0,p: 2,pa: 1,gl: 0}
         - {t: "khanom nang led",thb: 42,g: 278,nv: 0,oc: 0,mu: 0,u: 278,p: 8,pa: 0,gl: 0}
         - {t: "morning glory",thb: 30,g: 686,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "peanut (boiled)",thb: 20,g: 138,nv: 0,oc: 0,mu: 138,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "peanut (boiled)",thb: 20,g: 138,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pineapple",thb: 80,g: 3003,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (fried)",thb: 15,g: 98,nv: 0,oc: 0,mu: 98,u: 0,p: 5,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 23,g: 556,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
