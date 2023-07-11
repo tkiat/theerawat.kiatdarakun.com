@@ -14,10 +14,12 @@
         - {t: "ginger (shredded)",thb: 10,g: 94,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "guava",thb: 66,g: 2200,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 35,g: 218,nv: 0,oc: 0,mu: 0,u: 218,p: 6,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "mushroom (straw)",thb: 20,g: 102,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "peanut",thb: 44,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
         - {t: "peanut (boiled)",thb: 20,g: 122,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 35,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 0,g: 740,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 447,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tomato",thb: 10,g: 193,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
