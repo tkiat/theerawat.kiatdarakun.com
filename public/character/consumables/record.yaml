@@ -6,7 +6,7 @@
         items:
         - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
-        - {t: "banana",thb: 25,g: 1233,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "banana",thb: 65,g: 2533,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cantaloupe",thb: 35,g: 1280,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "celery",thb: 16,g: 125,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "corn",thb: 20,g: 876,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
@@ -23,6 +23,7 @@
         - {t: "pumpkin",thb: 0,g: 740,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 447,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tomato",thb: 10,g: 193,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "watermelon",thb: 40,g: 2443,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-07-01":
   - delivery:
       type: no fuel
