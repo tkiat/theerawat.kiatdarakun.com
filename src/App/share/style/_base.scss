@@ -111,6 +111,7 @@ h1, h2, h3, a, button, strong, b {
       height: 100%;
 
       background-image: var(--background-image);
+      background-size: cover;
       opacity: f.dayOrDark(0.08, 0.05);
       pointer-events: none;
       z-index: -1;
