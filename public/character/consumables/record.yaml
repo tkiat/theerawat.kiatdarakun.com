@@ -2,9 +2,9 @@
   - delivery:
       type: no fuel
     types:
-      - name: drink-liquid
+      - name: nonedibles
         items:
-        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "artificial tear",thb: 77,g: n/a,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 7,pa: 0,gl: 0}
       - name: food
         - {t: "bitter gourd",thb: 30,g: 531,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd (kee nok)",thb: 5,g: 96,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
