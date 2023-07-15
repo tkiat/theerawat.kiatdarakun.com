@@ -1,10 +1,29 @@
-"2023-07-08":
+"2023-07-15":
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
         - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        - {t: "bitter gourd",thb: 30,g: 531,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "bitter gourd (kee nok)",thb: 5,g: 96,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "broccoli",thb: 28,g: 262,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "cabbage",thb: 20,g: 419,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "carrot",thb: 15,g: 276,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud",thb: 20,g: 394,nv: 0,oc: 0,mu: 394,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 40,g: 1167,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "french fries (frozen)",thb: 129,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 15,g: 410,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+"2023-07-08":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 26,g: 36000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         - {t: "banana",thb: 65,g: 2533,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cantaloupe",thb: 35,g: 1280,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
