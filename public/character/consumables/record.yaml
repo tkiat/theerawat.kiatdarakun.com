@@ -1,3 +1,24 @@
+"2023-07-22":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        - {t: "agasta",thb: 10,g: 80,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "banana",thb: 60,g: 2552,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "basil (sweet)",thb: 10,g: 142,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "cabbage",thb: 20,g: 481,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "carrot",thb: 20,g: 486,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "mango",thb: 10,g: 242,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "gourd (angled)",thb: 10,g: 561,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "papaya",thb: 20,g: 969,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 50,g: 1300,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 10,g: 391,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 15,g: 505,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-07-15":
   - delivery:
       type: no fuel
@@ -2140,7 +2161,7 @@
         - {t: "mushroom (buna-shimeji)",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pineapple (smooth cayenne)",thb: 35,g: 1680,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 30,g: 1020,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
-        - {t: "pumpkin (sliced)",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "tofu",thb: 43,g: 300,nv: 0,oc: 0,mu: 300,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "tomato (seeda)",thb: 11,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
   - delivery:
