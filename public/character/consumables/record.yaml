@@ -1,10 +1,19 @@
 "2023-07-22":
   - delivery:
+      type: public
+      km: TODO
+    types:
+      - name: food
+        items:
+        - {t: "beans (mung)",thb: 58,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "job's tears",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "peanut",thb: 80,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 12,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         - {t: "agasta",thb: 10,g: 80,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "banana",thb: 60,g: 2552,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
