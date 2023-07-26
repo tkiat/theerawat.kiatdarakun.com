@@ -5,8 +5,8 @@ import {MainPath, capitalize} from "@app/share"
 import {DuckAboutMe, DuckActivity} from "@assets/duck"
 
 type P = {isActive: boolean, left: string, onclick: () => void, path: MainPath,
-          to: string}
-export const ItemContent = ({isActive, left, onclick, path, to}: P):
+          index: number, to: string}
+export const ItemContent = ({isActive, index, left, onclick, path, to}: P):
   React.ReactElement => {
   const text = capitalize(path)
   return (
@@ -22,10 +22,10 @@ export const ItemContent = ({isActive, left, onclick, path, to}: P):
     >
       <div className="nav-main__text">{text}</div>
       {
-        {
-          "about": <DuckAboutMe className={"nav-main__svg"} />,
-          "activity": <DuckActivity className={"nav-main__svg"} />,
-        }[path]
+        [
+          <DuckAboutMe className={"nav-main__svg"} />,
+          <DuckActivity className={"nav-main__svg"} />,
+        ][index]
       }
     </Link>
 )}

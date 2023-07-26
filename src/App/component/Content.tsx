@@ -6,7 +6,7 @@ import {pathObject} from "@app/share"
 import {Character, Digest, Events, Create, Hi, NotFound, Story} from "./Content/page"
 
 const paths = Object.entries(pathObject).
-  map(([k, v]) => v.length ? v.map(x => k + "/" + x) : [k]).flat(1)
+  map(([k, v]) => v.length ? v.map(x => encodeURI(k) + "/" + x) : [k]).flat(1)
 
 export const Content = (): React.ReactElement =>
   <div className="content">

@@ -18,6 +18,7 @@ export const NavMain = ({path, setPath}: P):
         key={x}
         path={x}
         to={"/" + x + "/" + path.mapping[x]}
+        index={i}
         isActive={x === path.current}
         left={left(i)}
         onclick={() => setPath(d => { d.current = x })}
