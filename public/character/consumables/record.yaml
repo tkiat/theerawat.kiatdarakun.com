@@ -7,6 +7,7 @@
         items:
         - {t: "beans (mung)",thb: 58,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "job's tears",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 108,nv: 0,oc: 0,mu: 0,u: 108,p: 6,pa: 0,gl: 0}
         - {t: "peanut",thb: 80,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
   - delivery:
       type: no fuel
