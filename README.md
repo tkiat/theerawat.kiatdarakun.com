@@ -19,7 +19,7 @@ The wave represents my journey. This [Youtube video](https://www.youtube.com/wat
 
 A letter consists of two SVGs: a display border and a mask to hide water outside the border. For each Raleway letter (from Google Fonts), I import it into Inkscape and generate these 2 SVGs. Two pipes are added to the top and bottom of each letter to make the flow realistic.
 
-There was a tiny (around 1px) unknown space between two adjacent SVGs in both Chrome and Firefox so I add extra space at two end of each letter and then use negative margin to remove that. As for the animation, a total of 12 animations are required. Take a look at [this document](doc/water-animation.md) for details.
+There was a tiny (around 1px) unknown space between two adjacent SVGs in both Chrome and Firefox so I add extra space at two end of each letter and then use negative margin to remove that. As for the animation, a total of [12 possibilities](doc/water-animation.md) are required.
 
 ### Other
 
