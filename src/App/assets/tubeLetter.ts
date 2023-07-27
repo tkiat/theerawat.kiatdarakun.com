@@ -1,4 +1,5 @@
 export {ReactComponent as UpperABorder} from "./tubeLetter/a_uppercase-border.svg"
+export {ReactComponent as UpperBBorder} from "./tubeLetter/b_uppercase-border.svg"
 export {ReactComponent as UpperCBorder} from "./tubeLetter/c_uppercase-border.svg"
 export {ReactComponent as UpperDBorder} from "./tubeLetter/d_uppercase-border.svg"
 export {ReactComponent as UpperEBorder} from "./tubeLetter/e_uppercase-border.svg"
@@ -19,6 +20,7 @@ export {ReactComponent as UpperVBorder} from "./tubeLetter/v_uppercase-border.sv
 export {ReactComponent as UpperWBorder} from "./tubeLetter/w_uppercase-border.svg"
 
 export {ReactComponent as UpperAMask} from "./tubeLetter/a_uppercase-mask.svg"
+export {ReactComponent as UpperBMask} from "./tubeLetter/b_uppercase-mask.svg"
 export {ReactComponent as UpperCMask} from "./tubeLetter/c_uppercase-mask.svg"
 export {ReactComponent as UpperDMask} from "./tubeLetter/d_uppercase-mask.svg"
 export {ReactComponent as UpperEMask} from "./tubeLetter/e_uppercase-mask.svg"

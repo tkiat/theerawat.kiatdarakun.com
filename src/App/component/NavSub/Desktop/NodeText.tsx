@@ -8,6 +8,7 @@ type P = {[k in "border" | "mask"]: {[index: string]: React.ReactElement}}
 export const letters: P = {
   border: {
 //     A: <ls.UpperABorder />,
+    B: <ls.UpperBBorder />,
     C: <ls.UpperCBorder />,
     D: <ls.UpperDBorder />,
     E: <ls.UpperEBorder />,
@@ -25,7 +26,7 @@ export const letters: P = {
     T: <ls.UpperTBorder />,
 //     U: <ls.UpperUBorder />,
 //     V: <ls.UpperVBorder />,
-//     W: <ls.UpperWBorder />,
+    W: <ls.UpperWBorder />,
 
     a: <ls.LowerABorder />,
     b: <ls.LowerBBorder />,
@@ -52,6 +53,7 @@ export const letters: P = {
   },
   mask: {
 //     A: <ls.UpperAMask />,
+    B: <ls.UpperBMask />,
     C: <ls.UpperCMask />,
     D: <ls.UpperDMask />,
     E: <ls.UpperEMask />,
@@ -69,7 +71,7 @@ export const letters: P = {
     T: <ls.UpperTMask />,
 //     U: <ls.UpperUMask />,
 //     V: <ls.UpperVMask />,
-//     W: <ls.UpperWMask />,
+    W: <ls.UpperWMask />,
 
     a: <ls.LowerAMask />,
     b: <ls.LowerBMask />,

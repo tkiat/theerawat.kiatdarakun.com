@@ -4,7 +4,7 @@ import {isType} from "./general"
 export type PathObject = typeof pathObject
 export const pathObject = {
   "jobs & Skills": ["formal", "informal"],
-  "personal": ["story", "trueMeaning", "hobby"],
+  "personal": ["bio", "trueMeaning", "hobby"],
 } as const
 
 const numMainPaths = Object.keys(pathObject).length
