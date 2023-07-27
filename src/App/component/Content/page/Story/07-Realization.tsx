@@ -23,11 +23,11 @@ export const Realization = (): React.ReactElement =>
       </TooltipText>
       , I realized that&nbsp;
       <TooltipText text="the true meaning of life">
-        <div>Having five legs is a true property of a five-leg unicorn, even though it is fictional. Likewise, the true meaning of life is a sense of importance emerging from the inherent properties of life (whether or not life is fictional), and any capable entity may perceive it.</div>
+        Having five legs is a true property of a five-leg unicorn, even though it is fictional. Likewise, the true meaning of life is a sense of importance emerging from the inherent properties of life (whether or not life is fictional), and any capable entity may perceive it.
 
-        <br />
+        <br /><br />
 
-        <div>To my knowledge, only instinctual emotions, sensory experiences, and thoughts can create meaning, out of which only the first two are the inherent qualities of life since thoughts alone are arbitrary. Based on emotions and sensory perceptions, one may use memories and thoughts to align actions and possessions with meanings emerging from them. Such action, though probably imperfect, is always a manifestation of one's pursuit of true meaning.</div>
+        To my knowledge, only instinctual emotions, sensory experiences, and thoughts can create meaning, out of which only the first two are the inherent qualities of life since thoughts alone are arbitrary. Based on emotions and sensory perceptions, one may use memories and thoughts to align actions and possessions with meanings emerging from them. Such action, though probably imperfect, is always a manifestation of one's pursuit of true meaning.
       </TooltipText>
       &nbsp;can take me out of the darkness of ignorance. I wanted to live by my interpretations and judgments about true meaning of life and produce relevant works.</p>
   </>

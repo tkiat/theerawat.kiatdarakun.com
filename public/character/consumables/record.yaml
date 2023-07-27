@@ -14,7 +14,7 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 12,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 20,g: 30000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "agasta",thb: 10,g: 80,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -23,11 +23,13 @@
         - {t: "cabbage",thb: 20,g: 481,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 486,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "lime",thb: 20,g: 409,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mango",thb: 10,g: 242,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "gourd (angled)",thb: 10,g: 561,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "papaya",thb: 20,g: 969,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
         - {t: "pineapple",thb: 50,g: 1300,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 30,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 10,g: 391,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 505,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-07-15":
