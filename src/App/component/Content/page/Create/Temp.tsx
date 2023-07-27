@@ -2,7 +2,7 @@ import React from "react"
 
 import {TooltipFa, TooltipText} from "../../share"
 
-export const TrueMeaning = (): React.ReactElement =>
+export const Temp = (): React.ReactElement =>
   <>
     <h2>The True Meaning</h2>
 

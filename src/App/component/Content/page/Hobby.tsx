@@ -6,7 +6,7 @@ import {findObjValRecursive} from "@app/share"
 
 const source = "/digest.yaml"
 
-export const Digest = (): React.ReactElement => {
+export const Hobby = (): React.ReactElement => {
   const [content, setContent] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {

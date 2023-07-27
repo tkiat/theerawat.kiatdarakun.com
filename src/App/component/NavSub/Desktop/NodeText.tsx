@@ -32,7 +32,7 @@ export const letters: P = {
     c: <ls.LowerCBorder />,
 //     d: <ls.LowerDBorder />,
     e: <ls.LowerEBorder />,
-//     f: <ls.LowerFBorder />,
+    f: <ls.LowerFBorder />,
     g: <ls.LowerGBorder />,
     h: <ls.LowerHBorder />,
     i: <ls.LowerIBorder />,

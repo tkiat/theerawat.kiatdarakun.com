@@ -3,11 +3,11 @@ import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../share"
 import {findObjValRecursive} from "@app/share"
-import {TrueMeaning} from "./Create/TrueMeaning"
+import {Temp} from "./Create/Temp"
 
 const source = "/create.yaml"
 
-export const Create = (): React.ReactElement => {
+export const TrueMeaning = (): React.ReactElement => {
   const [content, setContent] = React.useState<unknown>()
 
   React.useEffect((): (() => void) => {
@@ -38,7 +38,7 @@ export const Create = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        <TrueMeaning />,
+        <Temp />,
         <Software content={content} />,
         <Misc content={content}/>,
       ]

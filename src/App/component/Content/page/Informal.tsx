@@ -2,12 +2,12 @@ import React from "react"
 import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../share"
-import {Consumables} from "./Character/Consumables"
-import {Hobbies} from "./Character/Hobbies"
-import {ThingsIOwn} from "./Character/ThingsIOwn"
-import {Trait} from "./Character/Trait"
+import {Consumables} from "./Informal/Consumables"
+import {Hobbies} from "./Informal/Hobbies"
+import {ThingsIOwn} from "./Informal/ThingsIOwn"
+import {Trait} from "./Informal/Trait"
 
-export const Character = (): React.ReactElement => {
+export const Informal = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-person"></i>,

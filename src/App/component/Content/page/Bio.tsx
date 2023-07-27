@@ -1,17 +1,17 @@
 import React from "react"
 
 import {PageWithIconsScrollbar} from "../share"
-import {Child} from "./Story/00-Child"
-import {Teen} from "./Story/01-Teen"
-import {Bachelor} from "./Story/02-Bachelor"
-import {BeforeMaster} from "./Story/03-BeforeMaster"
-import {Master} from "./Story/04-Master"
-import {WorkGermany} from "./Story/05-WorkGermany"
-import {VoluntaryUnemployment} from "./Story/06-VoluntaryUnemployment"
-import {Realization} from "./Story/07-Realization"
-import {FindWork} from "./Story/08-FindWork"
+import {Child} from "./Bio/00-Child"
+import {Teen} from "./Bio/01-Teen"
+import {Bachelor} from "./Bio/02-Bachelor"
+import {BeforeMaster} from "./Bio/03-BeforeMaster"
+import {Master} from "./Bio/04-Master"
+import {WorkGermany} from "./Bio/05-WorkGermany"
+import {VoluntaryUnemployment} from "./Bio/06-VoluntaryUnemployment"
+import {Realization} from "./Bio/07-Realization"
+import {FindWork} from "./Bio/08-FindWork"
 
-export const Story = (): React.ReactElement => {
+export const Bio = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-baby"></i>,

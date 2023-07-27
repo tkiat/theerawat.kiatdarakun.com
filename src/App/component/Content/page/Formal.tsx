@@ -2,7 +2,7 @@ import React from "react"
 
 import {TooltipText, TooltipTextWithDelay} from "../share"
 
-export const Hi = (): React.ReactElement =>
+export const Formal = (): React.ReactElement =>
   <div className="no-split">
     <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I live by my judgments and interpretations of <b className="highlight">the true meaning of life</b> and produce works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
