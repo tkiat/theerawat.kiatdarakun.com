@@ -3,20 +3,18 @@ import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../../share"
 import {Work} from "./Informal/Work"
-import {Education} from "./Informal/Education"
+import {Software} from "./Informal/Software"
 import {Other} from "./Informal/Other"
 
 export const Informal = (): React.ReactElement => {
   const data = {
     icons: [
-      <i className="fa-solid fa-laptop"></i>,
-      <i className="fa-solid fa-book"></i>,
+      <i className="fa-solid fa-code"></i>,
       <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],
     content: {
       sections: [
-        <Work />,
-        <Education />,
+        <Software />,
         <Other />,
       ]
     }

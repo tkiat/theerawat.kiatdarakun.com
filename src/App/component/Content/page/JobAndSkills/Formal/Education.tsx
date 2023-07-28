@@ -22,7 +22,7 @@ export const Education = (): React.ReactElement =>
       Sirindhorn International Institute of Technology, Thailand (1st Class Honor)
 
       <ul>
-        <li>I published the thesis (Entropy Rate of Thai Text and Testing Author Authenticity Using Character Combination Distribution) in an <a href="https://ieeexplore.ieee.org/document/6215415">IEEE paper</a></li>
+        <li>I published the thesis (Entropy Rate of Thai Text and Testing Author Authenticity Using Character Combination Distribution) in an <a href="https://ieeexplore.ieee.org/document/6215415">IEEE paper</a>.</li>
         <li>I was awarded 4-year full scholarships.</li>
       </ul>
     </section>

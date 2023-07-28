@@ -10,7 +10,7 @@ export const Work = (): React.ReactElement =>
       <b><u>Voluntary Employment Gap</u></b>&ensp;[May 2018 – Aug 2022, Dec 2022 – July 2023]
 
       <ul>
-        <li>Found my life purpose, i.e., live by true meaning (in short, it is my sentience discovered by my awareness). I am working on a book on this topic in my free time.</li>
+        <li>Found my life purpose, i.e., live by true meaning (i.e., some kinds of my sentience recognized by my awareness). I am working on a book on this topic in my free time.</li>
         <li>Learned a lot about low impact living, philosophy, and computer. I have built this website and some other coding projects.</li>
       </ul>
     </section>

@@ -97,14 +97,6 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Misc.</h2>
 
     <section>
-      <h3 className="highlight">Academic Publication</h3>
-
-      <p>I published two papers in communication technology around the end of my undergraduate studies.</p>
-
-      {renderItems(content, ["misc", "academic-publication"])}
-    </section>
-
-    <section>
       <h3 className="highlight">Video Games</h3>
 
       <section className="abandoned">
@@ -115,13 +107,11 @@ const Misc = ({content}: {content: unknown}): React.ReactElement =>
     </section>
 
     <section>
-      <h3 className="highlight">Other</h3>
+      <h3><u>A Freedom Blog (Abandoned)</u></h3>
 
-      <section className="abandoned">
-        <h4>A Freedom Blog</h4>
-
-        <p>This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12-02 to focus my lifelong efforts on the works of what can truly matter.</p>
-      </section>
+      <div className="abandoned">
+        This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12-02 due to the shift of my persuits to the work about true meaning.
+      </div>
     </section>
   </>
 
