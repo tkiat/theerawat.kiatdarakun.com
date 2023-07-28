@@ -6,20 +6,24 @@ export const Education = (): React.ReactElement =>
   <section>
     <h2>Education</h2>
 
-    <dl className="more-gap-list">
-      <dt><b className="highlight">Low-Impact Living</b></dt>
-      <dd>I value minimalism, sustainability, and low-impact living. It is a lot of fun and creativity boosting to find a way to make my items (like tables, lamps, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to make a judgment about how much I trade my time and convenience for it.</dd>
+    <section>
+      <b><u>Master of Science in Communications Engineering</u></b>&ensp;[Oct 2013 – Jul 2016]
+      <br/>
+      RWTH Aachen University, Germany (GPA: 2.0/1.0, 1.0 = Best)
 
-      <dt><b className="highlight">Increase Awareness</b></dt>
-      <dd>I like to consume information to increase my awareness of the world. This should help reinforce my understanding of things that can truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.</dd>
+      <ul>
+        <li>Thesis Title: Practical Evaluation of Entangled Packet Repetition. I evaluated a channel coding scheme based on 802.11 reference design using WARP boards.</li>
+      </ul>
+    </section>
 
-      <dt><b className="highlight">Writing</b></dt>
-      <dd>Life is too short to die alone without anything to share with others. Writing is a minimalist way to convey thoughts while leaving a lot of room for the imagination.</dd>
+    <section>
+      <b><u>Bachelor of Engineering in Electronics and Communication</u></b>&ensp;[Jun 2008 – Apr 2012]
+      <br/>
+      Sirindhorn International Institute of Technology, Thailand (1st Class Honor)
 
-      <dt><b className="highlight">(Free and) Open Source Software</b></dt>
-      <dd>Software enables me to create and share my thoughts with the whole world beyond what text alone can convey. I advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open-source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</dd>
-
-      <dt><b className="highlight">Philosophy</b></dt>
-      <dd>Knowledge of philosophy should make my works (about the true meaning of life) more accessible and acceptable to the general public. I have yet to digest a lot of works but I will do so in my free time.</dd>
-    </dl>
+      <ul>
+        <li>Thesis Title: Entropy Rate of Thai Text and Testing Author Authenticity Using Character Combination Distribution. The result is published in an IEEE paper (DICTAP2012).</li>
+        <li>I was awarded 4-year full scholarships.</li>
+      </ul>
+    </section>
   </section>

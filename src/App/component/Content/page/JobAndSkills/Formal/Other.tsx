@@ -6,52 +6,25 @@ export const Other = (): React.ReactElement =>
   <section>
     <h2>Other</h2>
 
+    <h3><u>About</u></h3>
+
+    <p>Thai (Ethnicity and Nationality), Millennials</p>
+
+    <h3><u>Skills</u></h3>
+
     <ul className="more-gap-list">
-      <li>
-        <b className="highlight">Hard Skills</b>
-        &nbsp;—&nbsp;
-        <TooltipText text="Language">
-          <ul>
-            <li>Thai (native)</li>
-            <li>English (professional)</li>
-            <li>German (basic)</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Computer">
-          <ul>
-            <li>Basic office software (Microsoft Office, LibreOffice, cloud storage, Graphviz, LaTeX, email hosting, etc.)</li>
-            <li>Coding: Basic front-end dev, Git, Vim, Haskell/Python/Typescript/React.js/SCSS/shell scripting, etc.</li>
-            <li>Linux (Debian, Nix, NixOS, QubesOS, etc.)</li>
-            <li>Typing speed of 60 WPM</li>
-          </ul>
-        </TooltipText>
-      </li>
+      <li><b className="highlight">Language</b> — Thai (native), English (professional), German (basic)</li>
 
       <li>
-        <b className="highlight">Soft Skills</b>
-        &nbsp;—&nbsp;
-        <TooltipText text="Workplace">
-          <ul>
-            <li><b className="highlight">Performance</b>: I am naturally inclined to learn something new, and I possess good quantitative and analytical thinking skills. I believe I can handle most jobs.</li>
-            <li><b className="highlight">Teamwork</b>: As a highly conscientious person, I tend to be disciplined. I have so far abided by the rules in the workplaces.</li>
-            <li><b className="highlight">Social</b>: I am a direct and friendly person and I dislike gossip. However, I have a social withdrawal tendency (outside work).</li>
-          </ul>
-        </TooltipText>
-        ,&ensp;
-        <TooltipText text="Personal">
-          <ul>
-            <li><b className="highlight">Self-Awareness</b>: A long self-reflection period of mine proved fruitful. I now know what truly matters to me and align my life to it.</li>
-            <li><b className="highlight">Low-Impact Living</b>: I know how to save household electrity/water, eat simply, not disturb others, and frequently avoid creating unnecessary wastes.</li>
-          </ul>
-        </TooltipText>
+        <b className="highlight">Computer</b>
+
+        <ul>
+          <li>Office: basic office suite, Vim, 60 WPM typing speed</li>
+          <li>Coding: Git, Python/Typescript/React.js/SCSS/Haskell/shell scripting, etc.</li>
+          <li>Linux: Debian, Nix/NixOS, QubesOS, etc.</li>
+        </ul>
       </li>
 
-      <li>
-        <b className="highlight">Trait</b>
-
-        &nbsp;—&nbsp;
-        Thai (Ethnicity and Nationality),&ensp;Millennials
-      </li>
+      <li><b className="highlight">Soft Skills</b> — I am highly conscientious, calm, direct, and peaceful. Besides, I possess good quantitative and analytical thinking skills and always have thirst for knowledge. I have so far abided by the rules in the workplaces, and I believe I can handle most jobs.</li>
     </ul>
   </section>

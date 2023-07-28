@@ -4,22 +4,64 @@ import {TooltipText, TooltipTextWithDelay} from "../../../share"
 
 export const Work = (): React.ReactElement =>
   <section>
-    <h2>Work</h2>
+    <h2>Work Experience</h2>
 
-    <dl className="more-gap-list">
-      <dt><b className="highlight">Low-Impact Living</b></dt>
-      <dd>I value minimalism, sustainability, and low-impact living. It is a lot of fun and creativity boosting to find a way to make my items (like tables, lamps, detergents, food, etc.) less impactful to myself, other beings, and the earth. Oftentimes I need to make a judgment about how much I trade my time and convenience for it.</dd>
+    <section>
+      <b><u>Voluntary Employment Gap</u></b>&ensp;[May 2018 – Aug 2022, Dec 2022 – July 2023]
 
-      <dt><b className="highlight">Increase Awareness</b></dt>
-      <dd>I like to consume information to increase my awareness of the world. This should help reinforce my understanding of things that can truly matter. It can be news, documentaries, discoveries, inventions, opinions, etc.</dd>
+      <ul>
+        <li>Found my life purpose and finished some coding projects during this period.</li>
+      </ul>
+    </section>
 
-      <dt><b className="highlight">Writing</b></dt>
-      <dd>Life is too short to die alone without anything to share with others. Writing is a minimalist way to convey thoughts while leaving a lot of room for the imagination.</dd>
+    <section>
+      <b><u>Customer Care Agent</u></b>&ensp;[Feb 2017 – Jan 2018]
+      <br/>
+      Arvato Direct Services Potsdam GmbH, Berlin, Germany
 
-      <dt><b className="highlight">(Free and) Open Source Software</b></dt>
-      <dd>Software enables me to create and share my thoughts with the whole world beyond what text alone can convey. I advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open-source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</dd>
+      <ul>
+        <li>Reviewed social network contents based on client’s live policies.</li>
+      </ul>
+    </section>
 
-      <dt><b className="highlight">Philosophy</b></dt>
-      <dd>Knowledge of philosophy should make my works (about the true meaning of life) more accessible and acceptable to the general public. I have yet to digest a lot of works but I will do so in my free time.</dd>
-    </dl>
+    <section>
+      <b><u>Engineering Internship</u></b>&ensp;[Feb – Jul 2016]
+      <br/>
+      National Instruments Dresden GmbH, Dresden, Germany
+
+      <ul>
+        <li>Improved MAC/PHY layers in LabVIEW Communications 802.11 Application Framework.</li>
+      </ul>
+    </section>
+
+    <section>
+      <b><u>Teaching and Research Assistant</u></b>&ensp;[Feb 2012 – Apr 2013]
+      <br/>
+      Sirindhorn International Institute of Technology, Thammasat University, Thailand
+
+      <ul>
+        <li>Assisted students in three tutorials and five laboratories.</li>
+        <li>Carried out paid research on RFID technology and published an IEEE paper (ISCIT2013).</li>
+      </ul>
+    </section>
+
+    <section>
+      <b><u>Tutor</u></b>&ensp;[2012]
+      <br/>
+      EPA Academic Center
+
+      <ul>
+        <li>Taught international students for more than 50 hours in total in Math and Physics.</li>
+      </ul>
+    </section>
+
+    <section>
+      <b><u>Engineering Internship</u></b>&ensp;[Mar – May 2011]
+      <br/>
+      Thaicom Public Limited Company, Pathum Thani, Thailand
+
+      <ul>
+        <li>Tested satellite dish components and wrote socket programming for test equipment.</li>
+      </ul>
+    </section>
   </section>
