@@ -1,3 +1,19 @@
+"2023-07-29":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "bitter gourd",thb: 15,g: 176,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "carrot",thb: 10,g: 249,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "celery",thb: 10,g: 118,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "corn",thb: 40,g: 1374,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 262,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "lotus stem",thb: 15,g: 407,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 264,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 20,g: 461,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 15,g: 530,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "tomato",thb: 10,g: 263,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
 "2023-07-22":
   - delivery:
       type: public

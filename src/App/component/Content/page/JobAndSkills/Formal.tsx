@@ -10,10 +10,9 @@ import {Other} from "./Formal/Other"
 export const Formal = (): React.ReactElement => {
   const data = {
     icons: [
-      <i className="fa-solid fa-person"></i>,
-      <i className="fa-solid fa-person-hiking"></i>,
-      <i className="fa-solid fa-cart-shopping"></i>,
-//       <i className="fa-solid fa-suitcase-rolling"></i>,
+      <i className="fa-solid fa-briefcase"></i>,
+      <i className="fa-solid fa-school"></i>,
+      <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],
     content: {
       prelude: <Intro />,
