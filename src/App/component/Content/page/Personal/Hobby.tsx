@@ -1,7 +1,7 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar, TooltipFa, TooltipText} from "../share"
+import {PageWithIconsScrollbar, TooltipFa, TooltipText} from "../../share"
 import {findObjValRecursive} from "@app/share"
 
 const source = "/digest.yaml"

@@ -1,13 +1,13 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar} from "../share"
-import {Consumables} from "./Informal/Consumables"
-import {Hobbies} from "./Informal/Hobbies"
-import {ThingsIOwn} from "./Informal/ThingsIOwn"
-import {Trait} from "./Informal/Trait"
+import {PageWithIconsScrollbar} from "../../share"
+import {Intro} from "./Formal/Intro"
+import {Work} from "./Formal/Work"
+import {Education} from "./Formal/Education"
+import {Other} from "./Formal/Other"
 
-export const Informal = (): React.ReactElement => {
+export const Formal = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-person"></i>,
@@ -16,11 +16,11 @@ export const Informal = (): React.ReactElement => {
 //       <i className="fa-solid fa-suitcase-rolling"></i>,
     ],
     content: {
+      prelude: <Intro />,
       sections: [
-        <Trait />,
-        <Hobbies />,
-        <Consumables />,
-//         <ThingsIOwn />,
+        <Work />,
+        <Education />,
+        <Other />,
       ]
     }
   }

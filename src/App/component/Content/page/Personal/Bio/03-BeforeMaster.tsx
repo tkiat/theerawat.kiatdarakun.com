@@ -1,6 +1,6 @@
 import React from "react"
 
-import {TooltipText} from "../../share"
+import {TooltipText} from "../../../share"
 
 export const BeforeMaster = (): React.ReactElement =>
   <>

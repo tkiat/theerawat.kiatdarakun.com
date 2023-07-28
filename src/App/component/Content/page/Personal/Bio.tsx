@@ -1,6 +1,6 @@
 import React from "react"
 
-import {PageWithIconsScrollbar} from "../share"
+import {PageWithIconsScrollbar} from "../../share"
 import {Child} from "./Bio/00-Child"
 import {Teen} from "./Bio/01-Teen"
 import {Bachelor} from "./Bio/02-Bachelor"
@@ -44,5 +44,5 @@ export const Bio = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <p>
-    It's not that interesting and I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.
+    TODO I live by my judgments and interpretations of <b className="highlight">the true meaning of life</b> and produce works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. It's not that interesting and I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.
   </p>

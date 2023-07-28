@@ -3,7 +3,7 @@ import {Router, RouteComponentProps} from "@reach/router"
 
 import {pathObject} from "@app/share"
 
-import {Formal, Informal, Bio, TrueMeaning, Hobby, NotFound} from "./Content/page"
+import {Formal, Informal, Bio, Hobby, TrueMeaning, NotFound} from "./Content/page"
 
 const paths = Object.entries(pathObject).
   map(([k, v]) => v.length ? v.map(x => encodeURI(k) + "/" + x) : [k]).flat(1)
@@ -17,8 +17,8 @@ export const Content = (): React.ReactElement =>
         const Route0 = (_: RouteComponentProps) => <Formal />
         const Route1 = (_: RouteComponentProps) => <Informal />
         const Route2 = (_: RouteComponentProps) => <Bio />
-        const Route3 = (_: RouteComponentProps) => <TrueMeaning />
-        const Route4 = (_: RouteComponentProps) => <Hobby />
+        const Route3 = (_: RouteComponentProps) => <Hobby />
+        const Route4 = (_: RouteComponentProps) => <TrueMeaning />
         return <>
           <RouteDefault default />
           <Route0 path={paths[0]} />

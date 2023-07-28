@@ -14,7 +14,7 @@ export const Trait = (): React.ReactElement =>
 
         &nbsp;—&nbsp;
         <TooltipTextWithDelay text="MBTI">
-          <div>Taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></div>
+          <div>Many said MBTI is not accurate but anyway this is my result taken on 31 Mar 2021 from <a href="https://www.16personalities.com/">here</a></div>
           <br />
           <ul>
             <li>(I)ntroverted (79%) - (E)xtraverted</li>

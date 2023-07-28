@@ -1,14 +1,13 @@
 "2023-07-22":
-#   - delivery:
-#       type: public
-#       km: TODO
-#     types:
-#       - name: food
-#         items:
-#         - {t: "beans (mung)",thb: 58,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
-#         - {t: "job's tears",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
-#         - {t: "khanom nang led",thb: 15,g: 108,nv: 0,oc: 0,mu: 0,u: 108,p: 6,pa: 0,gl: 0}
-#         - {t: "peanut",thb: 80,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 34
+    types:
+      - name: food
+        items:
+        - {t: "beans (mung)",thb: 58,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "job's tears",thb: 39,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "peanut",thb: 120,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
@@ -22,7 +21,10 @@
         - {t: "basil (sweet)",thb: 10,g: 142,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "cabbage",thb: 20,g: 481,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 486,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "dragon fruit",thb: 50,g: 2100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 108,nv: 0,oc: 0,mu: 0,u: 108,p: 6,pa: 0,gl: 0}
+        - {t: "khanom roti grob",thb: 15,g: 92,nv: 0,oc: 0,mu: 0,u: 92,p: 3,pa: 0,gl: 0}
         - {t: "lime",thb: 20,g: 409,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mango",thb: 10,g: 242,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
@@ -51,7 +53,7 @@
         - {t: "french fries (frozen)",thb: 129,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 24,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 20,g: 394,nv: 0,oc: 0,mu: 394,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "khanom nang led",thb: 5,g: 36,nv: 0,oc: 0,mu: 0,u: 36,p: 2,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud",thb: 20,g: 394,nv: 0,oc: 0,mu: 394,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "peanut",thb: 44,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
         - {t: "peanut (boiled)",thb: 30,g: 262,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}

@@ -1,9 +1,8 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar} from "../share"
+import {PageWithIconsScrollbar} from "../../share"
 import {findObjValRecursive} from "@app/share"
-import {Temp} from "./Create/Temp"
 
 const source = "/create.yaml"
 
@@ -38,7 +37,7 @@ export const TrueMeaning = (): React.ReactElement => {
     content: {
       prelude: <Prelude />,
       sections: [
-        <Temp />,
+        <>temp</>,
         <Software content={content} />,
         <Misc content={content}/>,
       ]
