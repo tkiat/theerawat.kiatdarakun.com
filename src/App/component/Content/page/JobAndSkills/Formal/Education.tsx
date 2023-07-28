@@ -12,7 +12,7 @@ export const Education = (): React.ReactElement =>
       RWTH Aachen University, Germany (GPA: 2.0/1.0, 1.0 = Best)
 
       <ul>
-        <li>Thesis Title: Practical Evaluation of Entangled Packet Repetition. I evaluated a channel coding scheme based on 802.11 reference design using WARP boards.</li>
+        <li>My thesis (Practical Evaluation of Entangled Packet Repetition) is about the evaluation of a channel coding scheme based on 802.11 reference design using WARP boards.</li>
       </ul>
     </section>
 
@@ -22,7 +22,7 @@ export const Education = (): React.ReactElement =>
       Sirindhorn International Institute of Technology, Thailand (1st Class Honor)
 
       <ul>
-        <li>Thesis Title: Entropy Rate of Thai Text and Testing Author Authenticity Using Character Combination Distribution. The result is published in an IEEE paper (DICTAP2012).</li>
+        <li>I published the thesis (Entropy Rate of Thai Text and Testing Author Authenticity Using Character Combination Distribution) in an <a href="https://ieeexplore.ieee.org/document/6215415">IEEE paper</a></li>
         <li>I was awarded 4-year full scholarships.</li>
       </ul>
     </section>

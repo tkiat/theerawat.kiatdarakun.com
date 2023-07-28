@@ -9,8 +9,8 @@ import {Other} from "./Informal/Other"
 export const Informal = (): React.ReactElement => {
   const data = {
     icons: [
-      <i className="fa-solid fa-briefcase"></i>,
-      <i className="fa-solid fa-school"></i>,
+      <i className="fa-solid fa-laptop"></i>,
+      <i className="fa-solid fa-book"></i>,
       <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],
     content: {

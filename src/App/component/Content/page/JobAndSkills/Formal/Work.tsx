@@ -10,7 +10,8 @@ export const Work = (): React.ReactElement =>
       <b><u>Voluntary Employment Gap</u></b>&ensp;[May 2018 – Aug 2022, Dec 2022 – July 2023]
 
       <ul>
-        <li>Found my life purpose and finished some coding projects during this period.</li>
+        <li>Found my life purpose, i.e., live by true meaning (in short, it is my sentience discovered by my awareness). I am working on a book on this topic in my free time.</li>
+        <li>Learned a lot about low impact living, philosophy, and computer. I have built this website and some other coding projects.</li>
       </ul>
     </section>
 
@@ -30,7 +31,7 @@ export const Work = (): React.ReactElement =>
       National Instruments Dresden GmbH, Dresden, Germany
 
       <ul>
-        <li>Improved MAC/PHY layers in LabVIEW Communications 802.11 Application Framework.</li>
+        <li>Cleared some backlogs about MAC/PHY layers in LabVIEW Communications 802.11 Application Framework.</li>
       </ul>
     </section>
 
@@ -40,8 +41,9 @@ export const Work = (): React.ReactElement =>
       Sirindhorn International Institute of Technology, Thammasat University, Thailand
 
       <ul>
-        <li>Assisted students in three tutorials and five laboratories.</li>
-        <li>Carried out paid research on RFID technology and published an IEEE paper (ISCIT2013).</li>
+        <li>Instructed students in two tutorial classes (ECS 203: Basic Electrical Engineering).</li>
+        <li>Assisted students in some laboratory classes.</li>
+        <li>Carried out paid research on RFID technology for six months and published an <a href="https://ieeexplore.ieee.org/document/6645830">IEEE paper</a> (3-D localization algorithm using double-planar passive RFID arrays) about it.</li>
       </ul>
     </section>
 
