@@ -1,13 +1,3 @@
-"other":
-  "study":
-    "course":
-      - title: "Introduction to Personal Branding"
-        date: "2020-03-30"
-        format: "course"
-        length: "3 hr"
-        link: "https://coursera.org/verify/AZD6S5JVYEG8"
-        review_ext: "/digest/2020_03_30.md"
-
 "software":
   "app":
     "> month":
@@ -17,13 +7,13 @@
         dscp: "It's this website. I wrote it from scratch"
         type: "web"
         stack: "Typescript, React.js, SCSS, Inkscape"
-      - title: "Personal Website"
-        date: "2021-01-22"
-        link: "https://github.com/tkiat/archive/tree/main/personal-website"
-        dscp: "Previous versions of my personal website. I made backend part but I later found it too much of a hassle and moved to SPA with a hosting service (like Vercel) instead"
-        type: "web"
-        stack: "HTML, CSS, JS, Terraform, AWS, VPS"
-        abandoned: true
+#       - title: "Personal Website"
+#         date: "2021-01-22"
+#         link: "https://github.com/tkiat/archive/tree/main/personal-website"
+#         dscp: "Previous versions of my personal website. I made backend part but I later found it too much of a hassle and moved to SPA with a hosting service (like Vercel) instead"
+#         type: "web"
+#         stack: "HTML, CSS, JS, Terraform, AWS, VPS"
+#         abandoned: true
     "> week":
       - title: "pomodoro-bar"
         date: "2022-05-11"
@@ -113,10 +103,26 @@
         format: "book"
         length: "400 pages"
         link: "http://learnyouahaskell.com/"
-        review_short: "I mostly completed this book. I was pretty much lost in the later half at first. Having written a featureful pomodoro application in Haskell, I later reread it and finally understood it."
+        review_short: "I mostly completed this book. I was pretty much lost in the later half at first. Having written a featureful pomodoro application in Haskell, I later reread it and finally understood most of it."
       - title: "Learning JavaScript Design Patterns"
         date: "2021"
         format: "book"
         length: "227 pages"
         link: "https://addyosmani.com/resources/essentialjsdesignpatterns/book"
         review_short: "I completed probably half of the book and forget most of them. I have used the module pattern extensively in my personal website and perhaps in the future projects as well. I might reread it later."
+
+"other":
+  "learning":
+    "course":
+      - title: "Introduction to Personal Branding"
+        date: "2020-03-30"
+        format: "course"
+        length: "3 hr"
+        link: "https://coursera.org/verify/AZD6S5JVYEG8"
+        review_ext: "/digest/2020_03_30.md"
+      - title: "Sit Less, Get Active"
+        date: "2020-04-10"
+        format: "course"
+        length: "3 hr"
+        link: "https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"
+        review_short: "I got a free certificate offer and my sedentary lifestyle inspired me to take it. I later forgot everything except the course title itself which should be enough."

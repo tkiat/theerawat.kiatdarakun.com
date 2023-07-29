@@ -9,10 +9,9 @@ export const About = (): React.ReactElement =>
     <h3><u>General</u></h3>
 
     <div>
-      Thai (Ethnicity and Nationality), Millennials, Personality Tests:&nbsp;
+      Thai (Ethnicity and Nationality), Millennials, Personality Tests (
       <TooltipTextWithDelay text="Big 5">
-        <div>Taken on 31 Mar 2021 <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></div>
-        <br />
+        <p>Taken on 31 Mar 2021 <a href="https://openpsychometrics.org/tests/IPIP-BFFM/">here</a></p>
         <ul>
           <li>Extroversion: 11 (percentile)</li>
           <li>Emotional Stability: 57</li>
@@ -23,8 +22,7 @@ export const About = (): React.ReactElement =>
       </TooltipTextWithDelay>
       ,&nbsp;
       <TooltipTextWithDelay text="Four Temperaments">
-        <div>Taken on 31 Mar 2021 <a href="http://openpsychometrics.org/tests/O4TS/">here</a></div>
-        <br />
+        <p>Taken on 31 Mar 2021 <a href="http://openpsychometrics.org/tests/O4TS/">here</a></p>
         <ul>
           <li>Choleric: 12</li>
           <li>Melancholic: 12</li>
@@ -32,6 +30,7 @@ export const About = (): React.ReactElement =>
           <li>Phlegmatic: 22</li>
         </ul>
       </TooltipTextWithDelay>
+      )
     </div>
 
     <h3><u>Skills</u></h3>

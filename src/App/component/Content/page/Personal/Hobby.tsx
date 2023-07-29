@@ -1,203 +1,58 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar, TooltipFa, TooltipText} from "../../share"
-import {findObjValRecursive} from "@app/share"
-
-const source = "/digest.yaml"
+import {PageWithIconsScrollbar} from "../../share"
 
 export const Hobby = (): React.ReactElement => {
-  const [content, setContent] = React.useState<unknown>()
-
-  React.useEffect((): (() => void) => {
-    let mounted = true;
-
-    (async () => {
-      const res = await fetch(source)
-
-      if (mounted) {
-        const t = res.headers.get("content-type");
-        if (t && t.indexOf("text/yaml") !== -1) {
-          setContent(jsYaml.load(await res.text()))
-        } else {
-          console.error("the content-type of file " + source + " is not yaml")
-        }
-      }
-    })()
-
-    return () => { mounted = false }
-  }, [])
-
   const data = {
     icons: [
-      <i className="fa-regular fa-square-check"></i>,
-      <i className="fa-solid fa-hammer"></i>,
-      <i className="fa-solid fa-wand-magic-sparkles"></i>,
+      <i className="fa-solid fa-book"></i>,
+      <i className="fa-solid fa-gamepad"></i>,
+      <i className="fa-solid fa-image"></i>,
+      <i className="fa-solid fa-film"></i>,
     ],
     content: {
-      prelude: <Prelude />,
       sections: [
-        <Section0 content={content} />,
-        <Section1 content={content} />,
-        <Section2 content={content} />,
+        <>TODO</>,
+        <>TODO</>,
+        <>TODO</>,
+        <>TODO</>,
       ]
     }
   }
-  return <PageWithIconsScrollbar data={data} page="activity-digest" />
+  return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
 
-const Prelude = (): React.ReactElement =>
+const Software = (): React.ReactElement =>
   <>
-    <br />
-    I can retain memory better by writing a (very concise) summary of pieces of media that interest me. Here, all items are divided into three parts: the ones relevant to the&nbsp;
-    <TooltipText text="true meaning">
-      It supports my works on true meaning (in short, true meaning lies within subjective consciousness that can arise on its own) so it deserves a special attention here.
-    </TooltipText>
-    &nbsp;and everything else (further divided into nonfiction and fiction), and they must align with my&nbsp;
-    <TooltipText text="ideals">
-      <ul>
-        <li>Available free of charge, DRM-free, or as part of an affordable subscription</li>
-        <li>Available digitally and can be consumed on FOSS operating systems (like Linux)</li>
-        <li>Open-source (for video games only)</li>
-      </ul>
-    </TooltipText>.
-  </>
-
-const Section0 = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h2>True Meaning</h2>
+    <h2>Software</h2>
 
     <section>
-      <h3 className="highlight">Myself</h3>
-      {renderItems(content, ["true meaning", "being", "myself"])}
-    </section>
-
-    <section>
-      <h3 className="highlight">Human</h3>
-      {renderItems(content, ["true meaning", "being", "human"])}
-    </section>
-
-    <section>
-      <h3 className="highlight">Human Society</h3>
+      <h3 className="highlight">Content</h3>
 
       <section>
-        <h4>Religion</h4>
-        {renderItems(content, ["true meaning", "human society", "religion"])}
+        <h4>Channel: Freedom in Computing</h4>
+
+        <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open-source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
+
+        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now have only one upload but I plan to add more videos down the road.</p>
+
+        {/*renderItems(content, ["software", "video", "freedom-in-computing"])*/}
       </section>
     </section>
-
-    <section>
-      <h3 className="highlight">Nonhuman</h3>
-      {renderItems(content, ["true meaning", "being", "nonhuman"])}
-    </section>
   </>
 
-const Section1 = ({content}: {content: unknown}): React.ReactElement =>
+const Misc = (): React.ReactElement =>
   <>
-    <h2>Nonfiction</h2>
+    <h2>Misc.</h2>
 
     <section>
-      <h3 className="highlight">Self-Help</h3>
-      {renderItems(content, ["unrelated", "nonfiction", "self-help"])}
-    </section>
+      <h3 className="highlight">Video Games</h3>
 
-    <section>
-      <h3 className="highlight">Software</h3>
-      {renderItems(content, ["unrelated", "nonfiction", "software"])}
-    </section>
-  </>
+      <section className="abandoned">
+        <h4>Short Games Only</h4>
 
-const Section2 = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h2>Fiction</h2>
-
-    <section>
-      <h3 className="highlight">Comics</h3>
-      {renderItems(content, ["unrelated", "fiction", "comics"])}
+        <p>This video games <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains five videos showing replays of two games (Clash Royale and Cryptark) without commentaries. I have abandoned it since 2020-06-01 in favor of DRM-free ones available on Linux.</p>
+      </section>
     </section>
   </>
-
-const getFormatIcon = (f: string) => {
-  switch(f) {
-    case "book":
-      return <i className="fa-solid fa-book"></i>
-    case "video":
-      return <i className="fa-solid fa-film"></i>
-    case "course":
-      return <i className="fa-solid fa-graduation-cap"></i>
-    case "image":
-      return <i className="fa-regular fa-image"></i>
-    default:
-      return <></>
-  }
-}
-
-type Item = {
-  date: string,
-  title: string,
-  format: string,
-  length: string,
-  link: string,
-  review_short?: string,
-  review_ext?: string,
-}
-
-const isItem = (x: unknown): x is Item =>
-  typeof x === "object" && x !== null &&
-  "date" in x && typeof x.date ==="string" &&
-  "title" in x && typeof x.title  ==="string" &&
-  "format" in x && typeof x.format ==="string" &&
-  "length" in x && typeof x.length ==="string" &&
-  "link" in x && typeof x.link ==="string" && (
-    "review_short" in x && typeof x.review_short === "string" ||
-    "review_ext" in x && typeof x.review_ext ==="string"
-  )
-
-const renderItem = (x: Item) =>
-  <>
-    {x.date} —&nbsp;
-    {x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>} —&nbsp;
-    {getFormatIcon(x.format)}
-    {x.length && <>&ensp;{x.length}</>}
-    {x.review_short && <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></>}
-    {x.review_ext && <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></>}
-  </>
-
-const renderItems = (content: unknown, keys: string[]) => {
-  const arr = findObjValRecursive(content, keys)
-
-  if (arr === undefined) {
-    return <p>Loading ...</p>
-  } else if (arr === null) {
-    const props = keys.reduce((acc, cur) => {
-      return acc + "[\"" + cur + "\"]"
-    }, "")
-
-    console.error("property " + props + " not found in", content)
-    return <p>&lt;Content not found&gt;</p>
-  } else {
-    if (Array.isArray(arr)) {
-      return (
-        <>
-          {
-            arr.map((x, i) => {
-              if (isItem(x)) {
-                return <p key={i}>{renderItem(x)}</p>
-              } else {
-                console.error("wrong format", x)
-                return <p key={i}>&lt;wrong format&gt;</p>
-              }
-            })
-          }
-        </>
-      )
-    } else {
-      const props = keys.reduce((acc, cur) => {
-        return acc + "[\"" + cur + "\"]"
-      }, "")
-
-      console.error("property " + props + " in", content, "must be an array")
-      return <p>&lt;Wrong format&gt;</p>
-    }
-  }
-}
