@@ -2,7 +2,6 @@ import React from "react"
 import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../../share"
-import {Work} from "./Informal/Work"
 import {Software} from "./Informal/Software"
 import {Other} from "./Informal/Other"
 
