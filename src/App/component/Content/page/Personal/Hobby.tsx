@@ -3,7 +3,30 @@ import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../../share"
 
+const source = "/hobby.yaml"
+
 export const Hobby = (): React.ReactElement => {
+  const [content, setContent] = React.useState<unknown>()
+
+  React.useEffect((): (() => void) => {
+    let mounted = true;
+
+    (async () => {
+      const res = await fetch(source)
+
+      if (mounted) {
+        const t = res.headers.get("content-type");
+        if (t && t.indexOf("text/yaml") !== -1) {
+          setContent(jsYaml.load(await res.text()))
+        } else {
+          console.error("the content-type of file " + source + " is not yaml")
+        }
+      }
+    })()
+
+    return () => { mounted = false }
+  }, [])
+
   const data = {
     icons: [
       <i className="fa-solid fa-book"></i>,
@@ -13,46 +36,64 @@ export const Hobby = (): React.ReactElement => {
     ],
     content: {
       sections: [
-        <>TODO</>,
-        <>TODO</>,
-        <>TODO</>,
-        <>TODO</>,
+        <Book />,
+        <VideoGame />,
+        <Comics />,
+        <Movie />,
       ]
     }
   }
   return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
 
-const Software = (): React.ReactElement =>
+const Book = (): React.ReactElement =>
   <>
-    <h2>Software</h2>
+    <h2>Book</h2>
 
     <section>
-      <h3 className="highlight">Content</h3>
+      <h3><u>TODO</u></h3>
 
       <section>
-        <h4>Channel: Freedom in Computing</h4>
-
-        <p>The ideal society, to me, offers people choices and awareness. For this reason, I strongly advocate free and open source software (FOSS) for all software lower than application software since they cannot be easily replaced by a user once installed. For local, application software, I advocate at least open-source software and the availability of FOSS alternatives for all non-entertainment software (like content creation).</p>
-
-        <p>I created this channel out of the wish to get us closer to that ideal society. Yeah, I know I now have only one upload but I plan to add more videos down the road.</p>
-
-        {/*renderItems(content, ["software", "video", "freedom-in-computing"])*/}
+        <h4 className="highlight">TODO</h4>
       </section>
     </section>
   </>
 
-const Misc = (): React.ReactElement =>
+const VideoGame = (): React.ReactElement =>
   <>
-    <h2>Misc.</h2>
+    <h2>VideoGame</h2>
 
     <section>
-      <h3 className="highlight">Video Games</h3>
+      <h3><u>TODO</u></h3>
 
-      <section className="abandoned">
-        <h4>Short Games Only</h4>
+      <section>
+        <h4 className="highlight">TODO</h4>
+      </section>
+    </section>
+  </>
 
-        <p>This video games <a href="https://www.youtube.com/@shortgamesonly3856">channel</a> contains five videos showing replays of two games (Clash Royale and Cryptark) without commentaries. I have abandoned it since 2020-06-01 in favor of DRM-free ones available on Linux.</p>
+const Comics = (): React.ReactElement =>
+  <>
+    <h2>Comics</h2>
+
+    <section>
+      <h3><u>TODO</u></h3>
+
+      <section>
+        <h4 className="highlight">TODO</h4>
+      </section>
+    </section>
+  </>
+
+const Movie = (): React.ReactElement =>
+  <>
+    <h2>Movie</h2>
+
+    <section>
+      <h3><u>TODO</u></h3>
+
+      <section>
+        <h4 className="highlight">TODO</h4>
       </section>
     </section>
   </>
