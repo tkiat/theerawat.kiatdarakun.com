@@ -54,30 +54,6 @@ const Software = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Software</h2>
 
     <section>
-      <h3 className="highlight">App</h3>
-
-      <section>
-        <h4>&gt; a Month</h4>
-        {renderItems(content, ["software", "app", "> month"])}
-      </section>
-
-      <section>
-        <h4>&gt; a Week</h4>
-        {renderItems(content, ["software", "app", "> week"])}
-      </section>
-
-      <section>
-        <h4>&gt; a Day</h4>
-        {renderItems(content, ["software", "app", "> day"])}
-      </section>
-
-      <section>
-        <h4>&lt; a Day</h4>
-        {renderItems(content, ["software", "app", "< day"])}
-      </section>
-    </section>
-
-    <section>
       <h3 className="highlight">Content</h3>
 
       <section>
