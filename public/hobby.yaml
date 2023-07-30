@@ -1,5 +1,5 @@
 "book":
-  "consume":
+  "read":
     "nonfiction":
       - title: "A Confession"
         date: "2021"
@@ -9,13 +9,16 @@
         review_short: "It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose."
     "fiction":
 
-"video game":
-  "create":
-    "guide":
+"videogame":
+  "drm-free linux":
+    "created":
       - date: "2021-02-06"
         link: "https://www.youtube.com/watch?v=1XVm_dLN5Zo"
         title: "SuperTux All Secrets (World 1-2)"
-    "replay":
+        dscp: "Guide"
+    "played":
+  "not drm-free linux":
+    "created":
       - date: "2020-06-01"
         link: "https://youtu.be/NemKpZkV8yY"
         title: "[Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!"
@@ -31,8 +34,6 @@
       - date: "2019-11-13"
         link: "https://www.youtube.com/watch?v=yo89TlBl33E"
         title: "[Cryptark] Final Mission in Rogue Mode"
-  "consume":
-    "video game":
 
 "comics":
   "consume":

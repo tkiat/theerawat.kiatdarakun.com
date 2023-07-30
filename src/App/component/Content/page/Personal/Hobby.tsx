@@ -1,7 +1,7 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar} from "../../share"
+import {PageWithIconsScrollbar, RenderConsumedMedia, DisplayCreatedItems} from "../../share"
 
 const source = "/hobby.yaml"
 
@@ -36,43 +36,63 @@ export const Hobby = (): React.ReactElement => {
     ],
     content: {
       sections: [
-        <Book />,
-        <VideoGame />,
-        <Comics />,
-        <Movie />,
+        <Book content={content} />,
+        <VideoGame content={content} />,
+        <Comics content={content} />,
+        <Movie content={content} />,
       ]
     }
   }
   return <PageWithIconsScrollbar data={data} page="activity-create" />
 }
 
-const Book = (): React.ReactElement =>
-  <>
+const Book = ({content}: {content: unknown}): React.ReactElement =>
+  <section>
     <h2>Book</h2>
 
     <section>
-      <h3><u>TODO</u></h3>
+      <h3><u>Read</u></h3>
 
-      <section>
-        <h4 className="highlight">TODO</h4>
-      </section>
+      <h4 className="highlight">Nonfiction</h4>
+      <RenderConsumedMedia
+        content={content}
+        keys={["book", "read", "nonfiction"]}
+      />
+
+      <h4 className="highlight">Fiction</h4>
+      <RenderConsumedMedia
+        content={content}
+        keys={["book", "read", "fiction"]}
+      />
     </section>
-  </>
+  </section>
 
-const VideoGame = (): React.ReactElement =>
-  <>
-    <h2>VideoGame</h2>
+const VideoGame = ({content}: {content: unknown}): React.ReactElement =>
+  <section>
+    <h2>Video Games</h2>
 
     <section>
-      <h3><u>TODO</u></h3>
+      <h3><u>DRM-Free on Linux</u></h3>
 
-      <section>
-        <h4 className="highlight">TODO</h4>
-      </section>
+      <h4 className="highlight">Created</h4>
+      <DisplayCreatedItems
+        content={content}
+        keys={["videogame", "drm-free linux", "created"]}
+      />
     </section>
-  </>
 
-const Comics = (): React.ReactElement =>
+    <section>
+      <h3><u>Not DRM-Free on Linux</u></h3>
+
+      <h4 className="highlight">Created</h4>
+      <DisplayCreatedItems
+        content={content}
+        keys={["videogame", "not drm-free linux", "create"]}
+      />
+    </section>
+  </section>
+
+const Comics = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Comics</h2>
 
@@ -85,7 +105,7 @@ const Comics = (): React.ReactElement =>
     </section>
   </>
 
-const Movie = (): React.ReactElement =>
+const Movie = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Movie</h2>
 
