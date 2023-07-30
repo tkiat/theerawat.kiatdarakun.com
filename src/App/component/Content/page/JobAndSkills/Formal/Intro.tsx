@@ -3,7 +3,7 @@ import React from "react"
 import {TooltipText, TooltipTextWithDelay} from "../../../share"
 
 export const Intro = (): React.ReactElement =>
-  <>
+  <section>
     <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i> and this is my personal website. This <i>bottom duck</i> might only be of interest to those who seek a transactional relationship. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
@@ -40,4 +40,4 @@ export const Intro = (): React.ReactElement =>
       </TooltipTextWithDelay>
       &nbsp;for the content here.
     </p>
-  </>
+  </section>

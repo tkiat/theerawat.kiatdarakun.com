@@ -1,7 +1,7 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar, DisplayListItems} from "../../share"
+import {DisplayListItems, PageWithIconsScrollbar} from "../../share"
 
 const source = "/hobby.yaml"
 
@@ -48,14 +48,13 @@ export const Hobby = (): React.ReactElement => {
 }
 
 const Prelude = (): React.ReactElement =>
-  <>
-    <br />
-    All items here align with my philosophical ideals.
+  <section>
+    <p>All items here align with my philosophical ideals:</p>
     <ol>
       <li>Available free of charge, DRM-free, or as part of an <i>affordable</i> subscription</li>
       <li>Available digitally and can be created/consumed entirely on FOSS operating systems (like Linux)</li>
     </ol>
-  </>
+  </section>
 
 const Books = ({content}: {content: unknown}): React.ReactElement =>
   <section>
@@ -65,6 +64,8 @@ const Books = ({content}: {content: unknown}): React.ReactElement =>
       <h3><u>Read</u></h3>
 
       <h4 className="highlight">Nonfiction</h4>
+      {/*TODO tell this not exhaudtive list als truemeaning*/}
+
       <DisplayListItems
         content={content}
         keys={["book", "read", "nonfiction"]}
