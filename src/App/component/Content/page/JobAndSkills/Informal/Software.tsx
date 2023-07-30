@@ -1,7 +1,7 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {DisplayListItems, DisplayListItems} from "../../../share"
+import {DisplayListItems} from "../../../share"
 
 export const Software = ({content}: {content: unknown}): React.ReactElement =>
   <section>

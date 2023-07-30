@@ -18,15 +18,25 @@ const getIcon = (x: string) => {
     case "course":
       return <i className="fa-solid fa-graduation-cap"></i>
     case "desktop":
-      return <i className="fa-solid fa-display"></i>
+      return <i className="fa-solid fa-computer"></i>
+    case "gamepad":
+      return <i className="fa-solid fa-gamepad"></i>
     case "image":
       return <i className="fa-regular fa-image"></i>
+    case "laptop":
+      return <i className="fa-solid fa-laptop"></i>
     case "linux":
       return <i className="fa-brands fa-linux"></i>
+    case "mobile":
+      return <i className="fa-solid fa-mobile-screen-button"></i>
+    case "online":
+      return <i className="fa-solid fa-wifi"></i>
+    case "offline":
+      return <i className="fa-solid fa-plane"></i>
+    case "tablet":
+      return <i className="fa-solid fa-tablet-button"></i>
     case "video":
       return <i className="fa-solid fa-film"></i>
-    case "videogame":
-      return <i className="fa-solid fa-gamepad"></i>
     case "web":
       return <i className="fa-solid fa-globe"></i>
     default:
@@ -54,7 +64,7 @@ const renderItems = (content: unknown, keys: string[]) => {
                 const icon = x.icon ? <>&ensp;{getIcon(x.icon)}</> : <></>
                 const dscp = x.dscp ? <> — {x.dscp}</> : <></>
                 const stack = x.stack ? <> — <span className="highlight">{x.stack}</span></> : <></>
-                const review_short = x.review_short ? <>&ensp;<TooltipFa faclass="fa-regular fa-circle-question">{x.review_short}</TooltipFa></> : <></>
+                const review_short = x.review_short ? <> <TooltipFa faclass="fa-regular fa-star-half-stroke">{x.review_short}</TooltipFa></> : <></>
                 const review_ext = x.review_ext ? <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></> : <></>
                 content = <>{x.date} — {title}{icon}{dscp}{stack}{review_short}{review_ext}</>
               } else {
