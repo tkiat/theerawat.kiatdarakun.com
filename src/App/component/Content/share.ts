@@ -1,6 +1,4 @@
 export {TooltipText, TooltipTextWithDelay, TooltipFa, TooltipFaWithDelay} from "./share/Tooltip"
 export {PageWithIconsScrollbar} from "./share/PageWithIconsScrollbar"
 export {FigureOptionalTooltip} from "./share/FigureOptionalTooltip"
-export {RenderConsumedMedia} from "./share/RenderConsumedMedia"
-export {RenderCreatedApps} from "./share/RenderCreatedApps"
-export {DisplayCreatedItems} from "./share/DisplayCreatedItems"
+export {DisplayListItems} from "./share/DisplayListItems"

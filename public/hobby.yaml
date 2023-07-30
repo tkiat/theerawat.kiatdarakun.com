@@ -1,11 +1,11 @@
 "book":
   "read":
     "nonfiction":
-      - title: "A Confession"
-        date: "2021"
-        format: "book"
-        length: "25992 Words"
+      - date: "2021"
+        title: "A Confession"
         link: "https://standardebooks.org/ebooks/leo-tolstoy/a-confession/aylmer-maude"
+        icon: "book"
+        dscp: "25992 Words"
         review_short: "It is a book about Leo Tolstoy who was not able to find the meaning of life despite his material success. The strongest message of his book I found is that the meaning of life cannot be found rationally. I rejected his religious solution. Instead, that message made me introspect my own emotional needs and personalities to find my purpose."
     "fiction":
 
@@ -13,49 +13,56 @@
   "drm-free linux":
     "created":
       - date: "2021-02-06"
-        link: "https://www.youtube.com/watch?v=1XVm_dLN5Zo"
         title: "SuperTux All Secrets (World 1-2)"
+        link: "https://www.youtube.com/watch?v=1XVm_dLN5Zo"
+        icon: "videogame"
         dscp: "Guide"
     "played":
-  "not drm-free linux":
+  "other":
     "created":
       - date: "2020-06-01"
-        link: "https://youtu.be/NemKpZkV8yY"
         title: "[Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!"
+        link: "https://youtu.be/NemKpZkV8yY"
+        abandoned: true
       - date: "2020-05-30"
-        link: "https://youtu.be/S5aLLY3Cn7I"
         title: "[Clash Royale] Road to 5000 Trophies as Level 1"
+        link: "https://youtu.be/S5aLLY3Cn7I"
+        abandoned: true
       - date: "2020-05-20"
-        link: "https://youtu.be/j3CXU1Z3FB0"
         title: "[Clash Royale] Sudden Death Challenge with Elixir Golem Cycle Deck"
+        link: "https://youtu.be/j3CXU1Z3FB0"
+        abandoned: true
       - date: "2019-11-13"
-        link: "https://youtu.be/1f9Pt9xYI-4"
         title: "[Cryptark] Final Mission - All Systems Destroyed"
+        link: "https://youtu.be/1f9Pt9xYI-4"
+        abandoned: true
       - date: "2019-11-13"
-        link: "https://www.youtube.com/watch?v=yo89TlBl33E"
         title: "[Cryptark] Final Mission in Rogue Mode"
+        link: "https://www.youtube.com/watch?v=yo89TlBl33E"
+        abandoned: true
 
 "comics":
-  "consume":
-    "graphics novel":
-      - title: "Incognegro: A Graphic Mystery"
-        date: "2022"
-        format: "image"
-        length: "136 pages"
+  "graphics novel":
+    "read":
+      - date: "2022"
+        title: "Incognegro: A Graphic Mystery"
         link: "https://www.goodreads.com/book/show/35798022-incognegro"
+        icon: "image"
+        dscp: "136 pages"
         review_short: "It is a graphic novel in a 1$ Humble Bundle package I bought long ago. It is a story of a black journalist who spied on lyncing of white supremacists against black people. He was about to retired, but fate made it more complicated. It is not light reading as it is full of racism and violence, but those seem necessary to reflect the past."
-      - title: "The Last Unicorn"
-        date: "2020"
-        format: "image"
-        length: "167 pages"
+      - date: "2020"
+        title: "The Last Unicorn"
         link: "https://www.goodreads.com/book/show/8890606-the-last-unicorn"
+        icon: "image"
+        dscp: "167 pages"
         review_short: "This graphic novel cost me 5$ on comiXology when it was still DRM-free. It is based on a famous written novel by Peter S. Beagle: a story of a unicorn trying to find the rest of her species. I didn't read it deeply and my key takeaway was only that you have to go out of your comfort zone if you want something."
-    "comics":
-      - title: "The Walking Dead"
-        date: "2021"
-        format: "image"
+  "comics":
+    "read":
+      - date: "2021"
+        title: "The Walking Dead"
         link: "https://en.wikipedia.org/wiki/The_Walking_Dead_(comic_book)"
-        length: "193 issues"
+        icon: "image"
+        dscp: "193 issues"
         review_short: "I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation."
 
 "movie":

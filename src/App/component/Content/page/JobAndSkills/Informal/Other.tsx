@@ -1,6 +1,6 @@
 import React from "react"
 
-import {RenderConsumedMedia} from "../../../share"
+import {DisplayListItems} from "../../../share"
 
 export const Other = ({content}: {content: unknown}): React.ReactElement =>
   <section>
@@ -19,7 +19,7 @@ export const Other = ({content}: {content: unknown}): React.ReactElement =>
       <h3><u>Learning</u></h3>
 
       <h4 className="highlight">Course</h4>
-      <RenderConsumedMedia
+      <DisplayListItems
         content={content}
         keys={["other", "learning", "course"]}
       />

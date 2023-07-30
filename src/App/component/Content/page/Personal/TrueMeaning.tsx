@@ -4,7 +4,7 @@ import * as jsYaml from 'js-yaml'
 import {PageWithIconsScrollbar, TooltipFa, TooltipText} from "../../share"
 import {findObjValRecursive} from "@app/share"
 
-const source = "/digest.yaml"
+const source = "/truemeaning.yaml"
 
 export const TrueMeaning = (): React.ReactElement => {
   const [content, setContent] = React.useState<unknown>()

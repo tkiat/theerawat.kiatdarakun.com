@@ -1,7 +1,7 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {PageWithIconsScrollbar, RenderConsumedMedia, DisplayCreatedItems} from "../../share"
+import {PageWithIconsScrollbar, DisplayListItems} from "../../share"
 
 const source = "/hobby.yaml"
 
@@ -54,13 +54,13 @@ const Book = ({content}: {content: unknown}): React.ReactElement =>
       <h3><u>Read</u></h3>
 
       <h4 className="highlight">Nonfiction</h4>
-      <RenderConsumedMedia
+      <DisplayListItems
         content={content}
         keys={["book", "read", "nonfiction"]}
       />
 
       <h4 className="highlight">Fiction</h4>
-      <RenderConsumedMedia
+      <DisplayListItems
         content={content}
         keys={["book", "read", "fiction"]}
       />
@@ -75,19 +75,19 @@ const VideoGame = ({content}: {content: unknown}): React.ReactElement =>
       <h3><u>DRM-Free on Linux</u></h3>
 
       <h4 className="highlight">Created</h4>
-      <DisplayCreatedItems
+      <DisplayListItems
         content={content}
         keys={["videogame", "drm-free linux", "created"]}
       />
     </section>
 
     <section>
-      <h3><u>Not DRM-Free on Linux</u></h3>
+      <h3><u>Other</u></h3>
 
       <h4 className="highlight">Created</h4>
-      <DisplayCreatedItems
+      <DisplayListItems
         content={content}
-        keys={["videogame", "not drm-free linux", "create"]}
+        keys={["videogame", "other", "created"]}
       />
     </section>
   </section>
@@ -97,23 +97,27 @@ const Comics = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Comics</h2>
 
     <section>
-      <h3><u>TODO</u></h3>
+      <h3><u>Graphic Novels</u></h3>
 
-      <section>
-        <h4 className="highlight">TODO</h4>
-      </section>
+      <h4 className="highlight">Read</h4>
+      <DisplayListItems
+        content={content}
+        keys={["comics", "graphic novel", "read"]}
+      />
+    </section>
+
+    <section>
+      <h3><u>Comics</u></h3>
+
+      <h4 className="highlight">Read</h4>
+      <DisplayListItems
+        content={content}
+        keys={["comics", "comics", "read"]}
+      />
     </section>
   </>
 
 const Movie = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h2>Movie</h2>
-
-    <section>
-      <h3><u>TODO</u></h3>
-
-      <section>
-        <h4 className="highlight">TODO</h4>
-      </section>
-    </section>
   </>
