@@ -36,7 +36,7 @@ export const TrueMeaning = (): React.ReactElement => {
     ],
     content: {
       sections: [
-        <About content={content} />,
+        <About />,
         <Book1LitReview content={content} />,
         <Book1MyLifeRecord content={content} />,
         <Book2LitReview content={content} />,
@@ -48,17 +48,15 @@ export const TrueMeaning = (): React.ReactElement => {
 
 const About = (): React.ReactElement =>
   <section>
-    <p>A long period of self-introspection has culminated in overcoming long analysis paralysis on what I should do in my life. The key here is the word <i>long</i> as it implied that I could not be satisfied with any baseless answer unless I found truth. In other words, what I should do is what I should truly do. The question is, what should I truly do?</p>
+    <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. The aforementioned keyword <i>long</i> here is the key to the realization that I could not be satisifed with any baseless answer until I found truths. My existential question became, how can I base my actions on truths?</p>
 
-    <p>Nothing matters in the universe without any sentient being, for it lacks a being with enough faculties to consider anything of importance. In this scenario, no entity should do (or should not do) anything. Now let's put a single healthy adult man on the earth. Still, there is nothing he should do; there is no any external thing to accomplish as he is the only sentient being.</p>
+    <p>Nothing matters in the universe without any sentient entity, and therefore no entity should do (or should not do) anything. Now let's put a man in such universe. Initially, there is nothing he should do due to the lack of external demands. However, he will eventually become hungry. The experience of the hunger is, to him, true. He can choose not to alleviate his hunger, but that does not follow the truth. Based on this truth, he has to alleviate his pain by eating some non-sentient beings.</p>
 
-    <p>However, some time passes and he begins to feels hungry. The experience of the feeling itself is, to him, true. He can choose not to alleviate his hunger, but that does not follow the truth. What he should <i>truly</i> do is therefore to alleviate his pain by eating some non-sentient beings.</p>
+    <p>He then realizes many other truths, such as his sensual experiences. Unless these truths can satisfy his needs, there is nothing he should do to follow them. In other words, he should follow only truths that matter to him. I will call such truths “true meaning”.</p>
 
-    <p>He then realizes many other truths, like his visual experience of what we would call a flowing water or his auditory experience of it. Unless he is thristy, there is nothing he should do to follow these truths. In other words, what he should truly do is to follow truths that matter to him. I shall call it “true meaning”.</p>
+    <p>Now let's remove all edible beings (except him) and put a fish near him on the ground, along with necessary cooking equipments. He, who now gets hungry again, may choose to cook it without a second thought if he is a total psychopath. However, if the empathy is inherent in him, he has to make a judgment about these two conflicting truths. This will lead to his decision to eat or not to eat that fish.</p>
 
-    <p>Now let's remove all edible beings (except him) and put a fish near him on the ground, along with necessary cooking equipments. He, now hungry again, may choose to cook it without a second thought if he is a total psychopath. However, if the empathy is inherent in him, what he should truly do becomes tricky because of the conflict. For this reason, he may or may not choose to eat the fish.</p>
-
-    <p>In conclusion, what I should truly do is to follow true meaning and use judgments in the case of the conflict. It is now my lifelong persuit to investigate what constitutes true meaning. This philosophy should be able to significantly benefit the seekers of wisdom as well. A wise person, who possess the ability to make good judgments, would not perform a conscious action based on things that do not matter or is not true. In other words, he/she also lives by true meaning.</p>
+    <p>In conclusion, what I want to do in my life is realizing true meaning and base my actions on it and, when conflicts happen, use judgments to resolve them. It is now my lifelong persuit to investigate what constitutes true meaning and how to live by it. This philosophy aligns with wisdom as well, because a wise person would not perform a conscious action based on things that is either unimportant or untrue. In other words, he/she also lives by true meaning.</p>
 
     <p>I split my work into two books of different scopes.</p>
 
@@ -121,7 +119,7 @@ const Book1LitReview = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Individual Scope: Literature Review</h2>
 
     <section>
-      <h3><u>Literature Review</u></h3>
+      <h3><u>TODO</u></h3>
 
       <section>
         <h4 className="highlight"></h4>
@@ -145,7 +143,7 @@ const Book2LitReview = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Societal Scope: Literature Review</h2>
 
     <section>
-      <h3><u>Literature Review</u></h3>
+      <h3><u>TODO</u></h3>
 
       <section>
         <h4 className="highlight"></h4>
