@@ -30,9 +30,9 @@ export const TrueMeaning = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-circle-question"></i>,
-      <i className="fa-solid fa-1"></i>,
+      <i className="fa-solid fa-users"></i>,
       <i className="fa-solid fa-user-pen"></i>,
-      <i className="fa-solid fa-2"></i>,
+      <i className="fa-solid fa-mountain-city"></i>,
     ],
     content: {
       sections: [
@@ -66,7 +66,7 @@ const About = (): React.ReactElement =>
       <li>
         <b>Individual level</b>. The book focuses on true meaning in at most a single entity such as myself and another being.
 
-          <p><u>Outline</u></p>
+        <p><u>Outline (Subject to Change)</u></p>
 
         <ol>
           <li>
@@ -112,13 +112,13 @@ const About = (): React.ReactElement =>
         </ol>
       </li>
 
-      <li><b>Societal level</b>. This book investigates the ideal society that enables each member to follow his/her true meaning. I will investigate if I can avoid any compromise in such society and, if not, how to make the best judgment for the best interests of all members. I will determine how the society tackles common issues such as media, consumables, human rights, etc.</li>
+      <li><p><b>Societal level</b>. This book investigates the ideal society that enables each member to follow his/her true meaning. I will investigate if I can avoid any compromise in such society and, if not, how to make the best judgment for the best interests of all members. I will determine how the society tackles common issues such as media, consumables, human rights, etc.</p></li>
     </ol>
   </section>
 
 const Book1LitReview = ({content}: {content: unknown}): React.ReactElement =>
   <section>
-    <h2>Book #1: Literature Review</h2>
+    <h2>Individual Scope: Literature Review</h2>
 
     <section>
       <h3><u>Literature Review</u></h3>
@@ -131,7 +131,7 @@ const Book1LitReview = ({content}: {content: unknown}): React.ReactElement =>
 
 const Book1MyLifeRecord = ({content}: {content: unknown}): React.ReactElement =>
   <section>
-    <h2>The Record of My Life</h2>
+    <h2>Individual Scope: The Record of My Life</h2>
 
     <p>My judgments and interpretations of true meaning has led to relatively less impactful life in all areas, for example, environment, animal welfare, and minimalism. I would like to record all my decisions and my lifestyle according to them. This will be a part of the first book.</p>
 
@@ -142,7 +142,7 @@ const Book1MyLifeRecord = ({content}: {content: unknown}): React.ReactElement =>
 
 const Book2LitReview = ({content}: {content: unknown}): React.ReactElement =>
   <section>
-    <h2>Book #2: Literature Review</h2>
+    <h2>Societal Scope: Literature Review</h2>
 
     <section>
       <h3><u>Literature Review</u></h3>
