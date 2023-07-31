@@ -31,8 +31,8 @@ export const TrueMeaning = (): React.ReactElement => {
     icons: [
       <i className="fa-solid fa-circle-question"></i>,
       <i className="fa-solid fa-1"></i>,
-      <i className="fa-solid fa-2"></i>,
       <i className="fa-solid fa-user-pen"></i>,
+      <i className="fa-solid fa-2"></i>,
     ],
     content: {
       sections: [
@@ -48,39 +48,26 @@ export const TrueMeaning = (): React.ReactElement => {
 
 const About = (): React.ReactElement =>
   <section>
-    <p>One and a half year of self-introspection, after 31 years of my existence, has culminated in my limited realization of truth. On the one hand, I am certain about some truths, such as logical truth (like deduction) or existential truth (like my experience of the object of my awareness). On the other hand, I still don't know about the nature of the reality itself. I may discover more truths in the future, but my knowledge of truths are currently limited.</p>
+    <p>A long period of self-introspection has culminated in overcoming long analysis paralysis on what I should do in my life. The key here is the word <i>long</i> as it implied that I could not be satisfied with any baseless answer unless I found truth. In other words, what I should do is what I should truly do. The question is, what should I truly do?</p>
 
-    <p>Unlike truths, I can be certain that all mismatches are illusions. This includes the view that I need something that I don't truly need (attachment), the assertion that a false statement is true, and mistaking belief as knowledge. The most fundamental mismatch of all is the view that something matters but in fact it cannot truly matter, for this is the underlying force behind our illusory, conscious decisions.</p>
+    <p>Nothing matters in the universe without any sentient being, for it lacks a being with enough faculties to consider anything of importance. In this scenario, no entity should do (or should not do) anything. Now let's put a single healthy adult man on the earth. Still, there is nothing he should do; there is no any external thing to accomplish as he is the only sentient being.</p>
 
-    <p>The most fundamental thing
+    <p>However, some time passes and he begins to feels hungry. The experience of the feeling itself is, to him, true. He can choose not to alleviate his hunger, but that does not follow the truth. What he should <i>truly</i> do is therefore to alleviate his pain by eating some non-sentient beings.</p>
 
-    I find it the wisest to focus on the most fundamental thing, and this leads to my life persuits of true meaning.</p>
+    <p>He then realizes many other truths, like his visual experience of what we would call a flowing water or his auditory experience of it. Unless he is thristy, there is nothing he should do to follow these truths. In other words, what he should truly do is to follow truths that matter to him. I shall call it “true meaning”.</p>
 
+    <p>Now let's remove all edible beings (except him) and put a fish near him on the ground, along with necessary cooking equipments. He, now hungry again, may choose to cook it without a second thought if he is a total psychopath. However, if the empathy is inherent in him, what he should truly do becomes tricky because of the conflict. For this reason, he may or may not choose to eat the fish.</p>
 
-    <div>The passage of time forced me to either commit suicide or live (and optionally decide how to live), and my subjective self inspired me to live by true meaning. Based on the definitions of&nbsp;
-      <TooltipText text="meaning">
-        Meaning is a sense of importance, which requires a <i>conscious</i> inclination toward or against something. To my knowledge, only instinctual emotions, sensory perceptions, and thoughts can create meaning.
-      </TooltipText>
-      &nbsp;and&nbsp;
-      <TooltipText text="the meaning of life">
-        The meaning of life is a sense of importance that emerges from life, and any capable entity may perceive it. The definition of such an entity depends on knowledge and beliefs. Some believe in souls and/or God; some believe only in their ideas of the physical world; some believe that only their consciousness exists.
-      </TooltipText>
-      , I wish to produce works about&nbsp;
-      <TooltipText text="the true meaning of life">
-        <div>Having five legs is a true property of a five-leg unicorn, even though it is fictional. Likewise, the true meaning of life is a sense of importance emerging from the inherent properties of life (whether or not life is fictional), and any capable entity may perceive it.</div>
+    <p>In conclusion, what I should truly do is to follow true meaning and use judgments in the case of the conflict. It is now my lifelong persuit to investigate what constitutes true meaning. This philosophy should be able to significantly benefit the seekers of wisdom as well. A wise person, who possess the ability to make good judgments, would not perform a conscious action based on things that do not matter or is not true. In other words, he/she also lives by true meaning.</p>
 
-        <br />
+    <p>I split my work into two books of different scopes.</p>
 
-        <div>To my knowledge, only instinctual emotions, sensory experiences, and thoughts can create meaning, out of which only the first two are the inherent qualities of life since thoughts alone are arbitrary. Based on emotions and sensory perceptions, one may use memories and thoughts to align actions and possessions with meanings emerging from them. Such action, though probably imperfect, is always a manifestation of one's pursuit of true meaning.</div>
-      </TooltipText>
-      &nbsp;on both individual and societal scales. These works are still in progress.
-    </div>
+    <ol>
+      <li>
+        <b>Individual level</b>. The book focuses on true meaning in at most a single entity such as myself and another being.
 
-    <h3 className="highlight">The True Meaning of Life</h3>
+          <p><u>Outline</u></p>
 
-    <div>
-      This work has four main goals: to determine the abstract definition of the true meaning of life, explore concretely a few different pursuits of true meaning, examine existing literature through the lens of true meaning, and provide some records that reflect my pursuit of true meaning.&nbsp;
-      <TooltipText text="Outline">
         <ol>
           <li>
             Introduction
@@ -92,18 +79,8 @@ const About = (): React.ReactElement =>
           <li>
             The Abstract Examination of True Meaning
             <ol>
-              <li>
-                Truth
-                <ol>
-                  <li>The Extension of Truth</li>
-                </ol>
-              </li>
-              <li>
-                Meaning
-                <ol>
-                  <li>The Extension of Meaning</li>
-                </ol>
-              </li>
+              <li>Truth</li>
+              <li>Meaning</li>
               <li>True Meaning</li>
               <li>Existing Literature Through the Lens of True Meaning</li>
             </ol>
@@ -112,52 +89,19 @@ const About = (): React.ReactElement =>
           <li>
             The Concrete, Non-Judgmental Examination of True Meaning
             <ol>
-              <li>
-                True Meaning of Both Non-Believers and Believers
-                <ol>
-                  <li>Meaning from Sensory Perceptions</li>
-                  <li>Meaning from Instinctual Emotions</li>
-                </ol>
-              </li>
-
-              <li>
-                True Meaning of Only Believers
-                <ol>
-                  <li>Christianity</li>
-                  <li>...</li>
-                </ol>
-              </li>
-
-              <li>
-                True Meaning of Nonhumans
-                <ol>
-                  <li>Sentient Beings</li>
-                  <li>Non-Sentient Beings</li>
-                </ol>
-              </li>
+              <li>Nonbelievers</li>
+              <li>Believers</li>
+              <li>Nonhumans</li>
             </ol>
           </li>
 
           <li>
             The Concrete, Judgmental Examination of True Meaning
             <ol>
+              <li>Nonbelievers</li>
+              <li>Believers</li>
               <li>
-                Humanity
-                <ol>
-                  <li>Judgments of a Psychopath</li>
-                  <li>Judgments of a Non-Psychopath</li>
-                </ol>
-              </li>
-
-              <li>
-                Nonhuman Sentient Beings
-                <ol>
-                  <li>Judgments of a Tiger</li>
-                </ol>
-              </li>
-
-              <li>
-                Myself
+                Me
                 <ol>
                   <li>My Choices</li>
                   <li>My Records</li>
@@ -166,12 +110,10 @@ const About = (): React.ReactElement =>
             </ol>
           </li>
         </ol>
-      </TooltipText>
-    </div>
+      </li>
 
-    <h3 className="highlight">Society That Truly Serves Members</h3>
-
-    <p>Such society conforms to the true meaning of life (from the earlier work) that may vary among its members. This work has three main goals: examine the qualities of such society, determine how it abstractly satisfies its members, and then determine how it concretely tackles common issues such as media, consumables, human rights, etc.</p>
+      <li><b>Societal level</b>. This book investigates the ideal society that enables each member to follow his/her true meaning. I will investigate if I can avoid any compromise in such society and, if not, how to make the best judgment for the best interests of all members. I will determine how the society tackles common issues such as media, consumables, human rights, etc.</li>
+    </ol>
   </section>
 
 const Book1LitReview = ({content}: {content: unknown}): React.ReactElement =>
