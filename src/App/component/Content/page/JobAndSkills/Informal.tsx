@@ -35,6 +35,7 @@ export const Informal = (): React.ReactElement => {
       <i className="fa-solid fa-ellipsis-vertical"></i>,
     ],
     content: {
+      prelude: <Prelude />,
       sections: [
         <Software content={content} />,
         <Other content={content} />,
@@ -43,3 +44,8 @@ export const Informal = (): React.ReactElement => {
   }
   return <PageWithIconsScrollbar data={data} page="about-character" />
 }
+
+const Prelude = (): React.ReactElement =>
+  <section>
+    <p>This section lists any informal work and qualifications that somehow relate to my resume.</p>
+  </section>

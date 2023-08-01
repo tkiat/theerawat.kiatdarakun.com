@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../../../share"
 
 export const Intro = (): React.ReactElement =>
   <section>
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i> and this is my personal website. This <i>bottom duck</i> might only be of interest to those who seek a transactional relationship. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i> and this is my personal website. This section might be of interest to those who seek a transactional relationship with me. I have an engineering and teaching background who also possess good English, computer, and analytical skills. Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="blank">GPG Public Key</a>

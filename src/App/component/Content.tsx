@@ -1,12 +1,9 @@
 import React from "react"
 import {Router, RouteComponentProps} from "@reach/router"
 
-import {pathObject} from "@app/share"
+import {paths} from "@app/share"
 
 import {Formal, Informal, Bio, Hobby, TrueMeaning, NotFound} from "./Content/page"
-
-const paths = Object.entries(pathObject).
-  map(([k, v]) => v.length ? v.map(x => encodeURI(k) + "/" + x) : [k]).flat(1)
 
 export const Content = (): React.ReactElement =>
   <div className="content">

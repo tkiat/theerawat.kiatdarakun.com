@@ -2,7 +2,7 @@ import React from "react"
 
 import {consumableTypeSummaryTemplate} from "./share"
 import {Week, ConsumableType} from "./week"
-import {TooltipText} from "../../../share"
+import {TooltipText} from "../../../../../share"
 
 type I = {
   consumables: Set<ConsumableType>,

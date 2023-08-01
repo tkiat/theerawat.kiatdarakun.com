@@ -1,7 +1,9 @@
 import React from "react"
+import {Link} from "@reach/router"
 import * as jsYaml from 'js-yaml'
 
 import {DisplayListItems, PageWithIconsScrollbar} from "../../share"
+import {paths} from "@app/share"
 
 const source = "/hobby.yaml"
 
@@ -49,7 +51,8 @@ export const Hobby = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <section>
-    <p>All items here are irrelevant to my work on true meaning. I show only the ones that align with my philosophical ideals:</p>
+    <p>This section is about how I spend my leisure time apart from my work on <a href={window.location.origin + "/" + paths[3]}>true meaning</a>. All items here align with my philosophical ideals:</p>
+
     <ol>
       <li>Available free of charge, DRM-free, or as part of a subscription</li>
       <li>Available digitally and can be created/consumed entirely on FOSS operating systems (like Linux)</li>

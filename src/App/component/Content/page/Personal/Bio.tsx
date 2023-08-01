@@ -25,7 +25,6 @@ export const Bio = (): React.ReactElement => {
       <i className="fa-solid fa-magnifying-glass-dollar"></i>,
     ],
     content: {
-      prelude: <Prelude />,
       sections: [
         <Child />,
         <Teen />,
@@ -41,8 +40,3 @@ export const Bio = (): React.ReactElement => {
   }
   return <PageWithIconsScrollbar data={data} page="about-story" />
 }
-
-const Prelude = (): React.ReactElement =>
-  <p>
-    TODO I live by my judgments and interpretations of <b className="highlight">the true meaning of life</b> and produce works on sustainability, software, and philosophy that reflect them. I possess good English and analytical skills and a background in communications technology. It's not that interesting and I don't care if anyone reads it <i className="fa-regular fa-face-grin-tears"></i>. This should help me remember my past.
-  </p>

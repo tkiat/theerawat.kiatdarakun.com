@@ -4,9 +4,8 @@ import {Updater, useImmer} from "use-immer"
 
 import {capitalize, isType} from "@app/share"
 
-import {TooltipFa, TooltipText} from "../../share"
+import {TooltipFa, TooltipText} from "../../../../share"
 import {AvgChart} from "./Consumables/AvgChart"
-import {Making} from "./Consumables/Making"
 import {WeekTable} from "./Consumables/WeekTable"
 import {WeeklySummary, createAvgWeeklySummary, createWeeklySummaries} from "./Consumables/share"
 import {Weeks, ConsumableType, consumableTypes, isWeeks} from "./Consumables/week"
@@ -70,8 +69,6 @@ export const Consumables = (): React.ReactElement => {
 
   return (
     <section>
-      <h2>Consumables</h2>
-
       <p>These personal records are a part of my work in progress about the true meaning of life. For consumables, the current ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
 
       <section>
@@ -99,10 +96,6 @@ export const Consumables = (): React.ReactElement => {
             : <WeekTable consumables={cur.consumables} week={weeks[cur.display]} />
           }
         </div>
-      </section>
-
-      <section>
-        <Making />
       </section>
     </section>
   )

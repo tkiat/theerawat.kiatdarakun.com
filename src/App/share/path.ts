@@ -7,6 +7,9 @@ export const pathObject = {
   "personal": ["bio", "trueMeaning", "hobby"],
 } as const
 
+export const paths = Object.entries(pathObject).
+  map(([k, v]) => v.length ? v.map(x => encodeURI(k) + "/" + x) : [k]).flat(1)
+
 const numMainPaths = Object.keys(pathObject).length
 
 const numDucksMain = numMainPaths
