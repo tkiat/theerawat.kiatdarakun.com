@@ -35,6 +35,7 @@ export const Hobby = (): React.ReactElement => {
       <i className="fa-solid fa-gamepad"></i>,
       <i className="fa-solid fa-image"></i>,
       <i className="fa-solid fa-film"></i>,
+      <i className="fa-solid fa-bicycle"></i>,
     ],
     content: {
       prelude: <Prelude />,
@@ -43,6 +44,7 @@ export const Hobby = (): React.ReactElement => {
         <VideoGames content={content} />,
         <Comics content={content} />,
         <Videos content={content} />,
+        <CyclingTrips />,
       ]
     }
   }
@@ -51,7 +53,7 @@ export const Hobby = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <section>
-    <p>This section is about how I spend my leisure time apart from my work on <a href={window.location.origin + "/" + paths[3]}>true meaning</a>. All items here align with my philosophical ideals:</p>
+    <p>This section is about how I spend my leisure time apart from my work on <a href={window.location.origin + "/" + paths[3]}>true meaning</a>. All media here align with my philosophical ideals:</p>
 
     <ol>
       <li>Available free of charge, DRM-free, or as part of a subscription</li>
@@ -159,4 +161,11 @@ const Videos = ({content}: {content: unknown}): React.ReactElement =>
         keys={["video", "watched", "movies"]}
       />
     </section>
+  </>
+
+const CyclingTrips = (): React.ReactElement =>
+  <>
+    <h2>Cycling Trips</h2>
+
+    TODO
   </>
