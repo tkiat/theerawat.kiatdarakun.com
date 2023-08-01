@@ -17,8 +17,8 @@ export const Content = (): React.ReactElement =>
         const Route0 = (_: RouteComponentProps) => <Formal />
         const Route1 = (_: RouteComponentProps) => <Informal />
         const Route2 = (_: RouteComponentProps) => <Bio />
-        const Route3 = (_: RouteComponentProps) => <Hobby />
-        const Route4 = (_: RouteComponentProps) => <TrueMeaning />
+        const Route3 = (_: RouteComponentProps) => <TrueMeaning />
+        const Route4 = (_: RouteComponentProps) => <Hobby />
         return <>
           <RouteDefault default />
           <Route0 path={paths[0]} />

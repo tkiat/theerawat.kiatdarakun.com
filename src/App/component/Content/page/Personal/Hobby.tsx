@@ -49,9 +49,9 @@ export const Hobby = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <section>
-    <p>All items here align with my philosophical ideals:</p>
+    <p>All items here are irrelevant to my work on true meaning. I show only the ones that align with my philosophical ideals:</p>
     <ol>
-      <li>Available free of charge, DRM-free, or as part of an <i>affordable</i> subscription</li>
+      <li>Available free of charge, DRM-free, or as part of a subscription</li>
       <li>Available digitally and can be created/consumed entirely on FOSS operating systems (like Linux)</li>
     </ol>
   </section>
@@ -84,7 +84,7 @@ const VideoGames = ({content}: {content: unknown}): React.ReactElement =>
     <h2>Video Games</h2>
 
     <section>
-      <h3><u>Created</u></h3>
+      <h3><u>Created Content</u></h3>
 
       <h4 className="highlight">Linux</h4>
       <DisplayListItems

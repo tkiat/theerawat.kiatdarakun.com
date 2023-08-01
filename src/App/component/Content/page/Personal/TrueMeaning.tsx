@@ -1,7 +1,7 @@
 import React from "react"
 import * as jsYaml from 'js-yaml'
 
-import {DisplayListItems, PageWithIconsScrollbar, TooltipText} from "../../share"
+import {DisplayListItems, PageWithIconsScrollbar} from "../../share"
 
 const source = "/truemeaning.yaml"
 
@@ -30,16 +30,14 @@ export const TrueMeaning = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-circle-question"></i>,
-      <i className="fa-solid fa-users"></i>,
+      <i className="fa-solid fa-book-open-reader"></i>,
       <i className="fa-solid fa-user-pen"></i>,
-      <i className="fa-solid fa-mountain-city"></i>,
     ],
     content: {
       sections: [
         <About />,
-        <Book1LitReview content={content} />,
-        <Book1MyLifeRecord content={content} />,
-        <Book2LitReview content={content} />,
+        <LitReview content={content} />,
+        <MyLifeRecord content={content} />,
       ]
     }
   }
@@ -48,6 +46,8 @@ export const TrueMeaning = (): React.ReactElement => {
 
 const About = (): React.ReactElement =>
   <section>
+    <h2>About</h2>
+
     <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. The aforementioned keyword <i>long</i> here is the key to the realization that I could not be satisifed with any baseless answer until I found truths. My existential question became, how can I base my actions on truths?</p>
 
     <p>Nothing matters in the universe without any sentient entity, and therefore no entity should do (or should not do) anything. Now let's put a man in such universe. Initially, there is nothing he should do due to the lack of external demands. However, he will eventually become hungry. The experience of the hunger is, to him, true. He can choose not to alleviate his hunger, but that does not follow the truth. Based on this truth, he has to alleviate his pain by eating some non-sentient beings.</p>
@@ -62,7 +62,7 @@ const About = (): React.ReactElement =>
 
     <ol>
       <li>
-        <b>Individual level</b>. The book focuses on true meaning in at most a single entity such as myself and another being.
+        <b>Individual scope</b>. The book focuses on true meaning in at most a single entity such as myself and another being.
 
         <p><u>Outline (Subject to Change)</u></p>
 
@@ -110,43 +110,54 @@ const About = (): React.ReactElement =>
         </ol>
       </li>
 
-      <li><p><b>Societal level</b>. This book investigates the ideal society that enables each member to follow his/her true meaning. I will investigate if I can avoid any compromise in such society and, if not, how to make the best judgment for the best interests of all members. I will determine how the society tackles common issues such as media, consumables, human rights, etc.</p></li>
+      <li><p><b>Societal scope</b>. This book investigates the ideal society that enables each member to follow his/her true meaning. I will investigate if I can avoid any compromise in such society and, if not, how to make the best judgment for the best interests of all members. I will determine how the society tackles common issues such as media, consumables, human rights, etc.</p></li>
     </ol>
   </section>
 
-const Book1LitReview = ({content}: {content: unknown}): React.ReactElement =>
+const LitReview = ({content}: {content: unknown}): React.ReactElement =>
   <section>
-    <h2>Individual Scope: Literature Review</h2>
+    <h2>Literature Review</h2>
 
     <section>
-      <h3><u>TODO</u></h3>
+      <h3><u>Individual Scope</u></h3>
 
       <section>
-        <h4 className="highlight"></h4>
+        <h4 className="highlight">Metaphysics</h4>
+        <DisplayListItems
+          content={content}
+          keys={["litreview", "individual", "metaphysics"]}
+        />
+      </section>
+    </section>
+
+    <section>
+      <h3><u>Societal Scope</u></h3>
+
+      <section>
+        <h4 className="highlight">Animal Welfare</h4>
+        <DisplayListItems
+          content={content}
+          keys={["litreview", "society", "animal welfare"]}
+        />
+      </section>
+
+      <section>
+        <h4 className="highlight">Religion</h4>
+        <DisplayListItems
+          content={content}
+          keys={["litreview", "society", "religion"]}
+        />
       </section>
     </section>
   </section>
 
-const Book1MyLifeRecord = ({content}: {content: unknown}): React.ReactElement =>
+const MyLifeRecord = ({content}: {content: unknown}): React.ReactElement =>
   <section>
-    <h2>Individual Scope: The Record of My Life</h2>
+    <h2>The Record of My Life</h2>
 
     <p>My judgments and interpretations of true meaning has led to relatively less impactful life in all areas, for example, environment, animal welfare, and minimalism. I would like to record all my decisions and my lifestyle according to them. This will be a part of the first book.</p>
 
     <section>
       <h3 className="highlight"></h3>
-    </section>
-  </section>
-
-const Book2LitReview = ({content}: {content: unknown}): React.ReactElement =>
-  <section>
-    <h2>Societal Scope: Literature Review</h2>
-
-    <section>
-      <h3><u>TODO</u></h3>
-
-      <section>
-        <h4 className="highlight"></h4>
-      </section>
     </section>
   </section>
