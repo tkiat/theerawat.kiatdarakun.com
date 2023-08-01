@@ -3,7 +3,7 @@ import React from "react"
 import {DisplayListItems} from "../../../share"
 
 export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
-  <section>
+  <>
     <h1><u>Literature Review</u></h1>
 
     <section>
@@ -37,4 +37,4 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
         />
       </section>
     </section>
-  </section>
+  </>

@@ -1,9 +1,9 @@
 import React from "react"
 
-import {TooltipText} from "../../../../../share"
+import {TooltipText, TooltipTextWithDelay} from "../../../../share"
 
 export const MakingDrinks = (): React.ReactElement =>
-  <section>
+  <>
     <ul className="more-gap-list">
       <li>
         <b className="highlight">Teas</b>:&nbsp;
@@ -65,4 +65,4 @@ export const MakingDrinks = (): React.ReactElement =>
         </TooltipTextWithDelay>
       </li>
     </ul>
-  </section>
+  </>

@@ -1,8 +1,8 @@
 import React from "react"
 
 export const About = (): React.ReactElement =>
-  <section>
-    <h1>About</h1>
+  <>
+    <h1><u>About</u></h1>
 
     <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. The aforementioned keyword <i>long</i> here is the key to the realization that I could not be satisifed with any baseless answer until I found truths. My existential question then became, how can I base my actions on truths?</p>
 
@@ -68,4 +68,4 @@ export const About = (): React.ReactElement =>
 
       <li><p><b>Societal scope</b>. This book investigates the ideal society that enables each member to follow his/her true meaning. I will investigate if I can avoid any compromise in such society and, if not, how to make the best judgment for the best interests of all members. I will determine how the society tackles common issues such as media, consumables, human rights, etc.</p></li>
     </ol>
-  </section>
+  </>

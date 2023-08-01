@@ -1,9 +1,9 @@
 import React from "react"
 
-import {TooltipText} from "../../../../../share"
+import {TooltipText} from "../../../../share"
 
 export const MakingFood = (): React.ReactElement =>
-  <section>
+  <>
     <ul className="more-gap-list">
       <li>
         <b className="highlight">Main Dish</b>:&nbsp;
@@ -37,4 +37,4 @@ export const MakingFood = (): React.ReactElement =>
         </TooltipText>
       </li>
     </ul>
-  </section>
+  </>

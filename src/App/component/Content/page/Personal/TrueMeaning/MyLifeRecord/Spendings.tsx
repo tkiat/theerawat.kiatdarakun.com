@@ -5,10 +5,10 @@ import {Updater, useImmer} from "use-immer"
 import {capitalize, isType} from "@app/share"
 
 import {TooltipFa, TooltipText} from "../../../../share"
-import {AvgChart} from "./Consumables/AvgChart"
-import {WeekTable} from "./Consumables/WeekTable"
-import {WeeklySummary, createAvgWeeklySummary, createWeeklySummaries} from "./Consumables/share"
-import {Weeks, ConsumableType, consumableTypes, isWeeks} from "./Consumables/week"
+import {AvgChart} from "./Spendings/AvgChart"
+import {WeekTable} from "./Spendings/WeekTable"
+import {WeeklySummary, createAvgWeeklySummary, createWeeklySummaries} from "./Spendings/share"
+import {Weeks, ConsumableType, consumableTypes, isWeeks} from "./Spendings/week"
 
 const source = "/character/consumables/record.yaml"
 const avgSummaryDefaultOptions = [4, 12, 52]
@@ -18,7 +18,7 @@ type Cur = {
   consumables: Set<ConsumableType>,
 }
 
-export const Consumables = (): React.ReactElement => {
+export const Spendings = (): React.ReactElement => {
   const [weeks, setWeeks] = React.useState<Weeks>({})
   const [avgSummaries, setAvgSummaries] = React.useState<WeeklySummary>({})
 
@@ -68,36 +68,30 @@ export const Consumables = (): React.ReactElement => {
   }, [weeks])
 
   return (
-    <section>
-      <p>These personal records are a part of my work in progress about the true meaning of life. For consumables, the current ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
+    <>
+      <div className="consumables-panel">
+        <How />&ensp;
+        <label className="consumables-panel__label" htmlFor="consumables-panel-select">
+          {cur.display in avgSummaries ? "Single Week" : "Weekly Avg." }
+        </label>
+        <Select
+          cur={cur.display}
+          setCur={setCur}
+          optGroup1={Object.keys(avgSummaries)}
+          optGroup2={Object.keys(weeks)}
+        />
+        <Checkboxes cur={cur.consumables} setCur={setCur} />
+        <hr />
+      </div>
 
-      <section>
-        <h3 className="highlight">Spendings</h3>
-
-        <div className="consumables-panel">
-          <How />&ensp;
-          <label className="consumables-panel__label" htmlFor="consumables-panel-select">
-            {cur.display in avgSummaries ? "Single Week" : "Weekly Avg." }
-          </label>
-          <Select
-            cur={cur.display}
-            setCur={setCur}
-            optGroup1={Object.keys(avgSummaries)}
-            optGroup2={Object.keys(weeks)}
-          />
-          <Checkboxes cur={cur.consumables} setCur={setCur} />
-          <hr />
-        </div>
-
-        <div className="consumables-display-container">
-          {
-            cur.display in avgSummaries ?
-              <AvgChart consumables={cur.consumables} avgSummary={avgSummaries[cur.display]} />
-            : <WeekTable consumables={cur.consumables} week={weeks[cur.display]} />
-          }
-        </div>
-      </section>
-    </section>
+      <div className="consumables-display-container">
+        {
+          cur.display in avgSummaries ?
+            <AvgChart consumables={cur.consumables} avgSummary={avgSummaries[cur.display]} />
+          : <WeekTable consumables={cur.consumables} week={weeks[cur.display]} />
+        }
+      </div>
+    </>
   )
 }
 
