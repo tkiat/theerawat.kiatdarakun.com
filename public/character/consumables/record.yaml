@@ -12,14 +12,18 @@
         - {t: "carrot",thb: 10,g: 249,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "celery",thb: 10,g: 118,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "corn",thb: 40,g: 1374,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "dragon fruit",thb: 40,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "guava",thb: 40,g: 1750,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "holy basil",thb: 5,g: 94,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 262,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "khanom roti grob",thb: 15,g: 92,nv: 0,oc: 0,mu: 0,u: 92,p: 3,pa: 0,gl: 0}
         - {t: "khanom tarn",thb: 20,g: 243,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom tua pan tod",thb: 5,g: 33,nv: 0,oc: 0,mu: 0,u: 33,p: 1,pa: 0,gl: 0}
+        - {t: "lime",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "lotus stem",thb: 15,g: 407,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 264,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pineapple",thb: 80,g: 2780,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 35,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 20,g: 461,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 530,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tomato",thb: 10,g: 263,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
