@@ -47,5 +47,5 @@ export const Informal = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <>
-    <p>This section lists any informal work and qualifications that somehow relate to my resume.</p>
+    <p>This section lists informal work and qualifications that relate to my resume.</p>
   </>

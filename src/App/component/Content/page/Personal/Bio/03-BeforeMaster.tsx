@@ -27,6 +27,6 @@ export const BeforeMaster = (): React.ReactElement =>
       <TooltipText text="RFID research">
         I had to discuss with instructors in my department once a week until I published a paper.
       </TooltipText>
-      . I also taught privately in some places including <a href="https://www.epa.ac.th/">EPA</a> (&gt; 50 hours).
+      . I also taught privately in some places including <a href="https://www.epa.ac.th/">EPA</a>.
     </p>
   </>

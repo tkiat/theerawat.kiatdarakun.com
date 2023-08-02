@@ -36,7 +36,7 @@ export const About = (): React.ReactElement =>
     <h2><u>Skills</u></h2>
 
     <ul className="more-gap-list">
-      <li><b className="highlight">Language</b> — Thai (native), English (professional), German (basic)</li>
+      <li><b className="highlight">Language</b> — Thai (native), English (professional), German (basic, B1)</li>
 
       <li>
         <b className="highlight">Computer</b>

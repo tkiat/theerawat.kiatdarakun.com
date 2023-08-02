@@ -37,7 +37,7 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
     </p>
 
     <p>
-      After two years of learning (mainly coding), I then realized that I have been ignorant to sufferings. This led to the strong urge to discover why (and how) I should live before beginning my job search again. For almost a year, I&nbsp;
+      The freedom from coding enables me to realize my ignorance to sufferings. This led to the strong urge to discover why (and how) I should live before beginning my job search again. For almost a year, I&nbsp;
       <TooltipText text="introspected">
         Why should I eat or survive? Does a tiger have right to kill other animals? What is good and bad? Do we have objective life purposes? Does God exist? Does rebirth exist? ...
       </TooltipText>
@@ -47,8 +47,8 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
       </TooltipText>
       . However, it is the&nbsp;
       <TooltipText text="wisest">
-        Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life. I called what I am aware of “truth”.
+        Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life.
       </TooltipText>
-      &nbsp;to use the awareness to guide my life. I long for truths, and this seemed to be the answer I have been searching for.
+      &nbsp;to use the awareness to guide my life. Living by the awareness seemed to be the answer I have been searching for.
     </p>
   </>

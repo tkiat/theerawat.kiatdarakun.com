@@ -38,7 +38,7 @@ export const WorkGermany = (): React.ReactElement =>
       <TooltipText text="supervision">
         There was a regular 30-minute two-person meeting at the beginning of Monday which was later increased to 1 hour. We wrote the plan all over the whiteboard and talked about the result. That was awesome.
       </TooltipText>
-      &nbsp;of a German engineer until it was finally the end of the internship when I was given a textbook but never read.
+      &nbsp;of a German engineer until it was finally the end of the internship when I was given a textbook but never read thereafter.
     </p>
 
     <p>

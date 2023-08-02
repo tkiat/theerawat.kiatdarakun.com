@@ -33,7 +33,7 @@ export const Hobby = (): React.ReactElement => {
     icons: [
       <i className="fa-solid fa-book"></i>,
       <i className="fa-solid fa-gamepad"></i>,
-      <i className="fa-solid fa-image"></i>,
+      <i className="fa-solid fa-burst"></i>,
       <i className="fa-solid fa-film"></i>,
       <i className="fa-solid fa-bicycle"></i>,
     ],
@@ -161,9 +161,9 @@ const CyclingTrips = (): React.ReactElement =>
 
     <p>I can go to most places by car or bus but cycling is more environmental friendly. (Moderate) cycling improves both my physical and mental health. It is also a great way to spend time with somebody else along the trip. However, I do not want to cycle on the main road in Thailand for safety reasons.</p>
 
-    <ul>
-      <li><b className="highlight">Aachen - Maastricht [15]</b> — TODO</li>
-      <li><b className="highlight">Aachen - Monschau [2]</b> — TODO</li>
-      <li><b className="highlight">Berlin - Potsdam</b> — TODO</li>
+    <ul className="ul-more-space">
+      <li>2017 — <u>Berlin -&gt; Potsdam (33 km)</u> — Potsdam is an attracive city at the south of Berlin. It has a beautiful palace and a lot of shops.</li>
+      <li>2015-2017 — <u>Aachen -&gt; Maastricht (37 km)</u> — Maastricht is my favourite destination during my study in Aachen. One reason is that bike lanes in the Netherlands is one of the best in the world. Another reason is the destination itself. It has ports, shopping centers, good view, and fresh air. I have been there more than fifteen times. Lastly, I visited the American war memorial on the way to the city once.</li>
+      <li>2015, 2016 — <u>Aachen -&gt; Monschau (33 km)</u> — Monschau is a small town nearby Aachen with the beautiful river and a glasswork shop. With the castle and old-style buildings, I felt like I stepped back in time. The road to Monschau is quite uphill but there are some restaurants to take a rest. I have been there two times.</li>
     </ul>
   </>

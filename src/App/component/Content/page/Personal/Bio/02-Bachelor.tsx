@@ -14,6 +14,6 @@ export const Bachelor = (): React.ReactElement =>
       <TooltipText text="thesis">
         The thesis was organized into two parts: an abstract in the first semester and the execution in the second semester. I chose the uplink and downlink-related topic and I didn't actually know how to carry it out so I was the only one who changed the topic in the second semester. It was about the entropy of Thai text so I was proud to say that the Tripitaka was a part of my thesis!
       </TooltipText>
-      &nbsp;in this area. These experiences later inspired me to begin the master's program in Communications Engineering in 2013. I still didn't really know what I wanted to do both personally and careerwise, but it seemed that I had only two options available: academia or corporate life.
+      &nbsp;in this area. These experiences later inspired me to begin the master's program in Communications Engineering in 2013. I still didn't really know what I wanted to do both personally and careerwise, but it seemed that I had only two options available: academic and corporate lives.
     </p>
   </>
