@@ -4,37 +4,27 @@ import {DisplayListItems} from "../../../share"
 
 export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h1><u>Literature Review</u></h1>
+    <h1>Literature Review</h1>
 
-    <section>
-      <h2>Individual Scope</h2>
+    <h2><u>Individual Scope</u></h2>
 
-      <section>
-        <h3 className="highlight">Metaphysics</h3>
-        <DisplayListItems
-          content={content}
-          keys={["litreview", "individual", "metaphysics"]}
-        />
-      </section>
-    </section>
+    <h3 className="highlight">Metaphysics</h3>
+    <DisplayListItems
+      content={content}
+      keys={["litreview", "individual", "metaphysics"]}
+    />
 
-    <section>
-      <h2>Societal Scope</h2>
+    <h2><u>Societal Scope</u></h2>
 
-      <section>
-        <h3 className="highlight">Animal Welfare</h3>
-        <DisplayListItems
-          content={content}
-          keys={["litreview", "society", "animal welfare"]}
-        />
-      </section>
+    <h3 className="highlight">Animal Welfare</h3>
+    <DisplayListItems
+      content={content}
+      keys={["litreview", "society", "animal welfare"]}
+    />
 
-      <section>
-        <h3 className="highlight">Religion</h3>
-        <DisplayListItems
-          content={content}
-          keys={["litreview", "society", "religion"]}
-        />
-      </section>
-    </section>
+    <h3 className="highlight">Religion</h3>
+    <DisplayListItems
+      content={content}
+      keys={["litreview", "society", "religion"]}
+    />
   </>

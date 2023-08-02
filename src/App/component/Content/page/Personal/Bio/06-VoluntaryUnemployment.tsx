@@ -4,7 +4,7 @@ import {TooltipText} from "../../../share"
 
 export const VoluntaryUnemployment = (): React.ReactElement =>
   <>
-    <p><b className="big-text highlight">28 - 32 Years Old (Voluntary Unemployment)</b> — I felt&nbsp;
+    <p><b className="highlight">28 - 32 Years Old (Voluntary Unemployment)</b> — I felt&nbsp;
       <TooltipText text="useful">
         I spent money and did the thesis in Aachen (that was still not as worth as free education I received). I then proceeded to work in Berlin that required Thai language, and therefore I didn't feel like I took away jobs from Germans.
       </TooltipText>

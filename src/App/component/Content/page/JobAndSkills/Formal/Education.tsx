@@ -4,7 +4,7 @@ import {TooltipText, TooltipTextWithDelay} from "../../../share"
 
 export const Education = (): React.ReactElement =>
   <>
-    <h1><u>Education</u></h1>
+    <h1>Education</h1>
 
     <ul className="more-gap-list">
       <li>

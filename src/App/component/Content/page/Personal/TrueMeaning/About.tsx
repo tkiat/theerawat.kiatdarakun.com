@@ -2,7 +2,7 @@ import React from "react"
 
 export const About = (): React.ReactElement =>
   <>
-    <h1><u>About</u></h1>
+    <h1>About</h1>
 
     <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. The aforementioned keyword <i>long</i> here is the key to the realization that I could not be satisifed with any baseless answer until I found truths. My existential question then became, how can I base my actions on truths?</p>
 

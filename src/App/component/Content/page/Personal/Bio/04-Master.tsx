@@ -4,7 +4,7 @@ import {TooltipText} from "../../../share"
 
 export const Master = (): React.ReactElement =>
   <>
-    <p><b className="big-text highlight">24 - 26 Years Old (Master's Degree)</b> — On the first day of arrival, I had the appointment with&nbsp;
+    <p><b className="highlight">24 - 26 Years Old (Master's Degree)</b> — On the first day of arrival, I had the appointment with&nbsp;
       <TooltipText text="two kind Thai students">
         One met me at Cologne and another one took a taxi with me from Aachen Hofbahnhof (train station) to my room (which I paid the deposit and the rent in advance). I just met an unknown German lady (probably around 50 years old) who stood with me at Hofbahnhof because she said it was dangerous (not true in my opinion).
       </TooltipText>

@@ -4,7 +4,7 @@ import {TooltipText} from "../../../share"
 
 export const BeforeMaster = (): React.ReactElement =>
   <>
-    <p><b className="big-text highlight">23 - 24 Years Old (Before Master's Degree)</b> — I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to two universities in Germany because of low to zero tuition fees, <TooltipText text="ranking">This was actually quite useless because many German universities have similarly high standards. The area of study, thesis topics, and tuition fees are more important in my opinion.</TooltipText>, and the fact that I hadn't been outside of my country apart from the Cambodia border.</p>
+    <p><b className="highlight">23 - 24 Years Old (Before Master's Degree)</b> — I was still confused about the direction in life, but I felt that pursuing a Master's degree abroad was the best investment to do. I sent the applications to two universities in Germany because of low to zero tuition fees, <TooltipText text="ranking">This was actually quite useless because many German universities have similarly high standards. The area of study, thesis topics, and tuition fees are more important in my opinion.</TooltipText>, and the fact that I hadn't been outside of my country apart from the Cambodia border.</p>
 
     <p>
       The one I got accepted was RWTH Aachen. This meant I didn't have to pay any tuition fees except the&nbsp;

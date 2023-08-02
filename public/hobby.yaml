@@ -9,8 +9,8 @@
     "fiction":
 
 "videogame":
-  "linux":
-    "created":
+  "created content":
+    "linux":
       - date: "2021-02-06"
         title: "SuperTux All Secrets (World 1-2)"
         link: "https://www.youtube.com/watch?v=1XVm_dLN5Zo"
@@ -23,9 +23,7 @@
         title: "[Cryptark] Final Mission in Rogue Mode"
         link: "https://www.youtube.com/watch?v=yo89TlBl33E"
         dscp: "Replay"
-    "played":
-  "other":
-    "created":
+    "other":
       - date: "2020-06-01"
         title: "[Clash Royale] I Use only Small Skeletons to Finish Prince Challenge!"
         link: "https://youtu.be/NemKpZkV8yY"
@@ -41,6 +39,8 @@
         link: "https://youtu.be/j3CXU1Z3FB0"
         dscp: "Replay"
         abandoned: true
+  "played":
+    "linux":
 
 "comics":
   "read":

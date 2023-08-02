@@ -52,120 +52,108 @@ export const Hobby = (): React.ReactElement => {
 }
 
 const Prelude = (): React.ReactElement =>
-  <section>
+  <>
     <p>This section is about how I spend my leisure time apart from my work on <a href={window.location.origin + "/" + paths[3]}>true meaning</a>. All media here align with my philosophical ideals:</p>
 
     <ol>
       <li>Available free of charge, DRM-free, or as part of a subscription</li>
       <li>Available digitally and can be created/consumed entirely on FOSS operating systems (like Linux)</li>
     </ol>
-  </section>
+  </>
 
 const Books = ({content}: {content: unknown}): React.ReactElement =>
-  <section>
-    <h2>Books</h2>
+  <>
+    <h1>Books</h1>
 
-    <section>
-      <h3><u>Read</u></h3>
+    <h2><u>Read</u></h2>
 
-      <h4 className="highlight">Nonfiction</h4>
-      {/*TODO tell this not exhaudtive list als truemeaning*/}
+    <h3 className="highlight">Nonfiction</h3>
+    {/*TODO tell this not exhaudtive list als truemeaning*/}
 
-      <DisplayListItems
-        content={content}
-        keys={["book", "read", "nonfiction"]}
-      />
+    <DisplayListItems
+      content={content}
+      keys={["book", "read", "nonfiction"]}
+    />
 
-      <h4 className="highlight">Fiction</h4>
-      <DisplayListItems
-        content={content}
-        keys={["book", "read", "fiction"]}
-      />
-    </section>
-  </section>
+    <h3 className="highlight">Fiction</h3>
+    <DisplayListItems
+      content={content}
+      keys={["book", "read", "fiction"]}
+    />
+  </>
 
 const VideoGames = ({content}: {content: unknown}): React.ReactElement =>
-  <section>
-    <h2>Video Games</h2>
+  <>
+    <h1>Video Games</h1>
 
-    <section>
-      <h3><u>Created Content</u></h3>
+    <h2><u>Created Content</u></h2>
 
-      <h4 className="highlight">Linux</h4>
-      <DisplayListItems
-        content={content}
-        keys={["videogame", "linux", "created"]}
-      />
-    </section>
+    <h3 className="highlight">Linux</h3>
+    <DisplayListItems
+      content={content}
+      keys={["videogame", "created content", "linux"]}
+    />
 
-    <section>
-      <h3><u>Played</u></h3>
+    <h2><u>Played</u></h2>
 
-      <h4 className="highlight">Linux</h4>
-      <DisplayListItems
-        content={content}
-        keys={["videogame", "linux", "played"]}
-      />
-    </section>
+    <h3 className="highlight">Linux</h3>
+    <DisplayListItems
+      content={content}
+      keys={["videogame", "played", "linux"]}
+    />
 
-    {/*
-    <section>
-      <h3><u>Other</u></h3>
+  {/*
+    <h2><u>Other</u></h2>
 
-      <h4 className="highlight">Created</h4>
-      <DisplayListItems
-        content={content}
-        keys={["videogame", "other", "created"]}
-      />
-    </section>
-    */}
-  </section>
+    <h3 className="highlight">Created</h3>
+    <DisplayListItems
+      content={content}
+      keys={["videogame", "created content", "other"]}
+    />
+  */}
+  </>
 
 const Comics = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h2>Comics</h2>
+    <h1>Comics</h1>
 
-    <section>
-      <h3><u>Read</u></h3>
+    <h2><u>Read</u></h2>
 
-      <h4 className="highlight">Graphic Novels</h4>
-      <DisplayListItems
-        content={content}
-        keys={["comics", "read", "graphic novel"]}
-      />
+    <h3 className="highlight">Graphic Novels</h3>
+    <DisplayListItems
+      content={content}
+      keys={["comics", "read", "graphic novel"]}
+    />
 
-      <h4 className="highlight">Comics</h4>
-      <DisplayListItems
-        content={content}
-        keys={["comics", "read", "comics"]}
-      />
-    </section>
+    <h3 className="highlight">Comics</h3>
+    <DisplayListItems
+      content={content}
+      keys={["comics", "read", "comics"]}
+    />
   </>
 
 const Videos = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h2>Videos</h2>
+    <h1>Videos</h1>
 
-    <section>
-      <h3><u>Watched</u></h3>
+    <h2><u>Watched</u></h2>
 
-      <h4 className="highlight">Series</h4>
-      <DisplayListItems
-        content={content}
-        keys={["video", "watched", "series"]}
-      />
+    <h3 className="highlight">Series</h3>
+    <DisplayListItems
+      content={content}
+      keys={["video", "watched", "series"]}
+    />
 
-      <h4 className="highlight">Movies</h4>
-      <DisplayListItems
-        content={content}
-        keys={["video", "watched", "movies"]}
-      />
-    </section>
+    <h3 className="highlight">Movies</h3>
+    <DisplayListItems
+      content={content}
+      keys={["video", "watched", "movies"]}
+    />
   </>
 
 const CyclingTrips = (): React.ReactElement =>
   <>
-    <h2>Cycling Trips</h2>
+    <h1>Cycling Trips</h1>
 
     TODO
   </>
