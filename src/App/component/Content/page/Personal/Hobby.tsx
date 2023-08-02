@@ -155,5 +155,15 @@ const CyclingTrips = (): React.ReactElement =>
   <>
     <h1>Cycling Trips</h1>
 
-    TODO
+    <p>I usually cycle around where I live to get to know the community around there to get more info beyond that map applications can provide. This way, I may discover second-hand shops, parks, farms, attractions, potential apartments to rent, exotic shops, etc. This hobby does not only make my stay more enjoyable but also improve my quality of life.</p>
+
+    <h2><u>Specific Trips</u></h2>
+
+    <p>I can go to most places by car or bus but cycling is more environmental friendly. (Moderate) cycling improves both my physical and mental health. It is also a great way to spend time with somebody else along the trip. However, I do not want to cycle on the main road in Thailand for safety reasons.</p>
+
+    <ul>
+      <li><b className="highlight">Aachen - Maastricht [15]</b> — TODO</li>
+      <li><b className="highlight">Aachen - Monschau [2]</b> — TODO</li>
+      <li><b className="highlight">Berlin - Potsdam</b> — TODO</li>
+    </ul>
   </>
