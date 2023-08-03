@@ -20,7 +20,7 @@ export const Bio = (): React.ReactElement => {
       <i className="fa-solid fa-arrows-left-right-to-line"></i>,
       <i className="fa-solid fa-graduation-cap"></i>,
       <i className="fa-solid fa-briefcase"></i>,
-      <i className="fa-solid fa-arrow-trend-down"></i>,
+      <i className="fa-solid fa-person-walking-with-cane"></i>,
       <i className="fa-solid fa-lightbulb"></i>,
       <i className="fa-solid fa-magnifying-glass-dollar"></i>,
     ],

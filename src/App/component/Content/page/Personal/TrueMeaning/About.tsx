@@ -4,17 +4,9 @@ export const About = (): React.ReactElement =>
   <>
     <h1>About</h1>
 
-    <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. The aforementioned keyword <i>long</i> here is the key to the realization that I could not be satisifed with any baseless answer until I found truths. My existential question then became, how can I base my actions on truths?</p>
+    <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. To answer that question, one has to investigate the most fundamental building blocks that motivate every conscious action, namely "meaning" (i.e., a sense of importance) and "lack of meaning". One may perform a conscious action without any meaning (e.g., wave a hand just for the sake of it) or with some meaning (e.g., post something to gain fame).</p>
 
-    <p>Nothing matters in the universe without any sentient entity, and therefore no entity should do (or should not do) anything. Now let's put a man in such universe. Initially, there is nothing he should do due to the lack of external demands. However, he will eventually become hungry. The experience of the hunger is, to him, true. He can choose not to alleviate his hunger, but that does not follow the truth. Based on this truth, he has to alleviate his pain by eating some non-sentient beings.</p>
-
-    <p>He then realizes many other truths such as his sensual experiences of distant objects. Unless these truths can satisfy his needs, there is nothing he should do to follow them. In other words, he should follow only truths that matter to him. I will call such truths “true meaning”.</p>
-
-    <p>Now let's remove all edible beings (except him) and put a fish near him on the ground, along with necessary cooking equipments. He, who now gets hungry again, may choose to cook it without a second thought if he is a total psychopath. However, if the empathy is inherent in him, he has to make a judgment about these two conflicting truths. This will lead to his decision to eat or not to eat that fish.</p>
-
-    <p>Let's get back to the original question of how to base my actions on truths. I can do that by realizing true meaning and then basing my actions on it. I will use my judgment to resolve a conflict, if any. It is now my lifelong persuit to work on the answer(s) to this question. A seeker of wisdom should gain benefits from this work as well since a wise person, who has the ability to make good judgments, would not perform a conscious action based on things that is either unimportant or untrue.</p>
-
-    <p>I split my work into two books of different scopes.</p>
+    <p>One who seeks wisdom (i.e., the ability to make good judgments) needs to base his/her conscious actions based on things that are true rather than illusory. In other words, a wise person would perform any conscious action based on true meaning, rather than false meaning or no meaning at all. The search of true meaning is now my lifelong persuit out of my strong wish to become wise, hence this work. I split this work into two books of different scopes.</p>
 
     <ol>
       <li>

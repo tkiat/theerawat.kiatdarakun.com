@@ -4,7 +4,7 @@ import {TooltipText} from "../../../share"
 
 export const VoluntaryUnemployment = (): React.ReactElement =>
   <>
-    <p><b className="highlight">28 - 32 Years Old (Voluntary Unemployment)</b> — I felt&nbsp;
+    <p><b className="highlight">28 - 32 Years Old (Voluntary Unemployment and Being Confused)</b> — I felt&nbsp;
       <TooltipText text="useful">
         I spent money and did the thesis in Aachen (that was still not as worth as free education I received). I then proceeded to work in Berlin that required Thai language, and therefore I didn't feel like I took away jobs from Germans.
       </TooltipText>
@@ -45,7 +45,7 @@ export const VoluntaryUnemployment = (): React.ReactElement =>
       <TooltipText text="anything">
         Since goodness and badness don't inhere the universe and humans have capable faculties to set anything as a goal, e.g., fame, nirvana, heaven, sensual pleasure, life purpose can be anything.
       </TooltipText>
-      . However, it is the&nbsp;
+      ; however, it is the&nbsp;
       <TooltipText text="wisest">
         Being wise is having the ability to make good judgments. Since the judgment is better with more evidence, it is the wisest to make a judgement based on what actually exists, not something created out of thin air. In other words, it is the wisest to use the awareness to guide my life.
       </TooltipText>
