@@ -165,6 +165,6 @@ const How = (): React.ReactElement =>
     <ul>
       <li><b className="highlight">Non-vegan</b>: Rather than veganism (that minimizes animal products), I want to minimize unnecessary suffering on my own terms. This means I still consume animal products on some occasions. I still use the “vegan” term in my record as it is understood by many; I just don't record these non-vegan products on those occasions here.</li>
       <li><b className="highlight">Health</b>: I regard consumables that are harmful to health even if it is a small amount as <i>unhealthy</i> (like typical ultra-processed food). When I am not sure about that, I regard it as <i>probably unhealthy</i> (e.g., processed food in a shop that I don't know how it is made).</li>
-      <li><b className="highlight">Delivery</b>: I exclude the delivery price and packaging waste to make it more universal to the reader. Unlike <i>private</i> delivery, <i>public</i> delivery targets multiple destinations per trip. I divide the share accordingly, like half the actual distance when I share half the order with another person.</li>
+      <li><b className="highlight">Delivery</b>: I exclude the delivery price and packaging waste to make it more universal to the reader. Unlike <i>private</i> delivery, <i>public</i> delivery targets multiple destinations per trip.</li>
     </ul>
   </TooltipFa>

@@ -6,11 +6,11 @@ export const About = (): React.ReactElement =>
 
     <p>A long period of self-introspection has culminated in overcoming <i>long</i> analysis paralysis on what I should do in my life. To answer that question, one has to investigate the most fundamental building blocks that motivate every conscious action, namely "meaning" (i.e., a sense of importance) and "lack of meaning". One may perform a conscious action without any meaning (e.g., wave a hand just for the sake of it) or with some meaning (e.g., post something to gain fame).</p>
 
-    <p>One who seeks wisdom (i.e., the ability to make good judgments) needs to base his/her conscious actions based on things that are true rather than illusory. In other words, a wise person would perform any conscious action based on true meaning, rather than false meaning or no meaning at all. The search of true meaning is now my lifelong persuit out of my strong wish to become wise, hence this work. I split this work into two books of different scopes.</p>
+    <p>One who seeks wisdom (i.e., the ability to make good judgments) needs to base his/her conscious actions based on things that are true rather than illusory. In other words, a wise person would perform any conscious action based on true meaning, rather than false meaning or no meaning at all. My strong wish to become wise inspired me to begin this work (on true meaning). I split this work into two books of different scopes.</p>
 
     <ol>
       <li>
-        <b>Individual scope</b>. The book focuses on true meaning as perceived by a single entity such as myself, a fellow human, and an animal.
+        <b>Individual scope</b>. The book focuses on true meaning as perceived by a single entity such as myself, a fellow human, and an animal. It begins with the motivation before diving into the examination of true meaning.
 
         <p><u>Outline (Subject to Change)</u></p>
 
@@ -18,7 +18,14 @@ export const About = (): React.ReactElement =>
           <li>
             Introduction
             <ol>
-              <li>Background</li>
+              <li>
+                Background
+                <ol>
+                  <li>The Rejection of Nihilism</li>
+                  <li>Why Wisdom?</li>
+                  <li>Wisdom and True Meaning</li>
+                </ol>
+              </li>
             </ol>
           </li>
 

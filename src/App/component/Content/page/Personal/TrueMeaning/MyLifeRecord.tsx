@@ -7,11 +7,11 @@ export const MyLifeRecord = ({content}: {content: unknown}): React.ReactElement 
   <>
     <h1>The Record of My Life</h1>
 
-    <p>My judgments and interpretations of true meaning has led to relatively less impactful life in all areas, for example, environment, animal welfare, and minimalism. I would like to record all my decisions and my lifestyle according to them. This will be a part of the first book.</p>
+    <p>My realization, interpretation, and judgments of true meaning leads to the overall low-impact lifestyle. I would like to record my choices as a part of the first book (individual scope). This should serve as a concrete manifestation of the philosophy of true meaning.</p>
 
     <h2><u>Consumables</u></h2>
 
-    <p>These personal records are a part of my work in progress about the true meaning of life. For consumables, the current ideal choice maximizes my health benefits and convenience while minimizing unnecessary environmental impact and suffering upon sentient beings.</p>
+    <p> My current ideal consumable choices maximize my health benefits and convenience and minimize unnecessary suffering upon sentient beings and adverse environmental impact.</p>
 
     <h3 className="highlight">Spendings</h3>
 
