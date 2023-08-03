@@ -4,15 +4,16 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 17,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
-        - {t: "banana",thb: 35,g: 1252,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "banana",thb: 75,g: 2530,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 15,g: 176,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "carrot",thb: 10,g: 249,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "celery",thb: 10,g: 118,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "corn",thb: 40,g: 1374,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "dragon fruit",thb: 40,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "gold apple",thb: 10,g: 191,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 40,g: 1750,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "holy basil",thb: 5,g: 94,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 262,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}

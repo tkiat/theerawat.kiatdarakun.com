@@ -5,11 +5,15 @@ import {TooltipText} from "../../../share"
 export const Realization = (): React.ReactElement =>
   <>
     <p>
-      <b className="highlight">32 Years Old (Satisfactory Realization)</b> — However, I realized I could not deal with&nbsp;
-      <TooltipText text="inevitable conflicts">
+      <b className="highlight">32 Years Old (Satisfactory Realization)</b> — However, I realized the awareness alone cannot solve any&nbsp;
+      <TooltipText text="inevitable conflict">
         Sure, my awareness tells me to change my position when I ache, but what about eating? I currently need to harm other sentient beings for food (even vegan food due to insects), which is a conflict since my awareness tells me that all beings want to survive (as, e.g., their bodies heals themselves). Should I commit suicide or continue living?
       </TooltipText>
-      &nbsp;using only awareness. I then examined everything from scratch. Most fundamentally, one has to subjectively decide to either live or commit suicide, and one who lives may subjectively decide how to live. After a long self-introspection, I realized that my survival instincts nudged me to live and I had a strong passion to live by true meaning.
+      . I then examined everything from scratch.
+
+
+
+      Most fundamentally, one has to subjectively decide to either live or commit suicide, and one who lives may subjectively decide how to live. After a long self-introspection, I realized that my survival instincts nudged me to live and I had a strong passion to live by true meaning.
     </p>
 
     <p>
