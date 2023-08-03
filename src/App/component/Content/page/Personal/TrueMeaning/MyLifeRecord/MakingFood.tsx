@@ -28,12 +28,9 @@ export const MakingFood = (): React.ReactElement =>
       <li>
         <b className="highlight">Snack</b>:&nbsp;
 
-        <TooltipText text="Fried peanuts">
-          <span className="highlight">Recipe</span>: 1kg peanuts, 1 teaspoon salt, and 250ml (palm or coconut) oil — <span className="highlight">Steps</span>: Rinse peanuts, wait until it dries, then fried it with low heat, wait until it changes color to light brown, put it to your container, then fry another batch of peanuts until everything is done.
-        </TooltipText>
-        ,&nbsp;
-        <TooltipText text="Boiled vegetable or grains">
-          I eat these as snack between meals. The vegetable is usually corn and sweet potato; the grain is usually legume like green/red/kidney beans
+        Fried peanuts,&nbsp;
+        <TooltipText text="Boiled/steamed vegetables or grains">
+          I eat these as snack between meals. The vegetable is usually corn and sweet potato; the grain is usually legume like green/black/kidney beans and Job's tears
         </TooltipText>
       </li>
     </ul>
