@@ -21,7 +21,7 @@ A letter consists of two SVGs: a display border and a mask to hide water outside
 
 There was a tiny (around 1px) unknown space between two adjacent SVGs in both Chrome and Firefox so I add extra space at two end of each letter and then use negative margin to remove that. As for the animation, a total of [12 possibilities](doc/water-animation.md) are required.
 
-### Other
+### Accessibility
 
 - I take into account [prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion) (no wave movement for some users) and prefers-color-scheme.
 
