@@ -22,7 +22,7 @@ export const About = (): React.ReactElement =>
                 Background
                 <ol>
                   <li>The Rejection of Nihilism</li>
-                  <li>Why Wisdom?</li>
+                  <li>Wisdom: the Only Quality That is Always Desirable</li>
                   <li>Wisdom and True Meaning</li>
                 </ol>
               </li>
