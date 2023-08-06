@@ -1,3 +1,14 @@
+# format
+# - "YYYY-MM-DD":
+#   - delivery:
+#       type: no fuel
+#   - delivery:
+#       type: public/private
+#       km: number (/share first)
+#     types:
+#       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
+#         items:
+#           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
 "2023-08-05":
   - delivery:
       type: no fuel
@@ -960,7 +971,7 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "beer",thb: 65,g: 622,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 417}
+        - {t: "beer (singha)",thb: 65,g: 622,nv: 0,oc: 0,mu: 622,u: 0,p: 0,pa: 0,gl: 417}
         - {t: "soda",thb: 8,g: 232,nv: 0,oc: 0,mu: 0,u: 232,p: 0,pa: 0,gl: 0}
         - {t: "water",thb: 24,g: 36000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: drink-solid
@@ -2277,7 +2288,7 @@
         - {t: "pumpkin seed (roasted)",thb: 20,g: 25,nv: 0,oc: 0,mu: 25,u: 0,p: 4,pa: 0,gl: 0}
       - name: other-edibles
         items:
-        - {t: "oil (coconut, refined)",thb: 198,g: 2000,nv: 0,oc: 0,mu: 2000,u: 0,p: 47,pa: 0,gl: 0}
+        - {t: "oil (coconut)",thb: 198,g: 2000,nv: 0,oc: 0,mu: 2000,u: 0,p: 47,pa: 0,gl: 0}
 "2022-05-14":
   - delivery:
       type: private

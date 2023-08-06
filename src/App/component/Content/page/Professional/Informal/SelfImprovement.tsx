@@ -4,7 +4,7 @@ import {DisplayListItems} from "../../../share"
 
 export const SelfImprovement = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h1>Self Improvement</h1>
+    <h1>Self-Improvement</h1>
 
     <h2><u>Learning</u></h2>
 

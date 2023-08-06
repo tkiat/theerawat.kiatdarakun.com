@@ -6,7 +6,7 @@ import {About} from "./TrueMeaning/About"
 import {LitReview} from "./TrueMeaning/LitReview"
 import {MyLifeRecord} from "./TrueMeaning/MyLifeRecord"
 
-const source = "/truemeaning.yaml"
+const source = "/page/personal/truemeaning.yaml"
 
 export const TrueMeaning = (): React.ReactElement => {
   const [content, setContent] = React.useState<unknown>()

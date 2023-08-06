@@ -5,7 +5,7 @@ import {PageWithIconsScrollbar} from "../../share"
 import {Software} from "./Informal/Software"
 import {SelfImprovement} from "./Informal/SelfImprovement"
 
-const source = "/informal.yaml"
+const source = "/page/professional/informal.yaml"
 
 export const Informal = (): React.ReactElement => {
   const [content, setContent] = React.useState<unknown>()

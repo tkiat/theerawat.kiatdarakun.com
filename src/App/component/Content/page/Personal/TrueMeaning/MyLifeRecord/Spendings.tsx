@@ -10,7 +10,7 @@ import {WeekTable} from "./Spendings/WeekTable"
 import {WeeklySummary, createAvgWeeklySummary, createWeeklySummaries} from "./Spendings/share"
 import {Weeks, ConsumableType, consumableTypes, isWeeks} from "./Spendings/week"
 
-const source = "/character/consumables/record.yaml"
+const source = "/page/personal/truemeaning/consumables-record.yaml"
 const avgSummaryDefaultOptions = [4, 12, 52]
 
 type Cur = {

@@ -5,7 +5,7 @@ import * as jsYaml from 'js-yaml'
 import {DisplayListItems, PageWithIconsScrollbar} from "../../share"
 import {paths} from "@app/share"
 
-const source = "/hobby.yaml"
+const source = "/page/personal/hobby.yaml"
 
 export const Hobby = (): React.ReactElement => {
   const [content, setContent] = React.useState<unknown>()
