@@ -6,7 +6,7 @@ import {findObjValRecursive} from "@app/share"
 
 type P = {
   content: unknown,
-  keys: [string, string, string],
+  keys: string[],
 }
 export const DisplayListItems = ({content, keys}: P): React.ReactElement =>
   <>{renderItems(content, keys)}</>
