@@ -103,16 +103,10 @@
         dscp: "227 pages"
         review_short: "I completed probably half of the book and forget most of them. I have used the module pattern extensively in my personal website and perhaps in the future projects as well. I might reread it later."
 
-"other":
-  "learning":
-    "course":
-      - date: "2020-03-30"
-        title: "Introduction to Personal Branding"
-        link: "https://coursera.org/verify/AZD6S5JVYEG8"
-        dscp: "3 hr"
-        review_ext: "/digest/2020_03_30.md"
-      - date: "2020-04-10"
-        title: "Sit Less, Get Active"
-        link: "https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"
-        dscp: "3 hr"
-        review_short: "I got a free certificate offer and my sedentary lifestyle inspired me to take it. I later forgot everything except the course title itself which should be enough."
+"selfimprovement":
+  "course":
+    - date: "2020-03-30"
+      title: "Introduction to Personal Branding"
+      link: "https://coursera.org/verify/AZD6S5JVYEG8"
+      dscp: "3 hr"
+      review_ext: "/digest/2020_03_30.md"

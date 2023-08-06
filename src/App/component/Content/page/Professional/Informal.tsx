@@ -3,7 +3,7 @@ import * as jsYaml from 'js-yaml'
 
 import {PageWithIconsScrollbar} from "../../share"
 import {Software} from "./Informal/Software"
-import {Other} from "./Informal/Other"
+import {SelfImprovement} from "./Informal/SelfImprovement"
 
 const source = "/informal.yaml"
 
@@ -32,13 +32,13 @@ export const Informal = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-code"></i>,
-      <i className="fa-solid fa-ellipsis-vertical"></i>,
+      <i className="fa-solid fa-person-arrow-up-from-line"></i>,
     ],
     content: {
       prelude: <Prelude />,
       sections: [
         <Software content={content} />,
-        <Other content={content} />,
+        <SelfImprovement content={content} />,
       ]
     }
   }

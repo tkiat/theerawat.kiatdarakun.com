@@ -1,5 +1,5 @@
-export {Formal} from "./page/JobAndSkills/Formal"
-export {Informal} from "./page/JobAndSkills/Informal"
+export {Formal} from "./page/Professional/Formal"
+export {Informal} from "./page/Professional/Informal"
 export {Bio} from "./page/Personal/Bio"
 export {TrueMeaning} from "./page/Personal/TrueMeaning"
 export {Hobby} from "./page/Personal/Hobby"

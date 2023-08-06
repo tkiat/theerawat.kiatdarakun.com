@@ -16,7 +16,8 @@ const getIcon = (x: string) => {
     case "book":
       return <i className="fa-solid fa-book"></i>
     case "course":
-      return <i className="fa-solid fa-graduation-cap"></i>
+//       return <i className="fa-solid fa-graduation-cap"></i>
+      return <i className="fa-solid fa-chalkboard-user"></i>
     case "desktop":
       return <i className="fa-solid fa-computer"></i>
     case "gamepad":
@@ -33,8 +34,12 @@ const getIcon = (x: string) => {
       return <i className="fa-solid fa-wifi"></i>
     case "offline":
       return <i className="fa-solid fa-plane"></i>
+    case "series":
+      return <i className="fa-solid fa-layer-group"></i>
     case "tablet":
       return <i className="fa-solid fa-tablet-button"></i>
+    case "text":
+      return <i className="fa-solid fa-align-left"></i>
     case "video":
       return <i className="fa-solid fa-film"></i>
     case "web":
