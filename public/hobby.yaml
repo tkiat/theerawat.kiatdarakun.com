@@ -73,3 +73,16 @@
 "gaming":
 
 "watching":
+
+"running":
+  "10km":
+    - date: "2016-03-20"
+      title: "Citylauf Dresden"
+      link: "https://citylauf-dresden.de/ergebnisse/2016"
+      dscp: "This is my first running event ever. I wore shorts and short sleeved running top at around 4 Celcius! Surprisingly, I began to feel hot after the middle of the run."
+    - date: "2016-04-24"
+      title: "Leipzig Marathon"
+      link: "https://my1.raceresult.com/43724/RRPublish/data/pdf?name=Ergebnis%20-%20Laufen%7CErgebnisliste%20MW&contest=4&lang=de"
+    - date: "2017-10-08"
+      title: "The Great 10K Berlin"
+      link: "https://berlin10.r.mikatiming.de/2017/?content=detail&fpid=search&pid=search&idp=99999910B45E3C000012CE11&lang=EN&event=A10&search%5Bfirstname%5D=theerawat&search%5Bnation%5D=%25&search_sort=name&search_event=A10#"

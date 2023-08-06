@@ -48,7 +48,7 @@ export const Hobby = (): React.ReactElement => {
         <Gaming content={content} />,
         <Watching content={content} />,
         <Cycling />,
-        <Running />,
+        <Running content={content} />,
       ]
     }
   }
@@ -71,7 +71,7 @@ const Creating = ({content}: {content: unknown}): React.ReactElement =>
 
     <h2><u>Freedom in Computing</u></h2>
 
-    <p>I advocate free and open source software (FOSS) for all software up until the operating system and against one-time purchase digital products with DRM for the sake of user's freedom. This work promotes software that supports this cause. That being said, I currently have only one gaming video <i className="fa-regular fa-face-grin-tears"></i>.</p>
+    <p>I advocate free and open source software (FOSS) for all software up until the operating system and against one-time purchase digital products with DRM for the sake of user's freedom. This work promotes software that supports this cause. That being said, I currently have only one low-budget gaming video <i className="fa-regular fa-face-grin-tears"></i>.</p>
 
     <h3 className="highlight">Youtube Channel</h3>
 
@@ -160,16 +160,14 @@ const Cycling = (): React.ReactElement =>
     </ul>
   </>
 
-const Running = (): React.ReactElement =>
+const Running = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Running</h1>
 
-    <p></p>
-
     <h2><u>10 km</u></h2>
 
-    <p>TODO</p>
-
-    <ul className="ul-more-space">
-    </ul>
+    <DisplayListItems
+      content={content}
+      keys={["running", "10km"]}
+    />
   </>
