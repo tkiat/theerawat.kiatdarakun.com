@@ -110,6 +110,11 @@
         top: clamp(45px, 3vw, 55px);
         height: calc(100% - clamp(55px, 3vw, 65px));
         width: 100%;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        -ms-overflow-style: none;
+        scrollbar-width: none;
       }
     }
   }
