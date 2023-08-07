@@ -17,7 +17,8 @@ enableMapSet()
 
 ReactDOM.render(
   <React.StrictMode>
-    {willShowSafariWarning() ? <SafariWarning /> : <App />}
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 )
+//     {willShowSafariWarning() ? <SafariWarning /> : <App />}
