@@ -23,5 +23,5 @@ export const Formal = (): React.ReactElement => {
       ]
     }
   }
-  return <PageWithIconsScrollbar data={data} page="about-character" />
+  return <PageWithIconsScrollbar data={data} page="professional-formal" />
 }

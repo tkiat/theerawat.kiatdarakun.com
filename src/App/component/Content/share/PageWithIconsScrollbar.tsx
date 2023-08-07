@@ -15,7 +15,6 @@ type P = {
 export const PageWithIconsScrollbar = ({data, page}: P): React.ReactElement => {
   let observer: IntersectionObserver, sectionElems: NodeListOf<Element>
 
-
   React.useEffect((): (() => void) => {
     (async () => {
       initInPageNavButtons(document.querySelectorAll(`[id^="btn-${page}"]`))
@@ -23,11 +22,11 @@ export const PageWithIconsScrollbar = ({data, page}: P): React.ReactElement => {
       observer = initIntObserver(sectionElems)
     })()
 
-    window.addEventListener('keydown', scrollPageLikeVim(page + "-content"))
+//     window.addEventListener('keydown', scrollPageLikeVim(page + "-content"))
     return () => {
       sectionElems?.forEach(section => { observer.unobserve(section) })
     }
-  window.removeEventListener('keydown', scrollPageLikeVim(page + "-content"))
+//   window.removeEventListener('keydown', scrollPageLikeVim(page + "-content"))
   }, [])
 
   return (
@@ -75,22 +74,22 @@ const scrollPageLikeVim = (id: string) => (e: KeyboardEvent) => {
   trottle = false
 
   switch (e.key) {
-//     case "ArrowDown":
+    case "ArrowDown":
     case "j":
-      document.getElementById(id)?.scrollBy(0, 60)
+      document.getElementById(id)?.scrollBy(0, 120)
       break
 //     case "PageDown":
     case "d":
       document.getElementById(id)?.scrollBy(0, 200)
       break
-//     case "ArrowUp":
+    case "ArrowUp":
     case "k":
-      document.getElementById(id)?.scrollBy(0, -60)
+      document.getElementById(id)?.scrollBy(0, -120)
       break
 //     case "PageUp":
     case "u":
       document.getElementById(id)?.scrollBy(0, -200)
       break
   }
-  setTimeout(() => trottle = true, 150)
+  setTimeout(() => trottle = true, 100)
 }

@@ -38,5 +38,5 @@ export const Bio = (): React.ReactElement => {
       ]
     }
   }
-  return <PageWithIconsScrollbar data={data} page="about-story" />
+  return <PageWithIconsScrollbar data={data} page="personal-bio" />
 }

@@ -42,7 +42,7 @@ export const Informal = (): React.ReactElement => {
       ]
     }
   }
-  return <PageWithIconsScrollbar data={data} page="about-character" />
+  return <PageWithIconsScrollbar data={data} page="professional-informal" />
 }
 
 const Prelude = (): React.ReactElement =>

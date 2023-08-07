@@ -45,7 +45,7 @@ export const TrueMeaning = (): React.ReactElement => {
       ]
     }
   }
-  return <PageWithIconsScrollbar data={data} page="activity-digest" />
+  return <PageWithIconsScrollbar data={data} page="personal-truemeaning" />
 }
 
 const Prelude = (): React.ReactElement =>

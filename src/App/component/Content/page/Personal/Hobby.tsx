@@ -52,7 +52,7 @@ export const Hobby = (): React.ReactElement => {
       ]
     }
   }
-  return <PageWithIconsScrollbar data={data} page="activity-create" />
+  return <PageWithIconsScrollbar data={data} page="personal-bio" />
 }
 
 const Prelude = (): React.ReactElement =>
