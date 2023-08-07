@@ -32,7 +32,7 @@ export const Hobby = (): React.ReactElement => {
   const data = {
     icons: [
       <i className="fa-solid fa-person-circle-plus"></i>,
-      <i className="fa-solid fa-book-open-reader"></i>,
+      <i className="fa-solid fa-font"></i>,
       <i className="fa-solid fa-user-graduate"></i>,
       <i className="fa-solid fa-gamepad"></i>,
       <i className="fa-solid fa-circle-play"></i>,
@@ -43,7 +43,7 @@ export const Hobby = (): React.ReactElement => {
       prelude: <Prelude />,
       sections: [
         <Creating content={content} />,
-        <Reading content={content} />,
+        <ReadingListening content={content} />,
         <TakingCourses content={content} />,
         <Gaming content={content} />,
         <Watching content={content} />,
@@ -85,9 +85,9 @@ const Creating = ({content}: {content: unknown}): React.ReactElement =>
     <p className="abandoned">This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12 due to the shift of my persuits.</p>
   </>
 
-const Reading = ({content}: {content: unknown}): React.ReactElement =>
+const ReadingListening = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h1>Reading</h1>
+    <h1>Reading/Listening</h1>
 
     <h2><u>Nonfiction</u></h2>
 

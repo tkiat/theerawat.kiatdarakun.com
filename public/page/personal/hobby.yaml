@@ -63,16 +63,24 @@
       review_short: "I spent 25$ for the whole series from Humble Bundle. I would rate the comics as too violent for the kids with some (human) beheadings and sexual scenes. The story begins with the scene where people turning into zombies that eat people. The biggest takeaway for me is the reminder that many things nowadays that we think we cannot live without are actually superficial as they are completely useless in that situation."
 
 "taking courses":
-  - date: "2020-04-10"
-    title: "Sit Less, Get Active"
-    link: "https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"
-    dscp: "3 hr"
-    icon: "laptop"
-    review_short: "I got a free certificate offer and my sedentary lifestyle inspired me to take it. I later forgot everything except the course title itself which should be enough."
+  "mooc":
+    - date: "2020-04-10"
+      title: "Sit Less, Get Active"
+      link: "https://coursera.org/share/896aa29cfb15efd3a8f0d08de9134c99"
+      dscp: "3 hr"
+      icon: "laptop"
+      review_short: "I got a free certificate offer and my sedentary lifestyle inspired me to take it. I later forgot everything except the course title itself which should be enough."
 
 "gaming":
 
 "watching":
+  "nonfiction":
+    - date: "2023-08-07"
+      title: "MINIMALISM: Official Netflix Documentary"
+      link: "https://youtu.be/J8DGjUv-Vjc"
+      dscp: "1 hr 18 min"
+      icon: "video"
+      review_ext: "/review/2023_08_07.md"
 
 "running":
   "10km":
