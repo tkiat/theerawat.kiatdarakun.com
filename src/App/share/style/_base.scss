@@ -29,6 +29,17 @@ h1, h2, h3, a, button, strong, b {
   /*font-kerning: none;*/
 }
 
+ol {
+  counter-reset: item;
+  & > li {
+    display: block;
+    counter-increment: item;
+    &:before {
+      content: counters(item, ".") " ";
+    }
+  }
+}
+
 .root {
   --sidebar-width: max(300px, 30vw);
 
