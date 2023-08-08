@@ -72,6 +72,17 @@
       review_short: "I got a free certificate offer and my sedentary lifestyle inspired me to take it. I later forgot everything except the course title itself which should be enough."
 
 "gaming":
+  "linux":
+    - date: "2023-07-08"
+      title: "Crypt of the NecroDancer"
+      link: "https://www.gog.com/game/crypt_of_the_necrodancer"
+      dscp: "12 hr"
+      review_ext: "/review/2023_07_08.md"
+    - date: "2023-06-24"
+      title: "Pilgrims"
+      link: "https://en.wikipedia.org/wiki/Pilgrims_(video_game)"
+      dscp: "50 min"
+      review_ext: "/review/2023_06_24.md"
 
 "watching":
   "nonfiction":

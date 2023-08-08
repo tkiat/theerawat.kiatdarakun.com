@@ -7,7 +7,7 @@ export const MyLifeRecord = ({content}: {content: unknown}): React.ReactElement 
   <>
     <h1>The Record of My Life</h1>
 
-    <p>My realization, interpretation, and judgments of true meaning leads to the overall low-impact lifestyle. I would like to record my choices as a part of the first book (individual scope). This should serve as a concrete manifestation of the philosophy of true meaning.</p>
+    <p>This is a part of the first book where I record my choices and spendings according to my interpretation and judgments of true meaning. My overall low-impact lifestyle should serve as one possible, concrete manifestation of the philosophy of true meaning.</p>
 
     <h2><u>Consumables</u></h2>
 

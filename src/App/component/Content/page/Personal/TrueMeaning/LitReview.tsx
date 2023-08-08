@@ -29,7 +29,7 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
               <summary className="highlight"><u>Literature Review</u></summary>
               <DisplayListItems
                 content={content}
-                keys={["litreview", "individual", "metaphysics"]}
+                keys={["litreview", "individual", "abstract-exam", "truth"]}
               />
             </details>
           </li>
@@ -55,7 +55,7 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
                   <summary className="highlight"><u>Literature Review</u></summary>
                   <DisplayListItems
                     content={content}
-                    keys={["litreview", "individual", "illusions"]}
+                    keys={["litreview", "individual", "concrete-nonjudg-exam", "illusions"]}
                   />
                 </details>
               </li>

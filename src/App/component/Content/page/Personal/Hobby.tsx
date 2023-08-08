@@ -118,9 +118,11 @@ const Gaming = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Gaming</h1>
 
+    <h2><u>Linux</u></h2>
+
     <DisplayListItems
       content={content}
-      keys={["gaming"]}
+      keys={["gaming", "linux"]}
     />
   </>
 

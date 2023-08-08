@@ -65,7 +65,7 @@ const renderItems = (content: unknown, keys: string[]) => {
               let content
 
               if (x.date && x.title) {
-                const title = x.link ? <a href={x.link}>{x.title}</a> : <>{x.title}</>
+                const title = x.link ? <a href={x.link} target="_blank">{x.title}</a> : <>{x.title}</>
                 const icon = x.icon ? <>&ensp;{getIcon(x.icon)}</> : <></>
                 const dscp = x.dscp ? <> — {x.dscp}</> : <></>
                 const stack = x.stack ? <> — <span className="highlight">{x.stack}</span></> : <></>
