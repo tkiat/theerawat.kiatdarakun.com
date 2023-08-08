@@ -14,6 +14,15 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
       keys={["litreview", "individual", "metaphysics"]}
     />
 
+    <h3 className="highlight">Illusions</h3>
+
+    <p>Illusions are ideas held by some individuals that contradict the reality.</p>
+
+    <DisplayListItems
+      content={content}
+      keys={["litreview", "individual", "illusions"]}
+    />
+
     <h2><u>Societal Scope</u></h2>
 
     <h3 className="highlight">Animal Welfare</h3>

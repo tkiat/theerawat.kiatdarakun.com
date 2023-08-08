@@ -7,6 +7,15 @@
         icon: "video"
         dscp: "23 min"
         review_short: "I wanted to read Mūlamadhyamakakārikā, the foundation text in Mahayana Buddhism, but I couldn't find any free resource without prirating so I watched this video for the main idea instead. Nagarjuna states that all things exist through their dependence on other things. In other words, nothing has essence on its own, and this is the concept of emptiness. Not being in either extremes (the idea that things don't exist and the idea that thing exists independently) is therefore the middle way.\n\nNagarjuna introduces the doctrine of the two truths: two ways of appraching the reality. The conventional truth (that there are I, chariot, lions, dharma, nirvana, etc.) is a prerequisite for the ultimate truth (the emptiness)."
+
+    "illusions":
+    - date: "2023-08-07"
+      title: "MINIMALISM: Official Netflix Documentary"
+      link: "https://youtu.be/J8DGjUv-Vjc"
+      dscp: "1 hr 18 min"
+      icon: "video"
+      review_ext: "/review/2023_08_07.md"
+
   "society":
     "animal welfare":
       - date: "2022"
