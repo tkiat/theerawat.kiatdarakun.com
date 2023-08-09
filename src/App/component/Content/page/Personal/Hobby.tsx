@@ -71,7 +71,7 @@ const Creating = ({content}: {content: unknown}): React.ReactElement =>
 
     <h2><u>Freedom in Computing</u></h2>
 
-    <p>I advocate free and open source software (FOSS) for all software up until the operating system and against one-time purchase digital products with DRM for the sake of user's freedom. This work promotes software that supports this cause. That being said, I currently have only one low-budget gaming video <i className="fa-regular fa-face-grin-tears"></i>.</p>
+    <p>The ideal society, to me, offers people choices that satisfy their basic needs such as privacy. For this reason, I strongly advocate free and open-source software for all non-application software since the users often have to stick to it once installed. For application software, I advocate for the availability of FOSS alternatives (to all essential non-entertainment software) and against one-time purchase software with DRM. I created this channel out of the wish to get us closer to that ideal society.</p>
 
     <h3 className="highlight">Youtube Channel</h3>
 

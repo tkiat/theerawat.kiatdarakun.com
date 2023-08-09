@@ -18,6 +18,7 @@
         - {t: "bamboo shoots (boiled)",thb: 25,g: 496,nv: 0,oc: 0,mu: 496,u: 0,p: 6,pa: 0,gl: 0}
         - {t: "cabbage",thb: 15,g: 576,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "carrot",thb: 20,g: 639,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "corn",thb: 20,g: 876,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 161,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "lotus stem",thb: 10,g: 236,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 370,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}

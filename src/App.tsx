@@ -6,7 +6,6 @@ import {Canvas, Content, NavMain, NavSub, Sidebar, WaveConfigs, mkWavePhysics, m
 import {Path, adaptPathToUrl, genWaveColors, initTheme, isMobile, mkPath, numDucks, storePath, storeTheme, updateFavicon, useViewportDimensions} from "@app/share"
 import "@app/share/style/main.scss"
 
-// TODO vim button should work on new page
 const numPointsOnWave = numDucks + 1
 const {place: initPlace, time: initTime} = initTheme()
 
