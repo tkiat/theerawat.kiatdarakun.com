@@ -69,9 +69,9 @@ const renderItems = (content: unknown, keys: string[]) => {
                 const icon = x.icon ? <>&ensp;{getIcon(x.icon)}</> : <></>
                 const dscp = x.dscp ? <> — {x.dscp}</> : <></>
                 const stack = x.stack ? <> — <span className="highlight">{x.stack}</span></> : <></>
-                const review_short = x.review_short ? <> <TooltipFa faclass="fa-regular fa-star-half-stroke">{x.review_short}</TooltipFa></> : <></>
+                const review = x.review ? <> <TooltipFa faclass="fa-regular fa-star-half-stroke">{x.review}</TooltipFa></> : <></>
                 const review_ext = x.review_ext ? <>&ensp;<a href={x.review_ext} target="_blank" rel="noopener noreferrer"><i className="tooltip-fa fa-solid fa-arrow-up-right-from-square"></i></a></> : <></>
-                content = <>{x.date} — {title}{icon}{dscp}{stack}{review_short}{review_ext}</>
+                content = <>{x.date} — {title}{icon}{dscp}{stack}{review}{review_ext}</>
               } else {
                 content = <>&lt;date and/or title is missing&gt;</>
               }
