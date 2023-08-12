@@ -1,6 +1,6 @@
 # Candle
 
-I bought this on GOG for like 3$ something.
+I bought this on GOG for like $3 something.
 
 ## Review
 

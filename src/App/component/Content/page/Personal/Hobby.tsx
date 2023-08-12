@@ -118,6 +118,8 @@ const Gaming = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Gaming</h1>
 
+    <p>I put time spent until the end credit in each item here.</p>
+
     <h2><u>Linux</u></h2>
 
     <DisplayListItems
