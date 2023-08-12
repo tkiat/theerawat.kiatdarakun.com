@@ -10,4 +10,4 @@ The style of the hand-drawn art goes very well with the Lovecraftian theme. This
 
 Eshe is weak at the beginning; however, she can collect yellow shards (or coins?) in between and spend that for a more upgraded skill tree that boosts her stats and other advantages in the sanctuary. A big horde of enemies comes at you at times, and this may often lead to your death. This is when you have a chance to upgrade your abilities after being respawned at the sanctuary.
 
-I finished the game first on normal difficulty but in another playthrough, I chose another route from the beginning in easy difficulty. I was surprised that I still struggled at times even in the easy mode. I find this game very fun to play and recommend this to everyone who likes platformer and/or Metroidvania.
+I finished the game first on normal difficulty but in another playthrough, I chose another route from the beginning in easy difficulty. I was surprised that I still struggled at times even in the easy mode. I find this game very fun to play and recommend this to everyone who likes (to try) Lovecraftian styles and Metroidvania.
