@@ -4,7 +4,7 @@ I bought this game for $8.99 from GOG in 2019. The game has a lot to offer and d
 
 ## Review
 
-Hollow Knight is a well-regarded Metroidvania game about the story of a small warrior bug who ventures through the ruins of thebelow kingdom. The conversation and writings throughout the kingdom gradually reveal the backstory behind the kingdom's current state and what to do next. The writings are top-notch but quite cryptic, to me, in showing the backstory of the kingdom because the in-game texts are not quite straightforward but a walkthrough helps.
+Hollow Knight is a well-regarded Metroidvania game about the story of a small warrior bug who ventures through the ruins of the underneath kingdom. The conversation and writings throughout the kingdom gradually reveal the backstory behind the kingdom's current state and what to do next. The writings are top-notch but quite cryptic, to me, in showing the backstory of the kingdom because the in-game texts are not quite straightforward but Wikipedia helps.
 
 The game is very huge and designed in a way that it is a little tedious to move from place to place. Without any walkthrough, I would have often wasted time from place to place, for the most part, because the game is often cryptic about what to do next and how to achieve certain abilities to get through some obstacles. This may be appealing for some players with explorative minds who have a lot of time to spend and chill out but this can also frustrate many players without a walkthrough at hand.
 
