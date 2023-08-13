@@ -4,7 +4,7 @@ I received this game on GOG as a freebie. The review says positives about this g
 
 ## Review
 
-The game features a man with a fate to investigate an upside-down magical tower. He, with his comrades, sets up the camp nearby and then proceeds to take a journey down there with an isometric viewpoint. All characters start off with basic weapons and skills, but, like a typical (c)RPG, a player can increase their attributes and complete more skill trees. Plenty of conversations, journals, and narrative voices along the way gradually uncover the backstories and secrets behind this mysterious tower.
+Tower of Time is a story of a man with a fate to investigate an upside-down magical tower. He, with his comrades, sets up the camp nearby and then proceeds to take a journey down there with an isometric viewpoint. All characters start off with basic weapons and skills, but, like a typical (c)RPG, a player can increase their attributes and complete more skill trees. Plenty of conversations, journals, and narrative voices along the way gradually uncover the backstories and secrets behind this mysterious tower.
 
 The difficulty is changeable so I recommend a hard difficulty as tactical combat is a strong point of this game. It is very tactical with the ability to slow or pause time to carry out a cool strategy against a horde of enemies. Each character has different skill trees: specialization in range combats, melee combats, supportive spells, etc. You can go back from the tower to the camp from time to time to train and improve the skills of your comrades.
 

@@ -4,7 +4,7 @@ It's the first PC game that I played after two years of inactivity. The thing is
 
 ## Review
 
-This combination of rouge-like dungeon crawler and disco kept me engaged for around 15 hours. It is the story of a woman (Cadence) descending into the crypt to search for her disappeared family members. A player is encouraged to move the character (using only four arrows) in tune with the beats and catchy music to avoid possible punishment.
+This combination of rouge-like dungeon crawler game and disco kept me engaged for around 15 hours. It is the story of a woman (Cadence) descending into the crypt to search for her disappeared family members. A player is encouraged to move the character (using only four arrows) in tune with the beats and catchy music to avoid possible punishment.
 
 You should expect to die a lot at first but all enemies' movements are predictable so, once practiced, you have better odds of beating a level. Not only that, you can collect diamonds in the dungeon to buy in-game upgrades (for better weapons, armor, shovels, spells, consumables, and accessories). This will help pave the way to success.
 
