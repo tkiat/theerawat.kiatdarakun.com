@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "@reach/router"
 import * as jsYaml from 'js-yaml'
 
-import {DisplayListItems, PageWithIconsScrollbar} from "../../share"
+import {getFaClassName, DisplayListItems, PageWithIconsScrollbar, TooltipText} from "../../share"
 import {paths} from "@app/share"
 
 const source = "/page/personal/hobby.yaml"
@@ -31,22 +31,20 @@ export const Hobby = (): React.ReactElement => {
 
   const data = {
     icons: [
-      <i className="fa-solid fa-person-circle-plus"></i>,
-      <i className="fa-solid fa-font"></i>,
-      <i className="fa-solid fa-user-graduate"></i>,
       <i className="fa-solid fa-gamepad"></i>,
-      <i className="fa-solid fa-circle-play"></i>,
+      <i className="fa-solid fa-yin-yang"></i>,
+      <i className="fa-solid fa-wand-magic-sparkles"></i>,
+      <i className="fa-solid fa-person-circle-plus"></i>,
       <i className="fa-solid fa-person-biking"></i>,
       <i className="fa-solid fa-person-running"></i>,
     ],
     content: {
       prelude: <Prelude />,
       sections: [
-        <Creating content={content} />,
-        <ReadingListening content={content} />,
-        <TakingCourses content={content} />,
         <Gaming content={content} />,
-        <Watching content={content} />,
+        <ConsumingNonfiction content={content} />,
+        <ConsumingFiction content={content} />,
+        <Creating content={content} />,
         <Cycling />,
         <Running content={content} />,
       ]
@@ -57,12 +55,13 @@ export const Hobby = (): React.ReactElement => {
 
 const Prelude = (): React.ReactElement =>
   <>
-    <p>This section is about how I spend my leisure time apart from my professional activities and my work on <a href={window.location.origin + "/" + paths[3]}>true meaning</a>. All media here align with my philosophical ideals:</p>
-
-    <ol>
-      <li>Available free of charge, DRM-free, or as part of a subscription</li>
-      <li>Available digitally on FOSS operating systems (like Linux)</li>
-    </ol>
+    <p>This section is about how I spend my leisure time apart from my professional activities and my work on <a href={window.location.origin + "/" + paths[3]}>true meaning</a>. All media here align with my philosophical&nbsp;
+    <TooltipText text="ideals">
+      1. Available free of charge, DRM-free, or as part of a subscription
+      <br />
+      2. Available digitally on FOSS operating systems (like Linux)
+    </TooltipText>.
+    </p>
   </>
 
 const Creating = ({content}: {content: unknown}): React.ReactElement =>
@@ -85,65 +84,37 @@ const Creating = ({content}: {content: unknown}): React.ReactElement =>
     <p className="abandoned">This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12 due to the shift of my persuits.</p>
   </>
 
-const ReadingListening = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h1>Reading/Listening</h1>
-
-    <h2><u>Nonfiction</u></h2>
-
-    <DisplayListItems
-      content={content}
-      keys={["reading", "nonfiction"]}
-    />
-
-    <h2><u>Fiction</u></h2>
-
-    <DisplayListItems
-      content={content}
-      keys={["reading", "fiction"]}
-    />
-  </>
-
-const TakingCourses = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h1>Taking Courses</h1>
-
-    <DisplayListItems
-      content={content}
-      keys={["taking courses", "mooc"]}
-    />
-  </>
-
 const Gaming = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Gaming</h1>
 
-    <p>I put time spent until the end credit in each item here.</p>
-
-    <h2><u>Linux</u></h2>
+    <p>&lt;Finished Date&gt; — &lt;Title&gt; — &lt;Length&gt; &lt;Review&gt;</p>
 
     <DisplayListItems
       content={content}
-      keys={["gaming", "linux"]}
+      keys={["gaming"]}
     />
   </>
 
-const Watching = ({content}: {content: unknown}): React.ReactElement =>
+const ConsumingNonfiction = ({content}: {content: unknown}): React.ReactElement =>
   <>
-    <h1>Watching</h1>
+    <h1>Consuming Nonfiction</h1>
 
-    <h2><u>Nonfiction</u></h2>
+    <p>&lt;Finished Date&gt; — &lt;Title&gt; &lt;Audio <i className={getFaClassName("audio")}></i>, Comics <i className={getFaClassName("image")}></i>, Course <i className={getFaClassName("course")}></i>, Text <i className={getFaClassName("text")}></i>, Video <i className={getFaClassName("video")}></i>&gt; — &lt;Length&gt; &lt;Review&gt;</p>
 
     <DisplayListItems
       content={content}
-      keys={["watching", "nonfiction"]}
+      keys={["consuming nonfiction"]}
     />
+  </>
 
-    <h2><u>Fiction</u></h2>
+const ConsumingFiction = ({content}: {content: unknown}): React.ReactElement =>
+  <>
+    <h1>Consuming Fiction</h1>
 
     <DisplayListItems
       content={content}
-      keys={["watching", "fiction"]}
+      keys={["consuming fiction"]}
     />
   </>
 

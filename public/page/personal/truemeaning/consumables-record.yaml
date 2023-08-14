@@ -15,7 +15,7 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 9,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 27,g: 36000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana",thb: 55,g: 1704,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}

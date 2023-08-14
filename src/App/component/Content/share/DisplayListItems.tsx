@@ -2,6 +2,7 @@ import React from "react"
 import * as jsYaml from 'js-yaml'
 
 import {TooltipFa} from "./Tooltip"
+import {getFaClassName} from "./getFaClassName"
 import {findObjValRecursive} from "@app/share"
 
 type P = {
@@ -10,44 +11,6 @@ type P = {
 }
 export const DisplayListItems = ({content, keys}: P): React.ReactElement =>
   <>{renderItems(content, keys)}</>
-
-const getIcon = (x: string) => {
-  switch(x) {
-    case "book":
-      return <i className="fa-solid fa-book"></i>
-    case "course":
-//       return <i className="fa-solid fa-graduation-cap"></i>
-      return <i className="fa-solid fa-chalkboard-user"></i>
-    case "desktop":
-      return <i className="fa-solid fa-computer"></i>
-    case "gamepad":
-      return <i className="fa-solid fa-gamepad"></i>
-    case "image":
-      return <i className="fa-regular fa-image"></i>
-    case "laptop":
-      return <i className="fa-solid fa-laptop"></i>
-    case "linux":
-      return <i className="fa-brands fa-linux"></i>
-    case "mobile":
-      return <i className="fa-solid fa-mobile-screen-button"></i>
-    case "online":
-      return <i className="fa-solid fa-wifi"></i>
-    case "offline":
-      return <i className="fa-solid fa-plane"></i>
-    case "series":
-      return <i className="fa-solid fa-layer-group"></i>
-    case "tablet":
-      return <i className="fa-solid fa-tablet-button"></i>
-    case "text":
-      return <i className="fa-solid fa-align-left"></i>
-    case "video":
-      return <i className="fa-solid fa-film"></i>
-    case "web":
-      return <i className="fa-solid fa-globe"></i>
-    default:
-      return <></>
-  }
-}
 
 const renderItems = (content: unknown, keys: string[]) => {
   const arr = findObjValRecursive(content, keys)
@@ -66,7 +29,7 @@ const renderItems = (content: unknown, keys: string[]) => {
 
               if (x.date && x.title) {
                 const title = x.link ? <a href={x.link} target="_blank">{x.title}</a> : <>{x.title}</>
-                const icon = x.icon ? <>&ensp;{getIcon(x.icon)}</> : <></>
+                const icon = x.icon ? <>&ensp;<i className={getFaClassName(x.icon)}></i></> : <></>
                 const dscp = x.dscp ? <> — {x.dscp}</> : <></>
                 const stack = x.stack ? <> — <span className="highlight">{x.stack}</span></> : <></>
                 const review = x.review ? <> <TooltipFa faclass="fa-regular fa-star-half-stroke">{x.review}</TooltipFa></> : <></>
