@@ -1,12 +1,11 @@
 import React from "react"
 
-import {DisplayListItems} from "../../../share"
+import {getFaClassName, DisplayListItems} from "../../../share"
+import {LitReviewList} from "./LitReview/LitReviewList"
 
 export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Outline and Literature Review</h1>
-
-    <p>The outline is subject to change.</p>
 
     <h2><u>Book #1: Individual Scope</u></h2>
 
@@ -25,13 +24,12 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
         <ol>
           <li>
             Truth
-            <details>
-              <summary className="highlight"><u>Literature Review</u></summary>
+            <LitReviewList>
               <DisplayListItems
                 content={content}
                 keys={["litreview", "individual", "abstract-exam", "truth"]}
               />
-            </details>
+            </LitReviewList>
           </li>
 
           <li>Meaning</li>
@@ -51,13 +49,12 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
             <ol>
               <li>
                 Illusions
-                <details>
-                  <summary className="highlight"><u>Literature Review</u></summary>
+                <LitReviewList>
                   <DisplayListItems
                     content={content}
                     keys={["litreview", "individual", "concrete-nonjudg-exam", "illusions"]}
                   />
-                </details>
+                </LitReviewList>
               </li>
             </ol>
           </li>

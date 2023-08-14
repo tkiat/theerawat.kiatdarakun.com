@@ -8,10 +8,8 @@ export const SelfImprovement = ({content}: {content: unknown}): React.ReactEleme
 
     <h2><u>Learning</u></h2>
 
-    <h3 className="highlight">Course</h3>
-
     <DisplayListItems
       content={content}
-      keys={["selfimprovement", "course"]}
+      keys={["selfimprovement", "learning"]}
     />
   </>

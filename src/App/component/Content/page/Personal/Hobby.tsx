@@ -64,6 +64,41 @@ const Prelude = (): React.ReactElement =>
     </p>
   </>
 
+const Gaming = ({content}: {content: unknown}): React.ReactElement =>
+  <>
+    <h1>Gaming</h1>
+
+    <DisplayListItems
+      content={content}
+      keys={["gaming"]}
+    />
+  </>
+
+const ConsumingNonfiction = ({content}: {content: unknown}): React.ReactElement =>
+  <>
+    <h1>Consuming Nonfiction</h1>
+
+    {/*<p>&lt;Finished Date&gt; — &lt;Title&gt; &lt;Audio <i className={getFaClassName("audio")}></i>, Comics <i className={getFaClassName("image")}></i>, Course <i className={getFaClassName("course")}></i>, Text <i className={getFaClassName("text")}></i>, Video <i className={getFaClassName("video")}></i>&gt; — &lt;Length&gt; &lt;Review&gt;</p>*/}
+    <p>Audio <i className={getFaClassName("audio")}></i>, Comics <i className={getFaClassName("image")}></i>, Course <i className={getFaClassName("course")}></i>, Text <i className={getFaClassName("text")}></i>, Video <i className={getFaClassName("video")}></i></p>
+
+    <DisplayListItems
+      content={content}
+      keys={["consuming nonfiction"]}
+    />
+  </>
+
+const ConsumingFiction = ({content}: {content: unknown}): React.ReactElement =>
+  <>
+    <h1>Consuming Fiction</h1>
+
+    <p>Audio <i className={getFaClassName("audio")}></i>, Comics <i className={getFaClassName("image")}></i>, Course <i className={getFaClassName("course")}></i>, Text <i className={getFaClassName("text")}></i>, Video <i className={getFaClassName("video")}></i></p>
+
+    <DisplayListItems
+      content={content}
+      keys={["consuming fiction"]}
+    />
+  </>
+
 const Creating = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Creating</h1>
@@ -81,41 +116,7 @@ const Creating = ({content}: {content: unknown}): React.ReactElement =>
 
     <h2 className="abandoned">A Freedom Blog (Abandoned)</h2>
 
-    <p className="abandoned">This <a href="https://a-freedom-blog.kiatdarakun.com">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12 due to the shift of my persuits.</p>
-  </>
-
-const Gaming = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h1>Gaming</h1>
-
-    <p>&lt;Finished Date&gt; — &lt;Title&gt; — &lt;Length&gt; &lt;Review&gt;</p>
-
-    <DisplayListItems
-      content={content}
-      keys={["gaming"]}
-    />
-  </>
-
-const ConsumingNonfiction = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h1>Consuming Nonfiction</h1>
-
-    <p>&lt;Finished Date&gt; — &lt;Title&gt; &lt;Audio <i className={getFaClassName("audio")}></i>, Comics <i className={getFaClassName("image")}></i>, Course <i className={getFaClassName("course")}></i>, Text <i className={getFaClassName("text")}></i>, Video <i className={getFaClassName("video")}></i>&gt; — &lt;Length&gt; &lt;Review&gt;</p>
-
-    <DisplayListItems
-      content={content}
-      keys={["consuming nonfiction"]}
-    />
-  </>
-
-const ConsumingFiction = ({content}: {content: unknown}): React.ReactElement =>
-  <>
-    <h1>Consuming Fiction</h1>
-
-    <DisplayListItems
-      content={content}
-      keys={["consuming fiction"]}
-    />
+    <p className="abandoned">This <a href="https://a-freedom-blog.kiatdarakun.com" target="_blank">personal blog</a> is about freedom-friendly stuff of mixed qualities on many topics. I have abandoned it since 2021-12 due to the shift of my persuits.</p>
   </>
 
 const Cycling = (): React.ReactElement =>

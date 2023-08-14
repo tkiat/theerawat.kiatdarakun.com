@@ -27,6 +27,7 @@
         - {t: "morning glory",thb: 30,g: 1110,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "oil (palm)",thb: 78,g: 1810,nv: 0,oc: 0,mu: 1810,u: 0,p: 66,pa: 0,gl: 0}
         - {t: "peanut",thb: 40,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "potato (chips)",thb: 5,g: 13,nv: 0,oc: 0,mu: 0,u: 13,p: 2,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 55,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 18,g: 869,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}

@@ -9,4 +9,6 @@ export const About = (): React.ReactElement =>
     <p>One who seeks wisdom (i.e., the ability to make good judgments) needs to base his/her conscious actions based on things that are true rather than illusory. In other words, a wise person would perform any conscious action based on true meaning, rather than false meaning or no meaning at all. My strong wish to become wise inspired me to begin this work (on true meaning). I split this work into two books of different scopes: individual and societal scopes.</p>
 
     <p>The first book focuses on true meaning as perceived by a single entity such as myself, a fellow human, and an animal. The second book describes the ideal society that enables each member to follow his/her true meaning by tackling common issues such as media, consumables, human rights, etc. The book also shows how such society resolves the conflicts, if any, for the best interests of all members.</p>
+
+    <p>The work is in progress and everything is subject to change.</p>
   </>
