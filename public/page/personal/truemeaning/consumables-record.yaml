@@ -15,10 +15,19 @@
     types:
       - name: food
         items:
+        - {t: "agasta",thb: 10,g: 79,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "beansprout",thb: 10,g: 206,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "betel leaves",thb: 10,g: 330,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "bitter gourd (kee nok)",thb: 10,g: 267,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "calabash",thb: 10,g: 335,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "carrot",thb: 10,g: 393,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "celery",thb: 10,g: 84,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "corainder & scallion",thb: 10,g: 88,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "dragon fruit",thb: 35,g: 1100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "eggplant (green)",thb: 10,g: 305,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "kale",thb: 30,g: 475,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom sai sai",thb: 20,g: 420,nv: 0,oc: 0,mu: 0,u: 420,p: 0,pa: 0,gl: 0}
+        - {t: "onion",thb: 10,g: 194,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 10,g: 288,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 0,g: 615,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 20,g: 1126,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
@@ -35,7 +44,7 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 31,g: 42000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 35,g: 48000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana",thb: 55,g: 1704,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
