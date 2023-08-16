@@ -9,13 +9,33 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+"2023-08-19":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "beansprout",thb: 10,g: 206,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "carrot",thb: 10,g: 393,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "celery",thb: 10,g: 84,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "corainder & scallion",thb: 10,g: 88,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 10,g: 288,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 0,g: 615,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 20,g: 1126,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-08-12":
+#   - delivery:
+#       type: public
+#       km: TODO
+#     types:
+#       - name: food
+#         items:
+#         - {t: "tea (green assam)",thb: 80,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 27,g: 36000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 31,g: 42000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana",thb: 55,g: 1704,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -23,10 +43,11 @@
         - {t: "carrot",thb: 30,g: 549,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "ginger (shredded)",thb: 10,g: 189,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "holy basil",thb: 10,g: 58,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-        - {t: "khanom nang led",thb: 5,g: 39,nv: 0,oc: 0,mu: 0,u: 39,p: 2,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 30,g: 179,nv: 0,oc: 0,mu: 0,u: 179,p: 7,pa: 0,gl: 0}
         - {t: "morning glory",thb: 30,g: 1110,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "oil (palm)",thb: 78,g: 1810,nv: 0,oc: 0,mu: 1810,u: 0,p: 66,pa: 0,gl: 0}
         - {t: "peanut",thb: 40,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "pomelo",thb: 0,g: 1136,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (chips)",thb: 5,g: 13,nv: 0,oc: 0,mu: 0,u: 13,p: 2,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 55,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
