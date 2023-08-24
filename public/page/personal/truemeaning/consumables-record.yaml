@@ -11,6 +11,28 @@
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
 "2023-08-19":
   - delivery:
+      type: public
+      km: 34
+    types:
+      - name: food
+        items:
+        - {t: "job's tears",thb: 38,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "peanut",thb: 123,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 675
+    types:
+      - name: food
+        items:
+        - {t: "tea (black, broken)",thb: 185,g: 250,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 32
+    types:
+      - name: food
+        items:
+        - {t: "konjac noodle",thb: 22,g: 260,nv: 0,oc: 0,mu: 260,u: 0,p: 4,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: drink-liquid
@@ -27,6 +49,7 @@
         - {t: "carrot",thb: 10,g: 393,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "celery",thb: 10,g: 84,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "corainder & scallion",thb: 10,g: 88,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "corn",thb: 60,g: 2628,nv: 0,oc: 0,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "dragon fruit",thb: 35,g: 1100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "eggplant (green)",thb: 10,g: 305,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 60,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -63,7 +86,7 @@
         - {t: "khanom nang led",thb: 30,g: 179,nv: 0,oc: 0,mu: 0,u: 179,p: 7,pa: 0,gl: 0}
         - {t: "morning glory",thb: 30,g: 1110,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "oil (palm)",thb: 78,g: 1810,nv: 0,oc: 0,mu: 1810,u: 0,p: 66,pa: 0,gl: 0}
-        - {t: "peanut",thb: 40,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+        - {t: "peanut",thb: 83,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "pomelo",thb: 0,g: 1136,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (chips)",thb: 5,g: 13,nv: 0,oc: 0,mu: 0,u: 13,p: 2,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 55,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
