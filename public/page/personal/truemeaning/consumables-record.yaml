@@ -9,6 +9,35 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+"2023-08-26":
+  - delivery:
+      type: public
+      km: 21
+    types:
+      - name: food
+        items:
+        - {t: "rice (brown)",thb: 544,g: 20000,nv: 0,oc: 0,mu: 0,u: 0,p: 164,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "banana pepper",thb: 10,g: 113,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "cabbage",thb: 20,g: 525,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "carrot",thb: 20,g: 438,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "celery",thb: 10,g: 84,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "corainder & scallion",thb: 10,g: 88,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "eggplant (green)",thb: 10,g: 310,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "ginger (shredded)",thb: 10,g: 189,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "kale",thb: 10,g: 159,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "lotus stem",thb: 15,g: 407,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "morning glory",thb: 10,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 35,g: 1322,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 10,g: 560,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "pumpkin",thb: 10,g: 288,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 20,g: 619,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "tomato",thb: 20,g: 428,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "wax gourd",thb: 40,g: 1962,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
 "2023-08-19":
   - delivery:
       type: public
@@ -60,7 +89,7 @@
         - {t: "pineapple",thb: 50,g: 2140,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 10,g: 288,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
-        - {t: "radish (daikon)",thb: 0,g: 615,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "radish (daikon)",thb: 20,g: 615,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "wax gourd",thb: 20,g: 1126,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-08-12":
   - delivery:
