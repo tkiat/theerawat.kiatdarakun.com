@@ -9,6 +9,14 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+"2023-09-02":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "banana",thb: 25,g: 587,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 44,g: 1300,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
 "2023-08-26":
   - delivery:
       type: public
@@ -27,6 +35,9 @@
   - delivery:
       type: no fuel
     types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana pepper",thb: 10,g: 113,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
@@ -34,13 +45,20 @@
         - {t: "carrot",thb: 20,g: 438,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "celery",thb: 10,g: 84,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "corainder & scallion",thb: 10,g: 88,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "dragon fruit",thb: 50,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "eggplant (green)",thb: 10,g: 310,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "ginger (shredded)",thb: 10,g: 189,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "guava",thb: 10,g: 436,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 159,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud",thb: 10,g: 197,nv: 0,oc: 0,mu: 197,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 0,u: 78,p: 4,pa: 0,gl: 0}
+        - {t: "khanom sai sai",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 210,p: 0,pa: 0,gl: 0}
+        - {t: "khanom tian",thb: 6,g: 205,nv: 0,oc: 0,mu: 205,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "lime",thb: 10,g: 229,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "lotus stem",thb: 15,g: 407,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
-        - {t: "pineapple",thb: 35,g: 1322,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 70,g: 2407,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (chips)",thb: 5,g: 13,nv: 0,oc: 0,mu: 0,u: 13,p: 2,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 1120,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pumpkin",thb: 10,g: 288,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 619,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
@@ -234,7 +252,6 @@
         - {t: "dragon fruit",thb: 50,g: 2100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "french fries (frozen)",thb: 129,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 24,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
-        - {t: "khanom khao tom mud",thb: 20,g: 394,nv: 0,oc: 0,mu: 394,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 20,g: 394,nv: 0,oc: 0,mu: 394,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 234,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "peanut",thb: 44,g: 500,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
