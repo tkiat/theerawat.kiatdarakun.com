@@ -29,11 +29,14 @@
         - {t: "false pakchoi",thb: 10,g: 545,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "ginger (shredded)",thb: 10,g: 189,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "kale",thb: 20,g: 596,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud",thb: 10,g: 197,nv: 0,oc: 0,mu: 197,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 0,u: 78,p: 4,pa: 0,gl: 0}
+        - {t: "khanom sai sai",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 210,p: 0,pa: 0,gl: 0}
+        - {t: "lime",thb: 20,g: 408,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "mushroom (shiitake)",thb: 15,g: 95,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "pineapple",thb: 44,g: 1300,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "potato (chips)",thb: 10,g: 26,nv: 0,oc: 0,mu: 0,u: 26,p: 4,pa: 0,gl: 0}
-        - {t: "potato (sweet)",thb: 20,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 55,g: 1900,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 522,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
       - name: other-edibles
         items:
