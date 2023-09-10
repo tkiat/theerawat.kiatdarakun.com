@@ -15,18 +15,21 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 9,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 18,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "agasta",thb: 15,g: 221,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
-        - {t: "beans (mung)",thb: 60,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
+        - {t: "beans (mung)",thb: 97,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 15,pa: 0,gl: 0}
         - {t: "bitter gourd (kee nok)",thb: 10,g: 253,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "cabbage",thb: 10,g: 296,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "carrot",thb: 15,g: 348,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "ginger (shredded)",thb: 10,g: 189,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 159,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 20,g: 156,nv: 0,oc: 0,mu: 0,u: 156,p: 8,pa: 0,gl: 0}
         - {t: "mixed veggies",thb: 15,g: 203,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 300,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "noodle",thb: 39,g: 200,nv: 0,oc: 0,mu: 200,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "noodle (instant)",thb: 63,g: 540,nv: 0,oc: 0,mu: 0,u: 540,p: 9,pa: 0,gl: 0}
         - {t: "okra (chinese)",thb: 10,g: 326,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 15,g: 681,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "tomato",thb: 15,g: 253,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
@@ -998,9 +1001,9 @@
         - {t: "oil (palm)",thb: 46,g: 905,nv: 0,oc: 0,mu: 905,u: 0,p: 33,pa: 0,gl: 0}
         - {t: "pineapple",thb: 118,g: 4459,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "radish (daikon)",thb: 20,g: 611,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
-#       - name: nonedibles
-#         items:
-#         - {t: "mouthwash",thb: 49,g: 423-TODO,nv: n/a,oc: n/a,mu: n/a,u: n/a,p: TODO,pa: 0,gl: 0}
+      - name: nonedibles
+        items:
+        - {t: "mouthwash",thb: 49,g: 362,nv: n/a,oc: n/a,mu: n/a,u: n/a,p: 61,pa: 0,gl: 0}
 "2023-02-04":
   - delivery:
       type: public
