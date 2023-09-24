@@ -15,12 +15,14 @@
     types:
       - name: food
         items:
+        - {t: "banana",thb: 20,g: 850,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 10,g: 241,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "bitter gourd (kee nok)",thb: 10,g: 292,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "calabash",thb: 10,g: 488,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "carrot",thb: 10,g: 275,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "eggplant",thb: 10,g: 286,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "false pakchoi",thb: 30,g: 773,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 5,g: 39,nv: 0,oc: 0,mu: 0,u: 39,p: 2,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "okra (chinese)",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "peanut",thb: 80,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
@@ -36,12 +38,12 @@
         - {t: "water",thb: 16,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
-        - {t: "fried noodle",thb: 30,g: 322,nv: 0,oc: 0,mu: 0,u: 322,p: 0,pa: 0,gl: 0}
         - {t: "banana",thb: 50,g: 2145,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bitter gourd",thb: 15,g: 402,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "cabbage",thb: 10,g: 318,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "carrot",thb: 10,g: 393,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "eggplant",thb: 10,g: 230,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "fried noodle",thb: 30,g: 322,nv: 0,oc: 0,mu: 0,u: 322,p: 0,pa: 0,gl: 0}
         - {t: "guava",thb: 42,g: 1500,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "kale",thb: 10,g: 354,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "khanom khao tom mud",thb: 10,g: 197,nv: 0,oc: 0,mu: 197,u: 0,p: 0,pa: 0,gl: 0}
