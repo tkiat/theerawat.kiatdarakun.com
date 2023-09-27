@@ -11,7 +11,7 @@ export const MyLifeRecord = ({content}: {content: unknown}): React.ReactElement 
 
     <h2><u>Consumables</u></h2>
 
-    <p> My current ideal consumable choices maximize my health benefits and convenience and minimize unnecessary suffering upon sentient beings and adverse environmental impact.</p>
+    <p> My current ideal consumable choices maximize my health benefits and convenience and minimize unnecessary suffering upon sentient beings and adverse environmental impact. Some trade-offs are unavoidable here.</p>
 
     <h3 className="highlight">Spendings</h3>
 

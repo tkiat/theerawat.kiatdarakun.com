@@ -2,9 +2,9 @@ import React from "react"
 
 import {TooltipText, TooltipTextWithDelay} from "../../../share"
 
-export const About = (): React.ReactElement =>
+export const Other = (): React.ReactElement =>
   <>
-    <h1>About</h1>
+    <h1>Other</h1>
 
     <h2><u>General</u></h2>
 

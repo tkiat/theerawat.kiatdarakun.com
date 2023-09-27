@@ -1,10 +1,15 @@
 import React from "react"
 
 import {TooltipTextWithDelay} from "../../../share"
+import {paths} from "@app/share"
 
-export const Prelude = (): React.ReactElement =>
+export const Intro = (): React.ReactElement =>
   <>
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i> and this is my personal website. This section might be of interest to those who seek a transactional relationship with me. I have an engineering and teaching background who also possess good English, computer, and analytical skills. Here are&nbsp;
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am an introspective person who only wishes to complete my work on the philosophy of <a href={window.location.origin + "/" + paths[3]}>true meaning</a> and then consistently espouse it before dying peacefully.</p>
+
+    <p>Since I am not going to monetize this endeavor, my professional pursuit can be independent of it. I can be a good 9-5 employee or run a 1-person business. With my (communications) engineering and teaching background and good English, computer, and analytical skills, I am determined to be a valuable asset to any organization and client.</p>
+
+    <p>Here are&nbsp;
       <TooltipTextWithDelay text="my contact info">
         <span className="notbold">
           <i className="fa-regular fa-envelope"></i> <span style={{unicodeBidi: "bidi-override", direction: "rtl"}}>moc.nukaradtaik@tawareeht</span> <i className="fa-solid fa-key"></i> <a className="contact__link" href="https://raw.githubusercontent.com/tkiat/configs-and-scripts/main/configs/gpg/public.pgp" target="_blank">GPG Public Key</a>
@@ -38,6 +43,6 @@ export const Prelude = (): React.ReactElement =>
           This work is licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/3.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
         </span>
       </TooltipTextWithDelay>
-      &nbsp;for the content here.
+      &nbsp;for this website.
     </p>
   </>

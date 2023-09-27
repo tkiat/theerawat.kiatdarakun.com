@@ -7,6 +7,8 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
   <>
     <h1>Outline and Literature Review</h1>
 
+    <p>Everything here is subject to change.</p>
+
     <h2><u>Book #1: Individual Scope</u></h2>
 
     <ol>
@@ -24,12 +26,14 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
         <ol>
           <li>
             Truth
+            {/*
             <LitReviewList>
               <DisplayListItems
                 content={content}
                 keys={["litreview", "individual", "abstract-exam", "truth"]}
               />
             </LitReviewList>
+            */}
           </li>
 
           <li>Meaning</li>
@@ -44,8 +48,8 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
         The Concrete, Non-Judgmental Examination of True Meaning
         <ol>
           <li>
-            Humans
-            Nonbelievers
+            All Humans
+            {/*
             <ol>
               <li>
                 Illusions
@@ -57,6 +61,7 @@ export const LitReview = ({content}: {content: unknown}): React.ReactElement =>
                 </LitReviewList>
               </li>
             </ol>
+             */}
           </li>
 
           <li>Believers</li>
