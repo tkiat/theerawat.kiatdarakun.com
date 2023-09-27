@@ -5,7 +5,7 @@ import {paths} from "@app/share"
 
 export const Intro = (): React.ReactElement =>
   <>
-    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am an introspective person who only wishes to complete my work on the philosophy of <a href={window.location.origin + "/" + paths[3]}>true meaning</a> and then consistently espouse it before dying peacefully.</p>
+    <p>Hi, I am Theerawat <i className="fa-regular fa-face-grin"></i>. I am an introspective person who wishes to complete my work on the philosophy of <a href={window.location.origin + "/" + paths[3]}>true meaning</a> and then consistently espouse it before dying peacefully.</p>
 
     <p>Since I am not going to monetize this endeavor, my professional pursuit can be independent of it. I can be a good 9-5 employee or run a 1-person business. With my (communications) engineering and teaching background and good English, computer, and analytical skills, I am determined to be a valuable asset to any organization and client.</p>
 
