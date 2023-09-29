@@ -9,7 +9,22 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+"2023-09-30":
+  - delivery:
+      type: no fuel
+    types:
+      - name: food
+        items:
+        - {t: "papaya (shredded)",thb: 20,g: 230,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "veggies (wax gourd, carrot, okra, tomato, brinjal, cucumber, kale, cabbage, false pakchoi, daikon radish)",thb: 208,g: 3226,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
 "2023-09-23":
+#   - delivery:
+#       type: public
+#       km: 35
+#     types:
+#       - name: food
+#         items:
+#         - {t: "sesame seeds (roasted, ground)",thb: 250,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
@@ -26,9 +41,10 @@
         - {t: "corn",thb: 40,g: 1374,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
         - {t: "eggplant",thb: 10,g: 286,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "false pakchoi",thb: 30,g: 773,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud",thb: 10,g: 197,nv: 0,oc: 0,mu: 197,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "khanom nang led",thb: 5,g: 39,nv: 0,oc: 0,mu: 0,u: 39,p: 2,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 215,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
-        - {t: "noodle",thb: 29,g: 180,nv: 0,oc: 0,mu: 180,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "noodle",thb: 58,g: 360,nv: 0,oc: 0,mu: 360,u: 0,p: 12,pa: 0,gl: 0}
         - {t: "noodle (instant)",thb: 40,g: 360,nv: 0,oc: 0,mu: 0,u: 360,p: 6,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 1120,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "okra (chinese)",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
