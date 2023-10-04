@@ -15,8 +15,16 @@
     types:
       - name: food
         items:
+        - {t: "banana",thb: 60,g: 2400,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "corn",thb: 20,g: 876,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "guava",thb: 35,g: 1189,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "khanom sai mai",thb: 35,g: 255,nv: 0,oc: 0,mu: 0,u: 255,p: 10,pa: 0,gl: 0}
         - {t: "papaya (shredded)",thb: 20,g: 230,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 20,g: 1120,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "veggies (wax gourd, carrot, okra, tomato, brinjal, cucumber, kale, cabbage, false pakchoi, daikon radish)",thb: 208,g: 3226,nv: 0,oc: 0,mu: 0,u: 0,p: 5,pa: 0,gl: 0}
+      - name: other-edibles
+        items:
+        - {t: "baking soda",thb: 29,g: 500,nv: 0,oc: 0,mu: n/a,u: n/a,p: 5,pa: 0,gl: 0}
 "2023-09-23":
   - delivery:
       type: public
