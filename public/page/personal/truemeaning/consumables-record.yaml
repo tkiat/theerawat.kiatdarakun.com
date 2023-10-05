@@ -11,6 +11,29 @@
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
 "2023-09-30":
   - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "lentil",thb: 160,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "green peas",thb: 80,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "mung bean",thb: 90,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "black bean",thb: 85,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "chick peas",thb: 110,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+  - delivery:
       type: no fuel
     types:
       - name: food
