@@ -16,6 +16,15 @@
 #     types:
 #       - name: food
 #         items:
+#         - {t: "bean (red bamboo)",thb: 70,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+#         - {t: "bean (red kidney)",thb: 85,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+#         - {t: "sesame (roasted, ground)",thb: 40,g: 140,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+#   - delivery:
+#       type: public
+#       km: 43
+#     types:
+#       - name: food
+#         items:
 #         - {t: "black-eyed peas",thb: 90,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
 #         - {t: "pigeon peas",thb: 95,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
   - delivery:
@@ -42,6 +51,9 @@
   - delivery:
       type: no fuel
     types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana",thb: 0,g: 2170,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
@@ -49,6 +61,9 @@
         - {t: "khanom nang led",thb: 15,g: 117,nv: 0,oc: 0,mu: 0,u: 117,p: 6,pa: 0,gl: 0}
 shredded ginger
         - {t: "veggies (morning glory, daikon radish, wax gourd, carrot, shredded ginger, cabbage, kale, sponge gourd, eggplant)",thb: 165,g: 3619,nv: 0,oc: 0,mu: 0,u: 0,p: 9,pa: 0,gl: 0}
+      - name: other-edibles
+        items:
+        - {t: "iron + vitamin b1, b6, b12",thb: 94,g: n/a,nv: 0,oc: 0,mu: n/a,u: n/a,p: 4,pa: 0,gl: 0}
 "2023-09-30":
 #   - delivery:
 #       type: public
