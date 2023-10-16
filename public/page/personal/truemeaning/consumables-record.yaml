@@ -9,6 +9,18 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+"2023-10-14":
+  - delivery:
+      type: no fuel
+    types:
+#       - name: drink-liquid
+#         items:
+#         - {t: "water",thb: 12,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "guava",thb: 20,g: 953,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 30,g: 1680,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "veggies (agasta, bell pepper, betel leaves, bitter gourd (kee nok), broccoli, carrot, cauliflower, celery, daikon radish, ginger (shredded), eggplant, kale, morning glory, okra, paprika, parsley, winged beans)",thb: 170,g: 3636,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-10-07":
 #   - delivery:
 #       type: public
@@ -33,6 +45,20 @@
     types:
       - name: food
         items:
+        - {t: "peanut (roasted)",thb: 420,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 34,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 35
+    types:
+      - name: food
+        items:
+        - {t: "peanut (roasted)",thb: 210,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 17,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 17.5
+    types:
+      - name: food
+        items:
         - {t: "peanut (roasted)",thb: 210,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 17,pa: 0,gl: 0}
   - delivery:
       type: public
@@ -53,11 +79,12 @@
     types:
       - name: drink-liquid
         items:
-        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "water",thb: 12,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: food
         items:
         - {t: "banana",thb: 0,g: 2170,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
         - {t: "bamboo shoots (boiled)",thb: 25,g: 496,nv: 0,oc: 0,mu: 496,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "french fries (frozen)",thb: 89,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 18,pa: 0,gl: 0}
         - {t: "khanom nang led",thb: 15,g: 117,nv: 0,oc: 0,mu: 0,u: 117,p: 6,pa: 0,gl: 0}
 shredded ginger
         - {t: "veggies (morning glory, daikon radish, wax gourd, carrot, shredded ginger, cabbage, kale, sponge gourd, eggplant)",thb: 165,g: 3619,nv: 0,oc: 0,mu: 0,u: 0,p: 9,pa: 0,gl: 0}
