@@ -10,12 +10,16 @@
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
 "2023-10-21":
-#   - delivery:
-#       type: no fuel
-#     types:
-#       - name: drink-liquid
-#         items:
-#         - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "khanom sai sai",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 210,p: 0,pa: 0,gl: 0}
+        - {t: "sausage",thb: 39,g: 100,nv: 0,oc: 0,mu: 0,u: 100,p: 7,pa: 0,gl: 0}
 "2023-10-14":
   - delivery:
       type: no fuel
