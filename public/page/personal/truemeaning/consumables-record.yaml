@@ -9,6 +9,47 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+# "2023-11-18":
+"2023-11-11":
+  - delivery:
+      type: public
+      km: 15
+    types:
+      - name: food
+        items:
+        - {t: "rice (brown)",thb: 544,g: 20000,nv: 0,oc: 0,mu: 0,u: 0,p: 164,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 56
+    types:
+      - name: nonedibles
+        items:
+        - {t: "tape (kraft tape, 2inch x 40yd)",thb: 42,g: n/a,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 0,pa: 0,gl: 0}
+        - {t: "toothbrush (bamboo)",thb: 79,g: n/a,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 0,pa: 2,gl: 0}
+  - delivery:
+      type: public
+      km: 2.2
+    types:
+      - name: food
+        items:
+        - {t: "mushroom (dried)",thb: 200,g: 115,nv: 0,oc: 0,mu: 0,u: 0,p: 12,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 8,g: 12000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "banana",thb: 20,g: 1873,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud",thb: 20,g: 788,nv: 0,oc: 0,mu: 788,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 5,g: 39,nv: 0,oc: 0,mu: 0,u: 39,p: 2,pa: 0,gl: 0}
+        - {t: "potato (chips)",thb: 5,g: 11,nv: 0,oc: 0,mu: 0,u: 11,p: 2,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 20,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "veggies (banana pepper, bamboo shoots, bitter gourd kee nok, carrot, daikon radish, ginger shredded, kale, lotus stem, morning glory, pumpkin, rice paddy herb, tomato, winged bean)",thb: 190,g: 3849,nv: 0,oc: 0,mu: 0,u: 0,p: 30,pa: 0,gl: 0}
+#       - name: other-edibles
+#         items:
+#         - {t: "vinegar",thb: 112,g: 4000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
 "2023-11-04":
   - delivery:
       type: public
@@ -104,23 +145,23 @@
         - {t: "snack",thb: 20,g: 91,nv: 0,oc: 0,mu: 0,u: 91,p: 2,pa: 0,gl: 0}
         - {t: "veggies (agasta, bell pepper, betel leaves, bitter gourd (kee nok), broccoli, carrot, cauliflower, celery, daikon radish, ginger (shredded), eggplant, kale, morning glory, okra, paprika, parsley, winged beans)",thb: 170,g: 3636,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
 "2023-10-07":
-#   - delivery:
-#       type: public
-#       km: 43
-#     types:
-#       - name: food
-#         items:
-#         - {t: "bean (red bamboo)",thb: 70,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#         - {t: "bean (red kidney)",thb: 85,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#         - {t: "sesame (roasted, ground)",thb: 40,g: 140,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
-#   - delivery:
-#       type: public
-#       km: 43
-#     types:
-#       - name: food
-#         items:
-#         - {t: "black-eyed peas",thb: 90,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#         - {t: "pigeon peas",thb: 95,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "bean (red bamboo)",thb: 70,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "bean (red kidney)",thb: 85,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "sesame (roasted, ground)",thb: 40,g: 140,nv: 0,oc: 0,mu: 0,u: 0,p: 3,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "black-eyed peas",thb: 90,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "pigeon peas",thb: 95,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 35
@@ -174,29 +215,29 @@ shredded ginger
         items:
         - {t: "iron + vitamin b1, b6, b12",thb: 94,g: n/a,nv: 0,oc: 0,mu: n/a,u: n/a,p: 4,pa: 0,gl: 0}
 "2023-09-30":
-#   - delivery:
-#       type: public
-#       km: 43
-#     types:
-#       - name: food
-#         items:
-#         - {t: "lentil",thb: 160,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#   - delivery:
-#       type: public
-#       km: 43
-#     types:
-#       - name: food
-#         items:
-#         - {t: "green peas",thb: 80,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#         - {t: "mung bean",thb: 90,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#   - delivery:
-#       type: public
-#       km: 43
-#     types:
-#       - name: food
-#         items:
-#         - {t: "black bean",thb: 85,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
-#         - {t: "chick peas",thb: 110,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "lentil",thb: 160,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "green peas",thb: 80,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "mung bean",thb: 90,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 43
+    types:
+      - name: food
+        items:
+        - {t: "black bean",thb: 85,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
+        - {t: "chick peas",thb: 110,g: 900,nv: 0,oc: 0,mu: 0,u: 0,p: 13,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
@@ -1030,7 +1071,7 @@ shredded ginger
         - {t: "pineapple",thb: 39,g: 1745,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
       - name: other-edibles
         items:
-        - {t: "vinegar",thb: 61,g: 3199,nv: 0,oc: 0,mu: 3199,u: 0,p: 117,pa: 0,gl: 0}
+        - {t: "vinegar",thb: 61,g: 3199,nv: 0,oc: 0,mu: 0,u: 0,p: 117,pa: 0,gl: 0}
       - name: nonedibles
         items:
         - {t: "fabric softener",thb: 137,g: 1476,nv: 0,oc: 0,mu: 0,u: 0,p: 75,pa: 0,gl: 0}
