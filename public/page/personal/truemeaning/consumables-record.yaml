@@ -9,6 +9,47 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+# "2023-12-02":
+"2023-11-25":
+#   - delivery:
+#       type: public
+#       km: china TODO
+#     types:
+#       - name: nonedibles
+#         items:
+#         - {t: "sticker",thb: 60,g: 73,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 73,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 35
+    types:
+      - name: food
+        items:
+        - {t: "peanut (roasted)",thb: 140,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 17,pa: 0,gl: 0}
+  - delivery:
+      type: public
+      km: 83
+    types:
+      - name: food
+        items:
+        - {t: "plant-based meat",thb: 519,g: 4340,nv: 0,oc: 0,mu: 0,u: 0,p: 107,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 12,g: 18000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "banana",thb: 55,g: 2100,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom babin tip",thb: 5,g: 60,nv: 0,oc: 0,mu: 60,u: 0,p: 1,pa: 0,gl: 0}
+        - {t: "khanom kluay (without baitong TODO)",thb: 10,g: 214,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 0,u: 78,p: 4,pa: 0,gl: 0}
+        - {t: "khanom sai sai",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 210,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 50,g: 2450,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (chips)",thb: 40,g: 150,nv: 0,oc: 0,mu: 0,u: 150,p: 5,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 30,g: 1680,nv: 0,oc: 0,mu: 0,u: 0,p: 6,pa: 0,gl: 0}
+        - {t: "taro",thb: 0,g: 596,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "veggies (cabbage, bitter gourd, daikon radish, eggplant, false pakchoi, ginger shredded, kale, lotus stem, morning glory, papaya, tomato, wax gourd)",thb: 120,g: 4272,nv: 0,oc: 0,mu: 0,u: 0,p: 28,pa: 0,gl: 0}
 "2023-11-18":
   - delivery:
       type: public
@@ -16,7 +57,7 @@
     types:
       - name: food
         items:
-        - {t: "rice (sticky) / 2",thb: 139,g: 5000,nv: 0,oc: 0,mu: 0,u: 0,p: 41,pa: 0,gl: 0}
+        - {t: "rice (sticky) / 2",thb: 139,g: 2500,nv: 0,oc: 0,mu: 0,u: 0,p: 41,pa: 0,gl: 0}
   - delivery:
       type: public
       km: 83
@@ -79,9 +120,9 @@
         - {t: "potato (chips)",thb: 5,g: 11,nv: 0,oc: 0,mu: 0,u: 11,p: 2,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 20,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "veggies (banana pepper, bamboo shoots, bitter gourd kee nok, carrot, daikon radish, ginger shredded, kale, lotus stem, morning glory, pumpkin, rice paddy herb, tomato, winged bean)",thb: 190,g: 3849,nv: 0,oc: 0,mu: 0,u: 0,p: 30,pa: 0,gl: 0}
-#       - name: other-edibles
-#         items:
-#         - {t: "vinegar",thb: 112,g: 4000,nv: 0,oc: 0,mu: 0,u: 0,p: TODO,pa: 0,gl: 0}
+      - name: other-edibles
+        items:
+        - {t: "vinegar",thb: 112,g: 4000,nv: 0,oc: 0,mu: 0,u: 0,p: 172,pa: 0,gl: 0}
 "2023-11-04":
   - delivery:
       type: public
@@ -1142,7 +1183,7 @@ shredded ginger
         - {t: "kale",thb: 10,g: 257,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "morning glory",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
         - {t: "mushroom (oyster)",thb: 20,g: 151,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
-#         - {t: "oil (coconut) TODO 500ml naturel",thb: 53,g: 499-TODO,nv: 0,oc: 0,mu: TODO,u: 0,p: TODO,pa: 0,gl: 0}
+        - {t: "oil (coconut)",thb: 53,g: 461,nv: 0,oc: 0,mu: 461,u: 0,p: 38,pa: 0,gl: 0}
         - {t: "peanut",thb: 88,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 10,pa: 0,gl: 0}
         - {t: "pepper",thb: 49,g: 100,nv: 0,oc: 0,mu: 0,u: 0,p: 2,pa: 0,gl: 0}
         - {t: "potato (sweet)",thb: 10,g: 457,nv: 0,oc: 0,mu: 0,u: 0,p: 1,pa: 0,gl: 0}
