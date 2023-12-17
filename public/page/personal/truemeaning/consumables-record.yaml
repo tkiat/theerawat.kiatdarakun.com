@@ -9,7 +9,22 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
+# "2023-12-16":
+#   - delivery:
+#       type: public
+#       km: TODO
+#     types:
+#       - name: nonedibles
+#         items:
+#         - {t: "paper towel (scott x 3)",thb: 95,g: 750,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 15,pa: 0,gl: 0}
 "2023-12-09":
+#   - delivery:
+#       type: public
+#       km: TODO kuma
+#     types:
+#       - name: nonedibles
+#         items:
+#         - {t: "paper towel (kuma x 5)",thb: 95,g: 750,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 15,pa: 0,gl: 0}
   - delivery:
       type: no fuel
     types:
