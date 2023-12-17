@@ -9,7 +9,23 @@
 #       - name: food/drink-solid/drink-liquid/other-edibles/nonedibles
 #         items:
 #           - title: [thb (number), gram (number, n/a), non_vegan (number, n/a), cert_organic (number, n/a), may be unhealthy (number, n/a), unhealthy (number, n/a), packaging_plastic (number), packaging_paper (number), packaging_glass (number)]
-# "2023-12-09":
+"2023-12-09":
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 16,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "banana",thb: 30,g: 1096,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom babin tip",thb: 10,g: 120,nv: 0,oc: 0,mu: 120,u: 0,p: 2,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 15,g: 111,nv: 0,oc: 0,mu: 0,u: 111,p: 6,pa: 0,gl: 0}
+        - {t: "khanom sai sai",thb: 10,g: 210,nv: 0,oc: 0,mu: 0,u: 210,p: 0,pa: 0,gl: 0}
+        - {t: "pineapple",thb: 45,g: 1891,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "potato (sweet)",thb: 20,g: 2000,nv: 0,oc: 0,mu: 0,u: 0,p: 8,pa: 0,gl: 0}
+        - {t: "sweet potato chips",thb: 5,g: 33,nv: 0,oc: 0,mu: 0,u: 33,p: 2,pa: 0,gl: 0}
+        - {t: "veggies (cabbage, carrot, cucumber, bitter gourd, broccoli, cauliflower, daikon radish, eggplant, kale, lotus stem, morning glory, papaya, pepper banana, tomato)",thb: 150,g: 5200,nv: 0,oc: 0,mu: 0,u: 0,p: 34,pa: 0,gl: 0}
 "2023-12-02":
   - delivery:
       type: public
