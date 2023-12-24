@@ -17,6 +17,29 @@
       - name: nonedibles
         items:
         - {t: "paper towel (scott x 3)",thb: 95,g: 535,nv: 0,oc: n/a,mu: n/a,u: n/a,p: 11,pa: 0,gl: 0}
+  - delivery:
+      type: private
+      km: 6
+    types:
+      - name: food
+        items:
+        - {t: "broccoli (frozen)",thb: 75,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
+        - {t: "strawberry (frozen)",thb: 79,g: 1000,nv: 0,oc: 0,mu: 0,u: 0,p: 7,pa: 0,gl: 0}
+      - name: other-edibles
+        items:
+        - {t: "vinegar",thb: 60,g: 3199,nv: 0,oc: 0,mu: 0,u: 0,p: 117,pa: 0,gl: 0}
+  - delivery:
+      type: no fuel
+    types:
+      - name: drink-liquid
+        items:
+        - {t: "water",thb: 16,g: 24000,nv: 0,oc: n/a,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+      - name: food
+        items:
+        - {t: "banana",thb: 20,g: 783,nv: 0,oc: 0,mu: 0,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "guava",thb: 20,g: 800,nv: 0,oc: 0,mu: 0,u: 0,p: 4,pa: 0,gl: 0}
+        - {t: "khanom khao tom mud (TODO without)",thb: 20,g: 112,nv: 0,oc: 0,mu: 788,u: 0,p: 0,pa: 0,gl: 0}
+        - {t: "khanom nang led",thb: 10,g: 78,nv: 0,oc: 0,mu: 0,u: 78,p: 4,pa: 0,gl: 0}
 "2023-12-09":
 #   - delivery:
 #       type: public
