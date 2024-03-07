@@ -6,7 +6,10 @@
     "build": "tsc && vite build",
     "build no check": "vite build",
     "check": "tsc",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test-TODO": "jest 2>&1 | less -r",
+    "test-extended-TODO": "jest --coverage",
+    "test-clear-TODO": "jest --clearCache"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.1",
