@@ -8,11 +8,13 @@ export const Work = (): React.ReactElement =>
 
     <ul className="more-gap-list">
       <li>
-        <b>Voluntary Employment Gap</b>&ensp;[May 2018 – Aug 2022, Dec 2022 – July 2023]
+        <b>Freelance Tutor, Reseller, Developer, and Philosopher</b>&ensp;[2019 – Present]
 
         <ul>
-          <li>Found my life purpose about the philosophy of true meaning. I am working on a book on this topic in my free time.</li>
-          <li>Learned a lot about low impact living, philosophy, and computer. I have built this website and some other coding projects.</li>
+          <li>Tutor some students</li>
+          <li>Resell products online</li>
+          <li>Developed non-commercial web and Linux desktop applications</li>
+          <li>Currently write a serious philosophical book in my free time only</li>
         </ul>
       </li>
 
@@ -22,7 +24,7 @@ export const Work = (): React.ReactElement =>
         Arvato Direct Services Potsdam GmbH, Berlin, Germany
 
         <ul>
-          <li>Reviewed social network contents based on client’s live policies.</li>
+          <li>Reviewed social network contents, exceeding all targets</li>
         </ul>
       </li>
 
@@ -32,7 +34,7 @@ export const Work = (): React.ReactElement =>
         National Instruments Dresden GmbH, Dresden, Germany
 
         <ul>
-          <li>Cleared some backlogs about MAC/PHY layers in LabVIEW Communications 802.11 Application Framework.</li>
+          <li>Resolved issues in LabVIEW Communications 802.11 Application Framework</li>
         </ul>
       </li>
 
@@ -42,9 +44,7 @@ export const Work = (): React.ReactElement =>
         Sirindhorn International Institute of Technology, Thammasat University, Thailand
 
         <ul>
-          <li>Instructed students in two tutorial classes (ECS 203: Basic Electrical Engineering).</li>
-          <li>Assisted students in some laboratory classes.</li>
-          <li>Carried out paid research on RFID technology for six months and published an <a href="https://ieeexplore.ieee.org/document/6645830">IEEE paper</a> (3-D localization algorithm using double-planar passive RFID arrays) about it.</li>
+          <li>Instructed students in tutorial classes while providing support in some laboratory classes. Conducted paid research on RFID technology and translated it into an <a href="https://ieeexplore.ieee.org/document/6645830">IEEE paper</a> (ISCIT2013)</li>
         </ul>
       </li>
 
@@ -64,7 +64,7 @@ export const Work = (): React.ReactElement =>
         Thaicom Public Limited Company, Pathum Thani, Thailand
 
         <ul>
-          <li>Tested satellite dish components and wrote socket programming for test equipment.</li>
+          <li>Conducted satellite dish components tests and wrote socket programming for test equipment.</li>
         </ul>
       </li>
     </ul>
