@@ -4,7 +4,7 @@ const a: Path = {
   current: mainPaths[0],
   mapping: {
     "professional": "formal",
-    personal: "bio",
+//     personal: "bio",
   }
 }
 
